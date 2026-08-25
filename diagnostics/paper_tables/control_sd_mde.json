@@ -1,0 +1,696 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "threshold": 2.0,
+  "family_class_weight_mode": "effective_number",
+  "rows": [
+    {
+      "checkpoint": "swa",
+      "teacher": "primary",
+      "class_weight_mode": "effective_number",
+      "axis": "ece",
+      "control_sd": 0.0015160512777447031,
+      "control_level": 0.07071035382852302,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.0030321025554894063,
+      "mde_pct_of_level": 4.288060222188172,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "swa",
+      "teacher": "primary",
+      "class_weight_mode": "effective_number",
+      "axis": "acc",
+      "control_sd": 0.13037872314453125,
+      "control_level": 89.60234832763672,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.2607574462890625,
+      "mde_pct_of_level": 0.29101630834002945,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "swa",
+      "teacher": "primary",
+      "class_weight_mode": "none",
+      "axis": "ece",
+      "control_sd": 0.0033333763685349763,
+      "control_level": 0.07550573005611769,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.0066667527370699526,
+      "mde_pct_of_level": 8.829465965185769,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "swa",
+      "teacher": "primary",
+      "class_weight_mode": "none",
+      "axis": "acc",
+      "control_sd": 0.3942937816679289,
+      "control_level": 89.26553853352864,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.7885875633358578,
+      "mde_pct_of_level": 0.8834176954409565,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "swa",
+      "teacher": "stage1",
+      "class_weight_mode": "effective_number",
+      "axis": "ece",
+      "control_sd": 0.0011822187508027879,
+      "control_level": 0.07312947179942429,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.0023644375016055757,
+      "mde_pct_of_level": 3.233221085051225,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "swa",
+      "teacher": "stage1",
+      "class_weight_mode": "effective_number",
+      "axis": "acc",
+      "control_sd": 0.34029864066348586,
+      "control_level": 89.60234832763672,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.6805972813269717,
+      "mde_pct_of_level": 0.7595752723336271,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "swa",
+      "teacher": "stage1",
+      "class_weight_mode": "none",
+      "axis": "ece",
+      "control_sd": 0.0021071884659464015,
+      "control_level": 0.07448867909522845,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.004214376931892803,
+      "mde_pct_of_level": 5.657741529427611,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "swa",
+      "teacher": "stage1",
+      "class_weight_mode": "none",
+      "axis": "acc",
+      "control_sd": 0.09957672977697758,
+      "control_level": 89.65667215983073,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.19915345955395516,
+      "mde_pct_of_level": 0.22212898912746257,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "swa",
+      "teacher": "vae9182",
+      "class_weight_mode": "effective_number",
+      "axis": "ece",
+      "control_sd": 0.001996999098785806,
+      "control_level": 0.032957236164746107,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.003993998197571612,
+      "mde_pct_of_level": 12.118729184712207,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "swa",
+      "teacher": "vae9182",
+      "class_weight_mode": "effective_number",
+      "axis": "acc",
+      "control_sd": 0.3663557063958696,
+      "control_level": 89.9500223795573,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.7327114127917392,
+      "mde_pct_of_level": 0.8145761317323036,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "swa",
+      "teacher": "vae9182",
+      "class_weight_mode": "none",
+      "axis": "ece",
+      "control_sd": 0.0026997325636259157,
+      "control_level": 0.027766280970667714,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.0053994651272518315,
+      "mde_pct_of_level": 19.446122917778666,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "swa",
+      "teacher": "vae9182",
+      "class_weight_mode": "none",
+      "axis": "acc",
+      "control_sd": 0.20700072136152095,
+      "control_level": 90.14558919270833,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.4140014427230419,
+      "mde_pct_of_level": 0.459258679687602,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "best",
+      "teacher": "primary",
+      "class_weight_mode": "effective_number",
+      "axis": "ece",
+      "control_sd": 0.008490947711198687,
+      "control_level": 0.06064203634424243,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.016981895422397374,
+      "mde_pct_of_level": 28.00350457560071,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "best",
+      "teacher": "primary",
+      "class_weight_mode": "effective_number",
+      "axis": "acc",
+      "control_sd": 0.08623669851763957,
+      "control_level": 89.5697530110677,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.17247339703527914,
+      "mde_pct_of_level": 0.19255763384093225,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "best",
+      "teacher": "primary",
+      "class_weight_mode": "none",
+      "axis": "ece",
+      "control_sd": 0.004834177700908321,
+      "control_level": 0.07073833890055274,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.009668355401816642,
+      "mde_pct_of_level": 13.667772741184761,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "best",
+      "teacher": "primary",
+      "class_weight_mode": "none",
+      "axis": "acc",
+      "control_sd": 0.19098490466857385,
+      "control_level": 89.06997172037761,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.3819698093371477,
+      "mde_pct_of_level": 0.4288424055373983,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "best",
+      "teacher": "stage1",
+      "class_weight_mode": "effective_number",
+      "axis": "ece",
+      "control_sd": 0.005377395848968684,
+      "control_level": 0.06268735786900734,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.010754791697937367,
+      "mde_pct_of_level": 17.15623702056606,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "best",
+      "teacher": "stage1",
+      "class_weight_mode": "effective_number",
+      "axis": "acc",
+      "control_sd": 0.08202738991711436,
+      "control_level": 89.75445302327473,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.16405477983422873,
+      "mde_pct_of_level": 0.1827817721664314,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "best",
+      "teacher": "stage1",
+      "class_weight_mode": "none",
+      "axis": "ece",
+      "control_sd": 0.0037020774760430156,
+      "control_level": 0.06513703569141692,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.007404154952086031,
+      "mde_pct_of_level": 11.367043147561708,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "best",
+      "teacher": "stage1",
+      "class_weight_mode": "none",
+      "axis": "acc",
+      "control_sd": 0.0752741909040948,
+      "control_level": 89.81964619954427,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.1505483818081896,
+      "mde_pct_of_level": 0.1676118624134076,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "best",
+      "teacher": "vae9182",
+      "class_weight_mode": "effective_number",
+      "axis": "ece",
+      "control_sd": 0.002106648231758117,
+      "control_level": 0.027442872111419655,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.004213296463516234,
+      "mde_pct_of_level": 15.352971971774695,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "best",
+      "teacher": "vae9182",
+      "class_weight_mode": "effective_number",
+      "axis": "acc",
+      "control_sd": 0.19098772580899204,
+      "control_level": 90.27596791585286,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.3819754516179841,
+      "mde_pct_of_level": 0.4231197520629491,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "best",
+      "teacher": "vae9182",
+      "class_weight_mode": "none",
+      "axis": "ece",
+      "control_sd": 0.0012174427703629184,
+      "control_level": 0.022514758096511652,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.002434885540725837,
+      "mde_pct_of_level": 10.81462003850305,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "best",
+      "teacher": "vae9182",
+      "class_weight_mode": "none",
+      "axis": "acc",
+      "control_sd": 0.2667949993859203,
+      "control_level": 90.38461558024089,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.5335899987718405,
+      "mde_pct_of_level": 0.5903548909804618,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "last",
+      "teacher": "primary",
+      "class_weight_mode": "effective_number",
+      "axis": "ece",
+      "control_sd": 0.0030779976861328583,
+      "control_level": 0.0701168366278425,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.0061559953722657166,
+      "mde_pct_of_level": 8.779625077696744,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "last",
+      "teacher": "primary",
+      "class_weight_mode": "effective_number",
+      "axis": "acc",
+      "control_sd": 0.2587129791822882,
+      "control_level": 88.49413553873698,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.5174259583645764,
+      "mde_pct_of_level": 0.5847008451063753,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "last",
+      "teacher": "primary",
+      "class_weight_mode": "none",
+      "axis": "ece",
+      "control_sd": 0.004765795568573609,
+      "control_level": 0.07365109736681864,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.009531591137147218,
+      "mde_pct_of_level": 12.941546667899885,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "last",
+      "teacher": "primary",
+      "class_weight_mode": "none",
+      "axis": "acc",
+      "control_sd": 0.30285716396283935,
+      "control_level": 88.35289255777995,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.6057143279256787,
+      "mde_pct_of_level": 0.6855625326919105,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "last",
+      "teacher": "stage1",
+      "class_weight_mode": "effective_number",
+      "axis": "ece",
+      "control_sd": 0.008143678659054292,
+      "control_level": 0.07005376838915041,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.016287357318108583,
+      "mde_pct_of_level": 23.24979468289545,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "last",
+      "teacher": "stage1",
+      "class_weight_mode": "effective_number",
+      "axis": "acc",
+      "control_sd": 0.09957672977697758,
+      "control_level": 88.99391682942708,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.19915345955395516,
+      "mde_pct_of_level": 0.22378322771843917,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "last",
+      "teacher": "stage1",
+      "class_weight_mode": "none",
+      "axis": "ece",
+      "control_sd": 0.005174486773771958,
+      "control_level": 0.06908993177870365,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.010348973547543916,
+      "mde_pct_of_level": 14.978989385446019,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "last",
+      "teacher": "stage1",
+      "class_weight_mode": "none",
+      "axis": "acc",
+      "control_sd": 0.19098490466857385,
+      "control_level": 89.12429555257161,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.3819698093371477,
+      "mde_pct_of_level": 0.42858101370555657,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "last",
+      "teacher": "vae9182",
+      "class_weight_mode": "effective_number",
+      "axis": "ece",
+      "control_sd": 0.0010717752881161812,
+      "control_level": 0.03073756476100866,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.0021435505762323623,
+      "mde_pct_of_level": 6.9737163399213316,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "last",
+      "teacher": "vae9182",
+      "class_weight_mode": "effective_number",
+      "axis": "acc",
+      "control_sd": 0.16726154800857174,
+      "control_level": 89.81964365641277,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.3345230960171435,
+      "mde_pct_of_level": 0.3724386808934527,
+      "in_27x_family": true
+    },
+    {
+      "checkpoint": "last",
+      "teacher": "vae9182",
+      "class_weight_mode": "none",
+      "axis": "ece",
+      "control_sd": 0.003935573403821359,
+      "control_level": 0.02967186768849691,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.007871146807642717,
+      "mde_pct_of_level": 26.52730488783548,
+      "in_27x_family": false
+    },
+    {
+      "checkpoint": "last",
+      "teacher": "vae9182",
+      "class_weight_mode": "none",
+      "axis": "acc",
+      "control_sd": 0.2667949993859203,
+      "control_level": 89.6023457845052,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "mde_2sd": 0.5335899987718405,
+      "mde_pct_of_level": 0.5955089614005545,
+      "in_27x_family": false
+    }
+  ],
+  "n_family_denominators": 18,
+  "crosscheck": {
+    "ok": true,
+    "max_dev": 0.0,
+    "cells": [
+      {
+        "checkpoint": "swa",
+        "teacher": "stage1",
+        "noise_units": 114.28484544262398,
+        "rebuilt": 114.28484544262398,
+        "dev": 0.0
+      },
+      {
+        "checkpoint": "swa",
+        "teacher": "primary",
+        "noise_units": 23.452342977601653,
+        "rebuilt": 23.452342977601653,
+        "dev": 0.0
+      },
+      {
+        "checkpoint": "swa",
+        "teacher": "vae9182",
+        "noise_units": 213.02190328916706,
+        "rebuilt": 213.02190328916706,
+        "dev": 0.0
+      },
+      {
+        "checkpoint": "best",
+        "teacher": "stage1",
+        "noise_units": 6.062952991621421,
+        "rebuilt": 6.062952991621421,
+        "dev": 0.0
+      },
+      {
+        "checkpoint": "best",
+        "teacher": "primary",
+        "noise_units": 2.7831475150323906,
+        "rebuilt": 2.7831475150323906,
+        "dev": 0.0
+      },
+      {
+        "checkpoint": "best",
+        "teacher": "vae9182",
+        "noise_units": 27.34409375226454,
+        "rebuilt": 27.34409375226454,
+        "dev": 0.0
+      },
+      {
+        "checkpoint": "last",
+        "teacher": "stage1",
+        "noise_units": 2.5567632846736426,
+        "rebuilt": 2.5567632846736426,
+        "dev": 0.0
+      },
+      {
+        "checkpoint": "last",
+        "teacher": "primary",
+        "noise_units": 32.30754305173955,
+        "rebuilt": 32.30754305173955,
+        "dev": 0.0
+      },
+      {
+        "checkpoint": "last",
+        "teacher": "vae9182",
+        "noise_units": 43.16368330570743,
+        "rebuilt": 43.16368330570743,
+        "dev": 0.0
+      }
+    ],
+    "verdict": "GEÇTİ"
+  },
+  "mde_ece_swa_min": 0.0023644375016055757,
+  "mde_ece_swa_max": 0.0066667527370699526,
+  "mde_ece_swa_pct_min": 3.233221085051225,
+  "mde_ece_swa_pct_max": 19.446122917778666,
+  "mde_ece_all_min": 0.0021435505762323623,
+  "mde_ece_all_max": 0.016981895422397374
+}

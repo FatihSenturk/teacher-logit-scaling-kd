@@ -1,0 +1,94 @@
+{
+  "preregistered": true,
+  "block": "A13",
+  "commit": "b71e6ad",
+  "tag": "a12-a13-predeclared",
+  "summary": "BAŞLATMA TAHMİNİ YANLIŞLANDI — eğim başlatmaya duyarlı · T10a (ii) SONUÇSUZ KALIYOR — ama artık confound yüzünden değil, gürültü yüzünden",
+  "complete": true,
+  "new_runs_on_disk": 4,
+  "missing_T": [],
+  "shared_support": [
+    1.0,
+    1.7,
+    2.2
+  ],
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "audit_source": "selection_audit_unfrozen.csv (frozen file untouched)",
+  "envelope_is_not_a_confidence_interval": true,
+  "fits": {
+    "scratch0712": {
+      "slope": 0.6547068722514588,
+      "intercept": 0.027845858618686867,
+      "r2": 0.9999645299723947,
+      "envelope": 0.058456546540507005,
+      "cell_ece_mean": [
+        0.03645689697245679,
+        0.12361117747686368,
+        0.19918508699462498
+      ],
+      "cell_ece_sd": [
+        0.0057123664918960985,
+        0.003962944527397044,
+        0.00873869378270836
+      ]
+    },
+    "pretrained2248": {
+      "slope": 0.7160652787380302,
+      "intercept": 0.02351986233652291,
+      "r2": 0.9999691373688872,
+      "envelope": 0.021906323710570122,
+      "cell_ece_mean": [
+        0.032957236164746107,
+        0.12821906177518888,
+        0.21093863546071184
+      ],
+      "cell_ece_sd": [
+        0.001996999098785806,
+        0.0030105325448677826,
+        0.0033612721423117073
+      ]
+    },
+    "scratch2248": {
+      "slope": 0.6488331093375835,
+      "intercept": 0.027142927654033353,
+      "r2": 0.998817814674116,
+      "envelope": 0.013902609746009603,
+      "cell_ece_mean": [
+        0.03744166230022752,
+        0.11829053233177286,
+        0.19893856618597114
+      ],
+      "cell_ece_sd": [
+        0.0030384886023834203,
+        0.001083843108556422,
+        0.00032298832098165485
+      ]
+    }
+  },
+  "comparisons": [
+    {
+      "name": "scratch2248 vs pretrained2248",
+      "isolates": "BAŞLATMA",
+      "d_slope": -0.06723216940044663,
+      "combined_envelope": 0.03580893345657973,
+      "resolvable": true,
+      "note": "zarf güven aralığı DEĞİLDİR; çözünmemek yokluk göstermez"
+    },
+    {
+      "name": "scratch2248 vs scratch0712",
+      "isolates": "KAPASİTE",
+      "d_slope": -0.005873762913875313,
+      "combined_envelope": 0.07235915628651661,
+      "resolvable": false,
+      "note": "zarf güven aralığı DEĞİLDİR; çözünmemek yokluk göstermez"
+    },
+    {
+      "name": "pretrained2248 vs scratch0712",
+      "isolates": "ikisi birden (B4'ün mevcut, confound'lu karşılaştırması)",
+      "d_slope": 0.061358406486571315,
+      "combined_envelope": 0.08036287025107713,
+      "resolvable": false,
+      "note": "zarf güven aralığı DEĞİLDİR; çözünmemek yokluk göstermez"
+    }
+  ]
+}

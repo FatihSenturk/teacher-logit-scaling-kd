@@ -1,0 +1,170 @@
+[
+  {
+    "teacher": "Stage1",
+    "own_acc": 92.24250030517578,
+    "signal": "mean_logvar",
+    "auroc_signed": 0.4261929506785046,
+    "informativeness_abs_auroc_minus_half": 0.0738070493214954,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "Stage1",
+    "own_acc": 92.24250030517578,
+    "signal": "target_logvar",
+    "auroc_signed": 0.6996852451227842,
+    "informativeness_abs_auroc_minus_half": 0.19968524512278418,
+    "direction": "higher->more error (uncertainty-like)"
+  },
+  {
+    "teacher": "Stage1",
+    "own_acc": 92.24250030517578,
+    "signal": "top2_logvar",
+    "auroc_signed": 0.42041452623452213,
+    "informativeness_abs_auroc_minus_half": 0.07958547376547787,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "Stage1",
+    "own_acc": 92.24250030517578,
+    "signal": "max_logvar",
+    "auroc_signed": 0.514224841880215,
+    "informativeness_abs_auroc_minus_half": 0.014224841880215,
+    "direction": "higher->more error (uncertainty-like)"
+  },
+  {
+    "teacher": "Stage1",
+    "own_acc": 92.24250030517578,
+    "signal": "entropy",
+    "auroc_signed": 0.890930011580604,
+    "informativeness_abs_auroc_minus_half": 0.39093001158060403,
+    "direction": "higher->more error (uncertainty-like)"
+  },
+  {
+    "teacher": "Stage1",
+    "own_acc": 92.24250030517578,
+    "signal": "msp",
+    "auroc_signed": 0.10968613593847433,
+    "informativeness_abs_auroc_minus_half": 0.3903138640615257,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "Stage1",
+    "own_acc": 92.24250030517578,
+    "signal": "margin",
+    "auroc_signed": 0.11118567568370104,
+    "informativeness_abs_auroc_minus_half": 0.388814324316299,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "Primary",
+    "own_acc": 92.01434326171875,
+    "signal": "mean_logvar",
+    "auroc_signed": 0.4415811808251462,
+    "informativeness_abs_auroc_minus_half": 0.05841881917485381,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "Primary",
+    "own_acc": 92.01434326171875,
+    "signal": "target_logvar",
+    "auroc_signed": 0.8427826816167486,
+    "informativeness_abs_auroc_minus_half": 0.34278268161674863,
+    "direction": "higher->more error (uncertainty-like)"
+  },
+  {
+    "teacher": "Primary",
+    "own_acc": 92.01434326171875,
+    "signal": "top2_logvar",
+    "auroc_signed": 0.40769553304850104,
+    "informativeness_abs_auroc_minus_half": 0.09230446695149896,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "Primary",
+    "own_acc": 92.01434326171875,
+    "signal": "max_logvar",
+    "auroc_signed": 0.5975536229369537,
+    "informativeness_abs_auroc_minus_half": 0.09755362293695369,
+    "direction": "higher->more error (uncertainty-like)"
+  },
+  {
+    "teacher": "Primary",
+    "own_acc": 92.01434326171875,
+    "signal": "entropy",
+    "auroc_signed": 0.8874189420720466,
+    "informativeness_abs_auroc_minus_half": 0.38741894207204663,
+    "direction": "higher->more error (uncertainty-like)"
+  },
+  {
+    "teacher": "Primary",
+    "own_acc": 92.01434326171875,
+    "signal": "msp",
+    "auroc_signed": 0.11247334215301423,
+    "informativeness_abs_auroc_minus_half": 0.38752665784698576,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "Primary",
+    "own_acc": 92.01434326171875,
+    "signal": "margin",
+    "auroc_signed": 0.11344567582612215,
+    "informativeness_abs_auroc_minus_half": 0.38655432417387786,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "VAE9182",
+    "own_acc": 91.81877136230469,
+    "signal": "mean_logvar",
+    "auroc_signed": 0.16895711438944258,
+    "informativeness_abs_auroc_minus_half": 0.3310428856105574,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "VAE9182",
+    "own_acc": 91.81877136230469,
+    "signal": "target_logvar",
+    "auroc_signed": 0.4579297294315815,
+    "informativeness_abs_auroc_minus_half": 0.0420702705684185,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "VAE9182",
+    "own_acc": 91.81877136230469,
+    "signal": "top2_logvar",
+    "auroc_signed": 0.15863701742550568,
+    "informativeness_abs_auroc_minus_half": 0.3413629825744943,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "VAE9182",
+    "own_acc": 91.81877136230469,
+    "signal": "max_logvar",
+    "auroc_signed": 0.21364877727287515,
+    "informativeness_abs_auroc_minus_half": 0.2863512227271249,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "VAE9182",
+    "own_acc": 91.81877136230469,
+    "signal": "entropy",
+    "auroc_signed": 0.8871775942025296,
+    "informativeness_abs_auroc_minus_half": 0.3871775942025296,
+    "direction": "higher->more error (uncertainty-like)"
+  },
+  {
+    "teacher": "VAE9182",
+    "own_acc": 91.81877136230469,
+    "signal": "msp",
+    "auroc_signed": 0.11219021676870793,
+    "informativeness_abs_auroc_minus_half": 0.38780978323129206,
+    "direction": "higher->less error (confidence-like)"
+  },
+  {
+    "teacher": "VAE9182",
+    "own_acc": 91.81877136230469,
+    "signal": "margin",
+    "auroc_signed": 0.1132558866415771,
+    "informativeness_abs_auroc_minus_half": 0.3867441133584229,
+    "direction": "higher->less error (confidence-like)"
+  }
+]

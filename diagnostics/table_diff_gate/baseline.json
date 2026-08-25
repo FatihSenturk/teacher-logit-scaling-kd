@@ -1,0 +1,8328 @@
+{
+  "accepted_at": "2026-08-23T15:09:36",
+  "reason": "N25 (23 Agu, arsiv duzenlilik turu): tek sapma, tek yeni sayac -- N13/count/artifact_sources_band_checked (true). Bant kontrolu artik public depoda (bant beyani olmayan yerde) ATLANIR ve bunu sayacta soyler; calisma deposunda true. CHANGED 0 \u00b7 VANISHED 0.",
+  "sources": [
+    "diagnostics\\epoch_curves_MANIFEST.json",
+    "diagnostics\\paper_tables\\headroom_grid_audit.json",
+    "diagnostics\\paper_tables\\jsd_collapse_audit.json",
+    "diagnostics\\paper_tables\\number_ledger.json",
+    "diagnostics\\paper_tables\\derived_registry.json",
+    "diagnostics\\paper_tables\\prereg_lead_audit.json",
+    "diagnostics\\paper_tables\\control_sd_mde.json",
+    "diagnostics\\paper_tables\\tau_t_factorial.json",
+    "diagnostics\\paper_tables\\mechanism_grid_gaps.json",
+    "diagnostics\\paper_tables\\dose_response_per_seed.json",
+    "diagnostics\\paper_tables\\ferplus_abstention_entropy.json",
+    "diagnostics\\paper_tables\\regression_line_provenance.json",
+    "diagnostics\\paper_tables\\number_audit_round3.json",
+    "diagnostics\\selection_audit\\selection_gain.json",
+    "diagnostics\\paper_tables\\order_stat_trend.json",
+    "diagnostics\\p4_teacher_selection\\p4_teacher_selection.json",
+    "diagnostics\\paper_tables\\mechanism_specs.json",
+    "diagnostics\\student_logits\\MANIFEST.json",
+    "diagnostics\\p1_dose_response\\two_dataset_overlay.json",
+    "diagnostics\\a12_realsignal_gate\\a12_verdict.json",
+    "diagnostics\\a13_scratch_dose\\a13_verdict.json",
+    "diagnostics\\paper_tables\\g42_init_matched_lever.json",
+    "diagnostics\\paper_tables\\RESULTS_TABLES.json",
+    "diagnostics\\paper_tables\\robustness_metrics.json",
+    "diagnostics\\paper_tables\\split_identity.json",
+    "diagnostics\\paper_tables\\tstar_sensitivity.json",
+    "diagnostics\\paper_tables\\jsd_sensitivity.json",
+    "diagnostics\\paper_tables\\p6_collapse_test.json",
+    "diagnostics\\paper_tables\\r3w1_joint_optimum.json",
+    "diagnostics\\paper_tables\\selection_audit_inference.json",
+    "diagnostics\\paper_tables\\monotonicity_test.json",
+    "diagnostics\\paper_tables\\criterion_applied.json",
+    "diagnostics\\paper_tables\\holm_family.json",
+    "diagnostics\\paper_tables\\equivalence_tests.json",
+    "diagnostics\\paper_tables\\bootstrap_cis.json",
+    "diagnostics\\paper_tables\\asymmetry_estimand.json",
+    "diagnostics\\paper_tables\\efficiency_retention.json",
+    "diagnostics\\paper_tables\\noise_units.json",
+    "diagnostics\\paper_tables\\audit_population.json",
+    "diagnostics\\paper_tables\\tstar_provenance.json",
+    "diagnostics\\p5_efficiency\\capacity_law_check.json",
+    "diagnostics\\p2_gate_oracle\\p2_verdict.json",
+    "diagnostics\\selection_audit\\selection_optimism_headline.json",
+    "diagnostics\\paper_tables\\run_manifest_census.json",
+    "diagnostics\\reliability\\reliability_diagram.json"
+  ],
+  "cells": {
+    "CURVES/n_runs": [
+      199,
+      null,
+      null
+    ],
+    "CURVES/n_epoch_rows": [
+      76700,
+      null,
+      null
+    ],
+    "CURVES/npz_bytes": [
+      1237133,
+      null,
+      null
+    ],
+    "CURVES/npz_sha256": [
+      "a0f7cc9081243d9962b744055f34cc5117e21a5a89c608a7a8d9c2014ae33e37",
+      null,
+      199
+    ],
+    "N11/run/headroom": [
+      0.11260453531138123,
+      null,
+      4
+    ],
+    "N11/run/T_argmin": [
+      0.5063,
+      null,
+      4
+    ],
+    "N11/run/ece_at_argmin": [
+      0.01562826005113433,
+      null,
+      4
+    ],
+    "N11/run/ci_lo": [
+      0.1018357727773973,
+      null,
+      null
+    ],
+    "N11/run/ci_hi": [
+      0.11651117297970169,
+      null,
+      null
+    ],
+    "N11/run/grid_lo": [
+      0.26,
+      null,
+      null
+    ],
+    "N11/run/grid_hi": [
+      1.0,
+      null,
+      null
+    ],
+    "N11/run/on_bound": [
+      "False",
+      null,
+      null
+    ],
+    "N11/run/boot_frac_lo": [
+      0.0,
+      null,
+      null
+    ],
+    "N11/boot/headroom": [
+      0.11311321464331912,
+      null,
+      101
+    ],
+    "N11/boot/T_argmin": [
+      0.5,
+      null,
+      101
+    ],
+    "N11/boot/ece_at_argmin": [
+      0.015119580719196434,
+      null,
+      101
+    ],
+    "N11/boot/ci_lo": [
+      0.1039068471014824,
+      null,
+      null
+    ],
+    "N11/boot/ci_hi": [
+      0.11743215540716863,
+      null,
+      null
+    ],
+    "N11/boot/grid_lo": [
+      0.5,
+      null,
+      null
+    ],
+    "N11/boot/grid_hi": [
+      2.5,
+      null,
+      null
+    ],
+    "N11/boot/on_bound": [
+      "True",
+      null,
+      null
+    ],
+    "N11/boot/boot_frac_lo": [
+      0.7845,
+      null,
+      null
+    ],
+    "N11/fine/headroom": [
+      0.11982373675610565,
+      null,
+      196
+    ],
+    "N11/fine/T_argmin": [
+      0.46,
+      null,
+      196
+    ],
+    "N11/fine/ece_at_argmin": [
+      0.008409058606409909,
+      null,
+      196
+    ],
+    "N11/fine/ci_lo": [
+      0.10688242737071034,
+      null,
+      null
+    ],
+    "N11/fine/ci_hi": [
+      0.12689327076682794,
+      null,
+      null
+    ],
+    "N11/fine/grid_lo": [
+      0.1,
+      null,
+      null
+    ],
+    "N11/fine/grid_hi": [
+      4.0,
+      null,
+      null
+    ],
+    "N11/fine/on_bound": [
+      "False",
+      null,
+      null
+    ],
+    "N11/fine/boot_frac_lo": [
+      0.0,
+      null,
+      null
+    ],
+    "N11/boundary/stage1/T": [
+      1.32,
+      null,
+      3068
+    ],
+    "N11/boundary/stage1/at_bound": [
+      "False",
+      null,
+      null
+    ],
+    "N11/boundary/primary/T": [
+      1.24,
+      null,
+      3068
+    ],
+    "N11/boundary/primary/at_bound": [
+      "False",
+      null,
+      null
+    ],
+    "N11/boundary/vae9182/T": [
+      1.06,
+      null,
+      3068
+    ],
+    "N11/boundary/vae9182/at_bound": [
+      "False",
+      null,
+      null
+    ],
+    "N11/boundary/ferplus/T": [
+      0.5,
+      null,
+      3153
+    ],
+    "N11/boundary/ferplus/at_bound": [
+      "True",
+      null,
+      null
+    ],
+    "N11/tstar/continuous_argmin": [
+      0.45304659827458493,
+      null,
+      null
+    ],
+    "N11/tstar/fine_grid_argmin": [
+      0.46,
+      null,
+      null
+    ],
+    "N11/tstar/boot_grid_point": [
+      0.5,
+      null,
+      null
+    ],
+    "N11/tstar/truncated": [
+      "True",
+      null,
+      null
+    ],
+    "N11/max_abs_dev": [
+      2.207158875111581e-08,
+      null,
+      null
+    ],
+    "N11/verdict/primary_number": [
+      0.11260453531138123,
+      null,
+      null
+    ],
+    "N11/verdict/primary_T": [
+      0.5063,
+      null,
+      null
+    ],
+    "N12/arm/0.26/jsd_raw": [
+      0.07368071377277374,
+      0.0007331671660701203,
+      3153
+    ],
+    "N12/arm/0.26/jsd_ts": [
+      0.05404462955891298,
+      0.00039916229348837574,
+      3153
+    ],
+    "N12/arm/0.26/ece_raw": [
+      0.058740805600987316,
+      0.003831888418531751,
+      3153
+    ],
+    "N12/arm/0.26/ece_ts": [
+      0.026590545011229615,
+      0.0005390404980543267,
+      3153
+    ],
+    "N12/arm/0.5063/jsd_raw": [
+      0.058690217634042106,
+      0.0004615663733709948,
+      3153
+    ],
+    "N12/arm/0.5063/jsd_ts": [
+      0.054273864072206496,
+      0.00020913379900477892,
+      3153
+    ],
+    "N12/arm/0.5063/ece_raw": [
+      0.018498602500361613,
+      0.0015881954147709731,
+      3153
+    ],
+    "N12/arm/0.5063/ece_ts": [
+      0.029646180016392822,
+      0.0016483823776464203,
+      3153
+    ],
+    "N12/arm/0.74/jsd_raw": [
+      0.05359788859883944,
+      0.0003727677382411302,
+      3153
+    ],
+    "N12/arm/0.74/jsd_ts": [
+      0.05458399447143702,
+      0.0002493870765654314,
+      3153
+    ],
+    "N12/arm/0.74/ece_raw": [
+      0.034363226014547714,
+      0.0012025338139968638,
+      3153
+    ],
+    "N12/arm/0.74/ece_ts": [
+      0.024559433540389003,
+      0.0041417624161009985,
+      3153
+    ],
+    "N12/arm/1.0/jsd_raw": [
+      0.05510709931453069,
+      0.00045023334519684265,
+      3153
+    ],
+    "N12/arm/1.0/jsd_ts": [
+      0.05454465795715183,
+      0.0005060496740959768,
+      3153
+    ],
+    "N12/arm/1.0/ece_raw": [
+      0.07830038099601992,
+      0.00460023162590826,
+      3153
+    ],
+    "N12/arm/1.0/ece_ts": [
+      0.02026964695235112,
+      0.0017399872522243173,
+      3153
+    ],
+    "N12/numerator": [
+      0.020082825173934303,
+      null,
+      3153
+    ],
+    "N12/numerator/arms": [
+      "0.26-0.74",
+      null,
+      null
+    ],
+    "N12/R_collapse": [
+      37.23420769058525,
+      null,
+      3153
+    ],
+    "N12/R_collapse/denominator": [
+      0.000539364912524036,
+      null,
+      3153
+    ],
+    "N12/R_collapse/per_seed_mean": [
+      24.396578442694373,
+      9.754663037287237,
+      3
+    ],
+    "N12/R_collapse/denominator_bar": [
+      0.0010120993481919536,
+      null,
+      null
+    ],
+    "N12/R_collapse/denom_within_noise": [
+      "True",
+      null,
+      null
+    ],
+    "N12/R_noise/mean sd": [
+      39.812619451964,
+      null,
+      3153
+    ],
+    "N12/R_noise/median sd": [
+      44.050957167388404,
+      null,
+      3153
+    ],
+    "N12/R_noise/largest sd": [
+      27.391877464427502,
+      null,
+      3153
+    ],
+    "N12/R_noise/smallest sd": [
+      53.87490148340959,
+      null,
+      3153
+    ],
+    "N12/R_noise/pooled sd": [
+      38.43218500768999,
+      null,
+      3153
+    ],
+    "N12/seed_sd/mean sd": [
+      0.000504433655719772,
+      null,
+      3153
+    ],
+    "N12/seed_sd/median sd": [
+      0.0004558998592839187,
+      null,
+      3153
+    ],
+    "N12/seed_sd/largest sd": [
+      0.0007331671660701203,
+      null,
+      3153
+    ],
+    "N12/seed_sd/smallest sd": [
+      0.0003727677382411302,
+      null,
+      3153
+    ],
+    "N12/seed_sd/pooled sd": [
+      0.000522552261077945,
+      null,
+      3153
+    ],
+    "N12/trap/ratio_from_printed": [
+      40.199999999999996,
+      null,
+      null
+    ],
+    "N12/trap/denom_for_exactly_40": [
+      0.0005020706293483576,
+      null,
+      null
+    ],
+    "N12/max_abs_dev": [
+      0.0,
+      null,
+      null
+    ],
+    "N12/verdict/collapse_printed": [
+      "37\u00d7",
+      null,
+      null
+    ],
+    "N12/verdict/noise_printed": [
+      "40\u00d7",
+      null,
+      null
+    ],
+    "N13/count/tokens": [
+      1740,
+      null,
+      null
+    ],
+    "N13/count/bound": [
+      1182,
+      null,
+      null
+    ],
+    "N13/count/derived": [
+      73,
+      null,
+      null
+    ],
+    "N13/count/exempt": [
+      489,
+      null,
+      null
+    ],
+    "N13/count/unbound": [
+      0,
+      null,
+      null
+    ],
+    "N13/count/layout_dropped": [
+      357,
+      null,
+      null
+    ],
+    "N13/count/mismatch": [
+      0,
+      null,
+      null
+    ],
+    "N13/count/derived_mismatch": [
+      0,
+      null,
+      null
+    ],
+    "N13/count/prose": [
+      3,
+      null,
+      null
+    ],
+    "N13/count/derived_in_scope": [
+      69,
+      null,
+      null
+    ],
+    "N13/count/derived_prose_anchored": [
+      4,
+      null,
+      null
+    ],
+    "N13/count/artifact_sources": [
+      49,
+      null,
+      null
+    ],
+    "N13/count/artifact_sources_unbanded": [
+      0,
+      null,
+      null
+    ],
+    "N13/count/artifact_sources_band_exempt": [
+      0,
+      null,
+      null
+    ],
+    "N13/count/artifact_sources_published_checked": [
+      true,
+      null,
+      null
+    ],
+    "N13/count/artifact_sources_band_checked": [
+      true,
+      null,
+      null
+    ],
+    "N13/count/signs": [
+      24,
+      null,
+      null
+    ],
+    "N13/count/sign_tokens": [
+      24,
+      null,
+      null
+    ],
+    "N13/count/sign_mismatch": [
+      0,
+      null,
+      null
+    ],
+    "N13/count/cross_checks": [
+      3,
+      null,
+      null
+    ],
+    "N13/count/cross_check_fail": [
+      0,
+      null,
+      null
+    ],
+    "N13/count/problems": [
+      0,
+      null,
+      null
+    ],
+    "N13/prose/methodology.entropy_pearson_T1": [
+      0.7238625516940989,
+      null,
+      null
+    ],
+    "N13/prose/fig_reliability.mean_conf_native": [
+      0.9688925743103027,
+      null,
+      null
+    ],
+    "N13/prose/fig_reliability.mean_conf_prescaled": [
+      0.9392253160476685,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.stage1/canonical": [
+      1.3493828549261861,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.stage1/confirm": [
+      1.3493927210953593,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.stage1/abs_diff": [
+      9.86616917320049e-06,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.stage1/tolerance": [
+      5e-05,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.stage1/ok": [
+      1,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.primary/canonical": [
+      1.261345227620692,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.primary/confirm": [
+      1.2613411785961113,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.primary/abs_diff": [
+      4.049024580732308e-06,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.primary/tolerance": [
+      0.0005,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.primary/ok": [
+      1,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.vae9182/canonical": [
+      0.9830836723309966,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.vae9182/confirm": [
+      0.9829375448886304,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.vae9182/abs_diff": [
+      0.00014612744236619513,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.vae9182/tolerance": [
+      0.0005,
+      null,
+      null
+    ],
+    "N13/xcheck/tstar_nll.vae9182/ok": [
+      1,
+      null,
+      null
+    ],
+    "N13/unbound_ids": [
+      0,
+      null,
+      null
+    ],
+    "N13/derived/jsd_collapse": [
+      37.23420769058525,
+      null,
+      null
+    ],
+    "N13/derived/jsd_collapse/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/jsd_noise_ratio": [
+      39.812619451964,
+      null,
+      null
+    ],
+    "N13/derived/jsd_noise_ratio/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/capacity_vs_teacher_lever": [
+      75.70891792013998,
+      null,
+      null
+    ],
+    "N13/derived/capacity_vs_teacher_lever/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/selection_cost_best": [
+      0.521514892578125,
+      null,
+      null
+    ],
+    "N13/derived/selection_cost_best/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/selection_cost_swa": [
+      0.34767405192057765,
+      null,
+      null
+    ],
+    "N13/derived/selection_cost_swa/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/selection_cost_last": [
+      0.8257268269856866,
+      null,
+      null
+    ],
+    "N13/derived/selection_cost_last/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/human_trade_ece": [
+      0.0158646235141861,
+      null,
+      null
+    ],
+    "N13/derived/human_trade_ece/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/human_trade_jsd": [
+      -0.005092329035202667,
+      null,
+      null
+    ],
+    "N13/derived/human_trade_jsd/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/collapse_ratio_5_10": [
+      16.304439211116655,
+      null,
+      null
+    ],
+    "N13/derived/collapse_ratio_5_10/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/collapse_ratio_10_20": [
+      13.502336447316722,
+      null,
+      null
+    ],
+    "N13/derived/collapse_ratio_10_20/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/selection_cost_best_caption": [
+      0.521514892578125,
+      null,
+      null
+    ],
+    "N13/derived/selection_cost_best_caption/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/ece_reduction_min": [
+      41.46350982881447,
+      null,
+      null
+    ],
+    "N13/derived/ece_reduction_min/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/ece_reduction_max": [
+      76.37482440691838,
+      null,
+      null
+    ],
+    "N13/derived/ece_reduction_max/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/accuracy_band_widest_arm": [
+      0.5106455485026089,
+      null,
+      null
+    ],
+    "N13/derived/accuracy_band_widest_arm/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/robust_agreeing_steps": [
+      224.0,
+      null,
+      null
+    ],
+    "N13/derived/robust_agreeing_steps/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/robust_agreement_pct": [
+      96.96969696969697,
+      null,
+      null
+    ],
+    "N13/derived/robust_agreement_pct/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/jsd_smallest_stratum_pct": [
+      0.8880431335236283,
+      null,
+      null
+    ],
+    "N13/derived/jsd_smallest_stratum_pct/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/tstar_criterion_cost_min_supp": [
+      13.306965250242223,
+      null,
+      null
+    ],
+    "N13/derived/tstar_criterion_cost_min_supp/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/tstar_criterion_cost_max_supp": [
+      14.315495183255484,
+      null,
+      null
+    ],
+    "N13/derived/tstar_criterion_cost_max_supp/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/tstar_criterion_cost_min": [
+      13.306965250242223,
+      null,
+      null
+    ],
+    "N13/derived/tstar_criterion_cost_min/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/tstar_criterion_cost_max": [
+      14.315495183255484,
+      null,
+      null
+    ],
+    "N13/derived/tstar_criterion_cost_max/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/intro.acc_band_stage1": [
+      0.3042144775390625,
+      null,
+      null
+    ],
+    "N13/derived/intro.acc_band_stage1/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/intro.acc_band_vae9182": [
+      0.5106455485026089,
+      null,
+      null
+    ],
+    "N13/derived/intro.acc_band_vae9182/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/intro.acc_decline_ferplus": [
+      0.4863128662109375,
+      null,
+      null
+    ],
+    "N13/derived/intro.acc_decline_ferplus/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/methodology.votes_below_ten_val": [
+      37.29781160799239,
+      null,
+      null
+    ],
+    "N13/derived/methodology.votes_below_ten_val/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/methodology.abstention_mass_val": [
+      37.29781160799239,
+      null,
+      null
+    ],
+    "N13/derived/methodology.abstention_mass_val/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/results.jsd_gap_student_ts": [
+      0.004145559676890273,
+      null,
+      null
+    ],
+    "N13/derived/results.jsd_gap_student_ts/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/results.ferplus_ece_share_low": [
+      12.66014162286082,
+      null,
+      null
+    ],
+    "N13/derived/results.ferplus_ece_share_low/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/results.ferplus_ece_share_high": [
+      14.973972246698288,
+      null,
+      null
+    ],
+    "N13/derived/results.ferplus_ece_share_high/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/results.tstar_gap_pct": [
+      63.33860640787701,
+      null,
+      null
+    ],
+    "N13/derived/results.tstar_gap_pct/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/meth.argmin_cells_agreeing": [
+      20.0,
+      null,
+      null
+    ],
+    "N13/derived/meth.argmin_cells_agreeing/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/meth.argmin_cells_total": [
+      21.0,
+      null,
+      null
+    ],
+    "N13/derived/meth.argmin_cells_total/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/meth.tstar_criterion_cost_min": [
+      13.306965250242223,
+      null,
+      null
+    ],
+    "N13/derived/meth.tstar_criterion_cost_min/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/meth.tstar_criterion_cost_max": [
+      14.315495183255484,
+      null,
+      null
+    ],
+    "N13/derived/meth.tstar_criterion_cost_max/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/meth.acc_band_stage1": [
+      0.3042144775390625,
+      null,
+      null
+    ],
+    "N13/derived/meth.acc_band_stage1/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/meth.acc_band_vae9182": [
+      0.5106455485026089,
+      null,
+      null
+    ],
+    "N13/derived/meth.acc_band_vae9182/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/meth.acc_trend_ferplus": [
+      0.4863128662109375,
+      null,
+      null
+    ],
+    "N13/derived/meth.acc_trend_ferplus/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.jsd_slice_coverage_pct": [
+      99.11195686647638,
+      null,
+      null
+    ],
+    "N13/derived/res.jsd_slice_coverage_pct/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.tradeoff_ece_cost": [
+      0.0158646235141861,
+      null,
+      null
+    ],
+    "N13/derived/res.tradeoff_ece_cost/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.tradeoff_jsd_gain": [
+      -0.005092329035202667,
+      null,
+      null
+    ],
+    "N13/derived/res.tradeoff_jsd_gain/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.sharpened_target_acc_gain": [
+      0.4017384847005161,
+      null,
+      null
+    ],
+    "N13/derived/res.sharpened_target_acc_gain/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.ferplus_control_mde": [
+      0.7406462477723339,
+      null,
+      null
+    ],
+    "N13/derived/res.ferplus_control_mde/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.corner_jsd_shortfall": [
+      0.00024057039611531813,
+      null,
+      null
+    ],
+    "N13/derived/res.corner_jsd_shortfall/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.detrend_shift_max": [
+      0.03591735709875876,
+      null,
+      null
+    ],
+    "N13/derived/res.detrend_shift_max/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.rafdb_ece_effect_pct": [
+      3.9260801766267126,
+      null,
+      null
+    ],
+    "N13/derived/res.rafdb_ece_effect_pct/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.fp16_b1_ratio_lo": [
+      1.204191359685497,
+      null,
+      null
+    ],
+    "N13/derived/res.fp16_b1_ratio_lo/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.fp16_b1_ratio_hi": [
+      1.3356501372012088,
+      null,
+      null
+    ],
+    "N13/derived/res.fp16_b1_ratio_hi/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.fp16_b32_ratio_lo": [
+      0.6258342719581147,
+      null,
+      null
+    ],
+    "N13/derived/res.fp16_b32_ratio_lo/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.fp16_b32_ratio_hi": [
+      0.6911735483397105,
+      null,
+      null
+    ],
+    "N13/derived/res.fp16_b32_ratio_hi/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.ece_reduction_rafdb": [
+      41.46350982881447,
+      null,
+      null
+    ],
+    "N13/derived/s5.ece_reduction_rafdb/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.full_swing": [
+      2.354304030269166,
+      null,
+      null
+    ],
+    "N13/derived/s5.full_swing/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.acc_band_stage1": [
+      0.3042144775390625,
+      null,
+      null
+    ],
+    "N13/derived/s5.acc_band_stage1/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.acc_paired_gain": [
+      0.1303761800130161,
+      null,
+      null
+    ],
+    "N13/derived/s5.acc_paired_gain/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.ctrl_deterioration": [
+      6.400373939315638,
+      null,
+      null
+    ],
+    "N13/derived/s5.ctrl_deterioration/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.acc_band_vae9182": [
+      0.5106455485026089,
+      null,
+      null
+    ],
+    "N13/derived/s5.acc_band_vae9182/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.ece_reduction_ferplus": [
+      76.37482440691838,
+      null,
+      null
+    ],
+    "N13/derived/s5.ece_reduction_ferplus/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.collapse_ratio_510": [
+      16.304439211116655,
+      null,
+      null
+    ],
+    "N13/derived/s5.collapse_ratio_510/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.collapse_ratio_1020": [
+      13.502336447316722,
+      null,
+      null
+    ],
+    "N13/derived/s5.collapse_ratio_1020/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.acc_band_ferplus": [
+      0.4863128662109375,
+      null,
+      null
+    ],
+    "N13/derived/s5.acc_band_ferplus/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.capacity_acc_span": [
+      1.9448064168294223,
+      null,
+      null
+    ],
+    "N13/derived/s5.capacity_acc_span/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.teacher_acc_span": [
+      0.42372894287109375,
+      null,
+      null
+    ],
+    "N13/derived/s5.teacher_acc_span/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.teacher_ece_factor": [
+      2.9198896221324078,
+      null,
+      null
+    ],
+    "N13/derived/s5.teacher_ece_factor/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.sel_cost_swa": [
+      0.34767405192057765,
+      null,
+      null
+    ],
+    "N13/derived/s5.sel_cost_swa/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.sel_cost_last": [
+      0.8257268269856866,
+      null,
+      null
+    ],
+    "N13/derived/s5.sel_cost_last/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.baseline_ece_overconf": [
+      0.07499720457567308,
+      null,
+      null
+    ],
+    "N13/derived/s5.baseline_ece_overconf/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/res.argmin_cells_agreeing_0": [
+      20.0,
+      null,
+      null
+    ],
+    "N13/derived/res.argmin_cells_agreeing_0/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.r2_floor": [
+      0.998817814674116,
+      null,
+      null
+    ],
+    "N13/derived/s5.r2_floor/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.baseline_ece_ratio": [
+      2.701017275410419,
+      null,
+      null
+    ],
+    "N13/derived/s5.baseline_ece_ratio/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.composite_T_stage1": [
+      8.0436,
+      null,
+      null
+    ],
+    "N13/derived/s5.composite_T_stage1/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.composite_T_vae9182": [
+      6.0,
+      null,
+      null
+    ],
+    "N13/derived/s5.composite_T_vae9182/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s5.composite_T_ferplus": [
+      3.0378,
+      null,
+      null
+    ],
+    "N13/derived/s5.composite_T_ferplus/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/s4.prereg_lead_min": [
+      18.0,
+      null,
+      null
+    ],
+    "N13/derived/s4.prereg_lead_min/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/figp.snr_floor": [
+      10.555678962646104,
+      null,
+      null
+    ],
+    "N13/derived/figp.snr_floor/ok": [
+      "True",
+      null,
+      null
+    ],
+    "PL/A1_lead_s": [
+      20.0,
+      null,
+      null
+    ],
+    "PL/A2_lead_s": [
+      31406.0,
+      null,
+      null
+    ],
+    "PL/A3_lead_s": [
+      19.0,
+      null,
+      null
+    ],
+    "PL/A4_lead_s": [
+      18.0,
+      null,
+      null
+    ],
+    "PL/A7_lead_s": [
+      28.0,
+      null,
+      null
+    ],
+    "PL/A8_lead_s": [
+      46634.0,
+      null,
+      null
+    ],
+    "PL/n_annotation_checked": [
+      5,
+      null,
+      null
+    ],
+    "PL/n_runs_csv_checked": [
+      4,
+      null,
+      null
+    ],
+    "B3/swa/primary/effective_number/ece/control_sd": [
+      0.0015160512777447031,
+      null,
+      3
+    ],
+    "B6/swa/primary/effective_number/ece/mde_2sd": [
+      0.0030321025554894063,
+      null,
+      3
+    ],
+    "B6/swa/primary/effective_number/ece/mde_pct": [
+      4.288060222188172,
+      null,
+      3
+    ],
+    "B3/swa/primary/effective_number/acc/control_sd": [
+      0.13037872314453125,
+      null,
+      3
+    ],
+    "B6/swa/primary/effective_number/acc/mde_2sd": [
+      0.2607574462890625,
+      null,
+      3
+    ],
+    "B6/swa/primary/effective_number/acc/mde_pct": [
+      0.29101630834002945,
+      null,
+      3
+    ],
+    "B3/swa/primary/none/ece/control_sd": [
+      0.0033333763685349763,
+      null,
+      3
+    ],
+    "B6/swa/primary/none/ece/mde_2sd": [
+      0.0066667527370699526,
+      null,
+      3
+    ],
+    "B6/swa/primary/none/ece/mde_pct": [
+      8.829465965185769,
+      null,
+      3
+    ],
+    "B3/swa/primary/none/acc/control_sd": [
+      0.3942937816679289,
+      null,
+      3
+    ],
+    "B6/swa/primary/none/acc/mde_2sd": [
+      0.7885875633358578,
+      null,
+      3
+    ],
+    "B6/swa/primary/none/acc/mde_pct": [
+      0.8834176954409565,
+      null,
+      3
+    ],
+    "B3/swa/stage1/effective_number/ece/control_sd": [
+      0.0011822187508027879,
+      null,
+      3
+    ],
+    "B6/swa/stage1/effective_number/ece/mde_2sd": [
+      0.0023644375016055757,
+      null,
+      3
+    ],
+    "B6/swa/stage1/effective_number/ece/mde_pct": [
+      3.233221085051225,
+      null,
+      3
+    ],
+    "B3/swa/stage1/effective_number/acc/control_sd": [
+      0.34029864066348586,
+      null,
+      3
+    ],
+    "B6/swa/stage1/effective_number/acc/mde_2sd": [
+      0.6805972813269717,
+      null,
+      3
+    ],
+    "B6/swa/stage1/effective_number/acc/mde_pct": [
+      0.7595752723336271,
+      null,
+      3
+    ],
+    "B3/swa/stage1/none/ece/control_sd": [
+      0.0021071884659464015,
+      null,
+      3
+    ],
+    "B6/swa/stage1/none/ece/mde_2sd": [
+      0.004214376931892803,
+      null,
+      3
+    ],
+    "B6/swa/stage1/none/ece/mde_pct": [
+      5.657741529427611,
+      null,
+      3
+    ],
+    "B3/swa/stage1/none/acc/control_sd": [
+      0.09957672977697758,
+      null,
+      3
+    ],
+    "B6/swa/stage1/none/acc/mde_2sd": [
+      0.19915345955395516,
+      null,
+      3
+    ],
+    "B6/swa/stage1/none/acc/mde_pct": [
+      0.22212898912746257,
+      null,
+      3
+    ],
+    "B3/swa/vae9182/effective_number/ece/control_sd": [
+      0.001996999098785806,
+      null,
+      3
+    ],
+    "B6/swa/vae9182/effective_number/ece/mde_2sd": [
+      0.003993998197571612,
+      null,
+      3
+    ],
+    "B6/swa/vae9182/effective_number/ece/mde_pct": [
+      12.118729184712207,
+      null,
+      3
+    ],
+    "B3/swa/vae9182/effective_number/acc/control_sd": [
+      0.3663557063958696,
+      null,
+      3
+    ],
+    "B6/swa/vae9182/effective_number/acc/mde_2sd": [
+      0.7327114127917392,
+      null,
+      3
+    ],
+    "B6/swa/vae9182/effective_number/acc/mde_pct": [
+      0.8145761317323036,
+      null,
+      3
+    ],
+    "B3/swa/vae9182/none/ece/control_sd": [
+      0.0026997325636259157,
+      null,
+      3
+    ],
+    "B6/swa/vae9182/none/ece/mde_2sd": [
+      0.0053994651272518315,
+      null,
+      3
+    ],
+    "B6/swa/vae9182/none/ece/mde_pct": [
+      19.446122917778666,
+      null,
+      3
+    ],
+    "B3/swa/vae9182/none/acc/control_sd": [
+      0.20700072136152095,
+      null,
+      3
+    ],
+    "B6/swa/vae9182/none/acc/mde_2sd": [
+      0.4140014427230419,
+      null,
+      3
+    ],
+    "B6/swa/vae9182/none/acc/mde_pct": [
+      0.459258679687602,
+      null,
+      3
+    ],
+    "B3/best/primary/effective_number/ece/control_sd": [
+      0.008490947711198687,
+      null,
+      3
+    ],
+    "B6/best/primary/effective_number/ece/mde_2sd": [
+      0.016981895422397374,
+      null,
+      3
+    ],
+    "B6/best/primary/effective_number/ece/mde_pct": [
+      28.00350457560071,
+      null,
+      3
+    ],
+    "B3/best/primary/effective_number/acc/control_sd": [
+      0.08623669851763957,
+      null,
+      3
+    ],
+    "B6/best/primary/effective_number/acc/mde_2sd": [
+      0.17247339703527914,
+      null,
+      3
+    ],
+    "B6/best/primary/effective_number/acc/mde_pct": [
+      0.19255763384093225,
+      null,
+      3
+    ],
+    "B3/best/primary/none/ece/control_sd": [
+      0.004834177700908321,
+      null,
+      3
+    ],
+    "B6/best/primary/none/ece/mde_2sd": [
+      0.009668355401816642,
+      null,
+      3
+    ],
+    "B6/best/primary/none/ece/mde_pct": [
+      13.667772741184761,
+      null,
+      3
+    ],
+    "B3/best/primary/none/acc/control_sd": [
+      0.19098490466857385,
+      null,
+      3
+    ],
+    "B6/best/primary/none/acc/mde_2sd": [
+      0.3819698093371477,
+      null,
+      3
+    ],
+    "B6/best/primary/none/acc/mde_pct": [
+      0.4288424055373983,
+      null,
+      3
+    ],
+    "B3/best/stage1/effective_number/ece/control_sd": [
+      0.005377395848968684,
+      null,
+      3
+    ],
+    "B6/best/stage1/effective_number/ece/mde_2sd": [
+      0.010754791697937367,
+      null,
+      3
+    ],
+    "B6/best/stage1/effective_number/ece/mde_pct": [
+      17.15623702056606,
+      null,
+      3
+    ],
+    "B3/best/stage1/effective_number/acc/control_sd": [
+      0.08202738991711436,
+      null,
+      3
+    ],
+    "B6/best/stage1/effective_number/acc/mde_2sd": [
+      0.16405477983422873,
+      null,
+      3
+    ],
+    "B6/best/stage1/effective_number/acc/mde_pct": [
+      0.1827817721664314,
+      null,
+      3
+    ],
+    "B3/best/stage1/none/ece/control_sd": [
+      0.0037020774760430156,
+      null,
+      3
+    ],
+    "B6/best/stage1/none/ece/mde_2sd": [
+      0.007404154952086031,
+      null,
+      3
+    ],
+    "B6/best/stage1/none/ece/mde_pct": [
+      11.367043147561708,
+      null,
+      3
+    ],
+    "B3/best/stage1/none/acc/control_sd": [
+      0.0752741909040948,
+      null,
+      3
+    ],
+    "B6/best/stage1/none/acc/mde_2sd": [
+      0.1505483818081896,
+      null,
+      3
+    ],
+    "B6/best/stage1/none/acc/mde_pct": [
+      0.1676118624134076,
+      null,
+      3
+    ],
+    "B3/best/vae9182/effective_number/ece/control_sd": [
+      0.002106648231758117,
+      null,
+      3
+    ],
+    "B6/best/vae9182/effective_number/ece/mde_2sd": [
+      0.004213296463516234,
+      null,
+      3
+    ],
+    "B6/best/vae9182/effective_number/ece/mde_pct": [
+      15.352971971774695,
+      null,
+      3
+    ],
+    "B3/best/vae9182/effective_number/acc/control_sd": [
+      0.19098772580899204,
+      null,
+      3
+    ],
+    "B6/best/vae9182/effective_number/acc/mde_2sd": [
+      0.3819754516179841,
+      null,
+      3
+    ],
+    "B6/best/vae9182/effective_number/acc/mde_pct": [
+      0.4231197520629491,
+      null,
+      3
+    ],
+    "B3/best/vae9182/none/ece/control_sd": [
+      0.0012174427703629184,
+      null,
+      3
+    ],
+    "B6/best/vae9182/none/ece/mde_2sd": [
+      0.002434885540725837,
+      null,
+      3
+    ],
+    "B6/best/vae9182/none/ece/mde_pct": [
+      10.81462003850305,
+      null,
+      3
+    ],
+    "B3/best/vae9182/none/acc/control_sd": [
+      0.2667949993859203,
+      null,
+      3
+    ],
+    "B6/best/vae9182/none/acc/mde_2sd": [
+      0.5335899987718405,
+      null,
+      3
+    ],
+    "B6/best/vae9182/none/acc/mde_pct": [
+      0.5903548909804618,
+      null,
+      3
+    ],
+    "B3/last/primary/effective_number/ece/control_sd": [
+      0.0030779976861328583,
+      null,
+      3
+    ],
+    "B6/last/primary/effective_number/ece/mde_2sd": [
+      0.0061559953722657166,
+      null,
+      3
+    ],
+    "B6/last/primary/effective_number/ece/mde_pct": [
+      8.779625077696744,
+      null,
+      3
+    ],
+    "B3/last/primary/effective_number/acc/control_sd": [
+      0.2587129791822882,
+      null,
+      3
+    ],
+    "B6/last/primary/effective_number/acc/mde_2sd": [
+      0.5174259583645764,
+      null,
+      3
+    ],
+    "B6/last/primary/effective_number/acc/mde_pct": [
+      0.5847008451063753,
+      null,
+      3
+    ],
+    "B3/last/primary/none/ece/control_sd": [
+      0.004765795568573609,
+      null,
+      3
+    ],
+    "B6/last/primary/none/ece/mde_2sd": [
+      0.009531591137147218,
+      null,
+      3
+    ],
+    "B6/last/primary/none/ece/mde_pct": [
+      12.941546667899885,
+      null,
+      3
+    ],
+    "B3/last/primary/none/acc/control_sd": [
+      0.30285716396283935,
+      null,
+      3
+    ],
+    "B6/last/primary/none/acc/mde_2sd": [
+      0.6057143279256787,
+      null,
+      3
+    ],
+    "B6/last/primary/none/acc/mde_pct": [
+      0.6855625326919105,
+      null,
+      3
+    ],
+    "B3/last/stage1/effective_number/ece/control_sd": [
+      0.008143678659054292,
+      null,
+      3
+    ],
+    "B6/last/stage1/effective_number/ece/mde_2sd": [
+      0.016287357318108583,
+      null,
+      3
+    ],
+    "B6/last/stage1/effective_number/ece/mde_pct": [
+      23.24979468289545,
+      null,
+      3
+    ],
+    "B3/last/stage1/effective_number/acc/control_sd": [
+      0.09957672977697758,
+      null,
+      3
+    ],
+    "B6/last/stage1/effective_number/acc/mde_2sd": [
+      0.19915345955395516,
+      null,
+      3
+    ],
+    "B6/last/stage1/effective_number/acc/mde_pct": [
+      0.22378322771843917,
+      null,
+      3
+    ],
+    "B3/last/stage1/none/ece/control_sd": [
+      0.005174486773771958,
+      null,
+      3
+    ],
+    "B6/last/stage1/none/ece/mde_2sd": [
+      0.010348973547543916,
+      null,
+      3
+    ],
+    "B6/last/stage1/none/ece/mde_pct": [
+      14.978989385446019,
+      null,
+      3
+    ],
+    "B3/last/stage1/none/acc/control_sd": [
+      0.19098490466857385,
+      null,
+      3
+    ],
+    "B6/last/stage1/none/acc/mde_2sd": [
+      0.3819698093371477,
+      null,
+      3
+    ],
+    "B6/last/stage1/none/acc/mde_pct": [
+      0.42858101370555657,
+      null,
+      3
+    ],
+    "B3/last/vae9182/effective_number/ece/control_sd": [
+      0.0010717752881161812,
+      null,
+      3
+    ],
+    "B6/last/vae9182/effective_number/ece/mde_2sd": [
+      0.0021435505762323623,
+      null,
+      3
+    ],
+    "B6/last/vae9182/effective_number/ece/mde_pct": [
+      6.9737163399213316,
+      null,
+      3
+    ],
+    "B3/last/vae9182/effective_number/acc/control_sd": [
+      0.16726154800857174,
+      null,
+      3
+    ],
+    "B6/last/vae9182/effective_number/acc/mde_2sd": [
+      0.3345230960171435,
+      null,
+      3
+    ],
+    "B6/last/vae9182/effective_number/acc/mde_pct": [
+      0.3724386808934527,
+      null,
+      3
+    ],
+    "B3/last/vae9182/none/ece/control_sd": [
+      0.003935573403821359,
+      null,
+      3
+    ],
+    "B6/last/vae9182/none/ece/mde_2sd": [
+      0.007871146807642717,
+      null,
+      3
+    ],
+    "B6/last/vae9182/none/ece/mde_pct": [
+      26.52730488783548,
+      null,
+      3
+    ],
+    "B3/last/vae9182/none/acc/control_sd": [
+      0.2667949993859203,
+      null,
+      3
+    ],
+    "B6/last/vae9182/none/acc/mde_2sd": [
+      0.5335899987718405,
+      null,
+      3
+    ],
+    "B6/last/vae9182/none/acc/mde_pct": [
+      0.5955089614005545,
+      null,
+      3
+    ],
+    "B3/n_family_denominators": [
+      18,
+      null,
+      null
+    ],
+    "B4/tau3_T1.70/ece_mean": [
+      0.040542328897790775,
+      0.001984703300561555,
+      3
+    ],
+    "B4/tau3_T1.70/acc_mean": [
+      89.63494110107422,
+      0.1814764189733853,
+      3
+    ],
+    "B4/tau6_T0.85/ece_mean": [
+      0.07967298300447075,
+      0.001631989300491036,
+      3
+    ],
+    "B4/tau6_T0.85/acc_mean": [
+      89.64580535888672,
+      0.17951461794657525,
+      3
+    ],
+    "B4/tau6_T1.70/ece_mean": [
+      0.04474241582790907,
+      0.0029210060770113494,
+      3
+    ],
+    "B4/tau6_T1.70/acc_mean": [
+      89.42851003011067,
+      0.19647108990990797,
+      3
+    ],
+    "B4/tau12_T0.85/ece_mean": [
+      0.07714802330146919,
+      0.003114968431349774,
+      3
+    ],
+    "B4/tau12_T0.85/acc_mean": [
+      89.9826151529948,
+      0.41528680534172224,
+      3
+    ],
+    "B4/T\u00b7\u03c4 = 5.10/d_ece": [
+      -0.03913065410667997,
+      0.0031896736668642375,
+      3
+    ],
+    "B4/T\u00b7\u03c4 = 5.10/d_acc": [
+      -0.0108642578125,
+      0.14697656931214573,
+      3
+    ],
+    "B4/T\u00b7\u03c4 = 5.10/ece_signs": [
+      "---",
+      null,
+      3
+    ],
+    "B4/T\u00b7\u03c4 = 10.20/d_ece": [
+      -0.03240560747356013,
+      0.002906759891641755,
+      3
+    ],
+    "B4/T\u00b7\u03c4 = 10.20/d_acc": [
+      -0.5541051228841146,
+      0.2667949993859203,
+      3
+    ],
+    "B4/T\u00b7\u03c4 = 10.20/ece_signs": [
+      "---",
+      null,
+      3
+    ],
+    "B4/\u03c4 etkisi @ T=1.70/d_ece": [
+      0.004200086930118296,
+      0.0027582328942736345,
+      3
+    ],
+    "B4/\u03c4 etkisi @ T=1.70/d_acc": [
+      -0.20643107096354166,
+      0.37495408844516204,
+      3
+    ],
+    "B4/\u03c4 etkisi @ T=1.70/ece_signs": [
+      "+++",
+      null,
+      3
+    ],
+    "B4/T etkisi @ \u03c4=6/d_ece": [
+      -0.03493056717656168,
+      0.004541047208081418,
+      3
+    ],
+    "B4/T etkisi @ \u03c4=6/d_acc": [
+      -0.21729532877604166,
+      0.3215701956433608,
+      3
+    ],
+    "B4/T etkisi @ \u03c4=6/ece_signs": [
+      "---",
+      null,
+      3
+    ],
+    "B4/\u03c4 etkisi @ T=0.85/d_ece": [
+      -0.0025249597030015483,
+      0.004366016535763783,
+      3
+    ],
+    "B4/\u03c4 etkisi @ T=0.85/d_acc": [
+      0.33680979410807294,
+      0.5760394654602797,
+      3
+    ],
+    "B4/\u03c4 etkisi @ T=0.85/ece_signs": [
+      "+--",
+      null,
+      3
+    ],
+    "B9/n_cells": [
+      24,
+      null,
+      null
+    ],
+    "B9/n_empty": [
+      3,
+      null,
+      null
+    ],
+    "B9/stage1/g2g_kl+adaptive_t/class": [
+      "ko\u015fulmad\u0131",
+      null,
+      null
+    ],
+    "B9/primary/g2g_kl+adaptive_t/class": [
+      "ko\u015fulmad\u0131",
+      null,
+      null
+    ],
+    "B9/vae9182/gate:target_logvar/class": [
+      "elendi",
+      null,
+      null
+    ],
+    "B9/vae9182/g2g_kl+adaptive_t/n_in_grid": [
+      1,
+      null,
+      null
+    ],
+    "B9/vae9182/g2g_kl+adaptive_t/n_in_ledger": [
+      3,
+      null,
+      null
+    ],
+    "B8/n_curves": [
+      9,
+      null,
+      null
+    ],
+    "B8/n_rho_positive": [
+      8,
+      null,
+      null
+    ],
+    "B8/n_strictly_monotone_in_T": [
+      0,
+      null,
+      null
+    ],
+    "B8/rafdb_stage1/seed1/rho_T": [
+      0.0,
+      null,
+      5
+    ],
+    "B8/rafdb_stage1/seed1/span": [
+      0.019918145012047306,
+      null,
+      5
+    ],
+    "B8/rafdb_stage1/seed42/rho_T": [
+      0.1,
+      null,
+      5
+    ],
+    "B8/rafdb_stage1/seed42/span": [
+      0.024917318061907237,
+      null,
+      5
+    ],
+    "B8/rafdb_stage1/seed43/rho_T": [
+      0.1,
+      null,
+      5
+    ],
+    "B8/rafdb_stage1/seed43/span": [
+      0.018490675093686265,
+      null,
+      5
+    ],
+    "B8/rafdb_vae9182/seed1/rho_T": [
+      0.9,
+      null,
+      5
+    ],
+    "B8/rafdb_vae9182/seed1/span": [
+      0.16299414598763068,
+      null,
+      5
+    ],
+    "B8/rafdb_vae9182/seed42/rho_T": [
+      0.9,
+      null,
+      5
+    ],
+    "B8/rafdb_vae9182/seed42/span": [
+      0.1714208161426803,
+      null,
+      5
+    ],
+    "B8/rafdb_vae9182/seed43/rho_T": [
+      0.9,
+      null,
+      5
+    ],
+    "B8/rafdb_vae9182/seed43/span": [
+      0.16437482582271642,
+      null,
+      5
+    ],
+    "B8/ferplus/seed1/rho_T": [
+      0.4,
+      null,
+      4
+    ],
+    "B8/ferplus/seed1/span": [
+      0.01942502873835396,
+      null,
+      4
+    ],
+    "B8/ferplus/seed42/rho_T": [
+      0.4,
+      null,
+      4
+    ],
+    "B8/ferplus/seed42/span": [
+      0.016677727207394945,
+      null,
+      4
+    ],
+    "B8/ferplus/seed43/rho_T": [
+      0.4,
+      null,
+      4
+    ],
+    "B8/ferplus/seed43/span": [
+      0.022575970239348916,
+      null,
+      4
+    ],
+    "B7/mean_entropy_conditional_8": [
+      0.44011032581329346,
+      null,
+      3153
+    ],
+    "B7/mean_entropy_with_abstention_10": [
+      0.5487838387489319,
+      null,
+      3153
+    ],
+    "B7/rows_with_abstention": [
+      1176,
+      null,
+      3153
+    ],
+    "B7/conditional_8/T_star_jsd": [
+      0.74,
+      null,
+      3153
+    ],
+    "B7/conditional_8/mean_jsd": [
+      0.044019557535648346,
+      null,
+      3153
+    ],
+    "B7/abstention_10/T_star_jsd": [
+      0.74,
+      null,
+      3153
+    ],
+    "B7/abstention_10/mean_jsd": [
+      0.05882610008120537,
+      null,
+      3153
+    ],
+    "B2/ferplus/best/slope": [
+      0.5824134587905833,
+      null,
+      9
+    ],
+    "B2/ferplus/best/intercept": [
+      0.020829451582802097,
+      null,
+      9
+    ],
+    "B2/ferplus/best/pearson": [
+      0.9388037549058944,
+      null,
+      9
+    ],
+    "B2/ferplus/best/r2_9runs": [
+      0.8813524902254068,
+      null,
+      9
+    ],
+    "B2/ferplus/swa/slope": [
+      0.4458200105712234,
+      null,
+      9
+    ],
+    "B2/ferplus/swa/intercept": [
+      0.024636715053925947,
+      null,
+      9
+    ],
+    "B2/ferplus/swa/pearson": [
+      0.8620517213486897,
+      null,
+      9
+    ],
+    "B2/ferplus/swa/r2_9runs": [
+      0.743133170280239,
+      null,
+      9
+    ],
+    "B2/ferplus/last/slope": [
+      0.5061726897310551,
+      null,
+      9
+    ],
+    "B2/ferplus/last/intercept": [
+      0.023556443572070877,
+      null,
+      9
+    ],
+    "B2/ferplus/last/pearson": [
+      0.8893839563943767,
+      null,
+      9
+    ],
+    "B2/ferplus/last/r2_9runs": [
+      0.7910038218917147,
+      null,
+      9
+    ],
+    "B2/rafdb/producer_found": [
+      false,
+      null,
+      null
+    ],
+    "B2/rafdb/slope_range_lo": [
+      1.3522449889024615,
+      null,
+      null
+    ],
+    "B2/rafdb/slope_range_hi": [
+      1.8743669629560806,
+      null,
+      null
+    ],
+    "B10/01/verdict": [
+      "yay\u0131ml\u0131 do\u011fru",
+      null,
+      null
+    ],
+    "B10/01/measured": [
+      "56.6764 \u2013 76.6244",
+      null,
+      null
+    ],
+    "B10/02/verdict": [
+      "yay\u0131ml\u0131 do\u011fru",
+      null,
+      null
+    ],
+    "B10/02/measured": [
+      "13.31 \u2013 14.32",
+      null,
+      null
+    ],
+    "B10/03/verdict": [
+      "panel hakl\u0131",
+      null,
+      null
+    ],
+    "B10/03/measured": [
+      "0.00215",
+      null,
+      null
+    ],
+    "B10/04/verdict": [
+      "yay\u0131ml\u0131 do\u011fru",
+      null,
+      null
+    ],
+    "B10/04/measured": [
+      "62.8847\u00d7",
+      null,
+      null
+    ],
+    "B10/05/verdict": [
+      "kollarla e\u015fle\u015ftirilmeli",
+      null,
+      null
+    ],
+    "B10/05/measured": [
+      "scratch0712 0.655 \u00b7 pretrained2248 0.716 \u00b7 scratch2248 0.649",
+      null,
+      null
+    ],
+    "B10/06/verdict": [
+      "yay\u0131ml\u0131 do\u011fru",
+      null,
+      null
+    ],
+    "B10/06/measured": [
+      "%18.58 (do\u011frusal payda) / %22.82 (varyasyonel payda)",
+      null,
+      null
+    ],
+    "B10/07/verdict": [
+      "~40\u00d7 do\u011fru, 37\u00d7 yeniden \u00fcretilemiyor",
+      null,
+      null
+    ],
+    "B10/07/measured": [
+      "a\u00e7\u0131kl\u0131k 0.020083 \u00b7 ~39.8\u00d7",
+      null,
+      null
+    ],
+    "B10/08/verdict": [
+      "ikisi de de\u011fil \u2014 \u00fc\u00e7 say\u0131 \u00fc\u00e7 FARKLI \u015fey",
+      null,
+      null
+    ],
+    "B10/08/measured": [
+      "0.45305",
+      null,
+      null
+    ],
+    "B10/09/verdict": [
+      "ikisi de de\u011fil",
+      null,
+      null
+    ],
+    "B10/09/measured": [
+      "RAF-DB [0.60, 2.95] ad\u0131m 0.05 (48 nokta) \u00b7 FERPlus [0.10, 4.00] ad\u0131m 0.02 (196 nokta) \u00b7 s\u00fcrekli fit [0.1, 3.0] ad\u0131m 0.005",
+      null,
+      null
+    ],
+    "B10/10/verdict": [
+      "ikisi de do\u011fru, ama ayn\u0131 \u015feyi \u00f6l\u00e7m\u00fcyorlar",
+      null,
+      null
+    ],
+    "B10/10/measured": [
+      "bar = 1\u00d7 kontrol sd = 0.0012",
+      null,
+      null
+    ],
+    "T8/K=50/n_runs": [
+      131,
+      null,
+      null
+    ],
+    "T8/K=50/argmax_in_last_K": [
+      0.3435114503816794,
+      null,
+      131
+    ],
+    "T8/K=50/argmax_in_last_K_count": [
+      45,
+      null,
+      131
+    ],
+    "T8/K=50/a1_max_all_minus_mean_lastK": [
+      0.8383560320082356,
+      0.4415832092165274,
+      131
+    ],
+    "T8/K=50/a2_pure_order_statistic": [
+      0.6445305842767274,
+      0.20325974256195473,
+      131
+    ],
+    "T8/K=50/val_loss_at_selected_minus_mean_lastK": [
+      -0.015114248355246178,
+      0.02419635144785044,
+      131
+    ],
+    "T8/K=100/n_runs": [
+      131,
+      null,
+      null
+    ],
+    "T8/K=100/argmax_in_last_K": [
+      0.6717557251908397,
+      null,
+      131
+    ],
+    "T8/K=100/argmax_in_last_K_count": [
+      88,
+      null,
+      131
+    ],
+    "T8/K=100/a1_max_all_minus_mean_lastK": [
+      0.8057540442113855,
+      0.25809907248070824,
+      131
+    ],
+    "T8/K=100/a2_pure_order_statistic": [
+      0.7639534297093329,
+      0.25876803535423654,
+      131
+    ],
+    "T8/K=100/val_loss_at_selected_minus_mean_lastK": [
+      -0.013652593618214547,
+      0.016073766245412877,
+      131
+    ],
+    "T8w/K=50/n_runs": [
+      199,
+      null,
+      null
+    ],
+    "T8w/K=50/argmax_in_last_K": [
+      0.3417085427135678,
+      null,
+      199
+    ],
+    "T8w/K=50/argmax_in_last_K_count": [
+      68,
+      null,
+      199
+    ],
+    "T8w/K=50/a1_max_all_minus_mean_lastK": [
+      0.8077872981458946,
+      0.38025268585099675,
+      199
+    ],
+    "T8w/K=50/a2_pure_order_statistic": [
+      0.6312199827294698,
+      0.18404940272594952,
+      199
+    ],
+    "T8w/K=50/val_loss_at_selected_minus_mean_lastK": [
+      -0.013179494249105575,
+      0.02063541423554724,
+      199
+    ],
+    "T8w/K=100/n_runs": [
+      199,
+      null,
+      null
+    ],
+    "T8w/K=100/argmax_in_last_K": [
+      0.6482412060301508,
+      null,
+      199
+    ],
+    "T8w/K=100/argmax_in_last_K_count": [
+      129,
+      null,
+      199
+    ],
+    "T8w/K=100/a1_max_all_minus_mean_lastK": [
+      0.7916996902751043,
+      0.23506363039174746,
+      199
+    ],
+    "T8w/K=100/a2_pure_order_statistic": [
+      0.7442001277637699,
+      0.226152032696426,
+      199
+    ],
+    "T8w/K=100/val_loss_at_selected_minus_mean_lastK": [
+      -0.012613629769308302,
+      0.014277291987231872,
+      199
+    ],
+    "T8/b_best_minus_last/d_acc": [
+      0.7658466018793237,
+      0.43107852109679157,
+      131
+    ],
+    "T8/b_best_minus_last/d_ece": [
+      -0.002878700403167627,
+      0.009218824488955835,
+      131
+    ],
+    "T8/c_best_minus_swa/d_acc": [
+      0.1292732368081303,
+      0.262038968256677,
+      118
+    ],
+    "T8/c_best_minus_swa/d_ece": [
+      -0.0005773924487635059,
+      0.011751979016303862,
+      118
+    ],
+    "OST/K=50/a2_raw": [
+      0.6445305842767274,
+      0.20325974256195473,
+      131
+    ],
+    "OST/K=50/a2_detrended": [
+      0.640246212793552,
+      0.21816718766601323,
+      131
+    ],
+    "OST/K=50/slope": [
+      0.0029883266824495915,
+      0.010515100210478863,
+      131
+    ],
+    "OST/K=50/drift": [
+      0.14642800744002998,
+      0.5152399103134643,
+      131
+    ],
+    "OST/K=50/published_a2": [
+      0.6445,
+      null,
+      131
+    ],
+    "OST/K=50/anchor_dev": [
+      3.0584276727418924e-05,
+      null,
+      131
+    ],
+    "OST/K=50/anchor_pop_matches": [
+      true,
+      null,
+      null
+    ],
+    "OST/K=100/a2_raw": [
+      0.7639534297093329,
+      0.25876803535423654,
+      131
+    ],
+    "OST/K=100/a2_detrended": [
+      0.7280360726105741,
+      0.23832015276655166,
+      131
+    ],
+    "OST/K=100/slope": [
+      -0.00015622300374403816,
+      0.0043937526011379015,
+      131
+    ],
+    "OST/K=100/drift": [
+      -0.015466077370659774,
+      0.43498150751265224,
+      131
+    ],
+    "OST/K=100/published_a2": [
+      0.764,
+      null,
+      131
+    ],
+    "OST/K=100/anchor_dev": [
+      4.6570290667125036e-05,
+      null,
+      131
+    ],
+    "OST/K=100/anchor_pop_matches": [
+      true,
+      null,
+      null
+    ],
+    "OST/growth_raw": [
+      1.1852865455044592,
+      null,
+      null
+    ],
+    "OST/growth_detrended": [
+      1.13711890529422,
+      null,
+      null
+    ],
+    "T6/stage1/teacher_acc": [
+      92.24250030517578,
+      null,
+      null
+    ],
+    "T6/stage1/teacher_ece": [
+      0.03779733980455796,
+      null,
+      null
+    ],
+    "T6/stage1/T_star": [
+      1.3493927210953593,
+      null,
+      null
+    ],
+    "T6/stage1/teacher_headroom": [
+      0.0219672559584446,
+      null,
+      null
+    ],
+    "T6a/stage1/swa/student_acc": [
+      89.60234832763672,
+      0.34029864066348586,
+      3
+    ],
+    "T6a/stage1/swa/student_ece": [
+      0.07312947179942429,
+      0.0011822187508027879,
+      3
+    ],
+    "T6a/stage1/best/student_acc": [
+      89.75445302327473,
+      0.08202738991711436,
+      3
+    ],
+    "T6a/stage1/best/student_ece": [
+      0.06268735786900734,
+      0.005377395848968684,
+      3
+    ],
+    "T6a/stage1/last/student_acc": [
+      88.99391682942708,
+      0.09957672977697758,
+      3
+    ],
+    "T6a/stage1/last/student_ece": [
+      0.07005376838915041,
+      0.008143678659054292,
+      3
+    ],
+    "T6/primary/teacher_acc": [
+      92.01434326171875,
+      null,
+      null
+    ],
+    "T6/primary/teacher_ece": [
+      0.039575973411504727,
+      null,
+      null
+    ],
+    "T6/primary/T_star": [
+      1.2613411785961113,
+      null,
+      null
+    ],
+    "T6/primary/teacher_headroom": [
+      0.020571786764586607,
+      null,
+      null
+    ],
+    "T6a/primary/swa/student_acc": [
+      89.60234832763672,
+      0.13037872314453125,
+      3
+    ],
+    "T6a/primary/swa/student_ece": [
+      0.07071035382852302,
+      0.0015160512777447031,
+      3
+    ],
+    "T6a/primary/best/student_acc": [
+      89.5697530110677,
+      0.08623669851763957,
+      3
+    ],
+    "T6a/primary/best/student_ece": [
+      0.06064203634424243,
+      0.008490947711198687,
+      3
+    ],
+    "T6a/primary/last/student_acc": [
+      88.49413553873698,
+      0.2587129791822882,
+      3
+    ],
+    "T6a/primary/last/student_ece": [
+      0.0701168366278425,
+      0.0030779976861328583,
+      3
+    ],
+    "T6/vae9182/teacher_acc": [
+      91.81877136230469,
+      null,
+      null
+    ],
+    "T6/vae9182/teacher_ece": [
+      0.013553927899028671,
+      null,
+      null
+    ],
+    "T6/vae9182/T_star": [
+      0.9829375448886304,
+      null,
+      null
+    ],
+    "T6/vae9182/teacher_headroom": [
+      0.0017450385019085989,
+      null,
+      null
+    ],
+    "T6a/vae9182/swa/student_acc": [
+      89.9500223795573,
+      0.3663557063958696,
+      3
+    ],
+    "T6a/vae9182/swa/student_ece": [
+      0.032957236164746107,
+      0.001996999098785806,
+      3
+    ],
+    "T6a/vae9182/best/student_acc": [
+      90.27596791585286,
+      0.19098772580899204,
+      3
+    ],
+    "T6a/vae9182/best/student_ece": [
+      0.027442872111419655,
+      0.002106648231758117,
+      3
+    ],
+    "T6a/vae9182/last/student_acc": [
+      89.81964365641277,
+      0.16726154800857174,
+      3
+    ],
+    "T6a/vae9182/last/student_ece": [
+      0.03073756476100866,
+      0.0010717752881161812,
+      3
+    ],
+    "T6a/swa/cost_wrong_pick": [
+      0.34767405192057765,
+      null,
+      null
+    ],
+    "T6a/swa/rho_teacherACC": [
+      -0.8660254037844387,
+      null,
+      null
+    ],
+    "T6a/swa/rho_negTeacherECE": [
+      0.8660254037844387,
+      null,
+      null
+    ],
+    "T6a/swa/ranking": [
+      "vae9182 > {stage1 = primary}",
+      null,
+      null
+    ],
+    "T6a/swa/best_teacher": [
+      "vae9182",
+      null,
+      null
+    ],
+    "T6a/swa/strict_total_order": [
+      false,
+      null,
+      null
+    ],
+    "T6a/best/cost_wrong_pick": [
+      0.521514892578125,
+      null,
+      null
+    ],
+    "T6a/best/rho_teacherACC": [
+      -0.5,
+      null,
+      null
+    ],
+    "T6a/best/rho_negTeacherECE": [
+      1.0,
+      null,
+      null
+    ],
+    "T6a/best/ranking": [
+      "vae9182 > stage1 > primary",
+      null,
+      null
+    ],
+    "T6a/best/best_teacher": [
+      "vae9182",
+      null,
+      null
+    ],
+    "T6a/best/strict_total_order": [
+      true,
+      null,
+      null
+    ],
+    "T6a/last/cost_wrong_pick": [
+      0.8257268269856866,
+      null,
+      null
+    ],
+    "T6a/last/rho_teacherACC": [
+      -0.5,
+      null,
+      null
+    ],
+    "T6a/last/rho_negTeacherECE": [
+      1.0,
+      null,
+      null
+    ],
+    "T6a/last/ranking": [
+      "vae9182 > stage1 > primary",
+      null,
+      null
+    ],
+    "T6a/last/best_teacher": [
+      "vae9182",
+      null,
+      null
+    ],
+    "T6a/last/strict_total_order": [
+      true,
+      null,
+      null
+    ],
+    "T6a/best_identical_all_ckpts": [
+      true,
+      null,
+      null
+    ],
+    "T6a/ranking_identical_all_ckpts": [
+      false,
+      null,
+      null
+    ],
+    "T6a/n_pairwise_reversals": [
+      0,
+      null,
+      null
+    ],
+    "MECH/gate/n_runs": [
+      25,
+      null,
+      null
+    ],
+    "MECH/gate/gate_uncertainty_source=mean_logvar": [
+      10,
+      null,
+      25
+    ],
+    "MECH/gate/gate_uncertainty_source=oracle_error": [
+      9,
+      null,
+      25
+    ],
+    "MECH/gate/gate_uncertainty_source=target_logvar": [
+      6,
+      null,
+      25
+    ],
+    "MECH/gate/gate_norm=batch": [
+      25,
+      null,
+      25
+    ],
+    "MECH/gate/gate_alpha_lo=0.1": [
+      25,
+      null,
+      25
+    ],
+    "MECH/gate/gate_alpha_hi=0.7": [
+      25,
+      null,
+      25
+    ],
+    "MECH/gate/gate_k=2": [
+      25,
+      null,
+      25
+    ],
+    "MECH/gate/gate_tau=0": [
+      25,
+      null,
+      25
+    ],
+    "MECH/adaptive_t/n_runs": [
+      19,
+      null,
+      null
+    ],
+    "MECH/adaptive_t/adaptive_t_gamma=0.5": [
+      19,
+      null,
+      19
+    ],
+    "MECH/g2g/n_runs": [
+      14,
+      null,
+      null
+    ],
+    "MECH/g2g/g2g_weight=0.1": [
+      14,
+      null,
+      14
+    ],
+    "MECH/g2g/g2g_mode=kl": [
+      14,
+      null,
+      14
+    ],
+    "MECH/g2g/g2g_warmup_epochs=0": [
+      14,
+      null,
+      14
+    ],
+    "MECH/logit_std/n_runs": [
+      10,
+      null,
+      null
+    ],
+    "MECH/ctkd/n_runs": [
+      4,
+      null,
+      null
+    ],
+    "MECH/ctkd/ctkd_t_min=1": [
+      4,
+      null,
+      4
+    ],
+    "MECH/ctkd/ctkd_t_max=8": [
+      4,
+      null,
+      4
+    ],
+    "MECH/ctkd/ctkd_grl_lambda_max=1": [
+      4,
+      null,
+      4
+    ],
+    "MECH/ctkd/lr=0.0003": [
+      4,
+      null,
+      4
+    ],
+    "MECH/common/temperature=6": [
+      5,
+      null,
+      null
+    ],
+    "MECH/common/alpha=0.3": [
+      5,
+      null,
+      null
+    ],
+    "MECH/common/teacher_temperature_scale=None": [
+      5,
+      null,
+      null
+    ],
+    "MECH/common/teacher_temperature_scale=1": [
+      4,
+      null,
+      null
+    ],
+    "MECH/common/teacher_temperature_scale=0.7311": [
+      1,
+      null,
+      null
+    ],
+    "LOGITS/total": [
+      42,
+      null,
+      3518317
+    ],
+    "LOGITS/identical": [
+      42,
+      null,
+      42
+    ],
+    "LOGITS/FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed1/sha256": [
+      "43d9f1c9409f14c85349d0e416ff13537b6a4cef89ef9e2e17842b2e1d925720",
+      null,
+      95428
+    ],
+    "LOGITS/FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed42/sha256": [
+      "0aef19b677e2567bad338e448dba2a482321fa448cf764acccd9077e40607d8b",
+      null,
+      95419
+    ],
+    "LOGITS/FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed43/sha256": [
+      "c5164172c571c2ff366920fe6ea1ca7c827fd058d65d5f3c02daa66af8b134e2",
+      null,
+      95399
+    ],
+    "LOGITS/FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed1/sha256": [
+      "4f6fbaf0f207a32baa8575cdeba54c3046600980aa28698bb0e61b71b5d52c88",
+      null,
+      95639
+    ],
+    "LOGITS/FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed42/sha256": [
+      "9c2857c5292a798a308cfdaafcb46343fe39be1465d825eb1cc7c9977c338c28",
+      null,
+      95655
+    ],
+    "LOGITS/FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed43/sha256": [
+      "aa0711810589608cfe215eee7ad55177421a4ee69f0491c6f4b46651cebd5613",
+      null,
+      95645
+    ],
+    "LOGITS/FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed1/sha256": [
+      "c0d933e4e3a2fe907e136e598ac0e4f2d58586bb01cc1e3018d3e8935e727d0c",
+      null,
+      95644
+    ],
+    "LOGITS/FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed42/sha256": [
+      "d9425560e439ff3e3a045f5f4cb31f1078202e5d1971148fff8108a0271b0b55",
+      null,
+      95645
+    ],
+    "LOGITS/FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed43/sha256": [
+      "31fb19600cccac9b9e8fc17881bb6b5070bb9dcb06153570254adcc9f43637b5",
+      null,
+      95730
+    ],
+    "LOGITS/FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed1/sha256": [
+      "377c1d0ce68c34fec0271c5f8f9f59fc999a8922a8b249b73c9ac41a806db40f",
+      null,
+      95271
+    ],
+    "LOGITS/FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed42/sha256": [
+      "c958c3cca63d6d58fbba97e6ff6c00bbed76c9663e2b0ddb408652660c0b073a",
+      null,
+      95268
+    ],
+    "LOGITS/FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed43/sha256": [
+      "da4a329fa20580c784681242c3061b2aecfe26d8a4726eeb2f40520d91c1be00",
+      null,
+      95280
+    ],
+    "LOGITS/RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1/sha256": [
+      "b55feff0fd2d545b5f3dc6c83f480b66fc454c3996776e06c3441081ef980c89",
+      null,
+      78952
+    ],
+    "LOGITS/RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43/sha256": [
+      "3ffe251b8a44d4abc4b09993dca117a05b76bf0f9f1c9700be073b44aa930edf",
+      null,
+      78957
+    ],
+    "LOGITS/RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed1/sha256": [
+      "36cea19151ff94653998ce3f37fc73c7e73d83bf0f4fa5b66967952c61119db5",
+      null,
+      79339
+    ],
+    "LOGITS/RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed42/sha256": [
+      "ebba1e80263c27eb2ba71307173c5698b73260f8999902ef5129d242f0978b86",
+      null,
+      79373
+    ],
+    "LOGITS/RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed43/sha256": [
+      "9dea25d97ea664d994c6ea529a8ff6bd34a3e200b6f61f271a46b6616968dd17",
+      null,
+      79387
+    ],
+    "LOGITS/RAFDB_stage1_tempscale_T1341_halfA_baseline_b070_T6_224_400e_swa200/sha256": [
+      "504860c889b732b72a5d5a67ceb0b4eb1bcbcf4742e8950dd07d158fa4e449b8",
+      null,
+      78595
+    ],
+    "LOGITS/RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed1/sha256": [
+      "dd4ac1871eacd3eb9dccb2efccb9d8e933cd41791608e824f0715203136796a7",
+      null,
+      78490
+    ],
+    "LOGITS/RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed43/sha256": [
+      "247922ed26456f76205b458437b50292e87a9dafc3b971e21d2ccbd5edc31dfe",
+      null,
+      78567
+    ],
+    "LOGITS/RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed1/sha256": [
+      "bd09d1b0d447ce6ca448281a8d20e6782697720b6a87556d44243941235f71db",
+      null,
+      78807
+    ],
+    "LOGITS/RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed42/sha256": [
+      "040051d9f848b73a90fb1df78bceeff35a0550ba425aabf53955eb3b02e52f9c",
+      null,
+      78784
+    ],
+    "LOGITS/RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed43/sha256": [
+      "3e63f9caa5bfa66d850faf5cc5c43339e3334632a52782dae746ef69b325601e",
+      null,
+      78768
+    ],
+    "LOGITS/RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed1/sha256": [
+      "64e24bf19ba2ceeb842f1e43cca667b9f5398586a1875753ff6b7d5f35041525",
+      null,
+      79050
+    ],
+    "LOGITS/RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed42/sha256": [
+      "69de67d9bb6fc52dced10336f42fac1760c13e100308852c0c83c9b4ae957bb4",
+      null,
+      79006
+    ],
+    "LOGITS/RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed43/sha256": [
+      "36886236e96b1302fea8c89921af122e0e488b75a94780f98f4487c687a0c14f",
+      null,
+      79044
+    ],
+    "LOGITS/RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200/sha256": [
+      "d5e65e4b6c016aba6280810e381d85bb0d17965c64fce5e7a6909c93566db26b",
+      null,
+      78946
+    ],
+    "LOGITS/RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1/sha256": [
+      "22208aada3d9ea19dbfaf4553585f3e1f308b4d99b1830ca0a1f0e898d849a99",
+      null,
+      78909
+    ],
+    "LOGITS/RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43/sha256": [
+      "6572d552f8f871e0ca007533a767365780aeee570a56b79a5d713d46f471aab6",
+      null,
+      78929
+    ],
+    "LOGITS/RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed1/sha256": [
+      "a1eda73bb39301b7c5daad0d2c0381291be07a49aa1cc79019df354f64a49926",
+      null,
+      79146
+    ],
+    "LOGITS/RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed42/sha256": [
+      "2b91bff22489b20fe28ffb83dd3ce3f6dd5209ea3c76e8016f91af7ddb8bb905",
+      null,
+      79080
+    ],
+    "LOGITS/RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed43/sha256": [
+      "ae62947fefb0e84ff5127bb1dfe91b7336d0ebdfd8f91310c5a197b981a3a2c7",
+      null,
+      79067
+    ],
+    "LOGITS/RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed1/sha256": [
+      "6c571308d1b4aae8eb400911560bd7a516d2151189f1c193430d053f26b71455",
+      null,
+      79096
+    ],
+    "LOGITS/RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed42/sha256": [
+      "8c02b30d4edd1c94e6d7ee22c3865b0be79da85083407c4fe0fd7eb333502dd2",
+      null,
+      79143
+    ],
+    "LOGITS/RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed43/sha256": [
+      "831bf1ed6267626465ea8b5e5b13848cfe27e0f230b3cf19ef79520ad0f2ae70",
+      null,
+      79172
+    ],
+    "LOGITS/RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed1/sha256": [
+      "26b22a5f67c345c02e5b875d0ae20845a4d1ed8be70d9309626ac30bcf33d42a",
+      null,
+      79359
+    ],
+    "LOGITS/RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed42/sha256": [
+      "02fd1c019152856c01174b9d9aab6e7f60e8b3152a0316114d91be182c5bbeea",
+      null,
+      79367
+    ],
+    "LOGITS/RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed43/sha256": [
+      "6d409382dc93bf5d823f308c687536f7ddfd8216bb6197a0811ac146e4fd00c9",
+      null,
+      79338
+    ],
+    "LOGITS/RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed1/sha256": [
+      "70591fa4de57a937e6afb122aac775f274421f8c0f23a45d1f3deef99997abb6",
+      null,
+      79596
+    ],
+    "LOGITS/RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed42/sha256": [
+      "09add73c86972cbe5277fd98e05411937043259b93d76acbd9dd8ce63a97f6ed",
+      null,
+      79528
+    ],
+    "LOGITS/RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed43/sha256": [
+      "2f73eb75bda3a3ffba605f8d76d875c691abe0d64e19584f1ec058a979b51577",
+      null,
+      79546
+    ],
+    "LOGITS/RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200/sha256": [
+      "0b9dd71bd98a1ff6cee6d7f6cddbc405a1dccdf6b2ed48ed90f13e57c76ad9bc",
+      null,
+      78953
+    ],
+    "dose/rafdb_stage1/T=0.85/teacher_ece": [
+      0.04538044133351088,
+      null,
+      null
+    ],
+    "dose/rafdb_stage1/T=0.85/swa/student_ece": [
+      0.07967298300447075,
+      0.001631989300491036,
+      3
+    ],
+    "dose/rafdb_stage1/T=0.85/swa/student_acc": [
+      89.64580535888672,
+      0.17951461794657525,
+      3
+    ],
+    "dose/rafdb_stage1/T=0.85/best/student_ece": [
+      0.07605675048559503,
+      0.0006217639751911696,
+      3
+    ],
+    "dose/rafdb_stage1/T=0.85/best/student_acc": [
+      89.78704833984375,
+      0.1144696621718064,
+      3
+    ],
+    "dose/rafdb_stage1/T=0.85/last/student_ece": [
+      0.08028404945357889,
+      0.005871913949601396,
+      3
+    ],
+    "dose/rafdb_stage1/T=0.85/last/student_acc": [
+      88.90699768066406,
+      0.3281085490604378,
+      3
+    ],
+    "dose/rafdb_stage1/T=1/teacher_ece": [
+      0.03779733980455796,
+      null,
+      null
+    ],
+    "dose/rafdb_stage1/T=1/swa/student_ece": [
+      0.07312947179942429,
+      0.0011822187508027879,
+      3
+    ],
+    "dose/rafdb_stage1/T=1/swa/student_acc": [
+      89.60234832763672,
+      0.34029864066348586,
+      3
+    ],
+    "dose/rafdb_stage1/T=1/best/student_ece": [
+      0.06268735786900734,
+      0.005377395848968684,
+      3
+    ],
+    "dose/rafdb_stage1/T=1/best/student_acc": [
+      89.75445302327473,
+      0.08202738991711436,
+      3
+    ],
+    "dose/rafdb_stage1/T=1/last/student_ece": [
+      0.07005376838915041,
+      0.008143678659054292,
+      3
+    ],
+    "dose/rafdb_stage1/T=1/last/student_acc": [
+      88.99391682942708,
+      0.09957672977697758,
+      3
+    ],
+    "dose/rafdb_stage1/T=1.3406/teacher_ece": [
+      0.015897414849820938,
+      null,
+      null
+    ],
+    "dose/rafdb_stage1/T=1.3406/swa/student_ece": [
+      0.04280742607210989,
+      0.0003306341894657955,
+      3
+    ],
+    "dose/rafdb_stage1/T=1.3406/swa/student_acc": [
+      89.73272450764973,
+      0.06518936160946984,
+      3
+    ],
+    "dose/rafdb_stage1/T=1.3406/best/student_ece": [
+      0.03380705469305336,
+      0.002138833168022602,
+      3
+    ],
+    "dose/rafdb_stage1/T=1.3406/best/student_acc": [
+      89.9500223795573,
+      0.06785154418440868,
+      3
+    ],
+    "dose/rafdb_stage1/T=1.3406/last/student_ece": [
+      0.03647119858695185,
+      0.0005101034035221449,
+      3
+    ],
+    "dose/rafdb_stage1/T=1.3406/last/student_acc": [
+      89.18948364257812,
+      0.263459353542422,
+      3
+    ],
+    "dose/rafdb_stage1/T=1.7/teacher_ece": [
+      0.0428967674249465,
+      null,
+      null
+    ],
+    "dose/rafdb_stage1/T=1.7/swa/student_ece": [
+      0.04474241582790907,
+      0.0029210060770113494,
+      3
+    ],
+    "dose/rafdb_stage1/T=1.7/swa/student_acc": [
+      89.42851003011067,
+      0.19647108990990797,
+      3
+    ],
+    "dose/rafdb_stage1/T=1.7/best/student_ece": [
+      0.05589178764382324,
+      0.00570082119214259,
+      3
+    ],
+    "dose/rafdb_stage1/T=1.7/best/student_acc": [
+      89.64580790201823,
+      0.0678503225695389,
+      3
+    ],
+    "dose/rafdb_stage1/T=1.7/last/student_ece": [
+      0.057150182608468075,
+      0.0059370180847538485,
+      3
+    ],
+    "dose/rafdb_stage1/T=1.7/last/student_acc": [
+      88.87440236409505,
+      0.4303631267231438,
+      3
+    ],
+    "dose/rafdb_stage1/T=2.2/teacher_ece": [
+      0.1269590755902726,
+      null,
+      null
+    ],
+    "dose/rafdb_stage1/T=2.2/swa/student_ece": [
+      0.10078169572701769,
+      0.00253848032538042,
+      3
+    ],
+    "dose/rafdb_stage1/T=2.2/swa/student_acc": [
+      89.63494110107422,
+      0.2841503386851919,
+      3
+    ],
+    "dose/rafdb_stage1/T=2.2/best/student_ece": [
+      0.11782045966125167,
+      0.009119787476793569,
+      3
+    ],
+    "dose/rafdb_stage1/T=2.2/best/student_acc": [
+      89.72185770670573,
+      0.308070751040003,
+      3
+    ],
+    "dose/rafdb_stage1/T=2.2/last/student_ece": [
+      0.11888743639769424,
+      0.009118989699874111,
+      3
+    ],
+    "dose/rafdb_stage1/T=2.2/last/student_acc": [
+      88.87440490722656,
+      0.394289471926269,
+      3
+    ],
+    "dose/rafdb_vae9182/T=0.85/teacher_ece": [
+      0.0250310669452768,
+      null,
+      null
+    ],
+    "dose/rafdb_vae9182/T=0.85/swa/student_ece": [
+      0.044675372809702706,
+      0.0013093965879811618,
+      3
+    ],
+    "dose/rafdb_vae9182/T=0.85/swa/student_acc": [
+      89.92829132080078,
+      0.05645233955333133,
+      3
+    ],
+    "dose/rafdb_vae9182/T=0.85/best/student_ece": [
+      0.03549363730116701,
+      0.00215198879941869,
+      3
+    ],
+    "dose/rafdb_vae9182/T=0.85/best/student_acc": [
+      90.17818450927734,
+      0.01881744651777711,
+      3
+    ],
+    "dose/rafdb_vae9182/T=0.85/last/student_ece": [
+      0.03580510213660292,
+      0.005338155010469529,
+      3
+    ],
+    "dose/rafdb_vae9182/T=0.85/last/student_acc": [
+      89.5262934366862,
+      0.1607850978216804,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1/teacher_ece": [
+      0.013553927899028671,
+      null,
+      null
+    ],
+    "dose/rafdb_vae9182/T=1/swa/student_ece": [
+      0.032957236164746107,
+      0.001996999098785806,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1/swa/student_acc": [
+      89.9500223795573,
+      0.3663557063958696,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1/best/student_ece": [
+      0.027442872111419655,
+      0.002106648231758117,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1/best/student_acc": [
+      90.27596791585286,
+      0.19098772580899204,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1/last/student_ece": [
+      0.03073756476100866,
+      0.0010717752881161812,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1/last/student_acc": [
+      89.81964365641277,
+      0.16726154800857174,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1.3406/teacher_ece": [
+      0.06270611134140401,
+      null,
+      null
+    ],
+    "dose/rafdb_vae9182/T=1.3406/swa/student_ece": [
+      0.06469776256026936,
+      0.00299973901247489,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1.3406/swa/student_acc": [
+      90.09126281738281,
+      0.2933502197265625,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1.3406/best/student_ece": [
+      0.07640838160178341,
+      0.015285323648340931,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1.3406/best/student_acc": [
+      90.21077728271484,
+      0.17951461794657525,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1.3406/last/student_ece": [
+      0.07948590861856031,
+      0.005575733457376863,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1.3406/last/student_acc": [
+      89.43937428792317,
+      0.408405460737665,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1.7/teacher_ece": [
+      0.14541721431419466,
+      null,
+      null
+    ],
+    "dose/rafdb_vae9182/T=1.7/swa/student_ece": [
+      0.12821906177518888,
+      0.0030105325448677826,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1.7/swa/student_acc": [
+      89.5806172688802,
+      0.5218505375473566,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1.7/best/student_ece": [
+      0.1426313646082669,
+      0.013602894720306976,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1.7/best/student_acc": [
+      89.77618408203125,
+      0.2289393243436128,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1.7/last/student_ece": [
+      0.14560451651107792,
+      0.012490031996186021,
+      3
+    ],
+    "dose/rafdb_vae9182/T=1.7/last/student_acc": [
+      89.08083597819011,
+      0.14207735722309991,
+      3
+    ],
+    "dose/rafdb_vae9182/T=2.2/teacher_ece": [
+      0.2621571478255414,
+      null,
+      null
+    ],
+    "dose/rafdb_vae9182/T=2.2/swa/student_ece": [
+      0.21093863546071184,
+      0.0033612721423117073,
+      3
+    ],
+    "dose/rafdb_vae9182/T=2.2/swa/student_acc": [
+      89.91742706298828,
+      0.3264906796242076,
+      3
+    ],
+    "dose/rafdb_vae9182/T=2.2/best/student_ece": [
+      0.22843520099969855,
+      0.006427083766811833,
+      3
+    ],
+    "dose/rafdb_vae9182/T=2.2/best/student_acc": [
+      90.10212961832683,
+      0.08202738991711436,
+      3
+    ],
+    "dose/rafdb_vae9182/T=2.2/last/student_ece": [
+      0.22821218573991395,
+      0.00902045235475606,
+      3
+    ],
+    "dose/rafdb_vae9182/T=2.2/last/student_acc": [
+      89.0373764038086,
+      0.23579511196028774,
+      3
+    ],
+    "dose/ferplus/T=0.26/teacher_ece": [
+      0.03933340457557233,
+      null,
+      null
+    ],
+    "dose/ferplus/T=0.26/swa/student_ece": [
+      0.058740805600987316,
+      0.003831888418531751,
+      3
+    ],
+    "dose/ferplus/T=0.26/swa/student_acc": [
+      89.20604960123698,
+      0.28602525669074663,
+      3
+    ],
+    "dose/ferplus/T=0.26/best/student_ece": [
+      0.05679475703310268,
+      0.00137354277175327,
+      3
+    ],
+    "dose/ferplus/T=0.26/best/student_acc": [
+      89.3223393758138,
+      0.25635247014082213,
+      3
+    ],
+    "dose/ferplus/T=0.26/last/student_ece": [
+      0.0590560870192522,
+      0.001486498899180953,
+      3
+    ],
+    "dose/ferplus/T=0.26/last/student_acc": [
+      88.93117777506511,
+      0.19292159450492707,
+      3
+    ],
+    "dose/ferplus/T=0.5063/teacher_ece": [
+      0.01562829764162288,
+      null,
+      null
+    ],
+    "dose/ferplus/T=0.5063/swa/student_ece": [
+      0.018498602500361613,
+      0.0015881954147709731,
+      3
+    ],
+    "dose/ferplus/T=0.5063/swa/student_acc": [
+      89.12147521972656,
+      0.1382441933311354,
+      3
+    ],
+    "dose/ferplus/T=0.5063/best/student_ece": [
+      0.019590972014065337,
+      0.0020415772943527255,
+      3
+    ],
+    "dose/ferplus/T=0.5063/best/student_acc": [
+      89.20604960123698,
+      0.10195072482667977,
+      3
+    ],
+    "dose/ferplus/T=0.5063/last/student_ece": [
+      0.019130647440820707,
+      0.006139430665287134,
+      3
+    ],
+    "dose/ferplus/T=0.5063/last/student_acc": [
+      88.83602905273438,
+      0.3845362563550402,
+      3
+    ],
+    "dose/ferplus/T=0.74/teacher_ece": [
+      0.06646802423116029,
+      null,
+      null
+    ],
+    "dose/ferplus/T=0.74/swa/student_ece": [
+      0.034363226014547714,
+      0.0012025338139968638,
+      3
+    ],
+    "dose/ferplus/T=0.74/swa/student_acc": [
+      88.78317006429036,
+      0.04844606314069475,
+      3
+    ],
+    "dose/ferplus/T=0.74/best/student_ece": [
+      0.04830169634254932,
+      0.00834227006098156,
+      3
+    ],
+    "dose/ferplus/T=0.74/best/student_acc": [
+      89.13204701741536,
+      0.07324356289737775,
+      3
+    ],
+    "dose/ferplus/T=0.74/last/student_ece": [
+      0.03773833784344761,
+      0.0007013086486644371,
+      3
+    ],
+    "dose/ferplus/T=0.74/last/student_acc": [
+      88.50829823811848,
+      0.2583112725060475,
+      3
+    ],
+    "dose/ferplus/T=1/teacher_ece": [
+      0.12823281088141536,
+      null,
+      null
+    ],
+    "dose/ferplus/T=1/swa/student_ece": [
+      0.07830038099601992,
+      0.00460023162590826,
+      3
+    ],
+    "dose/ferplus/T=1/swa/student_acc": [
+      88.71973673502605,
+      0.37032312388616695,
+      3
+    ],
+    "dose/ferplus/T=1/best/student_ece": [
+      0.09274253000579408,
+      0.006997141399156967,
+      3
+    ],
+    "dose/ferplus/T=1/best/student_acc": [
+      89.06861368815105,
+      0.35364489061929455,
+      3
+    ],
+    "dose/ferplus/T=1/last/student_ece": [
+      0.08516281574589592,
+      0.008151749408969858,
+      3
+    ],
+    "dose/ferplus/T=1/last/student_acc": [
+      88.45543924967448,
+      0.32960043787118626,
+      3
+    ],
+    "dose/pooled/swa/spearman_abs_signed_gap": [
+      0.789010989010989,
+      null,
+      14
+    ],
+    "dose/pooled/swa/spearman_signed_gap": [
+      -0.4065934065934066,
+      null,
+      14
+    ],
+    "dose/pooled/swa/pearson_abs_signed_gap": [
+      0.930083283281512,
+      null,
+      14
+    ],
+    "dose/pooled/swa/pearson_signed_gap": [
+      -0.7911945490436716,
+      null,
+      14
+    ],
+    "dose/pooled/best/spearman_abs_signed_gap": [
+      0.8945054945054945,
+      null,
+      14
+    ],
+    "dose/pooled/best/spearman_signed_gap": [
+      -0.5604395604395604,
+      null,
+      14
+    ],
+    "dose/pooled/best/pearson_abs_signed_gap": [
+      0.9701354026870961,
+      null,
+      14
+    ],
+    "dose/pooled/best/pearson_signed_gap": [
+      -0.8663886817932394,
+      null,
+      14
+    ],
+    "dose/pooled/last/spearman_abs_signed_gap": [
+      0.8769230769230769,
+      null,
+      14
+    ],
+    "dose/pooled/last/spearman_signed_gap": [
+      -0.5340659340659341,
+      null,
+      14
+    ],
+    "dose/pooled/last/pearson_abs_signed_gap": [
+      0.9481781848120957,
+      null,
+      14
+    ],
+    "dose/pooled/last/pearson_signed_gap": [
+      -0.8345819229474392,
+      null,
+      14
+    ],
+    "A12/stage1/mean_logvar/swa/ece/mean": [
+      -0.0011666860813513748,
+      0.0010212460044153478,
+      3
+    ],
+    "A12/stage1/mean_logvar/swa/ece/ratio": [
+      0.5529317921096563,
+      null,
+      3
+    ],
+    "A12/stage1/mean_logvar/swa/acc/mean": [
+      -0.09778340657552083,
+      0.11752337991717336,
+      3
+    ],
+    "A12/stage1/mean_logvar/swa/acc/ratio": [
+      0.9817611101959923,
+      null,
+      3
+    ],
+    "A12/stage1/mean_logvar/best/ece/mean": [
+      0.00243529823747525,
+      0.0038659108609523387,
+      3
+    ],
+    "A12/stage1/mean_logvar/best/ece/ratio": [
+      1.1541697807939575,
+      null,
+      3
+    ],
+    "A12/stage1/mean_logvar/best/acc/mean": [
+      -0.17383829752604166,
+      0.1047754593458533,
+      3
+    ],
+    "A12/stage1/mean_logvar/best/acc/ratio": [
+      1.7453644329923863,
+      null,
+      3
+    ],
+    "A12/stage1/mean_logvar/last/ece/mean": [
+      0.002327937404521909,
+      0.002824201799540052,
+      3
+    ],
+    "A12/stage1/mean_logvar/last/ece/ratio": [
+      1.103287869441663,
+      null,
+      3
+    ],
+    "A12/stage1/mean_logvar/last/acc/mean": [
+      -0.2281621297200521,
+      0.4005284357402885,
+      3
+    ],
+    "A12/stage1/mean_logvar/last/acc/ratio": [
+      2.2907844349402824,
+      null,
+      3
+    ],
+    "A12/stage1/target_logvar/swa/ece/mean": [
+      -0.00414632082710779,
+      0.0022763297781124158,
+      3
+    ],
+    "A12/stage1/target_logvar/swa/ece/ratio": [
+      1.9650809607145923,
+      null,
+      3
+    ],
+    "A12/stage1/target_logvar/swa/acc/mean": [
+      0.2498906453450521,
+      0.2772098089316861,
+      3
+    ],
+    "A12/stage1/target_logvar/swa/acc/ratio": [
+      2.5089422223398805,
+      null,
+      3
+    ],
+    "A12/stage1/target_logvar/best/ece/mean": [
+      0.00043607652770182487,
+      0.002094068206555228,
+      3
+    ],
+    "A12/stage1/target_logvar/best/ece/ratio": [
+      0.20667134014304497,
+      null,
+      3
+    ],
+    "A12/stage1/target_logvar/best/acc/mean": [
+      0.07605234781901042,
+      0.228935341536199,
+      3
+    ],
+    "A12/stage1/target_logvar/best/acc/ratio": [
+      0.7635777893474942,
+      null,
+      3
+    ],
+    "A12/stage1/target_logvar/last/ece/mean": [
+      -0.0005680123641147958,
+      0.004016003834528109,
+      3
+    ],
+    "A12/stage1/target_logvar/last/ece/ratio": [
+      0.26920017256625395,
+      null,
+      3
+    ],
+    "A12/stage1/target_logvar/last/acc/mean": [
+      0.17383575439453125,
+      0.2289393243436128,
+      3
+    ],
+    "A12/stage1/target_logvar/last/acc/ratio": [
+      1.7453388995434866,
+      null,
+      3
+    ],
+    "A12/primary/mean_logvar/swa/ece/mean": [
+      -0.005575578808719728,
+      0.009227493803646833,
+      3
+    ],
+    "A12/primary/mean_logvar/swa/ece/ratio": [
+      1.6743479906065248,
+      null,
+      3
+    ],
+    "A12/primary/mean_logvar/swa/acc/mean": [
+      0.19556681315104166,
+      0.8549469714862008,
+      3
+    ],
+    "A12/primary/mean_logvar/swa/acc/ratio": [
+      0.49598481651291315,
+      null,
+      3
+    ],
+    "A12/primary/mean_logvar/best/ece/mean": [
+      -0.007496601015148037,
+      0.005736711428393478,
+      3
+    ],
+    "A12/primary/mean_logvar/best/ece/ratio": [
+      2.2512315360804913,
+      null,
+      3
+    ],
+    "A12/primary/mean_logvar/best/acc/mean": [
+      0.17383575439453125,
+      0.4659181022738799,
+      3
+    ],
+    "A12/primary/mean_logvar/best/acc/ratio": [
+      0.44087180926840286,
+      null,
+      3
+    ],
+    "A12/primary/mean_logvar/last/ece/mean": [
+      -0.0029766162090822668,
+      0.00551028776090564,
+      3
+    ],
+    "A12/primary/mean_logvar/last/ece/ratio": [
+      0.8938787414661462,
+      null,
+      3
+    ],
+    "A12/primary/mean_logvar/last/acc/mean": [
+      0.10864766438802083,
+      0.4727155167202002,
+      3
+    ],
+    "A12/primary/mean_logvar/last/acc/ratio": [
+      0.2755456870099438,
+      null,
+      3
+    ],
+    "A12/primary/target_logvar/swa/ece/mean": [
+      -0.000783022242180941,
+      0.0029891563718939056,
+      3
+    ],
+    "A12/primary/target_logvar/swa/ece/ratio": [
+      0.23514181446875104,
+      null,
+      3
+    ],
+    "A12/primary/target_logvar/swa/acc/mean": [
+      -0.08692169189453125,
+      0.44253658075913777,
+      3
+    ],
+    "A12/primary/target_logvar/swa/acc/ratio": [
+      0.22044557924050534,
+      null,
+      3
+    ],
+    "A12/primary/target_logvar/best/ece/mean": [
+      -0.00637207214584148,
+      0.002253351834609622,
+      3
+    ],
+    "A12/primary/target_logvar/best/ece/ratio": [
+      1.9135351789313753,
+      null,
+      3
+    ],
+    "A12/primary/target_logvar/best/acc/mean": [
+      0.14124043782552084,
+      0.3329304234235088,
+      3
+    ],
+    "A12/primary/target_logvar/best/acc/ratio": [
+      0.3582055232704054,
+      null,
+      3
+    ],
+    "A12/primary/target_logvar/last/ece/mean": [
+      -0.0041803592918800885,
+      0.003637198431791402,
+      3
+    ],
+    "A12/primary/target_logvar/last/ece/ratio": [
+      1.2553631507147414,
+      null,
+      3
+    ],
+    "A12/primary/target_logvar/last/acc/mean": [
+      0.21729532877604166,
+      0.5299349199793332,
+      3
+    ],
+    "A12/primary/target_logvar/last/acc/ratio": [
+      0.5510913740198876,
+      null,
+      3
+    ],
+    "A12/vae9182/mean_logvar/swa/ece/mean": [
+      0.0014772778445743887,
+      0.004581379876241869,
+      3
+    ],
+    "A12/vae9182/mean_logvar/swa/ece/ratio": [
+      0.5471399424349588,
+      null,
+      3
+    ],
+    "A12/vae9182/mean_logvar/swa/acc/mean": [
+      -0.27161916097005206,
+      0.6682533258430152,
+      3
+    ],
+    "A12/vae9182/mean_logvar/swa/acc/ratio": [
+      1.3121698597587057,
+      null,
+      3
+    ],
+    "A12/vae9182/mean_logvar/best/ece/mean": [
+      0.004980483755747789,
+      0.005201312177703201,
+      3
+    ],
+    "A12/vae9182/mean_logvar/best/ece/ratio": [
+      1.8446236132399216,
+      null,
+      3
+    ],
+    "A12/vae9182/mean_logvar/best/acc/mean": [
+      -0.32594553629557294,
+      0.22816085816492673,
+      3
+    ],
+    "A12/vae9182/mean_logvar/best/acc/ratio": [
+      1.5746161173699176,
+      null,
+      3
+    ],
+    "A12/vae9182/mean_logvar/last/ece/mean": [
+      0.0015732085592121945,
+      0.006420419285652081,
+      3
+    ],
+    "A12/vae9182/mean_logvar/last/ece/ratio": [
+      0.5826698367452572,
+      null,
+      3
+    ],
+    "A12/vae9182/mean_logvar/last/acc/mean": [
+      -0.18470001220703125,
+      0.419104606334769,
+      3
+    ],
+    "A12/vae9182/mean_logvar/last/acc/ratio": [
+      0.8922705903721316,
+      null,
+      3
+    ],
+    "A12/bar/stage1/ece_sd": [
+      0.0021071884659464015,
+      null,
+      3
+    ],
+    "A12/bar/stage1/acc_sd": [
+      0.09957672977697758,
+      null,
+      3
+    ],
+    "A12/bar/primary/ece_sd": [
+      0.0033333763685349763,
+      null,
+      3
+    ],
+    "A12/bar/primary/acc_sd": [
+      0.3942937816679289,
+      null,
+      3
+    ],
+    "A12/bar/vae9182/ece_sd": [
+      0.0026997325636259157,
+      null,
+      3
+    ],
+    "A12/bar/vae9182/acc_sd": [
+      0.20700072136152095,
+      null,
+      3
+    ],
+    "A13/fit/scratch0712/slope": [
+      0.6547068722514588,
+      null,
+      null
+    ],
+    "A13/fit/scratch0712/envelope": [
+      0.058456546540507005,
+      null,
+      null
+    ],
+    "A13/fit/scratch0712/r2": [
+      0.9999645299723947,
+      null,
+      null
+    ],
+    "A13/fit/scratch0712/cell0/ece": [
+      0.03645689697245679,
+      0.0057123664918960985,
+      null
+    ],
+    "A13/fit/scratch0712/cell1/ece": [
+      0.12361117747686368,
+      0.003962944527397044,
+      null
+    ],
+    "A13/fit/scratch0712/cell2/ece": [
+      0.19918508699462498,
+      0.00873869378270836,
+      null
+    ],
+    "A13/fit/pretrained2248/slope": [
+      0.7160652787380302,
+      null,
+      null
+    ],
+    "A13/fit/pretrained2248/envelope": [
+      0.021906323710570122,
+      null,
+      null
+    ],
+    "A13/fit/pretrained2248/r2": [
+      0.9999691373688872,
+      null,
+      null
+    ],
+    "A13/fit/pretrained2248/cell0/ece": [
+      0.032957236164746107,
+      0.001996999098785806,
+      null
+    ],
+    "A13/fit/pretrained2248/cell1/ece": [
+      0.12821906177518888,
+      0.0030105325448677826,
+      null
+    ],
+    "A13/fit/pretrained2248/cell2/ece": [
+      0.21093863546071184,
+      0.0033612721423117073,
+      null
+    ],
+    "A13/fit/scratch2248/slope": [
+      0.6488331093375835,
+      null,
+      null
+    ],
+    "A13/fit/scratch2248/envelope": [
+      0.013902609746009603,
+      null,
+      null
+    ],
+    "A13/fit/scratch2248/r2": [
+      0.998817814674116,
+      null,
+      null
+    ],
+    "A13/fit/scratch2248/cell0/ece": [
+      0.03744166230022752,
+      0.0030384886023834203,
+      null
+    ],
+    "A13/fit/scratch2248/cell1/ece": [
+      0.11829053233177286,
+      0.001083843108556422,
+      null
+    ],
+    "A13/fit/scratch2248/cell2/ece": [
+      0.19893856618597114,
+      0.00032298832098165485,
+      null
+    ],
+    "A13/cmp/scratch2248_vs_pretrained2248/d_slope": [
+      -0.06723216940044663,
+      null,
+      null
+    ],
+    "A13/cmp/scratch2248_vs_pretrained2248/envelope": [
+      0.03580893345657973,
+      null,
+      null
+    ],
+    "A13/cmp/scratch2248_vs_scratch0712/d_slope": [
+      -0.005873762913875313,
+      null,
+      null
+    ],
+    "A13/cmp/scratch2248_vs_scratch0712/envelope": [
+      0.07235915628651661,
+      null,
+      null
+    ],
+    "A13/cmp/pretrained2248_vs_scratch0712/d_slope": [
+      0.061358406486571315,
+      null,
+      null
+    ],
+    "A13/cmp/pretrained2248_vs_scratch0712/envelope": [
+      0.08036287025107713,
+      null,
+      null
+    ],
+    "G4.2/swa/capacity_span": [
+      0.0023508643920086905,
+      null,
+      null
+    ],
+    "G4.2/swa/teacher_span_pretrained": [
+      0.17798139929596574,
+      null,
+      null
+    ],
+    "G4.2/swa/teacher_span_scratch": [
+      0.16149690388574361,
+      null,
+      null
+    ],
+    "G4.2/swa/ratio_published": [
+      75.70891792013998,
+      null,
+      null
+    ],
+    "G4.2/swa/ratio_init_matched": [
+      68.69681825745506,
+      null,
+      null
+    ],
+    "G4.2/best/capacity_span": [
+      0.0025448729087805474,
+      null,
+      null
+    ],
+    "G4.2/best/teacher_span_pretrained": [
+      0.2009923288882789,
+      null,
+      null
+    ],
+    "G4.2/best/teacher_span_scratch": [
+      0.18995956236861652,
+      null,
+      null
+    ],
+    "G4.2/best/ratio_published": [
+      78.97931884723879,
+      null,
+      null
+    ],
+    "G4.2/best/ratio_init_matched": [
+      74.64402709982141,
+      null,
+      null
+    ],
+    "G4.2/last/capacity_span": [
+      0.0074337361374791425,
+      null,
+      null
+    ],
+    "G4.2/last/teacher_span_pretrained": [
+      0.19747462097890528,
+      null,
+      null
+    ],
+    "G4.2/last/teacher_span_scratch": [
+      0.19585618119960452,
+      null,
+      null
+    ],
+    "G4.2/last/ratio_published": [
+      26.564652999086807,
+      null,
+      null
+    ],
+    "G4.2/last/ratio_init_matched": [
+      26.34693747228179,
+      null,
+      null
+    ],
+    "T5/stage1/adaptive_t/swa/d_acc": [
+      0.16297149658203125,
+      0.32101630928264163,
+      3
+    ],
+    "T5/stage1/adaptive_t/swa/d_ece": [
+      -0.0010947850409381982,
+      0.0032964555386869173,
+      3
+    ],
+    "T5/stage1/adaptive_t/best/d_acc": [
+      0.2172978719075521,
+      0.21702464730861246,
+      3
+    ],
+    "T5/stage1/adaptive_t/best/d_ece": [
+      0.002879662749263217,
+      0.0032836544316513353,
+      3
+    ],
+    "T5/stage1/adaptive_t/last/d_acc": [
+      0.564971923828125,
+      0.14697656931214573,
+      3
+    ],
+    "T5/stage1/adaptive_t/last/d_ece": [
+      -0.00463310893186276,
+      0.005039606057439988,
+      3
+    ],
+    "T5/stage1/ctkd/swa/d_acc": [
+      -0.0325927734375,
+      0.0,
+      1
+    ],
+    "T5/stage1/ctkd/swa/d_ece": [
+      0.0058220425496822575,
+      0.0,
+      1
+    ],
+    "T5/stage1/ctkd/best/d_acc": [
+      -0.065185546875,
+      0.0,
+      1
+    ],
+    "T5/stage1/ctkd/best/d_ece": [
+      0.01438504529356801,
+      0.0,
+      1
+    ],
+    "T5/stage1/ctkd/last/d_acc": [
+      0.39113616943359375,
+      0.0,
+      1
+    ],
+    "T5/stage1/ctkd/last/d_ece": [
+      0.015282275993012705,
+      0.0,
+      1
+    ],
+    "T5/stage1/g2g_kl/swa/d_acc": [
+      0.4128621419270833,
+      0.37778086107916886,
+      3
+    ],
+    "T5/stage1/g2g_kl/swa/d_ece": [
+      -0.004224809653237821,
+      0.0003543380893462642,
+      3
+    ],
+    "T5/stage1/g2g_kl/best/d_acc": [
+      0.08691914876302083,
+      0.44967881014310546,
+      3
+    ],
+    "T5/stage1/g2g_kl/best/d_ece": [
+      -0.001670985933116401,
+      0.005113018533382808,
+      3
+    ],
+    "T5/stage1/g2g_kl/last/d_acc": [
+      0.043459574381510414,
+      0.6030685070180464,
+      3
+    ],
+    "T5/stage1/g2g_kl/last/d_ece": [
+      -0.0015396496693060198,
+      0.006299930235806606,
+      3
+    ],
+    "T5/stage1/gate:mean_logvar/swa/d_acc": [
+      -0.09778340657552083,
+      0.11752337991717336,
+      3
+    ],
+    "T5/stage1/gate:mean_logvar/swa/d_ece": [
+      -0.0011666860813513748,
+      0.0010212460044153478,
+      3
+    ],
+    "T5/stage1/gate:mean_logvar/best/d_acc": [
+      -0.17383829752604166,
+      0.1047754593458533,
+      3
+    ],
+    "T5/stage1/gate:mean_logvar/best/d_ece": [
+      0.00243529823747525,
+      0.0038659108609523387,
+      3
+    ],
+    "T5/stage1/gate:mean_logvar/last/d_acc": [
+      -0.2281621297200521,
+      0.4005284357402885,
+      3
+    ],
+    "T5/stage1/gate:mean_logvar/last/d_ece": [
+      0.002327937404521909,
+      0.002824201799540052,
+      3
+    ],
+    "T5/stage1/gate:oracle_error/swa/d_acc": [
+      -0.21729532877604166,
+      0.4567099042483196,
+      3
+    ],
+    "T5/stage1/gate:oracle_error/swa/d_ece": [
+      0.0015442045660497654,
+      0.003572933460859888,
+      3
+    ],
+    "T5/stage1/gate:oracle_error/best/d_acc": [
+      -0.2716217041015625,
+      0.24025801253040666,
+      3
+    ],
+    "T5/stage1/gate:oracle_error/best/d_ece": [
+      0.004012096982476815,
+      0.003475408795399595,
+      3
+    ],
+    "T5/stage1/gate:oracle_error/last/d_acc": [
+      -0.3694051106770833,
+      0.28477550142602254,
+      3
+    ],
+    "T5/stage1/gate:oracle_error/last/d_ece": [
+      0.002120756178686331,
+      0.0015568711316595175,
+      3
+    ],
+    "T5/stage1/gate:target_logvar/swa/d_acc": [
+      0.2498906453450521,
+      0.2772098089316861,
+      3
+    ],
+    "T5/stage1/gate:target_logvar/swa/d_ece": [
+      -0.00414632082710779,
+      0.0022763297781124158,
+      3
+    ],
+    "T5/stage1/gate:target_logvar/best/d_acc": [
+      0.07605234781901042,
+      0.228935341536199,
+      3
+    ],
+    "T5/stage1/gate:target_logvar/best/d_ece": [
+      0.00043607652770182487,
+      0.002094068206555228,
+      3
+    ],
+    "T5/stage1/gate:target_logvar/last/d_acc": [
+      0.17383575439453125,
+      0.2289393243436128,
+      3
+    ],
+    "T5/stage1/gate:target_logvar/last/d_ece": [
+      -0.0005680123641147958,
+      0.004016003834528109,
+      3
+    ],
+    "T5/stage1/logit_std/swa/d_acc": [
+      -0.22815958658854166,
+      0.1955680847291983,
+      3
+    ],
+    "T5/stage1/logit_std/swa/d_ece": [
+      0.09058681609467649,
+      0.0023275137752995574,
+      3
+    ],
+    "T5/stage1/logit_std/best/d_acc": [
+      -0.31507619222005206,
+      0.049790445992118515,
+      3
+    ],
+    "T5/stage1/logit_std/best/d_ece": [
+      0.12523130439982783,
+      0.0032952692810438032,
+      3
+    ],
+    "T5/stage1/logit_std/last/d_acc": [
+      -0.5215123494466146,
+      0.37020457743424084,
+      3
+    ],
+    "T5/stage1/logit_std/last/d_ece": [
+      0.10904804582843983,
+      0.010645780539681517,
+      3
+    ],
+    "T5/primary/adaptive_t/swa/d_acc": [
+      -0.39113616943359375,
+      0.37020289809781,
+      3
+    ],
+    "T5/primary/adaptive_t/swa/d_ece": [
+      0.0023061123598481967,
+      0.0007157093971135206,
+      3
+    ],
+    "T5/primary/adaptive_t/best/d_acc": [
+      -0.43459320068359375,
+      0.09958005951773401,
+      3
+    ],
+    "T5/primary/adaptive_t/best/d_ece": [
+      0.004657255930065951,
+      0.0033919297774068387,
+      3
+    ],
+    "T5/primary/adaptive_t/last/d_acc": [
+      0.08691660563151042,
+      0.43282549650710894,
+      3
+    ],
+    "T5/primary/adaptive_t/last/d_ece": [
+      -0.004330580357117327,
+      0.004016252071125545,
+      3
+    ],
+    "T5/primary/ctkd/swa/d_acc": [
+      -0.488922119140625,
+      0.0,
+      1
+    ],
+    "T5/primary/ctkd/swa/d_ece": [
+      0.0037733874923635835,
+      0.0,
+      1
+    ],
+    "T5/primary/ctkd/best/d_acc": [
+      -0.06519317626953125,
+      0.0,
+      1
+    ],
+    "T5/primary/ctkd/best/d_ece": [
+      0.004811699403816594,
+      0.0,
+      1
+    ],
+    "T5/primary/ctkd/last/d_acc": [
+      -0.09778594970703125,
+      0.0,
+      1
+    ],
+    "T5/primary/ctkd/last/d_ece": [
+      0.012544693350014818,
+      0.0,
+      1
+    ],
+    "T5/primary/g2g_kl/swa/d_acc": [
+      -0.14124298095703125,
+      0.36344544155704916,
+      3
+    ],
+    "T5/primary/g2g_kl/swa/d_ece": [
+      -0.0016073193830129923,
+      0.0027315092230762858,
+      3
+    ],
+    "T5/primary/g2g_kl/best/d_acc": [
+      -0.26075490315755206,
+      0.19826538942789557,
+      3
+    ],
+    "T5/primary/g2g_kl/best/d_ece": [
+      -0.004278848108805973,
+      0.005956999196853639,
+      3
+    ],
+    "T5/primary/g2g_kl/last/d_acc": [
+      0.3802642822265625,
+      0.22186731218460407,
+      3
+    ],
+    "T5/primary/g2g_kl/last/d_ece": [
+      -0.011107035805315413,
+      0.00220479038797045,
+      3
+    ],
+    "T5/primary/gate:mean_logvar/swa/d_acc": [
+      0.19556681315104166,
+      0.8549469714862008,
+      3
+    ],
+    "T5/primary/gate:mean_logvar/swa/d_ece": [
+      -0.005575578808719728,
+      0.009227493803646833,
+      3
+    ],
+    "T5/primary/gate:mean_logvar/best/d_acc": [
+      0.17383575439453125,
+      0.4659181022738799,
+      3
+    ],
+    "T5/primary/gate:mean_logvar/best/d_ece": [
+      -0.007496601015148037,
+      0.005736711428393478,
+      3
+    ],
+    "T5/primary/gate:mean_logvar/last/d_acc": [
+      0.10864766438802083,
+      0.4727155167202002,
+      3
+    ],
+    "T5/primary/gate:mean_logvar/last/d_ece": [
+      -0.0029766162090822668,
+      0.00551028776090564,
+      3
+    ],
+    "T5/primary/gate:oracle_error/swa/d_acc": [
+      -0.010866800944010416,
+      0.7217591290348079,
+      3
+    ],
+    "T5/primary/gate:oracle_error/swa/d_ece": [
+      0.0003758442743168518,
+      0.005290327799990043,
+      3
+    ],
+    "T5/primary/gate:oracle_error/best/d_acc": [
+      0.14124043782552084,
+      0.4881900421629097,
+      3
+    ],
+    "T5/primary/gate:oracle_error/best/d_ece": [
+      -0.0050059264571912275,
+      0.004112930783567217,
+      3
+    ],
+    "T5/primary/gate:oracle_error/last/d_acc": [
+      -0.2172978719075521,
+      0.4203711119639177,
+      3
+    ],
+    "T5/primary/gate:oracle_error/last/d_ece": [
+      0.002472181290854377,
+      0.004013358566605553,
+      3
+    ],
+    "T5/primary/gate:target_logvar/swa/d_acc": [
+      -0.08692169189453125,
+      0.44253658075913777,
+      3
+    ],
+    "T5/primary/gate:target_logvar/swa/d_ece": [
+      -0.000783022242180941,
+      0.0029891563718939056,
+      3
+    ],
+    "T5/primary/gate:target_logvar/best/d_acc": [
+      0.14124043782552084,
+      0.3329304234235088,
+      3
+    ],
+    "T5/primary/gate:target_logvar/best/d_ece": [
+      -0.00637207214584148,
+      0.002253351834609622,
+      3
+    ],
+    "T5/primary/gate:target_logvar/last/d_acc": [
+      0.21729532877604166,
+      0.5299349199793332,
+      3
+    ],
+    "T5/primary/gate:target_logvar/last/d_ece": [
+      -0.0041803592918800885,
+      0.003637198431791402,
+      3
+    ],
+    "T5/primary/logit_std/swa/d_acc": [
+      -0.31508127848307294,
+      0.24894307306913172,
+      3
+    ],
+    "T5/primary/logit_std/swa/d_ece": [
+      0.0859243000838509,
+      0.0058053158019038915,
+      3
+    ],
+    "T5/primary/logit_std/best/d_acc": [
+      -0.43459320068359375,
+      0.131729676771211,
+      3
+    ],
+    "T5/primary/logit_std/best/d_ece": [
+      0.11909216706977364,
+      0.011257873896763172,
+      3
+    ],
+    "T5/primary/logit_std/last/d_acc": [
+      -0.27162424723307294,
+      0.27140495502377887,
+      3
+    ],
+    "T5/primary/logit_std/last/d_ece": [
+      0.10440529850851914,
+      0.006785818497853476,
+      3
+    ],
+    "T5/vae9182/adaptive_t/swa/d_acc": [
+      0.28248341878255206,
+      0.5723410693527127,
+      3
+    ],
+    "T5/vae9182/adaptive_t/swa/d_ece": [
+      -0.004198156860614539,
+      0.004690152305944788,
+      3
+    ],
+    "T5/vae9182/adaptive_t/best/d_acc": [
+      0.04345703125,
+      0.5010794657992129,
+      3
+    ],
+    "T5/vae9182/adaptive_t/best/d_ece": [
+      0.0024343857485825287,
+      0.003032420877698226,
+      3
+    ],
+    "T5/vae9182/adaptive_t/last/d_acc": [
+      -0.3802693684895833,
+      0.5553806163343343,
+      3
+    ],
+    "T5/vae9182/adaptive_t/last/d_ece": [
+      0.0009101223927484985,
+      0.0034641611822799926,
+      3
+    ],
+    "T5/vae9182/ctkd/swa/d_acc": [
+      -0.13037872314453125,
+      0.0,
+      1
+    ],
+    "T5/vae9182/ctkd/swa/d_ece": [
+      0.0038133553597187314,
+      0.0,
+      1
+    ],
+    "T5/vae9182/ctkd/best/d_acc": [
+      -0.16297149658203125,
+      0.0,
+      1
+    ],
+    "T5/vae9182/ctkd/best/d_ece": [
+      0.00273584278186266,
+      0.0,
+      1
+    ],
+    "T5/vae9182/ctkd/last/d_acc": [
+      -0.42372894287109375,
+      0.0,
+      1
+    ],
+    "T5/vae9182/ctkd/last/d_ece": [
+      0.002629673465445268,
+      0.0,
+      1
+    ],
+    "T5/vae9182/g2g_kl/swa/d_acc": [
+      0.16297403971354166,
+      0.408405460737665,
+      3
+    ],
+    "T5/vae9182/g2g_kl/swa/d_ece": [
+      0.000935986782159041,
+      0.004338237886851533,
+      3
+    ],
+    "T5/vae9182/g2g_kl/best/d_acc": [
+      0.0108642578125,
+      0.14697656931214573,
+      3
+    ],
+    "T5/vae9182/g2g_kl/best/d_ece": [
+      0.0013937542877965024,
+      0.0043416835488007625,
+      3
+    ],
+    "T5/vae9182/g2g_kl/last/d_acc": [
+      -0.14124552408854166,
+      0.2634558925937643,
+      3
+    ],
+    "T5/vae9182/g2g_kl/last/d_ece": [
+      -0.004721364191774182,
+      0.004819947245631418,
+      3
+    ],
+    "T5/vae9182/g2g_kl+adaptive_t/swa/d_acc": [
+      -0.065185546875,
+      0.0,
+      1
+    ],
+    "T5/vae9182/g2g_kl+adaptive_t/swa/d_ece": [
+      -0.0018300160697650378,
+      0.0,
+      1
+    ],
+    "T5/vae9182/g2g_kl+adaptive_t/best/d_acc": [
+      -0.19556427001953125,
+      0.0,
+      1
+    ],
+    "T5/vae9182/g2g_kl+adaptive_t/best/d_ece": [
+      0.0023702014203643568,
+      0.0,
+      1
+    ],
+    "T5/vae9182/g2g_kl+adaptive_t/last/d_acc": [
+      -1.17340087890625,
+      0.0,
+      1
+    ],
+    "T5/vae9182/g2g_kl+adaptive_t/last/d_ece": [
+      0.0004463928182168557,
+      0.0,
+      1
+    ],
+    "T5/vae9182/gate:mean_logvar/swa/d_acc": [
+      -0.27161916097005206,
+      0.6682533258430152,
+      3
+    ],
+    "T5/vae9182/gate:mean_logvar/swa/d_ece": [
+      0.0014772778445743887,
+      0.004581379876241869,
+      3
+    ],
+    "T5/vae9182/gate:mean_logvar/best/d_acc": [
+      -0.32594553629557294,
+      0.22816085816492673,
+      3
+    ],
+    "T5/vae9182/gate:mean_logvar/best/d_ece": [
+      0.004980483755747789,
+      0.005201312177703201,
+      3
+    ],
+    "T5/vae9182/gate:mean_logvar/last/d_acc": [
+      -0.18470001220703125,
+      0.419104606334769,
+      3
+    ],
+    "T5/vae9182/gate:mean_logvar/last/d_ece": [
+      0.0015732085592121945,
+      0.006420419285652081,
+      3
+    ],
+    "T5/vae9182/gate:oracle_error/swa/d_acc": [
+      -0.2281621297200521,
+      0.4932413518255879,
+      3
+    ],
+    "T5/vae9182/gate:oracle_error/swa/d_ece": [
+      0.0056094699780068575,
+      0.003965008243591812,
+      3
+    ],
+    "T5/vae9182/gate:oracle_error/best/d_acc": [
+      -0.44545745849609375,
+      0.5157079258007642,
+      3
+    ],
+    "T5/vae9182/gate:oracle_error/best/d_ece": [
+      0.008148125750455893,
+      0.0036378405382505837,
+      3
+    ],
+    "T5/vae9182/gate:oracle_error/last/d_acc": [
+      -0.36940256754557294,
+      0.3634439591045289,
+      3
+    ],
+    "T5/vae9182/gate:oracle_error/last/d_ece": [
+      0.005224720301711266,
+      0.006513866443266126,
+      3
+    ],
+    "T5/vae9182/logit_std/swa/d_acc": [
+      -0.11951446533203125,
+      0.8183309047871816,
+      3
+    ],
+    "T5/vae9182/logit_std/swa/d_ece": [
+      0.13877768606523855,
+      0.0012936613226332237,
+      3
+    ],
+    "T5/vae9182/logit_std/best/d_acc": [
+      -0.521514892578125,
+      0.31433349821381634,
+      3
+    ],
+    "T5/vae9182/logit_std/best/d_ece": [
+      0.1572956871540844,
+      0.009574882350333448,
+      3
+    ],
+    "T5/vae9182/logit_std/last/d_acc": [
+      -0.5758336385091146,
+      0.29214093280734305,
+      3
+    ],
+    "T5/vae9182/logit_std/last/d_ece": [
+      0.1592660306465983,
+      0.011493020122791362,
+      3
+    ],
+    "T10/pretrained w100/swa/acc": [
+      89.9500223795573,
+      0.3663557063958696,
+      3
+    ],
+    "T10/pretrained w100/swa/ece": [
+      0.032957236164746107,
+      0.001996999098785806,
+      3
+    ],
+    "T10/scratch w050/swa/acc": [
+      86.14732615152995,
+      0.06518936160946984,
+      3
+    ],
+    "T10/scratch w050/swa/ece": [
+      0.03645689697245679,
+      0.0057123664918960985,
+      3
+    ],
+    "T10/scratch w075/swa/acc": [
+      87.3098653157552,
+      0.08202738991711436,
+      3
+    ],
+    "T10/scratch w075/swa/ece": [
+      0.03880776136446548,
+      0.004214154960651775,
+      3
+    ],
+    "T10/scratch w100ns/swa/acc": [
+      88.09213256835938,
+      0.14697656931214573,
+      3
+    ],
+    "T10/scratch w100ns/swa/ece": [
+      0.03744166230022752,
+      0.0030384886023834203,
+      3
+    ],
+    "T10/pretrained w100/best/acc": [
+      90.27596791585286,
+      0.19098772580899204,
+      3
+    ],
+    "T10/pretrained w100/best/ece": [
+      0.027442872111419655,
+      0.002106648231758117,
+      3
+    ],
+    "T10/scratch w050/best/acc": [
+      86.37549336751302,
+      0.14936717576561712,
+      3
+    ],
+    "T10/scratch w050/best/ece": [
+      0.035413849545964105,
+      0.0016811377753558282,
+      3
+    ],
+    "T10/scratch w075/best/acc": [
+      87.61407979329427,
+      0.2035534108503685,
+      3
+    ],
+    "T10/scratch w075/best/ece": [
+      0.03294023924848402,
+      0.00487395497343928,
+      3
+    ],
+    "T10/scratch w100ns/best/acc": [
+      88.33116149902344,
+      0.19556427001953125,
+      3
+    ],
+    "T10/scratch w100ns/best/ece": [
+      0.03286897663718356,
+      0.002469884907558596,
+      3
+    ],
+    "T10/pretrained w100/last/acc": [
+      89.81964365641277,
+      0.16726154800857174,
+      3
+    ],
+    "T10/pretrained w100/last/ece": [
+      0.03073756476100866,
+      0.0010717752881161812,
+      3
+    ],
+    "T10/scratch w050/last/acc": [
+      85.79965464274089,
+      0.537893727428685,
+      3
+    ],
+    "T10/scratch w050/last/ece": [
+      0.039303057711702595,
+      0.0019587373983671716,
+      3
+    ],
+    "T10/scratch w075/last/acc": [
+      86.7992172241211,
+      0.4563260759782308,
+      3
+    ],
+    "T10/scratch w075/last/ece": [
+      0.03867449790971116,
+      0.000853545163135268,
+      3
+    ],
+    "T10/scratch w100ns/last/acc": [
+      87.77705383300781,
+      0.34029864066348586,
+      3
+    ],
+    "T10/scratch w100ns/last/ece": [
+      0.03186932157422345,
+      0.0066523017457976435,
+      3
+    ],
+    "T10/axis/swa/capacity_span": [
+      0.0023508643920086905,
+      null,
+      null
+    ],
+    "T10/axis/swa/teacher_span": [
+      0.17798139929596574,
+      null,
+      null
+    ],
+    "T10/axis/swa/ratio": [
+      75.70891792013998,
+      null,
+      null
+    ],
+    "T10/axis/best/capacity_span": [
+      0.0025448729087805474,
+      null,
+      null
+    ],
+    "T10/axis/best/teacher_span": [
+      0.2009923288882789,
+      null,
+      null
+    ],
+    "T10/axis/best/ratio": [
+      78.97931884723879,
+      null,
+      null
+    ],
+    "T10/axis/last/capacity_span": [
+      0.0074337361374791425,
+      null,
+      null
+    ],
+    "T10/axis/last/teacher_span": [
+      0.19747462097890528,
+      null,
+      null
+    ],
+    "T10/axis/last/ratio": [
+      26.564652999086807,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/nll/T=0.85": [
+      0.490236093600591,
+      0.013204968586590959,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/nll/T=1.0": [
+      0.42454272508621216,
+      0.006677527488311994,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/nll/T=1.3406": [
+      0.35174547632535297,
+      0.002176102966469986,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/nll/T=1.7": [
+      0.36435739199320477,
+      0.003721188292674205,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/nll/T=2.2": [
+      0.41818278034528095,
+      0.00649504514683963,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/nll/steps": [
+      12,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_stage1/nll/argmin_T_modal": [
+      1.3406,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/nll/argmin_T_all_seeds": [
+      1.3406,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/brier/T=0.85": [
+      0.18029920756816864,
+      0.004730233081891463,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/brier/T=1.0": [
+      0.17642476658026376,
+      0.003726773521799824,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/brier/T=1.3406": [
+      0.16210079689820608,
+      0.0013876472555448083,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/brier/T=1.7": [
+      0.1627278725306193,
+      0.0011895102188306252,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/brier/T=2.2": [
+      0.16873867809772491,
+      0.004029081681447081,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/brier/steps": [
+      10,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_stage1/brier/argmin_T_modal": [
+      1.3406,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_10/T=0.85": [
+      0.07957482913177928,
+      0.001480885931917466,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_10/T=1.0": [
+      0.07310608169731758,
+      0.001346692606812536,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_10/T=1.3406": [
+      0.04217539355158806,
+      0.0004799998763340628,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_10/T=1.7": [
+      0.05445511139174847,
+      0.00032185292801472607,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_10/T=2.2": [
+      0.09872129877162258,
+      0.003981019859362209,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_10/steps": [
+      12,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_10/argmin_T_modal": [
+      1.3406,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_10/argmin_T_all_seeds": [
+      1.3406,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_15/T=0.85": [
+      0.07967298300447075,
+      0.001631989300491036,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_15/T=1.0": [
+      0.07312947179942429,
+      0.0011822187508027879,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_15/T=1.3406": [
+      0.04280742607210989,
+      0.0003306341894657955,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_15/T=1.7": [
+      0.04474241582790907,
+      0.0029210060770113494,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_15/T=2.2": [
+      0.10078169572701769,
+      0.00253848032538042,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_15/steps": [
+      11,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_15/argmin_T_modal": [
+      1.3406,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_25/T=0.85": [
+      0.08019367800211968,
+      0.0019321380366659324,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_25/T=1.0": [
+      0.07348011858414848,
+      0.0019674051636328687,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_25/T=1.3406": [
+      0.04381612727968188,
+      0.0013498193261172746,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_25/T=1.7": [
+      0.05154117690265723,
+      0.0017416367124110767,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_25/T=2.2": [
+      0.10156170876194011,
+      0.0030807847855374233,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_25/steps": [
+      12,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_25/argmin_T_modal": [
+      1.3406,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/ece_ew_25/argmin_T_all_seeds": [
+      1.3406,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/ece_em_15/T=0.85": [
+      0.07952274330306809,
+      0.0014800439593135486,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_em_15/T=1.0": [
+      0.07323883628000749,
+      0.0016242792032013763,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_em_15/T=1.3406": [
+      0.05028007002381437,
+      0.0008242886496898966,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_em_15/T=1.7": [
+      0.05472960892655133,
+      0.0007230402924230844,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_em_15/T=2.2": [
+      0.09928213422231598,
+      0.003994558641790451,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_em_15/steps": [
+      12,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_stage1/ece_em_15/argmin_T_modal": [
+      1.3406,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/ece_em_15/argmin_T_all_seeds": [
+      1.3406,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/ece_classwise/T=0.85": [
+      0.10731721125747365,
+      0.005154826404547382,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_classwise/T=1.0": [
+      0.10201191430321477,
+      0.003608568725506047,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_classwise/T=1.3406": [
+      0.06960084230110555,
+      0.006398682040117101,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_classwise/T=1.7": [
+      0.0723575793412507,
+      0.0007007012223597253,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_classwise/T=2.2": [
+      0.1162752337843431,
+      0.006037321316688611,
+      3
+    ],
+    "R3-1/RAF-DB_stage1/ece_classwise/steps": [
+      11,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_stage1/ece_classwise/argmin_T_modal": [
+      1.3406,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/consensus_T": [
+      1.3406,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_stage1/metrics_agreeing": [
+      7,
+      null,
+      7
+    ],
+    "R3-1/RAF-DB_vae9182/nll/T=0.85": [
+      0.33222150802612305,
+      0.008369905733300787,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/nll/T=1.0": [
+      0.3211021622021993,
+      0.009553499663009689,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/nll/T=1.3406": [
+      0.3519992431004842,
+      0.0029982280481753603,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/nll/T=1.7": [
+      0.4317725896835327,
+      0.0034676718066175343,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/nll/T=2.2": [
+      0.5267268816630045,
+      0.0020421346537993065,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/nll/steps": [
+      11,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_vae9182/nll/argmin_T_modal": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/brier/T=0.85": [
+      0.1571155140797297,
+      0.002820177630626195,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/brier/T=1.0": [
+      0.1528801421324412,
+      0.004705133431300258,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/brier/T=1.3406": [
+      0.1524054060379664,
+      0.0015415274749253666,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/brier/T=1.7": [
+      0.17377552390098572,
+      0.0019562587427290456,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/brier/T=2.2": [
+      0.20802598198254904,
+      0.001452162614676738,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/brier/steps": [
+      10,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_vae9182/brier/argmin_T_modal": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_10/T=0.85": [
+      0.04431770957912481,
+      0.001515013536539222,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_10/T=1.0": [
+      0.022454791858967156,
+      0.0023284816421284987,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_10/T=1.3406": [
+      0.06351064764503964,
+      0.0029972874851366513,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_10/T=1.7": [
+      0.12729015777123098,
+      0.00268282136044258,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_10/T=2.2": [
+      0.21081666457671178,
+      0.003477263815888904,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_10/steps": [
+      12,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_10/argmin_T_modal": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_10/argmin_T_all_seeds": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_15/T=0.85": [
+      0.044675372809702706,
+      0.0013093965879811618,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_15/T=1.0": [
+      0.032957236164746107,
+      0.001996999098785806,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_15/T=1.3406": [
+      0.06469776256026936,
+      0.00299973901247489,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_15/T=1.7": [
+      0.12821906177518888,
+      0.0030105325448677826,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_15/T=2.2": [
+      0.21093863546071184,
+      0.0033612721423117073,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_15/steps": [
+      12,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_15/argmin_T_modal": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_15/argmin_T_all_seeds": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_25/T=0.85": [
+      0.04517005026657806,
+      0.0012177526122698758,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_25/T=1.0": [
+      0.03092946905621701,
+      0.0015059248696072385,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_25/T=1.3406": [
+      0.06721995299158279,
+      0.0028949305833537303,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_25/T=1.7": [
+      0.1281431332871687,
+      0.0023745671214255143,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_25/T=2.2": [
+      0.21178956917515013,
+      0.0026419549837541057,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_25/steps": [
+      12,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_25/argmin_T_modal": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/ece_ew_25/argmin_T_all_seeds": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/ece_em_15/T=0.85": [
+      0.04514996889413621,
+      0.001327423096545173,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_em_15/T=1.0": [
+      0.03294104026522859,
+      0.0026608959620908396,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_em_15/T=1.3406": [
+      0.0630064340310737,
+      0.0027540930067281102,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_em_15/T=1.7": [
+      0.12644032643430392,
+      0.003793500935974395,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_em_15/T=2.2": [
+      0.21048582138340663,
+      0.003754164453477063,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_em_15/steps": [
+      12,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_vae9182/ece_em_15/argmin_T_modal": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/ece_em_15/argmin_T_all_seeds": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/ece_classwise/T=0.85": [
+      0.07033147531931627,
+      0.005922773849511001,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_classwise/T=1.0": [
+      0.05755150323277983,
+      0.0034962896058726703,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_classwise/T=1.3406": [
+      0.09478226706803293,
+      0.0013741593403235408,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_classwise/T=1.7": [
+      0.14197731975405586,
+      0.0017595454965130602,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_classwise/T=2.2": [
+      0.21328428606399774,
+      0.0038153790792672926,
+      3
+    ],
+    "R3-1/RAF-DB_vae9182/ece_classwise/steps": [
+      12,
+      null,
+      12
+    ],
+    "R3-1/RAF-DB_vae9182/ece_classwise/argmin_T_modal": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/ece_classwise/argmin_T_all_seeds": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/consensus_T": [
+      1.0,
+      null,
+      null
+    ],
+    "R3-1/RAF-DB_vae9182/metrics_agreeing": [
+      7,
+      null,
+      7
+    ],
+    "R3-1/FERPlus/nll/T=0.26": [
+      0.4913548429807027,
+      0.005914205889821545,
+      3
+    ],
+    "R3-1/FERPlus/nll/T=0.5063": [
+      0.35472363233566284,
+      0.004106093224921977,
+      3
+    ],
+    "R3-1/FERPlus/nll/T=0.74": [
+      0.3426649471124013,
+      0.005217157345976699,
+      3
+    ],
+    "R3-1/FERPlus/nll/T=1.0": [
+      0.36545225977897644,
+      0.00468358576386855,
+      3
+    ],
+    "R3-1/FERPlus/nll/steps": [
+      9,
+      null,
+      9
+    ],
+    "R3-1/FERPlus/nll/argmin_T_modal": [
+      0.74,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/nll/argmin_T_all_seeds": [
+      0.74,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/brier/T=0.26": [
+      0.17518076300621033,
+      0.0020736339167888064,
+      3
+    ],
+    "R3-1/FERPlus/brier/T=0.5063": [
+      0.1677602231502533,
+      0.0007317909333890854,
+      3
+    ],
+    "R3-1/FERPlus/brier/T=0.74": [
+      0.1729836861292521,
+      0.001969319614508395,
+      3
+    ],
+    "R3-1/FERPlus/brier/T=1.0": [
+      0.18141978979110718,
+      0.0025996594058461868,
+      3
+    ],
+    "R3-1/FERPlus/brier/steps": [
+      9,
+      null,
+      9
+    ],
+    "R3-1/FERPlus/brier/argmin_T_modal": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/brier/argmin_T_all_seeds": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/ece_ew_10/T=0.26": [
+      0.05783896619704703,
+      0.002472755385164667,
+      3
+    ],
+    "R3-1/FERPlus/ece_ew_10/T=0.5063": [
+      0.018309964556083552,
+      0.0026748680521259637,
+      3
+    ],
+    "R3-1/FERPlus/ece_ew_10/T=0.74": [
+      0.03319693270817483,
+      0.0009672841525089482,
+      3
+    ],
+    "R3-1/FERPlus/ece_ew_10/T=1.0": [
+      0.07808995667188487,
+      0.0046400777686190905,
+      3
+    ],
+    "R3-1/FERPlus/ece_ew_10/steps": [
+      9,
+      null,
+      9
+    ],
+    "R3-1/FERPlus/ece_ew_10/argmin_T_modal": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/ece_ew_10/argmin_T_all_seeds": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/ece_ew_15/T=0.26": [
+      0.058740805600987316,
+      0.003831888418531751,
+      3
+    ],
+    "R3-1/FERPlus/ece_ew_15/T=0.5063": [
+      0.018498602500361613,
+      0.0015881954147709731,
+      3
+    ],
+    "R3-1/FERPlus/ece_ew_15/T=0.74": [
+      0.034363226014547714,
+      0.0012025338139968638,
+      3
+    ],
+    "R3-1/FERPlus/ece_ew_15/T=1.0": [
+      0.07830038099601992,
+      0.00460023162590826,
+      3
+    ],
+    "R3-1/FERPlus/ece_ew_15/steps": [
+      9,
+      null,
+      9
+    ],
+    "R3-1/FERPlus/ece_ew_15/argmin_T_modal": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/ece_ew_15/argmin_T_all_seeds": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/ece_ew_25/T=0.26": [
+      0.06051653166101578,
+      0.0027156788911380826,
+      3
+    ],
+    "R3-1/FERPlus/ece_ew_25/T=0.5063": [
+      0.022753033418775877,
+      0.0016087354022148023,
+      3
+    ],
+    "R3-1/FERPlus/ece_ew_25/T=0.74": [
+      0.03489789482509753,
+      0.0013424610913198634,
+      3
+    ],
+    "R3-1/FERPlus/ece_ew_25/T=1.0": [
+      0.07883995726353296,
+      0.004513911327697699,
+      3
+    ],
+    "R3-1/FERPlus/ece_ew_25/steps": [
+      9,
+      null,
+      9
+    ],
+    "R3-1/FERPlus/ece_ew_25/argmin_T_modal": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/ece_ew_25/argmin_T_all_seeds": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/ece_em_15/T=0.26": [
+      0.05751738691067819,
+      0.0026832122245262166,
+      3
+    ],
+    "R3-1/FERPlus/ece_em_15/T=0.5063": [
+      0.016608915138426106,
+      0.002350796631274754,
+      3
+    ],
+    "R3-1/FERPlus/ece_em_15/T=0.74": [
+      0.03360809414605281,
+      0.0005763406444607988,
+      3
+    ],
+    "R3-1/FERPlus/ece_em_15/T=1.0": [
+      0.07744751203789849,
+      0.003800926855417822,
+      3
+    ],
+    "R3-1/FERPlus/ece_em_15/steps": [
+      9,
+      null,
+      9
+    ],
+    "R3-1/FERPlus/ece_em_15/argmin_T_modal": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/ece_em_15/argmin_T_all_seeds": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/ece_classwise/T=0.26": [
+      0.11508582631060928,
+      0.015680873760076718,
+      3
+    ],
+    "R3-1/FERPlus/ece_classwise/T=0.5063": [
+      0.09380152914752944,
+      0.0060457172238485395,
+      3
+    ],
+    "R3-1/FERPlus/ece_classwise/T=0.74": [
+      0.11144212984470683,
+      0.007636230584955294,
+      3
+    ],
+    "R3-1/FERPlus/ece_classwise/T=1.0": [
+      0.14895622667127903,
+      0.011845371839843006,
+      3
+    ],
+    "R3-1/FERPlus/ece_classwise/steps": [
+      9,
+      null,
+      9
+    ],
+    "R3-1/FERPlus/ece_classwise/argmin_T_modal": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/ece_classwise/argmin_T_all_seeds": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/consensus_T": [
+      0.5063,
+      null,
+      null
+    ],
+    "R3-1/FERPlus/metrics_agreeing": [
+      6,
+      null,
+      7
+    ],
+    "split/RAF-DB/n_train": [
+      12271,
+      null,
+      null
+    ],
+    "split/RAF-DB/n_reporting": [
+      3068,
+      null,
+      null
+    ],
+    "split/RAF-DB/rows_total": [
+      15339,
+      null,
+      null
+    ],
+    "split/RAF-DB/n_partitions": [
+      2,
+      null,
+      null
+    ],
+    "split/RAF-DB/per_class/Surprise": [
+      329,
+      null,
+      null
+    ],
+    "split/RAF-DB/per_class/Fear": [
+      74,
+      null,
+      null
+    ],
+    "split/RAF-DB/per_class/Disgust": [
+      160,
+      null,
+      null
+    ],
+    "split/RAF-DB/per_class/Happiness": [
+      1185,
+      null,
+      null
+    ],
+    "split/RAF-DB/per_class/Sadness": [
+      478,
+      null,
+      null
+    ],
+    "split/RAF-DB/per_class/Anger": [
+      162,
+      null,
+      null
+    ],
+    "split/RAF-DB/per_class/Neutral": [
+      680,
+      null,
+      null
+    ],
+    "split/FERPlus/n_train": [
+      28259,
+      null,
+      null
+    ],
+    "split/FERPlus/n_reporting": [
+      3153,
+      null,
+      null
+    ],
+    "split/FERPlus/rows_total": [
+      31412,
+      null,
+      null
+    ],
+    "split/FERPlus/n_partitions": [
+      3,
+      null,
+      null
+    ],
+    "R3-2/stage1/T_star_nll": [
+      1.3493828549261861,
+      null,
+      null
+    ],
+    "R3-2/stage1/T_star_ece": [
+      1.3198265386272678,
+      null,
+      null
+    ],
+    "R3-2/stage1/abs_dT": [
+      0.029556316298918306,
+      null,
+      null
+    ],
+    "R3-2/stage1/d_ece": [
+      0.0015353928119760125,
+      null,
+      null
+    ],
+    "R3-2/stage1/ece_removed_by_ts": [
+      0.0219799084042477,
+      null,
+      null
+    ],
+    "R3-2/stage1/cross_fit/confirm_T_star": [
+      1.3493927210953593,
+      null,
+      null
+    ],
+    "R3-2/stage1/cross_fit/abs_dT": [
+      9.86616917320049e-06,
+      null,
+      null
+    ],
+    "R3-2/stage1/cross_fit/d_nll": [
+      0.0,
+      null,
+      null
+    ],
+    "R3-2/stage1/cross_fit/d_ece": [
+      1.6517558340534144e-07,
+      null,
+      null
+    ],
+    "R3-2/primary/T_star_nll": [
+      1.261345227620692,
+      null,
+      null
+    ],
+    "R3-2/primary/T_star_ece": [
+      1.244135499501715,
+      null,
+      null
+    ],
+    "R3-2/primary/abs_dT": [
+      0.01720972811897692,
+      null,
+      null
+    ],
+    "R3-2/primary/d_ece": [
+      0.0014593679909600393,
+      null,
+      null
+    ],
+    "R3-2/primary/ece_removed_by_ts": [
+      0.019851174079260583,
+      null,
+      null
+    ],
+    "R3-2/primary/cross_fit/confirm_T_star": [
+      1.2613411785961113,
+      null,
+      null
+    ],
+    "R3-2/primary/cross_fit/abs_dT": [
+      4.049024580732308e-06,
+      null,
+      null
+    ],
+    "R3-2/primary/cross_fit/d_nll": [
+      0.0,
+      null,
+      null
+    ],
+    "R3-2/primary/cross_fit/d_ece": [
+      -2.0475982842257934e-07,
+      null,
+      null
+    ],
+    "R3-2/vae9182/T_star_nll": [
+      0.9830836723309966,
+      null,
+      null
+    ],
+    "R3-2/vae9182/T_star_ece": [
+      1.0571991741999642,
+      null,
+      null
+    ],
+    "R3-2/vae9182/abs_dT": [
+      0.07411550186896765,
+      null,
+      null
+    ],
+    "R3-2/vae9182/d_ece": [
+      0.004324022903941288,
+      null,
+      null
+    ],
+    "R3-2/vae9182/ece_removed_by_ts": [
+      -0.0010179141402788562,
+      null,
+      null
+    ],
+    "R3-2/vae9182/cross_fit/confirm_T_star": [
+      0.9829375448886304,
+      null,
+      null
+    ],
+    "R3-2/vae9182/cross_fit/abs_dT": [
+      0.00014612744236619513,
+      null,
+      null
+    ],
+    "R3-2/vae9182/cross_fit/d_nll": [
+      2.9802322387695312e-08,
+      null,
+      null
+    ],
+    "R3-2/vae9182/cross_fit/d_ece": [
+      3.8007296126390394e-05,
+      null,
+      null
+    ],
+    "R3-2/ferplus/T_star_nll": [
+      0.5063844589955608,
+      null,
+      null
+    ],
+    "R3-2/ferplus/T_star_ece": [
+      0.45304659827458493,
+      null,
+      null
+    ],
+    "R3-2/ferplus/abs_dT": [
+      0.053337860720975905,
+      null,
+      null
+    ],
+    "R3-2/ferplus/d_ece": [
+      0.008461177850049375,
+      null,
+      null
+    ],
+    "R3-2/ferplus/ece_removed_by_ts": [
+      0.11259259962672624,
+      null,
+      null
+    ],
+    "R3-3/(a)_all_rows/T_ece": [
+      0.46,
+      null,
+      3153
+    ],
+    "R3-3/(a)_all_rows/T_nll": [
+      0.5,
+      null,
+      3153
+    ],
+    "R3-3/(a)_all_rows/T_jsd": [
+      0.74,
+      null,
+      3153
+    ],
+    "R3-3/(b)_vote_sum_=_10/T_ece": [
+      0.42,
+      null,
+      1977
+    ],
+    "R3-3/(b)_vote_sum_=_10/T_nll": [
+      0.46,
+      null,
+      1977
+    ],
+    "R3-3/(b)_vote_sum_=_10/T_jsd": [
+      0.74,
+      null,
+      1977
+    ],
+    "R3-3/(c)_stratum_6-7/T_ece": [
+      0.74,
+      null,
+      28
+    ],
+    "R3-3/(c)_stratum_6-7/T_nll": [
+      0.7,
+      null,
+      28
+    ],
+    "R3-3/(c)_stratum_6-7/T_jsd": [
+      0.88,
+      null,
+      28
+    ],
+    "R3-3/(c)_stratum_8-9/T_ece": [
+      0.46,
+      null,
+      1148
+    ],
+    "R3-3/(c)_stratum_8-9/T_nll": [
+      0.54,
+      null,
+      1148
+    ],
+    "R3-3/(c)_stratum_8-9/T_jsd": [
+      0.74,
+      null,
+      1148
+    ],
+    "R3-3/(c)_stratum_10/T_ece": [
+      0.42,
+      null,
+      1977
+    ],
+    "R3-3/(c)_stratum_10/T_nll": [
+      0.46,
+      null,
+      1977
+    ],
+    "R3-3/(c)_stratum_10/T_jsd": [
+      0.74,
+      null,
+      1977
+    ],
+    "P6.1/Tx\u03c4_=_5.10/mean_dECE": [
+      -0.03913065410667997,
+      0.0031896736668642375,
+      3
+    ],
+    "P6.1/Tx\u03c4_=_5.10/seed42/dECE": [
+      -0.035452032376765585,
+      null,
+      null
+    ],
+    "P6.1/Tx\u03c4_=_5.10/seed1/dECE": [
+      -0.04112752361861793,
+      null,
+      null
+    ],
+    "P6.1/Tx\u03c4_=_5.10/seed43/dECE": [
+      -0.04081240632465641,
+      null,
+      null
+    ],
+    "P6.1/Tx\u03c4_=_5.10/status": [
+      "YANLI\u015eLAMA-baca\u011f\u0131 sa\u011fland\u0131 (3/3 ayn\u0131 i\u015faret VE |ort| \u2265 2\u00d7bar)",
+      null,
+      null
+    ],
+    "P6.1/Tx\u03c4_=_10.20/mean_dECE": [
+      -0.03240560747356013,
+      0.002906759891641755,
+      3
+    ],
+    "P6.1/Tx\u03c4_=_10.20/seed42/dECE": [
+      -0.03340835389444384,
+      null,
+      null
+    ],
+    "P6.1/Tx\u03c4_=_10.20/seed1/dECE": [
+      -0.03467824359605334,
+      null,
+      null
+    ],
+    "P6.1/Tx\u03c4_=_10.20/seed43/dECE": [
+      -0.029130224930183204,
+      null,
+      null
+    ],
+    "P6.1/Tx\u03c4_=_10.20/status": [
+      "YANLI\u015eLAMA-baca\u011f\u0131 sa\u011fland\u0131 (3/3 ayn\u0131 i\u015faret VE |ort| \u2265 2\u00d7bar)",
+      null,
+      null
+    ],
+    "P6.2/alpha=0.1/seed42/gap": [
+      0.019685229167555884,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.1/seed1/gap": [
+      0.021476582528093188,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.1/seed43/gap": [
+      0.026154078144915258,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.3/seed42/gap": [
+      0.029680987040486766,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.3/seed1/gap": [
+      0.029607888961980675,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.3/seed43/gap": [
+      0.03167726117947577,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.5/seed42/gap": [
+      0.0344054573925875,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.5/seed1/gap": [
+      0.03654092911635725,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.5/seed43/gap": [
+      0.027098944442251985,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.7/seed42/gap": [
+      -0.0070761686878223,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.7/seed1/gap": [
+      0.0002569632296301125,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.7/seed43/gap": [
+      -0.0006984388297897326,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.9/seed42/gap": [
+      -0.030731134174933186,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.9/seed1/gap": [
+      -0.03965799212261473,
+      null,
+      null
+    ],
+    "P6.2/alpha=0.9/seed43/gap": [
+      -0.03512787289499769,
+      null,
+      null
+    ],
+    "P6.2/verdict": [
+      "DO\u011eRULANMADI",
+      null,
+      0
+    ],
+    "P6.3/verdict": [
+      "DO\u011eRULANDI",
+      null,
+      3
+    ],
+    "R3W1/T=0.26/ece_arm": [
+      0.058740805600987316,
+      0.003831888418531751,
+      3
+    ],
+    "R3W1/T=0.26/jsd_arm": [
+      0.07368071377277374,
+      0.0007331671660701203,
+      3
+    ],
+    "R3W1/T=0.26/ece_ts": [
+      0.026590545011229615,
+      0.0005390404980543267,
+      3
+    ],
+    "R3W1/T=0.26/jsd_ts": [
+      0.05404462955891298,
+      0.00039916229348837574,
+      3
+    ],
+    "R3W1/T=0.5063/ece_arm": [
+      0.018498602500361613,
+      0.0015881954147709731,
+      3
+    ],
+    "R3W1/T=0.5063/jsd_arm": [
+      0.058690217634042106,
+      0.0004615663733709948,
+      3
+    ],
+    "R3W1/T=0.5063/ece_ts": [
+      0.029646180016392822,
+      0.0016483823776464203,
+      3
+    ],
+    "R3W1/T=0.5063/jsd_ts": [
+      0.054273864072206496,
+      0.00020913379900477892,
+      3
+    ],
+    "R3W1/T=0.74/ece_arm": [
+      0.034363226014547714,
+      0.0012025338139968638,
+      3
+    ],
+    "R3W1/T=0.74/jsd_arm": [
+      0.05359788859883944,
+      0.0003727677382411302,
+      3
+    ],
+    "R3W1/T=0.74/ece_ts": [
+      0.024559433540389003,
+      0.0041417624161009985,
+      3
+    ],
+    "R3W1/T=0.74/jsd_ts": [
+      0.05458399447143702,
+      0.0002493870765654314,
+      3
+    ],
+    "R3W1/T=1.0/ece_arm": [
+      0.07830038099601992,
+      0.00460023162590826,
+      3
+    ],
+    "R3W1/T=1.0/jsd_arm": [
+      0.05510709931453069,
+      0.00045023334519684265,
+      3
+    ],
+    "R3W1/T=1.0/ece_ts": [
+      0.02026964695235112,
+      0.0017399872522243173,
+      3
+    ],
+    "R3W1/T=1.0/jsd_ts": [
+      0.05454465795715183,
+      0.0005060496740959768,
+      3
+    ],
+    "R3W1/T=0.26/occupies": [
+      false,
+      null,
+      null
+    ],
+    "R3W1/T=0.5063/occupies": [
+      false,
+      null,
+      null
+    ],
+    "R3W1/T=0.74/occupies": [
+      false,
+      null,
+      null
+    ],
+    "R3W1/T=1.0/occupies": [
+      true,
+      null,
+      null
+    ],
+    "R3W1/corner/ECE_min": [
+      0.018498602500361613,
+      null,
+      null
+    ],
+    "R3W1/corner/JSD_min": [
+      0.05359788859883944,
+      null,
+      null
+    ],
+    "R3W1/verdict": [
+      "ALT YAZI YANLI\u015eLANDI",
+      null,
+      null
+    ],
+    "G2.1/RAF-DB/best-last/acc_pp/mean": [
+      0.7658466018793237,
+      0.43107852109679157,
+      131
+    ],
+    "G2.1/RAF-DB/best-last/acc_pp/t": [
+      20.33391731726416,
+      null,
+      130
+    ],
+    "G2.1/RAF-DB/best-last/acc_pp/p": [
+      3.3301981039638085e-42,
+      null,
+      null
+    ],
+    "G2.1/RAF-DB/best-last/ece/mean": [
+      -0.002878700403167627,
+      0.009218824488955835,
+      131
+    ],
+    "G2.1/RAF-DB/best-last/ece/t": [
+      -3.574016635587231,
+      null,
+      130
+    ],
+    "G2.1/RAF-DB/best-last/ece/p": [
+      0.0004940655648359725,
+      null,
+      null
+    ],
+    "G2.1/RAF-DB/best-swa/acc_pp/mean": [
+      0.1292732368081303,
+      0.262038968256677,
+      118
+    ],
+    "G2.1/RAF-DB/best-swa/acc_pp/t": [
+      5.358999862410279,
+      null,
+      117
+    ],
+    "G2.1/RAF-DB/best-swa/acc_pp/p": [
+      4.256018138298504e-07,
+      null,
+      null
+    ],
+    "G2.1/RAF-DB/best-swa/ece/mean": [
+      -0.0005773924487635059,
+      0.011751979016303862,
+      118
+    ],
+    "G2.1/RAF-DB/best-swa/ece/t": [
+      -0.5337047844871985,
+      null,
+      117
+    ],
+    "G2.1/RAF-DB/best-swa/ece/p": [
+      0.5945582991992364,
+      null,
+      null
+    ],
+    "G2.1/FERPlus/best-last/acc_pp/mean": [
+      0.4995263417561849,
+      0.2104346770893655,
+      12
+    ],
+    "G2.1/FERPlus/best-last/acc_pp/t": [
+      8.223026885186794,
+      null,
+      11
+    ],
+    "G2.1/FERPlus/best-last/acc_pp/p": [
+      5.024608671291819e-06,
+      null,
+      null
+    ],
+    "G2.1/FERPlus/best-last/ece/mean": [
+      0.004085516836523745,
+      0.007446682592579257,
+      12
+    ],
+    "G2.1/FERPlus/best-last/ece/t": [
+      1.900530242309205,
+      null,
+      11
+    ],
+    "G2.1/FERPlus/best-last/ece/p": [
+      0.083875130522093,
+      null,
+      null
+    ],
+    "G2.1/FERPlus/best-swa/acc_pp/mean": [
+      0.2246545155843099,
+      0.20970803859941384,
+      12
+    ],
+    "G2.1/FERPlus/best-swa/acc_pp/t": [
+      3.710997801901968,
+      null,
+      11
+    ],
+    "G2.1/FERPlus/best-swa/acc_pp/p": [
+      0.0034351816755036992,
+      null,
+      null
+    ],
+    "G2.1/FERPlus/best-swa/ece/mean": [
+      0.006881735070898713,
+      0.008788135189382823,
+      12
+    ],
+    "G2.1/FERPlus/best-swa/ece/t": [
+      2.712638012538874,
+      null,
+      11
+    ],
+    "G2.1/FERPlus/best-swa/ece/p": [
+      0.020195446739927764,
+      null,
+      null
+    ],
+    "G2.2/summary/a_T_axis": [
+      0,
+      null,
+      9
+    ],
+    "G2.2/summary/b_signed_gap_within_branch": [
+      9,
+      null,
+      9
+    ],
+    "G2.2/summary/c_unsigned_gap_pooled": [
+      3,
+      null,
+      9
+    ],
+    "G2.2/RAF-DB_stage1/seed42/a": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_stage1/seed42/b": [
+      true,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_stage1/seed42/c": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_stage1/seed1/a": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_stage1/seed1/b": [
+      true,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_stage1/seed1/c": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_stage1/seed43/a": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_stage1/seed43/b": [
+      true,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_stage1/seed43/c": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_vae9182/seed42/a": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_vae9182/seed42/b": [
+      true,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_vae9182/seed42/c": [
+      true,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_vae9182/seed1/a": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_vae9182/seed1/b": [
+      true,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_vae9182/seed1/c": [
+      true,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_vae9182/seed43/a": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_vae9182/seed43/b": [
+      true,
+      null,
+      null
+    ],
+    "G2.2/RAF-DB_vae9182/seed43/c": [
+      true,
+      null,
+      null
+    ],
+    "G2.2/FERPlus/seed42/a": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/FERPlus/seed42/b": [
+      true,
+      null,
+      null
+    ],
+    "G2.2/FERPlus/seed42/c": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/FERPlus/seed1/a": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/FERPlus/seed1/b": [
+      true,
+      null,
+      null
+    ],
+    "G2.2/FERPlus/seed1/c": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/FERPlus/seed43/a": [
+      false,
+      null,
+      null
+    ],
+    "G2.2/FERPlus/seed43/b": [
+      true,
+      null,
+      null
+    ],
+    "G2.2/FERPlus/seed43/c": [
+      false,
+      null,
+      null
+    ],
+    "G3.1/primary/adaptive_t/ratio_ctrl": [
+      1.5211308441221054,
+      null,
+      3
+    ],
+    "G3.1/primary/adaptive_t/ratio_paired": [
+      3.2221350860402604,
+      null,
+      3
+    ],
+    "G3.1/primary/adaptive_t/verdict": [
+      "unresolved",
+      null,
+      null
+    ],
+    "G3.1/primary/ctkd/ratio_ctrl": [
+      2.4889576940807188,
+      null,
+      1
+    ],
+    "G3.1/primary/ctkd/ratio_paired": [
+      null,
+      null,
+      1
+    ],
+    "G3.1/primary/ctkd/verdict": [
+      "n/a",
+      null,
+      null
+    ],
+    "G3.1/primary/g2g_kl/ratio_ctrl": [
+      1.060201199397464,
+      null,
+      3
+    ],
+    "G3.1/primary/g2g_kl/ratio_paired": [
+      0.5884363740872871,
+      null,
+      3
+    ],
+    "G3.1/primary/g2g_kl/verdict": [
+      "unresolved",
+      null,
+      null
+    ],
+    "G3.1/primary/gate:mean_logvar/ratio_ctrl": [
+      1.6726520477404725,
+      null,
+      3
+    ],
+    "G3.1/primary/gate:mean_logvar/ratio_paired": [
+      0.6042354432702173,
+      null,
+      3
+    ],
+    "G3.1/primary/gate:mean_logvar/verdict": [
+      "unresolved",
+      null,
+      null
+    ],
+    "G3.1/primary/gate:oracle_error/ratio_ctrl": [
+      0.11275182660577747,
+      null,
+      3
+    ],
+    "G3.1/primary/gate:oracle_error/ratio_paired": [
+      0.07104366468889871,
+      null,
+      3
+    ],
+    "G3.1/primary/gate:oracle_error/verdict": [
+      "unresolved",
+      null,
+      null
+    ],
+    "G3.1/primary/gate:target_logvar/ratio_ctrl": [
+      0.23490363991662916,
+      null,
+      3
+    ],
+    "G3.1/primary/gate:target_logvar/ratio_paired": [
+      0.26195425891514146,
+      null,
+      3
+    ],
+    "G3.1/primary/gate:target_logvar/verdict": [
+      "unresolved",
+      null,
+      null
+    ],
+    "G3.1/primary/logit_std/ratio_ctrl": [
+      56.676381165466225,
+      null,
+      3
+    ],
+    "G3.1/primary/logit_std/ratio_paired": [
+      14.800969148943018,
+      null,
+      3
+    ],
+    "G3.1/primary/logit_std/verdict": [
+      "established",
+      null,
+      null
+    ],
+    "G3.1/stage1/adaptive_t/ratio_ctrl": [
+      0.9260426974236218,
+      null,
+      3
+    ],
+    "G3.1/stage1/adaptive_t/ratio_paired": [
+      0.3321097548836608,
+      null,
+      3
+    ],
+    "G3.1/stage1/adaptive_t/verdict": [
+      "unresolved",
+      null,
+      null
+    ],
+    "G3.1/stage1/ctkd/ratio_ctrl": [
+      4.924674511996015,
+      null,
+      1
+    ],
+    "G3.1/stage1/ctkd/ratio_paired": [
+      null,
+      null,
+      1
+    ],
+    "G3.1/stage1/ctkd/verdict": [
+      "n/a",
+      null,
+      null
+    ],
+    "G3.1/stage1/g2g_kl/ratio_ctrl": [
+      3.5736276813144405,
+      null,
+      3
+    ],
+    "G3.1/stage1/g2g_kl/ratio_paired": [
+      11.923103330585713,
+      null,
+      3
+    ],
+    "G3.1/stage1/g2g_kl/verdict": [
+      "established",
+      null,
+      null
+    ],
+    "G3.1/stage1/gate:mean_logvar/ratio_ctrl": [
+      0.5536695460353049,
+      null,
+      3
+    ],
+    "G3.1/stage1/gate:mean_logvar/ratio_paired": [
+      1.14241434121379,
+      null,
+      3
+    ],
+    "G3.1/stage1/gate:mean_logvar/verdict": [
+      "unresolved",
+      null,
+      null
+    ],
+    "G3.1/stage1/gate:oracle_error/ratio_ctrl": [
+      0.7328269829705132,
+      null,
+      3
+    ],
+    "G3.1/stage1/gate:oracle_error/ratio_paired": [
+      0.43219516483190423,
+      null,
+      3
+    ],
+    "G3.1/stage1/gate:oracle_error/verdict": [
+      "unresolved",
+      null,
+      null
+    ],
+    "G3.1/stage1/gate:target_logvar/ratio_ctrl": [
+      1.9677028866260202,
+      null,
+      3
+    ],
+    "G3.1/stage1/gate:target_logvar/ratio_paired": [
+      1.8214939096153338,
+      null,
+      3
+    ],
+    "G3.1/stage1/gate:target_logvar/verdict": [
+      "unresolved",
+      null,
+      null
+    ],
+    "G3.1/stage1/logit_std/ratio_ctrl": [
+      76.6244115424183,
+      null,
+      3
+    ],
+    "G3.1/stage1/logit_std/ratio_paired": [
+      38.9199913899619,
+      null,
+      3
+    ],
+    "G3.1/stage1/logit_std/verdict": [
+      "established",
+      null,
+      null
+    ],
+    "G3.1/vae9182/adaptive_t/ratio_ctrl": [
+      2.102232726678273,
+      null,
+      3
+    ],
+    "G3.1/vae9182/adaptive_t/ratio_paired": [
+      0.895100326548747,
+      null,
+      3
+    ],
+    "G3.1/vae9182/adaptive_t/verdict": [
+      "unresolved",
+      null,
+      null
+    ],
+    "G3.1/vae9182/ctkd/ratio_ctrl": [
+      1.90954285459482,
+      null,
+      1
+    ],
+    "G3.1/vae9182/ctkd/ratio_paired": [
+      null,
+      null,
+      1
+    ],
+    "G3.1/vae9182/ctkd/verdict": [
+      "n/a",
+      null,
+      null
+    ],
+    "G3.1/vae9182/g2g_kl/ratio_ctrl": [
+      0.4686966472484287,
+      null,
+      3
+    ],
+    "G3.1/vae9182/g2g_kl/ratio_paired": [
+      0.21575275643501685,
+      null,
+      3
+    ],
+    "G3.1/vae9182/g2g_kl/verdict": [
+      "unresolved",
+      null,
+      null
+    ],
+    "G3.1/vae9182/g2g_kl+adaptive_t/ratio_ctrl": [
+      0.9163830223447293,
+      null,
+      1
+    ],
+    "G3.1/vae9182/g2g_kl+adaptive_t/ratio_paired": [
+      null,
+      null,
+      1
+    ],
+    "G3.1/vae9182/g2g_kl+adaptive_t/verdict": [
+      "n/a",
+      null,
+      null
+    ],
+    "G3.1/vae9182/gate:mean_logvar/ratio_ctrl": [
+      0.547194142293231,
+      null,
+      3
+    ],
+    "G3.1/vae9182/gate:mean_logvar/ratio_paired": [
+      0.322452598230341,
+      null,
+      3
+    ],
+    "G3.1/vae9182/gate:mean_logvar/verdict": [
+      "unresolved",
+      null,
+      null
+    ],
+    "G3.1/vae9182/gate:oracle_error/ratio_ctrl": [
+      2.077787279223308,
+      null,
+      3
+    ],
+    "G3.1/vae9182/gate:oracle_error/ratio_paired": [
+      1.4147435852303207,
+      null,
+      3
+    ],
+    "G3.1/vae9182/gate:oracle_error/verdict": [
+      "established",
+      null,
+      null
+    ],
+    "G3.1/vae9182/logit_std/ratio_ctrl": [
+      69.49311401773625,
+      null,
+      3
+    ],
+    "G3.1/vae9182/logit_std/ratio_paired": [
+      107.27512961642783,
+      null,
+      3
+    ],
+    "G3.1/vae9182/logit_std/verdict": [
+      "established",
+      null,
+      null
+    ],
+    "G3.2/k_observed_median": [
+      1.695592738191634,
+      null,
+      17
+    ],
+    "G3.2/per_cell_fpr": [
+      0.034975,
+      null,
+      null
+    ],
+    "G3.2/family_wise": [
+      0.45404657612306754,
+      null,
+      17
+    ],
+    "G3.2/sim/per_cell_rate_at_median_k": [
+      0.03515484729986554,
+      null,
+      22
+    ],
+    "G3.2/sim/family_wise_at_median_k": [
+      0.5449410868322991,
+      null,
+      22
+    ],
+    "G3.2/sim/family_wise_at_own_k": [
+      0.7410378244162852,
+      null,
+      22
+    ],
+    "G3.2/sim/family_wise_with_shared_component": [
+      0.73242465,
+      null,
+      22
+    ],
+    "G3.2/sim/independence_gap_own_k_minus_shared": [
+      0.008613174416285174,
+      null,
+      22
+    ],
+    "G3.2/sim/rho_shared_control": [
+      0.39328562654600957,
+      null,
+      22
+    ],
+    "G3.2/sim/rho_other_pairs": [
+      -0.07666744034334039,
+      null,
+      22
+    ],
+    "G3.2/sim/n_family_cells": [
+      22,
+      null,
+      null
+    ],
+    "G3.3/vae9182: logit_std vs kontrol/p_raw": [
+      2.896421620059295e-05,
+      null,
+      3
+    ],
+    "G3.3/vae9182: logit_std vs kontrol/p_holm": [
+      0.0001737852972035577,
+      null,
+      3
+    ],
+    "G3.3/stage1: logit_std vs kontrol/p_raw": [
+      0.00021998341994553205,
+      null,
+      3
+    ],
+    "G3.3/stage1: logit_std vs kontrol/p_holm": [
+      0.0010999170997276603,
+      null,
+      3
+    ],
+    "G3.3/stage1: T*(1.3406) vs T=1/p_raw": [
+      0.0004994996389512498,
+      null,
+      3
+    ],
+    "G3.3/stage1: T*(1.3406) vs T=1/p_holm": [
+      0.001997998555804999,
+      null,
+      3
+    ],
+    "G3.3/FERPlus: T*_NLL(0.5063) vs T=1/p_raw": [
+      0.0009949469178449125,
+      null,
+      3
+    ],
+    "G3.3/FERPlus: T*_NLL(0.5063) vs T=1/p_holm": [
+      0.0029848407535347375,
+      null,
+      3
+    ],
+    "G3.3/primary: logit_std vs kontrol/p_raw": [
+      0.001518128695660902,
+      null,
+      3
+    ],
+    "G3.3/primary: logit_std vs kontrol/p_holm": [
+      0.003036257391321804,
+      null,
+      3
+    ],
+    "G3.3/vae9182: gate:oracle_error vs temiz kontrol (P2)/p_raw": [
+      0.13389348756910502,
+      null,
+      3
+    ],
+    "G3.3/vae9182: gate:oracle_error vs temiz kontrol (P2)/p_holm": [
+      0.13389348756910502,
+      null,
+      3
+    ],
+    "G3.4/primary/gate:oracle_error/mean": [
+      -0.010866800944010416,
+      0.7217591290348079,
+      3
+    ],
+    "G3.4/primary/gate:oracle_error/p_tost": [
+      0.1014863527719482,
+      null,
+      null
+    ],
+    "G3.4/primary/gate:oracle_error/class": [
+      "inconclusive",
+      null,
+      null
+    ],
+    "G3.4/stage1/gate:oracle_error/mean": [
+      -0.21729532877604166,
+      0.4567099042483196,
+      3
+    ],
+    "G3.4/stage1/gate:oracle_error/p_tost": [
+      0.524296509370344,
+      null,
+      null
+    ],
+    "G3.4/stage1/gate:oracle_error/class": [
+      "inconclusive",
+      null,
+      null
+    ],
+    "G3.4/vae9182/gate:oracle_error/mean": [
+      -0.2281621297200521,
+      0.4932413518255879,
+      3
+    ],
+    "G3.4/vae9182/gate:oracle_error/p_tost": [
+      0.2905043816760751,
+      null,
+      null
+    ],
+    "G3.4/vae9182/gate:oracle_error/class": [
+      "inconclusive",
+      null,
+      null
+    ],
+    "G3.4/FERPlus ECE: student-TS \u2212 T*-arm/mean": [
+      0.00177104445198951,
+      0.003038276855643356,
+      3
+    ],
+    "G3.4/FERPlus ECE: student-TS \u2212 T*-arm/p_tost": [
+      0.2535478481672203,
+      null,
+      null
+    ],
+    "G3.4/FERPlus ECE: student-TS \u2212 T*-arm/class": [
+      "inconclusive",
+      null,
+      null
+    ],
+    "G3.4/FERPlus JSD: student-TS \u2212 T*-arm/mean": [
+      -0.004145559676890269,
+      0.00045844544246071545,
+      3
+    ],
+    "G3.4/FERPlus JSD: student-TS \u2212 T*-arm/p_tost": [
+      0.9966604356568327,
+      null,
+      null
+    ],
+    "G3.4/FERPlus JSD: student-TS \u2212 T*-arm/class": [
+      "difference beyond margin",
+      null,
+      null
+    ],
+    "G3.5/stage1/ece_T1": [
+      0.03779733467756024,
+      null,
+      3068
+    ],
+    "G3.5/stage1/T_star_nll": [
+      1.34,
+      null,
+      3068
+    ],
+    "G3.5/stage1/T_star_ece": [
+      1.32,
+      null,
+      3068
+    ],
+    "G3.5/stage1/ece_at_T_star_nll": [
+      0.015884848829942046,
+      null,
+      3068
+    ],
+    "G3.5/stage1/headroom_nllstar": [
+      0.021912485847618193,
+      null,
+      3068
+    ],
+    "G3.5/stage1/headroom_eq8": [
+      0.023182216800611284,
+      null,
+      3068
+    ],
+    "G3.5/stage1/n_val": [
+      3068,
+      null,
+      3068
+    ],
+    "G3.5/stage1/ece_T1/ci_lo": [
+      0.0310919820877319,
+      null,
+      null
+    ],
+    "G3.5/stage1/ece_T1/ci_hi": [
+      0.04689287658595336,
+      null,
+      null
+    ],
+    "G3.5/stage1/T_star_nll/ci_lo": [
+      1.3,
+      null,
+      null
+    ],
+    "G3.5/stage1/T_star_nll/ci_hi": [
+      1.4,
+      null,
+      null
+    ],
+    "G3.5/stage1/T_star_ece/ci_lo": [
+      1.28,
+      null,
+      null
+    ],
+    "G3.5/stage1/T_star_ece/ci_hi": [
+      1.38,
+      null,
+      null
+    ],
+    "G3.5/stage1/headroom_nllstar/ci_lo": [
+      0.01183686742161204,
+      null,
+      null
+    ],
+    "G3.5/stage1/headroom_nllstar/ci_hi": [
+      0.02912299014841696,
+      null,
+      null
+    ],
+    "G3.5/stage1/headroom_eq8/ci_lo": [
+      0.015066928598754031,
+      null,
+      null
+    ],
+    "G3.5/stage1/headroom_eq8/ci_hi": [
+      0.030511916218245894,
+      null,
+      null
+    ],
+    "G3.5/primary/ece_T1": [
+      0.039575946082314586,
+      null,
+      3068
+    ],
+    "G3.5/primary/T_star_nll": [
+      1.26,
+      null,
+      3068
+    ],
+    "G3.5/primary/T_star_ece": [
+      1.24,
+      null,
+      3068
+    ],
+    "G3.5/primary/ece_at_T_star_nll": [
+      0.019655215941276765,
+      null,
+      3068
+    ],
+    "G3.5/primary/headroom_nllstar": [
+      0.01992073014103782,
+      null,
+      3068
+    ],
+    "G3.5/primary/headroom_eq8": [
+      0.02128259222665189,
+      null,
+      3068
+    ],
+    "G3.5/primary/n_val": [
+      3068,
+      null,
+      3068
+    ],
+    "G3.5/primary/ece_T1/ci_lo": [
+      0.03387218967787214,
+      null,
+      null
+    ],
+    "G3.5/primary/ece_T1/ci_hi": [
+      0.05009006460090843,
+      null,
+      null
+    ],
+    "G3.5/primary/T_star_nll/ci_lo": [
+      1.22,
+      null,
+      null
+    ],
+    "G3.5/primary/T_star_nll/ci_hi": [
+      1.3,
+      null,
+      null
+    ],
+    "G3.5/primary/T_star_ece/ci_lo": [
+      1.18,
+      null,
+      null
+    ],
+    "G3.5/primary/T_star_ece/ci_hi": [
+      1.28,
+      null,
+      null
+    ],
+    "G3.5/primary/headroom_nllstar/ci_lo": [
+      0.0111650248375333,
+      null,
+      null
+    ],
+    "G3.5/primary/headroom_nllstar/ci_hi": [
+      0.026361551746686286,
+      null,
+      null
+    ],
+    "G3.5/primary/headroom_eq8/ci_lo": [
+      0.015355234704390671,
+      null,
+      null
+    ],
+    "G3.5/primary/headroom_eq8/ci_hi": [
+      0.028018683451127117,
+      null,
+      null
+    ],
+    "G3.5/vae9182/ece_T1": [
+      0.013553885725858002,
+      null,
+      3068
+    ],
+    "G3.5/vae9182/T_star_nll": [
+      0.98,
+      null,
+      3068
+    ],
+    "G3.5/vae9182/T_star_ece": [
+      1.06,
+      null,
+      3068
+    ],
+    "G3.5/vae9182/ece_at_T_star_nll": [
+      0.01324002010630941,
+      null,
+      3068
+    ],
+    "G3.5/vae9182/headroom_nllstar": [
+      0.0003138656195485912,
+      null,
+      3068
+    ],
+    "G3.5/vae9182/headroom_eq8": [
+      0.002347633688678111,
+      null,
+      3068
+    ],
+    "G3.5/vae9182/n_val": [
+      3068,
+      null,
+      3068
+    ],
+    "G3.5/vae9182/ece_T1/ci_lo": [
+      0.010725603522522232,
+      null,
+      null
+    ],
+    "G3.5/vae9182/ece_T1/ci_hi": [
+      0.024093739187641464,
+      null,
+      null
+    ],
+    "G3.5/vae9182/T_star_nll/ci_lo": [
+      0.94,
+      null,
+      null
+    ],
+    "G3.5/vae9182/T_star_nll/ci_hi": [
+      1.02,
+      null,
+      null
+    ],
+    "G3.5/vae9182/T_star_ece/ci_lo": [
+      0.92,
+      null,
+      null
+    ],
+    "G3.5/vae9182/T_star_ece/ci_hi": [
+      1.08,
+      null,
+      null
+    ],
+    "G3.5/vae9182/headroom_nllstar/ci_lo": [
+      -0.003240502519961239,
+      null,
+      null
+    ],
+    "G3.5/vae9182/headroom_nllstar/ci_hi": [
+      0.005857808278323927,
+      null,
+      null
+    ],
+    "G3.5/vae9182/headroom_eq8/ci_lo": [
+      0.0,
+      null,
+      null
+    ],
+    "G3.5/vae9182/headroom_eq8/ci_hi": [
+      0.007993710613149156,
+      null,
+      null
+    ],
+    "G3.5/ferplus/ece_T1": [
+      0.12823279536251556,
+      null,
+      3153
+    ],
+    "G3.5/ferplus/T_star_nll": [
+      0.5,
+      null,
+      3153
+    ],
+    "G3.5/ferplus/T_star_ece": [
+      0.5,
+      null,
+      3153
+    ],
+    "G3.5/ferplus/ece_at_T_star_nll": [
+      0.015119580719196434,
+      null,
+      3153
+    ],
+    "G3.5/ferplus/headroom_nllstar": [
+      0.11311321464331912,
+      null,
+      3153
+    ],
+    "G3.5/ferplus/headroom_eq8": [
+      0.11311321464331912,
+      null,
+      3153
+    ],
+    "G3.5/ferplus/n_val": [
+      3153,
+      null,
+      3153
+    ],
+    "G3.5/ferplus/ece_T1/ci_lo": [
+      0.11956618669150414,
+      null,
+      null
+    ],
+    "G3.5/ferplus/ece_T1/ci_hi": [
+      0.13751812663532118,
+      null,
+      null
+    ],
+    "G3.5/ferplus/T_star_nll/ci_lo": [
+      0.5,
+      null,
+      null
+    ],
+    "G3.5/ferplus/T_star_nll/ci_hi": [
+      0.54,
+      null,
+      null
+    ],
+    "G3.5/ferplus/T_star_ece/ci_lo": [
+      0.5,
+      null,
+      null
+    ],
+    "G3.5/ferplus/T_star_ece/ci_hi": [
+      0.54,
+      null,
+      null
+    ],
+    "G3.5/ferplus/headroom_nllstar/ci_lo": [
+      0.10161093973020068,
+      null,
+      null
+    ],
+    "G3.5/ferplus/headroom_nllstar/ci_hi": [
+      0.11722708261693822,
+      null,
+      null
+    ],
+    "G3.5/ferplus/headroom_eq8/ci_lo": [
+      0.1039068471014824,
+      null,
+      null
+    ],
+    "G3.5/ferplus/headroom_eq8/ci_hi": [
+      0.11743215540716863,
+      null,
+      null
+    ],
+    "G3.5/rho/point": [
+      0.789010989010989,
+      null,
+      14
+    ],
+    "G3.5/rho/ci95_cluster_bootstrap/lo": [
+      0.5769230769230769,
+      null,
+      null
+    ],
+    "G3.5/rho/ci95_cluster_bootstrap/hi": [
+      1.0,
+      null,
+      null
+    ],
+    "G3.5/rho/ci95_naive_point_bootstrap/lo": [
+      0.3801098901098901,
+      null,
+      null
+    ],
+    "G3.5/rho/ci95_naive_point_bootstrap/hi": [
+      0.9604395604395605,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/0/ratio_absolute": [
+      2.253858676541919,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/0/ratio_excess": [
+      null,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/0/ci_absolute/lo": [
+      1.408582314046977,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/0/ci_absolute/hi": [
+      4.527303958598907,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/0/ci_excess/lo": [
+      0.0,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/0/ci_excess/hi": [
+      1.3868032241127324,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/1/ratio_absolute": [
+      1.8833913566365226,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/1/ratio_excess": [
+      null,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/1/ci_absolute/lo": [
+      1.5457590165958905,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/1/ci_absolute/hi": [
+      2.3820135922804773,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/1/ci_excess/lo": [
+      1.049689616339765,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/1/ci_excess/hi": [
+      543.467933495879,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/2/ratio_absolute": [
+      1.7706481288468956,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/2/ratio_excess": [
+      16.84064607989991,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/2/ci_absolute/lo": [
+      1.5020601711237918,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/2/ci_absolute/hi": [
+      2.132892167762496,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/2/ci_excess/lo": [
+      3.7848845136844065,
+      null,
+      null
+    ],
+    "G4.1/rafdb_stage1/2/ci_excess/hi": [
+      154.17876064619742,
+      null,
+      null
+    ],
+    "G4.1/rafdb_vae9182/0/ratio_absolute": [
+      1.3315866788369917,
+      null,
+      null
+    ],
+    "G4.1/rafdb_vae9182/0/ratio_excess": [
+      null,
+      null,
+      null
+    ],
+    "G4.1/rafdb_vae9182/0/ci_absolute/lo": [
+      0.8926823962407642,
+      null,
+      null
+    ],
+    "G4.1/rafdb_vae9182/0/ci_absolute/hi": [
+      2.1905172805262016,
+      null,
+      null
+    ],
+    "G4.1/rafdb_vae9182/0/ci_excess/lo": [
+      0.0,
+      null,
+      null
+    ],
+    "G4.1/rafdb_vae9182/0/ci_excess/hi": [
+      0.0,
+      null,
+      null
+    ],
+    "G4.1/rafdb_vae9182/1/ratio_absolute": [
+      1.1265071891391658,
+      null,
+      null
+    ],
+    "G4.1/rafdb_vae9182/1/ratio_excess": [
+      1.7486950042541878,
+      null,
+      null
+    ],
+    "G4.1/rafdb_vae9182/1/ci_absolute/lo": [
+      0.8989679973362937,
+      null,
+      null
+    ],
+    "G4.1/rafdb_vae9182/1/ci_absolute/hi": [
+      1.4590305476668326,
+      null,
+      null
+    ],
+    "G4.1/rafdb_vae9182/1/ci_excess/lo": [
+      0.6422487334116701,
+      null,
+      null
+    ],
+    "G4.1/rafdb_vae9182/1/ci_excess/hi": [
+      9.743462328329196,
+      null,
+      null
+    ],
+    "G4.1/ferplus/0/ratio_absolute": [
+      2.0443106766882515,
+      null,
+      null
+    ],
+    "G4.1/ferplus/0/ratio_excess": [
+      3.931748213931758,
+      null,
+      null
+    ],
+    "G4.1/ferplus/0/ci_absolute/lo": [
+      1.6445666583698295,
+      null,
+      null
+    ],
+    "G4.1/ferplus/0/ci_absolute/hi": [
+      2.4808178983998825,
+      null,
+      null
+    ],
+    "G4.1/ferplus/0/ci_excess/lo": [
+      2.807153838774682,
+      null,
+      null
+    ],
+    "G4.1/ferplus/0/ci_excess/hi": [
+      5.298203608347627,
+      null,
+      null
+    ],
+    "G4.1/summary/all_six/absolute/mean": [
+      1.7350504511149576,
+      null,
+      6
+    ],
+    "G4.1/summary/all_six/absolute/sd": [
+      0.4292281440073765,
+      null,
+      6
+    ],
+    "G4.1/summary/all_six/absolute/min": [
+      1.1265071891391658,
+      null,
+      6
+    ],
+    "G4.1/summary/all_six/absolute/max": [
+      2.253858676541919,
+      null,
+      6
+    ],
+    "G4.1/summary/all_six/excess/mean": [
+      7.507029766028618,
+      null,
+      3
+    ],
+    "G4.1/summary/all_six/excess/sd": [
+      8.15651429533438,
+      null,
+      3
+    ],
+    "G4.1/summary/all_six/excess/min": [
+      1.7486950042541878,
+      null,
+      3
+    ],
+    "G4.1/summary/all_six/excess/max": [
+      16.84064607989991,
+      null,
+      3
+    ],
+    "G4.1/summary/interpolated_only/absolute/mean": [
+      1.9074794027675734,
+      null,
+      2
+    ],
+    "G4.1/summary/interpolated_only/absolute/sd": [
+      0.19350864333541073,
+      null,
+      2
+    ],
+    "G4.1/summary/interpolated_only/absolute/min": [
+      1.7706481288468956,
+      null,
+      2
+    ],
+    "G4.1/summary/interpolated_only/absolute/max": [
+      2.0443106766882515,
+      null,
+      2
+    ],
+    "G4.1/summary/interpolated_only/excess/mean": [
+      10.386197146915833,
+      null,
+      2
+    ],
+    "G4.1/summary/interpolated_only/excess/sd": [
+      9.127969218670632,
+      null,
+      2
+    ],
+    "G4.1/summary/interpolated_only/excess/min": [
+      3.931748213931758,
+      null,
+      2
+    ],
+    "G4.1/summary/interpolated_only/excess/max": [
+      16.84064607989991,
+      null,
+      2
+    ],
+    "G4.4/swa/acc_mean": [
+      89.9500223795573,
+      0.3663557063958696,
+      3
+    ],
+    "G4.4/swa/retention_pct": [
+      97.96473860861973,
+      null,
+      3
+    ],
+    "G4.4/best/acc_mean": [
+      90.27596791585286,
+      0.19098772580899204,
+      3
+    ],
+    "G4.4/best/retention_pct": [
+      98.31972650544428,
+      null,
+      3
+    ],
+    "G4.4/last/acc_mean": [
+      89.81964365641277,
+      0.16726154800857174,
+      3
+    ],
+    "G4.4/last/retention_pct": [
+      97.82274289594405,
+      null,
+      3
+    ],
+    "G4.5/swa|stage1/ratio": [
+      114.28484544262398,
+      null,
+      3
+    ],
+    "G4.5/swa|stage1/d_ece_mean": [
+      0.09058681609467649,
+      0.0023275137752995574,
+      3
+    ],
+    "G4.5/swa|primary/ratio": [
+      23.452342977601653,
+      null,
+      3
+    ],
+    "G4.5/swa|primary/d_ece_mean": [
+      0.0859243000838509,
+      0.0058053158019038915,
+      3
+    ],
+    "G4.5/swa|vae9182/ratio": [
+      213.02190328916706,
+      null,
+      3
+    ],
+    "G4.5/swa|vae9182/d_ece_mean": [
+      0.13877768606523855,
+      0.0012936613226332237,
+      3
+    ],
+    "G4.5/best|stage1/ratio": [
+      6.062952991621421,
+      null,
+      3
+    ],
+    "G4.5/best|stage1/d_ece_mean": [
+      0.12523130439982783,
+      0.0032952692810438032,
+      3
+    ],
+    "G4.5/best|primary/ratio": [
+      2.7831475150323906,
+      null,
+      3
+    ],
+    "G4.5/best|primary/d_ece_mean": [
+      0.11909216706977364,
+      0.011257873896763172,
+      3
+    ],
+    "G4.5/best|vae9182/ratio": [
+      27.34409375226454,
+      null,
+      3
+    ],
+    "G4.5/best|vae9182/d_ece_mean": [
+      0.1572956871540844,
+      0.009574882350333448,
+      3
+    ],
+    "G4.5/last|stage1/ratio": [
+      2.5567632846736426,
+      null,
+      3
+    ],
+    "G4.5/last|stage1/d_ece_mean": [
+      0.10904804582843983,
+      0.010645780539681517,
+      3
+    ],
+    "G4.5/last|primary/ratio": [
+      32.30754305173955,
+      null,
+      3
+    ],
+    "G4.5/last|primary/d_ece_mean": [
+      0.10440529850851914,
+      0.006785818497853476,
+      3
+    ],
+    "G4.5/last|vae9182/ratio": [
+      43.16368330570743,
+      null,
+      3
+    ],
+    "G4.5/last|vae9182/d_ece_mean": [
+      0.1592660306465983,
+      0.011493020122791362,
+      3
+    ],
+    "G4.5/pooled/swa/median": [
+      47.57080978973189,
+      null,
+      3
+    ],
+    "G4.5/pooled/swa/mean": [
+      73.12428681121135,
+      null,
+      3
+    ],
+    "G4.5/pooled/swa/min": [
+      32.67440398140596,
+      null,
+      3
+    ],
+    "G4.5/pooled/best/median": [
+      10.46034959627995,
+      null,
+      3
+    ],
+    "G4.5/pooled/best/mean": [
+      11.249568529659628,
+      null,
+      3
+    ],
+    "G4.5/pooled/best/min": [
+      9.503779899338086,
+      null,
+      3
+    ],
+    "G4.5/pooled/last/median": [
+      13.59372436336349,
+      null,
+      3
+    ],
+    "G4.5/pooled/last/mean": [
+      14.254067506446301,
+      null,
+      3
+    ],
+    "G4.5/pooled/last/min": [
+      10.276982689752312,
+      null,
+      3
+    ],
+    "G4.5/summary/median": [
+      27.34409375226454,
+      null,
+      9
+    ],
+    "G4.5/summary/mean": [
+      51.664141734492404,
+      null,
+      9
+    ],
+    "G4.5/summary/min": [
+      2.5567632846736426,
+      null,
+      9
+    ],
+    "G4.5/summary/max": [
+      213.02190328916706,
+      null,
+      9
+    ],
+    "G4.6/off_standard_count": [
+      28,
+      null,
+      131
+    ],
+    "G4.6/200/d_acc_mean": [
+      1.0155776174444902,
+      0.9039561060186865,
+      19
+    ],
+    "G4.6/200/d_ece_mean": [
+      -0.005965503067895797,
+      0.014540490005203648,
+      19
+    ],
+    "G4.6/400/d_acc_mean": [
+      0.721509544594774,
+      0.26986622324876924,
+      103
+    ],
+    "G4.6/400/d_ece_mean": [
+      -0.0022868193687234457,
+      0.008190004192198015,
+      103
+    ],
+    "G4.6/500/d_acc_mean": [
+      0.7460496690538194,
+      0.2805995470409467,
+      9
+    ],
+    "G4.6/500/d_ece_mean": [
+      -0.0031358666162693404,
+      0.004784383308077503,
+      9
+    ],
+    "G4.7/full_fold_fits/stage1": [
+      1.3493927210953593,
+      null,
+      null
+    ],
+    "G4.7/full_fold_fits/primary": [
+      1.2613411785961113,
+      null,
+      null
+    ],
+    "G4.7/full_fold_fits/vae9182": [
+      0.9829375448886304,
+      null,
+      null
+    ],
+    "G4.7/half_fold_fits/stage1": [
+      1.3405690339579057,
+      null,
+      null
+    ],
+    "G4.7/T=1.3406/fit_value": [
+      1.3405690339579057,
+      null,
+      24
+    ],
+    "G4.7/T=1.3406/source": [
+      "half:stage1",
+      null,
+      null
+    ],
+    "capacity_law/big/slope": [
+      0.7160652787380302,
+      0.021906323710570122,
+      null
+    ],
+    "capacity_law/big/r2": [
+      0.9999691373688872,
+      null,
+      null
+    ],
+    "capacity_law/small/slope": [
+      0.6547068722514588,
+      0.058456546540507005,
+      null
+    ],
+    "capacity_law/small/r2": [
+      0.9999645299723947,
+      null,
+      null
+    ],
+    "capacity_law/slope_difference": [
+      -0.061358406486571315,
+      0.08036287025107713,
+      null
+    ],
+    "P2/treat/swa/acc": [
+      89.91742706298828,
+      0.2957545208233005,
+      3
+    ],
+    "P2/treat/swa/ece": [
+      0.03337575094867457,
+      0.0014888963868640356,
+      3
+    ],
+    "P2/control/swa/acc": [
+      90.14558919270833,
+      0.20700072136152095,
+      3
+    ],
+    "P2/control/swa/ece": [
+      0.027766280970667714,
+      0.0026997325636259157,
+      3
+    ],
+    "P2/treat/best/acc": [
+      89.9391581217448,
+      0.24894723524925297,
+      3
+    ],
+    "P2/treat/best/ece": [
+      0.030662883846967543,
+      0.002508131931843162,
+      3
+    ],
+    "P2/control/best/acc": [
+      90.38461558024089,
+      0.2667949993859203,
+      3
+    ],
+    "P2/control/best/ece": [
+      0.022514758096511652,
+      0.0012174427703629184,
+      3
+    ],
+    "P2/treat/last/acc": [
+      89.23294321695964,
+      0.2921429189757646,
+      3
+    ],
+    "P2/treat/last/ece": [
+      0.03489658799020817,
+      0.006192299391400205,
+      3
+    ],
+    "P2/control/last/acc": [
+      89.6023457845052,
+      0.2667949993859203,
+      3
+    ],
+    "P2/control/last/ece": [
+      0.02967186768849691,
+      0.003935573403821359,
+      3
+    ],
+    "P2/verdict/P2.1/measured": [
+      0.2281621297200521,
+      0.20700072136152095,
+      null
+    ],
+    "P2/verdict/P2.2/measured": [
+      0.0056094699780068575,
+      0.0026997325636259157,
+      null
+    ],
+    "abstract/selection_optimism/d_acc": [
+      0.7658466018793237,
+      0.43107852109679157,
+      131
+    ],
+    "abstract/selection_optimism/d_ece": [
+      -0.002878700403167627,
+      0.009218824488955835,
+      131
+    ],
+    "RMC/n_manifests": [
+      90,
+      null,
+      90
+    ],
+    "RMC/n_code_state_verified": [
+      26,
+      null,
+      90
+    ],
+    "RMC/n_retroactive_unverified": [
+      62,
+      null,
+      90
+    ],
+    "RMC/n_unfinished": [
+      2,
+      null,
+      90
+    ],
+    "RMC/window_label": [
+      "17 June--24 July 2026",
+      null,
+      null
+    ],
+    "RMC/checksum_ok": [
+      "True",
+      null,
+      null
+    ],
+    "REL/T=1/top_bin_share_pct": [
+      89.93915688830943,
+      null,
+      9204
+    ],
+    "REL/T=1/top_bin_n": [
+      8278,
+      null,
+      9204
+    ],
+    "REL/T=1.3406/top_bin_share_pct": [
+      82.74663189917428,
+      null,
+      9204
+    ],
+    "REL/T=1.3406/top_bin_n": [
+      7616,
+      null,
+      9204
+    ]
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "status": "OFFICIAL_VERDICT",
+  "queue_state": "42/42",
+  "checkpoint": "swa",
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "bar": 0.0012,
+  "two_bar": 0.0024,
+  "bar_source_sd": 0.0011822187508027879,
+  "p6_1": {
+    "pairs": {
+      "T·τ = 5.10": {
+        "mean": -0.03913065410667997,
+        "sd": 0.0031896736668642375,
+        "same_sign_3of3": true,
+        "confirm": false,
+        "falsify_leg": true,
+        "status": "YANLIŞLAMA-bacağı sağlandı (3/3 aynı işaret VE |ort| ≥ 2×bar)",
+        "per_seed": {
+          "42": {
+            "d_ece": -0.035452032376765585,
+            "lo": {
+              "run": "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed42",
+              "ece": 0.042660581746965534
+            },
+            "hi": {
+              "run": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+              "ece": 0.07811261412373112
+            }
+          },
+          "1": {
+            "d_ece": -0.04112752361861793,
+            "lo": {
+              "run": "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed1",
+              "ece": 0.04024069890321622
+            },
+            "hi": {
+              "run": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed1",
+              "ece": 0.08136822252183415
+            }
+          },
+          "43": {
+            "d_ece": -0.04081240632465641,
+            "lo": {
+              "run": "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed43",
+              "ece": 0.03872570604319056
+            },
+            "hi": {
+              "run": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed43",
+              "ece": 0.07953811236784697
+            }
+          }
+        },
+        "tau_lo": 3,
+        "T_lo": "1.70",
+        "tau_hi": 6,
+        "T_hi": "0.85"
+      },
+      "T·τ = 10.20": {
+        "mean": -0.03240560747356013,
+        "sd": 0.002906759891641755,
+        "same_sign_3of3": true,
+        "confirm": false,
+        "falsify_leg": true,
+        "status": "YANLIŞLAMA-bacağı sağlandı (3/3 aynı işaret VE |ort| ≥ 2×bar)",
+        "per_seed": {
+          "42": {
+            "d_ece": -0.03340835389444384,
+            "lo": {
+              "run": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+              "ece": 0.04721869865366812
+            },
+            "hi": {
+              "run": "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed42",
+              "ece": 0.08062705254811196
+            }
+          },
+          "1": {
+            "d_ece": -0.03467824359605334,
+            "lo": {
+              "run": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+              "ece": 0.04152102102045907
+            },
+            "hi": {
+              "run": "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed1",
+              "ece": 0.07619926461651241
+            }
+          },
+          "43": {
+            "d_ece": -0.029130224930183204,
+            "lo": {
+              "run": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed43",
+              "ece": 0.04548752780960001
+            },
+            "hi": {
+              "run": "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed43",
+              "ece": 0.07461775273978322
+            }
+          }
+        },
+        "tau_lo": 6,
+        "T_lo": "1.70",
+        "tau_hi": 12,
+        "T_hi": "0.85"
+      }
+    },
+    "overall": "ÇÖKME YANLIŞLANDI — iki çiftte birden 3/3 aynı işaret ve |ort ΔECE| ≥ 2×bar. Beyanın kendi sözleriyle: ayrışmanın kendisi bulgu — sıra bilgisi ile yumuşaklık ayrı kanallar.",
+    "reproduces_early_reading": {
+      "checked": true,
+      "identical": true,
+      "diffs": []
+    }
+  },
+  "p6_2": {
+    "per_seed": {
+      "42": {
+        "sequence": [
+          0.019685229167555884,
+          0.029680987040486766,
+          0.0344054573925875,
+          -0.0070761686878223,
+          -0.030731134174933186
+        ],
+        "steps": [
+          0.009995757872930881,
+          0.004724470352100732,
+          -0.0414816260804098,
+          -0.023654965487110886
+        ],
+        "non_increasing": false,
+        "violations": [
+          "0.1→0.3 (+0.0100)",
+          "0.3→0.5 (+0.0047)"
+        ]
+      },
+      "1": {
+        "sequence": [
+          0.021476582528093188,
+          0.029607888961980675,
+          0.03654092911635725,
+          0.0002569632296301125,
+          -0.03965799212261473
+        ],
+        "steps": [
+          0.008131306433887486,
+          0.0069330401543765754,
+          -0.03628396588672714,
+          -0.03991495535224484
+        ],
+        "non_increasing": false,
+        "violations": [
+          "0.1→0.3 (+0.0081)",
+          "0.3→0.5 (+0.0069)"
+        ]
+      },
+      "43": {
+        "sequence": [
+          0.026154078144915258,
+          0.03167726117947577,
+          0.027098944442251985,
+          -0.0006984388297897326,
+          -0.03512787289499769
+        ],
+        "steps": [
+          0.005523183034560515,
+          -0.004578316737223788,
+          -0.027797383272041717,
+          -0.03442943406520796
+        ],
+        "non_increasing": false,
+        "violations": [
+          "0.1→0.3 (+0.0055)"
+        ]
+      }
+    },
+    "n_seeds_ok": 0,
+    "verdict": "DOĞRULANMADI",
+    "rule": "gap(α) α arttıkça monoton azalır (ardıl adımlarda artmayan), 3/3 tohumda"
+  },
+  "p6_3": {
+    "per_seed": {
+      "42": {
+        "gap_0.1": 0.019685229167555884,
+        "gap_0.9": -0.030731134174933186,
+        "strict_less": true,
+        "delta": -0.05041636334248907
+      },
+      "1": {
+        "gap_0.1": 0.021476582528093188,
+        "gap_0.9": -0.03965799212261473,
+        "strict_less": true,
+        "delta": -0.061134574650707915
+      },
+      "43": {
+        "gap_0.1": 0.026154078144915258,
+        "gap_0.9": -0.03512787289499769,
+        "strict_less": true,
+        "delta": -0.06128195103991295
+      }
+    },
+    "n_seeds_ok": 3,
+    "verdict": "DOĞRULANDI",
+    "rule": "gap(0.9) < gap(0.1), kesin eşitsizlik, 3/3 tohumda"
+  },
+  "grid2_cells": {
+    "0.1": {
+      "42": {
+        "gap": 0.019685229167555884,
+        "ece_T1": 0.07197442092244286,
+        "ece_T134": 0.05228919175488697,
+        "run_T1": "RAFDB_stage1_p6alpha_a010_ts100_b070_T6_224_400e_swa200_seed42",
+        "run_T134": "RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed42"
+      },
+      "1": {
+        "gap": 0.021476582528093188,
+        "ece_T1": 0.07612977372154575,
+        "ece_T134": 0.05465319119345256,
+        "run_T1": "RAFDB_stage1_p6alpha_a010_ts100_b070_T6_224_400e_swa200_seed1",
+        "run_T134": "RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed1"
+      },
+      "43": {
+        "gap": 0.026154078144915258,
+        "ece_T1": 0.07598599454453592,
+        "ece_T134": 0.04983191639962066,
+        "run_T1": "RAFDB_stage1_p6alpha_a010_ts100_b070_T6_224_400e_swa200_seed43",
+        "run_T134": "RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed43"
+      }
+    },
+    "0.3": {
+      "42": {
+        "gap": 0.029680987040486766,
+        "ece_T1": 0.0728435692470885,
+        "ece_T134": 0.043162582206601734,
+        "run_T1": "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200",
+        "run_T134": "RAFDB_stage1_tempscale_T1341_halfA_baseline_b070_T6_224_400e_swa200"
+      },
+      "1": {
+        "gap": 0.029607888961980675,
+        "ece_T1": 0.0721164230874107,
+        "ece_T134": 0.04250853412543003,
+        "run_T1": "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1",
+        "run_T134": "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed1"
+      },
+      "43": {
+        "gap": 0.03167726117947577,
+        "ece_T1": 0.07442842306377369,
+        "ece_T134": 0.042751161884297915,
+        "run_T1": "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43",
+        "run_T134": "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed43"
+      }
+    },
+    "0.5": {
+      "42": {
+        "gap": 0.0344054573925875,
+        "ece_T1": 0.07064104917540544,
+        "ece_T134": 0.03623559178281794,
+        "run_T1": "RAFDB_stage1_p6alpha_a050_ts100_b070_T6_224_400e_swa200_seed42",
+        "run_T134": "RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed42"
+      },
+      "1": {
+        "gap": 0.03654092911635725,
+        "ece_T1": 0.06737293364210575,
+        "ece_T134": 0.030832004525748503,
+        "run_T1": "RAFDB_stage1_p6alpha_a050_ts100_b070_T6_224_400e_swa200_seed1",
+        "run_T134": "RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed1"
+      },
+      "43": {
+        "gap": 0.027098944442251985,
+        "ece_T1": 0.06530023726599468,
+        "ece_T134": 0.0382012928237427,
+        "run_T1": "RAFDB_stage1_p6alpha_a050_ts100_b070_T6_224_400e_swa200_seed43",
+        "run_T134": "RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed43"
+      }
+    },
+    "0.7": {
+      "42": {
+        "gap": -0.0070761686878223,
+        "ece_T1": 0.0470491041571407,
+        "ece_T134": 0.054125272844963,
+        "run_T1": "RAFDB_stage1_p6alpha_a070_ts100_b070_T6_224_400e_swa200_seed42",
+        "run_T134": "RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed42"
+      },
+      "1": {
+        "gap": 0.0002569632296301125,
+        "ece_T1": 0.055530232587413964,
+        "ece_T134": 0.05527326935778385,
+        "run_T1": "RAFDB_stage1_p6alpha_a070_ts100_b070_T6_224_400e_swa200_seed1",
+        "run_T134": "RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed1"
+      },
+      "43": {
+        "gap": -0.0006984388297897326,
+        "ece_T1": 0.05248037093310499,
+        "ece_T134": 0.05317880976289472,
+        "run_T1": "RAFDB_stage1_p6alpha_a070_ts100_b070_T6_224_400e_swa200_seed43",
+        "run_T134": "RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed43"
+      }
+    },
+    "0.9": {
+      "42": {
+        "gap": -0.030731134174933186,
+        "ece_T1": 0.07721995167929625,
+        "ece_T134": 0.10795108585422944,
+        "run_T1": "RAFDB_stage1_p6alpha_a090_ts100_b070_T6_224_400e_swa200_seed42",
+        "run_T134": "RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed42"
+      },
+      "1": {
+        "gap": -0.03965799212261473,
+        "ece_T1": 0.0635037732345806,
+        "ece_T134": 0.10316176535719533,
+        "run_T1": "RAFDB_stage1_p6alpha_a090_ts100_b070_T6_224_400e_swa200_seed1",
+        "run_T134": "RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed1"
+      },
+      "43": {
+        "gap": -0.03512787289499769,
+        "ece_T1": 0.0682390294434816,
+        "ece_T134": 0.1033669023384793,
+        "run_T1": "RAFDB_stage1_p6alpha_a090_ts100_b070_T6_224_400e_swa200_seed43",
+        "run_T134": "RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed43"
+      }
+    }
+  },
+  "alpha_order": [
+    "0.1",
+    "0.3",
+    "0.5",
+    "0.7",
+    "0.9"
+  ]
+}

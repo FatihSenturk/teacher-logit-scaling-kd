@@ -1,0 +1,188 @@
+{
+  "note": "review-responsive, not pre-declared",
+  "B": 2000,
+  "rng_seed": 20260806,
+  "n_bins": 15,
+  "tol": 1e-06,
+  "grids": {
+    "run": {
+      "grid": {
+        "n": 4,
+        "lo": 0.26,
+        "hi": 1.0,
+        "step": null,
+        "uniform": false
+      },
+      "ece_T1": 0.12823279536251556,
+      "T_argmin": 0.5063,
+      "ece_at_argmin": 0.01562826005113433,
+      "headroom": 0.11260453531138123,
+      "argmin_at_lower_bound": false,
+      "argmin_at_upper_bound": false,
+      "ci95": [
+        0.1018357727773973,
+        0.11651117297970169
+      ],
+      "ci_type": "percentile (2.5/97.5)",
+      "B": 2000,
+      "boot_frac_argmin_at_lower_bound": 0.0,
+      "boot_frac_argmin_at_upper_bound": 0.0,
+      "source": "actually-run arms (`ferplus_teacher_signed_grid`)"
+    },
+    "boot": {
+      "grid": {
+        "n": 101,
+        "lo": 0.5,
+        "hi": 2.5,
+        "step": 0.02,
+        "uniform": true
+      },
+      "ece_T1": 0.12823279536251556,
+      "T_argmin": 0.5,
+      "ece_at_argmin": 0.015119580719196434,
+      "headroom": 0.11311321464331912,
+      "argmin_at_lower_bound": true,
+      "argmin_at_upper_bound": false,
+      "ci95": [
+        0.1039068471014824,
+        0.11743215540716863
+      ],
+      "ci_type": "percentile (2.5/97.5)",
+      "B": 2000,
+      "boot_frac_argmin_at_lower_bound": 0.7845,
+      "boot_frac_argmin_at_upper_bound": 0.0,
+      "source": "`bootstrap_cis.T_GRID`"
+    },
+    "fine": {
+      "grid": {
+        "n": 196,
+        "lo": 0.1,
+        "hi": 4.0,
+        "step": 0.02,
+        "uniform": true
+      },
+      "ece_T1": 0.12823279536251556,
+      "T_argmin": 0.46,
+      "ece_at_argmin": 0.008409058606409909,
+      "headroom": 0.11982373675610565,
+      "argmin_at_lower_bound": false,
+      "argmin_at_upper_bound": false,
+      "ci95": [
+        0.10688242737071034,
+        0.12689327076682794
+      ],
+      "ci_type": "percentile (2.5/97.5)",
+      "B": 2000,
+      "boot_frac_argmin_at_lower_bound": 0.0,
+      "boot_frac_argmin_at_upper_bound": 0.0,
+      "source": "`ferplus_jsd.sweep`"
+    }
+  },
+  "crosschecks": [
+    {
+      "quantity": "headroom_review.eq8 (0.1198)",
+      "published": 0.11982374743473102,
+      "remeasured": 0.11982373675610565,
+      "abs_dev": 1.0678625372850803e-08,
+      "ok": true
+    },
+    {
+      "quantity": "headroom_review.deployed (0.1126)",
+      "published": 0.11260451323979248,
+      "remeasured": 0.11260453531138123,
+      "abs_dev": 2.207158875111581e-08,
+      "ok": true
+    },
+    {
+      "quantity": "bootstrap_cis.headroom_eq8 (0.1131)",
+      "published": 0.11311321464331912,
+      "remeasured": 0.11311321464331912,
+      "abs_dev": 0.0,
+      "ok": true
+    },
+    {
+      "quantity": "bootstrap_cis.ci_lo",
+      "published": 0.1039068471014824,
+      "remeasured": 0.1039068471014824,
+      "abs_dev": 0.0,
+      "ok": true
+    },
+    {
+      "quantity": "bootstrap_cis.ci_hi",
+      "published": 0.11743215540716863,
+      "remeasured": 0.11743215540716863,
+      "abs_dev": 0.0,
+      "ok": true
+    },
+    {
+      "quantity": "ferplus_jsd.ece_T1",
+      "published": 0.12823281088141536,
+      "remeasured": 0.12823279536251556,
+      "abs_dev": 1.5518899804112252e-08,
+      "ok": true
+    }
+  ],
+  "max_abs_dev": 2.207158875111581e-08,
+  "boot_grid_boundary_by_teacher": {
+    "stage1": {
+      "T_argmin_on_boot_grid": 1.32,
+      "at_lower_bound": false,
+      "at_upper_bound": false,
+      "n_val": 3068
+    },
+    "primary": {
+      "T_argmin_on_boot_grid": 1.24,
+      "at_lower_bound": false,
+      "at_upper_bound": false,
+      "n_val": 3068
+    },
+    "vae9182": {
+      "T_argmin_on_boot_grid": 1.06,
+      "at_lower_bound": false,
+      "at_upper_bound": false,
+      "n_val": 3068
+    },
+    "ferplus": {
+      "T_argmin_on_boot_grid": 0.5,
+      "at_lower_bound": true,
+      "at_upper_bound": false,
+      "n_val": 3153
+    }
+  },
+  "ferplus_T_star_ece": {
+    "continuous_argmin": 0.45304659827458493,
+    "fine_grid_argmin": 0.46,
+    "boot_grid_point": 0.5,
+    "boot_grid_ci95": [
+      0.5,
+      0.54
+    ],
+    "boot_grid_floor": 0.5,
+    "truncated": true
+  },
+  "rng_note": "bootstrap_cis'in FERPlus akis konumu yeniden oynatildi; ucu de AYNI tekrarlari kullanir",
+  "verdict": {
+    "primary_number": 0.11260453531138123,
+    "primary_ci95": [
+      0.1018357727773973,
+      0.11651117297970169
+    ],
+    "primary_T": 0.5063,
+    "primary_grid": {
+      "n": 4,
+      "lo": 0.26,
+      "hi": 1.0,
+      "step": null,
+      "uniform": false
+    },
+    "rule": "Eq.8 = min over the grid ACTUALLY SWEPT (binding since 11 Aug 2026)",
+    "rejected": {
+      "0.1198": "196-point refinement; its argmin T=0.46 was never run as an arm",
+      "0.1131": "101-point grid whose LOWER BOUND 0.50 truncates the optimum; boundary-constrained, so it is neither the run grid's value nor the refinement's"
+    },
+    "boundary_constrained_grids": [
+      "boot"
+    ],
+    "deployed_arm_is_run_grid_argmin": true
+  }
+}

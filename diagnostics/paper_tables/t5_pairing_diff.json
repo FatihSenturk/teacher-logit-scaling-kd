@@ -1,0 +1,990 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "n_unchanged": 7,
+  "n_changed": 14,
+  "unchanged_cells": [
+    "primary/ctkd",
+    "stage1/ctkd",
+    "vae9182/adaptive_t",
+    "vae9182/ctkd",
+    "vae9182/g2g_kl",
+    "vae9182/g2g_kl+adaptive_t",
+    "vae9182/logit_std"
+  ],
+  "changed_cells": [
+    {
+      "cell": "primary/adaptive_t",
+      "old": {
+        "d_acc_mean": -0.16297403971354166,
+        "d_acc_sd": 0.44810319209300203,
+        "d_ece_mean": -0.0013944939870074817,
+        "d_ece_sd": 0.003948974412366147,
+        "n": 3,
+        "d_ece_signs": "-+-",
+        "controls_used": [
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.2281646728515625,
+          -0.6518936157226562,
+          -0.06519317626953125
+        ],
+        "d_ece_list": [
+          -0.004678991420444645,
+          0.0029869984879098976,
+          -0.002491489028487698
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": -0.39113616943359375,
+        "d_acc_sd": 0.37020289809781,
+        "d_ece_mean": 0.0023061123598481967,
+        "d_ece_sd": 0.0007157093971135206,
+        "n": 3,
+        "d_ece_signs": "+++",
+        "controls_used": [
+          "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          -0.554107666015625,
+          -0.6518936157226562,
+          0.0325927734375
+        ],
+        "d_ece_list": [
+          0.0023712990550516233,
+          0.0029869984879098976,
+          0.0015600395365830688
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "primary/g2g_kl",
+      "old": {
+        "d_acc_mean": 0.08691914876302083,
+        "d_acc_sd": 0.6698443070256352,
+        "d_ece_mean": -0.0053079257298686705,
+        "d_ece_sd": 0.006159657561910488,
+        "n": 3,
+        "d_ece_signs": "-+-",
+        "controls_used": [
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.7822723388671875,
+          -0.554107666015625,
+          0.0325927734375
+        ],
+        "d_ece_list": [
+          -0.011727836274455714,
+          0.0005534334591501266,
+          -0.004749374374300425
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": -0.14124298095703125,
+        "d_acc_sd": 0.36344544155704916,
+        "d_ece_mean": -0.0016073193830129923,
+        "d_ece_sd": 0.0027315092230762858,
+        "n": 3,
+        "d_ece_signs": "-+-",
+        "controls_used": [
+          "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.0,
+          -0.554107666015625,
+          0.13037872314453125
+        ],
+        "d_ece_list": [
+          -0.0046775457989594454,
+          0.0005534334591501266,
+          -0.000697845809229658
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "primary/gate:mean_logvar",
+      "old": {
+        "d_acc_mean": 0.08691914876302083,
+        "d_acc_sd": 0.8993576202862109,
+        "d_ece_mean": -0.004480808927980727,
+        "d_ece_sd": 0.009914837020147383,
+        "n": 3,
+        "d_ece_signs": "-++",
+        "controls_used": [
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          1.10821533203125,
+          -0.2607574462890625,
+          -0.586700439453125
+        ],
+        "d_ece_list": [
+          -0.015907609521992994,
+          0.0006200848183700314,
+          0.0018450979196807799
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": 0.19556681315104166,
+        "d_acc_sd": 0.8549469714862008,
+        "d_ece_mean": -0.005575578808719728,
+        "d_ece_sd": 0.009227493803646833,
+        "n": 3,
+        "d_ece_signs": "--+",
+        "controls_used": [
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed42",
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43"
+        ],
+        "d_acc_list": [
+          1.10821533203125,
+          0.065185546875,
+          -0.586700439453125
+        ],
+        "d_ece_list": [
+          -0.015907609521992994,
+          -0.0026642248238469696,
+          0.0018450979196807799
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "primary/gate:oracle_error",
+      "old": {
+        "d_acc_mean": -0.11951446533203125,
+        "d_acc_sd": 0.8501713666765897,
+        "d_ece_mean": 0.0014706141550558521,
+        "d_ece_sd": 0.006755516187505335,
+        "n": 3,
+        "d_ece_signs": "-++",
+        "controls_used": [
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.8148651123046875,
+          -0.8474578857421875,
+          -0.32595062255859375
+        ],
+        "d_ece_list": [
+          -0.005539227315896192,
+          0.007939247237190583,
+          0.002011822543873165
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": -0.010866800944010416,
+        "d_acc_sd": 0.7217591290348079,
+        "d_ece_mean": 0.0003758442743168518,
+        "d_ece_sd": 0.005290327799990043,
+        "n": 3,
+        "d_ece_signs": "-++",
+        "controls_used": [
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed42",
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43"
+        ],
+        "d_acc_list": [
+          0.8148651123046875,
+          -0.521514892578125,
+          -0.32595062255859375
+        ],
+        "d_ece_list": [
+          -0.005539227315896192,
+          0.004654937594973582,
+          0.002011822543873165
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "primary/gate:target_logvar",
+      "old": {
+        "d_acc_mean": -0.1955693562825521,
+        "d_acc_sd": 0.5560228190950032,
+        "d_ece_mean": 0.00031174763855805937,
+        "d_ece_sd": 0.0046220597410235615,
+        "n": 3,
+        "d_ece_signs": "-+-",
+        "controls_used": [
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.42372894287109375,
+          -0.6518936157226562,
+          -0.35854339599609375
+        ],
+        "d_ece_list": [
+          -0.004001329714891352,
+          0.005190685818838803,
+          -0.00025411318827327223
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": -0.08692169189453125,
+        "d_acc_sd": 0.44253658075913777,
+        "d_ece_mean": -0.000783022242180941,
+        "d_ece_sd": 0.0029891563718939056,
+        "n": 3,
+        "d_ece_signs": "-+-",
+        "controls_used": [
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed42",
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43"
+        ],
+        "d_acc_list": [
+          0.42372894287109375,
+          -0.32595062255859375,
+          -0.35854339599609375
+        ],
+        "d_ece_list": [
+          -0.004001329714891352,
+          0.0019063761766218018,
+          -0.00025411318827327223
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "primary/logit_std",
+      "old": {
+        "d_acc_mean": -0.08691914876302083,
+        "d_acc_sd": 0.5620403639466756,
+        "d_ece_mean": 0.08222369373699522,
+        "d_ece_sd": 0.004889046974080641,
+        "n": 3,
+        "d_ece_signs": "+++",
+        "controls_used": [
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.521514892578125,
+          -0.586700439453125,
+          -0.1955718994140625
+        ],
+        "d_ece_list": [
+          0.07863759902710243,
+          0.08024080096218236,
+          0.08779268122170086
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": -0.31508127848307294,
+        "d_acc_sd": 0.24894307306913172,
+        "d_ece_mean": 0.0859243000838509,
+        "d_ece_sd": 0.0058053158019038915,
+        "n": 3,
+        "d_ece_signs": "+++",
+        "controls_used": [
+          "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          -0.2607574462890625,
+          -0.586700439453125,
+          -0.09778594970703125
+        ],
+        "d_ece_list": [
+          0.0856878895025987,
+          0.08024080096218236,
+          0.09184420978677163
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "stage1/adaptive_t",
+      "old": {
+        "d_acc_mean": 0.19556681315104166,
+        "d_acc_sd": 0.13037490846586827,
+        "d_ece_mean": -0.0025654981533686275,
+        "d_ece_sd": 0.0034451336225636907,
+        "n": 3,
+        "d_ece_signs": "-+-",
+        "controls_used": [
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.3259429931640625,
+          0.06519317626953125,
+          0.19556427001953125
+        ],
+        "d_ece_list": [
+          -0.0044534005409269245,
+          0.001410913115763135,
+          -0.0046540070349420926
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": 0.16297149658203125,
+        "d_acc_sd": 0.32101630928264163,
+        "d_ece_mean": -0.0010947850409381982,
+        "d_ece_sd": 0.0032964555386869173,
+        "n": 3,
+        "d_ece_signs": "++-",
+        "controls_used": [
+          "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          -0.09778594970703125,
+          0.06519317626953125,
+          0.5215072631835938
+        ],
+        "d_ece_list": [
+          0.0001338425941153354,
+          0.001410913115763135,
+          -0.004829110832693065
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "stage1/g2g_kl",
+      "old": {
+        "d_acc_mean": 0.44545745849609375,
+        "d_acc_sd": 0.39294260167737294,
+        "d_ece_mean": -0.00569552276566825,
+        "d_ece_sd": 0.0027610084858328814,
+        "n": 3,
+        "d_ece_signs": "---",
+        "controls_used": [
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.48891448974609375,
+          0.8148651123046875,
+          0.0325927734375
+        ],
+        "d_ece_list": [
+          -0.008842750698949714,
+          -0.00456280006773313,
+          -0.003681017530321906
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": 0.4128621419270833,
+        "d_acc_sd": 0.37778086107916886,
+        "d_ece_mean": -0.004224809653237821,
+        "d_ece_sd": 0.0003543380893462642,
+        "n": 3,
+        "d_ece_signs": "---",
+        "controls_used": [
+          "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.065185546875,
+          0.8148651123046875,
+          0.3585357666015625
+        ],
+        "d_ece_list": [
+          -0.004255507563907454,
+          -0.00456280006773313,
+          -0.0038561213280728784
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "stage1/gate:mean_logvar",
+      "old": {
+        "d_acc_mean": -0.0108642578125,
+        "d_acc_sd": 0.2120770962226182,
+        "d_ece_mean": -0.001278191897977644,
+        "d_ece_sd": 0.0008295526260949755,
+        "n": 3,
+        "d_ece_signs": "---",
+        "controls_used": [
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.0,
+          0.1955718994140625,
+          -0.2281646728515625
+        ],
+        "d_ece_list": [
+          -0.0018649260031430998,
+          -0.00032910777467169694,
+          -0.001640541916118135
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": -0.09778340657552083,
+        "d_acc_sd": 0.11752337991717336,
+        "d_ece_mean": -0.0011666860813513748,
+        "d_ece_sd": 0.0010212460044153478,
+        "n": 3,
+        "d_ece_signs": "-+-",
+        "controls_used": [
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed42",
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43"
+        ],
+        "d_acc_list": [
+          0.0,
+          -0.065185546875,
+          -0.2281646728515625
+        ],
+        "d_ece_list": [
+          -0.0018649260031430998,
+          5.4096752071103316e-06,
+          -0.001640541916118135
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "stage1/gate:oracle_error",
+      "old": {
+        "d_acc_mean": -0.13037618001302084,
+        "d_acc_sd": 0.4409299899342772,
+        "d_ece_mean": 0.0014326987494234962,
+        "d_ece_sd": 0.0034649241069452715,
+        "n": 3,
+        "d_ece_signs": "-++",
+        "controls_used": [
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.2933502197265625,
+          -0.0977783203125,
+          -0.586700439453125
+        ],
+        "d_ece_list": [
+          -0.0025638423452088305,
+          0.0035935839519118523,
+          0.003268354641567467
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": -0.21729532877604166,
+        "d_acc_sd": 0.4567099042483196,
+        "d_ece_mean": 0.0015442045660497654,
+        "d_ece_sd": 0.003572933460859888,
+        "n": 3,
+        "d_ece_signs": "-++",
+        "controls_used": [
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed42",
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43"
+        ],
+        "d_acc_list": [
+          0.2933502197265625,
+          -0.3585357666015625,
+          -0.586700439453125
+        ],
+        "d_ece_list": [
+          -0.0025638423452088305,
+          0.00392810140179066,
+          0.003268354641567467
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "stage1/gate:target_logvar",
+      "old": {
+        "d_acc_mean": 0.33680979410807294,
+        "d_acc_sd": 0.3199120077404068,
+        "d_ece_mean": -0.004257826643734058,
+        "d_ece_sd": 0.0021819793341169404,
+        "n": 3,
+        "d_ece_signs": "---",
+        "controls_used": [
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.5215072631835938,
+          0.521514892578125,
+          -0.0325927734375
+        ],
+        "d_ece_list": [
+          -0.006774029489290914,
+          -0.0031118690773281193,
+          -0.0028875813645831416
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": 0.2498906453450521,
+        "d_acc_sd": 0.2772098089316861,
+        "d_ece_mean": -0.00414632082710779,
+        "d_ece_sd": 0.0022763297781124158,
+        "n": 3,
+        "d_ece_signs": "---",
+        "controls_used": [
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed42",
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43"
+        ],
+        "d_acc_list": [
+          0.5215072631835938,
+          0.2607574462890625,
+          -0.0325927734375
+        ],
+        "d_ece_list": [
+          -0.006774029489290914,
+          -0.002777351627449312,
+          -0.0028875813645831416
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "stage1/logit_std",
+      "old": {
+        "d_acc_mean": -0.19556427001953125,
+        "d_acc_sd": 0.1814764189733853,
+        "d_ece_mean": 0.08911610298224606,
+        "d_ece_sd": 0.0017567398769473097,
+        "n": 3,
+        "d_ece_signs": "+++",
+        "controls_used": [
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          0.0,
+          -0.22815704345703125,
+          -0.3585357666015625
+        ],
+        "d_ece_list": [
+          0.08811204547288366,
+          0.0880916860668569,
+          0.09114457740699763
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": -0.22815958658854166,
+        "d_acc_sd": 0.1955680847291983,
+        "d_ece_mean": 0.09058681609467649,
+        "d_ece_sd": 0.0023275137752995574,
+        "n": 3,
+        "d_ece_signs": "+++",
+        "controls_used": [
+          "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200"
+        ],
+        "d_acc_list": [
+          -0.42372894287109375,
+          -0.22815704345703125,
+          -0.0325927734375
+        ],
+        "d_ece_list": [
+          0.09269928860792592,
+          0.0880916860668569,
+          0.09096947360924666
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "vae9182/gate:mean_logvar",
+      "old": {
+        "d_acc_mean": -0.07605234781901042,
+        "d_acc_sd": 0.2957552215014443,
+        "d_ece_mean": -0.0037136773495040007,
+        "d_ece_sd": 0.0024088673564579346,
+        "n": 3,
+        "d_ece_signs": "---",
+        "controls_used": [
+          "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+          "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1",
+          "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43"
+        ],
+        "d_acc_list": [
+          0.2607574462890625,
+          -0.2933502197265625,
+          -0.19556427001953125
+        ],
+        "d_ece_list": [
+          -0.006479678731387415,
+          -0.0025847813762928384,
+          -0.0020765719408317486
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": -0.27161916097005206,
+        "d_acc_sd": 0.6682533258430152,
+        "d_ece_mean": 0.0014772778445743887,
+        "d_ece_sd": 0.004581379876241869,
+        "n": 3,
+        "d_ece_signs": "-+-",
+        "controls_used": [
+          "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed42",
+          "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed43"
+        ],
+        "d_acc_list": [
+          0.09778594970703125,
+          -1.0430221557617188,
+          0.13037872314453125
+        ],
+        "d_ece_list": [
+          -0.0018477435314826277,
+          0.006703103871863077,
+          -0.0004235268066572831
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    },
+    {
+      "cell": "vae9182/gate:oracle_error",
+      "old": {
+        "d_acc_mean": -0.032595316569010414,
+        "d_acc_sd": 0.13037490846586827,
+        "d_ece_mean": 0.0004185147839284679,
+        "d_ece_sd": 0.0010658626803284512,
+        "n": 3,
+        "d_ece_signs": "-++",
+        "controls_used": [
+          "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+          "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1",
+          "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43"
+        ],
+        "d_acc_list": [
+          0.0977783203125,
+          -0.0325927734375,
+          -0.16297149658203125
+        ],
+        "d_ece_list": [
+          -0.0007978235814608756,
+          0.0008640371437877853,
+          0.001189330789458494
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      },
+      "new": {
+        "d_acc_mean": -0.2281621297200521,
+        "d_acc_sd": 0.4932413518255879,
+        "d_ece_mean": 0.0056094699780068575,
+        "d_ece_sd": 0.003965008243591812,
+        "n": 3,
+        "d_ece_signs": "+++",
+        "controls_used": [
+          "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed42",
+          "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed43"
+        ],
+        "d_acc_list": [
+          -0.06519317626953125,
+          -0.7822647094726562,
+          0.16297149658203125
+        ],
+        "d_ece_list": [
+          0.003834111618443912,
+          0.0101519223919437,
+          0.0028423759236329595
+        ],
+        "seeds": [
+          "1",
+          "42",
+          "43"
+        ]
+      }
+    }
+  ],
+  "shadowed_controls_under_old_rule": [
+    {
+      "key": [
+        "primary",
+        "1"
+      ],
+      "kept": "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+      "discarded": "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed1"
+    },
+    {
+      "key": [
+        "primary",
+        "43"
+      ],
+      "kept": "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+      "discarded": "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed43"
+    },
+    {
+      "key": [
+        "stage1",
+        "1"
+      ],
+      "kept": "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+      "discarded": "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1"
+    },
+    {
+      "key": [
+        "stage1",
+        "43"
+      ],
+      "kept": "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+      "discarded": "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43"
+    },
+    {
+      "key": [
+        "vae9182",
+        "42"
+      ],
+      "kept": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+      "discarded": "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed42"
+    },
+    {
+      "key": [
+        "vae9182",
+        "1"
+      ],
+      "kept": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1",
+      "discarded": "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed1"
+    },
+    {
+      "key": [
+        "vae9182",
+        "43"
+      ],
+      "kept": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43",
+      "discarded": "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed43"
+    },
+    {
+      "key": [
+        "primary",
+        "42"
+      ],
+      "kept": "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200",
+      "discarded": "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed42"
+    },
+    {
+      "key": [
+        "stage1",
+        "42"
+      ],
+      "kept": "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200",
+      "discarded": "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed42"
+    }
+  ],
+  "logit_std_vae9182": {
+    "old": {
+      "d_acc_mean": -0.11951446533203125,
+      "d_acc_sd": 0.8183309047871816,
+      "d_ece_mean": 0.13877768606523855,
+      "d_ece_sd": 0.0012936613226332237,
+      "n": 3,
+      "d_ece_signs": "+++",
+      "controls_used": [
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1",
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43"
+      ],
+      "d_acc_list": [
+        0.651885986328125,
+        -0.0325927734375,
+        -0.9778366088867188
+      ],
+      "d_ece_list": [
+        0.14027045851736056,
+        0.13807907454290633,
+        0.13798352513544876
+      ],
+      "seeds": [
+        "1",
+        "42",
+        "43"
+      ]
+    },
+    "new": {
+      "d_acc_mean": -0.11951446533203125,
+      "d_acc_sd": 0.8183309047871816,
+      "d_ece_mean": 0.13877768606523855,
+      "d_ece_sd": 0.0012936613226332237,
+      "n": 3,
+      "d_ece_signs": "+++",
+      "controls_used": [
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1",
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43"
+      ],
+      "d_acc_list": [
+        0.651885986328125,
+        -0.0325927734375,
+        -0.9778366088867188
+      ],
+      "d_ece_list": [
+        0.14027045851736056,
+        0.13807907454290633,
+        0.13798352513544876
+      ],
+      "seeds": [
+        "1",
+        "42",
+        "43"
+      ]
+    }
+  },
+  "vae9182_control_arm_seed_sd": {
+    "effective_number": {
+      "n": 3,
+      "acc_mean": 89.9500223795573,
+      "acc_sd": 0.3663557063958696,
+      "ece_mean": 0.032957236164746107,
+      "ece_sd": 0.001996999098785806
+    },
+    "none": {
+      "n": 3,
+      "acc_mean": 90.14558919270833,
+      "acc_sd": 0.20700072136152095,
+      "ece_mean": 0.027766280970667714,
+      "ece_sd": 0.0026997325636259157
+    }
+  }
+}

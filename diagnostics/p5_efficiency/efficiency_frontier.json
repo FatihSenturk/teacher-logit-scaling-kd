@@ -1,0 +1,57 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "checkpoint": "swa",
+  "ours": [
+    {
+      "cell": "scratch w050",
+      "params_m": 0.712089,
+      "gmacs": 0.111711168,
+      "acc": 86.14732615152995,
+      "acc_sd": 0.06518936160946984,
+      "ece": 0.03645689697245679,
+      "ece_sd": 0.0057123664918960985,
+      "n": 3
+    },
+    {
+      "cell": "scratch w075",
+      "params_m": 1.379843,
+      "gmacs": 0.233219488,
+      "acc": 87.3098653157552,
+      "acc_sd": 0.08202738991711436,
+      "ece": 0.03880776136446548,
+      "ece_sd": 0.004214154960651775,
+      "n": 3
+    },
+    {
+      "cell": "pretrained w100",
+      "params_m": 2.248291,
+      "gmacs": 0.328584384,
+      "acc": 89.9500223795573,
+      "acc_sd": 0.3663557063958696,
+      "ece": 0.032957236164746107,
+      "ece_sd": 0.001996999098785806,
+      "n": 3
+    },
+    {
+      "cell": "scratch w100ns",
+      "params_m": 2.248291,
+      "gmacs": 0.328584384,
+      "acc": 88.09213256835938,
+      "acc_sd": 0.14697656931214573,
+      "ece": 0.03744166230022752,
+      "ece_sd": 0.0030384886023834203,
+      "n": 3
+    }
+  ],
+  "teacher": {
+    "name": "POSTERv2 (teacher)",
+    "params_m": 58.334272,
+    "gmacs": 8.482723136,
+    "size_mb": 555.0154619216919,
+    "acc": 91.8187744458931,
+    "ece": 0.0136
+  },
+  "literature_rows": [],
+  "literature_unparseable": [],
+  "literature_with_ece": 0
+}

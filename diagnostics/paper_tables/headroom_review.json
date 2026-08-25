@@ -1,0 +1,54 @@
+{
+  "rafdb_teachers": {
+    "stage1": {
+      "ece_T1": 0.03779733980455796,
+      "T_star_nll": 1.3493927210953593,
+      "ece_at_T_star_nll": 0.015817596575893666,
+      "headroom_nllstar": 0.021979743228664295,
+      "T_argmin_ece": 1.35,
+      "ece_at_argmin": 0.01583008384611336,
+      "headroom_eq8": 0.0219672559584446,
+      "grid_step": 0.05
+    },
+    "vae9182": {
+      "ece_T1": 0.013553927899028671,
+      "T_star_nll": 0.9829375448886304,
+      "ece_at_T_star_nll": 0.014609849335433918,
+      "headroom_nllstar": -0.0010559214364052466,
+      "T_argmin_ece": 1.05,
+      "ece_at_argmin": 0.011808889397120072,
+      "headroom_eq8": 0.0017450385019085989,
+      "grid_step": 0.05
+    },
+    "primary": {
+      "ece_T1": 0.039575973411504727,
+      "T_star_nll": 1.2613411785961113,
+      "ece_at_T_star_nll": 0.01972459457241572,
+      "headroom_nllstar": 0.019851378839089006,
+      "T_argmin_ece": 1.25,
+      "ece_at_argmin": 0.01900418664691812,
+      "headroom_eq8": 0.020571786764586607,
+      "grid_step": 0.05
+    }
+  },
+  "ferplus": {
+    "ece_T1": 0.12823281088141536,
+    "eq8": {
+      "T": 0.46,
+      "ece": 0.008409063446684337,
+      "headroom": 0.11982374743473102
+    },
+    "deployed_nll": {
+      "T": 0.5063,
+      "ece": 0.01562829764162288,
+      "reduction": 0.11260451323979248,
+      "note": "kol fiilen T=0.5063'te kosuldu; tablodaki 0.0156 o sicakligin ECE'si (ferplus_teacher_signed_grid.json)"
+    }
+  },
+  "capacity_ratio": {
+    "teacher_span": 0.17798139929596574,
+    "capacity_span": 0.0023508643920086905,
+    "ratio": 75.70891792013998,
+    "display_fix": "cap_span .4f -> .5f in paper_tables.py"
+  }
+}

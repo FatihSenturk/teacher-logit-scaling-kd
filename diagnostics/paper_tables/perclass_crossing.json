@@ -1,0 +1,94 @@
+{
+  "item": "§5.4 per-class crossing",
+  "verdict": "EĞİLİM VAR, TEK İNVERSİYONLA",
+  "rows": [
+    {
+      "cls": "Happiness",
+      "n": 1185,
+      "gap_native": 0.027833825324658095,
+      "gap_T22": -0.11032102240456472,
+      "sd_native": 0.0020696623914166126,
+      "sd_T22": 0.003016830505204474,
+      "crossing_T": 1.4571317011434086,
+      "range_over_seed_sd": 49.292921736017995
+    },
+    {
+      "cls": "Neutral",
+      "n": 680,
+      "gap_native": 0.061487037294051215,
+      "gap_T22": -0.1262173521752451,
+      "sd_native": 0.009506707029712659,
+      "sd_T22": 0.0043679605404272626,
+      "crossing_T": 1.4626097433298777,
+      "range_over_seed_sd": 28.920578353212907
+    },
+    {
+      "cls": "Sadness",
+      "n": 478,
+      "gap_native": 0.0868617997009884,
+      "gap_T22": -0.08446322608027335,
+      "sd_native": 0.009095858342128399,
+      "sd_T22": 0.005864966716696897,
+      "crossing_T": 1.6993884670358765,
+      "range_over_seed_sd": 21.324723106058546
+    },
+    {
+      "cls": "Surprise",
+      "n": 329,
+      "gap_native": 0.06556053153166534,
+      "gap_T22": -0.07977691241431502,
+      "sd_native": 0.01259959467353491,
+      "sd_T22": 0.011358658867425651,
+      "crossing_T": 1.6215980464517907,
+      "range_over_seed_sd": 15.800602592675363
+    },
+    {
+      "cls": "Anger",
+      "n": 162,
+      "gap_native": 0.1154676874478658,
+      "gap_T22": -0.06374893316025594,
+      "sd_native": 0.00927569947680147,
+      "sd_T22": 0.024749922996774504,
+      "crossing_T": 1.8205190079962628,
+      "range_over_seed_sd": 13.996851386464586
+    },
+    {
+      "cls": "Disgust",
+      "n": 160,
+      "gap_native": 0.27761074304580685,
+      "gap_T22": 0.06288095712661745,
+      "sd_native": 0.012335588313698052,
+      "sd_T22": 0.004526563830752511,
+      "crossing_T": null,
+      "range_over_seed_sd": 10.555678962646104
+    },
+    {
+      "cls": "Fear",
+      "n": 74,
+      "gap_native": 0.3048036989865002,
+      "gap_T22": 0.16546104942356143,
+      "sd_native": 0.008660540909102194,
+      "sd_T22": 0.020118945777451613,
+      "crossing_T": null,
+      "range_over_seed_sd": 13.092056150797774
+    }
+  ],
+  "spearman_n_vs_crossing": -0.8999999999999998,
+  "spearman_rarity_vs_crossing": 0.8999999999999998,
+  "inversions": [
+    {
+      "more_frequent": "Sadness",
+      "n_more": 478,
+      "T_more": 1.6993884670358765,
+      "less_frequent": "Surprise",
+      "n_less": 329,
+      "T_less": 1.6215980464517907,
+      "delta_T": 0.0777904205840858
+    }
+  ],
+  "never_crossed": [
+    "Disgust",
+    "Fear"
+  ],
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds"
+}

@@ -1,0 +1,125 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "arms": {
+    "stage1": {
+      "T_star": 1.3493927210953593,
+      "points": [
+        {
+          "T": 0.85,
+          "teacher_ece": 0.04538044133351088,
+          "signed_gap": 0.04311692714691162,
+          "log_T_over_Tstar": -0.46217358451578633,
+          "student_ece_mean": 0.07619637387380918,
+          "student_ece_sd": 0.0003973301919504124,
+          "student_acc_mean": 89.78704833984375,
+          "student_acc_sd": 0.1144696621718064,
+          "n": 3
+        },
+        {
+          "T": 1.0,
+          "teacher_ece": 0.03779733980455796,
+          "signed_gap": 0.033846914768218994,
+          "log_T_over_Tstar": -0.29965465501801125,
+          "student_ece_mean": 0.06312040706488528,
+          "student_ece_sd": 0.005666354824308483,
+          "student_acc_mean": 89.74358876546223,
+          "student_acc_sd": 0.06785154418440868,
+          "n": 3
+        },
+        {
+          "T": 1.3406,
+          "teacher_ece": 0.015897414849820938,
+          "signed_gap": 0.004034996032714844,
+          "log_T_over_Tstar": -0.006537380076290968,
+          "student_ece_mean": 0.033938331595067095,
+          "student_ece_sd": 0.0023608128596478836,
+          "student_acc_mean": 89.9500223795573,
+          "student_acc_sd": 0.06785154418440868,
+          "n": 3
+        },
+        {
+          "T": 1.7,
+          "teacher_ece": 0.0428967674249465,
+          "signed_gap": -0.04273504018783569,
+          "log_T_over_Tstar": 0.23097359604415899,
+          "student_ece_mean": 0.056058744260833245,
+          "student_ece_sd": 0.005738609784578068,
+          "student_acc_mean": 89.64580790201823,
+          "student_acc_sd": 0.0678503225695389,
+          "n": 3
+        },
+        {
+          "T": 2.2,
+          "teacher_ece": 0.1269590755902726,
+          "signed_gap": -0.12695902585983276,
+          "log_T_over_Tstar": 0.488802705346259,
+          "student_ece_mean": 0.11792273246001181,
+          "student_ece_sd": 0.008989392789158784,
+          "student_acc_mean": 89.72185770670573,
+          "student_acc_sd": 0.308070751040003,
+          "n": 3
+        }
+      ]
+    },
+    "vae9182": {
+      "T_star": 0.9829375448886304,
+      "points": [
+        {
+          "T": 0.85,
+          "teacher_ece": 0.0250310669452768,
+          "signed_gap": 0.024833977222442627,
+          "log_T_over_Tstar": -0.14530923343441893,
+          "student_ece_mean": 0.035646825849116236,
+          "student_ece_sd": 0.0018060510446146134,
+          "student_acc_mean": 90.17818450927734,
+          "student_acc_sd": 0.01881744651777711,
+          "n": 3
+        },
+        {
+          "T": 1.0,
+          "teacher_ece": 0.013553927899028671,
+          "signed_gap": 0.004246532917022705,
+          "log_T_over_Tstar": 0.017209696063356053,
+          "student_ece_mean": 0.027254548498543904,
+          "student_ece_sd": 0.0018756715109825115,
+          "student_acc_mean": 90.27596791585286,
+          "student_acc_sd": 0.19098772580899204,
+          "n": 3
+        },
+        {
+          "T": 1.3406,
+          "teacher_ece": 0.06270611134140401,
+          "signed_gap": -0.060502707958221436,
+          "log_T_over_Tstar": 0.31032697100507634,
+          "student_ece_mean": 0.07671940203647622,
+          "student_ece_sd": 0.015179579191693535,
+          "student_acc_mean": 90.22164408365886,
+          "student_acc_sd": 0.1955680847291983,
+          "n": 3
+        },
+        {
+          "T": 1.7,
+          "teacher_ece": 0.14541721431419466,
+          "signed_gap": -0.1452534794807434,
+          "log_T_over_Tstar": 0.5478379471255264,
+          "student_ece_mean": 0.14248743445419426,
+          "student_ece_sd": 0.013443823812447436,
+          "student_acc_mean": 89.76531982421875,
+          "student_acc_sd": 0.2667982616814396,
+          "n": 3
+        },
+        {
+          "T": 2.2,
+          "teacher_ece": 0.2621571478255414,
+          "signed_gap": -0.262157142162323,
+          "log_T_over_Tstar": 0.8056670564276263,
+          "student_ece_mean": 0.2285484812622716,
+          "student_ece_sd": 0.006590637381726886,
+          "student_acc_mean": 90.11299387613933,
+          "student_acc_sd": 0.06785154418440868,
+          "n": 3
+        }
+      ]
+    }
+  }
+}

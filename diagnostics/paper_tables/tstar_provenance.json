@@ -1,0 +1,188 @@
+{
+  "item": "G4.7",
+  "summary": "Dağıtılan T*=1.3406 **yarı fold (yarı-A'da fit)** fitinden geldi (1.340569 → 1.3406). Tam fold 1.349393 verirdi ve hiçbir koşu onu kullanmadı.",
+  "tolerance": 0.0005,
+  "round_grid": [
+    0.85,
+    0.95,
+    1.0,
+    1.1,
+    1.7,
+    2.2
+  ],
+  "miscal_T_imported": 0.7311,
+  "full_fold_fits": {
+    "stage1": 1.3493927210953593,
+    "primary": 1.2613411785961113,
+    "vae9182": 0.9829375448886304
+  },
+  "half_fold_fits": {
+    "stage1": 1.3405690339579057
+  },
+  "half_split": {
+    "split_seed": 1234,
+    "n_total": 3068,
+    "n_half_a": 1534,
+    "n_half_b": 1534,
+    "T_star_fit_on_half_a": 1.3405690339579057,
+    "half_a": {
+      "acc": 92.50326538085938,
+      "ece_T1": 0.04066714722143469,
+      "ece_Tstar": 0.016989309326144522
+    },
+    "half_b": {
+      "acc": 91.98174285888672,
+      "ece_T1": 0.03789281458478552,
+      "ece_Tstar": 0.02029320912379796
+    },
+    "full_val_T_star_reference": 1.3494
+  },
+  "deployed": [
+    {
+      "dataset": "RAFDB",
+      "T": 0.7311,
+      "n_runs": 4,
+      "runs": [
+        "RAFDB_vae9182_miscalT0731_adaptivetoff_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_vae9182_miscalT0731_adaptivetoff_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_vae9182_miscalT0731_adaptiveton_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_vae9182_miscalT0731_adaptiveton_b070_T6_224_400e_swa200_seed42"
+      ],
+      "kind": "miskalibrasyon enjeksiyonu",
+      "source": "A2 / B-010 kill-switch (build_runs_ledger.MISCAL_T)",
+      "match": 0.0
+    },
+    {
+      "dataset": "RAFDB",
+      "T": 0.85,
+      "n_runs": 12,
+      "runs": [
+        "RAFDB_stage1_p6tau_T03_ts085_b070_224_400e_swa200_seed1",
+        "RAFDB_stage1_p6tau_T03_ts085_b070_224_400e_swa200_seed42",
+        "RAFDB_stage1_p6tau_T03_ts085_b070_224_400e_swa200_seed43",
+        "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed1",
+        "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed42",
+        "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed43",
+        "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed43",
+        "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed43"
+      ],
+      "kind": "yuvarlak grid noktası",
+      "source": "—",
+      "match": null
+    },
+    {
+      "dataset": "RAFDB",
+      "T": 0.95,
+      "n_runs": 3,
+      "runs": [
+        "RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed43"
+      ],
+      "kind": "yuvarlak grid noktası",
+      "source": "—",
+      "match": null
+    },
+    {
+      "dataset": "RAFDB",
+      "T": 1.1,
+      "n_runs": 3,
+      "runs": [
+        "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed43"
+      ],
+      "kind": "yuvarlak grid noktası",
+      "source": "—",
+      "match": null
+    },
+    {
+      "dataset": "RAFDB",
+      "T": 1.3406,
+      "n_runs": 24,
+      "runs": [
+        "RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed43",
+        "RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed43",
+        "RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed43",
+        "RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed43",
+        "RAFDB_stage1_p6tau_T03_ts134_b070_224_400e_swa200_seed1",
+        "RAFDB_stage1_p6tau_T03_ts134_b070_224_400e_swa200_seed42",
+        "RAFDB_stage1_p6tau_T03_ts134_b070_224_400e_swa200_seed43",
+        "RAFDB_stage1_p6tau_T12_ts134_b070_224_400e_swa200_seed1",
+        "RAFDB_stage1_p6tau_T12_ts134_b070_224_400e_swa200_seed42",
+        "RAFDB_stage1_p6tau_T12_ts134_b070_224_400e_swa200_seed43",
+        "RAFDB_stage1_tempscale_T1341_halfA_baseline_b070_T6_224_400e_swa200",
+        "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed43",
+        "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed43"
+      ],
+      "kind": "FİT EDİLMİŞ T*",
+      "source": "yarı fold (yarı-A'da fit)",
+      "source_key": "half:stage1",
+      "fit_value": 1.3405690339579057,
+      "match": 3.0966042094293655e-05,
+      "alternative_fit": 1.3493927210953593,
+      "delta_vs_alternative": 0.008823687137453629
+    },
+    {
+      "dataset": "RAFDB",
+      "T": 1.7,
+      "n_runs": 16,
+      "runs": [
+        "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed1",
+        "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed42",
+        "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed43",
+        "RAFDB_stage1_p6tau_T12_ts170_b070_224_400e_swa200_seed1",
+        "RAFDB_stage1_p6tau_T12_ts170_b070_224_400e_swa200_seed42",
+        "RAFDB_stage1_p6tau_T12_ts170_b070_224_400e_swa200_seed43",
+        "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed43",
+        "RAFDB_vae9182_frontier_w050_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_vae9182_frontier_w050_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_vae9182_frontier_w100ns_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_vae9182_frontier_w100ns_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed43"
+      ],
+      "kind": "yuvarlak grid noktası",
+      "source": "—",
+      "match": null
+    },
+    {
+      "dataset": "RAFDB",
+      "T": 2.2,
+      "n_runs": 10,
+      "runs": [
+        "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed43",
+        "RAFDB_vae9182_frontier_w050_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_vae9182_frontier_w050_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_vae9182_frontier_w100ns_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_vae9182_frontier_w100ns_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+        "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+        "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed43"
+      ],
+      "kind": "yuvarlak grid noktası",
+      "source": "—",
+      "match": null
+    }
+  ]
+}

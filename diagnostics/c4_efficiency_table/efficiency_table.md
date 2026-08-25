@@ -1,0 +1,22 @@
+| run_id | teacher | condition | recipe | best_epoch | accuracy | ece | params_m | flops_g | size_mb |
+|---|---|---|---|---|---|---|---|---|---|
+| stage1_baseline_swa200 | Stage1 | baseline | 400e_swa200 | 145 | 89.67% | 0.0581 | 2.2483 | 0.328584 | 8.82 |
+| stage1_gate_swa200 | Stage1 | gate | 400e_swa200 | 327 | 89.57% | 0.0678 | 2.2483 | 0.328584 | 8.82 |
+| stage1_g2g_kl_swa200 | Stage1 | g2g_kl | 400e_swa200 | 285 | 90.09% | 0.0623 | 2.2483 | 0.328584 | 8.82 |
+| stage1_logit_std_swa200 | Stage1 | logit_std | 400e_swa200 | 300 | 89.31% | 0.1836 | 2.2483 | 0.328584 | 8.82 |
+| stage1_adaptive_t_swa200 | Stage1 | adaptive_t | 400e_swa200 | 399 | 90.03% | 0.0606 | 2.2483 | 0.328584 | 8.82 |
+| stage1_ctkd_swa200 | Stage1 | ctkd | 400e_swa200 | 316 | 89.60% | 0.0725 | 2.2483 | 0.328584 | 8.82 |
+| primary_baseline_swa200 | Primary | baseline | 400e_swa200 | 243 | 89.60% | 0.0654 | 2.2483 | 0.328584 | 8.82 |
+| primary_gate_swa200 | Primary | gate | 400e_swa200 | 308 | 89.21% | 0.0654 | 2.2483 | 0.328584 | 8.82 |
+| primary_g2g_kl_swa200 | Primary | g2g_kl | 400e_swa200 | 293 | 89.21% | 0.0576 | 2.2483 | 0.328584 | 8.82 |
+| primary_logit_std_swa200 | Primary | logit_std | 400e_swa200 | 363 | 89.05% | 0.1840 | 2.2483 | 0.328584 | 8.82 |
+| primary_adaptive_t_swa200 | Primary | adaptive_t | 400e_swa200 | 391 | 89.08% | 0.0666 | 2.2483 | 0.328584 | 8.82 |
+| primary_ctkd_swa200 | Primary | ctkd | 400e_swa200 | 369 | 89.54% | 0.0697 | 2.2483 | 0.328584 | 8.82 |
+| vae9182_baseline_swa200 | VAE9182 | baseline | 400e_swa200 | 139 | 90.06% | 0.0285 | 2.2483 | 0.328584 | 8.82 |
+| vae9182_gate_swa200 | VAE9182 | gate | 400e_swa200 | 398 | 90.09% | 0.0322 | 2.2483 | 0.328584 | 8.82 |
+| vae9182_g2g_kl_swa200 | VAE9182 | g2g_kl | 400e_swa200 | 384 | 90.25% | 0.0262 | 2.2483 | 0.328584 | 8.82 |
+| vae9182_logit_std_swa200 | VAE9182 | logit_std | 400e_swa200 | 370 | 89.77% | 0.1821 | 2.2483 | 0.328584 | 8.82 |
+| vae9182_adaptive_t_swa200 | VAE9182 | adaptive_t | 400e_swa200 | 395 | 90.68% | 0.0347 | 2.2483 | 0.328584 | 8.82 |
+| vae9182_ctkd_swa200 | VAE9182 | ctkd | 400e_swa200 | 327 | 89.90% | 0.0321 | 2.2483 | 0.328584 | 8.82 |
+| stage1_baseline_noswa | Stage1 | baseline | 200e_noSWA | 137 | 89.54% | 0.0579 | 2.2483 | 0.328584 | 8.82 |
+| stage1_gate_noswa | Stage1 | gate | 200e_noSWA | 144 | 89.02% | 0.0679 | 2.2483 | 0.328584 | 8.82 |

@@ -1,0 +1,9 @@
+{
+  "student_ckpt": "kd_logs_rafdb_newrecipe_lightle_swa/rafdb_newrecipe_baseline_lightle_swa_150e/2026-07-16-01-50-24/best_checkpoint.pth",
+  "best_epoch": 65,
+  "student_mean_logvar_min": -1.8588078022003174,
+  "student_mean_logvar_p25": -0.49308526515960693,
+  "student_mean_logvar_median": -0.26480159163475037,
+  "student_mean_logvar_p75": -0.11101807653903961,
+  "student_mean_logvar_max": 0.4479314386844635
+}

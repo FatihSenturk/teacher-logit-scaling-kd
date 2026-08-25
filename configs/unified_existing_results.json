@@ -1,0 +1,44 @@
+[
+  {
+    "dataset": "AffectNet+ 7-class",
+    "teacher": {
+      "accuracy": 67.31,
+      "precision": 67.39,
+      "recall": 67.31,
+      "macro_f1": 67.24,
+      "weighted_f1": 67.24,
+      "params_m": 58.33,
+      "flops_g": 8.48
+    },
+    "student": {
+      "accuracy": 67.63,
+      "precision": null,
+      "recall": null,
+      "macro_f1": null,
+      "weighted_f1": null,
+      "params_m": 2.245728,
+      "flops_g": 0.328569
+    }
+  },
+  {
+    "dataset": "AffectNet+ 8-class",
+    "teacher": {
+      "accuracy": 63.58,
+      "precision": 63.70,
+      "recall": 63.58,
+      "macro_f1": 63.60,
+      "weighted_f1": 63.60,
+      "params_m": 58.34,
+      "flops_g": 8.48
+    },
+    "student": {
+      "accuracy": 64.20,
+      "precision": null,
+      "recall": null,
+      "macro_f1": null,
+      "weighted_f1": null,
+      "params_m": 2.248290,
+      "flops_g": 0.328572
+    }
+  }
+]

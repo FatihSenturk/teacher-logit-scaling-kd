@@ -1,0 +1,75 @@
+{
+  "item": "G4.4",
+  "primary_checkpoint": "swa",
+  "arm": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+  "arm_runs": [
+    "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+    "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1",
+    "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43"
+  ],
+  "teacher": {
+    "name": "POSTERv2 (VAE head, VAE9182)",
+    "params_m": 58.334272,
+    "flops_g": 8.482723136,
+    "size_mb": 555.0154619216919,
+    "acc": 91.8187744458931
+  },
+  "student": {
+    "name": "MobileNetV2Plus + VICH head",
+    "params_m": 2.248291,
+    "flops_g": 0.328584384,
+    "size_mb": 8.82592487335205
+  },
+  "compression": {
+    "params_ratio": 25.946050577972333,
+    "flops_ratio": 25.815965545094194,
+    "size_ratio": 62.88468006309907
+  },
+  "by_checkpoint": {
+    "swa": {
+      "n": 3,
+      "acc_mean": 89.9500223795573,
+      "acc_sd": 0.3663557063958696,
+      "per_run": {
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200": 89.63494110107422,
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1": 89.86310577392578,
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43": 90.35202026367188
+      },
+      "retention_pct": 97.96473860861973,
+      "gap_pp": 1.8687520663358015
+    },
+    "best": {
+      "n": 3,
+      "acc_mean": 90.27596791585286,
+      "acc_sd": 0.19098772580899204,
+      "per_run": {
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200": 90.05867004394531,
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1": 90.35202026367188,
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43": 90.4172134399414
+      },
+      "retention_pct": 98.31972650544428,
+      "gap_pp": 1.542806530040238
+    },
+    "last": {
+      "n": 3,
+      "acc_mean": 89.81964365641277,
+      "acc_sd": 0.16726154800857174,
+      "per_run": {
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200": 89.86310577392578,
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1": 89.96088409423828,
+        "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43": 89.63494110107422
+      },
+      "retention_pct": 97.82274289594405,
+      "gap_pp": 1.9991307894803327
+    }
+  },
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "selection_optimism_pp": {
+    "best_minus_swa": 0.32594553629556344,
+    "best_minus_last": 0.4563242594400947
+  },
+  "headline": {
+    "retention_pct_swa": 97.96473860861973,
+    "retention_pct_best": 98.31972650544428
+  }
+}

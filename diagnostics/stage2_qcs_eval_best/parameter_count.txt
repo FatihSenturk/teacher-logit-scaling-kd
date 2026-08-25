@@ -1,0 +1,5 @@
+total_params: 58345038
+total_params_m: 58.345038
+class_level_vae_head_params: 10766
+expected_formula: 2 * (768 * 7 + 7)
+flops_g: 8.482723136

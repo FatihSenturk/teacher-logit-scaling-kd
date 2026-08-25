@@ -1,0 +1,131 @@
+{
+  "pre_registration": "PREREGISTRATIONS.md A10 (R3-2); no success criterion",
+  "fit_nll": "single-scalar TS, NLL, minimize_scalar bounded log-space [0.05, 10] (= student_ts_baseline.fit_ts)",
+  "fit_ece": "continuous argmin of 15-bin equal-width confidence ECE, bounded Brent, same log-space interval",
+  "dense_grid": {
+    "step": 0.005,
+    "range": [
+      0.1,
+      3.0
+    ],
+    "tolerance": 1e-05
+  },
+  "results": {
+    "stage1": {
+      "n": 3068,
+      "T_star_nll": 1.3493828549261861,
+      "T_star_ece": 1.3198265386272678,
+      "abs_dT": 0.029556316298918306,
+      "ece_at_T_nll": 0.01581743140031026,
+      "ece_at_T_ece": 0.014282038588334248,
+      "d_ece": 0.0015353928119760125,
+      "ece_at_T1": 0.03779733980455796,
+      "ece_removed_by_ts": 0.0219799084042477,
+      "dense_grid_T": 1.3350000000000013,
+      "dense_grid_ece": 0.0141730546426742,
+      "dense_grid_points": 581,
+      "local_min_flag": true,
+      "published_full_nll": 1.3494,
+      "deployed_T": 1.3406,
+      "cross_fit": {
+        "canonical_fitter": "student_ts_baseline.fit_ts (log-space Brent, [0.05, 10])",
+        "confirm_fitter": "teacher_ece_grid.fit_temperature",
+        "confirm_relayed_by": [
+          "p4_teacher_selection.recipe_step3_ranking.rows[].T_star",
+          "teacher_temperature_scaling/temperature_fit.json"
+        ],
+        "confirm_T_star": 1.3493927210953593,
+        "abs_dT": 9.86616917320049e-06,
+        "nll_at_canonical": 0.2668439447879791,
+        "nll_at_confirm": 0.2668439447879791,
+        "d_nll": 0.0,
+        "ece_at_confirm": 0.015817596575893666,
+        "d_ece": 1.6517558340534144e-07
+      }
+    },
+    "primary": {
+      "n": 3068,
+      "T_star_nll": 1.261345227620692,
+      "T_star_ece": 1.244135499501715,
+      "abs_dT": 0.01720972811897692,
+      "ece_at_T_nll": 0.019724799332244143,
+      "ece_at_T_ece": 0.018265431341284104,
+      "d_ece": 0.0014593679909600393,
+      "ece_at_T1": 0.039575973411504727,
+      "ece_removed_by_ts": 0.019851174079260583,
+      "dense_grid_T": 1.240000000000001,
+      "dense_grid_ece": 0.01829332995776092,
+      "dense_grid_points": 581,
+      "local_min_flag": false,
+      "published_full_nll": 1.2613,
+      "deployed_T": 1.2613,
+      "cross_fit": {
+        "canonical_fitter": "student_ts_baseline.fit_ts (log-space Brent, [0.05, 10])",
+        "confirm_fitter": "teacher_ece_grid.fit_temperature",
+        "confirm_relayed_by": [
+          "p4_teacher_selection.recipe_step3_ranking.rows[].T_star",
+          "teacher_temperature_scaling/temperature_fit.json"
+        ],
+        "confirm_T_star": 1.2613411785961113,
+        "abs_dT": 4.049024580732308e-06,
+        "nll_at_canonical": 0.2872024178504944,
+        "nll_at_confirm": 0.2872024178504944,
+        "d_nll": 0.0,
+        "ece_at_confirm": 0.01972459457241572,
+        "d_ece": -2.0475982842257934e-07
+      }
+    },
+    "vae9182": {
+      "n": 3068,
+      "T_star_nll": 0.9830836723309966,
+      "T_star_ece": 1.0571991741999642,
+      "abs_dT": 0.07411550186896765,
+      "ece_at_T_nll": 0.014571842039307527,
+      "ece_at_T_ece": 0.010247819135366239,
+      "d_ece": 0.004324022903941288,
+      "ece_at_T1": 0.013553927899028671,
+      "ece_removed_by_ts": -0.0010179141402788562,
+      "dense_grid_T": 1.0550000000000008,
+      "dense_grid_ece": 0.011005761317976762,
+      "dense_grid_points": 581,
+      "local_min_flag": false,
+      "published_full_nll": 0.9829,
+      "deployed_T": 0.9829,
+      "cross_fit": {
+        "canonical_fitter": "student_ts_baseline.fit_ts (log-space Brent, [0.05, 10])",
+        "confirm_fitter": "teacher_ece_grid.fit_temperature",
+        "confirm_relayed_by": [
+          "p4_teacher_selection.recipe_step3_ranking.rows[].T_star",
+          "teacher_temperature_scaling/temperature_fit.json"
+        ],
+        "confirm_T_star": 0.9829375448886304,
+        "abs_dT": 0.00014612744236619513,
+        "nll_at_canonical": 0.2641666829586029,
+        "nll_at_confirm": 0.2641667127609253,
+        "d_nll": 2.9802322387695312e-08,
+        "ece_at_confirm": 0.014609849335433918,
+        "d_ece": 3.8007296126390394e-05
+      }
+    },
+    "ferplus": {
+      "n": 3153,
+      "T_star_nll": 0.5063844589955608,
+      "T_star_ece": 0.45304659827458493,
+      "abs_dT": 0.053337860720975905,
+      "ece_at_T_nll": 0.015640211254689115,
+      "ece_at_T_ece": 0.007179033404639741,
+      "d_ece": 0.008461177850049375,
+      "ece_at_T1": 0.12823281088141536,
+      "ece_removed_by_ts": 0.11259259962672624,
+      "dense_grid_T": 0.4550000000000003,
+      "dense_grid_ece": 0.007262366255842766,
+      "dense_grid_points": 581,
+      "local_min_flag": false,
+      "published_full_nll": 0.5063,
+      "deployed_T": 0.5063
+    }
+  },
+  "any_local_min": true,
+  "max_abs_dT": 0.07411550186896765,
+  "max_d_ece": 0.008461177850049375
+}

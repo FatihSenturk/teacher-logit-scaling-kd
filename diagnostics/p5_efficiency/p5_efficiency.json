@@ -1,0 +1,65 @@
+{
+  "compression": {
+    "params_ratio": 25.946050577972333,
+    "flops_ratio": 25.815965545094194,
+    "size_ratio": 62.88468006309907,
+    "teacher": {
+      "name": "POSTERv2 (VAE head, VAE9182)",
+      "params_m": 58.334272,
+      "flops_g": 8.482723136,
+      "size_mb": 555.0154619216919,
+      "acc": 91.8187744458931
+    },
+    "student": {
+      "name": "MobileNetV2Plus + VICH head",
+      "params_m": 2.248291,
+      "flops_g": 0.328584384,
+      "size_mb": 8.82592487335205
+    },
+    "student_acc_mean": 90.27596791585286,
+    "student_acc_sd": 0.19098772580899204,
+    "retention_pct": 98.31972650544428
+  },
+  "latency_validity": {
+    "teacher_rows": [
+      {
+        "file": "primary_teacher_latency.csv",
+        "model": "POSTER-Var Teacher",
+        "params_m": 58.345038,
+        "flops_g": 8.482723136,
+        "latency_ms": 89.15079800004605
+      },
+      {
+        "file": "stage1_teacher_latency.csv",
+        "model": "POSTER-Var Teacher",
+        "params_m": 58.345038,
+        "flops_g": 8.482723136,
+        "latency_ms": 249.7881050000433
+      },
+      {
+        "file": "vae9182_teacher_student_latency.csv",
+        "model": "POSTER-Var Teacher",
+        "params_m": 58.334272,
+        "flops_g": 8.482723136,
+        "latency_ms": 47.54319500003476
+      }
+    ],
+    "distinct_teacher_flops": [
+      8.482723
+    ],
+    "latency_spread_ratio": 5.253919199159011,
+    "comparable": false,
+    "verdict": "NOT COMPARABLE: identical FLOPs [8.482723] but 5.3x latency spread -> measurement contention, needs an idle-machine re-run"
+  },
+  "frontier_coverage": {
+    "plus|wm=1.0|params=2.248291": 116,
+    "plus|wm=1.0|params=2.250853": 13,
+    "plus|wm=0.5|params=0.712089": 7,
+    "plus|wm=0.75|params=1.379843": 3,
+    "plus|wm=1.0|params=2.239324": 3
+  },
+  "params_spread_ratio": 3.1609152788485715,
+  "min_spread_for_frontier": 1.15,
+  "is_frontier_plottable": true,
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds"
+}

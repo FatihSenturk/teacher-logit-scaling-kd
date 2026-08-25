@@ -1,0 +1,14 @@
+{
+  "n_differing_predictions": 256,
+  "n_total": 3068,
+  "pct_differing": 8.3442,
+  "identical_predictions": false,
+  "g2g_term_training_log_stats": {
+    "n_epochs_logged": 400,
+    "g2g_term_min": 8.285774170492633,
+    "g2g_term_mean": 10.262168938311376,
+    "g2g_term_max": 570.493575206101,
+    "all_nonzero": true,
+    "any_nonzero": true
+  }
+}

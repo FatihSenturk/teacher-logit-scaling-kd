@@ -1,0 +1,522 @@
+{
+  "checkpoint": "swa",
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "series": {
+    "rafdb_stage1": {
+      "label": "RAF-DB / Stage1 teacher  (native ECE 0.0378, T*=1.35, OVER-confident)",
+      "seeds": [
+        "1",
+        "42",
+        "43"
+      ],
+      "points": [
+        {
+          "T": 0.85,
+          "teacher_ece": 0.04538044133351088,
+          "signed_gap": 0.04311692714691162,
+          "per_seed": {
+            "1": {
+              "run": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed1",
+              "ece": 0.08136822252183415,
+              "acc": 89.47196960449219
+            },
+            "42": {
+              "run": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+              "ece": 0.07811261412373112,
+              "acc": 89.83050537109375
+            },
+            "43": {
+              "run": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed43",
+              "ece": 0.07953811236784697,
+              "acc": 89.63494110107422
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.07967298300447075,
+          "ece_sd": 0.001631989300491036
+        },
+        {
+          "T": 1.0,
+          "teacher_ece": 0.03779733980455796,
+          "signed_gap": 0.033846914768218994,
+          "per_seed": {
+            "1": {
+              "run": "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1",
+              "ece": 0.0721164230874107,
+              "acc": 89.99348449707031
+            },
+            "42": {
+              "run": "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200",
+              "ece": 0.0728435692470885,
+              "acc": 89.37418365478516
+            },
+            "43": {
+              "run": "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43",
+              "ece": 0.07442842306377369,
+              "acc": 89.43937683105469
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.07312947179942429,
+          "ece_sd": 0.0011822187508027879
+        },
+        {
+          "T": 1.3406,
+          "teacher_ece": 0.015897414849820938,
+          "signed_gap": 0.004034996032714844,
+          "per_seed": {
+            "1": {
+              "run": "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed1",
+              "ece": 0.04250853412543003,
+              "acc": 89.73272705078125
+            },
+            "42": {
+              "run": "RAFDB_stage1_tempscale_T1341_halfA_baseline_b070_T6_224_400e_swa200",
+              "ece": 0.043162582206601734,
+              "acc": 89.66753387451172
+            },
+            "43": {
+              "run": "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed43",
+              "ece": 0.042751161884297915,
+              "acc": 89.79791259765625
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.04280742607210989,
+          "ece_sd": 0.0003306341894657955
+        },
+        {
+          "T": 1.7,
+          "teacher_ece": 0.0428967674249465,
+          "signed_gap": -0.04273504018783569,
+          "per_seed": {
+            "1": {
+              "run": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+              "ece": 0.04152102102045907,
+              "acc": 89.40678405761719
+            },
+            "42": {
+              "run": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+              "ece": 0.04721869865366812,
+              "acc": 89.24380493164062
+            },
+            "43": {
+              "run": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed43",
+              "ece": 0.04548752780960001,
+              "acc": 89.63494110107422
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.04474241582790907,
+          "ece_sd": 0.0029210060770113494
+        },
+        {
+          "T": 2.2,
+          "teacher_ece": 0.1269590755902726,
+          "signed_gap": -0.12695902585983276,
+          "per_seed": {
+            "1": {
+              "run": "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+              "ece": 0.10128636753388146,
+              "acc": 89.30899810791016
+            },
+            "42": {
+              "run": "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+              "ece": 0.10302993218563836,
+              "acc": 89.83050537109375
+            },
+            "43": {
+              "run": "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed43",
+              "ece": 0.09802878746153323,
+              "acc": 89.76531982421875
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.10078169572701769,
+          "ece_sd": 0.00253848032538042
+        }
+      ]
+    },
+    "rafdb_vae9182": {
+      "label": "RAF-DB / VAE9182 teacher (native ECE 0.0136, T*=0.98, already calibrated)",
+      "seeds": [
+        "1",
+        "42",
+        "43"
+      ],
+      "points": [
+        {
+          "T": 0.85,
+          "teacher_ece": 0.0250310669452768,
+          "signed_gap": 0.024833977222442627,
+          "per_seed": {
+            "1": {
+              "run": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed1",
+              "ece": 0.04601551720573818,
+              "acc": 89.96088409423828
+            },
+            "42": {
+              "run": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+              "ece": 0.0433990587680716,
+              "acc": 89.96088409423828
+            },
+            "43": {
+              "run": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed43",
+              "ece": 0.04461154245529833,
+              "acc": 89.86310577392578
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.044675372809702706,
+          "ece_sd": 0.0013093965879811618
+        },
+        {
+          "T": 1.0,
+          "teacher_ece": 0.013553927899028671,
+          "signed_gap": 0.004246532917022705,
+          "per_seed": {
+            "1": {
+              "run": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1",
+              "ece": 0.03425653685841132,
+              "acc": 89.86310577392578
+            },
+            "42": {
+              "run": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+              "ece": 0.03395739449807376,
+              "acc": 89.63494110107422
+            },
+            "43": {
+              "run": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43",
+              "ece": 0.030657777137753237,
+              "acc": 90.35202026367188
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.032957236164746107,
+          "ece_sd": 0.001996999098785806
+        },
+        {
+          "T": 1.3406,
+          "teacher_ece": 0.06270611134140401,
+          "signed_gap": -0.060502707958221436,
+          "per_seed": {
+            "1": {
+              "run": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed1",
+              "ece": 0.06276643690027811,
+              "acc": 89.79791259765625
+            },
+            "42": {
+              "run": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed42",
+              "ece": 0.0681535900513383,
+              "acc": 90.09126281738281
+            },
+            "43": {
+              "run": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed43",
+              "ece": 0.06317326072919167,
+              "acc": 90.38461303710938
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.06469776256026936,
+          "ece_sd": 0.00299973901247489
+        },
+        {
+          "T": 1.7,
+          "teacher_ece": 0.14541721431419466,
+          "signed_gap": -0.1452534794807434,
+          "per_seed": {
+            "1": {
+              "run": "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+              "ece": 0.1270073130095409,
+              "acc": 89.60234832763672
+            },
+            "42": {
+              "run": "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+              "ece": 0.1260032248155079,
+              "acc": 90.09126281738281
+            },
+            "43": {
+              "run": "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed43",
+              "ece": 0.1316466475005178,
+              "acc": 89.0482406616211
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.12821906177518888,
+          "ece_sd": 0.0030105325448677826
+        },
+        {
+          "T": 2.2,
+          "teacher_ece": 0.2621571478255414,
+          "signed_gap": -0.262157142162323,
+          "per_seed": {
+            "1": {
+              "run": "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+              "ece": 0.20900966319336886,
+              "acc": 89.66753387451172
+            },
+            "42": {
+              "run": "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+              "ece": 0.21481987491075188,
+              "acc": 90.28683471679688
+            },
+            "43": {
+              "run": "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed43",
+              "ece": 0.20898636827801476,
+              "acc": 89.79791259765625
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.21093863546071184,
+          "ece_sd": 0.0033612721423117073
+        }
+      ]
+    },
+    "ferplus": {
+      "label": "FERPlus / VICH teacher   (native ECE 0.1282, T*=0.51, UNDER-confident)",
+      "seeds": [
+        "1",
+        "42",
+        "43"
+      ],
+      "points": [
+        {
+          "T": 0.26,
+          "teacher_ece": 0.03933340457557233,
+          "signed_gap": 0.039333343505859375,
+          "per_seed": {
+            "1": {
+              "run": "FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed1",
+              "ece": 0.06315769743359811,
+              "acc": 88.93118286132812
+            },
+            "42": {
+              "run": "FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed42",
+              "ece": 0.05675966730958653,
+              "acc": 89.18490600585938
+            },
+            "43": {
+              "run": "FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed43",
+              "ece": 0.0563050520597773,
+              "acc": 89.50205993652344
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.058740805600987316,
+          "ece_sd": 0.003831888418531751
+        },
+        {
+          "T": 0.5063,
+          "teacher_ece": 0.01562829764162288,
+          "signed_gap": -0.01169675588607788,
+          "per_seed": {
+            "1": {
+              "run": "FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed1",
+              "ece": 0.019317023174898078,
+              "acc": 89.18490600585938
+            },
+            "42": {
+              "run": "FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed42",
+              "ece": 0.016668123231779533,
+              "acc": 88.96289825439453
+            },
+            "43": {
+              "run": "FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed43",
+              "ece": 0.019510661094407224,
+              "acc": 89.21662139892578
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.018498602500361613,
+          "ece_sd": 0.0015881954147709731
+        },
+        {
+          "T": 0.74,
+          "teacher_ece": 0.06646802423116029,
+          "signed_gap": -0.06490564346313477,
+          "per_seed": {
+            "1": {
+              "run": "FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed1",
+              "ece": 0.033211600324898116,
+              "acc": 88.83602905273438
+            },
+            "42": {
+              "run": "FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed42",
+              "ece": 0.03561090661199215,
+              "acc": 88.77259826660156
+            },
+            "43": {
+              "run": "FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed43",
+              "ece": 0.03426717110675288,
+              "acc": 88.74088287353516
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.034363226014547714,
+          "ece_sd": 0.0012025338139968638
+        },
+        {
+          "T": 1.0,
+          "teacher_ece": 0.12823281088141536,
+          "signed_gap": -0.12768501043319702,
+          "per_seed": {
+            "1": {
+              "run": "FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed1",
+              "ece": 0.08258272617195207,
+              "acc": 89.12147521972656
+            },
+            "42": {
+              "run": "FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed42",
+              "ece": 0.07343739451698147,
+              "acc": 88.39200592041016
+            },
+            "43": {
+              "run": "FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed43",
+              "ece": 0.07888102229912622,
+              "acc": 88.6457290649414
+            }
+          },
+          "n": 3,
+          "ece_mean": 0.07830038099601992,
+          "ece_sd": 0.00460023162590826
+        }
+      ]
+    }
+  },
+  "seed_curves": [
+    {
+      "arm": "rafdb_stage1",
+      "seed": "1",
+      "n_points": 5,
+      "rho_T_vs_ece": 0.0,
+      "monotone_in_T": "hayır",
+      "ece_at_min_T": 0.08136822252183415,
+      "ece_at_max_T": 0.10128636753388146,
+      "span": 0.019918145012047306,
+      "g22_a_T_axis": false,
+      "g22_b_within_branch": true,
+      "g22_c_pooled": false
+    },
+    {
+      "arm": "rafdb_stage1",
+      "seed": "42",
+      "n_points": 5,
+      "rho_T_vs_ece": 0.1,
+      "monotone_in_T": "hayır",
+      "ece_at_min_T": 0.07811261412373112,
+      "ece_at_max_T": 0.10302993218563836,
+      "span": 0.024917318061907237,
+      "g22_a_T_axis": false,
+      "g22_b_within_branch": true,
+      "g22_c_pooled": false
+    },
+    {
+      "arm": "rafdb_stage1",
+      "seed": "43",
+      "n_points": 5,
+      "rho_T_vs_ece": 0.1,
+      "monotone_in_T": "hayır",
+      "ece_at_min_T": 0.07953811236784697,
+      "ece_at_max_T": 0.09802878746153323,
+      "span": 0.018490675093686265,
+      "g22_a_T_axis": false,
+      "g22_b_within_branch": true,
+      "g22_c_pooled": false
+    },
+    {
+      "arm": "rafdb_vae9182",
+      "seed": "1",
+      "n_points": 5,
+      "rho_T_vs_ece": 0.9,
+      "monotone_in_T": "hayır",
+      "ece_at_min_T": 0.04601551720573818,
+      "ece_at_max_T": 0.20900966319336886,
+      "span": 0.16299414598763068,
+      "g22_a_T_axis": false,
+      "g22_b_within_branch": true,
+      "g22_c_pooled": true
+    },
+    {
+      "arm": "rafdb_vae9182",
+      "seed": "42",
+      "n_points": 5,
+      "rho_T_vs_ece": 0.9,
+      "monotone_in_T": "hayır",
+      "ece_at_min_T": 0.0433990587680716,
+      "ece_at_max_T": 0.21481987491075188,
+      "span": 0.1714208161426803,
+      "g22_a_T_axis": false,
+      "g22_b_within_branch": true,
+      "g22_c_pooled": true
+    },
+    {
+      "arm": "rafdb_vae9182",
+      "seed": "43",
+      "n_points": 5,
+      "rho_T_vs_ece": 0.9,
+      "monotone_in_T": "hayır",
+      "ece_at_min_T": 0.04461154245529833,
+      "ece_at_max_T": 0.20898636827801476,
+      "span": 0.16437482582271642,
+      "g22_a_T_axis": false,
+      "g22_b_within_branch": true,
+      "g22_c_pooled": true
+    },
+    {
+      "arm": "ferplus",
+      "seed": "1",
+      "n_points": 4,
+      "rho_T_vs_ece": 0.4,
+      "monotone_in_T": "hayır",
+      "ece_at_min_T": 0.06315769743359811,
+      "ece_at_max_T": 0.08258272617195207,
+      "span": 0.01942502873835396,
+      "g22_a_T_axis": false,
+      "g22_b_within_branch": true,
+      "g22_c_pooled": false
+    },
+    {
+      "arm": "ferplus",
+      "seed": "42",
+      "n_points": 4,
+      "rho_T_vs_ece": 0.4,
+      "monotone_in_T": "hayır",
+      "ece_at_min_T": 0.05675966730958653,
+      "ece_at_max_T": 0.07343739451698147,
+      "span": 0.016677727207394945,
+      "g22_a_T_axis": false,
+      "g22_b_within_branch": true,
+      "g22_c_pooled": false
+    },
+    {
+      "arm": "ferplus",
+      "seed": "43",
+      "n_points": 4,
+      "rho_T_vs_ece": 0.4,
+      "monotone_in_T": "hayır",
+      "ece_at_min_T": 0.0563050520597773,
+      "ece_at_max_T": 0.07888102229912622,
+      "span": 0.022575970239348916,
+      "g22_a_T_axis": false,
+      "g22_b_within_branch": true,
+      "g22_c_pooled": false
+    }
+  ],
+  "n_curves": 9,
+  "n_rho_positive": 8,
+  "n_strictly_monotone_in_T": 0,
+  "g22_summary": {
+    "a_T_axis": [
+      0,
+      9
+    ],
+    "b_signed_gap_within_branch": [
+      9,
+      9
+    ],
+    "c_unsigned_gap_pooled": [
+      3,
+      9
+    ]
+  }
+}

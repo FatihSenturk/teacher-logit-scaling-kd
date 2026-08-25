@@ -1,0 +1,146 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "curves": {
+    "stage1": [
+      {
+        "T": 0.85,
+        "teacher_ece": 0.04538044133351088,
+        "n": 3,
+        "student_acc_mean": 89.78704833984375,
+        "student_acc_sd": 0.1144696621718064,
+        "student_ece_mean": 0.07619637387380918,
+        "student_ece_sd": 0.0003973301919504124
+      },
+      {
+        "T": 1.0,
+        "teacher_ece": 0.03779733980455796,
+        "n": 3,
+        "student_acc_mean": 89.74358876546223,
+        "student_acc_sd": 0.06785154418440868,
+        "student_ece_mean": 0.06312040706488528,
+        "student_ece_sd": 0.005666354824308483
+      },
+      {
+        "T": 1.3406,
+        "teacher_ece": 0.015897414849820938,
+        "n": 3,
+        "student_acc_mean": 89.9500223795573,
+        "student_acc_sd": 0.06785154418440868,
+        "student_ece_mean": 0.033938331595067095,
+        "student_ece_sd": 0.0023608128596478836
+      },
+      {
+        "T": 1.7,
+        "teacher_ece": 0.0428967674249465,
+        "n": 3,
+        "student_acc_mean": 89.64580790201823,
+        "student_acc_sd": 0.0678503225695389,
+        "student_ece_mean": 0.056058744260833245,
+        "student_ece_sd": 0.005738609784578068
+      },
+      {
+        "T": 2.2,
+        "teacher_ece": 0.1269590755902726,
+        "n": 3,
+        "student_acc_mean": 89.72185770670573,
+        "student_acc_sd": 0.308070751040003,
+        "student_ece_mean": 0.11792273246001181,
+        "student_ece_sd": 0.008989392789158784
+      }
+    ],
+    "vae9182": [
+      {
+        "T": 0.85,
+        "teacher_ece": 0.0250310669452768,
+        "n": 3,
+        "student_acc_mean": 90.17818450927734,
+        "student_acc_sd": 0.01881744651777711,
+        "student_ece_mean": 0.035646825849116236,
+        "student_ece_sd": 0.0018060510446146134
+      },
+      {
+        "T": 1.0,
+        "teacher_ece": 0.013553927899028671,
+        "n": 3,
+        "student_acc_mean": 90.27596791585286,
+        "student_acc_sd": 0.19098772580899204,
+        "student_ece_mean": 0.027254548498543904,
+        "student_ece_sd": 0.0018756715109825115
+      },
+      {
+        "T": 1.3406,
+        "teacher_ece": 0.06270611134140401,
+        "n": 3,
+        "student_acc_mean": 90.22164408365886,
+        "student_acc_sd": 0.1955680847291983,
+        "student_ece_mean": 0.07671940203647622,
+        "student_ece_sd": 0.015179579191693535
+      },
+      {
+        "T": 1.7,
+        "teacher_ece": 0.14541721431419466,
+        "n": 3,
+        "student_acc_mean": 89.76531982421875,
+        "student_acc_sd": 0.2667982616814396,
+        "student_ece_mean": 0.14248743445419426,
+        "student_ece_sd": 0.013443823812447436
+      },
+      {
+        "T": 2.2,
+        "teacher_ece": 0.2621571478255414,
+        "n": 3,
+        "student_acc_mean": 90.11299387613933,
+        "student_acc_sd": 0.06785154418440868,
+        "student_ece_mean": 0.2285484812622716,
+        "student_ece_sd": 0.006590637381726886
+      }
+    ]
+  },
+  "headroom_table": [
+    {
+      "teacher": "stage1",
+      "teacher_own_acc": 92.24250030517578,
+      "teacher_ece_T1": 0.03779733980455796,
+      "teacher_T_star": 1.3493927210953593,
+      "teacher_headroom_dECE": 0.0219672559584446,
+      "student_ece_T1": 0.06312040706488528,
+      "student_ece_best": 0.033938331595067095,
+      "student_best_T": 1.3406,
+      "student_realized_dECE": 0.029182075469818186,
+      "student_acc_U_depth_pp": 0.3042144775390625,
+      "n_points": 5,
+      "complete": true
+    },
+    {
+      "teacher": "vae9182",
+      "teacher_own_acc": 91.81877136230469,
+      "teacher_ece_T1": 0.013553927899028671,
+      "teacher_T_star": 0.9829375448886304,
+      "teacher_headroom_dECE": 0.0017450385019085989,
+      "student_ece_T1": 0.027254548498543904,
+      "student_ece_best": 0.027254548498543904,
+      "student_best_T": 1.0,
+      "student_realized_dECE": 0.0,
+      "student_acc_U_depth_pp": 0.5106480916341098,
+      "n_points": 5,
+      "complete": true
+    }
+  ],
+  "correlations": {
+    "stage1": {
+      "n": 5,
+      "pearson": 0.9598762146273051,
+      "spearman": 0.9
+    },
+    "vae9182": {
+      "n": 5,
+      "pearson": 0.9981167913285048,
+      "spearman": 1.0
+    },
+    "pooled": {
+      "n": 10,
+      "pearson": 0.9920490654025893,
+      "spearman": 0.9878787878787879
+    }
+  }
+}

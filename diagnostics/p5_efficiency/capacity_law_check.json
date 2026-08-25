@@ -1,0 +1,126 @@
+{
+  "status": "EXPLORATORY \u2014 result not pre-registered; question + analysis plan were (PREREGISTRATIONS.md B4, frozen 2026-07-29 01:28:02)",
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "checkpoint": "swa",
+  "shared_support_temperatures": [
+    1.0,
+    1.7,
+    2.2
+  ],
+  "slope_comparison": {
+    "note": "both slopes fitted on the SAME three temperatures; the 5-point fit is recorded separately and is NOT used for the capacity comparison",
+    "big": {
+      "params_m": 2.248291,
+      "init": "pretrained",
+      "slope": 0.7160652787380302,
+      "intercept": 0.02351986233652291,
+      "r2": 0.9999691373688872,
+      "seed_noise_envelope": 0.021906323710570122,
+      "cell_ece_mean": [
+        0.032957236164746107,
+        0.12821906177518888,
+        0.21093863546071184
+      ],
+      "cell_ece_sd": [
+        0.001996999098785806,
+        0.0030105325448677826,
+        0.0033612721423117073
+      ],
+      "cell_n": [
+        3,
+        3,
+        3
+      ]
+    },
+    "small": {
+      "params_m": 0.712089,
+      "init": "scratch",
+      "slope": 0.6547068722514588,
+      "intercept": 0.027845858618686867,
+      "r2": 0.9999645299723947,
+      "seed_noise_envelope": 0.058456546540507005,
+      "cell_ece_mean": [
+        0.03645689697245679,
+        0.12361117747686368,
+        0.19918508699462498
+      ],
+      "cell_ece_sd": [
+        0.0057123664918960985,
+        0.003962944527397044,
+        0.00873869378270836
+      ],
+      "cell_n": [
+        3,
+        2,
+        2
+      ]
+    },
+    "teacher_ece": [
+      0.013553927899028671,
+      0.14541721431419466,
+      0.2621571478255414
+    ],
+    "slope_difference": -0.061358406486571315,
+    "combined_envelope": 0.08036287025107713,
+    "difference_resolvable": false,
+    "envelope_is_not_a_confidence_interval": true
+  },
+  "slope_fit_5point_recorded_only": {
+    "slope": 0.7136712770758438,
+    "intercept": 0.023665080026200172,
+    "r2": 0.9988777898302422,
+    "n_points": 5
+  },
+  "capacity_cells_at_T1": {
+    "w050": {
+      "params_m": 0.712089,
+      "ece_mean": 0.03645689697245679,
+      "ece_sd": 0.0057123664918960985,
+      "acc_mean": 86.14732615152995,
+      "acc_sd": 0.06518936160946984,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ]
+    },
+    "w075": {
+      "params_m": 1.379843,
+      "ece_mean": 0.03880776136446548,
+      "ece_sd": 0.004214154960651775,
+      "acc_mean": 87.3098653157552,
+      "acc_sd": 0.08202738991711436,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ]
+    },
+    "w100ns": {
+      "params_m": 2.248291,
+      "ece_mean": 0.03744166230022752,
+      "ece_sd": 0.0030384886023834203,
+      "acc_mean": 88.09213256835938,
+      "acc_sd": 0.14697656931214573,
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ]
+    }
+  },
+  "capacity_ece_span": 0.0023508643920086905,
+  "typical_seed_sd": 0.004321670018310431,
+  "confounds": {
+    "init": "b_w050 is scratch, b_2248 is pre-trained -- two variables at once; separating them needs a scratch dose-response at 2.248 M (4 runs, not launched)",
+    "cell_n": "two of three w050 cells have n=2 (one degree of freedom); no confidence interval is reported for either slope"
+  },
+  "missing_design": {
+    "scratch_dose_response_2248M": 4,
+    "third_seed_w050": 2,
+    "w075_slope": 4
+  }
+}

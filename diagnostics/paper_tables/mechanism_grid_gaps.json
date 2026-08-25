@@ -1,0 +1,220 @@
+{
+  "mechanisms": [
+    "adaptive_t",
+    "ctkd",
+    "g2g_kl",
+    "g2g_kl+adaptive_t",
+    "gate:mean_logvar",
+    "gate:oracle_error",
+    "gate:target_logvar",
+    "logit_std"
+  ],
+  "teachers": [
+    "stage1",
+    "primary",
+    "vae9182"
+  ],
+  "grid": [
+    {
+      "teacher": "stage1",
+      "mechanism": "adaptive_t",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "adaptive_t",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "adaptive_t",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "ctkd",
+      "n_in_grid": 1,
+      "present": true
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "ctkd",
+      "n_in_grid": 1,
+      "present": true
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "ctkd",
+      "n_in_grid": 1,
+      "present": true
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "g2g_kl",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "g2g_kl",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "g2g_kl",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "g2g_kl+adaptive_t",
+      "n_in_grid": 0,
+      "present": false,
+      "class": "koşulmadı",
+      "why": "defterde bu (öğretmen, mekanizma) için hiç koşu yok",
+      "ledger_runs": []
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "g2g_kl+adaptive_t",
+      "n_in_grid": 0,
+      "present": false,
+      "class": "koşulmadı",
+      "why": "defterde bu (öğretmen, mekanizma) için hiç koşu yok",
+      "ledger_runs": []
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "g2g_kl+adaptive_t",
+      "n_in_grid": 1,
+      "present": true
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "gate:mean_logvar",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "gate:mean_logvar",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "gate:mean_logvar",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "gate:oracle_error",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "gate:oracle_error",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "gate:oracle_error",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "gate:target_logvar",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "gate:target_logvar",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "gate:target_logvar",
+      "n_in_grid": 0,
+      "present": false,
+      "class": "elendi",
+      "why": "gate sinyali ön-kayıtlı taramada aleyhte: AUROC 0.4579 (şanstan 0.0421 uzak), yön \"higher->less error (confidence-like)\" — gate'in istediği yön değil. A12 beş hücresini bu taramadan seçti.",
+      "ledger_runs": []
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "logit_std",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "logit_std",
+      "n_in_grid": 3,
+      "present": true
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "logit_std",
+      "n_in_grid": 3,
+      "present": true
+    }
+  ],
+  "gaps": [
+    {
+      "teacher": "stage1",
+      "mechanism": "g2g_kl+adaptive_t",
+      "n_in_grid": 0,
+      "present": false,
+      "class": "koşulmadı",
+      "why": "defterde bu (öğretmen, mekanizma) için hiç koşu yok",
+      "ledger_runs": []
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "g2g_kl+adaptive_t",
+      "n_in_grid": 0,
+      "present": false,
+      "class": "koşulmadı",
+      "why": "defterde bu (öğretmen, mekanizma) için hiç koşu yok",
+      "ledger_runs": []
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "gate:target_logvar",
+      "n_in_grid": 0,
+      "present": false,
+      "class": "elendi",
+      "why": "gate sinyali ön-kayıtlı taramada aleyhte: AUROC 0.4579 (şanstan 0.0421 uzak), yön \"higher->less error (confidence-like)\" — gate'in istediği yön değil. A12 beş hücresini bu taramadan seçti.",
+      "ledger_runs": []
+    }
+  ],
+  "outside_budget": [
+    {
+      "teacher": "vae9182",
+      "mechanism": "g2g_kl+adaptive_t",
+      "n_in_grid": 1,
+      "n_in_ledger": 3,
+      "budgets_outside": [
+        "500e/SWA@200"
+      ],
+      "n_outside": 3,
+      "runs_outside": [
+        "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200",
+        "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200_seed1",
+        "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200_seed43"
+      ]
+    }
+  ],
+  "n_cells": 24,
+  "n_empty": 3
+}

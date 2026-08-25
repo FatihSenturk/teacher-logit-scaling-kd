@@ -1,0 +1,52 @@
+# Large/generated artifacts -- never commit these
+checkpoints/
+data/
+dataset_cache/
+kd_logs*/
+launcher_logs/
+pipeline_logs/
+pretrained/
+reference_90_74/
+# Kök seviyeye SABİTLİ: desen `reports/` iken `diagnostics/reports/` de kapsama giriyordu ve
+# ters kanalın raporları git'e hiç girmiyordu -- ihraç bandının "repo_export'taki her dosyanın
+# bir git geçmişi vardır" değişmezini sessizce deliyordu. Kastedilen hep kökteki çıktı klasörüydü.
+/reports/
+results/
+swanlog/
+wandb/
+__pycache__/
+*.pyc
+*.pt
+*.pth
+*.pth.tar
+*.tar
+# ...AMA LOGİT ÖNBELLEĞİ AĞIRLIK DEĞİLDİR (14 Ağu, A1 ölçümü).
+# `*.pt` kuralı checkpoint için yazıldı ve dört dosyayı yanlış tarafa düşürüyordu:
+# `teacher_val_logits_{stage1,primary,vae9182}.pt` (3×110 KB) ve `ferplus_val_logits.pt`
+# (225 KB). İçerikleri AÇILARAK ölçüldü (`public_scope_scan.py`): yalnız `logits`/`labels`
+# tensörleri, tek bir parametre tensörü yok. Sınıfları yayımlanan 42 `.npz` ile aynı
+# (8 Ağu kararı K2) ve kova ataması zaten A.
+# NEDEN ÖNEMLİ: bu dört dosyayı DOKUZ üretici okuyor -- bootstrap_cis, tstar_stability,
+# tstar_sensitivity, two_dataset_overlay, jsd_sensitivity, adaptive_t_headroom_table,
+# p1_signed_miscalibration_overlay, ferplus_teacher_signed_grid, vote_examples_figure.
+# Onlarsız public depoda o tablolar öğretmen checkpoint'i olmadan yeniden üretilemez, yani
+# Level-1 vaadi sessizce delinirdi. Aynı kör nokta üçüncü kez: kural boyut/uzantı üzerinden
+# yazılıp içerik ölçülmeyince yanlış dosyayı eliyor.
+!diagnostics/teacher_ece_grid/*.pt
+!diagnostics/ferplus_jsd/*.pt
+models/mobilefacenet_model_best.pth.tar
+*.log
+*.csv.bak
+
+# Kalp atışı: bilinçli istisna. `repo_export`'a ihraç edilen her dosyanın git geçmişi olması
+# kuralının tek muafı, çünkü her ihraçta yeniden üretiliyor ve izlenirse her commit'e gürültü
+# diff'i düşer. Üreticisi (status_heartbeat.py) ve beyanı (status_queue.txt) izleniyor -- yani
+# dosyanın nasıl üretildiği git'te, anlık değeri değil. MANIFEST yine SHA'sını taşıyor.
+diagnostics/status_heartbeat.md
+
+# Session-local orchestration logs
+new_vich_teachers_console.log
+phase0_extended_ablation_console.log
+
+# G0 kuyruk log dosyasi -- buyuyen calisma zamani ciktisi, artefakt degil
+logs_g0_control_grid.txt

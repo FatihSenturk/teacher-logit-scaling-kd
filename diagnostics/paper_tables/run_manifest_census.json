@@ -1,0 +1,563 @@
+{
+  "population": "results/unified_students/<run>/<stamp>/manifest.json -- HEPSI; bir alt kume degil, bir suzgec degil",
+  "window": {
+    "definition": "sayilan manifestlerin kendi zaman damgalarinin ALT ve UST siniri; elle yazilmis bir tarih araligi DEGIL",
+    "first_run_stamp": "2026-06-17-13-17-49",
+    "last_run_stamp": "2026-07-24-22-22-33",
+    "label": "17 June--24 July 2026",
+    "n_undated_dirs": 0,
+    "undated_dirs": []
+  },
+  "n_manifests": 90,
+  "n_code_state_verified": 26,
+  "n_retroactive_unverified": 62,
+  "n_unfinished": 2,
+  "checksum_ok": true,
+  "cross_checks": {
+    "retroactive_flag_true": 90,
+    "unverified_and_retroactive": 62,
+    "unfinished_without_finished_utc": 2
+  },
+  "rows": [
+    {
+      "run_name": "RAFDB_7cls_lightle_vich_from_vae9182_224",
+      "run_stamp": "2026-06-17-13-17-49",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_7cls_lightle_vich_from_vae9182_256",
+      "run_stamp": "2026-06-17-23-22-50",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_ce9241_betaKD_b070_T6_256",
+      "run_stamp": "2026-06-18-12-22-50",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_ce9241_betaKD_b070_T6_256_amp_classw",
+      "run_stamp": "2026-06-18-12-41-20",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_256_amp_classw",
+      "run_stamp": "2026-06-18-16-41-52",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_amp_classw",
+      "run_stamp": "2026-06-18-20-47-38",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_ce9241_betaKD_b070_T6_224_amp_classw",
+      "run_stamp": "2026-06-19-05-14-00",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_ce9241_betaKD_b075_T6_224_t256_reg005_amp_classw",
+      "run_stamp": "2026-06-19-14-26-31",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_ce9241_betaKD_b070_T6_224_feat003_amp_classw",
+      "run_stamp": "2026-06-19-20-47-48",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_ce9241_betaKD_b070_T6_224_best_400e_swa200",
+      "run_stamp": "2026-06-20-00-22-09",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+      "run_stamp": "2026-06-20-08-38-09",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA",
+      "run_stamp": "2026-06-20-18-35-53",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA",
+      "run_stamp": "2026-06-20-22-24-08",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA_seed43",
+      "run_stamp": "2026-06-20-22-25-30",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9201_betaKD_b070_T6_224_200e_noSWA",
+      "run_stamp": "2026-06-22-20-50-03",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA_seed1",
+      "run_stamp": "2026-07-17-16-01-11",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1",
+      "run_stamp": "2026-07-17-18-01-41",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43",
+      "run_stamp": "2026-07-17-22-05-44",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_200e_noSWA",
+      "run_stamp": "2026-07-18-00-35-41",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200",
+      "run_stamp": "2026-07-18-01-45-58",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_primary_logit_std_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-18-03-53-27",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_200e_noSWA",
+      "run_stamp": "2026-07-18-04-13-43",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200",
+      "run_stamp": "2026-07-18-06-19-36",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_primary_adaptive_t_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-18-08-02-57",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_g2g_kl_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-18-10-33-06",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_primary_ctkd_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-18-12-08-02",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_logit_std_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-18-14-39-16",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_g2g_kl_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-18-16-18-13",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_adaptive_t_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-18-18-42-25",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_logit_std_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-18-20-26-49",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_ctkd_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-18-22-50-12",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_adaptive_t_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-19-00-33-08",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_primary_g2g_kl_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-19-02-59-54",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_ctkd_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-19-04-36-29",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-19-08-10-43",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-19-10-39-49",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-19-13-01-18",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_baseline_b070_T6_224_200e_noSWA",
+      "run_stamp": "2026-07-19-15-21-14",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_gate_b070_T6_224_200e_noSWA",
+      "run_stamp": "2026-07-19-16-32-23",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_g2g_kl_b070_T6_224_200e_noSWA",
+      "run_stamp": "2026-07-19-17-42-38",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-19-18-37-58",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_g2g_kl_b070_T6_224_200e_noSWA",
+      "run_stamp": "2026-07-19-18-44-14",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_logit_std_b070_T6_224_200e_noSWA",
+      "run_stamp": "2026-07-19-20-51-29",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_adaptive_t_b070_T6_224_200e_noSWA",
+      "run_stamp": "2026-07-19-22-50-15",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_ctkd_b070_T6_224_200e_noSWA",
+      "run_stamp": "2026-07-20-00-00-00",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_gate_target_logvar_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-20-01-22-31",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200",
+      "run_stamp": "2026-07-20-02-14-04",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_primary_gate_target_logvar_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-20-04-53-00",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_gate_oracle_error_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-20-08-19-25",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200_seed1",
+      "run_stamp": "2026-07-20-13-22-03",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200_seed43",
+      "run_stamp": "2026-07-20-13-22-48",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_g2g_kl_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-20-18-34-47",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_adaptive_t_b070_T6_224_400e_swa200_seed43",
+      "run_stamp": "2026-07-20-18-35-32",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_g2g_kl_b070_T6_224_400e_swa200_seed43",
+      "run_stamp": "2026-07-20-22-40-47",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed43",
+      "run_stamp": "2026-07-20-22-41-20",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_primary_g2g_kl_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-21-02-46-00",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_adaptive_t_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-21-02-47-28",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_primary_g2g_kl_b070_T6_224_400e_swa200_seed43",
+      "run_stamp": "2026-07-21-06-52-12",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-21-06-53-05",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_tempscale_T1341_halfA_baseline_b070_T6_224_400e_swa200",
+      "run_stamp": "2026-07-21-11-14-32",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_bridge_baseline_b070_T6_224_400e_swa200_seed42",
+      "run_stamp": "2026-07-21-22-56-23",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-21-22-57-33",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_g2g_kl_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-22-03-01-52",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43",
+      "run_stamp": "2026-07-22-03-03-17",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_adaptive_t_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-22-07-09-06",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_g2g_kl_b070_T6_224_400e_swa200_seed43",
+      "run_stamp": "2026-07-22-07-09-35",
+      "code_state_verified": false,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_baseline_b070_T6_224_500e_swa200_seed42",
+      "run_stamp": "2026-07-22-11-48-04",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_adaptive_t_b070_T6_224_500e_swa200_seed42",
+      "run_stamp": "2026-07-22-11-48-05",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_baseline_b070_T6_224_500e_swa200_seed1",
+      "run_stamp": "2026-07-22-16-58-52",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_adaptive_t_b070_T6_224_500e_swa200_seed1",
+      "run_stamp": "2026-07-22-17-00-46",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_baseline_b070_T6_224_500e_swa200_seed43",
+      "run_stamp": "2026-07-22-22-04-35",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_adaptive_t_b070_T6_224_500e_swa200_seed43",
+      "run_stamp": "2026-07-22-22-10-32",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+      "run_stamp": "2026-07-23-10-35-11",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-23-10-35-11",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed43",
+      "run_stamp": "2026-07-23-14-53-49",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+      "run_stamp": "2026-07-23-14-53-49",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+      "run_stamp": "2026-07-23-19-06-00",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed43",
+      "run_stamp": "2026-07-23-19-06-06",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-23-23-14-27",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed43",
+      "run_stamp": "2026-07-23-23-14-30",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-24-03-24-13",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed43",
+      "run_stamp": "2026-07-24-03-24-24",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-24-07-29-46",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed42",
+      "run_stamp": "2026-07-24-10-48-02",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-24-13-00-59",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed43",
+      "run_stamp": "2026-07-24-15-14-46",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+      "run_stamp": "2026-07-24-18-05-50",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-24-18-05-50",
+      "code_state_verified": true,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed42",
+      "run_stamp": "2026-07-24-22-22-33",
+      "code_state_verified": null,
+      "retroactive": true
+    },
+    {
+      "run_name": "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+      "run_stamp": "2026-07-24-22-22-33",
+      "code_state_verified": null,
+      "retroactive": true
+    }
+  ]
+}

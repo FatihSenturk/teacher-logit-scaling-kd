@@ -1,0 +1,32 @@
+{
+  "upload_type": "software",
+  "title": "teacher-logit-scaling-kd: code, run manifests and pre-declaration records for teacher-side logit scaling in knowledge distillation",
+  "creators": [
+    {
+      "name": "Şentürk, Muhammed Fatih",
+      "affiliation": "Department of Computer Engineering, Istanbul University-Cerrahpaşa",
+      "orcid": "0000-0002-3764-2264"
+    },
+    {
+      "name": "Gürkaş Aydın, Gülsüm Zeynep",
+      "affiliation": "Department of Computer Engineering, Istanbul University-Cerrahpaşa",
+      "orcid": "0000-0002-4125-0589"
+    }
+  ],
+  "description": "<p>Archived snapshot of the analysis code, run manifests, frozen selection audit and dated pre-declaration records behind the study <em>Teacher-Side Logit Scaling Governs Student Calibration in Knowledge Distillation: Dose-Response Evidence from Facial Expression Recognition</em> (under review at Neurocomputing).</p><p>The repository is built so that a reader can go from a number printed in the paper to the artifact field that produced it: <code>diagnostics/paper_tables/number_ledger.md</code> binds every printed number to an artifact and a field path, and <code>diagnostics/check_numbers.py</code> re-resolves all of them and exits non-zero on any mismatch. Regenerating the tables needs neither a GPU nor the datasets: <code>pip install -r requirements-level1.txt</code> followed by <code>python diagnostics/paper_tables.py</code> and <code>python diagnostics/table_diff_gate.py</code>, which compares the fresh output against the accepted baseline cell by cell.</p><p>What is <strong>not</strong> here, and why, is stated in the repository's README (section <em>Scope</em>) and in <code>PROVENANCE.md</code>: no dataset is redistributed, no checkpoints, no run directories, and no manuscript source. <code>PROVENANCE.md</code> also carries dated addenda recording where an earlier statement about this archive turned out not to hold.</p><p>Pre-declaration records are in Turkish and are included verbatim rather than rewritten; the generated tables and the claim list are in English.</p><p><strong>This archive supersedes an earlier one.</strong> The same work was first published as <code>FatihSenturk/calibration-law-fer</code> and archived on Zenodo in three versions between 15 and 23 August 2026; all three of those records were withdrawn by the depositor on 25 August 2026, and that repository was made private on 26 August 2026. This is the same work re-published as one clean archive &mdash; the same producers, the same measured values and the same dated pre-declaration records. <code>PROVENANCE.md</code> states what is the same and what is not.</p>",
+  "license": "mit",
+  "keywords": [
+    "knowledge distillation",
+    "model calibration",
+    "expected calibration error",
+    "facial expression recognition",
+    "RAF-DB",
+    "FERPlus",
+    "temperature scaling",
+    "dose-response",
+    "pre-registration",
+    "reproducibility"
+  ],
+  "version": "v1.0.0-submission",
+  "language": "eng"
+}

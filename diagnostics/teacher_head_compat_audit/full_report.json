@@ -1,0 +1,134 @@
+{
+  "task1_raw_state_dict_audit": {
+    "Stage1": {
+      "ckpt_path": "results/teacher_logs/RAFDB/POSTERv2/2026-07-17-04-41-04/best.pt",
+      "declared_head_flags": {
+        "vae_head": false,
+        "vich_head": true
+      },
+      "head_related_keys": {},
+      "has_head_vae": false,
+      "has_head_vich": false,
+      "has_plain_head": false
+    },
+    "Primary": {
+      "ckpt_path": "checkpoints/teacher_rafdb_vich_recipe_best.pt",
+      "declared_head_flags": {
+        "vae_head": false,
+        "vich_head": true
+      },
+      "head_related_keys": {},
+      "has_head_vae": false,
+      "has_head_vich": false,
+      "has_plain_head": false
+    },
+    "VAE9182": {
+      "ckpt_path": "results/teacher_logs/RAFDB/POSTERv2/2026-06-16-23-33-23/best.pt",
+      "declared_head_flags": {
+        "vae_head": true,
+        "vich_head": false
+      },
+      "head_related_keys": {},
+      "has_head_vae": false,
+      "has_head_vich": false,
+      "has_plain_head": false
+    }
+  },
+  "task2_loading_code_path": {
+    "loader_function": "train_rafdb_kd.py:build_teacher -> kd_common.load_checkpoint_checked",
+    "branch_type": "Single model class (trails/posterv2/vit_vae_model.py::VisionTransformer / pyramid_trans_expr2) with mutually-exclusive constructor flags vae=/vich=. forward() does `if self.vich: head_vich elif self.vae: head_vae else: head` (vit_vae_model.py:787-792) -- vae and vich are not independent branches, they select one of three heads on the SAME class.",
+    "head_vich_construction": "self.head_vich = VICHClassifier(...) if self.vich else None (vit_vae_model.py:654) -- CONDITIONAL. A checkpoint trained with vich=False has NO head_vich.* keys in its state_dict at all.",
+    "head_vae_construction": "self.head_vae = VaeClassifier(...) (vit_vae_model.py:653) -- UNCONDITIONAL, always present regardless of the vae/vich flags. If trained with vae=False, these params exist in the checkpoint but are dead (never touched by forward(), so never receive gradient; they sit at their random _init_vit_weights init).",
+    "strict_flag_usage": "grep across the whole repo: every single teacher-load call site (train_rafdb_kd.py:106, train_affectnetplus_kd.py:61, tools/evaluate_teacher.py:32, tools/analyze_uncertainty_human.py:198, tools/cache_teacher_outputs.py:129) passes strict=True. No strict=False usage exists anywhere for teacher checkpoints. kd_common.load_checkpoint_checked's own strict=False safety-net (raising on missing/unexpected keys) is therefore dead code on every call site actually used.",
+    "consequence": "Given head_vich is conditionally absent and head_vae is unconditionally present but architecturally distinct (different class, different init, no clamp), any attempt to load a VAE-trained checkpoint with vich=True (or a VICH-trained checkpoint with vae=True after the correct vae=False) would raise `RuntimeError: Error(s) in loading state_dict ... Missing key(s)/Unexpected key(s)` from PyTorch's own strict=True check, BEFORE any forward pass. There is no code path by which a head-type mismatch loads silently."
+  },
+  "task3_consumption_trace": {
+    "extraction": "train_rafdb_kd.py:452-454: teacher_output = teacher(teacher_images); extract_logits(teacher_output) for logits; extract_mu_logvar(teacher_output) for (teacher_mu, teacher_logvar). kd_common.extract_mu_logvar treats VaeClassifier's (out, mu, logvar) and VICHClassifier's (logits, mu, logvar) identically -- both are 3-tuples, indices [1], [2] regardless of which head produced them.",
+    "gate_consumption": "kd_uncertainty.py: mean_logvar/target_logvar/top2_logvar all operate on teacher_logvar with shape [B, C] (C=num_classes), reducing over dim=1 to a per-sample scalar [B]. No assumption beyond 'last dim is class-indexed'.",
+    "g2g_consumption": "kd_g2g.py: g2g_kl/g2g_w2 treat teacher_mu/teacher_logvar and student_mu/student_logvar as per-class independent diagonal Gaussians, summed over dim=1. validate_g2g_shapes() explicitly asserts teacher_mu.shape == student_mu.shape and raises RuntimeError naming the offending side otherwise -- checked on every forward(), not just at load time.",
+    "adaptive_t_consumption": "kd_baselines.entropy_adaptive_temperature operates on teacher_logits (not mu/logvar) directly -- entropy of softmax(logits), independent of head type; does not touch mu/logvar at all.",
+    "shape_facts": {
+      "teacher_mu_logvar_shape": [
+        256,
+        7
+      ],
+      "C_num_classes": 7,
+      "D_latent_dim": 7,
+      "C_equals_D": true
+    },
+    "coincidence_assessment": "C==D is NOT a coincidence: vit_vae_model.py:653-654 constructs BOTH head_vae=VaeClassifier(in_features=embed_dim, out_features=num_classes) and head_vich=VICHClassifier(in_features=embed_dim, out_features=num_classes) with the identical out_features=num_classes argument. Neither head has a separate reconstruction/embedding latent dimension distinct from class count -- both are, by this codebase's deliberate design, 'class-level variational classifiers' (VICHClassifier's own docstring, line 337-343). So a shape check alone cannot and is not meant to distinguish them; the actual distinguishing facts are architectural (clamp vs. no clamp, different init, VaeClassifier's dead unused batchnorm/layernorm/dropout submodules) and are what Task 1's key audit surfaces."
+  },
+  "task4_fixed_batch_stats": {
+    "Stage1": {
+      "mu_shape": [
+        256,
+        7
+      ],
+      "logvar_shape": [
+        256,
+        7
+      ],
+      "logvar_min": -4.950503349304199,
+      "logvar_mean": -1.8890478610992432,
+      "logvar_max": 0.4343699812889099,
+      "logvar_std": 0.9324890971183777,
+      "degenerate_flags": [],
+      "histogram_png": "diagnostics/teacher_head_compat_audit/stage1_logvar_hist.png"
+    },
+    "Primary": {
+      "mu_shape": [
+        256,
+        7
+      ],
+      "logvar_shape": [
+        256,
+        7
+      ],
+      "logvar_min": -4.070592880249023,
+      "logvar_mean": -1.1033531427383423,
+      "logvar_max": 0.5293941497802734,
+      "logvar_std": 0.8044219017028809,
+      "degenerate_flags": [],
+      "histogram_png": "diagnostics/teacher_head_compat_audit/primary_logvar_hist.png"
+    },
+    "VAE9182": {
+      "mu_shape": [
+        256,
+        7
+      ],
+      "logvar_shape": [
+        256,
+        7
+      ],
+      "logvar_min": -4.381763935089111,
+      "logvar_mean": -1.8557251691818237,
+      "logvar_max": -0.3023715019226074,
+      "logvar_std": 0.8759072422981262,
+      "degenerate_flags": [],
+      "histogram_png": "diagnostics/teacher_head_compat_audit/vae9182_logvar_hist.png"
+    }
+  },
+  "task5_full_val_metrics": [
+    {
+      "teacher": "Stage1",
+      "own_acc": 92.24250030517578,
+      "auroc_logvar_vs_error": 0.4261929506785046,
+      "ece_15bin": 0.03779725888756143,
+      "n_samples": 3068
+    },
+    {
+      "teacher": "Primary",
+      "own_acc": 92.01434326171875,
+      "auroc_logvar_vs_error": 0.4415811808251462,
+      "ece_15bin": 0.039575961298240044,
+      "n_samples": 3068
+    },
+    {
+      "teacher": "VAE9182",
+      "own_acc": 91.81877136230469,
+      "auroc_logvar_vs_error": 0.16895711438944258,
+      "ece_15bin": 0.013553831750597479,
+      "n_samples": 3068
+    }
+  ]
+}

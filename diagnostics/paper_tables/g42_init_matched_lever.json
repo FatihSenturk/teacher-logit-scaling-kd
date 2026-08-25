@@ -1,0 +1,78 @@
+{
+  "block": "G4.2",
+  "preregistered_in": "A13",
+  "commit": "b71e6ad",
+  "tag": "a12-a13-predeclared",
+  "summary": "@swa: 76× -> 69× (AŞAĞI, 7.0 birim)",
+  "shared_support": [
+    1.0,
+    1.7,
+    2.2
+  ],
+  "primary_ckpt": "swa",
+  "scratch_arm": "w100ns",
+  "rows": [
+    {
+      "ckpt": "swa",
+      "status": "tam",
+      "capacity_span": 0.0023508643920086905,
+      "teacher_span_pretrained": 0.17798139929596574,
+      "ratio_published": 75.70891792013998,
+      "teacher_span_scratch": 0.16149690388574361,
+      "ratio_init_matched": 68.69681825745506,
+      "shift": -7.012099662684918,
+      "cells": {
+        "1.0": 0.03744166230022752,
+        "1.7": 0.11829053233177286,
+        "2.2": 0.19893856618597114
+      },
+      "n_per_cell": {
+        "1.0": 3,
+        "1.7": 2,
+        "2.2": 2
+      }
+    },
+    {
+      "ckpt": "best",
+      "status": "tam",
+      "capacity_span": 0.0025448729087805474,
+      "teacher_span_pretrained": 0.2009923288882789,
+      "ratio_published": 78.97931884723879,
+      "teacher_span_scratch": 0.18995956236861652,
+      "ratio_init_matched": 74.64402709982141,
+      "shift": -4.335291747417372,
+      "cells": {
+        "1.0": 0.03286897663718356,
+        "1.7": 0.1402099341387233,
+        "2.2": 0.22282853900580007
+      },
+      "n_per_cell": {
+        "1.0": 3,
+        "1.7": 2,
+        "2.2": 2
+      }
+    },
+    {
+      "ckpt": "last",
+      "status": "tam",
+      "capacity_span": 0.0074337361374791425,
+      "teacher_span_pretrained": 0.19747462097890528,
+      "ratio_published": 26.564652999086807,
+      "teacher_span_scratch": 0.19585618119960452,
+      "ratio_init_matched": 26.34693747228179,
+      "shift": -0.2177155268050157,
+      "cells": {
+        "1.0": 0.03186932157422345,
+        "1.7": 0.14855177673077724,
+        "2.2": 0.22772550277382797
+      },
+      "n_per_cell": {
+        "1.0": 3,
+        "1.7": 2,
+        "2.2": 2
+      }
+    }
+  ],
+  "confounded_ratio_retained": true,
+  "audit_source": "selection_audit_unfrozen.csv (frozen file untouched)"
+}

@@ -1,0 +1,2 @@
+Model,Accuracy (%),Precision (%),Recall (%),Macro-F1 (%),Weighted-F1 (%),Params (M),FLOPs (G),Size (MB),Latency (ms),FPS,Val Samples,Epoch,Checkpoint
+POSTER-Var Teacher,92.01434159061279,88.89564479349374,85.86122637733881,87.212574700084,91.95719511569442,58.345038,8.482723136,555.0577440261841,89.15079800004605,11.216949510642445,3068,73,checkpoints\teacher_rafdb_vich_recipe_best.pt

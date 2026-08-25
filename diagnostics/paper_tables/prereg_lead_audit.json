@@ -1,0 +1,166 @@
+{
+ "source": "diagnostics/PREREGISTRATIONS.md (tarihli beyan kaydı; yalnız okunur)",
+ "note": "lead_seconds/lead_hours HAM değerdir; makale tarafı defterde int_floor kipiyle bağlanır (Lead bir üst-sınır-öncesi iddiasıdır, aşağı yuvarlanır). runs_csv_match yalnız RAF-DB koşu defterindeki bloklar için mümkündür; A3/A4 (FERPlus) için 'yok' doğru cevaptır, tahmin yazılmaz.",
+ "lead_bearing_rows": {
+  "A1": "Control teacher, flat response",
+  "A2": "Miscalibration pilot kill-switch",
+  "A3": "Second-dataset replication",
+  "A4": "Human-alignment arm",
+  "A7": "Logit standardisation, three seeds",
+  "A8": "Oracle-gate extension"
+ },
+ "items": {
+  "A1": {
+   "title": "B-007 — düz-kontrol tahmini (VAE9182 doz-yanıtı)",
+   "frozen": "2026-07-24 18:05:30",
+   "first_run": "2026-07-24-18-05-50",
+   "lead_seconds": 20.0,
+   "lead_hours": 0.005555555555555556,
+   "recorded_annotation": "20 saniye",
+   "annotation_match": true,
+   "runs_csv_first": "2026-07-24-18-05-50",
+   "runs_csv_match": true
+  },
+  "A2": {
+   "title": "B-010 — miskalibrasyon enjeksiyonu kill-switch'i",
+   "frozen": "2026-07-25 14:35:43",
+   "first_run": "2026-07-25-23-19-09",
+   "lead_seconds": 31406.0,
+   "lead_hours": 8.723888888888888,
+   "recorded_annotation": "8 sa 43 dk",
+   "annotation_match": true,
+   "runs_csv_first": "2026-07-25-23-19-09",
+   "runs_csv_match": true
+  },
+  "A3": {
+   "title": "B-015 — FERPlus doz-yanıtı, üç tahmin birden",
+   "frozen": "2026-07-26 13:27:26",
+   "first_run": "2026-07-26-13-27-45",
+   "lead_seconds": 19.0,
+   "lead_hours": 0.005277777777777778,
+   "recorded_annotation": "19 saniye",
+   "annotation_match": true,
+   "runs_csv_first": null,
+   "runs_csv_match": null
+  },
+  "A4": {
+   "title": "B-017 — insan-oyu hizalı sıcaklık (T=0.74), iki tahmin + zorunlu değerlendirme kuralı",
+   "frozen": "2026-07-27 12:56:29",
+   "first_run": "2026-07-27-12-56-47",
+   "lead_seconds": 18.0,
+   "lead_hours": 0.005,
+   "recorded_annotation": "18 saniye",
+   "annotation_match": true,
+   "runs_csv_first": null,
+   "runs_csv_match": null
+  },
+  "A5": {
+   "title": "B-016 — köprü öğretmeni, iki bantlı karar kuralı",
+   "frozen": "2026-07-20 13:41:12",
+   "first_run": null,
+   "lead_seconds": null,
+   "lead_hours": null,
+   "recorded_annotation": null,
+   "annotation_match": null,
+   "runs_csv_first": null,
+   "runs_csv_match": null
+  },
+  "A6": {
+   "title": "B-001/B-005 — Stage1 doz-yanıtı",
+   "frozen": "2026-07-23 10:34",
+   "first_run": null,
+   "lead_seconds": null,
+   "lead_hours": null,
+   "recorded_annotation": null,
+   "annotation_match": null,
+   "runs_csv_first": "2026-07-21-11-14-32",
+   "runs_csv_match": null
+  },
+  "A7": {
+   "title": "P1 — `logit_std` n=1 → n=3 (2026-07-29) — **CONFIRMED 3/3**",
+   "frozen": "2026-07-29 01:23:40",
+   "first_run": "2026-07-29-01-24-08",
+   "lead_seconds": 28.0,
+   "lead_hours": 0.0077777777777777776,
+   "recorded_annotation": "28 saniye",
+   "annotation_match": true,
+   "runs_csv_first": "2026-07-29-01-24-08",
+   "runs_csv_match": true
+  },
+  "A8": {
+   "title": "P2 — gate:oracle_error n=1 → n=3 + eksik kontrol (2026-07-29) — **KISMEN YANLIŞLANDI (1/3)**",
+   "frozen": "2026-07-29 01:26:59",
+   "first_run": "2026-07-29-14-24-13",
+   "lead_seconds": 46634.0,
+   "lead_hours": 12.953888888888889,
+   "recorded_annotation": null,
+   "annotation_match": null,
+   "runs_csv_first": "2026-07-29-14-24-13",
+   "runs_csv_match": true
+  },
+  "A9": {
+   "title": "P6 — τ×T faktöriyeli + α modülasyonu: yasa hangi değişkenin yasası? (1 Ağu 2026)",
+   "frozen": "2026-08-01 14:21:57",
+   "first_run": "2026-08-01-14-23-45",
+   "lead_seconds": 108.0,
+   "lead_hours": 0.03,
+   "recorded_annotation": null,
+   "annotation_match": null,
+   "runs_csv_first": null,
+   "runs_csv_match": null
+  },
+  "A10": {
+   "title": "R3 — dış inceleme robustluk turu: çok-metrik envanter (4 Ağu 2026)",
+   "frozen": null,
+   "first_run": null,
+   "lead_seconds": null,
+   "lead_hours": null,
+   "recorded_annotation": null,
+   "annotation_match": null,
+   "runs_csv_first": null,
+   "runs_csv_match": null
+  },
+  "A11": {
+   "title": "R3-W1 — çift-eksen alt yazısının \"aynı anda sağlanamaz\" iddiası (6 Ağu 2026)",
+   "frozen": "2026-08-06 00:38:04",
+   "first_run": null,
+   "lead_seconds": null,
+   "lead_hours": null,
+   "recorded_annotation": null,
+   "annotation_match": null,
+   "runs_csv_first": null,
+   "runs_csv_match": null
+  },
+  "A12": {
+   "title": "gerçek-sinyal gate hücreleri n=1 → n=3 (6 Ağu 2026)",
+   "frozen": "2026-08-06 12:04:41",
+   "first_run": null,
+   "lead_seconds": null,
+   "lead_hours": null,
+   "recorded_annotation": null,
+   "annotation_match": null,
+   "runs_csv_first": "2026-08-07-10-27-30",
+   "runs_csv_match": null
+  },
+  "A13": {
+   "title": "2.248 M scratch doz-yanıtı — 76× kaldıracın başlatma uyuşmazlığı (6 Ağu 2026)",
+   "frozen": "2026-08-06 12:04:41",
+   "first_run": null,
+   "lead_seconds": null,
+   "lead_hours": null,
+   "recorded_annotation": null,
+   "annotation_match": null,
+   "runs_csv_first": "2026-08-08-09-52-11",
+   "runs_csv_match": null
+  }
+ },
+ "summary": {
+  "min_lead_seconds": 18.0,
+  "max_lead_seconds": 46634.0,
+  "min_lead_block": "A4",
+  "max_lead_block": "A8",
+  "n_lead_bearing": 6,
+  "n_annotation_checked": 5,
+  "n_runs_csv_checked": 4
+ }
+}

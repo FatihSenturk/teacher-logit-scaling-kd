@@ -1,0 +1,55 @@
+{
+  "teacher_acc": 91.373291015625,
+  "n_val": 3153,
+  "human_mean_entropy": 0.44011032581329346,
+  "grid": [
+    {
+      "T": 0.26,
+      "role": "over-sharpened (sign flipped to OVER-confident)",
+      "teacher_ece": 0.03933340457557233,
+      "signed_gap": 0.039333343505859375,
+      "mean_confidence": 0.9530662894248962,
+      "accuracy_frac": 0.9137329459190369,
+      "nll": 0.3247734606266022,
+      "mean_jsd_vs_human": 0.06591325253248215,
+      "mean_entropy": 0.11614576727151871,
+      "log_T_over_Tstar_nll": -0.6664477479603358
+    },
+    {
+      "T": 0.5063,
+      "role": "T*_NLL / T*_ECE region -- calibrated against HARD labels",
+      "teacher_ece": 0.01562829764162288,
+      "signed_gap": -0.01169675588607788,
+      "mean_confidence": 0.902036190032959,
+      "accuracy_frac": 0.9137329459190369,
+      "nll": 0.25626301765441895,
+      "mean_jsd_vs_human": 0.04898364096879959,
+      "mean_entropy": 0.25620725750923157,
+      "log_T_over_Tstar_nll": 0.0
+    },
+    {
+      "T": 0.74,
+      "role": "T*_JSD -- aligned with the 10-rater HUMAN distribution",
+      "teacher_ece": 0.06646802423116029,
+      "signed_gap": -0.06490564346313477,
+      "mean_confidence": 0.8488273024559021,
+      "accuracy_frac": 0.9137329459190369,
+      "nll": 0.280232697725296,
+      "mean_jsd_vs_human": 0.044019557535648346,
+      "mean_entropy": 0.41188564896583557,
+      "log_T_over_Tstar_nll": 0.37952080722235204
+    },
+    {
+      "T": 1.0,
+      "role": "native (under-confident, soft-vote-trained)",
+      "teacher_ece": 0.12823281088141536,
+      "signed_gap": -0.12768501043319702,
+      "mean_confidence": 0.7860479354858398,
+      "accuracy_frac": 0.9137329459190369,
+      "nll": 0.33988845348358154,
+      "mean_jsd_vs_human": 0.0491853766143322,
+      "mean_entropy": 0.6117513179779053,
+      "log_T_over_Tstar_nll": 0.6806259000062735
+    }
+  ]
+}

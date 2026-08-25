@@ -1,0 +1,72 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "per_seed": {
+    "vich": {
+      "42": {
+        "acc": 90.05867004394531,
+        "ece": 0.028509542938550108,
+        "run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200/2026-06-20-08-38-09"
+      },
+      "1": {
+        "acc": 90.35202026367188,
+        "ece": 0.02815573873311631,
+        "run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1/2026-07-17-18-01-41"
+      },
+      "43": {
+        "acc": 90.4172134399414,
+        "ece": 0.02509836382396529,
+        "run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43/2026-07-17-22-05-44"
+      }
+    },
+    "plus_linear": {
+      "42": {
+        "acc": 90.15645599365234,
+        "ece": 0.034395334977447754,
+        "run_dir": "results/unified_students/RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed42/2026-07-24-10-48-02"
+      },
+      "1": {
+        "acc": 90.31942749023438,
+        "ece": 0.03606185431663807,
+        "run_dir": "results/unified_students/RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed1/2026-07-24-13-00-59"
+      },
+      "43": {
+        "acc": 90.28683471679688,
+        "ece": 0.029968903265223203,
+        "run_dir": "results/unified_students/RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed43/2026-07-24-15-14-46"
+      }
+    }
+  },
+  "summary": {
+    "vich": {
+      "acc_mean": 90.27596791585286,
+      "acc_sd": 0.19098772580899204,
+      "ece_mean": 0.027254548498543904,
+      "ece_sd": 0.0018756715109825115,
+      "n": 3
+    },
+    "plus_linear": {
+      "acc_mean": 90.25423940022786,
+      "acc_sd": 0.08623669851763957,
+      "ece_mean": 0.03347536418643634,
+      "ece_sd": 0.0031489320127576588,
+      "n": 3
+    }
+  },
+  "paired_delta_linear_minus_vich": {
+    "d_acc_mean": -0.021728515625,
+    "d_acc_sd": 0.1144696621718064,
+    "d_acc_all": [
+      0.09778594970703125,
+      -0.0325927734375,
+      -0.13037872314453125
+    ],
+    "d_ece_mean": 0.0062208156878924385,
+    "d_ece_sd": 0.0015452706115466315,
+    "d_ece_all": [
+      0.005885792038897646,
+      0.007906115583521757,
+      0.004870539441257912
+    ],
+    "ece_relative_reduction_pct": 18.58326515358124
+  }
+}

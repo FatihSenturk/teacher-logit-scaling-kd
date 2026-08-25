@@ -1,0 +1,49 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "checkpoint": "swa",
+  "width_curve": [
+    {
+      "width": "0.50",
+      "params_m": 0.712089,
+      "acc_mean": 86.14732615152995,
+      "acc_sd": 0.06518936160946984,
+      "ece_mean": 0.03645689697245679,
+      "ece_sd": 0.0057123664918960985,
+      "n": 3
+    },
+    {
+      "width": "0.75",
+      "params_m": 1.379843,
+      "acc_mean": 87.3098653157552,
+      "acc_sd": 0.08202738991711436,
+      "ece_mean": 0.03880776136446548,
+      "ece_sd": 0.004214154960651775,
+      "n": 3
+    },
+    {
+      "width": "1.00",
+      "params_m": 2.248291,
+      "acc_mean": 88.09213256835938,
+      "acc_sd": 0.14697656931214573,
+      "ece_mean": 0.03744166230022752,
+      "ece_sd": 0.0030384886023834203,
+      "n": 3
+    }
+  ],
+  "pretrained_same_width": {
+    "params_m": 2.248291,
+    "acc_mean": 89.9500223795573,
+    "acc_sd": 0.3663557063958696,
+    "ece_mean": 0.032957236164746107,
+    "ece_sd": 0.001996999098785806,
+    "n": 3
+  },
+  "contrasts": {
+    "width_3x_acc_pp": 1.9448064168294223,
+    "pretraining_acc_pp": 1.8578898111979214,
+    "capacity_ece_span": 0.0023508643920086905,
+    "teacher_temperature_ece_span": 0.17798139929596574,
+    "axis_ratio": 75.70891792013998
+  },
+  "confound_note": "all width points are student_pretrained=False; the pre-trained student is the same width, plotted separately, and is NOT the curve's endpoint"
+}

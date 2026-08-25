@@ -1,0 +1,270 @@
+{
+  "figure": "vote_examples.pdf",
+  "n_val": 3153,
+  "val_folds": [
+    2
+  ],
+  "selection_rule": "sample nearest each percentile of human vote entropy; ties broken by lowest loader index",
+  "T_jsd": 0.74,
+  "classes": [
+    "neutral",
+    "happiness",
+    "surprise",
+    "sadness",
+    "anger",
+    "disgust",
+    "fear",
+    "contempt"
+  ],
+  "shared_y_limit": 1.04,
+  "human_entropy_percentiles": {
+    "0": 0.0,
+    "10": 0.0,
+    "25": 0.0,
+    "40": 0.32508297338944825,
+    "50": 0.3488320958410319,
+    "70": 0.6730116670072565,
+    "90": 0.939736052428265,
+    "95": 1.0888999753412236,
+    "100": 1.6674619334232945
+  },
+  "columns": [
+    {
+      "percentile": 10,
+      "target_entropy": 0.0,
+      "index": 4,
+      "entropy": 0.0,
+      "n_tied_candidates": 1004,
+      "image_path": "FER2013Test/fer0032227.png",
+      "image_shape": [
+        48,
+        48
+      ],
+      "vote_counts": [
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vote_sum": 10,
+      "human_p": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "teacher_p_T1": [
+        0.0037,
+        0.9898,
+        0.0004,
+        0.0012,
+        0.0012,
+        0.0014,
+        0.0012,
+        0.0011
+      ],
+      "teacher_p_Tjsd": [
+        0.0005,
+        0.9989,
+        0.0,
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "human_argmax": "happiness",
+      "teacher_argmax": "happiness",
+      "jsd_T1": 0.0036,
+      "jsd_Tjsd": 0.0004,
+      "jsd_delta": -0.0032
+    },
+    {
+      "percentile": 40,
+      "target_entropy": 0.32508297338944825,
+      "index": 2,
+      "entropy": 0.32508297338944825,
+      "n_tied_candidates": 390,
+      "image_path": "FER2013Test/fer0032225.png",
+      "image_shape": [
+        48,
+        48
+      ],
+      "vote_counts": [
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1,
+        0
+      ],
+      "vote_sum": 10,
+      "human_p": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.9,
+        0.0,
+        0.1,
+        0.0
+      ],
+      "teacher_p_T1": [
+        0.0066,
+        0.0132,
+        0.0086,
+        0.0024,
+        0.9618,
+        0.0012,
+        0.0054,
+        0.0008
+      ],
+      "teacher_p_Tjsd": [
+        0.0012,
+        0.003,
+        0.0017,
+        0.0003,
+        0.9927,
+        0.0001,
+        0.0009,
+        0.0001
+      ],
+      "human_argmax": "anger",
+      "teacher_argmax": "anger",
+      "jsd_T1": 0.0377,
+      "jsd_Tjsd": 0.0357,
+      "jsd_delta": -0.002
+    },
+    {
+      "percentile": 70,
+      "target_entropy": 0.6730116670072565,
+      "index": 3,
+      "entropy": 0.6730116670072565,
+      "n_tied_candidates": 75,
+      "image_path": "FER2013Test/fer0032226.png",
+      "image_shape": [
+        48,
+        48
+      ],
+      "vote_counts": [
+        6,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vote_sum": 10,
+      "human_p": [
+        0.6,
+        0.0,
+        0.0,
+        0.4,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "teacher_p_T1": [
+        0.8232,
+        0.0069,
+        0.0016,
+        0.1619,
+        0.0008,
+        0.0018,
+        0.0008,
+        0.0031
+      ],
+      "teacher_p_Tjsd": [
+        0.8978,
+        0.0014,
+        0.0002,
+        0.0997,
+        0.0001,
+        0.0002,
+        0.0001,
+        0.0005
+      ],
+      "human_argmax": "neutral",
+      "teacher_argmax": "neutral",
+      "jsd_T1": 0.04,
+      "jsd_Tjsd": 0.0641,
+      "jsd_delta": 0.0241
+    },
+    {
+      "percentile": 95,
+      "target_entropy": 1.0888999753412236,
+      "index": 61,
+      "entropy": 1.0888999753412236,
+      "n_tied_candidates": 27,
+      "image_path": "FER2013Test/fer0032291.png",
+      "image_shape": [
+        48,
+        48
+      ],
+      "vote_counts": [
+        1,
+        0,
+        0,
+        0,
+        6,
+        2,
+        0,
+        1
+      ],
+      "vote_sum": 10,
+      "human_p": [
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.6,
+        0.2,
+        0.0,
+        0.1
+      ],
+      "teacher_p_T1": [
+        0.121,
+        0.0878,
+        0.0063,
+        0.0041,
+        0.485,
+        0.2767,
+        0.0121,
+        0.0069
+      ],
+      "teacher_p_Tjsd": [
+        0.0883,
+        0.0572,
+        0.0016,
+        0.0009,
+        0.5763,
+        0.2699,
+        0.0039,
+        0.0019
+      ],
+      "human_argmax": "anger",
+      "teacher_argmax": "anger",
+      "jsd_T1": 0.0691,
+      "jsd_Tjsd": 0.0557,
+      "jsd_delta": -0.0134
+    }
+  ],
+  "jsd_mean_all_val": {
+    "T1": 0.0492,
+    "Tjsd": 0.044,
+    "improved_fraction": 0.6924
+  }
+}

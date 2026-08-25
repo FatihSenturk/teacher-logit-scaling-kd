@@ -1,0 +1,27 @@
+{
+  "source": "diagnostics/selection_audit/selection_audit.csv",
+  "inclusion_set": "frozen N=131",
+  "contrast": "best - last",
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "d_acc_pp": {
+    "n": 131,
+    "mean": 0.7658466018793237,
+    "sd": 0.43107852109679157,
+    "median": 0.7822647094726562,
+    "min": -0.8148574829101562,
+    "max": 2.4445877075195312,
+    "n_positive": 129,
+    "mean_over_sd": 1.7765826047903823
+  },
+  "d_ece": {
+    "n": 131,
+    "mean": -0.002878700403167627,
+    "sd": 0.009218824488955835,
+    "median": -0.002783275305292293,
+    "min": -0.030545366624421214,
+    "max": 0.030320461368312096,
+    "n_positive": 46,
+    "mean_over_sd": 0.3122632833086598
+  },
+  "note": "best-swa is defined on 118 of the 131 runs (13 have no SWA checkpoint) and is quoted in T8, not drawn here: a second panel pair on a different n would invite reading the two as the same sample."
+}

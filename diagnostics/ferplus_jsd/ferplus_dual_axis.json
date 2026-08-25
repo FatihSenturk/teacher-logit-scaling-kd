@@ -1,0 +1,44 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "checkpoint": "swa",
+  "n_per_arm": 3,
+  "arms": [
+    {
+      "T": 0.26,
+      "role": "over-sharpened",
+      "student_ece": 0.058740805600987316,
+      "student_ece_sd": 0.003831888418531751,
+      "student_jsd": 0.07368071377277374,
+      "student_jsd_sd": 0.0007331671660701203
+    },
+    {
+      "T": 0.5063,
+      "role": "T*_ECE / T*_NLL",
+      "student_ece": 0.018498602500361613,
+      "student_ece_sd": 0.0015881954147709731,
+      "student_jsd": 0.058690217634042106,
+      "student_jsd_sd": 0.0004615663733709948
+    },
+    {
+      "T": 0.74,
+      "role": "T*_JSD",
+      "student_ece": 0.034363226014547714,
+      "student_ece_sd": 0.0012025338139968638,
+      "student_jsd": 0.05359788859883944,
+      "student_jsd_sd": 0.0003727677382411302
+    },
+    {
+      "T": 1.0,
+      "role": "native",
+      "student_ece": 0.07830038099601992,
+      "student_ece_sd": 0.00460023162590826,
+      "student_jsd": 0.05510709931453069,
+      "student_jsd_sd": 0.00045023334519684265
+    }
+  ],
+  "argmin_ece_T": 0.5063,
+  "argmin_jsd_T": 0.74,
+  "tradeoff_ece": 0.0158646235141861,
+  "tradeoff_jsd": -0.005092329035202667,
+  "human_mean_entropy": 0.44011032581329346
+}

@@ -1,0 +1,88 @@
+{
+  "note": "olculdu, beyan edilmedi; adlandirma karari makale tarafinda verilir",
+  "datasets": {
+    "RAF-DB": {
+      "counts_source": "data/rafdb_aligned/metadata_rafdb_poster_var.csv",
+      "rows_total": 15339,
+      "by_fold": {
+        "2": 12271,
+        "3": 3068
+      },
+      "train_folds": [
+        2
+      ],
+      "val_folds": [
+        3
+      ],
+      "n_train": 12271,
+      "n_reporting": 3068,
+      "reporting_fold_prefixes": {
+        "test": 3068
+      },
+      "reporting_partition": "test",
+      "reporting_fold_is_single_partition": true,
+      "reporting_per_class": {
+        "Surprise": 329,
+        "Fear": 74,
+        "Disgust": 160,
+        "Happiness": 1185,
+        "Sadness": 478,
+        "Anger": 162,
+        "Neutral": 680
+      },
+      "published_test_distribution": {
+        "Surprise": 329,
+        "Fear": 74,
+        "Disgust": 160,
+        "Happiness": 1185,
+        "Sadness": 478,
+        "Anger": 162,
+        "Neutral": 680
+      },
+      "per_class_matches_published": true,
+      "n_partitions_in_metadata": 2,
+      "selection_set_is_reporting_set": true,
+      "separate_holdout_exists": false,
+      "selection_evidence": "train_rafdb_kd.py: `best_student.pth` is saved when `val_acc > best_acc`, and `val_acc` comes from the val loader built on --val-folds"
+    },
+    "FERPlus": {
+      "counts_source": "configs/FERPlus_majority_metadata.csv",
+      "rows_total": 31412,
+      "by_fold": {
+        "0": 25060,
+        "1": 3199,
+        "2": 3153
+      },
+      "train_folds": [
+        0,
+        1
+      ],
+      "val_folds": [
+        2
+      ],
+      "n_train": 28259,
+      "n_reporting": 3153,
+      "reporting_fold_prefixes": {
+        "FER2013Test": 3153
+      },
+      "reporting_partition": "FER2013Test",
+      "expected_train_samples_declared": 28259,
+      "expected_val_samples_declared": 3153,
+      "declared_matches_measured": true,
+      "n_partitions_in_metadata": 3,
+      "selection_set_is_reporting_set": true,
+      "separate_holdout_exists": true,
+      "unfiltered_by_fold": {
+        "0": 28559,
+        "1": 3579,
+        "2": 3573
+      },
+      "majority_filter_drop": {
+        "0": 3499,
+        "1": 380,
+        "2": 420
+      },
+      "selection_evidence": "train_ferplus_kd.py hard-asserts expected_val_samples; selection uses the same val loader"
+    }
+  }
+}

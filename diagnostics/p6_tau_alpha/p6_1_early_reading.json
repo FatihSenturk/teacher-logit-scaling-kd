@@ -1,0 +1,118 @@
+{
+  "status": "EARLY_READING",
+  "queue_state": "~10/42",
+  "checkpoint": "swa",
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "bar": 0.0012,
+  "two_bar": 0.0024,
+  "bar_source_sd": 0.0011822187508027879,
+  "pairs": {
+    "T·τ = 5.10": {
+      "mean": -0.03913065410667997,
+      "sd": 0.0031896736668642375,
+      "same_sign_3of3": true,
+      "confirm": false,
+      "falsify_leg": true,
+      "status": "YANLIŞLAMA-bacağı sağlandı (3/3 aynı işaret VE |ort| ≥ 2×bar)",
+      "per_seed": {
+        "42": {
+          "d_ece": -0.035452032376765585,
+          "lo": {
+            "run": "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed42",
+            "ece": 0.042660581746965534,
+            "acc": 89.83050537109375
+          },
+          "hi": {
+            "run": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+            "ece": 0.07811261412373112,
+            "acc": 89.83050537109375
+          }
+        },
+        "1": {
+          "d_ece": -0.04112752361861793,
+          "lo": {
+            "run": "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed1",
+            "ece": 0.04024069890321622,
+            "acc": 89.60234832763672
+          },
+          "hi": {
+            "run": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed1",
+            "ece": 0.08136822252183415,
+            "acc": 89.47196960449219
+          }
+        },
+        "43": {
+          "d_ece": -0.04081240632465641,
+          "lo": {
+            "run": "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed43",
+            "ece": 0.03872570604319056,
+            "acc": 89.47196960449219
+          },
+          "hi": {
+            "run": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed43",
+            "ece": 0.07953811236784697,
+            "acc": 89.63494110107422
+          }
+        }
+      },
+      "tau_lo": 3,
+      "T_lo": "1.70",
+      "tau_hi": 6,
+      "T_hi": "0.85"
+    },
+    "T·τ = 10.20": {
+      "mean": -0.03240560747356013,
+      "sd": 0.002906759891641755,
+      "same_sign_3of3": true,
+      "confirm": false,
+      "falsify_leg": true,
+      "status": "YANLIŞLAMA-bacağı sağlandı (3/3 aynı işaret VE |ort| ≥ 2×bar)",
+      "per_seed": {
+        "42": {
+          "d_ece": -0.03340835389444384,
+          "lo": {
+            "run": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+            "ece": 0.04721869865366812,
+            "acc": 89.24380493164062
+          },
+          "hi": {
+            "run": "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed42",
+            "ece": 0.08062705254811196,
+            "acc": 89.50456237792969
+          }
+        },
+        "1": {
+          "d_ece": -0.03467824359605334,
+          "lo": {
+            "run": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+            "ece": 0.04152102102045907,
+            "acc": 89.40678405761719
+          },
+          "hi": {
+            "run": "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed1",
+            "ece": 0.07619926461651241,
+            "acc": 90.18904876708984
+          }
+        },
+        "43": {
+          "d_ece": -0.029130224930183204,
+          "lo": {
+            "run": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed43",
+            "ece": 0.04548752780960001,
+            "acc": 89.63494110107422
+          },
+          "hi": {
+            "run": "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed43",
+            "ece": 0.07461775273978322,
+            "acc": 90.25423431396484
+          }
+        }
+      },
+      "tau_lo": 6,
+      "T_lo": "1.70",
+      "tau_hi": 12,
+      "T_hi": "0.85"
+    }
+  },
+  "overall": "ÇÖKME YANLIŞLANDI — iki çiftte birden 3/3 aynı işaret ve |ort dECE| ≥ 2×bar. Beyanın kendi sözleriyle: ayrışmanın kendisi bulgu — sıra bilgisi ile yumuşaklık ayrı kanallar."
+}

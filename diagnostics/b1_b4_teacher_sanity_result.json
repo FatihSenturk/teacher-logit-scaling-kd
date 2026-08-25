@@ -1,0 +1,87 @@
+{
+  "teacher_ckpt": "checkpoints/teacher_rafdb_vich_recipe_best.pt",
+  "n": 3068,
+  "img_size": 224,
+  "teacher_input_size": 224,
+  "amp": false,
+  "top1_acc_pct": 92.01434254646301,
+  "mean_softmax_entropy_nats": 0.1515771448612213,
+  "mean_max_prob": 0.9579911828041077,
+  "mean_top1_top2_margin": 0.9298344254493713,
+  "ece_15bin": 0.0395746454402241,
+  "teacher_mean_logvar_min": -3.3960330486297607,
+  "teacher_mean_logvar_p25": -1.2206623554229736,
+  "teacher_mean_logvar_median": -0.9855087399482727,
+  "teacher_mean_logvar_p75": -0.813132107257843,
+  "teacher_mean_logvar_max": 0.5968929529190063,
+  "gate_alpha_mean": 0.4126547873020172,
+  "gate_alpha_frac_lt_0.1+eps": 0.0329204685986042,
+  "gate_alpha_frac_gt_0.9x_hi": 0.08311603963375092,
+  "gate_alpha_min": 0.10000114887952805,
+  "gate_alpha_max": 0.699931800365448,
+  "confusion_matrix": [
+    [
+      301,
+      3,
+      5,
+      4,
+      1,
+      4,
+      11
+    ],
+    [
+      11,
+      50,
+      1,
+      3,
+      6,
+      1,
+      2
+    ],
+    [
+      3,
+      1,
+      125,
+      7,
+      10,
+      6,
+      8
+    ],
+    [
+      5,
+      1,
+      5,
+      1150,
+      1,
+      2,
+      21
+    ],
+    [
+      0,
+      2,
+      10,
+      11,
+      424,
+      1,
+      30
+    ],
+    [
+      2,
+      2,
+      11,
+      4,
+      0,
+      137,
+      6
+    ],
+    [
+      11,
+      0,
+      1,
+      11,
+      21,
+      0,
+      636
+    ]
+  ]
+}

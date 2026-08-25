@@ -1,0 +1,43 @@
+# Satır sonu normalizasyonu — 18 Ağu 2026.
+#
+# NEDEN. Depo Windows'ta yazılıyor (`core.autocrlf=true`), hakem Linux/macOS'ta klonlayacak.
+# Satır sonu karmaşası yalnız bir okuma rahatsızlığı değil: `producer_freshness_gate` üretici
+# çıktısını depodaki artefaktla SHA-256 ile karşılaştırıyor ve `check_numbers` makale metnini
+# satır satır okuyor. CRLF/LF ayrışması bu iki kontrolü de platformlar arasında bozar.
+# İLK YAZILAN SATIR `* text=auto eol=lf` İDİ VE ÖLÇÜLEREK GERİ ALINDI (18 Ağu 2026).
+# `eol=lf` çalışma ağacını da LF'e zorlar. Ama bu depodaki üreticiler `Path.write_text()` ile
+# yazıyor ve Windows'ta `\n` -> `\r\n` çevriliyor. Sonuç `producer_freshness_gate`in ilk
+# koşusunda ölçüldü: `a12_verdict.md` "BAYAT" göründü, diff 69 satırın 69'unu değişmiş
+# gösterdi ve içerik birebir aynıydı -- tek fark satır sonuydu. `eol=lf` ile her üretici koşusu
+# çalışma ağacını kirletir ve Katman A kalıcı olarak yanlış pozitif verir.
+#
+# `text=auto` (eol'süz) doğru olan: DEPO İÇERİĞİ LF'te normalize edilir -- Linux/macOS'ta klonlayan
+# hakem LF görür, ve commit'lenmiş blob'un sha256'sı her platformda aynıdır. Çalışma ağacı ise
+# platformun kendi konvansiyonunu alır, dolayısıyla üreticinin yazdığı ile depodaki dosya aynı
+# makinede eşleşir. Kapının ihtiyacı olan da bu: yerel üretim ile yerel artefaktın karşılaştırması.
+* text=auto
+
+# İkili dosyalar — normalizasyon dışında. `text=auto` bunları zaten sezer, ama sezgiye
+# bırakmıyoruz: bir PDF'in ya da checkpoint'in içindeki 0x0A baytı "metin" sanılırsa dosya
+# geri dönüşsüz bozulur.
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.bmp   binary
+*.gif   binary
+*.ico   binary
+*.pt    binary
+*.pth   binary
+*.ckpt  binary
+*.npz   binary
+*.npy   binary
+*.pkl   binary
+*.zip   binary
+*.gz    binary
+*.xz    binary
+*.7z    binary
+*.ttf   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary

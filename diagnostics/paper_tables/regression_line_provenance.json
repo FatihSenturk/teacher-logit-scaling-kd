@@ -1,0 +1,389 @@
+{
+  "ferplus": {
+    "best": {
+      "slope": 0.5824134587905833,
+      "intercept": 0.020829451582802097,
+      "pearson": 0.9388037549058944,
+      "n_runs": 9,
+      "arms": {
+        "0.5063": {
+          "teacher_ece": 0.0156,
+          "role": "T*_NLL (calibrated)",
+          "n": 3,
+          "ece_mean": 0.019590972014065337,
+          "ece_sd": 0.0020415772943527255,
+          "acc_mean": 89.20604960123698,
+          "acc_sd": 0.10195072482667977
+        },
+        "0.26": {
+          "teacher_ece": 0.0393,
+          "role": "over-sharpened (sign flipped)",
+          "n": 3,
+          "ece_mean": 0.05679475703310268,
+          "ece_sd": 0.00137354277175327,
+          "acc_mean": 89.3223393758138,
+          "acc_sd": 0.25635247014082213
+        },
+        "1.0": {
+          "teacher_ece": 0.1282,
+          "role": "native (under-confident)",
+          "n": 3,
+          "ece_mean": 0.09274253000579408,
+          "ece_sd": 0.006997141399156967,
+          "acc_mean": 89.06861368815105,
+          "acc_sd": 0.35364489061929455
+        }
+      },
+      "fit_on_9_runs": {
+        "r2": 0.8813524902254068,
+        "residuals": [
+          -0.00812364971457158,
+          0.012700491349007671,
+          0.005264455458749234,
+          -0.01215679983699662,
+          0.011930045089749847,
+          -0.005889863990701821,
+          -0.010691939026041368,
+          0.014598833120734463,
+          -0.007631572449929833
+        ],
+        "max_abs_residual": 0.014598833120734463
+      },
+      "fit_on_3_group_means": {
+        "r2": 0.8934327661454716,
+        "residuals": [
+          -0.010324129525869856,
+          0.013076456519830658,
+          -0.002752326993960802
+        ],
+        "max_abs_residual": 0.013076456519830658,
+        "residual_over_seed_sd": [
+          5.0569378658490045,
+          9.520239768827226,
+          0.3933502035977734
+        ],
+        "max_residual_over_seed_sd": 9.520239768827226
+      }
+    },
+    "swa": {
+      "slope": 0.4458200105712234,
+      "intercept": 0.024636715053925947,
+      "pearson": 0.8620517213486897,
+      "n_runs": 9,
+      "arms": {
+        "0.5063": {
+          "teacher_ece": 0.0156,
+          "role": "T*_NLL (calibrated)",
+          "n": 3,
+          "ece_mean": 0.018498602500361613,
+          "ece_sd": 0.0015881954147709731,
+          "acc_mean": 89.12147521972656,
+          "acc_sd": 0.1382441933311354
+        },
+        "0.26": {
+          "teacher_ece": 0.0393,
+          "role": "over-sharpened (sign flipped)",
+          "n": 3,
+          "ece_mean": 0.058740805600987316,
+          "ece_sd": 0.003831888418531751,
+          "acc_mean": 89.20604960123698,
+          "acc_sd": 0.28602525669074663
+        },
+        "1.0": {
+          "teacher_ece": 0.1282,
+          "role": "native (under-confident)",
+          "n": 3,
+          "ece_mean": 0.07830038099601992,
+          "ece_sd": 0.00460023162590826,
+          "acc_mean": 88.71973673502605,
+          "acc_sd": 0.37032312388616695
+        }
+      },
+      "fit_on_9_runs": {
+        "r2": 0.743133170280239,
+        "residuals": [
+          -0.012274484043938952,
+          0.021000255964223086,
+          0.0007918857627952774,
+          -0.014923383987057497,
+          0.014602225840211501,
+          -0.00835344589217532,
+          -0.012080846124429806,
+          0.014147610590402274,
+          -0.0029098181100305764
+        ],
+        "max_abs_residual": 0.021000255964223086
+      },
+      "fit_on_3_group_means": {
+        "r2": 0.7533558595211115,
+        "residuals": [
+          -0.013092904718475417,
+          0.016583364131612287,
+          -0.0034904594131368732
+        ],
+        "max_abs_residual": 0.016583364131612287,
+        "residual_over_seed_sd": [
+          8.243887746246571,
+          4.327726259306493,
+          0.7587573185399603
+        ],
+        "max_residual_over_seed_sd": 8.243887746246571
+      }
+    },
+    "last": {
+      "slope": 0.5061726897310551,
+      "intercept": 0.023556443572070877,
+      "pearson": 0.8893839563943767,
+      "n_runs": 9,
+      "arms": {
+        "0.5063": {
+          "teacher_ece": 0.0156,
+          "role": "T*_NLL (calibrated)",
+          "n": 3,
+          "ece_mean": 0.019130647440820707,
+          "ece_sd": 0.006139430665287134,
+          "acc_mean": 88.83602905273438,
+          "acc_sd": 0.3845362563550402
+        },
+        "0.26": {
+          "teacher_ece": 0.0393,
+          "role": "over-sharpened (sign flipped)",
+          "n": 3,
+          "ece_mean": 0.0590560870192522,
+          "ece_sd": 0.001486498899180953,
+          "acc_mean": 88.93117777506511,
+          "acc_sd": 0.19292159450492707
+        },
+        "1.0": {
+          "teacher_ece": 0.1282,
+          "role": "native (under-confident)",
+          "n": 3,
+          "ece_mean": 0.08516281574589592,
+          "ece_sd": 0.008151749408969858,
+          "acc_mean": 88.45543924967448,
+          "acc_sd": 0.32960043787118626
+        }
+      },
+      "fit_on_9_runs": {
+        "r2": 0.7910038218917147,
+        "residuals": [
+          -0.009661285706511723,
+          0.015246752466644017,
+          0.004250610172252645,
+          -0.007961912443426991,
+          0.01433382847343264,
+          -0.011937663442311064,
+          -0.019343072123225172,
+          0.0172405892821759,
+          -0.0021678466790302636
+        ],
+        "max_abs_residual": 0.019343072123225172
+      },
+      "fit_on_3_group_means": {
+        "r2": 0.8163587895645393,
+        "residuals": [
+          -0.01232209009105463,
+          0.01560705674075085,
+          -0.0032849666496962276
+        ],
+        "max_abs_residual": 0.01560705674075085,
+        "residual_over_seed_sd": [
+          2.007041167632168,
+          10.499205044383277,
+          0.402976893043545
+        ],
+        "max_residual_over_seed_sd": 10.499205044383277
+      }
+    }
+  },
+  "rafdb": {
+    "teacher_ece_T1": {
+      "stage1": 0.03779733980455796,
+      "primary": 0.039575973411504727,
+      "vae9182": 0.013553927899028671
+    },
+    "candidates": [
+      {
+        "audit": "frozen",
+        "checkpoint": "best",
+        "class_weight_mode": "effective_number",
+        "slope": 1.3522449889024615,
+        "intercept": 0.009272120057353755,
+        "r2": 0.9873020679285165,
+        "dev_pct": 76.69475877465851
+      },
+      {
+        "audit": "mechanism (unfrozen)",
+        "checkpoint": "best",
+        "class_weight_mode": "effective_number",
+        "slope": 1.3522449889024615,
+        "intercept": 0.009272120057353755,
+        "r2": 0.9873020679285165,
+        "dev_pct": 76.69475877465851
+      },
+      {
+        "audit": "frozen",
+        "checkpoint": "swa",
+        "class_weight_mode": "effective_number",
+        "slope": 1.5393852185672585,
+        "intercept": 0.012275003618340226,
+        "r2": 0.9868491853597192,
+        "dev_pct": 101.14794440967707
+      },
+      {
+        "audit": "mechanism (unfrozen)",
+        "checkpoint": "swa",
+        "class_weight_mode": "effective_number",
+        "slope": 1.5393852185672585,
+        "intercept": 0.012275003618340226,
+        "r2": 0.9868491853597192,
+        "dev_pct": 101.14794440967707
+      },
+      {
+        "audit": "frozen",
+        "checkpoint": "last",
+        "class_weight_mode": "effective_number",
+        "slope": 1.5598714392024218,
+        "intercept": 0.00969112110569946,
+        "r2": 0.996425401932706,
+        "dev_pct": 103.82483198777234
+      },
+      {
+        "audit": "mechanism (unfrozen)",
+        "checkpoint": "last",
+        "class_weight_mode": "effective_number",
+        "slope": 1.5598714392024218,
+        "intercept": 0.00969112110569946,
+        "r2": 0.996425401932706,
+        "dev_pct": 103.82483198777234
+      },
+      {
+        "audit": "frozen",
+        "checkpoint": "best",
+        "class_weight_mode": "havuz (iki mod ort.)",
+        "slope": 1.5822942269544527,
+        "intercept": 0.0035691836057569135,
+        "r2": 0.9994909233307228,
+        "dev_pct": 106.75476636017936
+      },
+      {
+        "audit": "mechanism (unfrozen)",
+        "checkpoint": "best",
+        "class_weight_mode": "havuz (iki mod ort.)",
+        "slope": 1.5822942269544527,
+        "intercept": 0.0035691836057569135,
+        "r2": 0.9994909233307228,
+        "dev_pct": 106.75476636017936
+      },
+      {
+        "audit": "frozen",
+        "checkpoint": "last",
+        "class_weight_mode": "havuz (iki mod ort.)",
+        "slope": 1.611198229797505,
+        "intercept": 0.008386241127001426,
+        "r2": 0.9998598355386534,
+        "dev_pct": 110.53158627956422
+      },
+      {
+        "audit": "mechanism (unfrozen)",
+        "checkpoint": "last",
+        "class_weight_mode": "havuz (iki mod ort.)",
+        "slope": 1.611198229797505,
+        "intercept": 0.008386241127001426,
+        "r2": 0.9998598355386534,
+        "dev_pct": 110.53158627956422
+      },
+      {
+        "audit": "frozen",
+        "checkpoint": "last",
+        "class_weight_mode": "none",
+        "slope": 1.6625250203925883,
+        "intercept": 0.007081361148303385,
+        "r2": 0.9988957897208391,
+        "dev_pct": 117.2383405713561
+      },
+      {
+        "audit": "mechanism (unfrozen)",
+        "checkpoint": "last",
+        "class_weight_mode": "none",
+        "slope": 1.6625250203925883,
+        "intercept": 0.007081361148303385,
+        "r2": 0.9988957897208391,
+        "dev_pct": 117.2383405713561
+      },
+      {
+        "audit": "frozen",
+        "checkpoint": "swa",
+        "class_weight_mode": "havuz (iki mod ort.)",
+        "slope": 1.7068760907616696,
+        "intercept": 0.007359114033027581,
+        "r2": 0.9943409216317135,
+        "dev_pct": 123.03359346160586
+      },
+      {
+        "audit": "mechanism (unfrozen)",
+        "checkpoint": "swa",
+        "class_weight_mode": "havuz (iki mod ort.)",
+        "slope": 1.7068760907616696,
+        "intercept": 0.007359114033027581,
+        "r2": 0.9943409216317135,
+        "dev_pct": 123.03359346160586
+      },
+      {
+        "audit": "frozen",
+        "checkpoint": "best",
+        "class_weight_mode": "none",
+        "slope": 1.8123434650064436,
+        "intercept": -0.0021337528458399146,
+        "r2": 0.9979602925960582,
+        "dev_pct": 136.81477394570018
+      },
+      {
+        "audit": "mechanism (unfrozen)",
+        "checkpoint": "best",
+        "class_weight_mode": "none",
+        "slope": 1.8123434650064436,
+        "intercept": -0.0021337528458399146,
+        "r2": 0.9979602925960582,
+        "dev_pct": 136.81477394570018
+      },
+      {
+        "audit": "frozen",
+        "checkpoint": "swa",
+        "class_weight_mode": "none",
+        "slope": 1.8743669629560806,
+        "intercept": 0.0024432244477149284,
+        "r2": 0.9981892931222418,
+        "dev_pct": 144.91924251353464
+      },
+      {
+        "audit": "mechanism (unfrozen)",
+        "checkpoint": "swa",
+        "class_weight_mode": "none",
+        "slope": 1.8743669629560806,
+        "intercept": 0.0024432244477149284,
+        "r2": 0.9981892931222418,
+        "dev_pct": 144.91924251353464
+      }
+    ],
+    "closest": {
+      "audit": "frozen",
+      "checkpoint": "best",
+      "class_weight_mode": "effective_number",
+      "slope": 1.3522449889024615,
+      "intercept": 0.009272120057353755,
+      "r2": 0.9873020679285165,
+      "dev_pct": 76.69475877465851
+    },
+    "slope_range": [
+      1.3522449889024615,
+      1.8743669629560806
+    ],
+    "target": {
+      "intercept": 0.0244,
+      "slope": 0.7653
+    },
+    "producer_found": false
+  },
+  "primary_checkpoint": "swa"
+}

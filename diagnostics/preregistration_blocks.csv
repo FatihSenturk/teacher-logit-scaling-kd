@@ -1,0 +1,53 @@
+# Which pre-registered block each run belongs to. THIS FILE IS A DECLARATION, NOT AN INFERENCE.
+#
+# Experimental intent -- "this run was launched to test A8" -- is the one thing no training flag
+# records, so it cannot be derived from run_args.json the way every other ledger column is. The
+# 2026-07-30 sweep (METHODS_DATA 5A.3) removed lexical run-name matching everywhere it stood in
+# for a FLAG, because a name is a guess about a fact the flags already hold. This file is the
+# opposite case: a human-authored, dated record of something the flags never held. Guessing it
+# from a name would be wrong; declaring it here is the correct replacement.
+#
+# Matching is by run-name PREFIX, longest match wins. Runs matching nothing get an empty
+# preregistration_block and are counted in build_runs_ledger's output -- an unassigned run is a
+# visible gap, not a silent default.
+#
+# ADD A ROW WHEN YOU FREEZE A QUEUE, not when you read its results.
+#
+# prefix,block,declared_on,artifact
+RAFDB_vae9182_flatcontrol,A1,2026-07-24,rafdb_p1_vae9182_flatcontrol_queue.ps1
+RAFDB_vae9182_miscalT0731,A2,2026-07-25,rafdb_p3_then_miscal_chain.ps1
+RAFDB_stage1_tempscale_,A6,2026-07-23,rafdb_p1_temperature_doseresponse_queue.ps1
+RAFDB_vae9182_tempscale_,A1,2026-07-24,rafdb_p1_vae9182_flatcontrol_queue.ps1
+RAFDB_stage1_logit_std_b070_T6_224_400e_swa200_seed,A7,2026-07-29,rafdb_p1_logit_std_seeds_queue.ps1
+RAFDB_primary_logit_std_b070_T6_224_400e_swa200_seed,A7,2026-07-29,rafdb_p1_logit_std_seeds_queue.ps1
+RAFDB_vae9182_logit_std_b070_T6_224_400e_swa200_seed,A7,2026-07-29,rafdb_p1_logit_std_seeds_queue.ps1
+RAFDB_vae9182_baseline_noclassweight,A8,2026-07-29,rafdb_p2_gate_oracle_seeds_queue.ps1
+RAFDB_vae9182_gate_oracle_error_b070_T6_224_400e_swa200_seed,A8,2026-07-29,rafdb_p2_gate_oracle_seeds_queue.ps1
+RAFDB_vae9182_frontier_w050_tempscale,B4,2026-07-29,rafdb_p3_capacity_slope_queue.ps1
+RAFDB_stage1_baseline_noclassweight,A8-P4,2026-07-30,rafdb_p4_noclassweight_controls_queue.ps1
+RAFDB_primary_baseline_noclassweight,A8-P4,2026-07-30,rafdb_p4_noclassweight_controls_queue.ps1
+RAFDB_stage1_gate_oracle_error,A8-P5,2026-07-31,rafdb_p5_oracle_replication_queue.ps1
+RAFDB_primary_gate_oracle_error,A8-P5,2026-07-31,rafdb_p5_oracle_replication_queue.ps1
+RAFDB_stage1_p6tau_,P6,2026-08-01,rafdb_p6_tau_alpha_queue.ps1
+RAFDB_stage1_p6alpha_,P6,2026-08-01,rafdb_p6_tau_alpha_queue.ps1
+RAFDB_vae9182_frontier_w,B3,2026-07-28,rafdb_width_frontier_queue.ps1
+RAFDB_vae9182_pluslinear,B1,2026-07-22,rafdb_vich_isolation_queue.ps1
+RAFDB_vae9182_gate_,B2,2026-07-20,run_rafdb_gate_signal_followup_queue.ps1
+RAFDB_stage1_gate_,B2,2026-07-20,run_rafdb_gate_signal_followup_queue.ps1
+RAFDB_primary_gate_,B2,2026-07-20,run_rafdb_gate_signal_followup_queue.ps1
+RAFDB_vae9182_tempscale_T095,G0,2026-08-06,rafdb_g0_control_grid_queue.ps1
+RAFDB_vae9182_tempscale_T110,G0,2026-08-06,rafdb_g0_control_grid_queue.ps1
+# A12/A13 (6 Agu 2026). A12 icin TAM KOSU ADLARI yazildi, onek DEGIL: ayni onek
+# B2'nin 20 Tem tarihli seed-42 kosularini da yakalardi ve onlar A12'ye ait degil.
+# Tarihli beyanlar geriye donuk degistirilmez -- bu yuzden dar anahtar.
+RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200_seed1,A12,2026-08-06,rafdb_a12_realsignal_gate_queue.ps1
+RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200_seed43,A12,2026-08-06,rafdb_a12_realsignal_gate_queue.ps1
+RAFDB_stage1_gate_target_logvar_b070_T6_224_400e_swa200_seed1,A12,2026-08-06,rafdb_a12_realsignal_gate_queue.ps1
+RAFDB_stage1_gate_target_logvar_b070_T6_224_400e_swa200_seed43,A12,2026-08-06,rafdb_a12_realsignal_gate_queue.ps1
+RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200_seed1,A12,2026-08-06,rafdb_a12_realsignal_gate_queue.ps1
+RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200_seed43,A12,2026-08-06,rafdb_a12_realsignal_gate_queue.ps1
+RAFDB_primary_gate_target_logvar_b070_T6_224_400e_swa200_seed1,A12,2026-08-06,rafdb_a12_realsignal_gate_queue.ps1
+RAFDB_primary_gate_target_logvar_b070_T6_224_400e_swa200_seed43,A12,2026-08-06,rafdb_a12_realsignal_gate_queue.ps1
+RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200_seed1,A12,2026-08-06,rafdb_a12_realsignal_gate_queue.ps1
+RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200_seed43,A12,2026-08-06,rafdb_a12_realsignal_gate_queue.ps1
+RAFDB_vae9182_frontier_w100ns_tempscale,A13,2026-08-06,rafdb_a13_scratch_dose_queue.ps1

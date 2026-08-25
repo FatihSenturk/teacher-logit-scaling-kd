@@ -1,0 +1,1620 @@
+{
+  "produced_by": "diagnostics/publish_epoch_curves.py",
+  "content_class": "model output (per-epoch validation accuracy and loss), not dataset content — no images, no labels, no file names",
+  "arrays_per_run": [
+    "epoch",
+    "val_acc",
+    "val_loss"
+  ],
+  "dtypes": {
+    "epoch": "int32",
+    "val_acc": "float64",
+    "val_loss": "float64"
+  },
+  "dtype_note": "float64 is required, not a preference: float32 ties distinct val_acc values, which moves acc.index(max(acc)) to an earlier epoch and shifted argmax_in_last_K_frac by 1.5-2 points (measured, 9 Aug)",
+  "population": "frozen selection audit run dirs UNION RAF-DB finished runs — derived from the two consumers' own definitions, never hand-listed",
+  "consumers": [
+    "diagnostics/order_stat_trend.py",
+    "diagnostics/selection_gain_estimator.py"
+  ],
+  "n_runs": 199,
+  "n_frozen_audit": 131,
+  "n_rafdb_finished": 199,
+  "n_epoch_rows": 76700,
+  "npz_bytes": 1237133,
+  "npz_sha256": "a0f7cc9081243d9962b744055f34cc5117e21a5a89c608a7a8d9c2014ae33e37",
+  "runs": {
+    "RAFDB_7cls_lightle_vich_from_vae9182_224|2026-06-17-13-17-49": {
+      "run_name": "RAFDB_7cls_lightle_vich_from_vae9182_224",
+      "timestamp": "2026-06-17-13-17-49",
+      "origin_run_dir": "results/unified_students/RAFDB_7cls_lightle_vich_from_vae9182_224/2026-06-17-13-17-49",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_7cls_lightle_vich_from_vae9182_256|2026-06-17-23-22-50": {
+      "run_name": "RAFDB_7cls_lightle_vich_from_vae9182_256",
+      "timestamp": "2026-06-17-23-22-50",
+      "origin_run_dir": "results/unified_students/RAFDB_7cls_lightle_vich_from_vae9182_256/2026-06-17-23-22-50",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_bridge_baseline_b070_T6_224_400e_swa200_seed42|2026-07-21-22-56-23": {
+      "run_name": "RAFDB_bridge_baseline_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-21-22-56-23",
+      "origin_run_dir": "results/unified_students/RAFDB_bridge_baseline_b070_T6_224_400e_swa200_seed42/2026-07-21-22-56-23",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_ce9241_betaKD_b070_T6_224_amp_classw|2026-06-19-05-14-00": {
+      "run_name": "RAFDB_ce9241_betaKD_b070_T6_224_amp_classw",
+      "timestamp": "2026-06-19-05-14-00",
+      "origin_run_dir": "results/unified_students/RAFDB_ce9241_betaKD_b070_T6_224_amp_classw/2026-06-19-05-14-00",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_ce9241_betaKD_b070_T6_224_best_400e_swa200|2026-06-20-00-22-09": {
+      "run_name": "RAFDB_ce9241_betaKD_b070_T6_224_best_400e_swa200",
+      "timestamp": "2026-06-20-00-22-09",
+      "origin_run_dir": "results/unified_students/RAFDB_ce9241_betaKD_b070_T6_224_best_400e_swa200/2026-06-20-00-22-09",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_ce9241_betaKD_b070_T6_224_feat003_amp_classw|2026-06-19-20-47-48": {
+      "run_name": "RAFDB_ce9241_betaKD_b070_T6_224_feat003_amp_classw",
+      "timestamp": "2026-06-19-20-47-48",
+      "origin_run_dir": "results/unified_students/RAFDB_ce9241_betaKD_b070_T6_224_feat003_amp_classw/2026-06-19-20-47-48",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_ce9241_betaKD_b070_T6_256_amp_classw|2026-06-18-12-41-20": {
+      "run_name": "RAFDB_ce9241_betaKD_b070_T6_256_amp_classw",
+      "timestamp": "2026-06-18-12-41-20",
+      "origin_run_dir": "results/unified_students/RAFDB_ce9241_betaKD_b070_T6_256_amp_classw/2026-06-18-12-41-20",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_ce9241_betaKD_b075_T6_224_t256_reg005_amp_classw|2026-06-19-14-26-31": {
+      "run_name": "RAFDB_ce9241_betaKD_b075_T6_224_t256_reg005_amp_classw",
+      "timestamp": "2026-06-19-14-26-31",
+      "origin_run_dir": "results/unified_students/RAFDB_ce9241_betaKD_b075_T6_224_t256_reg005_amp_classw/2026-06-19-14-26-31",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_adaptive_t_b070_T6_224_400e_swa200|2026-07-18-08-02-57": {
+      "run_name": "RAFDB_primary_adaptive_t_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-18-08-02-57",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_adaptive_t_b070_T6_224_400e_swa200/2026-07-18-08-02-57",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_adaptive_t_b070_T6_224_400e_swa200_seed1|2026-07-25-19-11-14": {
+      "run_name": "RAFDB_primary_adaptive_t_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-25-19-11-14",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_adaptive_t_b070_T6_224_400e_swa200_seed1/2026-07-25-19-11-14",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_adaptive_t_b070_T6_224_400e_swa200_seed43|2026-07-25-19-11-14": {
+      "run_name": "RAFDB_primary_adaptive_t_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-25-19-11-14",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_adaptive_t_b070_T6_224_400e_swa200_seed43/2026-07-25-19-11-14",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed1|2026-07-21-06-53-05": {
+      "run_name": "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-21-06-53-05",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed1/2026-07-21-06-53-05",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed43|2026-07-20-22-41-20": {
+      "run_name": "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-20-22-41-20",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed43/2026-07-20-22-41-20",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1|2026-07-30-21-26-04": {
+      "run_name": "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-30-21-26-04",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed1/2026-07-30-21-26-04",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed42|2026-07-30-16-50-39": {
+      "run_name": "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-30-16-50-39",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed42/2026-07-30-16-50-39",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43|2026-07-31-02-06-02": {
+      "run_name": "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-31-02-06-02",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200_seed43/2026-07-31-02-06-02",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_ctkd_b070_T6_224_400e_swa200|2026-07-18-12-08-02": {
+      "run_name": "RAFDB_primary_ctkd_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-18-12-08-02",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_ctkd_b070_T6_224_400e_swa200/2026-07-18-12-08-02",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_g2g_kl_b070_T6_224_400e_swa200|2026-07-19-02-59-54": {
+      "run_name": "RAFDB_primary_g2g_kl_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-19-02-59-54",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_g2g_kl_b070_T6_224_400e_swa200/2026-07-19-02-59-54",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_g2g_kl_b070_T6_224_400e_swa200_seed1|2026-07-21-02-46-00": {
+      "run_name": "RAFDB_primary_g2g_kl_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-21-02-46-00",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_g2g_kl_b070_T6_224_400e_swa200_seed1/2026-07-21-02-46-00",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_g2g_kl_b070_T6_224_400e_swa200_seed43|2026-07-21-06-52-12": {
+      "run_name": "RAFDB_primary_g2g_kl_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-21-06-52-12",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_g2g_kl_b070_T6_224_400e_swa200_seed43/2026-07-21-06-52-12",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200|2026-07-19-10-39-49": {
+      "run_name": "RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-19-10-39-49",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200/2026-07-19-10-39-49",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200_seed1|2026-08-07-19-50-25": {
+      "run_name": "RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-07-19-50-25",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200_seed1/2026-08-07-19-50-25",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200_seed43|2026-08-07-22-08-47": {
+      "run_name": "RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-07-22-08-47",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200_seed43/2026-08-07-22-08-47",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_gate_oracle_error_b070_T6_224_400e_swa200_seed1|2026-07-31-21-14-59": {
+      "run_name": "RAFDB_primary_gate_oracle_error_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-31-21-14-59",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_gate_oracle_error_b070_T6_224_400e_swa200_seed1/2026-07-31-21-14-59",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_gate_oracle_error_b070_T6_224_400e_swa200_seed42|2026-07-31-16-34-21": {
+      "run_name": "RAFDB_primary_gate_oracle_error_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-31-16-34-21",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_gate_oracle_error_b070_T6_224_400e_swa200_seed42/2026-07-31-16-34-21",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_gate_oracle_error_b070_T6_224_400e_swa200_seed43|2026-08-01-01-53-22": {
+      "run_name": "RAFDB_primary_gate_oracle_error_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-01-01-53-22",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_gate_oracle_error_b070_T6_224_400e_swa200_seed43/2026-08-01-01-53-22",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_gate_target_logvar_b070_T6_224_400e_swa200|2026-07-20-04-53-00": {
+      "run_name": "RAFDB_primary_gate_target_logvar_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-20-04-53-00",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_gate_target_logvar_b070_T6_224_400e_swa200/2026-07-20-04-53-00",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_gate_target_logvar_b070_T6_224_400e_swa200_seed1|2026-08-08-00-29-05": {
+      "run_name": "RAFDB_primary_gate_target_logvar_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-08-00-29-05",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_gate_target_logvar_b070_T6_224_400e_swa200_seed1/2026-08-08-00-29-05",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_gate_target_logvar_b070_T6_224_400e_swa200_seed43|2026-08-08-02-50-40": {
+      "run_name": "RAFDB_primary_gate_target_logvar_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-08-02-50-40",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_gate_target_logvar_b070_T6_224_400e_swa200_seed43/2026-08-08-02-50-40",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_logit_std_b070_T6_224_400e_swa200|2026-07-18-03-53-27": {
+      "run_name": "RAFDB_primary_logit_std_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-18-03-53-27",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_logit_std_b070_T6_224_400e_swa200/2026-07-18-03-53-27",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_logit_std_b070_T6_224_400e_swa200_seed1|2026-07-29-05-29-38": {
+      "run_name": "RAFDB_primary_logit_std_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-29-05-29-38",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_logit_std_b070_T6_224_400e_swa200_seed1/2026-07-29-05-29-38",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_primary_logit_std_b070_T6_224_400e_swa200_seed43|2026-07-29-05-29-38": {
+      "run_name": "RAFDB_primary_logit_std_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-29-05-29-38",
+      "origin_run_dir": "results/unified_students/RAFDB_primary_logit_std_b070_T6_224_400e_swa200_seed43/2026-07-29-05-29-38",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_adaptive_t_b070_T6_224_200e_noSWA|2026-07-19-22-50-15": {
+      "run_name": "RAFDB_stage1_adaptive_t_b070_T6_224_200e_noSWA",
+      "timestamp": "2026-07-19-22-50-15",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_adaptive_t_b070_T6_224_200e_noSWA/2026-07-19-22-50-15",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_adaptive_t_b070_T6_224_400e_swa200|2026-07-18-18-42-25": {
+      "run_name": "RAFDB_stage1_adaptive_t_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-18-18-42-25",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_adaptive_t_b070_T6_224_400e_swa200/2026-07-18-18-42-25",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_adaptive_t_b070_T6_224_400e_swa200_seed1|2026-07-22-07-09-06": {
+      "run_name": "RAFDB_stage1_adaptive_t_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-22-07-09-06",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_adaptive_t_b070_T6_224_400e_swa200_seed1/2026-07-22-07-09-06",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_adaptive_t_b070_T6_224_400e_swa200_seed43|2026-07-25-23-19-01": {
+      "run_name": "RAFDB_stage1_adaptive_t_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-25-23-19-01",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_adaptive_t_b070_T6_224_400e_swa200_seed43/2026-07-25-23-19-01",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_baseline_b070_T6_224_200e_noSWA|2026-07-19-15-21-14": {
+      "run_name": "RAFDB_stage1_baseline_b070_T6_224_200e_noSWA",
+      "timestamp": "2026-07-19-15-21-14",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_baseline_b070_T6_224_200e_noSWA/2026-07-19-15-21-14",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1|2026-07-21-22-57-33": {
+      "run_name": "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-21-22-57-33",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1/2026-07-21-22-57-33",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43|2026-07-22-03-03-17": {
+      "run_name": "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-22-03-03-17",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43/2026-07-22-03-03-17",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1|2026-07-30-19-08-16": {
+      "run_name": "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-30-19-08-16",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed1/2026-07-30-19-08-16",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed42|2026-07-30-14-32-07": {
+      "run_name": "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-30-14-32-07",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed42/2026-07-30-14-32-07",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43|2026-07-30-23-43-35": {
+      "run_name": "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-30-23-43-35",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200_seed43/2026-07-30-23-43-35",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_ctkd_b070_T6_224_200e_noSWA|2026-07-20-00-00-00": {
+      "run_name": "RAFDB_stage1_ctkd_b070_T6_224_200e_noSWA",
+      "timestamp": "2026-07-20-00-00-00",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_ctkd_b070_T6_224_200e_noSWA/2026-07-20-00-00-00",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_ctkd_b070_T6_224_400e_swa200|2026-07-18-22-50-12": {
+      "run_name": "RAFDB_stage1_ctkd_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-18-22-50-12",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_ctkd_b070_T6_224_400e_swa200/2026-07-18-22-50-12",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_g2g_kl_b070_T6_224_200e_noSWA|2026-07-19-18-44-14": {
+      "run_name": "RAFDB_stage1_g2g_kl_b070_T6_224_200e_noSWA",
+      "timestamp": "2026-07-19-18-44-14",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_g2g_kl_b070_T6_224_200e_noSWA/2026-07-19-18-44-14",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_g2g_kl_b070_T6_224_400e_swa200|2026-07-18-10-33-06": {
+      "run_name": "RAFDB_stage1_g2g_kl_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-18-10-33-06",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_g2g_kl_b070_T6_224_400e_swa200/2026-07-18-10-33-06",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_g2g_kl_b070_T6_224_400e_swa200_seed1|2026-07-22-03-01-52": {
+      "run_name": "RAFDB_stage1_g2g_kl_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-22-03-01-52",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_g2g_kl_b070_T6_224_400e_swa200_seed1/2026-07-22-03-01-52",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_g2g_kl_b070_T6_224_400e_swa200_seed43|2026-07-22-07-09-35": {
+      "run_name": "RAFDB_stage1_g2g_kl_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-22-07-09-35",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_g2g_kl_b070_T6_224_400e_swa200_seed43/2026-07-22-07-09-35",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_gate_b070_T6_224_200e_noSWA|2026-07-19-16-32-23": {
+      "run_name": "RAFDB_stage1_gate_b070_T6_224_200e_noSWA",
+      "timestamp": "2026-07-19-16-32-23",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_gate_b070_T6_224_200e_noSWA/2026-07-19-16-32-23",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200|2026-07-19-08-10-43": {
+      "run_name": "RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-19-08-10-43",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200/2026-07-19-08-10-43",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200_seed1|2026-08-07-10-27-30": {
+      "run_name": "RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-07-10-27-30",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200_seed1/2026-08-07-10-27-30",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200_seed43|2026-08-07-12-47-04": {
+      "run_name": "RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-07-12-47-04",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200_seed43/2026-08-07-12-47-04",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_gate_oracle_error_b070_T6_224_400e_swa200_seed1|2026-07-31-18-54-56": {
+      "run_name": "RAFDB_stage1_gate_oracle_error_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-31-18-54-56",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_gate_oracle_error_b070_T6_224_400e_swa200_seed1/2026-07-31-18-54-56",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_gate_oracle_error_b070_T6_224_400e_swa200_seed42|2026-07-31-14-14-40": {
+      "run_name": "RAFDB_stage1_gate_oracle_error_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-31-14-14-40",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_gate_oracle_error_b070_T6_224_400e_swa200_seed42/2026-07-31-14-14-40",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_gate_oracle_error_b070_T6_224_400e_swa200_seed43|2026-07-31-23-34-22": {
+      "run_name": "RAFDB_stage1_gate_oracle_error_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-31-23-34-22",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_gate_oracle_error_b070_T6_224_400e_swa200_seed43/2026-07-31-23-34-22",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_gate_target_logvar_b070_T6_224_400e_swa200|2026-07-20-01-22-31": {
+      "run_name": "RAFDB_stage1_gate_target_logvar_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-20-01-22-31",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_gate_target_logvar_b070_T6_224_400e_swa200/2026-07-20-01-22-31",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_gate_target_logvar_b070_T6_224_400e_swa200_seed1|2026-08-07-15-10-33": {
+      "run_name": "RAFDB_stage1_gate_target_logvar_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-07-15-10-33",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_gate_target_logvar_b070_T6_224_400e_swa200_seed1/2026-08-07-15-10-33",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_gate_target_logvar_b070_T6_224_400e_swa200_seed43|2026-08-07-17-31-14": {
+      "run_name": "RAFDB_stage1_gate_target_logvar_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-07-17-31-14",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_gate_target_logvar_b070_T6_224_400e_swa200_seed43/2026-08-07-17-31-14",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_logit_std_b070_T6_224_200e_noSWA|2026-07-19-20-51-29": {
+      "run_name": "RAFDB_stage1_logit_std_b070_T6_224_200e_noSWA",
+      "timestamp": "2026-07-19-20-51-29",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_logit_std_b070_T6_224_200e_noSWA/2026-07-19-20-51-29",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_logit_std_b070_T6_224_400e_swa200|2026-07-18-14-39-16": {
+      "run_name": "RAFDB_stage1_logit_std_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-18-14-39-16",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_logit_std_b070_T6_224_400e_swa200/2026-07-18-14-39-16",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_logit_std_b070_T6_224_400e_swa200_seed1|2026-07-29-01-24-08": {
+      "run_name": "RAFDB_stage1_logit_std_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-29-01-24-08",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_logit_std_b070_T6_224_400e_swa200_seed1/2026-07-29-01-24-08",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_logit_std_b070_T6_224_400e_swa200_seed43|2026-07-29-01-24-13": {
+      "run_name": "RAFDB_stage1_logit_std_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-29-01-24-13",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_logit_std_b070_T6_224_400e_swa200_seed43/2026-07-29-01-24-13",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a010_ts100_b070_T6_224_400e_swa200_seed1|2026-08-03-17-51-50": {
+      "run_name": "RAFDB_stage1_p6alpha_a010_ts100_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-03-17-51-50",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a010_ts100_b070_T6_224_400e_swa200_seed1/2026-08-03-17-51-50",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a010_ts100_b070_T6_224_400e_swa200_seed42|2026-08-03-08-25-44": {
+      "run_name": "RAFDB_stage1_p6alpha_a010_ts100_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-08-03-08-25-44",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a010_ts100_b070_T6_224_400e_swa200_seed42/2026-08-03-08-25-44",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a010_ts100_b070_T6_224_400e_swa200_seed43|2026-08-04-03-14-02": {
+      "run_name": "RAFDB_stage1_p6alpha_a010_ts100_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-04-03-14-02",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a010_ts100_b070_T6_224_400e_swa200_seed43/2026-08-04-03-14-02",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed1|2026-08-03-20-16-02": {
+      "run_name": "RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-03-20-16-02",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed1/2026-08-03-20-16-02",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed42|2026-08-03-10-49-46": {
+      "run_name": "RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-08-03-10-49-46",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed42/2026-08-03-10-49-46",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed43|2026-08-04-05-32-07": {
+      "run_name": "RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-04-05-32-07",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a010_ts134_b070_T6_224_400e_swa200_seed43/2026-08-04-05-32-07",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a050_ts100_b070_T6_224_400e_swa200_seed1|2026-08-04-21-52-34": {
+      "run_name": "RAFDB_stage1_p6alpha_a050_ts100_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-04-21-52-34",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a050_ts100_b070_T6_224_400e_swa200_seed1/2026-08-04-21-52-34",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a050_ts100_b070_T6_224_400e_swa200_seed42|2026-08-04-12-32-18": {
+      "run_name": "RAFDB_stage1_p6alpha_a050_ts100_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-08-04-12-32-18",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a050_ts100_b070_T6_224_400e_swa200_seed42/2026-08-04-12-32-18",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a050_ts100_b070_T6_224_400e_swa200_seed43|2026-08-05-07-03-29": {
+      "run_name": "RAFDB_stage1_p6alpha_a050_ts100_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-05-07-03-29",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a050_ts100_b070_T6_224_400e_swa200_seed43/2026-08-05-07-03-29",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed1|2026-08-05-00-10-14": {
+      "run_name": "RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-05-00-10-14",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed1/2026-08-05-00-10-14",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed42|2026-08-04-14-52-25": {
+      "run_name": "RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-08-04-14-52-25",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed42/2026-08-04-14-52-25",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed43|2026-08-05-09-21-11": {
+      "run_name": "RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-05-09-21-11",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a050_ts134_b070_T6_224_400e_swa200_seed43/2026-08-05-09-21-11",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a070_ts100_b070_T6_224_400e_swa200_seed1|2026-08-05-02-28-14": {
+      "run_name": "RAFDB_stage1_p6alpha_a070_ts100_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-05-02-28-14",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a070_ts100_b070_T6_224_400e_swa200_seed1/2026-08-05-02-28-14",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a070_ts100_b070_T6_224_400e_swa200_seed42|2026-08-04-17-13-27": {
+      "run_name": "RAFDB_stage1_p6alpha_a070_ts100_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-08-04-17-13-27",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a070_ts100_b070_T6_224_400e_swa200_seed42/2026-08-04-17-13-27",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a070_ts100_b070_T6_224_400e_swa200_seed43|2026-08-05-11-40-18": {
+      "run_name": "RAFDB_stage1_p6alpha_a070_ts100_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-05-11-40-18",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a070_ts100_b070_T6_224_400e_swa200_seed43/2026-08-05-11-40-18",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed1|2026-08-05-04-46-02": {
+      "run_name": "RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-05-04-46-02",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed1/2026-08-05-04-46-02",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed42|2026-08-04-19-31-20": {
+      "run_name": "RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-08-04-19-31-20",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed42/2026-08-04-19-31-20",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed43|2026-08-05-13-58-48": {
+      "run_name": "RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-05-13-58-48",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a070_ts134_b070_T6_224_400e_swa200_seed43/2026-08-05-13-58-48",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a090_ts100_b070_T6_224_400e_swa200_seed1|2026-08-03-22-34-42": {
+      "run_name": "RAFDB_stage1_p6alpha_a090_ts100_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-03-22-34-42",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a090_ts100_b070_T6_224_400e_swa200_seed1/2026-08-03-22-34-42",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a090_ts100_b070_T6_224_400e_swa200_seed42|2026-08-03-13-10-13": {
+      "run_name": "RAFDB_stage1_p6alpha_a090_ts100_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-08-03-13-10-13",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a090_ts100_b070_T6_224_400e_swa200_seed42/2026-08-03-13-10-13",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a090_ts100_b070_T6_224_400e_swa200_seed43|2026-08-04-07-49-43": {
+      "run_name": "RAFDB_stage1_p6alpha_a090_ts100_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-04-07-49-43",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a090_ts100_b070_T6_224_400e_swa200_seed43/2026-08-04-07-49-43",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed1|2026-08-04-00-54-24": {
+      "run_name": "RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-04-00-54-24",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed1/2026-08-04-00-54-24",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed42|2026-08-03-15-30-01": {
+      "run_name": "RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-08-03-15-30-01",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed42/2026-08-03-15-30-01",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed43|2026-08-04-10-12-05": {
+      "run_name": "RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-04-10-12-05",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6alpha_a090_ts134_b070_T6_224_400e_swa200_seed43/2026-08-04-10-12-05",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T03_ts085_b070_224_400e_swa200_seed1|2026-08-02-06-34-38": {
+      "run_name": "RAFDB_stage1_p6tau_T03_ts085_b070_224_400e_swa200_seed1",
+      "timestamp": "2026-08-02-06-34-38",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T03_ts085_b070_224_400e_swa200_seed1/2026-08-02-06-34-38",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T03_ts085_b070_224_400e_swa200_seed42|2026-08-02-04-15-24": {
+      "run_name": "RAFDB_stage1_p6tau_T03_ts085_b070_224_400e_swa200_seed42",
+      "timestamp": "2026-08-02-04-15-24",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T03_ts085_b070_224_400e_swa200_seed42/2026-08-02-04-15-24",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T03_ts085_b070_224_400e_swa200_seed43|2026-08-02-08-53-43": {
+      "run_name": "RAFDB_stage1_p6tau_T03_ts085_b070_224_400e_swa200_seed43",
+      "timestamp": "2026-08-02-08-53-43",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T03_ts085_b070_224_400e_swa200_seed43/2026-08-02-08-53-43",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T03_ts134_b070_224_400e_swa200_seed1|2026-08-02-13-31-17": {
+      "run_name": "RAFDB_stage1_p6tau_T03_ts134_b070_224_400e_swa200_seed1",
+      "timestamp": "2026-08-02-13-31-17",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T03_ts134_b070_224_400e_swa200_seed1/2026-08-02-13-31-17",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T03_ts134_b070_224_400e_swa200_seed42|2026-08-02-11-12-32": {
+      "run_name": "RAFDB_stage1_p6tau_T03_ts134_b070_224_400e_swa200_seed42",
+      "timestamp": "2026-08-02-11-12-32",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T03_ts134_b070_224_400e_swa200_seed42/2026-08-02-11-12-32",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T03_ts134_b070_224_400e_swa200_seed43|2026-08-02-15-54-25": {
+      "run_name": "RAFDB_stage1_p6tau_T03_ts134_b070_224_400e_swa200_seed43",
+      "timestamp": "2026-08-02-15-54-25",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T03_ts134_b070_224_400e_swa200_seed43/2026-08-02-15-54-25",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed1|2026-08-01-16-43-13": {
+      "run_name": "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed1",
+      "timestamp": "2026-08-01-16-43-13",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed1/2026-08-01-16-43-13",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed42|2026-08-01-14-23-45": {
+      "run_name": "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed42",
+      "timestamp": "2026-08-01-14-23-45",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed42/2026-08-01-14-23-45",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed43|2026-08-01-19-01-46": {
+      "run_name": "RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed43",
+      "timestamp": "2026-08-01-19-01-46",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T03_ts170_b070_224_400e_swa200_seed43/2026-08-01-19-01-46",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed1|2026-08-01-23-37-46": {
+      "run_name": "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed1",
+      "timestamp": "2026-08-01-23-37-46",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed1/2026-08-01-23-37-46",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed42|2026-08-01-21-19-48": {
+      "run_name": "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed42",
+      "timestamp": "2026-08-01-21-19-48",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed42/2026-08-01-21-19-48",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed43|2026-08-02-01-56-17": {
+      "run_name": "RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed43",
+      "timestamp": "2026-08-02-01-56-17",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T12_ts085_b070_224_400e_swa200_seed43/2026-08-02-01-56-17",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T12_ts134_b070_224_400e_swa200_seed1|2026-08-02-20-32-30": {
+      "run_name": "RAFDB_stage1_p6tau_T12_ts134_b070_224_400e_swa200_seed1",
+      "timestamp": "2026-08-02-20-32-30",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T12_ts134_b070_224_400e_swa200_seed1/2026-08-02-20-32-30",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T12_ts134_b070_224_400e_swa200_seed42|2026-08-02-18-13-32": {
+      "run_name": "RAFDB_stage1_p6tau_T12_ts134_b070_224_400e_swa200_seed42",
+      "timestamp": "2026-08-02-18-13-32",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T12_ts134_b070_224_400e_swa200_seed42/2026-08-02-18-13-32",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T12_ts134_b070_224_400e_swa200_seed43|2026-08-02-22-51-46": {
+      "run_name": "RAFDB_stage1_p6tau_T12_ts134_b070_224_400e_swa200_seed43",
+      "timestamp": "2026-08-02-22-51-46",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T12_ts134_b070_224_400e_swa200_seed43/2026-08-02-22-51-46",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T12_ts170_b070_224_400e_swa200_seed1|2026-08-03-03-35-12": {
+      "run_name": "RAFDB_stage1_p6tau_T12_ts170_b070_224_400e_swa200_seed1",
+      "timestamp": "2026-08-03-03-35-12",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T12_ts170_b070_224_400e_swa200_seed1/2026-08-03-03-35-12",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T12_ts170_b070_224_400e_swa200_seed42|2026-08-03-01-10-45": {
+      "run_name": "RAFDB_stage1_p6tau_T12_ts170_b070_224_400e_swa200_seed42",
+      "timestamp": "2026-08-03-01-10-45",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T12_ts170_b070_224_400e_swa200_seed42/2026-08-03-01-10-45",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_p6tau_T12_ts170_b070_224_400e_swa200_seed43|2026-08-03-06-00-23": {
+      "run_name": "RAFDB_stage1_p6tau_T12_ts170_b070_224_400e_swa200_seed43",
+      "timestamp": "2026-08-03-06-00-23",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_p6tau_T12_ts170_b070_224_400e_swa200_seed43/2026-08-03-06-00-23",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed1|2026-07-23-23-14-27": {
+      "run_name": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-23-23-14-27",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed1/2026-07-23-23-14-27",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed42|2026-07-23-10-35-11": {
+      "run_name": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-23-10-35-11",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed42/2026-07-23-10-35-11",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed43|2026-07-23-14-53-49": {
+      "run_name": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-23-14-53-49",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed43/2026-07-23-14-53-49",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_tempscale_T1341_halfA_baseline_b070_T6_224_400e_swa200|2026-07-21-11-14-32": {
+      "run_name": "RAFDB_stage1_tempscale_T1341_halfA_baseline_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-21-11-14-32",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_tempscale_T1341_halfA_baseline_b070_T6_224_400e_swa200/2026-07-21-11-14-32",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed1|2026-07-23-10-35-11": {
+      "run_name": "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-23-10-35-11",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed1/2026-07-23-10-35-11",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed43|2026-07-24-03-24-24": {
+      "run_name": "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-24-03-24-24",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed43/2026-07-24-03-24-24",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed1|2026-07-24-03-24-13": {
+      "run_name": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-24-03-24-13",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed1/2026-07-24-03-24-13",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed42|2026-07-23-14-53-49": {
+      "run_name": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-23-14-53-49",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed42/2026-07-23-14-53-49",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed43|2026-07-23-19-06-06": {
+      "run_name": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-23-19-06-06",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed43/2026-07-23-19-06-06",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed1|2026-07-24-07-29-46": {
+      "run_name": "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-24-07-29-46",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed1/2026-07-24-07-29-46",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed42|2026-07-23-19-06-00": {
+      "run_name": "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-23-19-06-00",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed42/2026-07-23-19-06-00",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed43|2026-07-23-23-14-30": {
+      "run_name": "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-23-23-14-30",
+      "origin_run_dir": "results/unified_students/RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed43/2026-07-23-23-14-30",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_adaptive_t_b070_T6_224_400e_swa200|2026-07-19-00-33-08": {
+      "run_name": "RAFDB_vae9182_adaptive_t_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-19-00-33-08",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_adaptive_t_b070_T6_224_400e_swa200/2026-07-19-00-33-08",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_adaptive_t_b070_T6_224_400e_swa200_seed1|2026-07-21-02-47-28": {
+      "run_name": "RAFDB_vae9182_adaptive_t_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-21-02-47-28",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_adaptive_t_b070_T6_224_400e_swa200_seed1/2026-07-21-02-47-28",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_adaptive_t_b070_T6_224_400e_swa200_seed43|2026-07-20-18-35-32": {
+      "run_name": "RAFDB_vae9182_adaptive_t_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-20-18-35-32",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_adaptive_t_b070_T6_224_400e_swa200_seed43/2026-07-20-18-35-32",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_adaptive_t_b070_T6_224_500e_swa200_seed1|2026-07-22-17-00-46": {
+      "run_name": "RAFDB_vae9182_adaptive_t_b070_T6_224_500e_swa200_seed1",
+      "timestamp": "2026-07-22-17-00-46",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_adaptive_t_b070_T6_224_500e_swa200_seed1/2026-07-22-17-00-46",
+      "epochs": 500,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_adaptive_t_b070_T6_224_500e_swa200_seed42|2026-07-22-11-48-05": {
+      "run_name": "RAFDB_vae9182_adaptive_t_b070_T6_224_500e_swa200_seed42",
+      "timestamp": "2026-07-22-11-48-05",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_adaptive_t_b070_T6_224_500e_swa200_seed42/2026-07-22-11-48-05",
+      "epochs": 500,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_adaptive_t_b070_T6_224_500e_swa200_seed43|2026-07-22-22-10-32": {
+      "run_name": "RAFDB_vae9182_adaptive_t_b070_T6_224_500e_swa200_seed43",
+      "timestamp": "2026-07-22-22-10-32",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_adaptive_t_b070_T6_224_500e_swa200_seed43/2026-07-22-22-10-32",
+      "epochs": 500,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_baseline_b070_T6_224_500e_swa200_seed1|2026-07-22-16-58-52": {
+      "run_name": "RAFDB_vae9182_baseline_b070_T6_224_500e_swa200_seed1",
+      "timestamp": "2026-07-22-16-58-52",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_baseline_b070_T6_224_500e_swa200_seed1/2026-07-22-16-58-52",
+      "epochs": 500,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_baseline_b070_T6_224_500e_swa200_seed42|2026-07-22-11-48-04": {
+      "run_name": "RAFDB_vae9182_baseline_b070_T6_224_500e_swa200_seed42",
+      "timestamp": "2026-07-22-11-48-04",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_baseline_b070_T6_224_500e_swa200_seed42/2026-07-22-11-48-04",
+      "epochs": 500,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_baseline_b070_T6_224_500e_swa200_seed43|2026-07-22-22-04-35": {
+      "run_name": "RAFDB_vae9182_baseline_b070_T6_224_500e_swa200_seed43",
+      "timestamp": "2026-07-22-22-04-35",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_baseline_b070_T6_224_500e_swa200_seed43/2026-07-22-22-04-35",
+      "epochs": 500,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed1|2026-07-29-21-20-26": {
+      "run_name": "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-29-21-20-26",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed1/2026-07-29-21-20-26",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed42|2026-07-29-14-24-13": {
+      "run_name": "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-29-14-24-13",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed42/2026-07-29-14-24-13",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed43|2026-07-29-16-44-46": {
+      "run_name": "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-29-16-44-46",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200_seed43/2026-07-29-16-44-46",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA|2026-06-20-18-35-53": {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA",
+      "timestamp": "2026-06-20-18-35-53",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA/2026-06-20-18-35-53",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA_seed1|2026-07-17-16-01-11": {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA_seed1",
+      "timestamp": "2026-07-17-16-01-11",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA_seed1/2026-07-17-16-01-11",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA_seed43|2026-06-20-22-25-30": {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA_seed43",
+      "timestamp": "2026-06-20-22-25-30",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_200e_noSWA_seed43/2026-06-20-22-25-30",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_betaKD_b070_T6_224_amp_classw|2026-06-18-20-47-38": {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_amp_classw",
+      "timestamp": "2026-06-18-20-47-38",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_amp_classw/2026-06-18-20-47-38",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200|2026-06-20-08-38-09": {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+      "timestamp": "2026-06-20-08-38-09",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200/2026-06-20-08-38-09",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1|2026-07-17-18-01-41": {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1",
+      "timestamp": "2026-07-17-18-01-41",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1/2026-07-17-18-01-41",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43|2026-07-17-22-05-44": {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43",
+      "timestamp": "2026-07-17-22-05-44",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43/2026-07-17-22-05-44",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_betaKD_b070_T6_256_amp_classw|2026-06-18-16-41-52": {
+      "run_name": "RAFDB_vae9182_betaKD_b070_T6_256_amp_classw",
+      "timestamp": "2026-06-18-16-41-52",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_256_amp_classw/2026-06-18-16-41-52",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_400e_swa200|2026-07-19-18-37-58": {
+      "run_name": "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-19-18-37-58",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_400e_swa200/2026-07-19-18-37-58",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200|2026-07-20-02-14-04": {
+      "run_name": "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200",
+      "timestamp": "2026-07-20-02-14-04",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200/2026-07-20-02-14-04",
+      "epochs": 500,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200_seed1|2026-07-20-13-22-03": {
+      "run_name": "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200_seed1",
+      "timestamp": "2026-07-20-13-22-03",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200_seed1/2026-07-20-13-22-03",
+      "epochs": 500,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200_seed43|2026-07-20-13-22-48": {
+      "run_name": "RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200_seed43",
+      "timestamp": "2026-07-20-13-22-48",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_combined_g2g_adaptive_t_b070_T6_224_500e_swa200_seed43/2026-07-20-13-22-48",
+      "epochs": 500,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_ctkd_b070_T6_224_400e_swa200|2026-07-19-04-36-29": {
+      "run_name": "RAFDB_vae9182_ctkd_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-19-04-36-29",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_ctkd_b070_T6_224_400e_swa200/2026-07-19-04-36-29",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w050_b070_T6_224_400e_swa200_seed1|2026-07-28-05-52-00": {
+      "run_name": "RAFDB_vae9182_frontier_w050_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-28-05-52-00",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w050_b070_T6_224_400e_swa200_seed1/2026-07-28-05-52-00",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w050_b070_T6_224_400e_swa200_seed42|2026-07-28-05-50-58": {
+      "run_name": "RAFDB_vae9182_frontier_w050_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-28-05-50-58",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w050_b070_T6_224_400e_swa200_seed42/2026-07-28-05-50-58",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w050_b070_T6_224_400e_swa200_seed43|2026-07-28-09-16-09": {
+      "run_name": "RAFDB_vae9182_frontier_w050_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-28-09-16-09",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w050_b070_T6_224_400e_swa200_seed43/2026-07-28-09-16-09",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w050_tempscale_T170_b070_T6_224_400e_swa200_seed1|2026-07-30-05-26-39": {
+      "run_name": "RAFDB_vae9182_frontier_w050_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-30-05-26-39",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w050_tempscale_T170_b070_T6_224_400e_swa200_seed1/2026-07-30-05-26-39",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w050_tempscale_T170_b070_T6_224_400e_swa200_seed42|2026-07-30-01-56-53": {
+      "run_name": "RAFDB_vae9182_frontier_w050_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-30-01-56-53",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w050_tempscale_T170_b070_T6_224_400e_swa200_seed42/2026-07-30-01-56-53",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w050_tempscale_T220_b070_T6_224_400e_swa200_seed1|2026-07-30-05-26-39": {
+      "run_name": "RAFDB_vae9182_frontier_w050_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-30-05-26-39",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w050_tempscale_T220_b070_T6_224_400e_swa200_seed1/2026-07-30-05-26-39",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w050_tempscale_T220_b070_T6_224_400e_swa200_seed42|2026-07-30-01-56-52": {
+      "run_name": "RAFDB_vae9182_frontier_w050_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-30-01-56-52",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w050_tempscale_T220_b070_T6_224_400e_swa200_seed42/2026-07-30-01-56-52",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w075_b070_T6_224_400e_swa200_seed1|2026-07-28-12-59-07": {
+      "run_name": "RAFDB_vae9182_frontier_w075_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-28-12-59-07",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w075_b070_T6_224_400e_swa200_seed1/2026-07-28-12-59-07",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w075_b070_T6_224_400e_swa200_seed42|2026-07-28-09-16-29": {
+      "run_name": "RAFDB_vae9182_frontier_w075_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-28-09-16-29",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w075_b070_T6_224_400e_swa200_seed42/2026-07-28-09-16-29",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w075_b070_T6_224_400e_swa200_seed43|2026-07-28-12-59-33": {
+      "run_name": "RAFDB_vae9182_frontier_w075_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-28-12-59-33",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w075_b070_T6_224_400e_swa200_seed43/2026-07-28-12-59-33",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w100ns_b070_T6_224_400e_swa200_seed1|2026-07-28-17-21-11": {
+      "run_name": "RAFDB_vae9182_frontier_w100ns_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-28-17-21-11",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w100ns_b070_T6_224_400e_swa200_seed1/2026-07-28-17-21-11",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w100ns_b070_T6_224_400e_swa200_seed42|2026-07-28-17-21-01": {
+      "run_name": "RAFDB_vae9182_frontier_w100ns_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-28-17-21-01",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w100ns_b070_T6_224_400e_swa200_seed42/2026-07-28-17-21-01",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w100ns_b070_T6_224_400e_swa200_seed43|2026-07-28-21-29-29": {
+      "run_name": "RAFDB_vae9182_frontier_w100ns_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-28-21-29-29",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w100ns_b070_T6_224_400e_swa200_seed43/2026-07-28-21-29-29",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w100ns_tempscale_T170_b070_T6_224_400e_swa200_seed1|2026-08-08-12-08-14": {
+      "run_name": "RAFDB_vae9182_frontier_w100ns_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-08-12-08-14",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w100ns_tempscale_T170_b070_T6_224_400e_swa200_seed1/2026-08-08-12-08-14",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w100ns_tempscale_T170_b070_T6_224_400e_swa200_seed42|2026-08-08-09-52-11": {
+      "run_name": "RAFDB_vae9182_frontier_w100ns_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-08-08-09-52-11",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w100ns_tempscale_T170_b070_T6_224_400e_swa200_seed42/2026-08-08-09-52-11",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w100ns_tempscale_T220_b070_T6_224_400e_swa200_seed1|2026-08-08-16-49-26": {
+      "run_name": "RAFDB_vae9182_frontier_w100ns_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-08-16-49-26",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w100ns_tempscale_T220_b070_T6_224_400e_swa200_seed1/2026-08-08-16-49-26",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_frontier_w100ns_tempscale_T220_b070_T6_224_400e_swa200_seed42|2026-08-08-14-27-20": {
+      "run_name": "RAFDB_vae9182_frontier_w100ns_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-08-08-14-27-20",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_frontier_w100ns_tempscale_T220_b070_T6_224_400e_swa200_seed42/2026-08-08-14-27-20",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_g2g_kl_b070_T6_224_400e_swa200|2026-07-18-16-18-13": {
+      "run_name": "RAFDB_vae9182_g2g_kl_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-18-16-18-13",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_g2g_kl_b070_T6_224_400e_swa200/2026-07-18-16-18-13",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_g2g_kl_b070_T6_224_400e_swa200_seed1|2026-07-20-18-34-47": {
+      "run_name": "RAFDB_vae9182_g2g_kl_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-20-18-34-47",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_g2g_kl_b070_T6_224_400e_swa200_seed1/2026-07-20-18-34-47",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_g2g_kl_b070_T6_224_400e_swa200_seed43|2026-07-20-22-40-47": {
+      "run_name": "RAFDB_vae9182_g2g_kl_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-20-22-40-47",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_g2g_kl_b070_T6_224_400e_swa200_seed43/2026-07-20-22-40-47",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200|2026-07-19-13-01-18": {
+      "run_name": "RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-19-13-01-18",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200/2026-07-19-13-01-18",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200_seed1|2026-08-08-05-10-46": {
+      "run_name": "RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-08-05-10-46",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200_seed1/2026-08-08-05-10-46",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200_seed43|2026-08-08-07-31-17": {
+      "run_name": "RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-08-07-31-17",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200_seed43/2026-08-08-07-31-17",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_gate_oracle_error_b070_T6_224_400e_swa200|2026-07-20-08-19-25": {
+      "run_name": "RAFDB_vae9182_gate_oracle_error_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-20-08-19-25",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_gate_oracle_error_b070_T6_224_400e_swa200/2026-07-20-08-19-25",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_gate_oracle_error_b070_T6_224_400e_swa200_seed1|2026-07-29-23-37-29": {
+      "run_name": "RAFDB_vae9182_gate_oracle_error_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-29-23-37-29",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_gate_oracle_error_b070_T6_224_400e_swa200_seed1/2026-07-29-23-37-29",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_gate_oracle_error_b070_T6_224_400e_swa200_seed43|2026-07-29-19-02-04": {
+      "run_name": "RAFDB_vae9182_gate_oracle_error_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-29-19-02-04",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_gate_oracle_error_b070_T6_224_400e_swa200_seed43/2026-07-29-19-02-04",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_logit_std_b070_T6_224_400e_swa200|2026-07-18-20-26-49": {
+      "run_name": "RAFDB_vae9182_logit_std_b070_T6_224_400e_swa200",
+      "timestamp": "2026-07-18-20-26-49",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_logit_std_b070_T6_224_400e_swa200/2026-07-18-20-26-49",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_logit_std_b070_T6_224_400e_swa200_seed1|2026-07-29-09-47-35": {
+      "run_name": "RAFDB_vae9182_logit_std_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-29-09-47-35",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_logit_std_b070_T6_224_400e_swa200_seed1/2026-07-29-09-47-35",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_logit_std_b070_T6_224_400e_swa200_seed43|2026-07-29-09-47-35": {
+      "run_name": "RAFDB_vae9182_logit_std_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-29-09-47-35",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_logit_std_b070_T6_224_400e_swa200_seed43/2026-07-29-09-47-35",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_miscalT0731_adaptivetoff_b070_T6_224_400e_swa200_seed1|2026-07-25-23-19-09": {
+      "run_name": "RAFDB_vae9182_miscalT0731_adaptivetoff_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-25-23-19-09",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_miscalT0731_adaptivetoff_b070_T6_224_400e_swa200_seed1/2026-07-25-23-19-09",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_miscalT0731_adaptivetoff_b070_T6_224_400e_swa200_seed42|2026-07-26-03-28-47": {
+      "run_name": "RAFDB_vae9182_miscalT0731_adaptivetoff_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-26-03-28-47",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_miscalT0731_adaptivetoff_b070_T6_224_400e_swa200_seed42/2026-07-26-03-28-47",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_miscalT0731_adaptiveton_b070_T6_224_400e_swa200_seed1|2026-07-26-03-27-51": {
+      "run_name": "RAFDB_vae9182_miscalT0731_adaptiveton_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-26-03-27-51",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_miscalT0731_adaptiveton_b070_T6_224_400e_swa200_seed1/2026-07-26-03-27-51",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_miscalT0731_adaptiveton_b070_T6_224_400e_swa200_seed42|2026-07-26-07-40-31": {
+      "run_name": "RAFDB_vae9182_miscalT0731_adaptiveton_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-26-07-40-31",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_miscalT0731_adaptiveton_b070_T6_224_400e_swa200_seed42/2026-07-26-07-40-31",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed1|2026-07-24-13-00-59": {
+      "run_name": "RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-24-13-00-59",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed1/2026-07-24-13-00-59",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed42|2026-07-24-10-48-02": {
+      "run_name": "RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-24-10-48-02",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed42/2026-07-24-10-48-02",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed43|2026-07-24-15-14-46": {
+      "run_name": "RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-24-15-14-46",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_pluslinear_T6_224_400e_swa200_seed43/2026-07-24-15-14-46",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed1|2026-07-25-10-55-15": {
+      "run_name": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-25-10-55-15",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed1/2026-07-25-10-55-15",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed42|2026-07-24-18-05-50": {
+      "run_name": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-24-18-05-50",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed42/2026-07-24-18-05-50",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed43|2026-07-25-02-43-00": {
+      "run_name": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-25-02-43-00",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed43/2026-07-25-02-43-00",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed1|2026-08-06-13-13-48": {
+      "run_name": "RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-06-13-13-48",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed1/2026-08-06-13-13-48",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed42|2026-08-06-01-16-55": {
+      "run_name": "RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-08-06-01-16-55",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed42/2026-08-06-01-16-55",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed43|2026-08-06-17-45-25": {
+      "run_name": "RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-06-17-45-25",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed43/2026-08-06-17-45-25",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed1|2026-08-06-15-28-49": {
+      "run_name": "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-08-06-15-28-49",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed1/2026-08-06-15-28-49",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed42|2026-08-06-10-55-02": {
+      "run_name": "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-08-06-10-55-02",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed42/2026-08-06-10-55-02",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed43|2026-08-06-20-05-29": {
+      "run_name": "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-08-06-20-05-29",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed43/2026-08-06-20-05-29",
+      "epochs": 400,
+      "in_frozen_audit": false,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed1|2026-07-25-15-03-07": {
+      "run_name": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-25-15-03-07",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed1/2026-07-25-15-03-07",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed42|2026-07-24-22-22-33": {
+      "run_name": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-24-22-22-33",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed42/2026-07-24-22-22-33",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed43|2026-07-25-06-49-04": {
+      "run_name": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-25-06-49-04",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed43/2026-07-25-06-49-04",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed1|2026-07-24-18-05-50": {
+      "run_name": "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-24-18-05-50",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed1/2026-07-24-18-05-50",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed42|2026-07-25-02-43-02": {
+      "run_name": "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-25-02-43-02",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed42/2026-07-25-02-43-02",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed43|2026-07-25-10-55-06": {
+      "run_name": "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-25-10-55-06",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed43/2026-07-25-10-55-06",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed1|2026-07-24-22-22-33": {
+      "run_name": "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+      "timestamp": "2026-07-24-22-22-33",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed1/2026-07-24-22-22-33",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed42|2026-07-25-06-49-11": {
+      "run_name": "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+      "timestamp": "2026-07-25-06-49-11",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed42/2026-07-25-06-49-11",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed43|2026-07-25-15-03-00": {
+      "run_name": "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed43",
+      "timestamp": "2026-07-25-15-03-00",
+      "origin_run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed43/2026-07-25-15-03-00",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_200e_noSWA|2026-07-18-04-13-43": {
+      "run_name": "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_200e_noSWA",
+      "timestamp": "2026-07-18-04-13-43",
+      "origin_run_dir": "results/unified_students/RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_200e_noSWA/2026-07-18-04-13-43",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200|2026-07-18-06-19-36": {
+      "run_name": "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200",
+      "timestamp": "2026-07-18-06-19-36",
+      "origin_run_dir": "results/unified_students/RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200/2026-07-18-06-19-36",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_200e_noSWA|2026-07-18-00-35-41": {
+      "run_name": "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_200e_noSWA",
+      "timestamp": "2026-07-18-00-35-41",
+      "origin_run_dir": "results/unified_students/RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_200e_noSWA/2026-07-18-00-35-41",
+      "epochs": 200,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    },
+    "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200|2026-07-18-01-45-58": {
+      "run_name": "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200",
+      "timestamp": "2026-07-18-01-45-58",
+      "origin_run_dir": "results/unified_students/RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200/2026-07-18-01-45-58",
+      "epochs": 400,
+      "in_frozen_audit": true,
+      "in_rafdb_finished": true
+    }
+  }
+}

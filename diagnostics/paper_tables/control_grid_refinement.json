@@ -1,0 +1,380 @@
+{
+  "note": "review-responsive, not pre-declared (B8)",
+  "checkpoint": "swa",
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "complete": true,
+  "exit_check": {
+    "rows": [
+      {
+        "T": 0.85,
+        "seed": 42,
+        "run": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+        "n_attempts": 1,
+        "finished": [
+          "2026-07-24-18-05-50"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 0.85,
+        "seed": 1,
+        "run": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed1",
+        "n_attempts": 1,
+        "finished": [
+          "2026-07-25-10-55-15"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 0.85,
+        "seed": 43,
+        "run": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed43",
+        "n_attempts": 1,
+        "finished": [
+          "2026-07-25-02-43-00"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 0.95,
+        "seed": 42,
+        "run": "RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed42",
+        "n_attempts": 1,
+        "finished": [
+          "2026-08-06-01-16-55"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 0.95,
+        "seed": 1,
+        "run": "RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed1",
+        "n_attempts": 1,
+        "finished": [
+          "2026-08-06-13-13-48"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 0.95,
+        "seed": 43,
+        "run": "RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed43",
+        "n_attempts": 1,
+        "finished": [
+          "2026-08-06-17-45-25"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 1.0,
+        "seed": 42,
+        "run": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+        "n_attempts": 1,
+        "finished": [
+          "2026-06-20-08-38-09"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 1.0,
+        "seed": 1,
+        "run": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1",
+        "n_attempts": 1,
+        "finished": [
+          "2026-07-17-18-01-41"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 1.0,
+        "seed": 43,
+        "run": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43",
+        "n_attempts": 1,
+        "finished": [
+          "2026-07-17-22-05-44"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 1.1,
+        "seed": 42,
+        "run": "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed42",
+        "n_attempts": 2,
+        "finished": [
+          "2026-08-06-10-55-02"
+        ],
+        "partial": [
+          [
+            "2026-08-06-03-30-23",
+            399
+          ]
+        ],
+        "in_audit": true
+      },
+      {
+        "T": 1.1,
+        "seed": 1,
+        "run": "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed1",
+        "n_attempts": 1,
+        "finished": [
+          "2026-08-06-15-28-49"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 1.1,
+        "seed": 43,
+        "run": "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed43",
+        "n_attempts": 1,
+        "finished": [
+          "2026-08-06-20-05-29"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 1.3406,
+        "seed": 42,
+        "run": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed42",
+        "n_attempts": 1,
+        "finished": [
+          "2026-07-24-22-22-33"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 1.3406,
+        "seed": 1,
+        "run": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed1",
+        "n_attempts": 1,
+        "finished": [
+          "2026-07-25-15-03-07"
+        ],
+        "partial": [],
+        "in_audit": true
+      },
+      {
+        "T": 1.3406,
+        "seed": 43,
+        "run": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed43",
+        "n_attempts": 1,
+        "finished": [
+          "2026-07-25-06-49-04"
+        ],
+        "partial": [],
+        "in_audit": true
+      }
+    ],
+    "n_multi_attempt": 1,
+    "partial_excluded": [
+      {
+        "run": "RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed42",
+        "attempt": "2026-08-06-03-30-23",
+        "epochs": 399
+      }
+    ],
+    "missing": [],
+    "param_mismatches": [],
+    "param_defaults_assumed": [
+      "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200: `teacher_temperature_scale` anahtarı yok → belgelenmiş varsayılan 1 kabul edildi (bayrak bu koşudan sonra eklendi)",
+      "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1: `teacher_temperature_scale` anahtarı yok → belgelenmiş varsayılan 1 kabul edildi (bayrak bu koşudan sonra eklendi)",
+      "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43: `teacher_temperature_scale` anahtarı yok → belgelenmiş varsayılan 1 kabul edildi (bayrak bu koşudan sonra eklendi)"
+    ]
+  },
+  "series": {
+    "0.85": {
+      "n": 3,
+      "ece_mean": 0.044675372809702706,
+      "ece_sd": 0.0013093965879811618,
+      "acc_mean": 89.92829132080078,
+      "acc_sd": 0.05645233955333133,
+      "by_seed": {
+        "42": {
+          "ece": 0.0433990587680716,
+          "acc": 89.96088409423828,
+          "run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed42/2026-07-24-18-05-50"
+        },
+        "1": {
+          "ece": 0.04601551720573818,
+          "acc": 89.96088409423828,
+          "run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed1/2026-07-25-10-55-15"
+        },
+        "43": {
+          "ece": 0.04461154245529833,
+          "acc": 89.86310577392578,
+          "run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed43/2026-07-25-02-43-00"
+        }
+      }
+    },
+    "0.95": {
+      "n": 3,
+      "ece_mean": 0.029611443926696412,
+      "ece_sd": 0.002739658667758992,
+      "acc_mean": 90.06953684488933,
+      "acc_sd": 0.1505483818081896,
+      "by_seed": {
+        "42": {
+          "ece": 0.026492633071219282,
+          "acc": 90.15645599365234,
+          "run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed42/2026-08-06-01-16-55"
+        },
+        "1": {
+          "ece": 0.030712053374019405,
+          "acc": 90.15645599365234,
+          "run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed1/2026-08-06-13-13-48"
+        },
+        "43": {
+          "ece": 0.03162964533485055,
+          "acc": 89.89569854736328,
+          "run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T095_b070_T6_224_400e_swa200_seed43/2026-08-06-17-45-25"
+        }
+      }
+    },
+    "1.0": {
+      "n": 3,
+      "ece_mean": 0.032957236164746107,
+      "ece_sd": 0.001996999098785806,
+      "acc_mean": 89.9500223795573,
+      "acc_sd": 0.3663557063958696,
+      "by_seed": {
+        "42": {
+          "ece": 0.03395739449807376,
+          "acc": 89.63494110107422,
+          "run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200/2026-06-20-08-38-09"
+        },
+        "1": {
+          "ece": 0.03425653685841132,
+          "acc": 89.86310577392578,
+          "run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1/2026-07-17-18-01-41"
+        },
+        "43": {
+          "ece": 0.030657777137753237,
+          "acc": 90.35202026367188,
+          "run_dir": "results/unified_students/RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43/2026-07-17-22-05-44"
+        }
+      }
+    },
+    "1.1": {
+      "n": 3,
+      "ece_mean": 0.034911939860530025,
+      "ece_sd": 0.003243437739314413,
+      "acc_mean": 89.9826151529948,
+      "acc_sd": 0.21702502923590614,
+      "by_seed": {
+        "42": {
+          "ece": 0.037159830885496105,
+          "acc": 89.92829132080078,
+          "run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed42/2026-08-06-10-55-02"
+        },
+        "1": {
+          "ece": 0.03119374535773848,
+          "acc": 90.22164154052734,
+          "run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed1/2026-08-06-15-28-49"
+        },
+        "43": {
+          "ece": 0.03638224333835549,
+          "acc": 89.79791259765625,
+          "run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T110_b070_T6_224_400e_swa200_seed43/2026-08-06-20-05-29"
+        }
+      }
+    },
+    "1.3406": {
+      "n": 3,
+      "ece_mean": 0.06469776256026936,
+      "ece_sd": 0.00299973901247489,
+      "acc_mean": 90.09126281738281,
+      "acc_sd": 0.2933502197265625,
+      "by_seed": {
+        "42": {
+          "ece": 0.0681535900513383,
+          "acc": 90.09126281738281,
+          "run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed42/2026-07-24-22-22-33"
+        },
+        "1": {
+          "ece": 0.06276643690027811,
+          "acc": 89.79791259765625,
+          "run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed1/2026-07-25-15-03-07"
+        },
+        "43": {
+          "ece": 0.06317326072919167,
+          "acc": 90.38461303710938,
+          "run_dir": "results/unified_students/RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed43/2026-07-25-06-49-04"
+        }
+      }
+    }
+  },
+  "gaps_vs_T1": {
+    "0.85": {
+      "n": 3,
+      "mean": 0.011718136644956599,
+      "sd": 0.002256327795741732,
+      "signs": "+++",
+      "per_seed": [
+        0.009441664269997839,
+        0.011758980347326864,
+        0.013953765317545094
+      ],
+      "sigma_control": 0.001996999098785806,
+      "ratio": 5.867872775747037,
+      "same_sign": true,
+      "verdict": "established"
+    },
+    "0.95": {
+      "n": 3,
+      "mean": -0.0033457922380496926,
+      "sd": 0.004221822889637246,
+      "signs": "--+",
+      "per_seed": [
+        -0.007464761426854476,
+        -0.003544483484391913,
+        0.0009718681970973114
+      ],
+      "sigma_control": 0.001996999098785806,
+      "ratio": 1.6754099889599174,
+      "same_sign": false,
+      "verdict": "unresolved"
+    },
+    "1.1": {
+      "n": 3,
+      "mean": 0.001954703695783921,
+      "sd": 0.004524555462085978,
+      "signs": "+-+",
+      "per_seed": [
+        0.003202436387422347,
+        -0.0030627915006728387,
+        0.0057244662006022545
+      ],
+      "sigma_control": 0.001996999098785806,
+      "ratio": 0.9788205197350358,
+      "same_sign": false,
+      "verdict": "unresolved"
+    },
+    "1.3406": {
+      "n": 3,
+      "mean": 0.03174052639552326,
+      "sd": 0.0029212853596252927,
+      "signs": "+++",
+      "per_seed": [
+        0.03419619555326454,
+        0.028509900041866792,
+        0.03251548359143844
+      ],
+      "sigma_control": 0.001996999098785806,
+      "ratio": 15.89411152705166,
+      "same_sign": true,
+      "verdict": "established"
+    }
+  },
+  "sigma_control": 0.001996999098785806
+}

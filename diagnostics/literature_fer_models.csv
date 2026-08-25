@@ -1,0 +1,19 @@
+model,params_m,gmacs,rafdb_acc,rafdb_ece,year,venue,source_note
+# Published lightweight FER models, for positioning our capacity curve on the same plane.
+#
+# THIS FILE IS DELIBERATELY EMPTY OF DATA. Numbers here go straight into a paper figure, so they
+# must be transcribed from the papers themselves, not recalled. Every row needs `source_note` to
+# say where it came from (paper table number, or the official repo), so a reviewer's spot-check
+# lands on the same number.
+#
+# Fill in what you can and leave the rest blank -- the figure plots any row that has at least
+# params_m and rafdb_acc, and reports which fields were missing.
+#
+# rafdb_ece is almost never published. Leave it blank rather than guessing; the figure will draw
+# those models on the accuracy panel only and will state in its caption how many models could not
+# be placed on the calibration panel. That absence is itself a finding worth one sentence: the
+# lightweight-FER literature reports accuracy and compute, essentially never calibration.
+#
+# gmacs: use MACs (multiply-accumulates), not FLOPs (= 2x MACs). Our numbers are MACs. If a paper
+# reports "FLOPs" for a conv net it usually means MACs, but check the input resolution matches
+# 224x224 before comparing -- a 112x112 number is 4x smaller for the same architecture.

@@ -1,0 +1,61 @@
+model_name: POSTERv2
+
+# dataset configs
+dataset_name: RAFDB
+num_classes: 7
+train_root: data/rafdb_aligned
+val_root: data/rafdb_aligned
+metadata: data/rafdb_aligned/metadata_rafdb_poster_var.csv
+train_frac: 1
+val_frac: 1
+sample_numbers: 0
+train_folds: [2]
+val_folds: [3]
+train_size: 224
+val_size: 224
+train_resize_size: 224
+transforms_name: RAFDB_RECIPE
+aug_random_erasing_p: 0.5
+train_shuffle: True
+batch_size: 48
+cache_img: True
+update_freq: 1
+eval_freq: 1
+num_workers: 8
+
+# model/pretrain configs
+pretrained_timm: False
+pretrained_local: ~
+vae_head: False
+vich_head: True
+vich_use_sampling: True
+vich_logvar_min: -10.0
+vich_logvar_max: 10.0
+vich_init_logvar_bias: 0.0
+layer_embedding: True
+votes_sum: 0
+landmarks: 68
+
+# optimizer configs
+schedule_name: ExponentialLR
+gamma: 0.98
+use_sam: True
+rho: 0.05
+optimizer: AdamW
+init_lr: 0.000009
+weight_decay: 0.0001
+max_epochs: 200
+t_max: 200
+use_amp: False
+
+embedding_file: ~
+loss_name: ce_kld_loss
+ce_kld_beta: 0.0001
+metric_name: acc
+metric_direction: up
+valid_metrics: {"acc/valid": 0}
+debug_after: {"train": 1000, "valid": 1000}
+seed: 1
+use_swanlab: False
+use_wandb: False
+log_root: results/teacher_logs

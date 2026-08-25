@@ -1,0 +1,400 @@
+{
+  "rows": [
+    {
+      "script": "diagnostics/a12_realsignal_verdict.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/a13_scratch_dose_verdict.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/abs_path_gate.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/adaptive_t_headroom_table.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/asymmetry_estimand.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/audit_population.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/b015_verdict.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/bootstrap_cis.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/build_replicate_queue.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/build_runs_ledger.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/capacity_law_check.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/control_grid_refinement.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/control_sd_mde.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/criterion_applied.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/denominator_table.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/dose_response_per_seed.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/efficiency_retention.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/equivalence_tests.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/ferplus_abstention_entropy.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/ferplus_human_vote_jsd.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/ferplus_selection_audit.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/ferplus_student_jsd.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/g42_init_matched_lever.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/graphical_abstract.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/headroom_grid_audit.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/headroom_review.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/holm_family.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/inferential_tests.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/jsd_collapse_audit.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/jsd_sensitivity.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/latency_benchmark.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/level1_gate.py",
+      "status": "muaf",
+      "note": "kapının kendisi — kendini koşturmak özyineleme olur"
+    },
+    {
+      "script": "diagnostics/mechanism_diagnostic_figure.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/mechanism_grid_gaps.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/mechanism_specs.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/monotonicity_test.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/noise_units.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/number_audit_round3.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/number_ledger.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/order_stat_trend.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/p2_gate_oracle_verdict.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/p4_teacher_selection_recipe.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/p5_efficiency_frontier.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/p5_oracle_replication_verdict.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/p6_verdict.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/paper_tables.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/perclass_calibration.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/perclass_crossing_table.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/prereg_lead_audit.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/public_repo_staleness.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/public_repo_sync.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/public_scope_buckets.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/public_scope_scan.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/publish_epoch_curves.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/publish_student_logits.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/r3w1_joint_optimum.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/rafdb_signal_quality_table.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/regression_line_provenance.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/reliability_diagram.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/robustness_metrics.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/run_manifest_census.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/section54_numbers.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/selection_audit_inference.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/selection_audit_table.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/selection_distribution_figure.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/selection_gain_estimator.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/selection_optimism_headline.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/selection_robustness.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/split_identity.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/status_heartbeat.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/student_ts_baseline.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/t5_pairing_diff.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/tau_t_factorial.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/teacher_ece_grid.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/tstar_provenance.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/tstar_sensitivity.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/tstar_stability.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/two_dataset_overlay.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
+      "script": "diagnostics/vich_isolation_verdict.py",
+      "status": "muaf",
+      "note": "Level 3 — koşu dizini okumak işi"
+    }
+  ],
+  "violations": []
+}

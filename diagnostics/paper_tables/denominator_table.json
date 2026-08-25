@@ -1,0 +1,296 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "checkpoint": "swa",
+  "convention": "each treatment is divided by ITS OWN control arm's seed sd, per teacher, at the same class_weight_mode",
+  "control_arms": {
+    "primary/effective_number": {
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "acc_mean": 89.60234832763672,
+      "acc_sd": 0.13037872314453125,
+      "ece_mean": 0.07071035382852302,
+      "ece_sd": 0.0015160512777447031
+    },
+    "primary/none": {
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "acc_mean": 89.26553853352864,
+      "acc_sd": 0.3942937816679289,
+      "ece_mean": 0.07550573005611769,
+      "ece_sd": 0.0033333763685349763
+    },
+    "stage1/effective_number": {
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "acc_mean": 89.60234832763672,
+      "acc_sd": 0.34029864066348586,
+      "ece_mean": 0.07312947179942429,
+      "ece_sd": 0.0011822187508027879
+    },
+    "stage1/none": {
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "acc_mean": 89.65667215983073,
+      "acc_sd": 0.09957672977697758,
+      "ece_mean": 0.07448867909522845,
+      "ece_sd": 0.0021071884659464015
+    },
+    "vae9182/effective_number": {
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "acc_mean": 89.9500223795573,
+      "acc_sd": 0.3663557063958696,
+      "ece_mean": 0.032957236164746107,
+      "ece_sd": 0.001996999098785806
+    },
+    "vae9182/none": {
+      "n": 3,
+      "seeds": [
+        1,
+        42,
+        43
+      ],
+      "acc_mean": 90.14558919270833,
+      "acc_sd": 0.20700072136152095,
+      "ece_mean": 0.027766280970667714,
+      "ece_sd": 0.0026997325636259157
+    }
+  },
+  "rows": {
+    "primary/adaptive_t": {
+      "class_weight_mode": "effective_number",
+      "n": 3,
+      "d_acc_mean": -0.39113616943359375,
+      "d_ece_mean": 0.0023061123598481967,
+      "control_acc_sd": 0.13037872314453125,
+      "control_ece_sd": 0.0015160512777447031,
+      "d_acc_over_control_sd": 3.0,
+      "d_ece_over_control_sd": 1.5211308441221054
+    },
+    "primary/ctkd": {
+      "class_weight_mode": "effective_number",
+      "n": 1,
+      "d_acc_mean": -0.488922119140625,
+      "d_ece_mean": 0.0037733874923635835,
+      "control_acc_sd": 0.13037872314453125,
+      "control_ece_sd": 0.0015160512777447031,
+      "d_acc_over_control_sd": 3.7500146292936978,
+      "d_ece_over_control_sd": 2.4889576940807188
+    },
+    "primary/g2g_kl": {
+      "class_weight_mode": "effective_number",
+      "n": 3,
+      "d_acc_mean": -0.14124298095703125,
+      "d_ece_mean": -0.0016073193830129923,
+      "control_acc_sd": 0.13037872314453125,
+      "control_ece_sd": 0.0015160512777447031,
+      "d_acc_over_control_sd": 1.0833284569021007,
+      "d_ece_over_control_sd": 1.060201199397464
+    },
+    "primary/gate:mean_logvar": {
+      "class_weight_mode": "none",
+      "n": 3,
+      "d_acc_mean": 0.19556681315104166,
+      "d_ece_mean": -0.005575578808719728,
+      "control_acc_sd": 0.3942937816679289,
+      "control_ece_sd": 0.0033333763685349763,
+      "d_acc_over_control_sd": 0.49599263859491066,
+      "d_ece_over_control_sd": 1.6726520477404725
+    },
+    "primary/gate:oracle_error": {
+      "class_weight_mode": "none",
+      "n": 3,
+      "d_acc_mean": -0.010866800944010416,
+      "d_ece_mean": 0.0003758442743168518,
+      "control_acc_sd": 0.3942937816679289,
+      "control_ece_sd": 0.0033333763685349763,
+      "d_acc_over_control_sd": 0.027560163130247766,
+      "d_ece_over_control_sd": 0.11275182660577747
+    },
+    "primary/gate:target_logvar": {
+      "class_weight_mode": "none",
+      "n": 3,
+      "d_acc_mean": -0.08692169189453125,
+      "d_ece_mean": -0.000783022242180941,
+      "control_acc_sd": 0.3942937816679289,
+      "control_ece_sd": 0.0033333763685349763,
+      "d_acc_over_control_sd": 0.2204490558457146,
+      "d_ece_over_control_sd": 0.23490363991662916
+    },
+    "primary/logit_std": {
+      "class_weight_mode": "effective_number",
+      "n": 3,
+      "d_acc_mean": -0.31508127848307294,
+      "d_ece_mean": 0.0859243000838509,
+      "control_acc_sd": 0.13037872314453125,
+      "control_ece_sd": 0.0015160512777447031,
+      "d_acc_over_control_sd": 2.4166617902354344,
+      "d_ece_over_control_sd": 56.676381165466225
+    },
+    "stage1/adaptive_t": {
+      "class_weight_mode": "effective_number",
+      "n": 3,
+      "d_acc_mean": 0.16297149658203125,
+      "d_ece_mean": -0.0010947850409381982,
+      "control_acc_sd": 0.34029864066348586,
+      "control_ece_sd": 0.0011822187508027879,
+      "d_acc_over_control_sd": 0.4789072805706277,
+      "d_ece_over_control_sd": 0.9260426974236218
+    },
+    "stage1/ctkd": {
+      "class_weight_mode": "effective_number",
+      "n": 1,
+      "d_acc_mean": -0.0325927734375,
+      "d_ece_mean": 0.0058220425496822575,
+      "control_acc_sd": 0.34029864066348586,
+      "control_ece_sd": 0.0011822187508027879,
+      "d_acc_over_control_sd": 0.09577697217348072,
+      "d_ece_over_control_sd": 4.924674511996015
+    },
+    "stage1/g2g_kl": {
+      "class_weight_mode": "effective_number",
+      "n": 3,
+      "d_acc_mean": 0.4128621419270833,
+      "d_ece_mean": -0.004224809653237821,
+      "control_acc_sd": 0.34029864066348586,
+      "control_ece_sd": 0.0011822187508027879,
+      "d_acc_over_control_sd": 1.2132347667393535,
+      "d_ece_over_control_sd": 3.5736276813144405
+    },
+    "stage1/gate:mean_logvar": {
+      "class_weight_mode": "none",
+      "n": 3,
+      "d_acc_mean": -0.09778340657552083,
+      "d_ece_mean": -0.0011666860813513748,
+      "control_acc_sd": 0.09957672977697758,
+      "control_ece_sd": 0.0021071884659464015,
+      "d_acc_over_control_sd": 0.9819905393009666,
+      "d_ece_over_control_sd": 0.5536695460353049
+    },
+    "stage1/gate:oracle_error": {
+      "class_weight_mode": "none",
+      "n": 3,
+      "d_acc_mean": -0.21729532877604166,
+      "d_ece_mean": 0.0015442045660497654,
+      "control_acc_sd": 0.09957672977697758,
+      "control_ece_sd": 0.0021071884659464015,
+      "d_acc_over_control_sd": 2.182189847595105,
+      "d_ece_over_control_sd": 0.7328269829705132
+    },
+    "stage1/gate:target_logvar": {
+      "class_weight_mode": "none",
+      "n": 3,
+      "d_acc_mean": 0.2498906453450521,
+      "d_ece_mean": -0.00414632082710779,
+      "control_acc_sd": 0.09957672977697758,
+      "control_ece_sd": 0.0021071884659464015,
+      "d_acc_over_control_sd": 2.5095285405007095,
+      "d_ece_over_control_sd": 1.9677028866260202
+    },
+    "stage1/logit_std": {
+      "class_weight_mode": "effective_number",
+      "n": 3,
+      "d_acc_mean": -0.22815958658854166,
+      "d_ece_mean": 0.09058681609467649,
+      "control_acc_sd": 0.34029864066348586,
+      "control_ece_sd": 0.0011822187508027879,
+      "d_acc_over_control_sd": 0.6704686981519972,
+      "d_ece_over_control_sd": 76.6244115424183
+    },
+    "vae9182/adaptive_t": {
+      "class_weight_mode": "effective_number",
+      "n": 3,
+      "d_acc_mean": 0.28248341878255206,
+      "d_ece_mean": -0.004198156860614539,
+      "control_acc_sd": 0.3663557063958696,
+      "control_ece_sd": 0.001996999098785806,
+      "d_acc_over_control_sd": 0.7710632422286103,
+      "d_ece_over_control_sd": 2.102232726678273
+    },
+    "vae9182/ctkd": {
+      "class_weight_mode": "effective_number",
+      "n": 1,
+      "d_acc_mean": -0.13037872314453125,
+      "d_ece_mean": 0.0038133553597187314,
+      "control_acc_sd": 0.3663557063958696,
+      "control_ece_sd": 0.001996999098785806,
+      "d_acc_over_control_sd": 0.3558801483595539,
+      "d_ece_over_control_sd": 1.90954285459482
+    },
+    "vae9182/g2g_kl": {
+      "class_weight_mode": "effective_number",
+      "n": 3,
+      "d_acc_mean": 0.16297403971354166,
+      "d_ece_mean": 0.000935986782159041,
+      "control_acc_sd": 0.3663557063958696,
+      "control_ece_sd": 0.001996999098785806,
+      "d_acc_over_control_sd": 0.44485192087451286,
+      "d_ece_over_control_sd": 0.4686966472484287
+    },
+    "vae9182/g2g_kl+adaptive_t": {
+      "class_weight_mode": "effective_number",
+      "n": 1,
+      "d_acc_mean": -0.065185546875,
+      "d_ece_mean": -0.0018300160697650378,
+      "control_acc_sd": 0.3663557063958696,
+      "control_ece_sd": 0.001996999098785806,
+      "d_acc_over_control_sd": 0.1779296616293539,
+      "d_ece_over_control_sd": 0.9163830223447293
+    },
+    "vae9182/gate:mean_logvar": {
+      "class_weight_mode": "none",
+      "n": 3,
+      "d_acc_mean": -0.27161916097005206,
+      "d_ece_mean": 0.0014772778445743887,
+      "control_acc_sd": 0.20700072136152095,
+      "control_ece_sd": 0.0026997325636259157,
+      "d_acc_over_control_sd": 1.3121652870749025,
+      "d_ece_over_control_sd": 0.547194142293231
+    },
+    "vae9182/gate:oracle_error": {
+      "class_weight_mode": "none",
+      "n": 3,
+      "d_acc_mean": -0.2281621297200521,
+      "d_ece_mean": 0.0056094699780068575,
+      "control_acc_sd": 0.20700072136152095,
+      "control_ece_sd": 0.0026997325636259157,
+      "d_acc_over_control_sd": 1.102228669636244,
+      "d_ece_over_control_sd": 2.077787279223308
+    },
+    "vae9182/logit_std": {
+      "class_weight_mode": "effective_number",
+      "n": 3,
+      "d_acc_mean": -0.11951446533203125,
+      "d_ece_mean": 0.13877768606523855,
+      "control_acc_sd": 0.3663557063958696,
+      "control_ece_sd": 0.001996999098785806,
+      "d_acc_over_control_sd": 0.3262252047546616,
+      "d_ece_over_control_sd": 69.49311401773625
+    }
+  },
+  "pooled_denominator_used_by_T5a": {
+    "acc_sd": 0.2790110234012956,
+    "ece_sd": 0.001565089709111099,
+    "over": "effective_number control arms, 3 teachers"
+  }
+}

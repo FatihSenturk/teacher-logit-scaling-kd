@@ -1,0 +1,305 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "recipe_step3_ranking": {
+    "rows": [
+      {
+        "teacher": "stage1",
+        "teacher_acc": 92.24250030517578,
+        "teacher_ece": 0.03779733980455796,
+        "T_star": 1.3493927210953593,
+        "teacher_headroom": 0.0219672559584446,
+        "student_acc": 89.75445302327473,
+        "student_ece": 0.06268735786900734,
+        "student_acc_sd": 0.08202738991711436,
+        "n_seeds": 3,
+        "student_by_ckpt": {
+          "swa": {
+            "acc_mean": 89.60234832763672,
+            "acc_sd": 0.34029864066348586,
+            "ece_mean": 0.07312947179942429,
+            "ece_sd": 0.0011822187508027879,
+            "n": 3
+          },
+          "best": {
+            "acc_mean": 89.75445302327473,
+            "acc_sd": 0.08202738991711436,
+            "ece_mean": 0.06268735786900734,
+            "ece_sd": 0.005377395848968684,
+            "n": 3
+          },
+          "last": {
+            "acc_mean": 88.99391682942708,
+            "acc_sd": 0.09957672977697758,
+            "ece_mean": 0.07005376838915041,
+            "ece_sd": 0.008143678659054292,
+            "n": 3
+          }
+        },
+        "arm_runs": [
+          "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200"
+        ]
+      },
+      {
+        "teacher": "primary",
+        "teacher_acc": 92.01434326171875,
+        "teacher_ece": 0.039575973411504727,
+        "T_star": 1.2613411785961113,
+        "teacher_headroom": 0.020571786764586607,
+        "student_acc": 89.5697530110677,
+        "student_ece": 0.06064203634424243,
+        "student_acc_sd": 0.08623669851763957,
+        "n_seeds": 3,
+        "student_by_ckpt": {
+          "swa": {
+            "acc_mean": 89.60234832763672,
+            "acc_sd": 0.13037872314453125,
+            "ece_mean": 0.07071035382852302,
+            "ece_sd": 0.0015160512777447031,
+            "n": 3
+          },
+          "best": {
+            "acc_mean": 89.5697530110677,
+            "acc_sd": 0.08623669851763957,
+            "ece_mean": 0.06064203634424243,
+            "ece_sd": 0.008490947711198687,
+            "n": 3
+          },
+          "last": {
+            "acc_mean": 88.49413553873698,
+            "acc_sd": 0.2587129791822882,
+            "ece_mean": 0.0701168366278425,
+            "ece_sd": 0.0030779976861328583,
+            "n": 3
+          }
+        },
+        "arm_runs": [
+          "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed1",
+          "RAFDB_primary_baseline_b070_T6_224_400e_swa200_seed43",
+          "RAFDB_vichteacher_primary_9201_betaKD_b070_T6_224_best_400e_swa200"
+        ]
+      },
+      {
+        "teacher": "vae9182",
+        "teacher_acc": 91.81877136230469,
+        "teacher_ece": 0.013553927899028671,
+        "T_star": 0.9829375448886304,
+        "teacher_headroom": 0.0017450385019085989,
+        "student_acc": 90.27596791585286,
+        "student_ece": 0.027442872111419655,
+        "student_acc_sd": 0.19098772580899204,
+        "n_seeds": 3,
+        "student_by_ckpt": {
+          "swa": {
+            "acc_mean": 89.9500223795573,
+            "acc_sd": 0.3663557063958696,
+            "ece_mean": 0.032957236164746107,
+            "ece_sd": 0.001996999098785806,
+            "n": 3
+          },
+          "best": {
+            "acc_mean": 90.27596791585286,
+            "acc_sd": 0.19098772580899204,
+            "ece_mean": 0.027442872111419655,
+            "ece_sd": 0.002106648231758117,
+            "n": 3
+          },
+          "last": {
+            "acc_mean": 89.81964365641277,
+            "acc_sd": 0.16726154800857174,
+            "ece_mean": 0.03073756476100866,
+            "ece_sd": 0.0010717752881161812,
+            "n": 3
+          }
+        },
+        "arm_runs": [
+          "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+          "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1",
+          "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43"
+        ]
+      }
+    ],
+    "spearman_teacherACC_vs_studentACC": -0.5,
+    "spearman_negTeacherECE_vs_studentACC": 1.0,
+    "spearman_teacherECE_vs_studentECE": 0.5,
+    "n_teachers": 3,
+    "picked_by_accuracy": "stage1",
+    "picked_by_ece": "vae9182",
+    "actually_best": "vae9182",
+    "accuracy_criterion_correct": false,
+    "ece_criterion_correct": true,
+    "cost_of_wrong_pick_pp": 0.521514892578125,
+    "student_source": "runs.csv + selection audit, T=1 baseline arm (is_ablation_control, cw=effective_number); columns above are @best",
+    "primary_checkpoint": "swa",
+    "per_checkpoint": {
+      "picked_by_accuracy": "stage1",
+      "picked_by_ece": "vae9182",
+      "by_ckpt": {
+        "swa": {
+          "student_acc": {
+            "stage1": 89.60234832763672,
+            "primary": 89.60234832763672,
+            "vae9182": 89.9500223795573
+          },
+          "ranking": [
+            "vae9182",
+            "stage1",
+            "primary"
+          ],
+          "ties": [
+            [
+              "stage1",
+              "primary"
+            ]
+          ],
+          "strict_total_order": false,
+          "best_teacher": "vae9182",
+          "spearman_teacherACC_vs_studentACC": -0.8660254037844387,
+          "spearman_negTeacherECE_vs_studentACC": 0.8660254037844387,
+          "accuracy_criterion_correct": false,
+          "ece_criterion_correct": true,
+          "cost_of_wrong_pick_pp": 0.34767405192057765,
+          "ranking_display": "vae9182 > {stage1 = primary}"
+        },
+        "best": {
+          "student_acc": {
+            "stage1": 89.75445302327473,
+            "primary": 89.5697530110677,
+            "vae9182": 90.27596791585286
+          },
+          "ranking": [
+            "vae9182",
+            "stage1",
+            "primary"
+          ],
+          "ties": [],
+          "strict_total_order": true,
+          "best_teacher": "vae9182",
+          "spearman_teacherACC_vs_studentACC": -0.5,
+          "spearman_negTeacherECE_vs_studentACC": 1.0,
+          "accuracy_criterion_correct": false,
+          "ece_criterion_correct": true,
+          "cost_of_wrong_pick_pp": 0.521514892578125,
+          "ranking_display": "vae9182 > stage1 > primary"
+        },
+        "last": {
+          "student_acc": {
+            "stage1": 88.99391682942708,
+            "primary": 88.49413553873698,
+            "vae9182": 89.81964365641277
+          },
+          "ranking": [
+            "vae9182",
+            "stage1",
+            "primary"
+          ],
+          "ties": [],
+          "strict_total_order": true,
+          "best_teacher": "vae9182",
+          "spearman_teacherACC_vs_studentACC": -0.5,
+          "spearman_negTeacherECE_vs_studentACC": 1.0,
+          "accuracy_criterion_correct": false,
+          "ece_criterion_correct": true,
+          "cost_of_wrong_pick_pp": 0.8257268269856866,
+          "ranking_display": "vae9182 > stage1 > primary"
+        }
+      },
+      "ckpts_with_ties": [
+        "swa"
+      ],
+      "ranking_identical_among_strict_ckpts": true,
+      "ranking_identical_across_ckpts": false,
+      "best_teacher_identical_across_ckpts": true,
+      "pairwise_reversals": []
+    }
+  },
+  "recipe_step5_predictor": {
+    "available": true,
+    "n_points": 10,
+    "intercept": 0.02483822877133999,
+    "slope": 0.7836381211523507,
+    "pearson": 0.9920490654025893,
+    "spearman": 0.9878787878787879,
+    "loo_mean_abs_error": 0.0075911663219747315,
+    "loo_max_abs_error": 0.017926021103909458,
+    "student_ece_range": [
+      0.027254548498543904,
+      0.2285484812622716
+    ],
+    "loo_error_as_pct_of_range": 3.77118486272758,
+    "points": [
+      {
+        "teacher": "stage1",
+        "T": 0.85,
+        "teacher_ece": 0.04538044133351088,
+        "student_ece": 0.07619637387380918,
+        "n_seeds": 3
+      },
+      {
+        "teacher": "stage1",
+        "T": 1.0,
+        "teacher_ece": 0.03779733980455796,
+        "student_ece": 0.06312040706488528,
+        "n_seeds": 3
+      },
+      {
+        "teacher": "stage1",
+        "T": 1.3406,
+        "teacher_ece": 0.015897414849820938,
+        "student_ece": 0.033938331595067095,
+        "n_seeds": 3
+      },
+      {
+        "teacher": "stage1",
+        "T": 1.7,
+        "teacher_ece": 0.0428967674249465,
+        "student_ece": 0.056058744260833245,
+        "n_seeds": 3
+      },
+      {
+        "teacher": "stage1",
+        "T": 2.2,
+        "teacher_ece": 0.1269590755902726,
+        "student_ece": 0.11792273246001181,
+        "n_seeds": 3
+      },
+      {
+        "teacher": "vae9182",
+        "T": 0.85,
+        "teacher_ece": 0.0250310669452768,
+        "student_ece": 0.035646825849116236,
+        "n_seeds": 3
+      },
+      {
+        "teacher": "vae9182",
+        "T": 1.0,
+        "teacher_ece": 0.013553927899028671,
+        "student_ece": 0.027254548498543904,
+        "n_seeds": 3
+      },
+      {
+        "teacher": "vae9182",
+        "T": 1.3406,
+        "teacher_ece": 0.06270611134140401,
+        "student_ece": 0.07671940203647622,
+        "n_seeds": 3
+      },
+      {
+        "teacher": "vae9182",
+        "T": 1.7,
+        "teacher_ece": 0.14541721431419466,
+        "student_ece": 0.14248743445419426,
+        "n_seeds": 3
+      },
+      {
+        "teacher": "vae9182",
+        "T": 2.2,
+        "teacher_ece": 0.2621571478255414,
+        "student_ece": 0.2285484812622716,
+        "n_seeds": 3
+      }
+    ]
+  },
+  "hours_per_student_run": 4.3
+}

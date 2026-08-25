@@ -1,0 +1,385 @@
+{
+  "status": "PRE-REGISTERED (PREREGISTRATIONS.md A8, frozen 2026-07-29 01:26:59)",
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "primary_checkpoint": "swa",
+  "treatment": "RAFDB_vae9182_gate_oracle_error_b070_T6_224_400e_swa200",
+  "control": "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200",
+  "seeds": [
+    42,
+    1,
+    43
+  ],
+  "by_checkpoint": {
+    "swa": {
+      "d_acc": [
+        -0.7822647094726562,
+        -0.06519317626953125,
+        0.16297149658203125
+      ],
+      "d_ece": [
+        0.0101519223919437,
+        0.003834111618443912,
+        0.0028423759236329595
+      ],
+      "treat": {
+        "acc_mean": 89.91742706298828,
+        "acc_sd": 0.2957545208233005,
+        "ece_mean": 0.03337575094867457,
+        "ece_sd": 0.0014888963868640356,
+        "n": 3
+      },
+      "control": {
+        "acc_mean": 90.14558919270833,
+        "acc_sd": 0.20700072136152095,
+        "ece_mean": 0.027766280970667714,
+        "ece_sd": 0.0026997325636259157,
+        "n": 3
+      },
+      "per_seed": {
+        "42": {
+          "treat_acc": 89.60234832763672,
+          "control_acc": 90.38461303710938,
+          "d_acc": -0.7822647094726562,
+          "treat_ece": 0.03482143164186154,
+          "control_ece": 0.024669509249917843,
+          "d_ece": 0.0101519223919437
+        },
+        "1": {
+          "treat_acc": 89.96088409423828,
+          "control_acc": 90.02607727050781,
+          "d_acc": -0.06519317626953125,
+          "treat_ece": 0.03345871327695044,
+          "control_ece": 0.02962460165850653,
+          "d_ece": 0.003834111618443912
+        },
+        "43": {
+          "treat_acc": 90.18904876708984,
+          "control_acc": 90.02607727050781,
+          "d_acc": 0.16297149658203125,
+          "treat_ece": 0.03184710792721173,
+          "control_ece": 0.02900473200357877,
+          "d_ece": 0.0028423759236329595
+        }
+      }
+    },
+    "best": {
+      "d_acc": [
+        -1.0104293823242188,
+        -0.3259429931640625,
+        0.0
+      ],
+      "d_ece": [
+        0.007659299180125319,
+        0.004779414318725368,
+        0.01200566375251699
+      ],
+      "treat": {
+        "acc_mean": 89.9391581217448,
+        "acc_sd": 0.24894723524925297,
+        "ece_mean": 0.030662883846967543,
+        "ece_sd": 0.002508131931843162,
+        "n": 3
+      },
+      "control": {
+        "acc_mean": 90.38461558024089,
+        "acc_sd": 0.2667949993859203,
+        "ece_mean": 0.022514758096511652,
+        "ece_sd": 0.0012174427703629184,
+        "n": 3
+      },
+      "per_seed": {
+        "42": {
+          "treat_acc": 89.66753387451172,
+          "control_acc": 90.67796325683594,
+          "d_acc": -1.0104293823242188,
+          "treat_ece": 0.029898750813097497,
+          "control_ece": 0.02223945163297218,
+          "d_ece": 0.007659299180125319
+        },
+        "1": {
+          "treat_acc": 89.99348449707031,
+          "control_acc": 90.31942749023438,
+          "d_acc": -0.3259429931640625,
+          "treat_ece": 0.02862569400761398,
+          "control_ece": 0.02384627968888861,
+          "d_ece": 0.004779414318725368
+        },
+        "43": {
+          "treat_acc": 90.15645599365234,
+          "control_acc": 90.15645599365234,
+          "d_acc": 0.0,
+          "treat_ece": 0.03346420672019115,
+          "control_ece": 0.021458542967674164,
+          "d_ece": 0.01200566375251699
+        }
+      }
+    },
+    "last": {
+      "d_acc": [
+        -0.7822647094726562,
+        -0.2281646728515625,
+        -0.0977783203125
+      ],
+      "d_ece": [
+        0.010818445263369766,
+        0.006782526215914804,
+        -0.001926810574150773
+      ],
+      "treat": {
+        "acc_mean": 89.23294321695964,
+        "acc_sd": 0.2921429189757646,
+        "ece_mean": 0.03489658799020817,
+        "ece_sd": 0.006192299391400205,
+        "n": 3
+      },
+      "control": {
+        "acc_mean": 89.6023457845052,
+        "acc_sd": 0.2667949993859203,
+        "ece_mean": 0.02967186768849691,
+        "ece_sd": 0.003935573403821359,
+        "n": 3
+      },
+      "per_seed": {
+        "42": {
+          "treat_acc": 89.0482406616211,
+          "control_acc": 89.83050537109375,
+          "d_acc": -0.7822647094726562,
+          "treat_ece": 0.036392109050880514,
+          "control_ece": 0.025573663787510748,
+          "d_ece": 0.010818445263369766
+        },
+        "1": {
+          "treat_acc": 89.0808334350586,
+          "control_acc": 89.30899810791016,
+          "d_acc": -0.2281646728515625,
+          "treat_ece": 0.04020416678319233,
+          "control_ece": 0.033421640567277526,
+          "d_ece": 0.006782526215914804
+        },
+        "43": {
+          "treat_acc": 89.56975555419922,
+          "control_acc": 89.66753387451172,
+          "d_acc": -0.0977783203125,
+          "treat_ece": 0.02809348813655168,
+          "control_ece": 0.030020298710702453,
+          "d_ece": -0.001926810574150773
+        }
+      }
+    }
+  },
+  "verdict": {
+    "P2.1": {
+      "statement": "|mean d_acc| <= control seed sd",
+      "bar": 0.20700072136152095,
+      "measured": 0.2281621297200521,
+      "ratio": 1.102228669636244,
+      "holds": false
+    },
+    "P2.2": {
+      "statement": "|mean d_ECE| <= control seed sd",
+      "bar": 0.0026997325636259157,
+      "measured": 0.0056094699780068575,
+      "ratio": 2.077787279223308,
+      "holds": false
+    },
+    "P2.3": {
+      "statement": "per-seed signs inconsistent on at least one axis",
+      "acc_signs": "--+",
+      "ece_signs": "+++",
+      "holds": true
+    }
+  },
+  "class_weighting_confound_none_minus_effnum": {
+    "d_acc_mean": 0.19556681315104166,
+    "d_acc_sd": 0.5385477787306672,
+    "d_ece_mean": -0.005190955194078389,
+    "d_ece_sd": 0.003847996024806868,
+    "n": 3,
+    "per_seed": {
+      "42": {
+        "treat_acc": 90.38461303710938,
+        "control_acc": 89.63494110107422,
+        "d_acc": 0.7496719360351562,
+        "treat_ece": 0.024669509249917843,
+        "control_ece": 0.03395739449807376,
+        "d_ece": -0.009287885248155915
+      },
+      "1": {
+        "treat_acc": 90.02607727050781,
+        "control_acc": 89.86310577392578,
+        "d_acc": 0.16297149658203125,
+        "treat_ece": 0.02962460165850653,
+        "control_ece": 0.03425653685841132,
+        "d_ece": -0.004631935199904787
+      },
+      "43": {
+        "treat_acc": 90.02607727050781,
+        "control_acc": 90.35202026367188,
+        "d_acc": -0.3259429931640625,
+        "treat_ece": 0.02900473200357877,
+        "control_ece": 0.030657777137753237,
+        "d_ece": -0.0016530451341744655
+      }
+    }
+  },
+  "same_treatment_against_contaminated_control": {
+    "control": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+    "d_acc_mean": -0.032595316569010414,
+    "d_acc_sd": 0.13037490846586827,
+    "d_ece_mean": 0.0004185147839284679,
+    "d_ece_sd": 0.0010658626803284512,
+    "d_ece_signs": "+-+",
+    "note": "against this control the same runs read as ECE-neutral with mixed signs; the clean control shows +0.0056 with 3/3 agreeing signs"
+  },
+  "gate_row_repair": {
+    "n_gate_rows": 24,
+    "moved_to_clean_control": [
+      [
+        "primary",
+        "mean_logvar",
+        "1",
+        "none"
+      ],
+      [
+        "primary",
+        "mean_logvar",
+        "42",
+        "none"
+      ],
+      [
+        "primary",
+        "mean_logvar",
+        "43",
+        "none"
+      ],
+      [
+        "primary",
+        "oracle_error",
+        "1",
+        "none"
+      ],
+      [
+        "primary",
+        "oracle_error",
+        "42",
+        "none"
+      ],
+      [
+        "primary",
+        "oracle_error",
+        "43",
+        "none"
+      ],
+      [
+        "primary",
+        "target_logvar",
+        "1",
+        "none"
+      ],
+      [
+        "primary",
+        "target_logvar",
+        "42",
+        "none"
+      ],
+      [
+        "primary",
+        "target_logvar",
+        "43",
+        "none"
+      ],
+      [
+        "stage1",
+        "mean_logvar",
+        "1",
+        "none"
+      ],
+      [
+        "stage1",
+        "mean_logvar",
+        "42",
+        "none"
+      ],
+      [
+        "stage1",
+        "mean_logvar",
+        "43",
+        "none"
+      ],
+      [
+        "stage1",
+        "oracle_error",
+        "1",
+        "none"
+      ],
+      [
+        "stage1",
+        "oracle_error",
+        "42",
+        "none"
+      ],
+      [
+        "stage1",
+        "oracle_error",
+        "43",
+        "none"
+      ],
+      [
+        "stage1",
+        "target_logvar",
+        "1",
+        "none"
+      ],
+      [
+        "stage1",
+        "target_logvar",
+        "42",
+        "none"
+      ],
+      [
+        "stage1",
+        "target_logvar",
+        "43",
+        "none"
+      ],
+      [
+        "vae9182",
+        "mean_logvar",
+        "1",
+        "none"
+      ],
+      [
+        "vae9182",
+        "mean_logvar",
+        "42",
+        "none"
+      ],
+      [
+        "vae9182",
+        "mean_logvar",
+        "43",
+        "none"
+      ],
+      [
+        "vae9182",
+        "oracle_error",
+        "1",
+        "none"
+      ],
+      [
+        "vae9182",
+        "oracle_error",
+        "42",
+        "none"
+      ],
+      [
+        "vae9182",
+        "oracle_error",
+        "43",
+        "none"
+      ]
+    ],
+    "still_unpaired": [],
+    "runs_needed_to_finish": 6
+  }
+}

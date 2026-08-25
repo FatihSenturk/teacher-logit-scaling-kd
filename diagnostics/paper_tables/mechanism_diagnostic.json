@@ -1,0 +1,195 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "checkpoint": "swa",
+  "points": [
+    {
+      "teacher": "primary",
+      "mechanism": "adaptive_t",
+      "d_acc": -0.39113616943359375,
+      "d_ece": 0.0023061123598481967,
+      "d_acc_sd": 0.37020289809781,
+      "d_ece_sd": 0.0007157093971135206,
+      "n": 3
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "ctkd",
+      "d_acc": -0.488922119140625,
+      "d_ece": 0.0037733874923635835,
+      "d_acc_sd": 0.0,
+      "d_ece_sd": 0.0,
+      "n": 1
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "g2g_kl",
+      "d_acc": -0.14124298095703125,
+      "d_ece": -0.0016073193830129923,
+      "d_acc_sd": 0.36344544155704916,
+      "d_ece_sd": 0.0027315092230762858,
+      "n": 3
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "gate:mean_logvar",
+      "d_acc": 0.19556681315104166,
+      "d_ece": -0.005575578808719728,
+      "d_acc_sd": 0.8549469714862008,
+      "d_ece_sd": 0.009227493803646833,
+      "n": 3
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "gate:oracle_error",
+      "d_acc": -0.010866800944010416,
+      "d_ece": 0.0003758442743168518,
+      "d_acc_sd": 0.7217591290348079,
+      "d_ece_sd": 0.005290327799990043,
+      "n": 3
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "gate:target_logvar",
+      "d_acc": -0.08692169189453125,
+      "d_ece": -0.000783022242180941,
+      "d_acc_sd": 0.44253658075913777,
+      "d_ece_sd": 0.0029891563718939056,
+      "n": 3
+    },
+    {
+      "teacher": "primary",
+      "mechanism": "logit_std",
+      "d_acc": -0.31508127848307294,
+      "d_ece": 0.0859243000838509,
+      "d_acc_sd": 0.24894307306913172,
+      "d_ece_sd": 0.0058053158019038915,
+      "n": 3
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "adaptive_t",
+      "d_acc": 0.16297149658203125,
+      "d_ece": -0.0010947850409381982,
+      "d_acc_sd": 0.32101630928264163,
+      "d_ece_sd": 0.0032964555386869173,
+      "n": 3
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "ctkd",
+      "d_acc": -0.0325927734375,
+      "d_ece": 0.0058220425496822575,
+      "d_acc_sd": 0.0,
+      "d_ece_sd": 0.0,
+      "n": 1
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "g2g_kl",
+      "d_acc": 0.4128621419270833,
+      "d_ece": -0.004224809653237821,
+      "d_acc_sd": 0.37778086107916886,
+      "d_ece_sd": 0.0003543380893462642,
+      "n": 3
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "gate:mean_logvar",
+      "d_acc": -0.09778340657552083,
+      "d_ece": -0.0011666860813513748,
+      "d_acc_sd": 0.11752337991717336,
+      "d_ece_sd": 0.0010212460044153478,
+      "n": 3
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "gate:oracle_error",
+      "d_acc": -0.21729532877604166,
+      "d_ece": 0.0015442045660497654,
+      "d_acc_sd": 0.4567099042483196,
+      "d_ece_sd": 0.003572933460859888,
+      "n": 3
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "gate:target_logvar",
+      "d_acc": 0.2498906453450521,
+      "d_ece": -0.00414632082710779,
+      "d_acc_sd": 0.2772098089316861,
+      "d_ece_sd": 0.0022763297781124158,
+      "n": 3
+    },
+    {
+      "teacher": "stage1",
+      "mechanism": "logit_std",
+      "d_acc": -0.22815958658854166,
+      "d_ece": 0.09058681609467649,
+      "d_acc_sd": 0.1955680847291983,
+      "d_ece_sd": 0.0023275137752995574,
+      "n": 3
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "adaptive_t",
+      "d_acc": 0.28248341878255206,
+      "d_ece": -0.004198156860614539,
+      "d_acc_sd": 0.5723410693527127,
+      "d_ece_sd": 0.004690152305944788,
+      "n": 3
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "ctkd",
+      "d_acc": -0.13037872314453125,
+      "d_ece": 0.0038133553597187314,
+      "d_acc_sd": 0.0,
+      "d_ece_sd": 0.0,
+      "n": 1
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "g2g_kl",
+      "d_acc": 0.16297403971354166,
+      "d_ece": 0.000935986782159041,
+      "d_acc_sd": 0.408405460737665,
+      "d_ece_sd": 0.004338237886851533,
+      "n": 3
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "g2g_kl+adaptive_t",
+      "d_acc": -0.065185546875,
+      "d_ece": -0.0018300160697650378,
+      "d_acc_sd": 0.0,
+      "d_ece_sd": 0.0,
+      "n": 1
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "gate:mean_logvar",
+      "d_acc": -0.27161916097005206,
+      "d_ece": 0.0014772778445743887,
+      "d_acc_sd": 0.6682533258430152,
+      "d_ece_sd": 0.004581379876241869,
+      "n": 3
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "gate:oracle_error",
+      "d_acc": -0.2281621297200521,
+      "d_ece": 0.0056094699780068575,
+      "d_acc_sd": 0.4932413518255879,
+      "d_ece_sd": 0.003965008243591812,
+      "n": 3
+    },
+    {
+      "teacher": "vae9182",
+      "mechanism": "logit_std",
+      "d_acc": -0.11951446533203125,
+      "d_ece": 0.13877768606523855,
+      "d_acc_sd": 0.8183309047871816,
+      "d_ece_sd": 0.0012936613226332237,
+      "n": 3
+    }
+  ]
+}

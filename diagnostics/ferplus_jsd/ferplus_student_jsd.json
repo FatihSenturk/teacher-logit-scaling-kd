@@ -1,0 +1,739 @@
+{
+  "human_mean_entropy": 0.44011032581329346,
+  "by_checkpoint": {
+    "swa": {
+      "0.26": {
+        "n": 3,
+        "ece": [
+          0.058740805600987316,
+          0.003831888418531751
+        ],
+        "jsd": [
+          0.07368071377277374,
+          0.0007331671660701203
+        ],
+        "entropy": 0.12440045922994614,
+        "rho": 0.6665450180282495,
+        "teacher_ece": 0.03933340457557233,
+        "teacher_jsd": 0.06591325253248215
+      },
+      "0.5063": {
+        "n": 3,
+        "ece": [
+          0.018498602500361613,
+          0.0015881954147709731
+        ],
+        "jsd": [
+          0.058690217634042106,
+          0.0004615663733709948
+        ],
+        "entropy": 0.25476158161958057,
+        "rho": 0.6831187753245275,
+        "teacher_ece": 0.01562829764162288,
+        "teacher_jsd": 0.04898364096879959
+      },
+      "0.74": {
+        "n": 3,
+        "ece": [
+          0.034363226014547714,
+          0.0012025338139968638
+        ],
+        "jsd": [
+          0.05359788859883944,
+          0.0003727677382411302
+        ],
+        "entropy": 0.3839966456095378,
+        "rho": 0.7024947539098241,
+        "teacher_ece": 0.06646802423116029,
+        "teacher_jsd": 0.044019557535648346
+      },
+      "1.0": {
+        "n": 3,
+        "ece": [
+          0.07830038099601992,
+          0.00460023162590826
+        ],
+        "jsd": [
+          0.05510709931453069,
+          0.00045023334519684265
+        ],
+        "entropy": 0.546522299448649,
+        "rho": 0.7044772372607156,
+        "teacher_ece": 0.12823281088141536,
+        "teacher_jsd": 0.0491853766143322
+      },
+      "_argmin_ece_T": 0.5063,
+      "_argmin_jsd_T": 0.74
+    },
+    "best": {
+      "0.26": {
+        "n": 3,
+        "ece": [
+          0.05679475703310268,
+          0.00137354277175327
+        ],
+        "jsd": [
+          0.07324553281068802,
+          0.0009443584011583196
+        ],
+        "entropy": 0.12945324182510376,
+        "rho": 0.6531177478973046,
+        "teacher_ece": 0.03933340457557233,
+        "teacher_jsd": 0.06591325253248215
+      },
+      "0.5063": {
+        "n": 3,
+        "ece": [
+          0.019590972014065337,
+          0.0020415772943527255
+        ],
+        "jsd": [
+          0.058663442730903625,
+          0.0006596250223225747
+        ],
+        "entropy": 0.2662840982278188,
+        "rho": 0.677567216825998,
+        "teacher_ece": 0.01562829764162288,
+        "teacher_jsd": 0.04898364096879959
+      },
+      "0.74": {
+        "n": 3,
+        "ece": [
+          0.04830169634254932,
+          0.00834227006098156
+        ],
+        "jsd": [
+          0.05414296065767606,
+          0.000520999424472161
+        ],
+        "entropy": 0.42000701030095416,
+        "rho": 0.6962455083359601,
+        "teacher_ece": 0.06646802423116029,
+        "teacher_jsd": 0.044019557535648346
+      },
+      "1.0": {
+        "n": 3,
+        "ece": [
+          0.09274253000579408,
+          0.006997141399156967
+        ],
+        "jsd": [
+          0.05694872389237086,
+          0.00029084618419815335
+        ],
+        "entropy": 0.5858450730641683,
+        "rho": 0.6957039146224231,
+        "teacher_ece": 0.12823281088141536,
+        "teacher_jsd": 0.0491853766143322
+      },
+      "_argmin_ece_T": 0.5063,
+      "_argmin_jsd_T": 0.74
+    },
+    "last": {
+      "0.26": {
+        "n": 3,
+        "ece": [
+          0.0590560870192522,
+          0.001486498899180953
+        ],
+        "jsd": [
+          0.07386099050442378,
+          0.000351353673424637
+        ],
+        "entropy": 0.12959049145380655,
+        "rho": 0.6612539610994695,
+        "teacher_ece": 0.03933340457557233,
+        "teacher_jsd": 0.06591325253248215
+      },
+      "0.5063": {
+        "n": 3,
+        "ece": [
+          0.019130647440820707,
+          0.006139430665287134
+        ],
+        "jsd": [
+          0.05911390855908394,
+          0.0014829011632608885
+        ],
+        "entropy": 0.2663007179896037,
+        "rho": 0.6786492437082736,
+        "teacher_ece": 0.01562829764162288,
+        "teacher_jsd": 0.04898364096879959
+      },
+      "0.74": {
+        "n": 3,
+        "ece": [
+          0.03773833784344761,
+          0.0007013086486644371
+        ],
+        "jsd": [
+          0.05442095796267191,
+          0.000556190239710194
+        ],
+        "entropy": 0.4087616205215454,
+        "rho": 0.6965578705437667,
+        "teacher_ece": 0.06646802423116029,
+        "teacher_jsd": 0.044019557535648346
+      },
+      "1.0": {
+        "n": 3,
+        "ece": [
+          0.08516281574589592,
+          0.008151749408969858
+        ],
+        "jsd": [
+          0.057218991219997406,
+          0.00045086222040268586
+        ],
+        "entropy": 0.5789852341016134,
+        "rho": 0.6943494860520584,
+        "teacher_ece": 0.12823281088141536,
+        "teacher_jsd": 0.0491853766143322
+      },
+      "_argmin_ece_T": 0.5063,
+      "_argmin_jsd_T": 0.74
+    }
+  },
+  "per_run": [
+    {
+      "run_name": "FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed1",
+      "checkpoint": "swa",
+      "t_scale": 0.26,
+      "seed": 1,
+      "acc": 88.93118286132812,
+      "ece": 0.06315769743359811,
+      "nll": 0.49612563848495483,
+      "brier": 0.17755186557769775,
+      "jsd_vs_human": 0.07449159771203995,
+      "student_mean_entropy": 0.12313684076070786,
+      "entropy_pearson_vs_human": 0.451569455897621,
+      "entropy_spearman_vs_human": 0.6637197542137864,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed1",
+      "checkpoint": "best",
+      "t_scale": 0.26,
+      "seed": 1,
+      "acc": 89.08975982666016,
+      "ece": 0.056418791862279695,
+      "nll": 0.4762013554573059,
+      "brier": 0.17437942326068878,
+      "jsd_vs_human": 0.07243577390909195,
+      "student_mean_entropy": 0.13067755103111267,
+      "entropy_pearson_vs_human": 0.4536977413342547,
+      "entropy_spearman_vs_human": 0.6582600324945502,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed1",
+      "checkpoint": "last",
+      "t_scale": 0.26,
+      "seed": 1,
+      "acc": 88.83602905273438,
+      "ece": 0.058695782745145364,
+      "nll": 0.48291441798210144,
+      "brier": 0.1777963787317276,
+      "jsd_vs_human": 0.07349057495594025,
+      "student_mean_entropy": 0.13236255943775177,
+      "entropy_pearson_vs_human": 0.45932780357895137,
+      "entropy_spearman_vs_human": 0.6621815547067723,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed42",
+      "checkpoint": "swa",
+      "t_scale": 0.26,
+      "seed": 42,
+      "acc": 89.18490600585938,
+      "ece": 0.05675966730958653,
+      "nll": 0.4932011663913727,
+      "brier": 0.17370648682117462,
+      "jsd_vs_human": 0.07348594814538956,
+      "student_mean_entropy": 0.12618747353553772,
+      "entropy_pearson_vs_human": 0.4464154765148832,
+      "entropy_spearman_vs_human": 0.667918827236811,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed42",
+      "checkpoint": "best",
+      "t_scale": 0.26,
+      "seed": 42,
+      "acc": 89.59720611572266,
+      "ece": 0.05564834560302187,
+      "nll": 0.4985899031162262,
+      "brier": 0.17260047793388367,
+      "jsd_vs_human": 0.07428289204835892,
+      "student_mean_entropy": 0.12512244284152985,
+      "entropy_pearson_vs_human": 0.42402785655617714,
+      "entropy_spearman_vs_human": 0.6382238452570995,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed42",
+      "checkpoint": "last",
+      "t_scale": 0.26,
+      "seed": 42,
+      "acc": 89.15319061279297,
+      "ece": 0.05778285875193399,
+      "nll": 0.4884514808654785,
+      "brier": 0.17587336897850037,
+      "jsd_vs_human": 0.07390286773443222,
+      "student_mean_entropy": 0.12879806756973267,
+      "entropy_pearson_vs_human": 0.4434290033411828,
+      "entropy_spearman_vs_human": 0.6652283232721684,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed43",
+      "checkpoint": "swa",
+      "t_scale": 0.26,
+      "seed": 43,
+      "acc": 89.50205993652344,
+      "ece": 0.0563050520597773,
+      "nll": 0.48473772406578064,
+      "brier": 0.1742839366197586,
+      "jsd_vs_human": 0.07306459546089172,
+      "student_mean_entropy": 0.12387706339359283,
+      "entropy_pearson_vs_human": 0.4413629234811902,
+      "entropy_spearman_vs_human": 0.6679964726341512,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed43",
+      "checkpoint": "best",
+      "t_scale": 0.26,
+      "seed": 43,
+      "acc": 89.2800521850586,
+      "ece": 0.058317133634006486,
+      "nll": 0.4809228181838989,
+      "brier": 0.17837198078632355,
+      "jsd_vs_human": 0.07301793247461319,
+      "student_mean_entropy": 0.13255973160266876,
+      "entropy_pearson_vs_human": 0.45247005821687053,
+      "entropy_spearman_vs_human": 0.662869365940264,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T026_vich_T6_224_200e_swa100_seed43",
+      "checkpoint": "last",
+      "t_scale": 0.26,
+      "seed": 43,
+      "acc": 88.80431365966797,
+      "ece": 0.06068961956067725,
+      "nll": 0.49352380633354187,
+      "brier": 0.1807672530412674,
+      "jsd_vs_human": 0.07418952882289886,
+      "student_mean_entropy": 0.12761084735393524,
+      "entropy_pearson_vs_human": 0.4413662761928264,
+      "entropy_spearman_vs_human": 0.6563520053194678,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed1",
+      "checkpoint": "swa",
+      "t_scale": 0.5063,
+      "seed": 1,
+      "acc": 89.18490600585938,
+      "ece": 0.019317023174898078,
+      "nll": 0.3559882342815399,
+      "brier": 0.16772691905498505,
+      "jsd_vs_human": 0.05847228318452835,
+      "student_mean_entropy": 0.25634095072746277,
+      "entropy_pearson_vs_human": 0.6021977475364153,
+      "entropy_spearman_vs_human": 0.6815468515739838,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed1",
+      "checkpoint": "best",
+      "t_scale": 0.5063,
+      "seed": 1,
+      "acc": 89.24833679199219,
+      "ece": 0.021791451825363614,
+      "nll": 0.36287564039230347,
+      "brier": 0.17107689380645752,
+      "jsd_vs_human": 0.05792571231722832,
+      "student_mean_entropy": 0.2726387679576874,
+      "entropy_pearson_vs_human": 0.6104482755606426,
+      "entropy_spearman_vs_human": 0.6810282558790333,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed1",
+      "checkpoint": "last",
+      "t_scale": 0.5063,
+      "seed": 1,
+      "acc": 89.24833679199219,
+      "ece": 0.021791451825363614,
+      "nll": 0.36287564039230347,
+      "brier": 0.17107689380645752,
+      "jsd_vs_human": 0.05792571231722832,
+      "student_mean_entropy": 0.2726387679576874,
+      "entropy_pearson_vs_human": 0.6104482755606426,
+      "entropy_spearman_vs_human": 0.6810282558790333,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed42",
+      "checkpoint": "swa",
+      "t_scale": 0.5063,
+      "seed": 42,
+      "acc": 88.96289825439453,
+      "ece": 0.016668123231779533,
+      "nll": 0.358048677444458,
+      "brier": 0.16850809752941132,
+      "jsd_vs_human": 0.05922039970755577,
+      "student_mean_entropy": 0.24876420199871063,
+      "entropy_pearson_vs_human": 0.5943745159210704,
+      "entropy_spearman_vs_human": 0.6815640014305571,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed42",
+      "checkpoint": "best",
+      "t_scale": 0.5063,
+      "seed": 42,
+      "acc": 89.08975982666016,
+      "ece": 0.017758301702938573,
+      "nll": 0.3559317886829376,
+      "brier": 0.1691504418849945,
+      "jsd_vs_human": 0.05919638276100159,
+      "student_mean_entropy": 0.25705865025520325,
+      "entropy_pearson_vs_human": 0.5967497765744846,
+      "entropy_spearman_vs_human": 0.6718738285373169,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed42",
+      "checkpoint": "last",
+      "t_scale": 0.5063,
+      "seed": 42,
+      "acc": 88.48715209960938,
+      "ece": 0.023490825088448346,
+      "nll": 0.3722599446773529,
+      "brier": 0.1760490983724594,
+      "jsd_vs_human": 0.06077577918767929,
+      "student_mean_entropy": 0.2537008225917816,
+      "entropy_pearson_vs_human": 0.591836457851019,
+      "entropy_spearman_vs_human": 0.6743986933585858,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed43",
+      "checkpoint": "swa",
+      "t_scale": 0.5063,
+      "seed": 43,
+      "acc": 89.21662139892578,
+      "ece": 0.019510661094407224,
+      "nll": 0.3501339852809906,
+      "brier": 0.16704565286636353,
+      "jsd_vs_human": 0.05837797001004219,
+      "student_mean_entropy": 0.25917959213256836,
+      "entropy_pearson_vs_human": 0.6073025075530618,
+      "entropy_spearman_vs_human": 0.6862454729690415,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed43",
+      "checkpoint": "best",
+      "t_scale": 0.5063,
+      "seed": 43,
+      "acc": 89.2800521850586,
+      "ece": 0.019223162513893825,
+      "nll": 0.3491554260253906,
+      "brier": 0.16833384335041046,
+      "jsd_vs_human": 0.05886823311448097,
+      "student_mean_entropy": 0.2691548764705658,
+      "entropy_pearson_vs_human": 0.601328337908512,
+      "entropy_spearman_vs_human": 0.6797995660616438,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T051_vich_T6_224_200e_swa100_seed43",
+      "checkpoint": "last",
+      "t_scale": 0.5063,
+      "seed": 43,
+      "acc": 88.77259826660156,
+      "ece": 0.012109665408650164,
+      "nll": 0.35576120018959045,
+      "brier": 0.17071953415870667,
+      "jsd_vs_human": 0.05864023417234421,
+      "student_mean_entropy": 0.27256256341934204,
+      "entropy_pearson_vs_human": 0.6084013062412885,
+      "entropy_spearman_vs_human": 0.6805207818872018,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed1",
+      "checkpoint": "swa",
+      "t_scale": 0.74,
+      "seed": 1,
+      "acc": 88.83602905273438,
+      "ece": 0.033211600324898116,
+      "nll": 0.3482341468334198,
+      "brier": 0.17380458116531372,
+      "jsd_vs_human": 0.05385049805045128,
+      "student_mean_entropy": 0.3804088830947876,
+      "entropy_pearson_vs_human": 0.6703343019311571,
+      "entropy_spearman_vs_human": 0.70075643593706,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed1",
+      "checkpoint": "best",
+      "t_scale": 0.74,
+      "seed": 1,
+      "acc": 89.08975982666016,
+      "ece": 0.0389406126697896,
+      "nll": 0.3541612923145294,
+      "brier": 0.17637677490711212,
+      "jsd_vs_human": 0.05441206693649292,
+      "student_mean_entropy": 0.3962635397911072,
+      "entropy_pearson_vs_human": 0.6650682998760349,
+      "entropy_spearman_vs_human": 0.6925614414168518,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed1",
+      "checkpoint": "last",
+      "t_scale": 0.74,
+      "seed": 1,
+      "acc": 88.39200592041016,
+      "ece": 0.03784632748964662,
+      "nll": 0.3576681911945343,
+      "brier": 0.17951981723308563,
+      "jsd_vs_human": 0.054842639714479446,
+      "student_mean_entropy": 0.41175878047943115,
+      "entropy_pearson_vs_human": 0.6680424785787927,
+      "entropy_spearman_vs_human": 0.6963720947092921,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed42",
+      "checkpoint": "swa",
+      "t_scale": 0.74,
+      "seed": 42,
+      "acc": 88.77259826660156,
+      "ece": 0.03561090661199215,
+      "nll": 0.33789119124412537,
+      "brier": 0.17073671519756317,
+      "jsd_vs_human": 0.05316976085305214,
+      "student_mean_entropy": 0.3846632242202759,
+      "entropy_pearson_vs_human": 0.6660653964605138,
+      "entropy_spearman_vs_human": 0.6989053152730521,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed42",
+      "checkpoint": "best",
+      "t_scale": 0.74,
+      "seed": 42,
+      "acc": 89.21662139892578,
+      "ece": 0.054949737638660436,
+      "nll": 0.34707435965538025,
+      "brier": 0.17351387441158295,
+      "jsd_vs_human": 0.05354243889451027,
+      "student_mean_entropy": 0.43462198972702026,
+      "entropy_pearson_vs_human": 0.6696367432530608,
+      "entropy_spearman_vs_human": 0.6947242418006994,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed42",
+      "checkpoint": "last",
+      "t_scale": 0.74,
+      "seed": 42,
+      "acc": 88.80431365966797,
+      "ece": 0.038379387981431125,
+      "nll": 0.3445281386375427,
+      "brier": 0.1739674210548401,
+      "jsd_vs_human": 0.053790610283613205,
+      "student_mean_entropy": 0.40239664912223816,
+      "entropy_pearson_vs_human": 0.6658437291917955,
+      "entropy_spearman_vs_human": 0.6954612151211752,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed43",
+      "checkpoint": "swa",
+      "t_scale": 0.74,
+      "seed": 43,
+      "acc": 88.74088287353516,
+      "ece": 0.03426717110675288,
+      "nll": 0.3418695032596588,
+      "brier": 0.17440976202487946,
+      "jsd_vs_human": 0.05377340689301491,
+      "student_mean_entropy": 0.3869178295135498,
+      "entropy_pearson_vs_human": 0.673667531403488,
+      "entropy_spearman_vs_human": 0.70782251051936,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed43",
+      "checkpoint": "best",
+      "t_scale": 0.74,
+      "seed": 43,
+      "acc": 89.08975982666016,
+      "ece": 0.051014738719197934,
+      "nll": 0.3512783646583557,
+      "brier": 0.1777411550283432,
+      "jsd_vs_human": 0.054474376142024994,
+      "student_mean_entropy": 0.4291355013847351,
+      "entropy_pearson_vs_human": 0.6757284325535196,
+      "entropy_spearman_vs_human": 0.701450841790329,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T074_vich_T6_224_200e_swa100_seed43",
+      "checkpoint": "last",
+      "t_scale": 0.74,
+      "seed": 43,
+      "acc": 88.32857513427734,
+      "ece": 0.03698929805926508,
+      "nll": 0.34874412417411804,
+      "brier": 0.17800581455230713,
+      "jsd_vs_human": 0.054629623889923096,
+      "student_mean_entropy": 0.4121294319629669,
+      "entropy_pearson_vs_human": 0.6686307804100273,
+      "entropy_spearman_vs_human": 0.697840301800833,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed1",
+      "checkpoint": "swa",
+      "t_scale": 1.0,
+      "seed": 1,
+      "acc": 89.12147521972656,
+      "ece": 0.08258272617195207,
+      "nll": 0.3615642786026001,
+      "brier": 0.17854289710521698,
+      "jsd_vs_human": 0.054635126143693924,
+      "student_mean_entropy": 0.5438454151153564,
+      "entropy_pearson_vs_human": 0.6854660166846298,
+      "entropy_spearman_vs_human": 0.6983195191086126,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed1",
+      "checkpoint": "best",
+      "t_scale": 1.0,
+      "seed": 1,
+      "acc": 89.47034454345703,
+      "ece": 0.10075931245850411,
+      "nll": 0.37631329894065857,
+      "brier": 0.18361593782901764,
+      "jsd_vs_human": 0.0567803792655468,
+      "student_mean_entropy": 0.6017345190048218,
+      "entropy_pearson_vs_human": 0.6899934233315973,
+      "entropy_spearman_vs_human": 0.6978203312381721,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed1",
+      "checkpoint": "last",
+      "t_scale": 1.0,
+      "seed": 1,
+      "acc": 88.83602905273438,
+      "ece": 0.09269839256784479,
+      "nll": 0.37858134508132935,
+      "brier": 0.18579374253749847,
+      "jsd_vs_human": 0.05700449272990227,
+      "student_mean_entropy": 0.5881494879722595,
+      "entropy_pearson_vs_human": 0.6822733989330004,
+      "entropy_spearman_vs_human": 0.6923961664148552,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed42",
+      "checkpoint": "swa",
+      "t_scale": 1.0,
+      "seed": 42,
+      "acc": 88.39200592041016,
+      "ece": 0.07343739451698147,
+      "nll": 0.37065181136131287,
+      "brier": 0.18360042572021484,
+      "jsd_vs_human": 0.05553187429904938,
+      "student_mean_entropy": 0.5465829968452454,
+      "entropy_pearson_vs_human": 0.6934805159457461,
+      "entropy_spearman_vs_human": 0.7069602437267667,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed42",
+      "checkpoint": "best",
+      "t_scale": 1.0,
+      "seed": 42,
+      "acc": 88.93118286132812,
+      "ece": 0.08960499300905306,
+      "nll": 0.3785161077976227,
+      "brier": 0.18545368313789368,
+      "jsd_vs_human": 0.05728456377983093,
+      "student_mean_entropy": 0.5834681987762451,
+      "entropy_pearson_vs_human": 0.6787730693982369,
+      "entropy_spearman_vs_human": 0.688760911905802,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed42",
+      "checkpoint": "last",
+      "t_scale": 1.0,
+      "seed": 42,
+      "acc": 88.26514434814453,
+      "ece": 0.07651011895328108,
+      "nll": 0.3785722851753235,
+      "brier": 0.18751345574855804,
+      "jsd_vs_human": 0.05691542476415634,
+      "student_mean_entropy": 0.5623801946640015,
+      "entropy_pearson_vs_human": 0.6807307762614428,
+      "entropy_spearman_vs_human": 0.6930632555587609,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed43",
+      "checkpoint": "swa",
+      "t_scale": 1.0,
+      "seed": 43,
+      "acc": 88.6457290649414,
+      "ece": 0.07888102229912622,
+      "nll": 0.36414068937301636,
+      "brier": 0.1821160465478897,
+      "jsd_vs_human": 0.05515429750084877,
+      "student_mean_entropy": 0.5491384863853455,
+      "entropy_pearson_vs_human": 0.6932044705503988,
+      "entropy_spearman_vs_human": 0.7081519489467676,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed43",
+      "checkpoint": "best",
+      "t_scale": 1.0,
+      "seed": 43,
+      "acc": 88.80431365966797,
+      "ece": 0.08786328454982505,
+      "nll": 0.3778514862060547,
+      "brier": 0.18765196204185486,
+      "jsd_vs_human": 0.05678122863173485,
+      "student_mean_entropy": 0.572332501411438,
+      "entropy_pearson_vs_human": 0.6866744265068471,
+      "entropy_spearman_vs_human": 0.7005305007232951,
+      "n_val": 3153
+    },
+    {
+      "run_name": "FERPlus_tempscale_T100_vich_T6_224_200e_swa100_seed43",
+      "checkpoint": "last",
+      "t_scale": 1.0,
+      "seed": 43,
+      "acc": 88.26514434814453,
+      "ece": 0.08627993571656188,
+      "nll": 0.3798156678676605,
+      "brier": 0.188720241189003,
+      "jsd_vs_human": 0.05773705616593361,
+      "student_mean_entropy": 0.5864260196685791,
+      "entropy_pearson_vs_human": 0.68607353240938,
+      "entropy_spearman_vs_human": 0.6975890361825589,
+      "n_val": 3153
+    }
+  ]
+}

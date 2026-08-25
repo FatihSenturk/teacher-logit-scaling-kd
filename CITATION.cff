@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+message: >-
+  If you use this repository, please cite the paper it belongs to. The archived
+  snapshot itself has a DOI and is listed below under identifiers.
+title: >-
+  teacher-logit-scaling-kd: code, run manifests and pre-declaration records for
+  teacher-side logit scaling in knowledge distillation
+abstract: >-
+  Analysis code, run manifests, frozen selection audit and dated pre-declaration
+  records behind a study of how a teacher's calibration -- rather than its
+  accuracy -- governs what a distilled student inherits, measured on RAF-DB and
+  FERPlus. Every number printed in the paper is bound to an artifact field by a
+  machine-checked ledger.
+type: software
+authors:
+  - family-names: Şentürk
+    given-names: Muhammed Fatih
+    affiliation: Department of Computer Engineering, Istanbul University-Cerrahpaşa
+    orcid: 'https://orcid.org/0000-0002-3764-2264'
+  - family-names: Gürkaş Aydın
+    given-names: Gülsüm Zeynep
+    affiliation: Department of Computer Engineering, Istanbul University-Cerrahpaşa
+    orcid: 'https://orcid.org/0000-0002-4125-0589'
+version: v1.0.0-submission
+date-released: '2026-08-26'
+license: MIT
+repository-code: https://github.com/FatihSenturk/teacher-logit-scaling-kd
+url: https://github.com/FatihSenturk/teacher-logit-scaling-kd
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22111204
+    description: >-
+      Version DOI of v1.0.0-submission -- the exact tree behind the submitted
+      manuscript.
+  - type: doi
+    value: 10.5281/zenodo.22111203
+    description: >-
+      Concept DOI of the archive -- always resolves to the newest archived version.
+keywords:
+  - knowledge distillation
+  - model calibration
+  - expected calibration error
+  - facial expression recognition
+  - RAF-DB
+  - FERPlus
+  - temperature scaling
+  - dose-response
+  - pre-registration
+  - reproducibility
+preferred-citation:
+  type: article
+  title: >-
+    Teacher-Side Logit Scaling Governs Student Calibration in Knowledge Distillation: Dose-Response Evidence from Facial Expression Recognition
+  authors:
+    - family-names: Şentürk
+      given-names: Muhammed Fatih
+      affiliation: Department of Computer Engineering, Istanbul University-Cerrahpaşa
+      orcid: 'https://orcid.org/0000-0002-3764-2264'
+    - family-names: Gürkaş Aydın
+      given-names: Gülsüm Zeynep
+      affiliation: Department of Computer Engineering, Istanbul University-Cerrahpaşa
+      orcid: 'https://orcid.org/0000-0002-4125-0589'
+  journal: Neurocomputing
+  year: 2026
+  notes: Under review.

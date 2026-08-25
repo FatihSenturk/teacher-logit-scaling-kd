@@ -1,0 +1,185 @@
+{
+  "item": "G4.1",
+  "checkpoint": "swa",
+  "n_boot": 20000,
+  "rng_seed": 20260807,
+  "ci_percentiles": [
+    2.5,
+    97.5
+  ],
+  "bootstrap_type": "parametric on cell means, t(df=n-1)",
+  "estimand_A": "absolute ratio ECE_over / ECE_under at equal |gap|",
+  "estimand_B": "excess over optimum (ECE_over - ECE_min) / (ECE_under - ECE_min)",
+  "comparisons": [
+    {
+      "arm": "rafdb_stage1",
+      "idx": 0,
+      "abs_gap": 0.004034996032714844,
+      "T_positive": 1.3406,
+      "ece_over": 0.04280742607210989,
+      "ece_under": 0.01899295040884686,
+      "floor": 0.04280742607210989,
+      "ratio_absolute": 2.253858676541919,
+      "ratio_excess": null,
+      "extrapolated": true,
+      "ci_absolute": [
+        1.408582314046977,
+        4.527303958598907
+      ],
+      "nboot_absolute": 19809,
+      "ci_excess": [
+        0.0,
+        1.3868032241127324
+      ],
+      "nboot_excess": 114
+    },
+    {
+      "arm": "rafdb_stage1",
+      "idx": 1,
+      "abs_gap": 0.033846914768218994,
+      "T_positive": 1.0,
+      "ece_over": 0.07312947179942429,
+      "ece_under": 0.03882861177085545,
+      "floor": 0.04280742607210989,
+      "ratio_absolute": 1.8833913566365226,
+      "ratio_excess": null,
+      "extrapolated": true,
+      "ci_absolute": [
+        1.5457590165958905,
+        2.3820135922804773
+      ],
+      "nboot_absolute": 19975,
+      "ci_excess": [
+        1.049689616339765,
+        543.467933495879
+      ],
+      "nboot_excess": 1745
+    },
+    {
+      "arm": "rafdb_stage1",
+      "idx": 2,
+      "abs_gap": 0.04311692714691162,
+      "T_positive": 0.85,
+      "ece_over": 0.07967298300447075,
+      "ece_under": 0.044996508174866126,
+      "floor": 0.04280742607210989,
+      "ratio_absolute": 1.7706481288468956,
+      "ratio_excess": 16.84064607989991,
+      "extrapolated": false,
+      "ci_absolute": [
+        1.5020601711237918,
+        2.132892167762496
+      ],
+      "nboot_absolute": 19983,
+      "ci_excess": [
+        3.7848845136844065,
+        154.17876064619742
+      ],
+      "nboot_excess": 20000
+    },
+    {
+      "arm": "rafdb_vae9182",
+      "idx": 0,
+      "abs_gap": 0.004246532917022705,
+      "T_positive": 1.0,
+      "ece_over": 0.032957236164746107,
+      "ece_under": 0.024750349855956033,
+      "floor": 0.032957236164746107,
+      "ratio_absolute": 1.3315866788369917,
+      "ratio_excess": null,
+      "extrapolated": true,
+      "ci_absolute": [
+        0.8926823962407642,
+        2.1905172805262016
+      ],
+      "nboot_absolute": 19930,
+      "ci_excess": [
+        0.0,
+        0.0
+      ],
+      "nboot_excess": 1039
+    },
+    {
+      "arm": "rafdb_vae9182",
+      "idx": 1,
+      "abs_gap": 0.024833977222442627,
+      "T_positive": 0.85,
+      "ece_over": 0.044675372809702706,
+      "ece_under": 0.03965831131876037,
+      "floor": 0.032957236164746107,
+      "ratio_absolute": 1.1265071891391658,
+      "ratio_excess": 1.7486950042541878,
+      "extrapolated": true,
+      "ci_absolute": [
+        0.8989679973362937,
+        1.4590305476668326
+      ],
+      "nboot_absolute": 19979,
+      "ci_excess": [
+        0.6422487334116701,
+        9.743462328329196
+      ],
+      "nboot_excess": 18766
+    },
+    {
+      "arm": "ferplus",
+      "idx": 0,
+      "abs_gap": 0.039333343505859375,
+      "T_positive": 0.26,
+      "ece_over": 0.058740805600987316,
+      "ece_under": 0.0287337958319263,
+      "floor": 0.018498602500361613,
+      "ratio_absolute": 2.0443106766882515,
+      "ratio_excess": 3.931748213931758,
+      "extrapolated": false,
+      "ci_absolute": [
+        1.6445666583698295,
+        2.4808178983998825
+      ],
+      "nboot_absolute": 19991,
+      "ci_excess": [
+        2.807153838774682,
+        5.298203608347627
+      ],
+      "nboot_excess": 20000
+    }
+  ],
+  "summary": {
+    "all_six": {
+      "absolute": {
+        "n": 6,
+        "mean": 1.7350504511149576,
+        "sd": 0.4292281440073765,
+        "min": 1.1265071891391658,
+        "max": 2.253858676541919,
+        "all_above_one": true
+      },
+      "excess": {
+        "n": 3,
+        "mean": 7.507029766028618,
+        "sd": 8.15651429533438,
+        "min": 1.7486950042541878,
+        "max": 16.84064607989991,
+        "all_above_one": true
+      }
+    },
+    "interpolated_only": {
+      "absolute": {
+        "n": 2,
+        "mean": 1.9074794027675734,
+        "sd": 0.19350864333541073,
+        "min": 1.7706481288468956,
+        "max": 2.0443106766882515,
+        "all_above_one": true
+      },
+      "excess": {
+        "n": 2,
+        "mean": 10.386197146915833,
+        "sd": 9.127969218670632,
+        "min": 3.931748213931758,
+        "max": 16.84064607989991,
+        "all_above_one": true
+      }
+    }
+  }
+}

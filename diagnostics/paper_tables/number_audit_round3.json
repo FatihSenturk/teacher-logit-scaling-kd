@@ -1,0 +1,190 @@
+{
+  "rows": [
+    {
+      "claim": "\"spans 57–77 units\"",
+      "published": "57–77",
+      "panel": "57–75.5",
+      "measured": "56.6764 – 76.6244",
+      "verdict": "yayımlı doğru",
+      "note": "@swa, ECE ekseninin gürültü birimi, üç öğretmen. Tam sayıya yuvarlandığında 57 ve 77. Panelin 75.5'i hiçbir hücreye karşılık gelmiyor (ölçülen maksimum 76.62, stage1).",
+      "source": "diagnostics/paper_tables/noise_units.json → nine_cell_grid.swa|*.ece_units",
+      "exact": {
+        "min": 56.676381165466225,
+        "max": 76.6244115424183
+      }
+    },
+    {
+      "claim": "\"13–14 times smaller\" (T* ölçüt seçiminin maliyeti)",
+      "published": "13–14×",
+      "panel": "13.2–14.7",
+      "measured": "13.31 – 14.32",
+      "verdict": "yayımlı doğru",
+      "note": "ölçeklemenin kaldırdığı ECE ÷ iki ölçüt arasındaki ECE farkı. ferplus 13.31× · primary 13.60× · stage1 14.32×. vae9182 dışarıda: onda ölçekleme ECE'yi kaldırmıyor (removed < 0), oran anlamsız olurdu.",
+      "source": "diagnostics/paper_tables/tstar_sensitivity.json → results.*",
+      "exact": {
+        "stage1": 14.315495183255484,
+        "primary": 13.602582900424977,
+        "ferplus": 13.306965250242223
+      }
+    },
+    {
+      "claim": "FERPlus best−last SE",
+      "published": "0.0022",
+      "panel": "0.0021",
+      "measured": "0.00215",
+      "verdict": "panel haklı",
+      "note": "ECE ekseni, n=12, ort +0.0041, SD 0.0074 → SE = SD/√n = 0.00215. Dört ondalığa **0.0021**.",
+      "source": "diagnostics/paper_tables/selection_audit_inference.json",
+      "exact": {
+        "mean": 0.004085516836523745,
+        "sd": 0.007446682592579257,
+        "n": 12,
+        "se": 0.0021496720996976673,
+        "axis": "ece",
+        "dataset": "FERPlus"
+      }
+    },
+    {
+      "claim": "`tab_efficiency` boyut oranı",
+      "published": "62.9×",
+      "panel": "63.1× (555.0/8.8)",
+      "measured": "62.8847×",
+      "verdict": "yayımlı doğru",
+      "note": "payda öğrencinin GERÇEK boyutu 8.8259 MB, 8.8 değil; 555.0155/8.8259 = 62.8847. Panelin 63.1'i paydayı yuvarlamaktan geliyor (555.0/8.8 = 63.07).",
+      "source": "diagnostics/paper_tables/efficiency_retention.json → compression.size_ratio",
+      "exact": {
+        "size_ratio": 62.88468006309907,
+        "teacher_size_mb": 555.0154619216919,
+        "student_size_mb": 8.82592487335205
+      }
+    },
+    {
+      "claim": "§5.4 eğim sıralaması \"0.655, 0.716, 0.649\"",
+      "published": "0.655, 0.716, 0.649",
+      "panel": "0.655, 0.649, 0.716",
+      "measured": "scratch0712 0.655 · pretrained2248 0.716 · scratch2248 0.649",
+      "verdict": "kollarla eşleştirilmeli",
+      "note": "Sayılar doğru; sıra KOL ADIYLA yazılmadıkça belirsiz. Kollar: **scratch0712** = 0.655 · **pretrained2248** = 0.716 · **scratch2248** = 0.649. Kontrastlar: scratch2248 vs pretrained2248 -0.067 (BAŞLATMA) · scratch2248 vs scratch0712 -0.006 (KAPASİTE) · pretrained2248 vs scratch0712 +0.061 (ikisi birden (B4'ün mevcut, confound'lu karşılaştırması)). Üçü toplamsal olarak tutarlı.",
+      "source": "diagnostics/a13_scratch_dose/a13_verdict.json",
+      "exact": {
+        "slopes": {
+          "scratch0712": 0.6547068722514588,
+          "pretrained2248": 0.7160652787380302,
+          "scratch2248": 0.6488331093375835
+        },
+        "contrasts": {
+          "scratch2248 vs pretrained2248": -0.06723216940044663,
+          "scratch2248 vs scratch0712": -0.005873762913875313,
+          "pretrained2248 vs scratch0712": 0.061358406486571315
+        }
+      }
+    },
+    {
+      "claim": "baş-izolasyonu \"%19\"",
+      "published": "%19",
+      "panel": "%16 (doğrusal referansla)",
+      "measured": "%18.58 (doğrusal payda) / %22.82 (varyasyonel payda)",
+      "verdict": "yayımlı doğru",
+      "note": "Δ = 0.00622; **doğrusal** öğrencinin ECE'si 0.03348 → %18.58 (≈19). Varyasyonel öğrencininki 0.02725 → %22.82. Panelin %16'sı hiçbir paydadan çıkmıyor. AYRICA: bu kol **@best**'te ölçülmüş, makalenin birincil checkpoint'i @swa.",
+      "source": "diagnostics/vich_isolation/vich_isolation_verdict.json",
+      "exact": {
+        "delta": 0.0062208156878924385,
+        "linear_ece": 0.03347536418643634,
+        "vich_ece": 0.027254548498543904,
+        "pct_vs_linear": 18.58326515358124,
+        "pct_vs_vich": 22.82487155575074
+      }
+    },
+    {
+      "claim": "\"37× collapse\" vs \"roughly forty times the noise\"",
+      "published": "37× ve ~40× (aynı 0.0005)",
+      "panel": "hangisi?",
+      "measured": "açıklık 0.020083 · ~39.8×",
+      "verdict": "~40× doğru, 37× yeniden üretilemiyor",
+      "note": "Öğrenci JSD açıklığı @swa = 0.073681 − 0.053598 = **0.020083**. Tohum sd'si konvansiyona göre: ortalama sd 0.000504 → 39.8× · medyan sd 0.000456 → 44.1× · en büyük sd 0.000733 → 27.4× · en küçük sd 0.000373 → 53.9× · havuzlanmış sd 0.000523 → 38.4×. **37× hiçbirinden çıkmıyor**; yayımlı ~40 ortalama sd'ye karşılık geliyor. Metin tek bir konvansiyon seçip yazmalı.",
+      "source": "diagnostics/ferplus_jsd/ferplus_student_jsd.json",
+      "exact": {
+        "span": 0.020082825173934303,
+        "sd_conventions": {
+          "ortalama sd": 0.000504433655719772,
+          "medyan sd": 0.0004558998592839187,
+          "en büyük sd": 0.0007331671660701203,
+          "en küçük sd": 0.0003727677382411302,
+          "havuzlanmış sd": 0.000522552261077945
+        },
+        "ratios": {
+          "ortalama sd": 39.812619451964,
+          "medyan sd": 44.050957167388404,
+          "en büyük sd": 27.391877464427502,
+          "en küçük sd": 53.87490148340959,
+          "havuzlanmış sd": 38.43218500768999
+        }
+      }
+    },
+    {
+      "claim": "FERPlus T*_ECE (metinde 0.453 / 0.46 / ≈0.46–0.51)",
+      "published": "üç değer birden",
+      "panel": "kesin değer?",
+      "measured": "0.45305",
+      "verdict": "ikisi de değil — üç sayı üç FARKLI şey",
+      "note": "**0.4530** = sürekli argmin (sınırlı Brent, `tstar_sensitivity`). **0.46** = aynı optimumun kaba ızgaradaki hâli (adım 0.02, 196 nokta). **0.5000** ise T*_ECE DEĞİL, **T*_NLL** — dağıtılan sıcaklık. Metindeki \"≈0.46–0.51\" iki farklı ölçütü tek aralık gibi gösteriyor.",
+      "source": "diagnostics/paper_tables/tstar_sensitivity.json · diagnostics/ferplus_jsd/ferplus_jsd.json",
+      "exact": {
+        "continuous_T_star_ece": 0.45304659827458493,
+        "grid_T_star_ece": 0.46,
+        "T_star_nll": 0.5,
+        "grid": {
+          "lo": 0.1,
+          "hi": 4.0,
+          "n": 196
+        }
+      }
+    },
+    {
+      "claim": "Ek B yoğun grid alt sınırı \"0.5\"",
+      "published": "0.5",
+      "panel": "FERPlus optimumu 0.453 bunun altında → sınır-kısıtlı mı?",
+      "measured": "RAF-DB [0.60, 2.95] adım 0.05 (48 nokta) · FERPlus [0.10, 4.00] adım 0.02 (196 nokta) · sürekli fit [0.1, 3.0] adım 0.005",
+      "verdict": "ikisi de değil",
+      "note": "**0.5 hiçbir ızgaranın sınırı değil.** İki ayrı ızgara var ve alt sınırları 0.60 ile 0.10. Sınır-kısıtlılık sorusunun cevabı: **hayır** — RAF-DB optimumları 1.350, 1.050, 1.250 ve FERPlus optimumu 0.46, hepsi kendi ızgaralarının İÇİNDE. Headroom aralığı sınır-kısıtlı değil; düzeltilmesi gereken tek şey Ek B'nin ızgarayı tek bir sayıyla anması.",
+      "source": "diagnostics/teacher_ece_grid/teacher_ece_grid.json · diagnostics/paper_tables/tstar_sensitivity.json",
+      "exact": {
+        "rafdb_grid": [
+          0.6,
+          2.95,
+          0.05,
+          48
+        ],
+        "ferplus_grid": [
+          0.1,
+          4.0,
+          0.02,
+          196
+        ],
+        "continuous": {
+          "step": 0.005,
+          "range": [
+            0.1,
+            3.0
+          ],
+          "tolerance": 1e-05
+        },
+        "optima_inside_grid": true
+      }
+    },
+    {
+      "claim": "\"bar\" terimi (§5.5'te 1×, `tab_collapse`'ta 2×)",
+      "published": "iki farklı kullanım",
+      "panel": "hangisi nerede doğru?",
+      "measured": "bar = 1× kontrol sd = 0.0012",
+      "verdict": "ikisi de doğru, ama aynı şeyi ölçmüyorlar",
+      "note": "`p6_verdict.py` \"bar\"ı **1× kontrol tohum sd'si** diye tanımlıyor ve hükmü `|ort| ≥ **2×bar**` ile veriyor; `criterion_applied.py` aynı eşiği doğrudan `2σ_kontrol` diye yazıyor. Yani tanım tek: **bar = 1× sd, eşik = 2×bar**. `tab_collapse` oranı 2×bar'a bölerek basıyor (eşiğin kaç katı), §5.5 ise 1×bar'a bölüyor (gürültünün kaç katı) — ikisi de meşru ama **aynı sayı değil, tam iki katı**. Metin hangi birimi kullandığını her iki yerde de yazmalı.",
+      "source": "diagnostics/paper_tables/p6_collapse_test.json · diagnostics/criterion_applied.py",
+      "exact": {
+        "bar_is_1x_control_sd": true,
+        "threshold_is_2x_bar": true,
+        "bar_value": 0.0012
+      }
+    }
+  ]
+}

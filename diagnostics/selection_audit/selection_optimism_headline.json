@@ -1,0 +1,76 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "scope": "RAF-DB student runs only (the audit evaluates the RAF-DB fold-3 val split, so no other dataset can enter it)",
+  "abstract_figure": "best - last, d_acc_mean +/- d_acc_sd",
+  "variants": {
+    "best-last/with_recent": {
+      "n": 131,
+      "d_acc_mean": 0.7658466018793237,
+      "d_acc_sd": 0.43107852109679157,
+      "d_ece_mean": -0.002878700403167627,
+      "d_ece_sd": 0.009218824488955835,
+      "d_acc_positive_share": 0.9847328244274809
+    },
+    "best-last/without_recent": {
+      "n": 116,
+      "d_acc_mean": 0.7808633343926792,
+      "d_acc_sd": 0.4468804352547434,
+      "d_ece_mean": -0.003018325065839462,
+      "d_ece_sd": 0.009225074942327821,
+      "d_acc_positive_share": 0.9827586206896551
+    },
+    "best-swa/with_recent": {
+      "n": 118,
+      "d_acc_mean": 0.1292732368081303,
+      "d_acc_sd": 0.262038968256677,
+      "d_ece_mean": -0.0005773924487635059,
+      "d_ece_sd": 0.011751979016303862,
+      "d_acc_positive_share": 0.6949152542372882
+    },
+    "best-swa/without_recent": {
+      "n": 103,
+      "d_acc_mean": 0.1240489922680901,
+      "d_acc_sd": 0.25069832506413275,
+      "d_ece_mean": -0.0007869670302027757,
+      "d_ece_sd": 0.011521294470224496,
+      "d_acc_positive_share": 0.6893203883495146
+    }
+  },
+  "headline": {
+    "n": 131,
+    "d_acc_mean": 0.7658466018793237,
+    "d_acc_sd": 0.43107852109679157,
+    "d_ece_mean": -0.002878700403167627,
+    "d_ece_sd": 0.009218824488955835,
+    "previous_n": 116,
+    "previous_d_acc_mean": 0.7808633343926792,
+    "shift_from_adding_recent_pp": -0.015016732513355446
+  },
+  "stability_across_inclusion_sets": {
+    "note": "the audit's inclusion set was frozen at the last entry; these are the three sets the campaign passed through, and the estimate is stable across all of them",
+    "series": [
+      {
+        "cutoff": "2026-07-29-14-00-00",
+        "label": "before P2 (the set the paper's current text quotes)",
+        "n": 116,
+        "d_acc_mean": 0.7808633343926792,
+        "d_acc_sd": 0.4468804352547434
+      },
+      {
+        "cutoff": "2026-07-30-06-00-00",
+        "label": "after P2+P3",
+        "n": 125,
+        "d_acc_mean": 0.7687089233398438,
+        "d_acc_sd": 0.43769684167364487
+      },
+      {
+        "cutoff": "2026-07-31-06-00-00",
+        "label": "after P4 -- FROZEN, this is the number to quote",
+        "n": 131,
+        "d_acc_mean": 0.7658466018793237,
+        "d_acc_sd": 0.43107852109679157
+      }
+    ],
+    "span_pp": 0.015016732513355446
+  }
+}

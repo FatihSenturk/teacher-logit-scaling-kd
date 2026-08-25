@@ -1,0 +1,18 @@
+{
+  "verdict": "clean",
+  "rafdb_n_val": 3068,
+  "ferplus_n_val": 3153,
+  "required_flag": "student_feature_adapter_dim",
+  "dirs_scanned": 147,
+  "finished": 127,
+  "non_rafdb_finished": 17,
+  "check_1_misplaced_caches": [],
+  "check_2_n_val_mismatch": [],
+  "check_3_structurally_at_risk": [],
+  "distinct_methods": [
+    "15-bin confidence ECE, fold-3 val, best_checkpoint.pth"
+  ],
+  "distinct_n_val": [
+    3068
+  ]
+}

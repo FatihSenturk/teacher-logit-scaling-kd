@@ -1,0 +1,27 @@
+{
+  "ckpt": "results\\teacher_logs\\RAFDB\\POSTERv2\\2026-07-21-13-36-38\\best.pt",
+  "own_acc_pct": 92.47066497802734,
+  "ece_T1": 0.039083414265431826,
+  "T_star": 1.252757036574787,
+  "ece_Tstar": 0.016885105350493142,
+  "reference": {
+    "VAE9182_head": {
+      "ece_T1": 0.0136,
+      "T_star": 0.983
+    },
+    "Primary_recipe": {
+      "ece_T1": 0.0396,
+      "T_star": 1.261
+    },
+    "Stage1_recipe": {
+      "ece_T1": 0.0378,
+      "T_star": 1.349
+    }
+  },
+  "decision_bands": {
+    "head_center": 0.015,
+    "recipe_center": 0.038,
+    "half_width": 0.01
+  },
+  "verdict": "RECIPE/AUGMENTATION (head flip did not fix calibration; QCS recipe/seed drove VAE9182's edge)"
+}

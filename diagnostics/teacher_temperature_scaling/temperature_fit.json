@@ -1,0 +1,38 @@
+[
+  {
+    "teacher": "stage1",
+    "own_acc_pct": 92.24250030517578,
+    "T_star": 1.3493927210953593,
+    "ece_T1": 0.03779733980455796,
+    "ece_Tstar": 0.015817596575893666,
+    "nll_T1": 0.29160380363464355,
+    "nll_Tstar": 0.2668439447879791,
+    "audit_ece_T1_anchor": 0.0378,
+    "ece_T1_mismatch_vs_audit": 2.660195442039104e-06,
+    "anchor_ok": true
+  },
+  {
+    "teacher": "primary",
+    "own_acc_pct": 92.01434326171875,
+    "T_star": 1.2613411785961113,
+    "ece_T1": 0.039575973411504727,
+    "ece_Tstar": 0.01972459457241572,
+    "nll_T1": 0.30617350339889526,
+    "nll_Tstar": 0.2872024178504944,
+    "audit_ece_T1_anchor": 0.0396,
+    "ece_T1_mismatch_vs_audit": 2.4026588495276724e-05,
+    "anchor_ok": true
+  },
+  {
+    "teacher": "vae9182",
+    "own_acc_pct": 91.81877136230469,
+    "T_star": 0.9829375448886304,
+    "ece_T1": 0.013553927899028671,
+    "ece_Tstar": 0.014609849335433918,
+    "nll_T1": 0.2642580270767212,
+    "nll_Tstar": 0.2641667127609253,
+    "audit_ece_T1_anchor": 0.0136,
+    "ece_T1_mismatch_vs_audit": 4.607210097132795e-05,
+    "anchor_ok": true
+  }
+]

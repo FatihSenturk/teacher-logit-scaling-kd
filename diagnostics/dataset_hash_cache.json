@@ -1,0 +1,10 @@
+{
+  "key": "15339:38613377:691805",
+  "value": {
+    "dataset_sha256": "5dfed142d4b737d09e5d56c455c3334b9a1f0e744c28ce36f87e2fad13dd62f7",
+    "n_images": 15339,
+    "total_bytes": 38613377,
+    "metadata_sha256": "8fe635c636244be9589f2d9ac51ab9ee5f8faf0991198e2b841c92ddc46b34ac",
+    "root": "data/rafdb_aligned"
+  }
+}

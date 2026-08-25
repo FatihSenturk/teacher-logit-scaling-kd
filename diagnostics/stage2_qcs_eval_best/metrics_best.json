@@ -1,0 +1,20 @@
+{
+  "dataset": "RAFDB",
+  "classes": 7,
+  "model": "POSTERv2",
+  "head": "class-level VAE",
+  "layer_embedding": true,
+  "accuracy": 92.04693611473273,
+  "precision": 89.5319496820329,
+  "recall": 85.46263369145412,
+  "macro_f1": 87.23343866036657,
+  "weighted_f1": 91.98940773078839,
+  "params_m": 58.345038,
+  "flops_g": 8.482723136,
+  "size_mb": 555.0577440261841,
+  "best_epoch": 35,
+  "ce_kld_beta": 0.0001,
+  "feature_dim": 768,
+  "vae_head_params": 10766,
+  "checkpoint": "results\\teacher_logs\\RAFDB\\POSTERv2\\2026-07-17-10-19-40\\best.pt"
+}

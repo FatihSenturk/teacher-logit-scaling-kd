@@ -1,0 +1,2042 @@
+{
+  "note": "review-responsive, not pre-declared",
+  "counts": {
+    "derived": 73,
+    "mismatch": 0
+  },
+  "entries": [
+    {
+      "id": "jsd_collapse",
+      "printed": "37",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/r3w1_joint_optimum.json",
+          "path": "arms[\"0.26\"].jsd_arm[0] - arms[\"0.74\"].jsd_arm[0]"
+        },
+        {
+          "artifact": "paper_tables/r3w1_joint_optimum.json",
+          "path": "arms[\"0.74\"].jsd_ts[0] - arms[\"0.26\"].jsd_ts[0]"
+        }
+      ],
+      "operand_values": [
+        0.020082825173934303,
+        0.000539364912524036
+      ],
+      "exact": 37.23420769058525,
+      "rounding": "int",
+      "rounded": "37",
+      "matches": true,
+      "note": "'collapse onto a common value' cumlesi; N12'de olculdu",
+      "where": []
+    },
+    {
+      "id": "jsd_noise_ratio",
+      "printed": "40",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/jsd_collapse_audit.json",
+          "path": "numerator.value"
+        },
+        {
+          "artifact": "paper_tables/jsd_collapse_audit.json",
+          "path": "R_noise.seed_sd_by_convention[\"mean sd\"]"
+        }
+      ],
+      "operand_values": [
+        0.020082825173934303,
+        0.000504433655719772
+      ],
+      "exact": 39.812619451964,
+      "rounding": "int",
+      "rounded": "40",
+      "matches": true,
+      "note": "ayni alt bolumun govdesi: 'roughly forty times the noise'",
+      "where": []
+    },
+    {
+      "id": "capacity_vs_teacher_lever",
+      "printed": "76",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T10_axis_spans.swa.teacher_span"
+        },
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T10_axis_spans.swa.capacity_span"
+        }
+      ],
+      "operand_values": [
+        0.17798139929596574,
+        0.0023508643920086905
+      ],
+      "exact": 75.70891792013998,
+      "rounding": "int",
+      "rounded": "76",
+      "matches": true,
+      "note": "tab_capacity dipnotu: 'a factor of 76'",
+      "where": [
+        "paper/tables/tab_capacity.tex:20"
+      ]
+    },
+    {
+      "id": "selection_cost_best",
+      "printed": "0.52",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=vae9182].student_by_ckpt.best.acc_mean"
+        },
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=stage1].student_by_ckpt.best.acc_mean"
+        }
+      ],
+      "operand_values": [
+        90.27596791585286,
+        89.75445302327473
+      ],
+      "exact": 0.521514892578125,
+      "rounding": "2dp",
+      "rounded": "0.52",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/tables/tab_selection.tex:21"
+      ]
+    },
+    {
+      "id": "selection_cost_swa",
+      "printed": "0.35",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=vae9182].student_by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=stage1].student_by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        89.9500223795573,
+        89.60234832763672
+      ],
+      "exact": 0.34767405192057765,
+      "rounding": "2dp",
+      "rounded": "0.35",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/tables/tab_selection.tex:10"
+      ]
+    },
+    {
+      "id": "selection_cost_last",
+      "printed": "0.83",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=vae9182].student_by_ckpt.last.acc_mean"
+        },
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=stage1].student_by_ckpt.last.acc_mean"
+        }
+      ],
+      "operand_values": [
+        89.81964365641277,
+        88.99391682942708
+      ],
+      "exact": 0.8257268269856866,
+      "rounding": "2dp",
+      "rounded": "0.83",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/tables/tab_selection.tex:11"
+      ]
+    },
+    {
+      "id": "human_trade_ece",
+      "printed": "+0.0159",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "ferplus_jsd/ferplus_student_jsd.json",
+          "path": "by_checkpoint.swa[\"0.74\"].ece[0]"
+        },
+        {
+          "artifact": "ferplus_jsd/ferplus_student_jsd.json",
+          "path": "by_checkpoint.swa[\"0.5063\"].ece[0]"
+        }
+      ],
+      "operand_values": [
+        0.034363226014547714,
+        0.018498602500361613
+      ],
+      "exact": 0.0158646235141861,
+      "rounding": "4dp",
+      "rounded": "0.0159",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/tables/tab_human.tex:20"
+      ]
+    },
+    {
+      "id": "human_trade_jsd",
+      "printed": "-0.0051",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "ferplus_jsd/ferplus_student_jsd.json",
+          "path": "by_checkpoint.swa[\"0.74\"].jsd[0]"
+        },
+        {
+          "artifact": "ferplus_jsd/ferplus_student_jsd.json",
+          "path": "by_checkpoint.swa[\"0.5063\"].jsd[0]"
+        }
+      ],
+      "operand_values": [
+        0.05359788859883944,
+        0.058690217634042106
+      ],
+      "exact": -0.005092329035202667,
+      "rounding": "4dp",
+      "rounded": "-0.0051",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/tables/tab_human.tex:20"
+      ]
+    },
+    {
+      "id": "collapse_ratio_5_10",
+      "printed": "16.3",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T11_collapse.pairs[\"T·τ = 5.10\"].mean"
+        },
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T11_collapse.two_bar"
+        }
+      ],
+      "operand_values": [
+        -0.03913065410667997,
+        0.0024
+      ],
+      "exact": 16.304439211116655,
+      "rounding": "1dp",
+      "rounded": "16.3",
+      "matches": true,
+      "note": "|ort|/esik; isaret disi",
+      "where": [
+        "paper/tables/tab_collapse.tex:24"
+      ]
+    },
+    {
+      "id": "collapse_ratio_10_20",
+      "printed": "13.5",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T11_collapse.pairs[\"T·τ = 10.20\"].mean"
+        },
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T11_collapse.two_bar"
+        }
+      ],
+      "operand_values": [
+        -0.03240560747356013,
+        0.0024
+      ],
+      "exact": 13.502336447316722,
+      "rounding": "1dp",
+      "rounded": "13.5",
+      "matches": true,
+      "note": "|ort|/esik; isaret disi",
+      "where": [
+        "paper/tables/tab_collapse.tex:27"
+      ]
+    },
+    {
+      "id": "selection_cost_best_caption",
+      "printed": "0.52",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=vae9182].student_by_ckpt.best.acc_mean"
+        },
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=stage1].student_by_ckpt.best.acc_mean"
+        }
+      ],
+      "operand_values": [
+        90.27596791585286,
+        89.75445302327473
+      ],
+      "exact": 0.521514892578125,
+      "rounding": "2dp",
+      "rounded": "0.52",
+      "matches": true,
+      "note": "AYNI nicelik, ikinci gecis: alt yazi. Dipnottaki `selection_cost_best` ile ayni pay/payda; iki yerde basildigi icin iki kez kaydediliyor",
+      "where": [
+        "paper/tables/tab_selection.tex:11"
+      ]
+    },
+    {
+      "id": "ece_reduction_min",
+      "printed": "41",
+      "formula": "pct_drop",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[1].by_ckpt.swa.ece_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[2].by_ckpt.swa.ece_mean"
+        }
+      ],
+      "operand_values": [
+        0.07312947179942429,
+        0.04280742607210989
+      ],
+      "exact": 41.46350982881447,
+      "rounding": "int",
+      "rounded": "41",
+      "matches": true,
+      "note": "Stage1: T=1 -> T=1.3406 (dagitilan kol), @SWA ogrenci ECE'si",
+      "where": [
+        "paper/main_elsarticle.tex:129"
+      ]
+    },
+    {
+      "id": "ece_reduction_max",
+      "printed": "76",
+      "formula": "pct_drop",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[3].by_ckpt.swa.ece_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[1].by_ckpt.swa.ece_mean"
+        }
+      ],
+      "operand_values": [
+        0.07830038099601992,
+        0.018498602500361613
+      ],
+      "exact": 76.37482440691838,
+      "rounding": "int",
+      "rounded": "76",
+      "matches": true,
+      "note": "FERPlus: T=1 -> T=0.5063 (dagitilan kol), @SWA ogrenci ECE'si",
+      "where": [
+        "paper/main_elsarticle.tex:129"
+      ]
+    },
+    {
+      "id": "accuracy_band_widest_arm",
+      "printed": "0.51",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_vae9182.points[2].by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_vae9182.points[3].by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        90.09126281738281,
+        89.5806172688802
+      ],
+      "exact": 0.5106455485026089,
+      "rounding": "2dp",
+      "rounded": "0.51",
+      "matches": true,
+      "note": "VAE9182 kolunun en yuksek (T=1.3406) ve en dusuk (T=1.70) @SWA dogrulugu; olculen kol aciklikleri 0.304 / 0.511 / 0.486, ozet en genisi basiyor",
+      "where": [
+        "paper/main_elsarticle.tex:127"
+      ]
+    },
+    {
+      "id": "robust_agreeing_steps",
+      "printed": "224",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "total_steps"
+        },
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "total_breaks"
+        }
+      ],
+      "operand_values": [
+        231.0,
+        7.0
+      ],
+      "exact": 224.0,
+      "rounding": "int",
+      "rounded": "224",
+      "matches": true,
+      "note": "uyusan adim sayisi = toplam adim - kirilma; makale 224'u basiyor, artefakt ikisini",
+      "where": [
+        "paper/supplementary.tex:171"
+      ]
+    },
+    {
+      "id": "robust_agreement_pct",
+      "printed": "97.0",
+      "formula": "pct_of",
+      "operands": [
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "total_steps - total_breaks"
+        },
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "total_steps"
+        }
+      ],
+      "operand_values": [
+        224.0,
+        231.0
+      ],
+      "exact": 96.96969696969697,
+      "rounding": "1dp",
+      "rounded": "97.0",
+      "matches": true,
+      "note": "paydasi CUMLEDE adlandirilmis: 231 adim",
+      "where": [
+        "paper/supplementary.tex:173"
+      ]
+    },
+    {
+      "id": "jsd_smallest_stratum_pct",
+      "printed": "0.9",
+      "formula": "pct_of",
+      "operands": [
+        {
+          "artifact": "paper_tables/jsd_sensitivity.json",
+          "path": "results[\"(c) stratum 6-7\"].n"
+        },
+        {
+          "artifact": "paper_tables/jsd_sensitivity.json",
+          "path": "results[\"(a) all rows\"].n"
+        }
+      ],
+      "operand_values": [
+        28.0,
+        3153.0
+      ],
+      "exact": 0.8880431335236283,
+      "rounding": "1dp",
+      "rounded": "0.9",
+      "matches": true,
+      "note": "en kucuk katmanin foldun yuzde kaci: 28 / 3153",
+      "where": [
+        "paper/supplementary.tex:279"
+      ]
+    },
+    {
+      "id": "tstar_criterion_cost_min_supp",
+      "printed": "13",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.ferplus.ece_removed_by_ts"
+        },
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.ferplus.d_ece"
+        }
+      ],
+      "operand_values": [
+        0.11259259962672624,
+        0.008461177850049375
+      ],
+      "exact": 13.306965250242223,
+      "rounding": "int",
+      "rounded": "13",
+      "matches": true,
+      "note": "§3.2'deki `tstar_criterion_cost_min` ile ayni pay/payda, S2'deki ikinci gecis",
+      "where": [
+        "paper/supplementary.tex:209"
+      ]
+    },
+    {
+      "id": "tstar_criterion_cost_max_supp",
+      "printed": "14",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.stage1.ece_removed_by_ts"
+        },
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.stage1.d_ece"
+        }
+      ],
+      "operand_values": [
+        0.0219799084042477,
+        0.0015353928119760125
+      ],
+      "exact": 14.315495183255484,
+      "rounding": "int",
+      "rounded": "14",
+      "matches": true,
+      "note": "§3.2'deki `tstar_criterion_cost_max` ile ayni pay/payda, S2'deki ikinci gecis",
+      "where": [
+        "paper/supplementary.tex:209"
+      ]
+    },
+    {
+      "id": "tstar_criterion_cost_min",
+      "printed": "13",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.ferplus.ece_removed_by_ts"
+        },
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.ferplus.d_ece"
+        }
+      ],
+      "operand_values": [
+        0.11259259962672624,
+        0.008461177850049375
+      ],
+      "exact": 13.306965250242223,
+      "rounding": "int",
+      "rounded": "13",
+      "matches": true,
+      "note": "FERPlus 13.31x -- uc ogretmenin en dusugu (primary 13.60, stage1 14.32)",
+      "where": []
+    },
+    {
+      "id": "tstar_criterion_cost_max",
+      "printed": "14",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.stage1.ece_removed_by_ts"
+        },
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.stage1.d_ece"
+        }
+      ],
+      "operand_values": [
+        0.0219799084042477,
+        0.0015353928119760125
+      ],
+      "exact": 14.315495183255484,
+      "rounding": "int",
+      "rounded": "14",
+      "matches": true,
+      "note": "Stage1 14.32x -- uc ogretmenin en yuksegi; vae9182 disarida cunku TS orada ECE EKLIYOR",
+      "where": []
+    },
+    {
+      "id": "intro.acc_band_stage1",
+      "printed": "0.30",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[2].by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[3].by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        89.73272450764973,
+        89.42851003011067
+      ],
+      "exact": 0.3042144775390625,
+      "rounding": "2dp",
+      "rounded": "0.30",
+      "matches": true,
+      "note": "stage1 kolunun @swa dogruluk acikligi: T*=1.3406 eksi T=1.70",
+      "where": [
+        "paper/sections/01_introduction.tex:77"
+      ]
+    },
+    {
+      "id": "intro.acc_band_vae9182",
+      "printed": "0.51",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_vae9182.points[2].by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_vae9182.points[3].by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        90.09126281738281,
+        89.5806172688802
+      ],
+      "exact": 0.5106455485026089,
+      "rounding": "2dp",
+      "rounded": "0.51",
+      "matches": true,
+      "note": "kontrol kolunun @swa dogruluk acikligi",
+      "where": [
+        "paper/sections/01_introduction.tex:79"
+      ]
+    },
+    {
+      "id": "intro.acc_decline_ferplus",
+      "printed": "0.49",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[0].by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[3].by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        89.20604960123698,
+        88.71973673502605
+      ],
+      "exact": 0.4863128662109375,
+      "rounding": "2dp",
+      "rounded": "0.49",
+      "matches": true,
+      "note": "FERPlus kolunda T=0.26 ile T=1.0 arasi @swa dogruluk farki",
+      "where": [
+        "paper/sections/01_introduction.tex:79"
+      ]
+    },
+    {
+      "id": "methodology.votes_below_ten_val",
+      "printed": "37.3",
+      "formula": "pct_of",
+      "operands": [
+        {
+          "artifact": "paper_tables/ferplus_abstention_entropy.json",
+          "path": "rows_with_abstention"
+        },
+        {
+          "artifact": "paper_tables/ferplus_abstention_entropy.json",
+          "path": "n_val"
+        }
+      ],
+      "operand_values": [
+        1176.0,
+        3153.0
+      ],
+      "exact": 37.29781160799239,
+      "rounding": "1dp",
+      "rounded": "37.3",
+      "matches": true,
+      "note": "dogrulama fold'unda 10'a tamamlanmayan satir orani; payda n_val=3153",
+      "where": [
+        "paper/sections/03_methodology.tex:525"
+      ]
+    },
+    {
+      "id": "methodology.abstention_mass_val",
+      "printed": "37.3",
+      "formula": "pct_of",
+      "operands": [
+        {
+          "artifact": "paper_tables/ferplus_abstention_entropy.json",
+          "path": "rows_with_abstention"
+        },
+        {
+          "artifact": "paper_tables/ferplus_abstention_entropy.json",
+          "path": "n_val"
+        }
+      ],
+      "operand_values": [
+        1176.0,
+        3153.0
+      ],
+      "exact": 37.29781160799239,
+      "rounding": "1dp",
+      "rounded": "37.3",
+      "matches": true,
+      "note": "ayni cumlenin ikinci yarisi: kanonik dosyada unknown/NF'ye kutle koyan satirlar. Kanonik dosyada her satir tam 10'a topladigi icin bu kume 10'dan kucuk toplayan satirlarla BIREBIR ayni -- ayni alan, ama iddia farkli, o yuzden ayri beyan.",
+      "where": [
+        "paper/sections/03_methodology.tex:529"
+      ]
+    },
+    {
+      "id": "results.jsd_gap_student_ts",
+      "printed": "0.0041",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "paper_tables/student_ts_baseline.json",
+          "path": "aggregate.jsd.tstar_arm[0]"
+        },
+        {
+          "artifact": "paper_tables/student_ts_baseline.json",
+          "path": "aggregate.jsd.student_ts[0]"
+        }
+      ],
+      "operand_values": [
+        0.058690217634042106,
+        0.05454465795715183
+      ],
+      "exact": 0.004145559676890273,
+      "rounding": "4dp",
+      "rounded": "0.0041",
+      "matches": true,
+      "note": "TAM DUYARLIKTA fark 0.004145559676890273 -> 0.0041. Basili operandlardan (0.0587-0.0545) 0.0042 cikar; makale yuvarlanmamis alanlardan hesaplamis.",
+      "where": [
+        "paper/sections/05_results_discussion.tex:653"
+      ]
+    },
+    {
+      "id": "results.ferplus_ece_share_low",
+      "printed": "13",
+      "formula": "pct_of",
+      "operands": [
+        {
+          "artifact": "paper_tables/selection_audit_inference.json",
+          "path": "datasets[\"FERPlus\"].contrasts[\"best-swa\"].ece.mean"
+        },
+        {
+          "artifact": "paper_tables/selection_audit_inference.json",
+          "path": "datasets[\"FERPlus\"].contrasts[\"best-swa\"].ece_scale_denominators[\"mean ECE @best\"]"
+        }
+      ],
+      "operand_values": [
+        0.006881735070898713,
+        0.05435748884887785
+      ],
+      "exact": 12.66014162286082,
+      "rounding": "int",
+      "rounded": "13",
+      "matches": true,
+      "note": "araligin ALT ucu; payda 'mean ECE @best' = 0.05435748884887785 -> %12,66 -> 13",
+      "where": [
+        "paper/sections/05_results_discussion.tex:819"
+      ]
+    },
+    {
+      "id": "results.ferplus_ece_share_high",
+      "printed": "15",
+      "formula": "pct_of",
+      "operands": [
+        {
+          "artifact": "paper_tables/selection_audit_inference.json",
+          "path": "datasets[\"FERPlus\"].contrasts[\"best-swa\"].ece.mean"
+        },
+        {
+          "artifact": "paper_tables/selection_audit_inference.json",
+          "path": "datasets[\"FERPlus\"].contrasts[\"best-swa\"].ece_scale_denominators[\"median ECE @swa\"]"
+        }
+      ],
+      "operand_values": [
+        0.006881735070898713,
+        0.045957979335884726
+      ],
+      "exact": 14.973972246698288,
+      "rounding": "int",
+      "rounded": "15",
+      "matches": true,
+      "note": "araligin UST ucu; payda 'median ECE @swa' = 0.045957979335884726 -> %14,97 -> 15. UCUNCU payda ('mean ECE @swa', %14,50) aralik ICINDE kaldigi icin ayrica basilmiyor. DIKKAT: §3'teki '13--14 times' BASKA BIR NICELIKTIR -- boyutsuz KAT (ece_removed_by_ts / d_ece), yuzde degil; defterde `tstar_criterion_cost_min/max` olarak ayri kayitli. Resiprok da degiller (1/13.31 = %7,5), yani ayni ifadenin iki yazilisi diye okunamaz.",
+      "where": [
+        "paper/sections/05_results_discussion.tex:819"
+      ]
+    },
+    {
+      "id": "results.tstar_gap_pct",
+      "printed": "63",
+      "formula": "pct_excess",
+      "operands": [
+        {
+          "artifact": "ferplus_jsd/ferplus_jsd.json",
+          "path": "T_star_jsd.T"
+        },
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.ferplus.T_star_ece"
+        }
+      ],
+      "operand_values": [
+        0.74,
+        0.45304659827458493
+      ],
+      "exact": 63.33860640787701,
+      "rounding": "int",
+      "rounded": "63",
+      "matches": true,
+      "note": "PAYDA T*_ECE: (T*_JSD - T*_ECE) / T*_ECE = (0.74-0.45305)/0.45305 = %63,3. Ilk denemede `pct_drop` kullanildi (payda T*_JSD) ve 39 verdi; defter bunu derived_mismatch olarak dusurdu, formul duzeltildi. Iki payda arasindaki fark 24 puan -- yani 'bir oranin paydasi cumlede adlanmali' kurali burada 24 puanlik bir hatayi engelledi.",
+      "where": [
+        "paper/sections/05_results_discussion.tex:607"
+      ]
+    },
+    {
+      "id": "meth.argmin_cells_agreeing",
+      "printed": "20",
+      "formula": "sum",
+      "operands": [
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "series[\"RAF-DB stage1\"]._consensus_metrics_agreeing"
+        },
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "series[\"RAF-DB vae9182\"]._consensus_metrics_agreeing"
+        },
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "series[\"FERPlus\"]._consensus_metrics_agreeing"
+        }
+      ],
+      "operand_values": [
+        7.0,
+        7.0,
+        6.0
+      ],
+      "exact": 20.0,
+      "rounding": "int",
+      "rounded": "20",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/03_methodology.tex:198"
+      ]
+    },
+    {
+      "id": "meth.argmin_cells_total",
+      "printed": "21",
+      "formula": "sum",
+      "operands": [
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "series[\"RAF-DB stage1\"]._n_metrics"
+        },
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "series[\"RAF-DB vae9182\"]._n_metrics"
+        },
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "series[\"FERPlus\"]._n_metrics"
+        }
+      ],
+      "operand_values": [
+        7.0,
+        7.0,
+        7.0
+      ],
+      "exact": 21.0,
+      "rounding": "int",
+      "rounded": "21",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/03_methodology.tex:198"
+      ]
+    },
+    {
+      "id": "meth.tstar_criterion_cost_min",
+      "printed": "13",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.ferplus.ece_removed_by_ts"
+        },
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.ferplus.d_ece"
+        }
+      ],
+      "operand_values": [
+        0.11259259962672624,
+        0.008461177850049375
+      ],
+      "exact": 13.306965250242223,
+      "rounding": "int",
+      "rounded": "13",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/03_methodology.tex:245"
+      ]
+    },
+    {
+      "id": "meth.tstar_criterion_cost_max",
+      "printed": "14",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.stage1.ece_removed_by_ts"
+        },
+        {
+          "artifact": "paper_tables/tstar_sensitivity.json",
+          "path": "results.stage1.d_ece"
+        }
+      ],
+      "operand_values": [
+        0.0219799084042477,
+        0.0015353928119760125
+      ],
+      "exact": 14.315495183255484,
+      "rounding": "int",
+      "rounded": "14",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/03_methodology.tex:245"
+      ]
+    },
+    {
+      "id": "meth.acc_band_stage1",
+      "printed": "0.30",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[2].by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[3].by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        89.73272450764973,
+        89.42851003011067
+      ],
+      "exact": 0.3042144775390625,
+      "rounding": "2dp",
+      "rounded": "0.30",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/03_methodology.tex:597"
+      ]
+    },
+    {
+      "id": "meth.acc_band_vae9182",
+      "printed": "0.51",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_vae9182.points[2].by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_vae9182.points[3].by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        90.09126281738281,
+        89.5806172688802
+      ],
+      "exact": 0.5106455485026089,
+      "rounding": "2dp",
+      "rounded": "0.51",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/03_methodology.tex:597"
+      ]
+    },
+    {
+      "id": "meth.acc_trend_ferplus",
+      "printed": "0.49",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[0].by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[3].by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        89.20604960123698,
+        88.71973673502605
+      ],
+      "exact": 0.4863128662109375,
+      "rounding": "2dp",
+      "rounded": "0.49",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/03_methodology.tex:598"
+      ]
+    },
+    {
+      "id": "res.jsd_slice_coverage_pct",
+      "printed": "99.1",
+      "formula": "pct_of",
+      "operands": [
+        {
+          "artifact": "paper_tables/jsd_sensitivity.json",
+          "path": "results[\"(a) all rows\"].n - results[\"(c) stratum 6-7\"].n"
+        },
+        {
+          "artifact": "paper_tables/jsd_sensitivity.json",
+          "path": "results[\"(a) all rows\"].n"
+        }
+      ],
+      "operand_values": [
+        3125.0,
+        3153.0
+      ],
+      "exact": 99.11195686647638,
+      "rounding": "1dp",
+      "rounded": "99.1",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:612"
+      ]
+    },
+    {
+      "id": "res.tradeoff_ece_cost",
+      "printed": "+0.0159",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "ferplus_jsd/ferplus_student_jsd.json",
+          "path": "by_checkpoint.swa[\"0.74\"].ece[0]"
+        },
+        {
+          "artifact": "ferplus_jsd/ferplus_student_jsd.json",
+          "path": "by_checkpoint.swa[\"0.5063\"].ece[0]"
+        }
+      ],
+      "operand_values": [
+        0.034363226014547714,
+        0.018498602500361613
+      ],
+      "exact": 0.0158646235141861,
+      "rounding": "4dp",
+      "rounded": "0.0159",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:627"
+      ]
+    },
+    {
+      "id": "res.tradeoff_jsd_gain",
+      "printed": "-0.0051",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "ferplus_jsd/ferplus_student_jsd.json",
+          "path": "by_checkpoint.swa[\"0.74\"].jsd[0]"
+        },
+        {
+          "artifact": "ferplus_jsd/ferplus_student_jsd.json",
+          "path": "by_checkpoint.swa[\"0.5063\"].jsd[0]"
+        }
+      ],
+      "operand_values": [
+        0.05359788859883944,
+        0.058690217634042106
+      ],
+      "exact": -0.005092329035202667,
+      "rounding": "4dp",
+      "rounded": "-0.0051",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:627"
+      ]
+    },
+    {
+      "id": "res.sharpened_target_acc_gain",
+      "printed": "+0.40",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[1].by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[3].by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        89.12147521972656,
+        88.71973673502605
+      ],
+      "exact": 0.4017384847005161,
+      "rounding": "2dp",
+      "rounded": "0.40",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:660"
+      ]
+    },
+    {
+      "id": "res.ferplus_control_mde",
+      "printed": "0.74",
+      "formula": "sum",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[3].by_ckpt.swa.acc_sd"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[3].by_ckpt.swa.acc_sd"
+        }
+      ],
+      "operand_values": [
+        0.37032312388616695,
+        0.37032312388616695
+      ],
+      "exact": 0.7406462477723339,
+      "rounding": "2dp",
+      "rounded": "0.74",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:665"
+      ]
+    },
+    {
+      "id": "res.corner_jsd_shortfall",
+      "printed": "0.0002",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "paper_tables/r3w1_joint_optimum.json",
+          "path": "occupancy[\"0.74\"].jsd - corner.JSD_min"
+        },
+        {
+          "artifact": "paper_tables/r3w1_joint_optimum.json",
+          "path": "occupancy[\"0.74\"].bar_jsd"
+        }
+      ],
+      "operand_values": [
+        0.0009861058725975785,
+        0.0007455354764822604
+      ],
+      "exact": 0.00024057039611531813,
+      "rounding": "4dp",
+      "rounded": "0.0002",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:693"
+      ]
+    },
+    {
+      "id": "res.detrend_shift_max",
+      "printed": "0.04",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "paper_tables/order_stat_trend.json",
+          "path": "results[\"100\"].a2_raw.mean"
+        },
+        {
+          "artifact": "paper_tables/order_stat_trend.json",
+          "path": "results[\"100\"].a2_detrended.mean"
+        }
+      ],
+      "operand_values": [
+        0.7639534297093329,
+        0.7280360726105741
+      ],
+      "exact": 0.03591735709875876,
+      "rounding": "2dp",
+      "rounded": "0.04",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:786"
+      ]
+    },
+    {
+      "id": "res.rafdb_ece_effect_pct",
+      "printed": "4",
+      "formula": "pct_drop",
+      "operands": [
+        {
+          "artifact": "paper_tables/selection_audit_inference.json",
+          "path": "datasets[\"RAF-DB\"].contrasts[\"best-last\"].ece_scale_denominators[\"mean ECE @last\"]"
+        },
+        {
+          "artifact": "paper_tables/selection_audit_inference.json",
+          "path": "datasets[\"RAF-DB\"].contrasts[\"best-last\"].ece_scale_denominators[\"mean ECE @best\"]"
+        }
+      ],
+      "operand_values": [
+        0.07332250676655858,
+        0.07044380636339094
+      ],
+      "exact": 3.9260801766267126,
+      "rounding": "int",
+      "rounded": "4",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:806"
+      ]
+    },
+    {
+      "id": "res.fp16_b1_ratio_lo",
+      "printed": "1.20",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "p5_efficiency/latency_benchmark_session2.json",
+          "path": "measurements[device=cuda][model=teacher_POSTERv2_VAE][batch=1][dtype=fp16].median_ms"
+        },
+        {
+          "artifact": "p5_efficiency/latency_benchmark_session2.json",
+          "path": "measurements[device=cuda][model=teacher_POSTERv2_VAE][batch=1][dtype=fp32].median_ms"
+        }
+      ],
+      "operand_values": [
+        14.569150000170339,
+        12.098699997295626
+      ],
+      "exact": 1.204191359685497,
+      "rounding": "2dp",
+      "rounded": "1.20",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/supplementary.tex:349"
+      ]
+    },
+    {
+      "id": "res.fp16_b1_ratio_hi",
+      "printed": "1.34",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "p5_efficiency/latency_benchmark.json",
+          "path": "measurements[device=cuda][model=teacher_POSTERv2_VAE][batch=1][dtype=fp16].median_ms"
+        },
+        {
+          "artifact": "p5_efficiency/latency_benchmark.json",
+          "path": "measurements[device=cuda][model=teacher_POSTERv2_VAE][batch=1][dtype=fp32].median_ms"
+        }
+      ],
+      "operand_values": [
+        13.970700034406036,
+        10.459849960170686
+      ],
+      "exact": 1.3356501372012088,
+      "rounding": "2dp",
+      "rounded": "1.34",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/supplementary.tex:349"
+      ]
+    },
+    {
+      "id": "res.fp16_b32_ratio_lo",
+      "printed": "0.63",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "p5_efficiency/latency_benchmark.json",
+          "path": "measurements[device=cuda][model=teacher_POSTERv2_VAE][batch=32][dtype=fp16].median_ms"
+        },
+        {
+          "artifact": "p5_efficiency/latency_benchmark.json",
+          "path": "measurements[device=cuda][model=teacher_POSTERv2_VAE][batch=32][dtype=fp32].median_ms"
+        }
+      ],
+      "operand_values": [
+        24.150350014679134,
+        38.58905000379309
+      ],
+      "exact": 0.6258342719581147,
+      "rounding": "2dp",
+      "rounded": "0.63",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/supplementary.tex:351"
+      ]
+    },
+    {
+      "id": "res.fp16_b32_ratio_hi",
+      "printed": "0.69",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "p5_efficiency/latency_benchmark_session2.json",
+          "path": "measurements[device=cuda][model=teacher_POSTERv2_VAE][batch=32][dtype=fp16].median_ms"
+        },
+        {
+          "artifact": "p5_efficiency/latency_benchmark_session2.json",
+          "path": "measurements[device=cuda][model=teacher_POSTERv2_VAE][batch=32][dtype=fp32].median_ms"
+        }
+      ],
+      "operand_values": [
+        26.087999998708256,
+        37.744500004919246
+      ],
+      "exact": 0.6911735483397105,
+      "rounding": "2dp",
+      "rounded": "0.69",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/supplementary.tex:351"
+      ]
+    },
+    {
+      "id": "s5.ece_reduction_rafdb",
+      "printed": "41",
+      "formula": "pct_drop",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[1].by_ckpt.swa.ece_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[2].by_ckpt.swa.ece_mean"
+        }
+      ],
+      "operand_values": [
+        0.07312947179942429,
+        0.04280742607210989
+      ],
+      "exact": 41.46350982881447,
+      "rounding": "int",
+      "rounded": "41",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:23"
+      ]
+    },
+    {
+      "id": "s5.full_swing",
+      "printed": "2.4",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[4].by_ckpt.swa.ece_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[2].by_ckpt.swa.ece_mean"
+        }
+      ],
+      "operand_values": [
+        0.10078169572701769,
+        0.04280742607210989
+      ],
+      "exact": 2.354304030269166,
+      "rounding": "1dp",
+      "rounded": "2.4",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:24"
+      ]
+    },
+    {
+      "id": "s5.acc_band_stage1",
+      "printed": "0.30",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[2].by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[3].by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        89.73272450764973,
+        89.42851003011067
+      ],
+      "exact": 0.3042144775390625,
+      "rounding": "2dp",
+      "rounded": "0.30",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:33"
+      ]
+    },
+    {
+      "id": "s5.acc_paired_gain",
+      "printed": "+0.13",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[2].by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[1].by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        89.73272450764973,
+        89.60234832763672
+      ],
+      "exact": 0.1303761800130161,
+      "rounding": "2dp",
+      "rounded": "0.13",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:35"
+      ]
+    },
+    {
+      "id": "s5.ctrl_deterioration",
+      "printed": "6.4",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_vae9182.points[4].by_ckpt.swa.ece_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_vae9182.points[1].by_ckpt.swa.ece_mean"
+        }
+      ],
+      "operand_values": [
+        0.21093863546071184,
+        0.032957236164746107
+      ],
+      "exact": 6.400373939315638,
+      "rounding": "1dp",
+      "rounded": "6.4",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:81"
+      ]
+    },
+    {
+      "id": "s5.acc_band_vae9182",
+      "printed": "0.51",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_vae9182.points[2].by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_vae9182.points[3].by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        90.09126281738281,
+        89.5806172688802
+      ],
+      "exact": 0.5106455485026089,
+      "rounding": "2dp",
+      "rounded": "0.51",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:85"
+      ]
+    },
+    {
+      "id": "s5.ece_reduction_ferplus",
+      "printed": "76",
+      "formula": "pct_drop",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[3].by_ckpt.swa.ece_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[1].by_ckpt.swa.ece_mean"
+        }
+      ],
+      "operand_values": [
+        0.07830038099601992,
+        0.018498602500361613
+      ],
+      "exact": 76.37482440691838,
+      "rounding": "int",
+      "rounded": "76",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:153"
+      ]
+    },
+    {
+      "id": "s5.collapse_ratio_510",
+      "printed": "16.3",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T11_collapse.pairs[\"T·τ = 5.10\"].mean"
+        },
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T11_collapse.two_bar"
+        }
+      ],
+      "operand_values": [
+        -0.03913065410667997,
+        0.0024
+      ],
+      "exact": 16.304439211116655,
+      "rounding": "1dp",
+      "rounded": "16.3",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:239"
+      ]
+    },
+    {
+      "id": "s5.collapse_ratio_1020",
+      "printed": "13.5",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T11_collapse.pairs[\"T·τ = 10.20\"].mean"
+        },
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T11_collapse.two_bar"
+        }
+      ],
+      "operand_values": [
+        -0.03240560747356013,
+        0.0024
+      ],
+      "exact": 13.502336447316722,
+      "rounding": "1dp",
+      "rounded": "13.5",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:239"
+      ]
+    },
+    {
+      "id": "s5.acc_band_ferplus",
+      "printed": "0.49",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[0].by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[3].by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        89.20604960123698,
+        88.71973673502605
+      ],
+      "exact": 0.4863128662109375,
+      "rounding": "2dp",
+      "rounded": "0.49",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:298"
+      ]
+    },
+    {
+      "id": "s5.capacity_acc_span",
+      "printed": "+1.94",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T10_capacity_cells.swa[\"scratch w100ns\"].acc_mean"
+        },
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T10_capacity_cells.swa[\"scratch w050\"].acc_mean"
+        }
+      ],
+      "operand_values": [
+        88.09213256835938,
+        86.14732615152995
+      ],
+      "exact": 1.9448064168294223,
+      "rounding": "2dp",
+      "rounded": "1.94",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:313"
+      ]
+    },
+    {
+      "id": "s5.teacher_acc_span",
+      "printed": "0.42",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=stage1].teacher_acc"
+        },
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=vae9182].teacher_acc"
+        }
+      ],
+      "operand_values": [
+        92.24250030517578,
+        91.81877136230469
+      ],
+      "exact": 0.42372894287109375,
+      "rounding": "2dp",
+      "rounded": "0.42",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:561"
+      ]
+    },
+    {
+      "id": "s5.teacher_ece_factor",
+      "printed": "2.9",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=primary].teacher_ece"
+        },
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=vae9182].teacher_ece"
+        }
+      ],
+      "operand_values": [
+        0.039575973411504727,
+        0.013553927899028671
+      ],
+      "exact": 2.9198896221324078,
+      "rounding": "1dp",
+      "rounded": "2.9",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:562"
+      ]
+    },
+    {
+      "id": "s5.sel_cost_swa",
+      "printed": "0.35",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=vae9182].student_by_ckpt.swa.acc_mean"
+        },
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=stage1].student_by_ckpt.swa.acc_mean"
+        }
+      ],
+      "operand_values": [
+        89.9500223795573,
+        89.60234832763672
+      ],
+      "exact": 0.34767405192057765,
+      "rounding": "2dp",
+      "rounded": "0.35",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:572"
+      ]
+    },
+    {
+      "id": "s5.sel_cost_last",
+      "printed": "0.83",
+      "formula": "diff",
+      "operands": [
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=vae9182].student_by_ckpt.last.acc_mean"
+        },
+        {
+          "artifact": "p4_teacher_selection/p4_teacher_selection.json",
+          "path": "recipe_step3_ranking.rows[teacher=stage1].student_by_ckpt.last.acc_mean"
+        }
+      ],
+      "operand_values": [
+        89.81964365641277,
+        88.99391682942708
+      ],
+      "exact": 0.8257268269856866,
+      "rounding": "2dp",
+      "rounded": "0.83",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:574"
+      ]
+    },
+    {
+      "id": "s5.baseline_ece_overconf",
+      "printed": "0.075",
+      "formula": "mean",
+      "operands": [
+        {
+          "artifact": "paper_tables/control_sd_mde.json",
+          "path": "rows[checkpoint=swa][axis=ece][teacher=stage1][class_weight_mode=none].control_level"
+        },
+        {
+          "artifact": "paper_tables/control_sd_mde.json",
+          "path": "rows[checkpoint=swa][axis=ece][teacher=primary][class_weight_mode=none].control_level"
+        }
+      ],
+      "operand_values": [
+        0.07448867909522845,
+        0.07550573005611769
+      ],
+      "exact": 0.07499720457567308,
+      "rounding": "3dp",
+      "rounded": "0.075",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:428"
+      ]
+    },
+    {
+      "id": "res.argmin_cells_agreeing_0",
+      "printed": "20",
+      "formula": "sum",
+      "operands": [
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "series[\"RAF-DB stage1\"]._consensus_metrics_agreeing"
+        },
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "series[\"RAF-DB vae9182\"]._consensus_metrics_agreeing"
+        },
+        {
+          "artifact": "paper_tables/robustness_metrics.json",
+          "path": "series[\"FERPlus\"]._consensus_metrics_agreeing"
+        }
+      ],
+      "operand_values": [
+        7.0,
+        7.0,
+        6.0
+      ],
+      "exact": 20.0,
+      "rounding": "int",
+      "rounded": "20",
+      "matches": true,
+      "note": "",
+      "where": [
+        "paper/sections/05_results_discussion.tex:52"
+      ]
+    },
+    {
+      "id": "s5.r2_floor",
+      "printed": "0.998",
+      "formula": "min",
+      "operands": [
+        {
+          "artifact": "a13_scratch_dose/a13_verdict.json",
+          "path": "fits.scratch0712.r2"
+        },
+        {
+          "artifact": "a13_scratch_dose/a13_verdict.json",
+          "path": "fits.scratch2248.r2"
+        },
+        {
+          "artifact": "a13_scratch_dose/a13_verdict.json",
+          "path": "fits.pretrained2248.r2"
+        }
+      ],
+      "operand_values": [
+        0.9999645299723947,
+        0.998817814674116,
+        0.9999691373688872
+      ],
+      "exact": 0.998817814674116,
+      "rounding": "3dp_floor",
+      "rounded": "0.998",
+      "matches": true,
+      "note": "uc kolun EN KUCUK R^2'si; alt sinir iddiasi oldugu icin ASAGI yuvarlanir (scratch2248 = 0.99881781, digerleri 0.99996+)",
+      "where": [
+        "paper/sections/05_results_discussion.tex:352"
+      ]
+    },
+    {
+      "id": "s5.baseline_ece_ratio",
+      "printed": "2.7",
+      "formula": "ratio_of_mean",
+      "operands": [
+        {
+          "artifact": "paper_tables/control_sd_mde.json",
+          "path": "rows[checkpoint=swa][axis=ece][teacher=stage1][class_weight_mode=none].control_level"
+        },
+        {
+          "artifact": "paper_tables/control_sd_mde.json",
+          "path": "rows[checkpoint=swa][axis=ece][teacher=primary][class_weight_mode=none].control_level"
+        },
+        {
+          "artifact": "paper_tables/control_sd_mde.json",
+          "path": "rows[checkpoint=swa][axis=ece][teacher=vae9182][class_weight_mode=none].control_level"
+        }
+      ],
+      "operand_values": [
+        0.07448867909522845,
+        0.07550573005611769,
+        0.027766280970667714
+      ],
+      "exact": 2.701017275410419,
+      "rounding": "1dp",
+      "rounded": "2.7",
+      "matches": true,
+      "note": "pay = stage1 ve primary kontrol kollarinin @swa ECE duzeylerinin ORTALAMASI (0.075); PAYDA = vae9182 kontrol kolunun @swa ECE duzeyi (0.0278). Basili iki yuvarlanmis degerden hesaplansaydi 2.679 cikardi; alanlardan 2.701 cikiyor -- ikisi de 1 basamakta 2.7 veriyor ama hesap alanlardan yapiliyor.",
+      "where": [
+        "paper/sections/05_results_discussion.tex:427"
+      ]
+    },
+    {
+      "id": "s5.composite_T_stage1",
+      "printed": "8.04",
+      "formula": "product",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_stage1.points[2].T"
+        },
+        {
+          "artifact": "paper_tables/tau_t_factorial.json",
+          "path": "arms[\"tau6_T0.85\"].tau"
+        }
+      ],
+      "operand_values": [
+        1.3406,
+        6.0
+      ],
+      "exact": 8.0436,
+      "rounding": "2dp",
+      "rounded": "8.04",
+      "matches": true,
+      "note": "stage1 ogrenci-optimum kolu T=1.3406, tau=6 -> 8.0436",
+      "where": [
+        "paper/sections/05_results_discussion.tex:200"
+      ]
+    },
+    {
+      "id": "s5.composite_T_vae9182",
+      "printed": "6.0",
+      "formula": "product",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.rafdb_vae9182.points[1].T"
+        },
+        {
+          "artifact": "paper_tables/tau_t_factorial.json",
+          "path": "arms[\"tau6_T0.85\"].tau"
+        }
+      ],
+      "operand_values": [
+        1.0,
+        6.0
+      ],
+      "exact": 6.0,
+      "rounding": "1dp",
+      "rounded": "6.0",
+      "matches": true,
+      "note": "vae9182 ogrenci-optimum kolu T=1 (T*=0.983 DEGIL: ogrencinin en dusuk ECE'si T=1 kolunda), tau=6 -> 6.0",
+      "where": [
+        "paper/sections/05_results_discussion.tex:201"
+      ]
+    },
+    {
+      "id": "s5.composite_T_ferplus",
+      "printed": "3.04",
+      "formula": "product",
+      "operands": [
+        {
+          "artifact": "p1_dose_response/two_dataset_overlay.json",
+          "path": "arms.ferplus.points[1].T"
+        },
+        {
+          "artifact": "paper_tables/tau_t_factorial.json",
+          "path": "arms[\"tau6_T0.85\"].tau"
+        }
+      ],
+      "operand_values": [
+        0.5063,
+        6.0
+      ],
+      "exact": 3.0378,
+      "rounding": "2dp",
+      "rounded": "3.04",
+      "matches": true,
+      "note": "FERPlus ogrenci-optimum kolu T=0.5063, tau=6 -> 3.0378 = 3.04. Basili deger 20 Agu 2026'da 3.06'ydi (CIFT YUVARLAMA: 0.5063 -> 0.51 -> x6); 21 Agu 2026'da makalede 3.04'e duzeltildi ve bag YESILE dondu.",
+      "where": [
+        "paper/sections/05_results_discussion.tex:201"
+      ]
+    },
+    {
+      "id": "s4.prereg_lead_min",
+      "printed": "18",
+      "formula": "min",
+      "operands": [
+        {
+          "artifact": "paper_tables/prereg_lead_audit.json",
+          "path": "items.A1.lead_seconds"
+        },
+        {
+          "artifact": "paper_tables/prereg_lead_audit.json",
+          "path": "items.A2.lead_seconds"
+        },
+        {
+          "artifact": "paper_tables/prereg_lead_audit.json",
+          "path": "items.A3.lead_seconds"
+        },
+        {
+          "artifact": "paper_tables/prereg_lead_audit.json",
+          "path": "items.A4.lead_seconds"
+        },
+        {
+          "artifact": "paper_tables/prereg_lead_audit.json",
+          "path": "items.A7.lead_seconds"
+        },
+        {
+          "artifact": "paper_tables/prereg_lead_audit.json",
+          "path": "items.A8.lead_seconds"
+        }
+      ],
+      "operand_values": [
+        20.0,
+        31406.0,
+        19.0,
+        18.0,
+        28.0,
+        46634.0
+      ],
+      "exact": 18.0,
+      "rounding": "int_floor",
+      "rounded": "18",
+      "matches": true,
+      "note": "alti lead-tasiyan on-beyanin en kisasi = A4 (human-alignment), 18 s; saniyeler tamsayi-kesin oldugu icin floor==deger",
+      "where": [
+        "paper/sections/04_experiments.tex:246"
+      ]
+    },
+    {
+      "id": "figp.snr_floor",
+      "printed": "10.5",
+      "formula": "min",
+      "operands": [
+        {
+          "artifact": "reliability/perclass_calibration.json",
+          "path": "classes.Surprise.range_over_seed_sd"
+        },
+        {
+          "artifact": "reliability/perclass_calibration.json",
+          "path": "classes.Fear.range_over_seed_sd"
+        },
+        {
+          "artifact": "reliability/perclass_calibration.json",
+          "path": "classes.Disgust.range_over_seed_sd"
+        },
+        {
+          "artifact": "reliability/perclass_calibration.json",
+          "path": "classes.Happiness.range_over_seed_sd"
+        },
+        {
+          "artifact": "reliability/perclass_calibration.json",
+          "path": "classes.Sadness.range_over_seed_sd"
+        },
+        {
+          "artifact": "reliability/perclass_calibration.json",
+          "path": "classes.Anger.range_over_seed_sd"
+        },
+        {
+          "artifact": "reliability/perclass_calibration.json",
+          "path": "classes.Neutral.range_over_seed_sd"
+        }
+      ],
+      "operand_values": [
+        15.800602592675363,
+        13.092056150797774,
+        10.555678962646104,
+        49.292921736017995,
+        21.324723106058546,
+        13.996851386464586,
+        28.920578353212907
+      ],
+      "exact": 10.555678962646104,
+      "rounding": "1dp_floor",
+      "rounded": "10.5",
+      "matches": true,
+      "note": "yedi sinifin en kucuk (araligin tohum sd'sine orani) = Disgust 10.5557; alt sinir iddiasi oldugu icin ASAGI yuvarlanir",
+      "where": [
+        "paper/figures/fig_perclass.tex:17"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "run_id": "stage1_adaptive_t_swa200",
+    "best_epoch": 399,
+    "last50_slope_per_epoch": 0.004708011414361952,
+    "still_ascending_at_cap": true,
+    "last50_val_acc_min": 88.33116051426457,
+    "last50_val_acc_max": 90.02607576850185,
+    "val_acc_at_best_epoch": 90.02607576850185,
+    "val_acc_final_epoch": 89.76531952580697
+  },
+  {
+    "run_id": "primary_adaptive_t_swa200",
+    "best_epoch": 391,
+    "last50_slope_per_epoch": -0.002410351640529797,
+    "still_ascending_at_cap": false,
+    "last50_val_acc_min": 87.77705345501955,
+    "last50_val_acc_max": 89.08083451928806,
+    "val_acc_at_best_epoch": 89.08083451928806,
+    "val_acc_final_epoch": 88.49413298565841
+  },
+  {
+    "run_id": "vae9182_adaptive_t_swa200",
+    "best_epoch": 395,
+    "last50_slope_per_epoch": 0.0027390355782367596,
+    "still_ascending_at_cap": true,
+    "last50_val_acc_min": 89.47196870925684,
+    "last50_val_acc_max": 90.64537157757496,
+    "val_acc_at_best_epoch": 90.64537157757496,
+    "val_acc_final_epoch": 90.1238591916558
+  },
+  {
+    "run_id": "vae9182_gate_swa200",
+    "best_epoch": 398,
+    "last50_slope_per_epoch": 0.005340336198171851,
+    "still_ascending_at_cap": true,
+    "last50_val_acc_min": 88.78748385194383,
+    "last50_val_acc_max": 90.09126466753585,
+    "val_acc_at_best_epoch": 90.09126466753585,
+    "val_acc_final_epoch": 89.34159066251235
+  }
+]

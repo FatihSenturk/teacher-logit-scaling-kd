@@ -1,0 +1,110 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "population": {
+    "per_k": "frozen selection audit set (131 runs)",
+    "per_k_rafdb_all": "all finished RAF-DB runs (199 runs)",
+    "audit_deltas": "frozen selection audit set",
+    "decision": "9 Aug 2026: the order-statistic component is restricted to the frozen set so that the total (b/c) and its component (a) come from the same runs. The wider population is kept as a robustness row, not as the paper's main sentence."
+  },
+  "per_k": {
+    "50": {
+      "n_runs": 131,
+      "a1_max_all_minus_mean_lastK": {
+        "mean": 0.8383560320082356,
+        "sd": 0.4415832092165274
+      },
+      "a2_pure_order_statistic": {
+        "mean": 0.6445305842767274,
+        "sd": 0.20325974256195473
+      },
+      "argmax_in_last_K_count": 45,
+      "argmax_in_last_K_denominator": 131,
+      "argmax_in_last_K_frac": 0.3435114503816794,
+      "val_loss_at_selected_minus_mean_lastK": {
+        "mean": -0.015114248355246178,
+        "sd": 0.02419635144785044
+      }
+    },
+    "100": {
+      "n_runs": 131,
+      "a1_max_all_minus_mean_lastK": {
+        "mean": 0.8057540442113855,
+        "sd": 0.25809907248070824
+      },
+      "a2_pure_order_statistic": {
+        "mean": 0.7639534297093329,
+        "sd": 0.25876803535423654
+      },
+      "argmax_in_last_K_count": 88,
+      "argmax_in_last_K_denominator": 131,
+      "argmax_in_last_K_frac": 0.6717557251908397,
+      "val_loss_at_selected_minus_mean_lastK": {
+        "mean": -0.013652593618214547,
+        "sd": 0.016073766245412877
+      }
+    }
+  },
+  "per_k_rafdb_all": {
+    "50": {
+      "n_runs": 199,
+      "a1_max_all_minus_mean_lastK": {
+        "mean": 0.8077872981458946,
+        "sd": 0.38025268585099675
+      },
+      "a2_pure_order_statistic": {
+        "mean": 0.6312199827294698,
+        "sd": 0.18404940272594952
+      },
+      "argmax_in_last_K_count": 68,
+      "argmax_in_last_K_denominator": 199,
+      "argmax_in_last_K_frac": 0.3417085427135678,
+      "val_loss_at_selected_minus_mean_lastK": {
+        "mean": -0.013179494249105575,
+        "sd": 0.02063541423554724
+      }
+    },
+    "100": {
+      "n_runs": 199,
+      "a1_max_all_minus_mean_lastK": {
+        "mean": 0.7916996902751043,
+        "sd": 0.23506363039174746
+      },
+      "a2_pure_order_statistic": {
+        "mean": 0.7442001277637699,
+        "sd": 0.226152032696426
+      },
+      "argmax_in_last_K_count": 129,
+      "argmax_in_last_K_denominator": 199,
+      "argmax_in_last_K_frac": 0.6482412060301508,
+      "val_loss_at_selected_minus_mean_lastK": {
+        "mean": -0.012613629769308302,
+        "sd": 0.014277291987231872
+      }
+    }
+  },
+  "audit_deltas": {
+    "b_best_minus_last": {
+      "n": 131,
+      "d_acc": {
+        "mean": 0.7658466018793237,
+        "sd": 0.43107852109679157
+      },
+      "d_ece": {
+        "mean": -0.002878700403167627,
+        "sd": 0.009218824488955835
+      }
+    },
+    "c_best_minus_swa": {
+      "n": 118,
+      "d_acc": {
+        "mean": 0.1292732368081303,
+        "sd": 0.262038968256677
+      },
+      "d_ece": {
+        "mean": -0.0005773924487635059,
+        "sd": 0.011751979016303862
+      }
+    }
+  },
+  "ece_variant_a_note": "NOT COMPUTABLE from existing artefacts: training_log.csv has no per-epoch ECE and no per-epoch checkpoints are retained (only best/last/swa). Would require per-epoch ECE logging or per-epoch checkpoints. The logged val_loss (NLL) is reported above as the closest available calibration-sensitive substitute."
+}
