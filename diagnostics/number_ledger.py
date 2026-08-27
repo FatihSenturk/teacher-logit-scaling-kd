@@ -2875,10 +2875,10 @@ dv("s4.prereg_lead_min", "18", "min",
    [op(A_PL, "items.A1.lead_seconds"), op(A_PL, "items.A2.lead_seconds"),
     op(A_PL, "items.A3.lead_seconds"), op(A_PL, "items.A4.lead_seconds"),
     op(A_PL, "items.A7.lead_seconds"), op(A_PL, "items.A8.lead_seconds")],
-   "int_floor", "04_experiments", -1, "18 s to 12 h.", 0,
+   "int_floor", "04_experiments", -1, "18 s to 12 h (intervals", 0,
    note="alti lead-tasiyan on-beyanin en kisasi = A4 (human-alignment), 18 s; saniyeler "
         "tamsayi-kesin oldugu icin floor==deger")
-b("04_experiments", -1, "18 s to 12 h.", 1, A_PL,
+b("04_experiments", -1, "18 s to 12 h (intervals", 1, A_PL,
   "items.A8.lead_hours", "int_floor", ident="s4.prereg_lead_max_h")
 
 # (3) SS3.4: headroom'un ikinci +0.0232 gecisi -- ILK gecisle (meth.stage1_headroom_point_boot,

@@ -60,8 +60,8 @@
       "bytes": 1391
     },
     "tables/tab_holm.tex": {
-      "sha256": "64088c9c5b5d7d224f6fd548965978155ae2b7a1e950cc48455f6c0370cec4da",
-      "bytes": 1653
+      "sha256": "32d0940a4fc7a80d6a756dcc46445811a16ab24087e7e049a1727b7e24d131e2",
+      "bytes": 1687
     },
     "tables/tab_human.tex": {
       "sha256": "c7c2729063a371197e5dcbd95f6413d4248b9e8d8ae6231f537275b5b572be57",
@@ -92,12 +92,12 @@
       "bytes": 1027
     },
     "supplementary.tex": {
-      "sha256": "52df2751c19afbbc874a52a559ebf409b02f1e1cae89ba68c892f1c49f869c66",
-      "bytes": 34032
+      "sha256": "2e395d5fc984e949c065b1c223b4a88a70c7458bc9d7ef9b8e69b46535da09b2",
+      "bytes": 34166
     },
     "sections/01_introduction.tex": {
-      "sha256": "f4759634c6c2b24071ad32d1073a82642b9685d92f7a6860167333aceaac28e2",
-      "bytes": 12944
+      "sha256": "529eb0d9cd35040df4a2cb801d8652ffaaebff38251fd540dbb7a5376a5fda50",
+      "bytes": 13111
     },
     "sections/02_related_work.tex": {
       "sha256": "c360411238de78db4d383b49a27d72e7c0c6b1d39d3e6d5b581574e95c72445a",
@@ -108,20 +108,20 @@
       "bytes": 31305
     },
     "sections/04_experiments.tex": {
-      "sha256": "7945c577f38c6ce3ccb0e2efc1e583560b65ecd0625b9260f84062eae827e3af",
-      "bytes": 17977
+      "sha256": "429b12397ffc06b171b3fc26a20920702ce3e25243d06ebe3bfabd777083cd9c",
+      "bytes": 18311
     },
     "sections/05_results_discussion.tex": {
-      "sha256": "15632f10a838e03e2812b2c64628f12c246bfd918d49228389a6794f3235da42",
-      "bytes": 51557
+      "sha256": "352487c19f13c9afa7b57844ef281dd2d985574e5f71d0c8c7f6516fbe4962f0",
+      "bytes": 51859
     },
     "sections/06_conclusion.tex": {
-      "sha256": "f2c8d507e1b0a288d1840cff9894cbb8bc156cbe1337acccba1cfa3bc630d636",
-      "bytes": 6494
+      "sha256": "f2ebfc617768b6cb1e7261237dacb8c50239012d1c5afac532682af173738f0b",
+      "bytes": 6515
     },
     "main_elsarticle.tex": {
-      "sha256": "1d90b0262ebe31a784e4ae1d93af3c3a259fee1571fb3916bfa64645440df40f",
-      "bytes": 12245
+      "sha256": "584cea74de1630326485d93a50b4fef482144fed8e9823517110a48f6ddc009d",
+      "bytes": 12270
     }
   },
   "sections": [
@@ -194,35 +194,35 @@
     {
       "unit": "app_predecl",
       "index": 0,
-      "line": 615,
+      "line": 617,
       "text": "Predictions --- seven frozen groups sixteen predictions"
     },
     {
       "unit": "app_predecl",
       "index": 1,
-      "line": 624,
+      "line": 626,
       "text": "Later extensions (August) same evidence standard"
     },
     {
       "unit": "app_predecl",
       "index": 2,
-      "line": 629,
+      "line": 631,
       "text": "Exploratory --- research question no numerical criterion fixed"
     },
     {
       "unit": "app_predecl",
       "index": 3,
-      "line": 634,
+      "line": 636,
       "text": "Other statuses"
     }
   ],
   "counts": {
-    "tokens": 1740,
+    "tokens": 1741,
     "bound": 1182,
     "derived": 73,
-    "exempt": 489,
+    "exempt": 490,
     "unbound": 0,
-    "layout_dropped": 357,
+    "layout_dropped": 359,
     "mismatch": 0,
     "derived_mismatch": 0,
     "prose": 3,
@@ -7611,7 +7611,7 @@
       "rounded": "0.1388",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:22"
+        "paper/tables/tab_holm.tex:23"
       ],
       "token": "tab_holm|s-1|1 control: logit std. vs. its control|0",
       "row": "1 control: logit std. vs. its control",
@@ -7627,7 +7627,7 @@
       "rounded": "0.0013",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:22"
+        "paper/tables/tab_holm.tex:23"
       ],
       "token": "tab_holm|s-1|1 control: logit std. vs. its control|1",
       "row": "1 control: logit std. vs. its control",
@@ -7643,7 +7643,7 @@
       "rounded": "185.8",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:22"
+        "paper/tables/tab_holm.tex:23"
       ],
       "token": "tab_holm|s-1|1 control: logit std. vs. its control|2",
       "row": "1 control: logit std. vs. its control",
@@ -7659,7 +7659,7 @@
       "rounded": "0.0002",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:22"
+        "paper/tables/tab_holm.tex:23"
       ],
       "token": "tab_holm|s-1|1 control: logit std. vs. its control|3",
       "row": "1 control: logit std. vs. its control",
@@ -7675,7 +7675,7 @@
       "rounded": "0.0906",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:24"
+        "paper/tables/tab_holm.tex:25"
       ],
       "token": "tab_holm|s-1|2 stage1: logit std. vs. its control|0",
       "row": "2 stage1: logit std. vs. its control",
@@ -7691,7 +7691,7 @@
       "rounded": "0.0023",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:24"
+        "paper/tables/tab_holm.tex:25"
       ],
       "token": "tab_holm|s-1|2 stage1: logit std. vs. its control|1",
       "row": "2 stage1: logit std. vs. its control",
@@ -7707,7 +7707,7 @@
       "rounded": "67.4",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:24"
+        "paper/tables/tab_holm.tex:25"
       ],
       "token": "tab_holm|s-1|2 stage1: logit std. vs. its control|2",
       "row": "2 stage1: logit std. vs. its control",
@@ -7723,7 +7723,7 @@
       "rounded": "0.0011",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:24"
+        "paper/tables/tab_holm.tex:25"
       ],
       "token": "tab_holm|s-1|2 stage1: logit std. vs. its control|3",
       "row": "2 stage1: logit std. vs. its control",
@@ -7739,7 +7739,7 @@
       "rounded": "-0.0303",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:25"
+        "paper/tables/tab_holm.tex:26"
       ],
       "token": "tab_holm|s-1|3 stage1: T^ * vs. T = 1|0",
       "row": "3 stage1: T^ * vs. T = 1",
@@ -7755,7 +7755,7 @@
       "rounded": "0.0012",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:25"
+        "paper/tables/tab_holm.tex:26"
       ],
       "token": "tab_holm|s-1|3 stage1: T^ * vs. T = 1|1",
       "row": "3 stage1: T^ * vs. T = 1",
@@ -7771,7 +7771,7 @@
       "rounded": "-44.7",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:25"
+        "paper/tables/tab_holm.tex:26"
       ],
       "token": "tab_holm|s-1|3 stage1: T^ * vs. T = 1|2",
       "row": "3 stage1: T^ * vs. T = 1",
@@ -7787,7 +7787,7 @@
       "rounded": "0.0020",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:25"
+        "paper/tables/tab_holm.tex:26"
       ],
       "token": "tab_holm|s-1|3 stage1: T^ * vs. T = 1|3",
       "row": "3 stage1: T^ * vs. T = 1",
@@ -7803,7 +7803,7 @@
       "rounded": "-0.0598",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:26"
+        "paper/tables/tab_holm.tex:27"
       ],
       "token": "tab_holm|s-1|4 FERPlus: T^ * vs. T = 1|0",
       "row": "4 FERPlus: T^ * vs. T = 1",
@@ -7819,7 +7819,7 @@
       "rounded": "0.0033",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:26"
+        "paper/tables/tab_holm.tex:27"
       ],
       "token": "tab_holm|s-1|4 FERPlus: T^ * vs. T = 1|1",
       "row": "4 FERPlus: T^ * vs. T = 1",
@@ -7835,7 +7835,7 @@
       "rounded": "-31.7",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:26"
+        "paper/tables/tab_holm.tex:27"
       ],
       "token": "tab_holm|s-1|4 FERPlus: T^ * vs. T = 1|2",
       "row": "4 FERPlus: T^ * vs. T = 1",
@@ -7851,7 +7851,7 @@
       "rounded": "0.0030",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:26"
+        "paper/tables/tab_holm.tex:27"
       ],
       "token": "tab_holm|s-1|4 FERPlus: T^ * vs. T = 1|3",
       "row": "4 FERPlus: T^ * vs. T = 1",
@@ -7867,7 +7867,7 @@
       "rounded": "0.0859",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:27"
+        "paper/tables/tab_holm.tex:28"
       ],
       "token": "tab_holm|s-1|5 primary: logit std. vs. its control|0",
       "row": "5 primary: logit std. vs. its control",
@@ -7883,7 +7883,7 @@
       "rounded": "0.0058",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:27"
+        "paper/tables/tab_holm.tex:28"
       ],
       "token": "tab_holm|s-1|5 primary: logit std. vs. its control|1",
       "row": "5 primary: logit std. vs. its control",
@@ -7899,7 +7899,7 @@
       "rounded": "25.6",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:27"
+        "paper/tables/tab_holm.tex:28"
       ],
       "token": "tab_holm|s-1|5 primary: logit std. vs. its control|2",
       "row": "5 primary: logit std. vs. its control",
@@ -7915,7 +7915,7 @@
       "rounded": "0.0030",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:27"
+        "paper/tables/tab_holm.tex:28"
       ],
       "token": "tab_holm|s-1|5 primary: logit std. vs. its control|3",
       "row": "5 primary: logit std. vs. its control",
@@ -7931,7 +7931,7 @@
       "rounded": "0.0056",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:28"
+        "paper/tables/tab_holm.tex:29"
       ],
       "token": "tab_holm|s-1|6 control: oracle gate vs. clean control|0",
       "row": "6 control: oracle gate vs. clean control",
@@ -7947,7 +7947,7 @@
       "rounded": "0.0040",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:28"
+        "paper/tables/tab_holm.tex:29"
       ],
       "token": "tab_holm|s-1|6 control: oracle gate vs. clean control|1",
       "row": "6 control: oracle gate vs. clean control",
@@ -7963,7 +7963,7 @@
       "rounded": "2.5",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:28"
+        "paper/tables/tab_holm.tex:29"
       ],
       "token": "tab_holm|s-1|6 control: oracle gate vs. clean control|2",
       "row": "6 control: oracle gate vs. clean control",
@@ -7979,7 +7979,7 @@
       "rounded": "0.1339",
       "matches": true,
       "where": [
-        "paper/tables/tab_holm.tex:28"
+        "paper/tables/tab_holm.tex:29"
       ],
       "token": "tab_holm|s-1|6 control: oracle gate vs. clean control|3",
       "row": "6 control: oracle gate vs. clean control",
@@ -10027,7 +10027,7 @@
       "rounded": "8",
       "matches": true,
       "where": [
-        "paper/supplementary.tex:618"
+        "paper/supplementary.tex:620"
       ],
       "token": "app_predecl|s0|Miscalibration pilot kill-switch|0",
       "row": "Miscalibration pilot kill-switch",
@@ -10043,7 +10043,7 @@
       "rounded": "12",
       "matches": true,
       "where": [
-        "paper/supplementary.tex:622"
+        "paper/supplementary.tex:624"
       ],
       "token": "app_predecl|s0|Oracle-gate extension|0",
       "row": "Oracle-gate extension",
@@ -10059,7 +10059,7 @@
       "rounded": "0.79",
       "matches": true,
       "where": [
-        "paper/main_elsarticle.tex:127"
+        "paper/main_elsarticle.tex:128"
       ],
       "token": "abstract|s-1|= 0.79 ) --- while accuracy stays within 0.51 percentage|0",
       "row": "= 0.79 ) --- while accuracy stays within 0.51 percentage",
@@ -10075,7 +10075,7 @@
       "rounded": "131",
       "matches": true,
       "where": [
-        "paper/main_elsarticle.tex:144"
+        "paper/main_elsarticle.tex:145"
       ],
       "token": "abstract|s-1|checkpoints: across 131 RAF-DB runs best-epoch selection on the|0",
       "row": "checkpoints: across 131 RAF-DB runs best-epoch selection on the",
@@ -10091,7 +10091,7 @@
       "rounded": "0.77",
       "matches": true,
       "where": [
-        "paper/main_elsarticle.tex:145"
+        "paper/main_elsarticle.tex:146"
       ],
       "token": "abstract|s-1|reported partition inflates accuracy 0.77 percentage points above|0",
       "row": "reported partition inflates accuracy 0.77 percentage points above",
@@ -10107,7 +10107,7 @@
       "rounded": "1.8",
       "matches": true,
       "where": [
-        "paper/main_elsarticle.tex:135"
+        "paper/main_elsarticle.tex:136"
       ],
       "token": "abstract|s-1|over-confidence is 1.8 -- 2.0 times that under under-confidence.|0",
       "row": "over-confidence is 1.8 -- 2.0 times that under under-confidence.",
@@ -10123,7 +10123,7 @@
       "rounded": "2.0",
       "matches": true,
       "where": [
-        "paper/main_elsarticle.tex:135"
+        "paper/main_elsarticle.tex:136"
       ],
       "token": "abstract|s-1|over-confidence is 1.8 -- 2.0 times that under under-confidence.|1",
       "row": "over-confidence is 1.8 -- 2.0 times that under under-confidence.",
@@ -10139,7 +10139,7 @@
       "rounded": "27",
       "matches": true,
       "where": [
-        "paper/main_elsarticle.tex:139"
+        "paper/main_elsarticle.tex:140"
       ],
       "token": "abstract|s-1|harm is a median 27 times its accuracy effect (seed-variability|0",
       "row": "harm is a median 27 times its accuracy effect (seed-variability",
@@ -11675,7 +11675,7 @@
       "rounded": "25.9",
       "matches": true,
       "where": [
-        "paper/sections/01_introduction.tex:201"
+        "paper/sections/01_introduction.tex:204"
       ],
       "token": "01_introduction|s-1|(The compression setting itself --- a 25.9 smaller student|0",
       "row": "(The compression setting itself --- a 25.9 smaller student",
@@ -11691,7 +11691,7 @@
       "rounded": "97.96",
       "matches": true,
       "where": [
-        "paper/sections/01_introduction.tex:202"
+        "paper/sections/01_introduction.tex:205"
       ],
       "token": "01_introduction|s-1|retaining 97.96 % of teacher accuracy at the SWA checkpoint --- is|0",
       "row": "retaining 97.96 % of teacher accuracy at the SWA checkpoint --- is",
@@ -11707,7 +11707,7 @@
       "rounded": "131",
       "matches": true,
       "where": [
-        "paper/sections/01_introduction.tex:214"
+        "paper/sections/01_introduction.tex:217"
       ],
       "token": "01_introduction|s-1|asymmetry are post-hoc. (5) rests on a frozen audit of 131 RAF-DB|1",
       "row": "asymmetry are post-hoc. (5) rests on a frozen audit of 131 RAF-DB",
@@ -11851,7 +11851,7 @@
       "rounded": "0.0545",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:654"
+        "paper/sections/05_results_discussion.tex:658"
       ],
       "token": "05_results_discussion|s-1|lying entirely outside the same margin ( 0.0545 vs. 0.0587 ). Because|0",
       "row": "lying entirely outside the same margin ( 0.0545 vs. 0.0587 ). Because",
@@ -11867,7 +11867,7 @@
       "rounded": "0.0587",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:654"
+        "paper/sections/05_results_discussion.tex:658"
       ],
       "token": "05_results_discussion|s-1|lying entirely outside the same margin ( 0.0545 vs. 0.0587 ). Because|1",
       "row": "lying entirely outside the same margin ( 0.0545 vs. 0.0587 ). Because",
@@ -11883,7 +11883,7 @@
       "rounded": "0.0069",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:818"
+        "paper/sections/05_results_discussion.tex:822"
       ],
       "token": "05_results_discussion|s-1|+0.0069 (SD 0.0088 n = 12 SE 0.0025 t(11) = +2.71|0",
       "row": "+0.0069 (SD 0.0088 n = 12 SE 0.0025 t(11) = +2.71",
@@ -12699,7 +12699,7 @@
       "rounded": "2.248",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:309"
+        "paper/sections/04_experiments.tex:313"
       ],
       "token": "04_experiments|s-1|The student (MobileNetV2Plus) has 2.248 M parameters and|1",
       "row": "The student (MobileNetV2Plus) has 2.248 M parameters and",
@@ -12715,7 +12715,7 @@
       "rounded": "0.329",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:310"
+        "paper/sections/04_experiments.tex:314"
       ],
       "token": "04_experiments|s-1|0.329 GMACs at 224 224 input resolution|0",
       "row": "0.329 GMACs at 224 224 input resolution",
@@ -12731,7 +12731,7 @@
       "rounded": "25.9",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:311"
+        "paper/sections/04_experiments.tex:315"
       ],
       "token": "04_experiments|s-1|representing 25.9 fewer parameters 25.8 fewer|0",
       "row": "representing 25.9 fewer parameters 25.8 fewer",
@@ -12747,7 +12747,7 @@
       "rounded": "25.8",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:311"
+        "paper/sections/04_experiments.tex:315"
       ],
       "token": "04_experiments|s-1|representing 25.9 fewer parameters 25.8 fewer|1",
       "row": "representing 25.9 fewer parameters 25.8 fewer",
@@ -12763,7 +12763,7 @@
       "rounded": "62.9",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:312"
+        "paper/sections/04_experiments.tex:316"
       ],
       "token": "04_experiments|s-1|FLOPs and 62.9 smaller file size than the teacher while|0",
       "row": "FLOPs and 62.9 smaller file size than the teacher while",
@@ -12779,7 +12779,7 @@
       "rounded": "97.96",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:313"
+        "paper/sections/04_experiments.tex:317"
       ],
       "token": "04_experiments|s-1|retaining 97.96 % of the teacher's accuracy at the SWA checkpoint|0",
       "row": "retaining 97.96 % of the teacher's accuracy at the SWA checkpoint",
@@ -12795,7 +12795,7 @@
       "rounded": "98.32",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:314"
+        "paper/sections/04_experiments.tex:318"
       ],
       "token": "04_experiments|s-1|we report as primary ( 98.32 % if the accuracy-selected checkpoint|0",
       "row": "we report as primary ( 98.32 % if the accuracy-selected checkpoint",
@@ -12811,7 +12811,7 @@
       "rounded": "0.45",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:602"
+        "paper/sections/05_results_discussion.tex:606"
       ],
       "token": "05_results_discussion|s-1|T^ * _ ECE = 0.45 (the standard NLL fit which sets the|0",
       "row": "T^ * _ ECE = 0.45 (the standard NLL fit which sets the",
@@ -12827,7 +12827,7 @@
       "rounded": "0.51",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:603"
+        "paper/sections/05_results_discussion.tex:607"
       ],
       "token": "05_results_discussion|s-1|deployed arm places it at 0.51 ); scored against the annotator vote|0",
       "row": "deployed arm places it at 0.51 ); scored against the annotator vote",
@@ -12843,7 +12843,7 @@
       "rounded": "0.74",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:605"
+        "paper/sections/05_results_discussion.tex:609"
       ],
       "token": "05_results_discussion|s-1|it is best at T = 0.74 where its predictive entropy ( 0.412 nats)|0",
       "row": "it is best at T = 0.74 where its predictive entropy ( 0.412 nats)",
@@ -12859,7 +12859,7 @@
       "rounded": "0.412",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:605"
+        "paper/sections/05_results_discussion.tex:609"
       ],
       "token": "05_results_discussion|s-1|it is best at T = 0.74 where its predictive entropy ( 0.412 nats)|1",
       "row": "it is best at T = 0.74 where its predictive entropy ( 0.412 nats)",
@@ -12875,7 +12875,7 @@
       "rounded": "0.440",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:606"
+        "paper/sections/05_results_discussion.tex:610"
       ],
       "token": "05_results_discussion|s-1|nearly matches the annotators' ( 0.440 ). The two optima differ by|0",
       "row": "nearly matches the annotators' ( 0.440 ). The two optima differ by",
@@ -12891,7 +12891,7 @@
       "rounded": "1977",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:609"
+        "paper/sections/05_results_discussion.tex:613"
       ],
       "token": "05_results_discussion|s-1|teacher optima on the complete-row subset (vote sum =10 n = 1977 )|1",
       "row": "teacher optima on the complete-row subset (vote sum =10 n = 1977 )",
@@ -12907,7 +12907,7 @@
       "rounded": "0.74",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:611"
+        "paper/sections/05_results_discussion.tex:615"
       ],
       "token": "05_results_discussion|s-1|in every slice with T^ * _ JSD identical at 0.74 in|0",
       "row": "in every slice with T^ * _ JSD identical at 0.74 in",
@@ -12923,7 +12923,7 @@
       "rounded": "0.0185",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:620"
+        "paper/sections/05_results_discussion.tex:624"
       ],
       "token": "05_results_discussion|s-1|( 0.0185 0.0016 ) while the student distilled at T = 0.74|0",
       "row": "( 0.0185 0.0016 ) while the student distilled at T = 0.74",
@@ -12939,7 +12939,7 @@
       "rounded": "0.0016",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:620"
+        "paper/sections/05_results_discussion.tex:624"
       ],
       "token": "05_results_discussion|s-1|( 0.0185 0.0016 ) while the student distilled at T = 0.74|1",
       "row": "( 0.0185 0.0016 ) while the student distilled at T = 0.74",
@@ -12955,7 +12955,7 @@
       "rounded": "0.0536",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:621"
+        "paper/sections/05_results_discussion.tex:625"
       ],
       "token": "05_results_discussion|s-1|attains the best agreement with human uncertainty (JSD 0.0536|0",
       "row": "attains the best agreement with human uncertainty (JSD 0.0536",
@@ -12971,7 +12971,7 @@
       "rounded": "0.0004",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:622"
+        "paper/sections/05_results_discussion.tex:626"
       ],
       "token": "05_results_discussion|s-1|0.0004 ). The T = 0.74 arm's two pre-declared predictions are both recorded:|0",
       "row": "0.0004 ). The T = 0.74 arm's two pre-declared predictions are both recorded:",
@@ -12987,7 +12987,7 @@
       "rounded": "0.667",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:633"
+        "paper/sections/05_results_discussion.tex:637"
       ],
       "token": "05_results_discussion|s-1|( 0.667 -- 0.704 across arms) and a metric that barely moves|0",
       "row": "( 0.667 -- 0.704 across arms) and a metric that barely moves",
@@ -13003,7 +13003,7 @@
       "rounded": "0.704",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:633"
+        "paper/sections/05_results_discussion.tex:637"
       ],
       "token": "05_results_discussion|s-1|( 0.667 -- 0.704 across arms) and a metric that barely moves|1",
       "row": "( 0.667 -- 0.704 across arms) and a metric that barely moves",
@@ -13019,7 +13019,7 @@
       "rounded": "0.0201",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:635"
+        "paper/sections/05_results_discussion.tex:639"
       ],
       "token": "05_results_discussion|s-1|Student JSD varies over 0.0201 against a typical seed spread of|0",
       "row": "Student JSD varies over 0.0201 against a typical seed spread of",
@@ -13035,7 +13035,7 @@
       "rounded": "0.00050",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:636"
+        "paper/sections/05_results_discussion.tex:640"
       ],
       "token": "05_results_discussion|s-1|0.00050 --- the mean of the four arms' seed standard deviations ---|0",
       "row": "0.00050 --- the mean of the four arms' seed standard deviations ---",
@@ -13051,7 +13051,7 @@
       "rounded": "0.0783",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:645"
+        "paper/sections/05_results_discussion.tex:649"
       ],
       "token": "05_results_discussion|s-1|scored). It works: student ECE falls from 0.0783 0.0046 to|0",
       "row": "scored). It works: student ECE falls from 0.0783 0.0046 to",
@@ -13067,7 +13067,7 @@
       "rounded": "0.0046",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:645"
+        "paper/sections/05_results_discussion.tex:649"
       ],
       "token": "05_results_discussion|s-1|scored). It works: student ECE falls from 0.0783 0.0046 to|1",
       "row": "scored). It works: student ECE falls from 0.0783 0.0046 to",
@@ -13083,7 +13083,7 @@
       "rounded": "0.0203",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:646"
+        "paper/sections/05_results_discussion.tex:650"
       ],
       "token": "05_results_discussion|s-1|0.0203 0.0017 against the teacher-side arm's|0",
       "row": "0.0203 0.0017 against the teacher-side arm's",
@@ -13099,7 +13099,7 @@
       "rounded": "0.0017",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:646"
+        "paper/sections/05_results_discussion.tex:650"
       ],
       "token": "05_results_discussion|s-1|0.0203 0.0017 against the teacher-side arm's|1",
       "row": "0.0203 0.0017 against the teacher-side arm's",
@@ -13115,7 +13115,7 @@
       "rounded": "0.0185",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:647"
+        "paper/sections/05_results_discussion.tex:651"
       ],
       "token": "05_results_discussion|s-1|0.0185 0.0016 . We report that difference as not|0",
       "row": "0.0185 0.0016 . We report that difference as not",
@@ -13131,7 +13131,7 @@
       "rounded": "0.0016",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:647"
+        "paper/sections/05_results_discussion.tex:651"
       ],
       "token": "05_results_discussion|s-1|0.0185 0.0016 . We report that difference as not|1",
       "row": "0.0185 0.0016 . We report that difference as not",
@@ -13147,7 +13147,7 @@
       "rounded": "0.25",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:650"
+        "paper/sections/05_results_discussion.tex:654"
       ],
       "token": "05_results_discussion|s-1|inconclusive at n = 3 ( p_ TOST = 0.25 ) so a difference|1",
       "row": "inconclusive at n = 3 ( p_ TOST = 0.25 ) so a difference",
@@ -13163,7 +13163,7 @@
       "rounded": "0.35",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:661"
+        "paper/sections/05_results_discussion.tex:665"
       ],
       "token": "05_results_discussion|s-1|worth +0.35 pp of student accuracy at the SWA checkpoint|0",
       "row": "worth +0.35 pp of student accuracy at the SWA checkpoint",
@@ -13179,7 +13179,7 @@
       "rounded": "0.37",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:665"
+        "paper/sections/05_results_discussion.tex:669"
       ],
       "token": "05_results_discussion|s-1|T = 1 control arm's seed deviation of 0.37 pp i.e. 0.74 pp)|1",
       "row": "T = 1 control arm's seed deviation of 0.37 pp i.e. 0.74 pp)",
@@ -13195,7 +13195,7 @@
       "rounded": "0.676",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:672"
+        "paper/sections/05_results_discussion.tex:676"
       ],
       "token": "05_results_discussion|s-1|six cross-fitted values fall in [0.676 0.723] below one: the|0",
       "row": "six cross-fitted values fall in [0.676 0.723] below one: the",
@@ -13211,7 +13211,7 @@
       "rounded": "0.723",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:672"
+        "paper/sections/05_results_discussion.tex:676"
       ],
       "token": "05_results_discussion|s-1|six cross-fitted values fall in [0.676 0.723] below one: the|1",
       "row": "six cross-fitted values fall in [0.676 0.723] below one: the",
@@ -13227,7 +13227,7 @@
       "rounded": "0.0185",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:684"
+        "paper/sections/05_results_discussion.tex:688"
       ],
       "token": "05_results_discussion|s-1|( ECE_ = 0.0185 JSD_ = 0.0536 ; a|0",
       "row": "( ECE_ = 0.0185 JSD_ = 0.0536 ; a",
@@ -13243,7 +13243,7 @@
       "rounded": "0.0536",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:684"
+        "paper/sections/05_results_discussion.tex:688"
       ],
       "token": "05_results_discussion|s-1|( ECE_ = 0.0185 JSD_ = 0.0536 ; a|1",
       "row": "( ECE_ = 0.0185 JSD_ = 0.0536 ; a",
@@ -13259,7 +13259,7 @@
       "rounded": "0.0203",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:687"
+        "paper/sections/05_results_discussion.tex:691"
       ],
       "token": "05_results_discussion|s-1|does: the native arm plus student scaling ( 0.0203|0",
       "row": "does: the native arm plus student scaling ( 0.0203",
@@ -13275,7 +13275,7 @@
       "rounded": "0.0017",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:688"
+        "paper/sections/05_results_discussion.tex:692"
       ],
       "token": "05_results_discussion|s-1|0.0017 0.0545 0.0005 ). Its margins sit inside seed noise on|0",
       "row": "0.0017 0.0545 0.0005 ). Its margins sit inside seed noise on",
@@ -13291,7 +13291,7 @@
       "rounded": "0.0545",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:688"
+        "paper/sections/05_results_discussion.tex:692"
       ],
       "token": "05_results_discussion|s-1|0.0017 0.0545 0.0005 ). Its margins sit inside seed noise on|1",
       "row": "0.0017 0.0545 0.0005 ). Its margins sit inside seed noise on",
@@ -13307,7 +13307,7 @@
       "rounded": "0.0005",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:688"
+        "paper/sections/05_results_discussion.tex:692"
       ],
       "token": "05_results_discussion|s-1|0.0017 0.0545 0.0005 ). Its margins sit inside seed noise on|2",
       "row": "0.0017 0.0545 0.0005 ). Its margins sit inside seed noise on",
@@ -13323,7 +13323,7 @@
       "rounded": "0.0201",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:695"
+        "paper/sections/05_results_discussion.tex:699"
       ],
       "token": "05_results_discussion|s-1|arms span 0.0201 in JSD and after one cross-fitted scalar per arm|0",
       "row": "arms span 0.0201 in JSD and after one cross-fitted scalar per arm",
@@ -13339,7 +13339,7 @@
       "rounded": "0.00054",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:696"
+        "paper/sections/05_results_discussion.tex:700"
       ],
       "token": "05_results_discussion|s-1|they span 0.00054 --- a 37 collapse onto a common value. On|0",
       "row": "they span 0.00054 --- a 37 collapse onto a common value. On",
@@ -13355,7 +13355,7 @@
       "rounded": "37",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:696"
+        "paper/sections/05_results_discussion.tex:700"
       ],
       "token": "05_results_discussion|s-1|they span 0.00054 --- a 37 collapse onto a common value. On|1",
       "row": "they span 0.00054 --- a 37 collapse onto a common value. On",
@@ -13371,7 +13371,7 @@
       "rounded": "0.028",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:721"
+        "paper/sections/05_results_discussion.tex:725"
       ],
       "token": "05_results_discussion|s-1|+0.028 on the most frequent class (happiness n = 1185 ) to|0",
       "row": "+0.028 on the most frequent class (happiness n = 1185 ) to",
@@ -13387,7 +13387,7 @@
       "rounded": "1185",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:721"
+        "paper/sections/05_results_discussion.tex:725"
       ],
       "token": "05_results_discussion|s-1|+0.028 on the most frequent class (happiness n = 1185 ) to|1",
       "row": "+0.028 on the most frequent class (happiness n = 1185 ) to",
@@ -13403,7 +13403,7 @@
       "rounded": "0.305",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:722"
+        "paper/sections/05_results_discussion.tex:726"
       ],
       "token": "05_results_discussion|s-1|+0.305 on the rarest and most contested one (fear n = 74 ). We|0",
       "row": "+0.305 on the rarest and most contested one (fear n = 74 ). We",
@@ -13419,7 +13419,7 @@
       "rounded": "74",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:722"
+        "paper/sections/05_results_discussion.tex:726"
       ],
       "token": "05_results_discussion|s-1|+0.305 on the rarest and most contested one (fear n = 74 ). We|1",
       "row": "+0.305 on the rarest and most contested one (fear n = 74 ). We",
@@ -13435,7 +13435,7 @@
       "rounded": "1.46",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:728"
+        "paper/sections/05_results_discussion.tex:732"
       ],
       "token": "05_results_discussion|s-1|T = 1.46 surprise at 1.62 sadness at 1.70 and anger at|0",
       "row": "T = 1.46 surprise at 1.62 sadness at 1.70 and anger at",
@@ -13451,7 +13451,7 @@
       "rounded": "1.62",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:728"
+        "paper/sections/05_results_discussion.tex:732"
       ],
       "token": "05_results_discussion|s-1|T = 1.46 surprise at 1.62 sadness at 1.70 and anger at|1",
       "row": "T = 1.46 surprise at 1.62 sadness at 1.70 and anger at",
@@ -13467,7 +13467,7 @@
       "rounded": "1.70",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:728"
+        "paper/sections/05_results_discussion.tex:732"
       ],
       "token": "05_results_discussion|s-1|T = 1.46 surprise at 1.62 sadness at 1.70 and anger at|2",
       "row": "T = 1.46 surprise at 1.62 sadness at 1.70 and anger at",
@@ -13483,7 +13483,7 @@
       "rounded": "1.82",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:729"
+        "paper/sections/05_results_discussion.tex:733"
       ],
       "token": "05_results_discussion|s-1|1.82 while disgust and fear|0",
       "row": "1.82 while disgust and fear",
@@ -13499,7 +13499,7 @@
       "rounded": "0.063",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:730"
+        "paper/sections/05_results_discussion.tex:734"
       ],
       "token": "05_results_discussion|s-1|remain over-confident ( +0.063 and +0.165 ) even at T = 2.2 a|0",
       "row": "remain over-confident ( +0.063 and +0.165 ) even at T = 2.2 a",
@@ -13515,7 +13515,7 @@
       "rounded": "-0.110",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:732"
+        "paper/sections/05_results_discussion.tex:736"
       ],
       "token": "05_results_discussion|s-1|under-confidence ( -0.110 and -0.126 ); the crossings are|0",
       "row": "under-confidence ( -0.110 and -0.126 ); the crossings are",
@@ -13531,7 +13531,7 @@
       "rounded": "-0.126",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:732"
+        "paper/sections/05_results_discussion.tex:736"
       ],
       "token": "05_results_discussion|s-1|under-confidence ( -0.110 and -0.126 ); the crossings are|1",
       "row": "under-confidence ( -0.110 and -0.126 ); the crossings are",
@@ -13547,7 +13547,7 @@
       "rounded": "0.087",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:737"
+        "paper/sections/05_results_discussion.tex:741"
       ],
       "token": "05_results_discussion|s-1|close ( +0.087 against +0.066 ); frequency predicts the crossing|0",
       "row": "close ( +0.087 against +0.066 ); frequency predicts the crossing",
@@ -13563,7 +13563,7 @@
       "rounded": "0.066",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:737"
+        "paper/sections/05_results_discussion.tex:741"
       ],
       "token": "05_results_discussion|s-1|close ( +0.087 against +0.066 ); frequency predicts the crossing|1",
       "row": "close ( +0.087 against +0.066 ); frequency predicts the crossing",
@@ -13579,7 +13579,7 @@
       "rounded": "74",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:724"
+        "paper/sections/05_results_discussion.tex:728"
       ],
       "token": "05_results_discussion|s-1|because it needs no binning and remains stable at n = 74 .|0",
       "row": "because it needs no binning and remains stable at n = 74 .",
@@ -13595,7 +13595,7 @@
       "rounded": "131",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:766"
+        "paper/sections/05_results_discussion.tex:770"
       ],
       "token": "05_results_discussion|s-1|corpus: of its frozen inclusion set of 131 RAF-DB runs 28|0",
       "row": "corpus: of its frozen inclusion set of 131 RAF-DB runs 28",
@@ -13611,7 +13611,7 @@
       "rounded": "28",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:766"
+        "paper/sections/05_results_discussion.tex:770"
       ],
       "token": "05_results_discussion|s-1|corpus: of its frozen inclusion set of 131 RAF-DB runs 28|1",
       "row": "corpus: of its frozen inclusion set of 131 RAF-DB runs 28",
@@ -13627,7 +13627,7 @@
       "rounded": "21",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:767"
+        "paper/sections/05_results_discussion.tex:771"
       ],
       "token": "05_results_discussion|s-1|( 21 % ) depart from the standard recipe --- all in training length|0",
       "row": "( 21 % ) depart from the standard recipe --- all in training length",
@@ -13643,7 +13643,7 @@
       "rounded": "0.77",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:772"
+        "paper/sections/05_results_discussion.tex:776"
       ],
       "token": "05_results_discussion|s-1|accuracy-selected checkpoint exceeds the final one by +0.77 0.43|0",
       "row": "accuracy-selected checkpoint exceeds the final one by +0.77 0.43",
@@ -13659,7 +13659,7 @@
       "rounded": "0.43",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:772"
+        "paper/sections/05_results_discussion.tex:776"
       ],
       "token": "05_results_discussion|s-1|accuracy-selected checkpoint exceeds the final one by +0.77 0.43|1",
       "row": "accuracy-selected checkpoint exceeds the final one by +0.77 0.43",
@@ -13675,7 +13675,7 @@
       "rounded": "129",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:773"
+        "paper/sections/05_results_discussion.tex:777"
       ],
       "token": "05_results_discussion|s-1|pp positive in 129 of the 131 runs individually; the estimate is|0",
       "row": "pp positive in 129 of the 131 runs individually; the estimate is",
@@ -13691,7 +13691,7 @@
       "rounded": "131",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:773"
+        "paper/sections/05_results_discussion.tex:777"
       ],
       "token": "05_results_discussion|s-1|pp positive in 129 of the 131 runs individually; the estimate is|1",
       "row": "pp positive in 129 of the 131 runs individually; the estimate is",
@@ -13707,7 +13707,7 @@
       "rounded": "0.50",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:776"
+        "paper/sections/05_results_discussion.tex:780"
       ],
       "token": "05_results_discussion|s-1|the same contrast on FERPlus gives +0.50 0.21 pp. Isolating the pure|0",
       "row": "the same contrast on FERPlus gives +0.50 0.21 pp. Isolating the pure",
@@ -13723,7 +13723,7 @@
       "rounded": "0.21",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:776"
+        "paper/sections/05_results_discussion.tex:780"
       ],
       "token": "05_results_discussion|s-1|the same contrast on FERPlus gives +0.50 0.21 pp. Isolating the pure|1",
       "row": "the same contrast on FERPlus gives +0.50 0.21 pp. Isolating the pure",
@@ -13739,7 +13739,7 @@
       "rounded": "0.645",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:780"
+        "paper/sections/05_results_discussion.tex:784"
       ],
       "token": "05_results_discussion|s-1|yields +0.645 0.203 pp at K = 50 and +0.764 0.259 pp|0",
       "row": "yields +0.645 0.203 pp at K = 50 and +0.764 0.259 pp",
@@ -13755,7 +13755,7 @@
       "rounded": "0.203",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:780"
+        "paper/sections/05_results_discussion.tex:784"
       ],
       "token": "05_results_discussion|s-1|yields +0.645 0.203 pp at K = 50 and +0.764 0.259 pp|1",
       "row": "yields +0.645 0.203 pp at K = 50 and +0.764 0.259 pp",
@@ -13771,7 +13771,7 @@
       "rounded": "0.764",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:780"
+        "paper/sections/05_results_discussion.tex:784"
       ],
       "token": "05_results_discussion|s-1|yields +0.645 0.203 pp at K = 50 and +0.764 0.259 pp|3",
       "row": "yields +0.645 0.203 pp at K = 50 and +0.764 0.259 pp",
@@ -13787,7 +13787,7 @@
       "rounded": "0.259",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:780"
+        "paper/sections/05_results_discussion.tex:784"
       ],
       "token": "05_results_discussion|s-1|yields +0.645 0.203 pp at K = 50 and +0.764 0.259 pp|4",
       "row": "yields +0.645 0.203 pp at K = 50 and +0.764 0.259 pp",
@@ -13803,7 +13803,7 @@
       "rounded": "131",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:781"
+        "paper/sections/05_results_discussion.tex:785"
       ],
       "token": "05_results_discussion|s-1|at K = 100 on the same 131 runs; the epoch-selected maximum lies|1",
       "row": "at K = 100 on the same 131 runs; the epoch-selected maximum lies",
@@ -13819,7 +13819,7 @@
       "rounded": "0.640",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:787"
+        "paper/sections/05_results_discussion.tex:791"
       ],
       "token": "05_results_discussion|s-1|+0.640 0.218 and +0.728 0.238 and the fitted drift over|0",
       "row": "+0.640 0.218 and +0.728 0.238 and the fitted drift over",
@@ -13835,7 +13835,7 @@
       "rounded": "0.218",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:787"
+        "paper/sections/05_results_discussion.tex:791"
       ],
       "token": "05_results_discussion|s-1|+0.640 0.218 and +0.728 0.238 and the fitted drift over|1",
       "row": "+0.640 0.218 and +0.728 0.238 and the fitted drift over",
@@ -13851,7 +13851,7 @@
       "rounded": "0.728",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:787"
+        "paper/sections/05_results_discussion.tex:791"
       ],
       "token": "05_results_discussion|s-1|+0.640 0.218 and +0.728 0.238 and the fitted drift over|2",
       "row": "+0.640 0.218 and +0.728 0.238 and the fitted drift over",
@@ -13867,7 +13867,7 @@
       "rounded": "0.238",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:787"
+        "paper/sections/05_results_discussion.tex:791"
       ],
       "token": "05_results_discussion|s-1|+0.640 0.218 and +0.728 0.238 and the fitted drift over|3",
       "row": "+0.640 0.218 and +0.728 0.238 and the fitted drift over",
@@ -13883,7 +13883,7 @@
       "rounded": "-0.015",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:788"
+        "paper/sections/05_results_discussion.tex:792"
       ],
       "token": "05_results_discussion|s-1|the last 100 epochs is -0.015 pp a plateau. We nonetheless read|1",
       "row": "the last 100 epochs is -0.015 pp a plateau. We nonetheless read",
@@ -13899,7 +13899,7 @@
       "rounded": "-0.0029",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:796"
+        "paper/sections/05_results_discussion.tex:800"
       ],
       "token": "05_results_discussion|s-1|On RAF-DB the ECE contrast is -0.0029 (SD 0.0092|0",
       "row": "On RAF-DB the ECE contrast is -0.0029 (SD 0.0092",
@@ -13915,7 +13915,7 @@
       "rounded": "0.0092",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:796"
+        "paper/sections/05_results_discussion.tex:800"
       ],
       "token": "05_results_discussion|s-1|On RAF-DB the ECE contrast is -0.0029 (SD 0.0092|1",
       "row": "On RAF-DB the ECE contrast is -0.0029 (SD 0.0092",
@@ -13931,7 +13931,7 @@
       "rounded": "131",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:797"
+        "paper/sections/05_results_discussion.tex:801"
       ],
       "token": "05_results_discussion|s-1|n = 131 SE 0.0008 ) which is resolvable --- t(130) = -3.57|0",
       "row": "n = 131 SE 0.0008 ) which is resolvable --- t(130) = -3.57",
@@ -13947,7 +13947,7 @@
       "rounded": "0.0008",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:797"
+        "paper/sections/05_results_discussion.tex:801"
       ],
       "token": "05_results_discussion|s-1|n = 131 SE 0.0008 ) which is resolvable --- t(130) = -3.57|1",
       "row": "n = 131 SE 0.0008 ) which is resolvable --- t(130) = -3.57",
@@ -13963,7 +13963,7 @@
       "rounded": "-3.57",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:797"
+        "paper/sections/05_results_discussion.tex:801"
       ],
       "token": "05_results_discussion|s-1|n = 131 SE 0.0008 ) which is resolvable --- t(130) = -3.57|3",
       "row": "n = 131 SE 0.0008 ) which is resolvable --- t(130) = -3.57",
@@ -13979,7 +13979,7 @@
       "rounded": "0.0005",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:798"
+        "paper/sections/05_results_discussion.tex:802"
       ],
       "token": "05_results_discussion|s-1|0.0005 95 % CI [-0.0045 -0.0013] --- and negative|0",
       "row": "0.0005 95 % CI [-0.0045 -0.0013] --- and negative",
@@ -13995,7 +13995,7 @@
       "rounded": "-0.0045",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:798"
+        "paper/sections/05_results_discussion.tex:802"
       ],
       "token": "05_results_discussion|s-1|0.0005 95 % CI [-0.0045 -0.0013] --- and negative|2",
       "row": "0.0005 95 % CI [-0.0045 -0.0013] --- and negative",
@@ -14011,7 +14011,7 @@
       "rounded": "-0.0013",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:798"
+        "paper/sections/05_results_discussion.tex:802"
       ],
       "token": "05_results_discussion|s-1|0.0005 95 % CI [-0.0045 -0.0013] --- and negative|3",
       "row": "0.0005 95 % CI [-0.0045 -0.0013] --- and negative",
@@ -14027,7 +14027,7 @@
       "rounded": "0.0041",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:800"
+        "paper/sections/05_results_discussion.tex:804"
       ],
       "token": "05_results_discussion|s-1|than the last. On FERPlus the same contrast is +0.0041 (SD|0",
       "row": "than the last. On FERPlus the same contrast is +0.0041 (SD",
@@ -14043,7 +14043,7 @@
       "rounded": "0.0074",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:801"
+        "paper/sections/05_results_discussion.tex:805"
       ],
       "token": "05_results_discussion|s-1|0.0074 n = 12 SE 0.0021 ) pointing the other way and not|0",
       "row": "0.0074 n = 12 SE 0.0021 ) pointing the other way and not",
@@ -14059,7 +14059,7 @@
       "rounded": "12",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:801"
+        "paper/sections/05_results_discussion.tex:805"
       ],
       "token": "05_results_discussion|s-1|0.0074 n = 12 SE 0.0021 ) pointing the other way and not|1",
       "row": "0.0074 n = 12 SE 0.0021 ) pointing the other way and not",
@@ -14075,7 +14075,7 @@
       "rounded": "0.0021",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:801"
+        "paper/sections/05_results_discussion.tex:805"
       ],
       "token": "05_results_discussion|s-1|0.0074 n = 12 SE 0.0021 ) pointing the other way and not|2",
       "row": "0.0074 n = 12 SE 0.0021 ) pointing the other way and not",
@@ -14091,7 +14091,7 @@
       "rounded": "1.90",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:802"
+        "paper/sections/05_results_discussion.tex:806"
       ],
       "token": "05_results_discussion|s-1|resolvable ( t(11) = +1.90 0.084 ). We therefore do not claim|1",
       "row": "resolvable ( t(11) = +1.90 0.084 ). We therefore do not claim",
@@ -14107,7 +14107,7 @@
       "rounded": "0.084",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:802"
+        "paper/sections/05_results_discussion.tex:806"
       ],
       "token": "05_results_discussion|s-1|resolvable ( t(11) = +1.90 0.084 ). We therefore do not claim|2",
       "row": "resolvable ( t(11) = +1.90 0.084 ). We therefore do not claim",
@@ -14123,7 +14123,7 @@
       "rounded": "0.13",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:812"
+        "paper/sections/05_results_discussion.tex:816"
       ],
       "token": "05_results_discussion|s-1|on both datasets ( +0.13 pp SE 0.024 t(117) = 5.4|0",
       "row": "on both datasets ( +0.13 pp SE 0.024 t(117) = 5.4",
@@ -14139,7 +14139,7 @@
       "rounded": "0.024",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:812"
+        "paper/sections/05_results_discussion.tex:816"
       ],
       "token": "05_results_discussion|s-1|on both datasets ( +0.13 pp SE 0.024 t(117) = 5.4|1",
       "row": "on both datasets ( +0.13 pp SE 0.024 t(117) = 5.4",
@@ -14155,7 +14155,7 @@
       "rounded": "5.4",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:812"
+        "paper/sections/05_results_discussion.tex:816"
       ],
       "token": "05_results_discussion|s-1|on both datasets ( +0.13 pp SE 0.024 t(117) = 5.4|3",
       "row": "on both datasets ( +0.13 pp SE 0.024 t(117) = 5.4",
@@ -14171,7 +14171,7 @@
       "rounded": "0.22",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:813"
+        "paper/sections/05_results_discussion.tex:817"
       ],
       "token": "05_results_discussion|s-1|4.3 10^ -7 on RAF-DB; +0.22 pp SE 0.061|3",
       "row": "4.3 10^ -7 on RAF-DB; +0.22 pp SE 0.061",
@@ -14187,7 +14187,7 @@
       "rounded": "0.061",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:813"
+        "paper/sections/05_results_discussion.tex:817"
       ],
       "token": "05_results_discussion|s-1|4.3 10^ -7 on RAF-DB; +0.22 pp SE 0.061|4",
       "row": "4.3 10^ -7 on RAF-DB; +0.22 pp SE 0.061",
@@ -14203,7 +14203,7 @@
       "rounded": "3.7",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:814"
+        "paper/sections/05_results_discussion.tex:818"
       ],
       "token": "05_results_discussion|s-1|t(11) = 3.7 0.003 on FERPlus); on the calibration axis it|1",
       "row": "t(11) = 3.7 0.003 on FERPlus); on the calibration axis it",
@@ -14219,7 +14219,7 @@
       "rounded": "0.003",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:814"
+        "paper/sections/05_results_discussion.tex:818"
       ],
       "token": "05_results_discussion|s-1|t(11) = 3.7 0.003 on FERPlus); on the calibration axis it|2",
       "row": "t(11) = 3.7 0.003 on FERPlus); on the calibration axis it",
@@ -14235,7 +14235,7 @@
       "rounded": "-0.0006",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:815"
+        "paper/sections/05_results_discussion.tex:819"
       ],
       "token": "05_results_discussion|s-1|is unresolved on RAF-DB ( -0.0006 SE 0.0011 t(117) = -0.53|0",
       "row": "is unresolved on RAF-DB ( -0.0006 SE 0.0011 t(117) = -0.53",
@@ -14251,7 +14251,7 @@
       "rounded": "0.0011",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:815"
+        "paper/sections/05_results_discussion.tex:819"
       ],
       "token": "05_results_discussion|s-1|is unresolved on RAF-DB ( -0.0006 SE 0.0011 t(117) = -0.53|1",
       "row": "is unresolved on RAF-DB ( -0.0006 SE 0.0011 t(117) = -0.53",
@@ -14267,7 +14267,7 @@
       "rounded": "-0.53",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:815"
+        "paper/sections/05_results_discussion.tex:819"
       ],
       "token": "05_results_discussion|s-1|is unresolved on RAF-DB ( -0.0006 SE 0.0011 t(117) = -0.53|3",
       "row": "is unresolved on RAF-DB ( -0.0006 SE 0.0011 t(117) = -0.53",
@@ -14283,7 +14283,7 @@
       "rounded": "0.59",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:816"
+        "paper/sections/05_results_discussion.tex:820"
       ],
       "token": "05_results_discussion|s-1|0.59 ) but resolvable and adverse on FERPlus where the|0",
       "row": "0.59 ) but resolvable and adverse on FERPlus where the",
@@ -14299,7 +14299,7 @@
       "rounded": "0.0088",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:818"
+        "paper/sections/05_results_discussion.tex:822"
       ],
       "token": "05_results_discussion|s-1|+0.0069 (SD 0.0088 n = 12 SE 0.0025 t(11) = +2.71|1",
       "row": "+0.0069 (SD 0.0088 n = 12 SE 0.0025 t(11) = +2.71",
@@ -14315,7 +14315,7 @@
       "rounded": "12",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:818"
+        "paper/sections/05_results_discussion.tex:822"
       ],
       "token": "05_results_discussion|s-1|+0.0069 (SD 0.0088 n = 12 SE 0.0025 t(11) = +2.71|2",
       "row": "+0.0069 (SD 0.0088 n = 12 SE 0.0025 t(11) = +2.71",
@@ -14331,7 +14331,7 @@
       "rounded": "0.0025",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:818"
+        "paper/sections/05_results_discussion.tex:822"
       ],
       "token": "05_results_discussion|s-1|+0.0069 (SD 0.0088 n = 12 SE 0.0025 t(11) = +2.71|3",
       "row": "+0.0069 (SD 0.0088 n = 12 SE 0.0025 t(11) = +2.71",
@@ -14347,7 +14347,7 @@
       "rounded": "2.71",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:818"
+        "paper/sections/05_results_discussion.tex:822"
       ],
       "token": "05_results_discussion|s-1|+0.0069 (SD 0.0088 n = 12 SE 0.0025 t(11) = +2.71|5",
       "row": "+0.0069 (SD 0.0088 n = 12 SE 0.0025 t(11) = +2.71",
@@ -14363,7 +14363,7 @@
       "rounded": "0.020",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:819"
+        "paper/sections/05_results_discussion.tex:823"
       ],
       "token": "05_results_discussion|s-1|0.020 ; 13 -- 15 % of the ECE level depending on the|0",
       "row": "0.020 ; 13 -- 15 % of the ECE level depending on the",
@@ -14379,7 +14379,7 @@
       "rounded": "2.248",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:831"
+        "paper/sections/05_results_discussion.tex:835"
       ],
       "token": "05_results_discussion|s-1|The student carries 2.248 M parameters and 0.329 GMACs against|0",
       "row": "The student carries 2.248 M parameters and 0.329 GMACs against",
@@ -14395,7 +14395,7 @@
       "rounded": "0.329",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:831"
+        "paper/sections/05_results_discussion.tex:835"
       ],
       "token": "05_results_discussion|s-1|The student carries 2.248 M parameters and 0.329 GMACs against|1",
       "row": "The student carries 2.248 M parameters and 0.329 GMACs against",
@@ -14411,7 +14411,7 @@
       "rounded": "58.334",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:832"
+        "paper/sections/05_results_discussion.tex:836"
       ],
       "token": "05_results_discussion|s-1|its teacher's 58.334 M and 8.483 GMACs --- 25.9 and|0",
       "row": "its teacher's 58.334 M and 8.483 GMACs --- 25.9 and",
@@ -14427,7 +14427,7 @@
       "rounded": "8.483",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:832"
+        "paper/sections/05_results_discussion.tex:836"
       ],
       "token": "05_results_discussion|s-1|its teacher's 58.334 M and 8.483 GMACs --- 25.9 and|1",
       "row": "its teacher's 58.334 M and 8.483 GMACs --- 25.9 and",
@@ -14443,7 +14443,7 @@
       "rounded": "25.9",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:832"
+        "paper/sections/05_results_discussion.tex:836"
       ],
       "token": "05_results_discussion|s-1|its teacher's 58.334 M and 8.483 GMACs --- 25.9 and|2",
       "row": "its teacher's 58.334 M and 8.483 GMACs --- 25.9 and",
@@ -14459,7 +14459,7 @@
       "rounded": "25.8",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:833"
+        "paper/sections/05_results_discussion.tex:837"
       ],
       "token": "05_results_discussion|s-1|25.8 smaller 62.9 smaller on disk --- and retains|0",
       "row": "25.8 smaller 62.9 smaller on disk --- and retains",
@@ -14475,7 +14475,7 @@
       "rounded": "62.9",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:833"
+        "paper/sections/05_results_discussion.tex:837"
       ],
       "token": "05_results_discussion|s-1|25.8 smaller 62.9 smaller on disk --- and retains|1",
       "row": "25.8 smaller 62.9 smaller on disk --- and retains",
@@ -14491,7 +14491,7 @@
       "rounded": "97.96",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:834"
+        "paper/sections/05_results_discussion.tex:838"
       ],
       "token": "05_results_discussion|s-1|97.96 % of that teacher's accuracy at the SWA checkpoint ( 98.32 %|0",
       "row": "97.96 % of that teacher's accuracy at the SWA checkpoint ( 98.32 %",
@@ -14507,7 +14507,7 @@
       "rounded": "98.32",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:834"
+        "paper/sections/05_results_discussion.tex:838"
       ],
       "token": "05_results_discussion|s-1|97.96 % of that teacher's accuracy at the SWA checkpoint ( 98.32 %|1",
       "row": "97.96 % of that teacher's accuracy at the SWA checkpoint ( 98.32 %",
@@ -14523,7 +14523,7 @@
       "rounded": "1.93",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:838"
+        "paper/sections/05_results_discussion.tex:842"
       ],
       "token": "05_results_discussion|s-1|compute ratio --- 1.93 at batch 1 and 3.91 at|0",
       "row": "compute ratio --- 1.93 at batch 1 and 3.91 at",
@@ -14539,7 +14539,7 @@
       "rounded": "3.91",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:838"
+        "paper/sections/05_results_discussion.tex:842"
       ],
       "token": "05_results_discussion|s-1|compute ratio --- 1.93 at batch 1 and 3.91 at|2",
       "row": "compute ratio --- 1.93 at batch 1 and 3.91 at",
@@ -14555,7 +14555,7 @@
       "rounded": "4.01",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:839"
+        "paper/sections/05_results_discussion.tex:843"
       ],
       "token": "05_results_discussion|s-1|batch 32 on the GPU 4.01 and 4.43 on the CPU --- so|1",
       "row": "batch 32 on the GPU 4.01 and 4.43 on the CPU --- so",
@@ -14571,7 +14571,7 @@
       "rounded": "4.43",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:839"
+        "paper/sections/05_results_discussion.tex:843"
       ],
       "token": "05_results_discussion|s-1|batch 32 on the GPU 4.01 and 4.43 on the CPU --- so|2",
       "row": "batch 32 on the GPU 4.01 and 4.43 on the CPU --- so",
@@ -14763,7 +14763,7 @@
       "rounded": "89.43",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:33"
+        "paper/sections/05_results_discussion.tex:34"
       ],
       "token": "05_results_discussion|s-1|it stays within a 0.30 pp band ( 89.43 -- 89.73 ) and the apparent|1",
       "row": "it stays within a 0.30 pp band ( 89.43 -- 89.73 ) and the apparent",
@@ -14779,7 +14779,7 @@
       "rounded": "89.73",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:33"
+        "paper/sections/05_results_discussion.tex:34"
       ],
       "token": "05_results_discussion|s-1|it stays within a 0.30 pp band ( 89.43 -- 89.73 ) and the apparent|2",
       "row": "it stays within a 0.30 pp band ( 89.43 -- 89.73 ) and the apparent",
@@ -14795,7 +14795,7 @@
       "rounded": "1.34",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:54"
+        "paper/sections/05_results_discussion.tex:55"
       ],
       "token": "05_results_discussion|s-1|seven select T^ * = 1.34 on this teacher all seven select T = 1|0",
       "row": "seven select T^ * = 1.34 on this teacher all seven select T = 1",
@@ -14811,7 +14811,7 @@
       "rounded": "0.51",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:55"
+        "paper/sections/05_results_discussion.tex:56"
       ],
       "token": "05_results_discussion|s-1|on the control and six of seven select T^ * = 0.51 on FERPlus|0",
       "row": "on the control and six of seven select T^ * = 0.51 on FERPlus",
@@ -14827,7 +14827,7 @@
       "rounded": "0.74",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:59"
+        "paper/sections/05_results_discussion.tex:60"
       ],
       "token": "05_results_discussion|s-1|systematic exception (FERPlus NLL whose minimum sits at T = 0.74|0",
       "row": "systematic exception (FERPlus NLL whose minimum sits at T = 0.74",
@@ -14843,7 +14843,7 @@
       "rounded": "0.0136",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:75"
+        "paper/sections/05_results_discussion.tex:76"
       ],
       "token": "05_results_discussion|s-1|(teacher ECE 0.0136 T^ * = 0.98 ) the student's best calibration|0",
       "row": "(teacher ECE 0.0136 T^ * = 0.98 ) the student's best calibration",
@@ -14859,7 +14859,7 @@
       "rounded": "0.98",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:75"
+        "paper/sections/05_results_discussion.tex:76"
       ],
       "token": "05_results_discussion|s-1|(teacher ECE 0.0136 T^ * = 0.98 ) the student's best calibration|1",
       "row": "(teacher ECE 0.0136 T^ * = 0.98 ) the student's best calibration",
@@ -14875,7 +14875,7 @@
       "rounded": "0.0330",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:76"
+        "paper/sections/05_results_discussion.tex:77"
       ],
       "token": "05_results_discussion|s-1|occurs at T = 1 ( 0.0330 0.0020 ; the argmin sits at T = 1 under all seven estimators of|1",
       "row": "occurs at T = 1 ( 0.0330 0.0020 ; the argmin sits at T = 1 under all seven estimators of",
@@ -14891,7 +14891,7 @@
       "rounded": "0.0020",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:76"
+        "paper/sections/05_results_discussion.tex:77"
       ],
       "token": "05_results_discussion|s-1|occurs at T = 1 ( 0.0330 0.0020 ; the argmin sits at T = 1 under all seven estimators of|2",
       "row": "occurs at T = 1 ( 0.0330 0.0020 ; the argmin sits at T = 1 under all seven estimators of",
@@ -14907,7 +14907,7 @@
       "rounded": "0.0447",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:79"
+        "paper/sections/05_results_discussion.tex:80"
       ],
       "token": "05_results_discussion|s-1|0.0447 at T = 0.85 on the near side then 0.0647 at T = 1.34|0",
       "row": "0.0447 at T = 0.85 on the near side then 0.0647 at T = 1.34",
@@ -14923,7 +14923,7 @@
       "rounded": "0.0647",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:79"
+        "paper/sections/05_results_discussion.tex:80"
       ],
       "token": "05_results_discussion|s-1|0.0447 at T = 0.85 on the near side then 0.0647 at T = 1.34|2",
       "row": "0.0447 at T = 0.85 on the near side then 0.0647 at T = 1.34",
@@ -14939,7 +14939,7 @@
       "rounded": "0.1282",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:80"
+        "paper/sections/05_results_discussion.tex:81"
       ],
       "token": "05_results_discussion|s-1|0.1282 at T = 1.7 and 0.2109 0.0034 at T = 2.2 --- a|0",
       "row": "0.1282 at T = 1.7 and 0.2109 0.0034 at T = 2.2 --- a",
@@ -14955,7 +14955,7 @@
       "rounded": "0.2109",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:80"
+        "paper/sections/05_results_discussion.tex:81"
       ],
       "token": "05_results_discussion|s-1|0.1282 at T = 1.7 and 0.2109 0.0034 at T = 2.2 --- a|2",
       "row": "0.1282 at T = 1.7 and 0.2109 0.0034 at T = 2.2 --- a",
@@ -14971,7 +14971,7 @@
       "rounded": "0.0034",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:80"
+        "paper/sections/05_results_discussion.tex:81"
       ],
       "token": "05_results_discussion|s-1|0.1282 at T = 1.7 and 0.2109 0.0034 at T = 2.2 --- a|3",
       "row": "0.1282 at T = 1.7 and 0.2109 0.0034 at T = 2.2 --- a",
@@ -14987,7 +14987,7 @@
       "rounded": "5.9",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:82"
+        "paper/sections/05_results_discussion.tex:83"
       ],
       "token": "05_results_discussion|s-1|established as damage at 5.9 and 15.9 the control's|0",
       "row": "established as damage at 5.9 and 15.9 the control's",
@@ -15003,7 +15003,7 @@
       "rounded": "15.9",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:82"
+        "paper/sections/05_results_discussion.tex:83"
       ],
       "token": "05_results_discussion|s-1|established as damage at 5.9 and 15.9 the control's|1",
       "row": "established as damage at 5.9 and 15.9 the control's",
@@ -15019,7 +15019,7 @@
       "rounded": "0.983",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:91"
+        "paper/sections/05_results_discussion.tex:92"
       ],
       "token": "05_results_discussion|s-1|( T^ * _ NLL = 0.983 T^ * _ ECE = 1.057 )|0",
       "row": "( T^ * _ NLL = 0.983 T^ * _ ECE = 1.057 )",
@@ -15035,7 +15035,7 @@
       "rounded": "1.057",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:91"
+        "paper/sections/05_results_discussion.tex:92"
       ],
       "token": "05_results_discussion|s-1|( T^ * _ NLL = 0.983 T^ * _ ECE = 1.057 )|1",
       "row": "( T^ * _ NLL = 0.983 T^ * _ ECE = 1.057 )",
@@ -15051,7 +15051,7 @@
       "rounded": "-0.0033",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:98"
+        "paper/sections/05_results_discussion.tex:99"
       ],
       "token": "05_results_discussion|s-1|-0.0033 0.0042 at T = 0.95 (seed signs - - +|0",
       "row": "-0.0033 0.0042 at T = 0.95 (seed signs - - +",
@@ -15067,7 +15067,7 @@
       "rounded": "0.0042",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:98"
+        "paper/sections/05_results_discussion.tex:99"
       ],
       "token": "05_results_discussion|s-1|-0.0033 0.0042 at T = 0.95 (seed signs - - +|1",
       "row": "-0.0033 0.0042 at T = 0.95 (seed signs - - +",
@@ -15083,7 +15083,7 @@
       "rounded": "1.68",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:99"
+        "paper/sections/05_results_discussion.tex:100"
       ],
       "token": "05_results_discussion|s-1|1.68 the control seed deviation) and +0.0020 0.0045 at|0",
       "row": "1.68 the control seed deviation) and +0.0020 0.0045 at",
@@ -15099,7 +15099,7 @@
       "rounded": "0.0020",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:99"
+        "paper/sections/05_results_discussion.tex:100"
       ],
       "token": "05_results_discussion|s-1|1.68 the control seed deviation) and +0.0020 0.0045 at|1",
       "row": "1.68 the control seed deviation) and +0.0020 0.0045 at",
@@ -15115,7 +15115,7 @@
       "rounded": "0.0045",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:99"
+        "paper/sections/05_results_discussion.tex:100"
       ],
       "token": "05_results_discussion|s-1|1.68 the control seed deviation) and +0.0020 0.0045 at|2",
       "row": "1.68 the control seed deviation) and +0.0020 0.0045 at",
@@ -15131,7 +15131,7 @@
       "rounded": "0.98",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:100"
+        "paper/sections/05_results_discussion.tex:101"
       ],
       "token": "05_results_discussion|s-1|T = 1.10 ( + - + 0.98 ). The seven-point|1",
       "row": "T = 1.10 ( + - + 0.98 ). The seven-point",
@@ -15147,7 +15147,7 @@
       "rounded": "0.0296",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:101"
+        "paper/sections/05_results_discussion.tex:102"
       ],
       "token": "05_results_discussion|s-1|point-estimate minimum sits at T = 0.95 ( 0.0296 vs. 0.0330 at|1",
       "row": "point-estimate minimum sits at T = 0.95 ( 0.0296 vs. 0.0330 at",
@@ -15163,7 +15163,7 @@
       "rounded": "0.0330",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:101"
+        "paper/sections/05_results_discussion.tex:102"
       ],
       "token": "05_results_discussion|s-1|point-estimate minimum sits at T = 0.95 ( 0.0296 vs. 0.0330 at|2",
       "row": "point-estimate minimum sits at T = 0.95 ( 0.0296 vs. 0.0330 at",
@@ -15179,7 +15179,7 @@
       "rounded": "0.0011",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:122"
+        "paper/sections/05_results_discussion.tex:123"
       ],
       "token": "05_results_discussion|s-1|disagreed in sign ( +0.0011 and -0.0053 ; mean -0.0021|0",
       "row": "disagreed in sign ( +0.0011 and -0.0053 ; mean -0.0021",
@@ -15195,7 +15195,7 @@
       "rounded": "-0.0053",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:122"
+        "paper/sections/05_results_discussion.tex:123"
       ],
       "token": "05_results_discussion|s-1|disagreed in sign ( +0.0011 and -0.0053 ; mean -0.0021|1",
       "row": "disagreed in sign ( +0.0011 and -0.0053 ; mean -0.0021",
@@ -15211,7 +15211,7 @@
       "rounded": "-0.0021",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:122"
+        "paper/sections/05_results_discussion.tex:123"
       ],
       "token": "05_results_discussion|s-1|disagreed in sign ( +0.0011 and -0.0053 ; mean -0.0021|2",
       "row": "disagreed in sign ( +0.0011 and -0.0053 ; mean -0.0021",
@@ -15227,7 +15227,7 @@
       "rounded": "0.0045",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:123"
+        "paper/sections/05_results_discussion.tex:124"
       ],
       "token": "05_results_discussion|s-1|0.0045 ) so the third seed was not spent and the pilot is recorded as|0",
       "row": "0.0045 ) so the third seed was not spent and the pilot is recorded as",
@@ -15243,7 +15243,7 @@
       "rounded": "0.1282",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:146"
+        "paper/sections/05_results_discussion.tex:147"
       ],
       "token": "05_results_discussion|s-1|soft vote distributions it is under-confident (ECE 0.1282|0",
       "row": "soft vote distributions it is under-confident (ECE 0.1282",
@@ -15259,7 +15259,7 @@
       "rounded": "-0.1277",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:147"
+        "paper/sections/05_results_discussion.tex:148"
       ],
       "token": "05_results_discussion|s-1|signed gap -0.1277 T^ * = 0.51 ) so its correction sharpens|0",
       "row": "signed gap -0.1277 T^ * = 0.51 ) so its correction sharpens",
@@ -15275,7 +15275,7 @@
       "rounded": "0.51",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:147"
+        "paper/sections/05_results_discussion.tex:148"
       ],
       "token": "05_results_discussion|s-1|signed gap -0.1277 T^ * = 0.51 ) so its correction sharpens|1",
       "row": "signed gap -0.1277 T^ * = 0.51 ) so its correction sharpens",
@@ -15291,7 +15291,7 @@
       "rounded": "0.0783",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:152"
+        "paper/sections/05_results_discussion.tex:153"
       ],
       "token": "05_results_discussion|s-1|0.0783 0.0046 at the native teacher to 0.0185 0.0016 at|0",
       "row": "0.0783 0.0046 at the native teacher to 0.0185 0.0016 at",
@@ -15307,7 +15307,7 @@
       "rounded": "0.0046",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:152"
+        "paper/sections/05_results_discussion.tex:153"
       ],
       "token": "05_results_discussion|s-1|0.0783 0.0046 at the native teacher to 0.0185 0.0016 at|1",
       "row": "0.0783 0.0046 at the native teacher to 0.0185 0.0016 at",
@@ -15323,7 +15323,7 @@
       "rounded": "0.0185",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:152"
+        "paper/sections/05_results_discussion.tex:153"
       ],
       "token": "05_results_discussion|s-1|0.0783 0.0046 at the native teacher to 0.0185 0.0016 at|2",
       "row": "0.0783 0.0046 at the native teacher to 0.0185 0.0016 at",
@@ -15339,7 +15339,7 @@
       "rounded": "0.0016",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:152"
+        "paper/sections/05_results_discussion.tex:153"
       ],
       "token": "05_results_discussion|s-1|0.0783 0.0046 at the native teacher to 0.0185 0.0016 at|3",
       "row": "0.0783 0.0046 at the native teacher to 0.0185 0.0016 at",
@@ -15355,7 +15355,7 @@
       "rounded": "17.4",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:153"
+        "paper/sections/05_results_discussion.tex:154"
       ],
       "token": "05_results_discussion|s-1|T^ * a 76 % reduction with pooled Cohen's d = 17.4 (paired|1",
       "row": "T^ * a 76 % reduction with pooled Cohen's d = 17.4 (paired",
@@ -15371,7 +15371,7 @@
       "rounded": "18.3",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:154"
+        "paper/sections/05_results_discussion.tex:155"
       ],
       "token": "05_results_discussion|s-1|d_z = 18.3 ) between the|0",
       "row": "d_z = 18.3 ) between the",
@@ -15387,7 +15387,7 @@
       "rounded": "0.003",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:157"
+        "paper/sections/05_results_discussion.tex:158"
       ],
       "token": "05_results_discussion|s-1|family ( p_ Holm = 0.003 ; the full family is|0",
       "row": "family ( p_ Holm = 0.003 ; the full family is",
@@ -15403,7 +15403,7 @@
       "rounded": "14",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:175"
+        "paper/sections/05_results_discussion.tex:176"
       ],
       "token": "05_results_discussion|s-1|Pooling all 14 grid points from both datasets|0",
       "row": "Pooling all 14 grid points from both datasets",
@@ -15419,7 +15419,7 @@
       "rounded": "0.789",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:178"
+        "paper/sections/05_results_discussion.tex:179"
       ],
       "token": "05_results_discussion|s-1|= 0.789 (SWA; 0.895 and 0.877 at the best and last|0",
       "row": "= 0.789 (SWA; 0.895 and 0.877 at the best and last",
@@ -15435,7 +15435,7 @@
       "rounded": "0.895",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:178"
+        "paper/sections/05_results_discussion.tex:179"
       ],
       "token": "05_results_discussion|s-1|= 0.789 (SWA; 0.895 and 0.877 at the best and last|1",
       "row": "= 0.789 (SWA; 0.895 and 0.877 at the best and last",
@@ -15451,7 +15451,7 @@
       "rounded": "0.877",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:178"
+        "paper/sections/05_results_discussion.tex:179"
       ],
       "token": "05_results_discussion|s-1|= 0.789 (SWA; 0.895 and 0.877 at the best and last|2",
       "row": "= 0.789 (SWA; 0.895 and 0.877 at the best and last",
@@ -15467,7 +15467,7 @@
       "rounded": "14",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:179"
+        "paper/sections/05_results_discussion.tex:180"
       ],
       "token": "05_results_discussion|s-1|checkpoints). The 14 grid points come from three series not from|0",
       "row": "checkpoints). The 14 grid points come from three series not from",
@@ -15483,7 +15483,7 @@
       "rounded": "14",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:180"
+        "paper/sections/05_results_discussion.tex:181"
       ],
       "token": "05_results_discussion|s-1|14 independent observations; resampling whole series rather than|0",
       "row": "14 independent observations; resampling whole series rather than",
@@ -15499,7 +15499,7 @@
       "rounded": "0.789",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:181"
+        "paper/sections/05_results_discussion.tex:182"
       ],
       "token": "05_results_discussion|s-1|individual points gives = 0.789 with a 95 % interval of|0",
       "row": "individual points gives = 0.789 with a 95 % interval of",
@@ -15515,7 +15515,7 @@
       "rounded": "0.577",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:182"
+        "paper/sections/05_results_discussion.tex:183"
       ],
       "token": "05_results_discussion|s-1|[0.577 1.000] whose upper bound is an artefact of there being|0",
       "row": "[0.577 1.000] whose upper bound is an artefact of there being",
@@ -15531,7 +15531,7 @@
       "rounded": "1.000",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:182"
+        "paper/sections/05_results_discussion.tex:183"
       ],
       "token": "05_results_discussion|s-1|[0.577 1.000] whose upper bound is an artefact of there being|1",
       "row": "[0.577 1.000] whose upper bound is an artefact of there being",
@@ -15547,7 +15547,7 @@
       "rounded": "-0.407",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:185"
+        "paper/sections/05_results_discussion.tex:186"
       ],
       "token": "05_results_discussion|s-1|the pooled correlation is -0.407 : the two datasets sit on opposite|0",
       "row": "the pooled correlation is -0.407 : the two datasets sit on opposite",
@@ -15563,7 +15563,7 @@
       "rounded": "-0.0391",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:237"
+        "paper/sections/05_results_discussion.tex:238"
       ],
       "token": "05_results_discussion|s-1|two arms differ by -0.0391 0.0032 in student ECE and at|0",
       "row": "two arms differ by -0.0391 0.0032 in student ECE and at",
@@ -15579,7 +15579,7 @@
       "rounded": "0.0032",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:237"
+        "paper/sections/05_results_discussion.tex:238"
       ],
       "token": "05_results_discussion|s-1|two arms differ by -0.0391 0.0032 in student ECE and at|1",
       "row": "two arms differ by -0.0391 0.0032 in student ECE and at",
@@ -15595,7 +15595,7 @@
       "rounded": "-0.0324",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:238"
+        "paper/sections/05_results_discussion.tex:239"
       ],
       "token": "05_results_discussion|s-1|10.20 by -0.0324 0.0029 with the same sign in all three|1",
       "row": "10.20 by -0.0324 0.0029 with the same sign in all three",
@@ -15611,7 +15611,7 @@
       "rounded": "0.0029",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:238"
+        "paper/sections/05_results_discussion.tex:239"
       ],
       "token": "05_results_discussion|s-1|10.20 by -0.0324 0.0029 with the same sign in all three|2",
       "row": "10.20 by -0.0324 0.0029 with the same sign in all three",
@@ -15627,7 +15627,7 @@
       "rounded": "0.0042",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:246"
+        "paper/sections/05_results_discussion.tex:247"
       ],
       "token": "05_results_discussion|s-1|T and moving shifts student ECE by +0.0042 0.0028 (at|0",
       "row": "T and moving shifts student ECE by +0.0042 0.0028 (at",
@@ -15643,7 +15643,7 @@
       "rounded": "0.0028",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:246"
+        "paper/sections/05_results_discussion.tex:247"
       ],
       "token": "05_results_discussion|s-1|T and moving shifts student ECE by +0.0042 0.0028 (at|1",
       "row": "T and moving shifts student ECE by +0.0042 0.0028 (at",
@@ -15659,7 +15659,7 @@
       "rounded": "-0.0025",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:247"
+        "paper/sections/05_results_discussion.tex:248"
       ],
       "token": "05_results_discussion|s-1|T = 1.70 ) and -0.0025 0.0044 (at T = 0.85 signs|1",
       "row": "T = 1.70 ) and -0.0025 0.0044 (at T = 0.85 signs",
@@ -15675,7 +15675,7 @@
       "rounded": "0.0044",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:247"
+        "paper/sections/05_results_discussion.tex:248"
       ],
       "token": "05_results_discussion|s-1|T = 1.70 ) and -0.0025 0.0044 (at T = 0.85 signs|2",
       "row": "T = 1.70 ) and -0.0025 0.0044 (at T = 0.85 signs",
@@ -15691,7 +15691,7 @@
       "rounded": "-0.0349",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:249"
+        "paper/sections/05_results_discussion.tex:250"
       ],
       "token": "05_results_discussion|s-1|to 1.70 shifts it by -0.0349 0.0045 with the same sign in all|1",
       "row": "to 1.70 shifts it by -0.0349 0.0045 with the same sign in all",
@@ -15707,7 +15707,7 @@
       "rounded": "0.0045",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:249"
+        "paper/sections/05_results_discussion.tex:250"
       ],
       "token": "05_results_discussion|s-1|to 1.70 shifts it by -0.0349 0.0045 with the same sign in all|2",
       "row": "to 1.70 shifts it by -0.0349 0.0045 with the same sign in all",
@@ -15723,7 +15723,7 @@
       "rounded": "0.0327",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:262"
+        "paper/sections/05_results_discussion.tex:263"
       ],
       "token": "05_results_discussion|s-1|( +0.0327 ) and then changes sign so that at = 0.9|0",
       "row": "( +0.0327 ) and then changes sign so that at = 0.9",
@@ -15739,7 +15739,7 @@
       "rounded": "-0.0352",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:263"
+        "paper/sections/05_results_discussion.tex:264"
       ],
       "token": "05_results_discussion|s-1|pre-scaling harms the student by -0.0352 --- a magnitude|0",
       "row": "pre-scaling harms the student by -0.0352 --- a magnitude",
@@ -15755,7 +15755,7 @@
       "rounded": "1.77",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:275"
+        "paper/sections/05_results_discussion.tex:276"
       ],
       "token": "05_results_discussion|s-1|arm total student ECE under over-confidence is 1.77 that|0",
       "row": "arm total student ECE under over-confidence is 1.77 that",
@@ -15771,7 +15771,7 @@
       "rounded": "1.50",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:277"
+        "paper/sections/05_results_discussion.tex:278"
       ],
       "token": "05_results_discussion|s-1|on RAF-DB (bootstrap 95 % CI [1.50 2.13] ) and 2.04 on|1",
       "row": "on RAF-DB (bootstrap 95 % CI [1.50 2.13] ) and 2.04 on",
@@ -15787,7 +15787,7 @@
       "rounded": "2.13",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:277"
+        "paper/sections/05_results_discussion.tex:278"
       ],
       "token": "05_results_discussion|s-1|on RAF-DB (bootstrap 95 % CI [1.50 2.13] ) and 2.04 on|2",
       "row": "on RAF-DB (bootstrap 95 % CI [1.50 2.13] ) and 2.04 on",
@@ -15803,7 +15803,7 @@
       "rounded": "2.04",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:277"
+        "paper/sections/05_results_discussion.tex:278"
       ],
       "token": "05_results_discussion|s-1|on RAF-DB (bootstrap 95 % CI [1.50 2.13] ) and 2.04 on|3",
       "row": "on RAF-DB (bootstrap 95 % CI [1.50 2.13] ) and 2.04 on",
@@ -15819,7 +15819,7 @@
       "rounded": "1.64",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:278"
+        "paper/sections/05_results_discussion.tex:279"
       ],
       "token": "05_results_discussion|s-1|FERPlus ( [1.64 2.48] ; intervals from a 20000 -draw parametric|0",
       "row": "FERPlus ( [1.64 2.48] ; intervals from a 20000 -draw parametric",
@@ -15835,7 +15835,7 @@
       "rounded": "2.48",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:278"
+        "paper/sections/05_results_discussion.tex:279"
       ],
       "token": "05_results_discussion|s-1|FERPlus ( [1.64 2.48] ; intervals from a 20000 -draw parametric|1",
       "row": "FERPlus ( [1.64 2.48] ; intervals from a 20000 -draw parametric",
@@ -15851,7 +15851,7 @@
       "rounded": "1.8",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:281"
+        "paper/sections/05_results_discussion.tex:282"
       ],
       "token": "05_results_discussion|s-1|beyond the measured grid and the headline `` 1.8 -- 2.0 ''|0",
       "row": "beyond the measured grid and the headline `` 1.8 -- 2.0 ''",
@@ -15867,7 +15867,7 @@
       "rounded": "2.0",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:281"
+        "paper/sections/05_results_discussion.tex:282"
       ],
       "token": "05_results_discussion|s-1|beyond the measured grid and the headline `` 1.8 -- 2.0 ''|1",
       "row": "beyond the measured grid and the headline `` 1.8 -- 2.0 ''",
@@ -15883,7 +15883,7 @@
       "rounded": "1.74",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:285"
+        "paper/sections/05_results_discussion.tex:286"
       ],
       "token": "05_results_discussion|s-1|1.74 0.43 --- consistent but not what we quote.|0",
       "row": "1.74 0.43 --- consistent but not what we quote.",
@@ -15899,7 +15899,7 @@
       "rounded": "0.43",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:285"
+        "paper/sections/05_results_discussion.tex:286"
       ],
       "token": "05_results_discussion|s-1|1.74 0.43 --- consistent but not what we quote.|1",
       "row": "1.74 0.43 --- consistent but not what we quote.",
@@ -15915,7 +15915,7 @@
       "rounded": "0.89",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:287"
+        "paper/sections/05_results_discussion.tex:288"
       ],
       "token": "05_results_discussion|s-1|teacher both comparisons' intervals straddle 1 ( [0.89 2.19] and|1",
       "row": "teacher both comparisons' intervals straddle 1 ( [0.89 2.19] and",
@@ -15931,7 +15931,7 @@
       "rounded": "2.19",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:287"
+        "paper/sections/05_results_discussion.tex:288"
       ],
       "token": "05_results_discussion|s-1|teacher both comparisons' intervals straddle 1 ( [0.89 2.19] and|2",
       "row": "teacher both comparisons' intervals straddle 1 ( [0.89 2.19] and",
@@ -15947,7 +15947,7 @@
       "rounded": "0.90",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:288"
+        "paper/sections/05_results_discussion.tex:289"
       ],
       "token": "05_results_discussion|s-1|[0.90 1.46] ) so the asymmetry is detected on the two|0",
       "row": "[0.90 1.46] ) so the asymmetry is detected on the two",
@@ -15963,7 +15963,7 @@
       "rounded": "1.46",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:288"
+        "paper/sections/05_results_discussion.tex:289"
       ],
       "token": "05_results_discussion|s-1|[0.90 1.46] ) so the asymmetry is detected on the two|1",
       "row": "[0.90 1.46] ) so the asymmetry is detected on the two",
@@ -15979,7 +15979,7 @@
       "rounded": "3.16",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:310"
+        "paper/sections/05_results_discussion.tex:311"
       ],
       "token": "05_results_discussion|s-1|Sweeping student width over a factor of 3.16 in parameters|0",
       "row": "Sweeping student width over a factor of 3.16 in parameters",
@@ -15995,7 +15995,7 @@
       "rounded": "0.00235",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:313"
+        "paper/sections/05_results_discussion.tex:314"
       ],
       "token": "05_results_discussion|s-1|accuracy by +1.94 pp but student ECE by only 0.00235 ; sweeping the|1",
       "row": "accuracy by +1.94 pp but student ECE by only 0.00235 ; sweeping the",
@@ -16011,7 +16011,7 @@
       "rounded": "0.1780",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:314"
+        "paper/sections/05_results_discussion.tex:315"
       ],
       "token": "05_results_discussion|s-1|teacher's temperature on a fixed student moves student ECE by 0.1780|0",
       "row": "teacher's temperature on a fixed student moves student ECE by 0.1780",
@@ -16027,7 +16027,7 @@
       "rounded": "76",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:315"
+        "paper/sections/05_results_discussion.tex:316"
       ],
       "token": "05_results_discussion|s-1|at the same checkpoint. The teacher-side lever is 76 stronger|0",
       "row": "at the same checkpoint. The teacher-side lever is 76 stronger",
@@ -16043,7 +16043,7 @@
       "rounded": "79",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:316"
+        "paper/sections/05_results_discussion.tex:317"
       ],
       "token": "05_results_discussion|s-1|( 79 and 27 at the best and last checkpoints). That|0",
       "row": "( 79 and 27 at the best and last checkpoints). That",
@@ -16059,7 +16059,7 @@
       "rounded": "27",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:316"
+        "paper/sections/05_results_discussion.tex:317"
       ],
       "token": "05_results_discussion|s-1|( 79 and 27 at the best and last checkpoints). That|1",
       "row": "( 79 and 27 at the best and last checkpoints). That",
@@ -16075,7 +16075,7 @@
       "rounded": "69",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:319"
+        "paper/sections/05_results_discussion.tex:320"
       ],
       "token": "05_results_discussion|s-1|instead lowers it to 69 ( 75 and 26 ). We give|0",
       "row": "instead lowers it to 69 ( 75 and 26 ). We give",
@@ -16091,7 +16091,7 @@
       "rounded": "75",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:319"
+        "paper/sections/05_results_discussion.tex:320"
       ],
       "token": "05_results_discussion|s-1|instead lowers it to 69 ( 75 and 26 ). We give|1",
       "row": "instead lowers it to 69 ( 75 and 26 ). We give",
@@ -16107,7 +16107,7 @@
       "rounded": "26",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:319"
+        "paper/sections/05_results_discussion.tex:320"
       ],
       "token": "05_results_discussion|s-1|instead lowers it to 69 ( 75 and 26 ). We give|2",
       "row": "instead lowers it to 69 ( 75 and 26 ). We give",
@@ -16123,7 +16123,7 @@
       "rounded": "-0.02",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:328"
+        "paper/sections/05_results_discussion.tex:329"
       ],
       "token": "05_results_discussion|s-1|accuracy unchanged ( -0.02 0.11 pp) but raises student ECE by|0",
       "row": "accuracy unchanged ( -0.02 0.11 pp) but raises student ECE by",
@@ -16139,7 +16139,7 @@
       "rounded": "0.11",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:328"
+        "paper/sections/05_results_discussion.tex:329"
       ],
       "token": "05_results_discussion|s-1|accuracy unchanged ( -0.02 0.11 pp) but raises student ECE by|1",
       "row": "accuracy unchanged ( -0.02 0.11 pp) but raises student ECE by",
@@ -16155,7 +16155,7 @@
       "rounded": "0.0062",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:329"
+        "paper/sections/05_results_discussion.tex:330"
       ],
       "token": "05_results_discussion|s-1|+0.0062 0.0015 with the same sign in all three seeds: the|0",
       "row": "+0.0062 0.0015 with the same sign in all three seeds: the",
@@ -16171,7 +16171,7 @@
       "rounded": "0.0015",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:329"
+        "paper/sections/05_results_discussion.tex:330"
       ],
       "token": "05_results_discussion|s-1|+0.0062 0.0015 with the same sign in all three seeds: the|1",
       "row": "+0.0062 0.0015 with the same sign in all three seeds: the",
@@ -16187,7 +16187,7 @@
       "rounded": "19",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:330"
+        "paper/sections/05_results_discussion.tex:331"
       ],
       "token": "05_results_discussion|s-1|variational head accounts for roughly 19 % of the linear student's|0",
       "row": "variational head accounts for roughly 19 % of the linear student's",
@@ -16203,7 +16203,7 @@
       "rounded": "-0.006",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:342"
+        "paper/sections/05_results_discussion.tex:346"
       ],
       "token": "05_results_discussion|s-1|-0.006 against a seed-noise envelope of 0.072 ; the initialisation|0",
       "row": "-0.006 against a seed-noise envelope of 0.072 ; the initialisation",
@@ -16219,7 +16219,7 @@
       "rounded": "0.072",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:342"
+        "paper/sections/05_results_discussion.tex:346"
       ],
       "token": "05_results_discussion|s-1|-0.006 against a seed-noise envelope of 0.072 ; the initialisation|1",
       "row": "-0.006 against a seed-noise envelope of 0.072 ; the initialisation",
@@ -16235,7 +16235,7 @@
       "rounded": "-0.067",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:343"
+        "paper/sections/05_results_discussion.tex:347"
       ],
       "token": "05_results_discussion|s-1|contrast shifts it by -0.067 against an envelope of 0.036 and is|0",
       "row": "contrast shifts it by -0.067 against an envelope of 0.036 and is",
@@ -16251,7 +16251,7 @@
       "rounded": "0.036",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:343"
+        "paper/sections/05_results_discussion.tex:347"
       ],
       "token": "05_results_discussion|s-1|contrast shifts it by -0.067 against an envelope of 0.036 and is|1",
       "row": "contrast shifts it by -0.067 against an envelope of 0.036 and is",
@@ -16267,7 +16267,7 @@
       "rounded": "0.061",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:348"
+        "paper/sections/05_results_discussion.tex:352"
       ],
       "token": "05_results_discussion|s-1|confounded contrast that motivated the test ( +0.061 envelope|0",
       "row": "confounded contrast that motivated the test ( +0.061 envelope",
@@ -16283,7 +16283,7 @@
       "rounded": "0.080",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:349"
+        "paper/sections/05_results_discussion.tex:353"
       ],
       "token": "05_results_discussion|s-1|0.080 ) turns out to be almost entirely an initialisation effect|0",
       "row": "0.080 ) turns out to be almost entirely an initialisation effect",
@@ -16299,7 +16299,7 @@
       "rounded": "0.655",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:353"
+        "paper/sections/05_results_discussion.tex:357"
       ],
       "token": "05_results_discussion|s-1|0.655 ( 0.71 M scratch) 0.649 ( 2.25 M scratch) and 0.716|0",
       "row": "0.655 ( 0.71 M scratch) 0.649 ( 2.25 M scratch) and 0.716",
@@ -16315,7 +16315,7 @@
       "rounded": "0.649",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:353"
+        "paper/sections/05_results_discussion.tex:357"
       ],
       "token": "05_results_discussion|s-1|0.655 ( 0.71 M scratch) 0.649 ( 2.25 M scratch) and 0.716|2",
       "row": "0.655 ( 0.71 M scratch) 0.649 ( 2.25 M scratch) and 0.716",
@@ -16331,7 +16331,7 @@
       "rounded": "0.716",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:353"
+        "paper/sections/05_results_discussion.tex:357"
       ],
       "token": "05_results_discussion|s-1|0.655 ( 0.71 M scratch) 0.649 ( 2.25 M scratch) and 0.716|4",
       "row": "0.655 ( 0.71 M scratch) 0.649 ( 2.25 M scratch) and 0.716",
@@ -16347,7 +16347,7 @@
       "rounded": "-0.22",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:381"
+        "paper/sections/05_results_discussion.tex:385"
       ],
       "token": "05_results_discussion|s-1|none of them ( at SWA: -0.22 0.46|0",
       "row": "none of them ( at SWA: -0.22 0.46",
@@ -16363,7 +16363,7 @@
       "rounded": "0.46",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:381"
+        "paper/sections/05_results_discussion.tex:385"
       ],
       "token": "05_results_discussion|s-1|none of them ( at SWA: -0.22 0.46|1",
       "row": "none of them ( at SWA: -0.22 0.46",
@@ -16379,7 +16379,7 @@
       "rounded": "-0.01",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:382"
+        "paper/sections/05_results_discussion.tex:386"
       ],
       "token": "05_results_discussion|s-1|-0.01 0.72 and -0.23 0.49 pp). Because the oracle replaces the estimate with the quantity an|0",
       "row": "-0.01 0.72 and -0.23 0.49 pp). Because the oracle replaces the estimate with the quantity an",
@@ -16395,7 +16395,7 @@
       "rounded": "0.72",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:382"
+        "paper/sections/05_results_discussion.tex:386"
       ],
       "token": "05_results_discussion|s-1|-0.01 0.72 and -0.23 0.49 pp). Because the oracle replaces the estimate with the quantity an|1",
       "row": "-0.01 0.72 and -0.23 0.49 pp). Because the oracle replaces the estimate with the quantity an",
@@ -16411,7 +16411,7 @@
       "rounded": "-0.23",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:382"
+        "paper/sections/05_results_discussion.tex:386"
       ],
       "token": "05_results_discussion|s-1|-0.01 0.72 and -0.23 0.49 pp). Because the oracle replaces the estimate with the quantity an|2",
       "row": "-0.01 0.72 and -0.23 0.49 pp). Because the oracle replaces the estimate with the quantity an",
@@ -16427,7 +16427,7 @@
       "rounded": "0.49",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:382"
+        "paper/sections/05_results_discussion.tex:386"
       ],
       "token": "05_results_discussion|s-1|-0.01 0.72 and -0.23 0.49 pp). Because the oracle replaces the estimate with the quantity an|3",
       "row": "-0.01 0.72 and -0.23 0.49 pp). Because the oracle replaces the estimate with the quantity an",
@@ -16443,7 +16443,7 @@
       "rounded": "0.0056",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:391"
+        "paper/sections/05_results_discussion.tex:395"
       ],
       "token": "05_results_discussion|s-1|degrades student calibration by +0.0056 0.0040 with the same|0",
       "row": "degrades student calibration by +0.0056 0.0040 with the same",
@@ -16459,7 +16459,7 @@
       "rounded": "0.0040",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:391"
+        "paper/sections/05_results_discussion.tex:395"
       ],
       "token": "05_results_discussion|s-1|degrades student calibration by +0.0056 0.0040 with the same|1",
       "row": "degrades student calibration by +0.0056 0.0040 with the same",
@@ -16475,7 +16475,7 @@
       "rounded": "2.1",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:392"
+        "paper/sections/05_results_discussion.tex:396"
       ],
       "token": "05_results_discussion|s-1|sign in all three seeds and a magnitude 2.1 the seed|0",
       "row": "sign in all three seeds and a magnitude 2.1 the seed",
@@ -16491,7 +16491,7 @@
       "rounded": "1.10",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:399"
+        "paper/sections/05_results_discussion.tex:403"
       ],
       "token": "05_results_discussion|s-1|( 1.10 the control seed deviation against a declared bound of|0",
       "row": "( 1.10 the control seed deviation against a declared bound of",
@@ -16507,7 +16507,7 @@
       "rounded": "1.4",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:405"
+        "paper/sections/05_results_discussion.tex:409"
       ],
       "token": "05_results_discussion|s-1|control arm's the same cell is 1.4 and would not qualify; a|0",
       "row": "control arm's the same cell is 1.4 and would not qualify; a",
@@ -16523,7 +16523,7 @@
       "rounded": "0.134",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:406"
+        "paper/sections/05_results_discussion.tex:410"
       ],
       "token": "05_results_discussion|s-1|paired t -test at n = 3 gives 0.134 ; and the screening rule|1",
       "row": "paired t -test at n = 3 gives 0.134 ; and the screening rule",
@@ -16539,7 +16539,7 @@
       "rounded": "0.0015",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:417"
+        "paper/sections/05_results_discussion.tex:421"
       ],
       "token": "05_results_discussion|s-1|( +0.0015 0.0036 and +0.0004 0.0053 sign pattern|0",
       "row": "( +0.0015 0.0036 and +0.0004 0.0053 sign pattern",
@@ -16555,7 +16555,7 @@
       "rounded": "0.0036",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:417"
+        "paper/sections/05_results_discussion.tex:421"
       ],
       "token": "05_results_discussion|s-1|( +0.0015 0.0036 and +0.0004 0.0053 sign pattern|1",
       "row": "( +0.0015 0.0036 and +0.0004 0.0053 sign pattern",
@@ -16571,7 +16571,7 @@
       "rounded": "0.0004",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:417"
+        "paper/sections/05_results_discussion.tex:421"
       ],
       "token": "05_results_discussion|s-1|( +0.0015 0.0036 and +0.0004 0.0053 sign pattern|2",
       "row": "( +0.0015 0.0036 and +0.0004 0.0053 sign pattern",
@@ -16587,7 +16587,7 @@
       "rounded": "0.0053",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:417"
+        "paper/sections/05_results_discussion.tex:421"
       ],
       "token": "05_results_discussion|s-1|( +0.0015 0.0036 and +0.0004 0.0053 sign pattern|3",
       "row": "( +0.0015 0.0036 and +0.0004 0.0053 sign pattern",
@@ -16603,7 +16603,7 @@
       "rounded": "3.2",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:423"
+        "paper/sections/05_results_discussion.tex:427"
       ],
       "token": "05_results_discussion|s-1|calibration effect smaller than 3.2 % -- 19.4 % of the control arm's|0",
       "row": "calibration effect smaller than 3.2 % -- 19.4 % of the control arm's",
@@ -16619,7 +16619,7 @@
       "rounded": "19.4",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:423"
+        "paper/sections/05_results_discussion.tex:427"
       ],
       "token": "05_results_discussion|s-1|calibration effect smaller than 3.2 % -- 19.4 % of the control arm's|1",
       "row": "calibration effect smaller than 3.2 % -- 19.4 % of the control arm's",
@@ -16635,7 +16635,7 @@
       "rounded": "0.028",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:428"
+        "paper/sections/05_results_discussion.tex:432"
       ],
       "token": "05_results_discussion|s-1|( 0.075 vs. 0.028 ) so an equal absolute harm would be a|1",
       "row": "( 0.075 vs. 0.028 ) so an equal absolute harm would be a",
@@ -16651,7 +16651,7 @@
       "rounded": "-0.0042",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:443"
+        "paper/sections/05_results_discussion.tex:447"
       ],
       "token": "05_results_discussion|s-1|-0.0042 0.0004 negative in all three seeds 3.6 that|0",
       "row": "-0.0042 0.0004 negative in all three seeds 3.6 that",
@@ -16667,7 +16667,7 @@
       "rounded": "0.0004",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:443"
+        "paper/sections/05_results_discussion.tex:447"
       ],
       "token": "05_results_discussion|s-1|-0.0042 0.0004 negative in all three seeds 3.6 that|1",
       "row": "-0.0042 0.0004 negative in all three seeds 3.6 that",
@@ -16683,7 +16683,7 @@
       "rounded": "3.6",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:443"
+        "paper/sections/05_results_discussion.tex:447"
       ],
       "token": "05_results_discussion|s-1|-0.0042 0.0004 negative in all three seeds 3.6 that|2",
       "row": "-0.0042 0.0004 negative in all three seeds 3.6 that",
@@ -16699,7 +16699,7 @@
       "rounded": "11.9",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:445"
+        "paper/sections/05_results_discussion.tex:449"
       ],
       "token": "05_results_discussion|s-1|11.9 under the paired-difference denominator as well. It|0",
       "row": "11.9 under the paired-difference denominator as well. It",
@@ -16715,7 +16715,7 @@
       "rounded": "-0.0011",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:456"
+        "paper/sections/05_results_discussion.tex:460"
       ],
       "token": "05_results_discussion|s-1|third seed completes ( -0.0011 0.0033 signs ++-). On|0",
       "row": "third seed completes ( -0.0011 0.0033 signs ++-). On",
@@ -16731,7 +16731,7 @@
       "rounded": "0.0033",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:456"
+        "paper/sections/05_results_discussion.tex:460"
       ],
       "token": "05_results_discussion|s-1|third seed completes ( -0.0011 0.0033 signs ++-). On|1",
       "row": "third seed completes ( -0.0011 0.0033 signs ++-). On",
@@ -16747,7 +16747,7 @@
       "rounded": "0.0023",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:458"
+        "paper/sections/05_results_discussion.tex:462"
       ],
       "token": "05_results_discussion|s-1|( +0.0023 positive in all three seeds) but at 1.5 its|0",
       "row": "( +0.0023 positive in all three seeds) but at 1.5 its",
@@ -16763,7 +16763,7 @@
       "rounded": "1.5",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:458"
+        "paper/sections/05_results_discussion.tex:462"
       ],
       "token": "05_results_discussion|s-1|( +0.0023 positive in all three seeds) but at 1.5 its|1",
       "row": "( +0.0023 positive in all three seeds) but at 1.5 its",
@@ -16779,7 +16779,7 @@
       "rounded": "-0.0042",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:461"
+        "paper/sections/05_results_discussion.tex:465"
       ],
       "token": "05_results_discussion|s-1|teacher it reverses once more and looks beneficial ( -0.0042 i.e.|0",
       "row": "teacher it reverses once more and looks beneficial ( -0.0042 i.e.",
@@ -16795,7 +16795,7 @@
       "rounded": "2.10",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:462"
+        "paper/sections/05_results_discussion.tex:466"
       ],
       "token": "05_results_discussion|s-1|2.10 its control's seed deviation) but the seeds split|0",
       "row": "2.10 its control's seed deviation) but the seeds split",
@@ -16811,7 +16811,7 @@
       "rounded": "0.46",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:471"
+        "paper/sections/05_results_discussion.tex:475"
       ],
       "token": "05_results_discussion|s-1|discriminative quality is adverse (AUROC 0.46 against 0.70 and|0",
       "row": "discriminative quality is adverse (AUROC 0.46 against 0.70 and",
@@ -16827,7 +16827,7 @@
       "rounded": "0.70",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:471"
+        "paper/sections/05_results_discussion.tex:475"
       ],
       "token": "05_results_discussion|s-1|discriminative quality is adverse (AUROC 0.46 against 0.70 and|1",
       "row": "discriminative quality is adverse (AUROC 0.46 against 0.70 and",
@@ -16843,7 +16843,7 @@
       "rounded": "0.84",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:472"
+        "paper/sections/05_results_discussion.tex:476"
       ],
       "token": "05_results_discussion|s-1|0.84 where it was run).|0",
       "row": "0.84 where it was run).",
@@ -16859,7 +16859,7 @@
       "rounded": "-0.12",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:475"
+        "paper/sections/05_results_discussion.tex:479"
       ],
       "token": "05_results_discussion|s-1|direction. Its effect on accuracy is small and negative ( -0.12 to|0",
       "row": "direction. Its effect on accuracy is small and negative ( -0.12 to",
@@ -16875,7 +16875,7 @@
       "rounded": "-0.58",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:476"
+        "paper/sections/05_results_discussion.tex:480"
       ],
       "token": "05_results_discussion|s-1|-0.58 pp across teachers and checkpoints); its effect on calibration|0",
       "row": "-0.58 pp across teachers and checkpoints); its effect on calibration",
@@ -16891,7 +16891,7 @@
       "rounded": "0.086",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:477"
+        "paper/sections/05_results_discussion.tex:481"
       ],
       "token": "05_results_discussion|s-1|is large and one-signed increasing student ECE by +0.086 to +0.139|0",
       "row": "is large and one-signed increasing student ECE by +0.086 to +0.139",
@@ -16907,7 +16907,7 @@
       "rounded": "0.139",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:477"
+        "paper/sections/05_results_discussion.tex:481"
       ],
       "token": "05_results_discussion|s-1|is large and one-signed increasing student ECE by +0.086 to +0.139|1",
       "row": "is large and one-signed increasing student ECE by +0.086 to +0.139",
@@ -16923,7 +16923,7 @@
       "rounded": "0.159",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:478"
+        "paper/sections/05_results_discussion.tex:482"
       ],
       "token": "05_results_discussion|s-1|at SWA and by up to +0.159 at the last checkpoint with the same sign in|0",
       "row": "at SWA and by up to +0.159 at the last checkpoint with the same sign in",
@@ -16939,7 +16939,7 @@
       "rounded": "2.4",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:483"
+        "paper/sections/05_results_discussion.tex:487"
       ],
       "token": "05_results_discussion|s-1|reporting checkpoint the accuracy effect reaches at most 2.4 noise|0",
       "row": "reporting checkpoint the accuracy effect reaches at most 2.4 noise",
@@ -16955,7 +16955,7 @@
       "rounded": "57",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:484"
+        "paper/sections/05_results_discussion.tex:488"
       ],
       "token": "05_results_discussion|s-1|units on any teacher whereas the calibration effect spans 57 -- 77 units of each|0",
       "row": "units on any teacher whereas the calibration effect spans 57 -- 77 units of each",
@@ -16971,7 +16971,7 @@
       "rounded": "77",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:484"
+        "paper/sections/05_results_discussion.tex:488"
       ],
       "token": "05_results_discussion|s-1|units on any teacher whereas the calibration effect spans 57 -- 77 units of each|1",
       "row": "units on any teacher whereas the calibration effect spans 57 -- 77 units of each",
@@ -16987,7 +16987,7 @@
       "rounded": "27",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:486"
+        "paper/sections/05_results_discussion.tex:490"
       ],
       "token": "05_results_discussion|s-1|calibration harm exceeds the accuracy harm by a median of 27|0",
       "row": "calibration harm exceeds the accuracy harm by a median of 27",
@@ -17003,7 +17003,7 @@
       "rounded": "23",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:488"
+        "paper/sections/05_results_discussion.tex:492"
       ],
       "token": "05_results_discussion|s-1|23 at the reporting checkpoint; the all-checkpoint floor is|0",
       "row": "23 at the reporting checkpoint; the all-checkpoint floor is",
@@ -17019,7 +17019,7 @@
       "rounded": "2.6",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:489"
+        "paper/sections/05_results_discussion.tex:493"
       ],
       "token": "05_results_discussion|s-1|lower ( 2.6 at a last-checkpoint cell whose control spread is|0",
       "row": "lower ( 2.6 at a last-checkpoint cell whose control spread is",
@@ -17035,7 +17035,7 @@
       "rounded": "-0.12",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:494"
+        "paper/sections/05_results_discussion.tex:498"
       ],
       "token": "05_results_discussion|s-1|where the accuracy change ( -0.12 pp) is a third of the seed spread|0",
       "row": "where the accuracy change ( -0.12 pp) is a third of the seed spread",
@@ -17051,7 +17051,7 @@
       "rounded": "0.37",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:495"
+        "paper/sections/05_results_discussion.tex:499"
       ],
       "token": "05_results_discussion|s-1|of its own control ( 0.37 pp) statistically invisible while the|0",
       "row": "of its own control ( 0.37 pp) statistically invisible while the",
@@ -17067,7 +17067,7 @@
       "rounded": "69",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:496"
+        "paper/sections/05_results_discussion.tex:500"
       ],
       "token": "05_results_discussion|s-1|calibration change is 69 times its own control's ECE seed|0",
       "row": "calibration change is 69 times its own control's ECE seed",
@@ -17083,7 +17083,7 @@
       "rounded": "0.003",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:502"
+        "paper/sections/05_results_discussion.tex:506"
       ],
       "token": "05_results_discussion|s-1|all three teachers ( p_ Holm 0.003 ). The mechanism is|0",
       "row": "all three teachers ( p_ Holm 0.003 ). The mechanism is",
@@ -17099,7 +17099,7 @@
       "rounded": "1.97",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:521"
+        "paper/sections/05_results_discussion.tex:525"
       ],
       "token": "05_results_discussion|s-1|deserve reporting. First the closest approach was 1.97 the|0",
       "row": "deserve reporting. First the closest approach was 1.97 the",
@@ -17115,7 +17115,7 @@
       "rounded": "2.51",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:529"
+        "paper/sections/05_results_discussion.tex:533"
       ],
       "token": "05_results_discussion|s-1|magnitude ( 2.51 ) but not the sign test (++-).|0",
       "row": "magnitude ( 2.51 ) but not the sign test (++-).",
@@ -17131,7 +17131,7 @@
       "rounded": "0.84",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:533"
+        "paper/sections/05_results_discussion.tex:537"
       ],
       "token": "05_results_discussion|s-1|(target _logvar on primary AUROC 0.84 ) produced|0",
       "row": "(target _logvar on primary AUROC 0.84 ) produced",
@@ -17147,7 +17147,7 @@
       "rounded": "0.23",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:534"
+        "paper/sections/05_results_discussion.tex:538"
       ],
       "token": "05_results_discussion|s-1|the smallest effect of the five ( 0.23 ) while the near|0",
       "row": "the smallest effect of the five ( 0.23 ) while the near",
@@ -17163,7 +17163,7 @@
       "rounded": "0.70",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:536"
+        "paper/sections/05_results_discussion.tex:540"
       ],
       "token": "05_results_discussion|s-1|less well (AUROC 0.70 ). The mechanism's failure to establish a|0",
       "row": "less well (AUROC 0.70 ). The mechanism's failure to establish a",
@@ -17179,7 +17179,7 @@
       "rounded": "92.24",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:561"
+        "paper/sections/05_results_discussion.tex:565"
       ],
       "token": "05_results_discussion|s-1|The three teachers span 0.42 pp in their own accuracy ( 92.24|1",
       "row": "The three teachers span 0.42 pp in their own accuracy ( 92.24",
@@ -17195,7 +17195,7 @@
       "rounded": "92.01",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:562"
+        "paper/sections/05_results_discussion.tex:566"
       ],
       "token": "05_results_discussion|s-1|92.01 91.82 ) and a factor of 2.9 in their own calibration error|0",
       "row": "92.01 91.82 ) and a factor of 2.9 in their own calibration error",
@@ -17211,7 +17211,7 @@
       "rounded": "91.82",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:562"
+        "paper/sections/05_results_discussion.tex:566"
       ],
       "token": "05_results_discussion|s-1|92.01 91.82 ) and a factor of 2.9 in their own calibration error|1",
       "row": "92.01 91.82 ) and a factor of 2.9 in their own calibration error",
@@ -17227,7 +17227,7 @@
       "rounded": "0.0378",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:563"
+        "paper/sections/05_results_discussion.tex:567"
       ],
       "token": "05_results_discussion|s-1|( 0.0378 0.0396 0.0136 ). Ranking candidates by accuracy|0",
       "row": "( 0.0378 0.0396 0.0136 ). Ranking candidates by accuracy",
@@ -17243,7 +17243,7 @@
       "rounded": "0.0396",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:563"
+        "paper/sections/05_results_discussion.tex:567"
       ],
       "token": "05_results_discussion|s-1|( 0.0378 0.0396 0.0136 ). Ranking candidates by accuracy|1",
       "row": "( 0.0378 0.0396 0.0136 ). Ranking candidates by accuracy",
@@ -17259,7 +17259,7 @@
       "rounded": "0.0136",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:563"
+        "paper/sections/05_results_discussion.tex:567"
       ],
       "token": "05_results_discussion|s-1|( 0.0378 0.0396 0.0136 ). Ranking candidates by accuracy|2",
       "row": "( 0.0378 0.0396 0.0136 ). Ranking candidates by accuracy",
@@ -17275,7 +17275,7 @@
       "rounded": "-0.87",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:565"
+        "paper/sections/05_results_discussion.tex:569"
       ],
       "token": "05_results_discussion|s-1|-0.87 against student accuracy at the SWA checkpoint -0.50 at|0",
       "row": "-0.87 against student accuracy at the SWA checkpoint -0.50 at",
@@ -17291,7 +17291,7 @@
       "rounded": "-0.50",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:565"
+        "paper/sections/05_results_discussion.tex:569"
       ],
       "token": "05_results_discussion|s-1|-0.87 against student accuracy at the SWA checkpoint -0.50 at|1",
       "row": "-0.87 against student accuracy at the SWA checkpoint -0.50 at",
@@ -17307,7 +17307,7 @@
       "rounded": "0.87",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:567"
+        "paper/sections/05_results_discussion.tex:571"
       ],
       "token": "05_results_discussion|s-1|calibration error recovers it ( +0.87 at SWA +1.00 at the other|0",
       "row": "calibration error recovers it ( +0.87 at SWA +1.00 at the other",
@@ -17323,7 +17323,7 @@
       "rounded": "1.00",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:567"
+        "paper/sections/05_results_discussion.tex:571"
       ],
       "token": "05_results_discussion|s-1|calibration error recovers it ( +0.87 at SWA +1.00 at the other|1",
       "row": "calibration error recovers it ( +0.87 at SWA +1.00 at the other",
@@ -17339,7 +17339,7 @@
       "rounded": "89.60",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:570"
+        "paper/sections/05_results_discussion.tex:574"
       ],
       "token": "05_results_discussion|s-1|( 89.60 pp each) so the full order is resolved only at the|0",
       "row": "( 89.60 pp each) so the full order is resolved only at the",
@@ -17355,7 +17355,7 @@
       "rounded": "0.52",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:573"
+        "paper/sections/05_results_discussion.tex:577"
       ],
       "token": "05_results_discussion|s-1|checkpoint we report as primary ( 0.52 pp at the accuracy-selected|0",
       "row": "checkpoint we report as primary ( 0.52 pp at the accuracy-selected",
@@ -17371,7 +17371,7 @@
       "rounded": "0.41",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:576"
+        "paper/sections/05_results_discussion.tex:580"
       ],
       "token": "05_results_discussion|s-1|Section ( 0.41 pp). Since|0",
       "row": "Section ( 0.41 pp). Since",
@@ -17563,7 +17563,7 @@
       "rounded": "0.54",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:409"
+        "paper/sections/05_results_discussion.tex:413"
       ],
       "token": "05_results_discussion|s-1|reference rate of 0.54 (rising to 0.74 when each cell is given its|0",
       "row": "reference rate of 0.54 (rising to 0.74 when each cell is given its",
@@ -17579,7 +17579,7 @@
       "rounded": "0.74",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:409"
+        "paper/sections/05_results_discussion.tex:413"
       ],
       "token": "05_results_discussion|s-1|reference rate of 0.54 (rising to 0.74 when each cell is given its|1",
       "row": "reference rate of 0.54 (rising to 0.74 when each cell is given its",
@@ -17595,7 +17595,7 @@
       "rounded": "90",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:282"
+        "paper/sections/04_experiments.tex:286"
       ],
       "token": "04_experiments|s-1|Of the 90 runs in that window (17 June--24 July 2026) all|0",
       "row": "Of the 90 runs in that window (17 June--24 July 2026) all",
@@ -17611,7 +17611,7 @@
       "rounded": "26",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:283"
+        "paper/sections/04_experiments.tex:287"
       ],
       "token": "04_experiments|s-1|manifests were written retroactively by a single script; for 26 the|0",
       "row": "manifests were written retroactively by a single script; for 26 the",
@@ -17627,7 +17627,7 @@
       "rounded": "62",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:284"
+        "paper/sections/04_experiments.tex:288"
       ],
       "token": "04_experiments|s-1|code state at launch could be verified for 62 it could not and the|0",
       "row": "code state at launch could be verified for 62 it could not and the",
@@ -17643,7 +17643,7 @@
       "rounded": "2",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:286"
+        "paper/sections/04_experiments.tex:290"
       ],
       "token": "04_experiments|s-1|(code _state _verified:false) and 2 belong to unfinished|0",
       "row": "(code _state _verified:false) and 2 belong to unfinished",
@@ -17659,7 +17659,7 @@
       "rounded": "89.9",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:40"
+        "paper/sections/05_results_discussion.tex:41"
       ],
       "token": "05_results_discussion|s-1|and the mass sitting in the highest-confidence bin falls from 89.9 %|0",
       "row": "and the mass sitting in the highest-confidence bin falls from 89.9 %",
@@ -17675,7 +17675,7 @@
       "rounded": "82.7",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:41"
+        "paper/sections/05_results_discussion.tex:42"
       ],
       "token": "05_results_discussion|s-1|to 82.7 % . We therefore describe the effect as a calibration|0",
       "row": "to 82.7 % . We therefore describe the effect as a calibration",
@@ -17691,7 +17691,7 @@
       "rounded": "-0.0041",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:524"
+        "paper/sections/05_results_discussion.tex:528"
       ],
       "token": "05_results_discussion|s-1|( = -0.0041 the same sign in all three seeds)|0",
       "row": "( = -0.0041 the same sign in all three seeds)",
@@ -17707,7 +17707,7 @@
       "rounded": "0.165",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:730"
+        "paper/sections/05_results_discussion.tex:734"
       ],
       "token": "05_results_discussion|s-1|remain over-confident ( +0.063 and +0.165 ) even at T = 2.2 a|1",
       "row": "remain over-confident ( +0.063 and +0.165 ) even at T = 2.2 a",
@@ -17723,7 +17723,7 @@
       "rounded": "34",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:782"
+        "paper/sections/05_results_discussion.tex:786"
       ],
       "token": "05_results_discussion|s-1|inside the last K in 34 % and 67 % of them respectively so most|0",
       "row": "inside the last K in 34 % and 67 % of them respectively so most",
@@ -17739,7 +17739,7 @@
       "rounded": "67",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:782"
+        "paper/sections/05_results_discussion.tex:786"
       ],
       "token": "05_results_discussion|s-1|inside the last K in 34 % and 67 % of them respectively so most|1",
       "row": "inside the last K in 34 % and 67 % of them respectively so most",
@@ -17755,7 +17755,7 @@
       "rounded": "4.3",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:813"
+        "paper/sections/05_results_discussion.tex:817"
       ],
       "token": "05_results_discussion|s-1|4.3 10^ -7 on RAF-DB; +0.22 pp SE 0.061|0",
       "row": "4.3 10^ -7 on RAF-DB; +0.22 pp SE 0.061",
@@ -17771,7 +17771,7 @@
       "rounded": "-7",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:813"
+        "paper/sections/05_results_discussion.tex:817"
       ],
       "token": "05_results_discussion|s-1|4.3 10^ -7 on RAF-DB; +0.22 pp SE 0.061|2",
       "row": "4.3 10^ -7 on RAF-DB; +0.22 pp SE 0.061",
@@ -17835,10 +17835,10 @@
       "rounded": "12",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:246"
+        "paper/sections/04_experiments.tex:247"
       ],
-      "token": "04_experiments|s-1|18 s to 12 h. It is the ordering rather than the interval that|1",
-      "row": "18 s to 12 h. It is the ordering rather than the interval that",
+      "token": "04_experiments|s-1|18 s to 12 h (intervals are stated as floors). Run-ledger|1",
+      "row": "18 s to 12 h (intervals are stated as floors). Run-ledger",
       "idx": 1
     },
     {
@@ -17867,7 +17867,7 @@
       "rounded": "116",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:774"
+        "paper/sections/05_results_discussion.tex:778"
       ],
       "token": "05_results_discussion|s-1|insensitive to the inclusion set (as the audit grew from 116 to|0",
       "row": "insensitive to the inclusion set (as the audit grew from 116 to",
@@ -17883,7 +17883,7 @@
       "rounded": "125",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:775"
+        "paper/sections/05_results_discussion.tex:779"
       ],
       "token": "05_results_discussion|s-1|125 to the frozen 131 runs it moved by less than 0.02 pp) and|0",
       "row": "125 to the frozen 131 runs it moved by less than 0.02 pp) and",
@@ -17899,7 +17899,7 @@
       "rounded": "131",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:775"
+        "paper/sections/05_results_discussion.tex:779"
       ],
       "token": "05_results_discussion|s-1|125 to the frozen 131 runs it moved by less than 0.02 pp) and|1",
       "row": "125 to the frozen 131 runs it moved by less than 0.02 pp) and",
@@ -17915,7 +17915,7 @@
       "rounded": "0.02",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:775"
+        "paper/sections/05_results_discussion.tex:779"
       ],
       "token": "05_results_discussion|s-1|125 to the frozen 131 runs it moved by less than 0.02 pp) and|2",
       "row": "125 to the frozen 131 runs it moved by less than 0.02 pp) and",
@@ -19147,7 +19147,7 @@
       "rounded": "20",
       "matches": true,
       "where": [
-        "paper/sections/05_results_discussion.tex:70"
+        "paper/sections/05_results_discussion.tex:71"
       ],
       "token": "05_results_discussion|s-1|The control's pre-declaration (frozen 20 s before its first run)|0",
       "row": "The control's pre-declaration (frozen 20 s before its first run)",
@@ -19519,10 +19519,16 @@
       "key": "app_predecl|s0|T factorial|0",
       "class": "preregistration_provenance",
       "why": "on-beyan lead suresi / ongoru sayisi / bolum atfi -- olcum degil, saglama PREREGISTRATIONS.md + git zaman damgasi",
-      "printed": "3"
+      "printed": "108"
     },
     {
       "key": "app_predecl|s0|T factorial|1",
+      "class": "preregistration_provenance",
+      "why": "on-beyan lead suresi / ongoru sayisi / bolum atfi -- olcum degil, saglama PREREGISTRATIONS.md + git zaman damgasi",
+      "printed": "3"
+    },
+    {
+      "key": "app_predecl|s0|T factorial|2",
       "class": "preregistration_provenance",
       "why": "on-beyan lead suresi / ongoru sayisi / bolum atfi -- olcum degil, saglama PREREGISTRATIONS.md + git zaman damgasi",
       "printed": "5.3"
@@ -22480,7 +22486,7 @@
         "-++"
       ],
       "why": "iki asiri-guvenli ogretmende AYNI desen -- cumle 'on both' diyor, iki alan da esit olmali",
-      "where": "paper/sections/05_results_discussion.tex:418",
+      "where": "paper/sections/05_results_discussion.tex:422",
       "matches": true
     },
     {
@@ -22497,7 +22503,7 @@
         "+--"
       ],
       "why": "G2G'nin tekrarlanmadigi cumlesi: iki ogretmende isaretler ayrisiyor",
-      "where": "paper/sections/05_results_discussion.tex:448",
+      "where": "paper/sections/05_results_discussion.tex:452",
       "matches": true
     },
     {
@@ -22514,7 +22520,7 @@
         "-++"
       ],
       "why": "G2G'nin tekrarlanmadigi cumlesi: iki ogretmende isaretler ayrisiyor",
-      "where": "paper/sections/05_results_discussion.tex:448",
+      "where": "paper/sections/05_results_discussion.tex:452",
       "matches": true
     },
     {
@@ -22531,7 +22537,7 @@
         "---"
       ],
       "why": "G2G'nin tekrarlanmadigi cumlesi: iki ogretmende isaretler ayrisiyor",
-      "where": "paper/sections/05_results_discussion.tex:448",
+      "where": "paper/sections/05_results_discussion.tex:452",
       "matches": true
     },
     {
@@ -22548,7 +22554,7 @@
         "++-"
       ],
       "why": "eslesen ucuncu tohum tamamlaninca uyarlanan sicakligin isaretleri",
-      "where": "paper/sections/05_results_discussion.tex:456",
+      "where": "paper/sections/05_results_discussion.tex:460",
       "matches": true
     },
     {
@@ -22565,7 +22571,7 @@
         "--+"
       ],
       "why": "iyi kalibre ogretmende buyukluk esigi geciyor, isaret testi gecmiyor",
-      "where": "paper/sections/05_results_discussion.tex:463",
+      "where": "paper/sections/05_results_discussion.tex:467",
       "matches": true
     },
     {
@@ -22582,7 +22588,7 @@
         "++-"
       ],
       "why": "hedef-logvar gecidinin DOGRULUK ekseni: tamamlayici kosul isaret testinde dusuyor",
-      "where": "paper/sections/05_results_discussion.tex:529",
+      "where": "paper/sections/05_results_discussion.tex:533",
       "matches": true
     }
   ],

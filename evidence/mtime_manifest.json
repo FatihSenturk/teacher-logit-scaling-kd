@@ -1,0 +1,126 @@
+{
+  "generated": "2026-08-27T13:39:46+03:00",
+  "machine_note": "NTFS mtimes measured on the authoring machine, not a cloud copy",
+  "items": [
+    {
+      "declared_name": "diagnostics/P0_teacher_recipe_diff_report.md",
+      "blocks": [
+        "A5"
+      ],
+      "path": "diagnostics/P0_teacher_recipe_diff_report.md",
+      "mtime_iso": "2026-08-18T03:48:37+03:00",
+      "sha256": "2d30c17ad26ee383b74af31a88f7d51400a4c23d654e39dda8163869d22b195a",
+      "bytes": 5388
+    },
+    {
+      "declared_name": "diagnostics/bridge_teacher_check.py",
+      "blocks": [
+        "A5"
+      ],
+      "path": "diagnostics/bridge_teacher_check.py",
+      "mtime_iso": "2026-08-18T03:48:37+03:00",
+      "sha256": "222b841b749e329e751c0d8c6ac457c80f9cafcb96870ea2217561b1603d9c26",
+      "bytes": 5177
+    },
+    {
+      "declared_name": "ferplus_dose_response_queue.ps1",
+      "blocks": [
+        "A3"
+      ],
+      "path": "ferplus_dose_response_queue.ps1",
+      "mtime_iso": "2026-08-18T03:48:38+03:00",
+      "sha256": "588e30a5bea46f3582cf0e7c0f8a5e93ac02ae050643ad8707526649b15afb26",
+      "bytes": 8847
+    },
+    {
+      "declared_name": "ferplus_tjsd_queue.ps1",
+      "blocks": [
+        "A4"
+      ],
+      "path": "ferplus_tjsd_queue.ps1",
+      "mtime_iso": "2026-08-18T03:48:38+03:00",
+      "sha256": "d1251ae104c8848d80805a4db193c0b9dfec4de6595d8492d2400f169bcf8b59",
+      "bytes": 7892
+    },
+    {
+      "declared_name": "rafdb_g0_control_grid_queue.ps1",
+      "blocks": [
+        "B8"
+      ],
+      "path": "rafdb_g0_control_grid_queue.ps1",
+      "mtime_iso": "2026-08-18T03:48:38+03:00",
+      "sha256": "82bb12819f5f43e2bdb7fa62f5e6ac491586b851896cefc79eccae183f5ca14e",
+      "bytes": 5497
+    },
+    {
+      "declared_name": "rafdb_p1_logit_std_seeds_queue.ps1",
+      "blocks": [
+        "A7"
+      ],
+      "path": "rafdb_p1_logit_std_seeds_queue.ps1",
+      "mtime_iso": "2026-08-18T03:48:38+03:00",
+      "sha256": "ad941e166f30e2294cf9d0ecc9d8f66907be9c9fe05be43df8c37ab5c06e7480",
+      "bytes": 7520
+    },
+    {
+      "declared_name": "rafdb_p1_temperature_doseresponse_queue.ps1",
+      "blocks": [
+        "A6"
+      ],
+      "path": "rafdb_p1_temperature_doseresponse_queue.ps1",
+      "mtime_iso": "2026-08-18T03:48:38+03:00",
+      "sha256": "e2f2979fe0bdb38c82af9e5afc5e36edf195e7af2a87b4826609c22b8deae6f9",
+      "bytes": 5679
+    },
+    {
+      "declared_name": "rafdb_p1_vae9182_flatcontrol_queue.ps1",
+      "blocks": [
+        "A1"
+      ],
+      "path": "rafdb_p1_vae9182_flatcontrol_queue.ps1",
+      "mtime_iso": "2026-08-18T03:48:38+03:00",
+      "sha256": "fb3d96f0079bdd6e44d00c5c1c5e2e234da8f5b391168d34af95e3b23f258d2f",
+      "bytes": 5183
+    },
+    {
+      "declared_name": "rafdb_p2_gate_oracle_seeds_queue.ps1",
+      "blocks": [
+        "A8"
+      ],
+      "path": "rafdb_p2_gate_oracle_seeds_queue.ps1",
+      "mtime_iso": "2026-08-18T03:48:38+03:00",
+      "sha256": "4afd6f04f7f8496f581b52be0f3b6f06ea0691384d5305499516c1c8035db19b",
+      "bytes": 8023
+    },
+    {
+      "declared_name": "rafdb_p3_then_miscal_chain.ps1",
+      "blocks": [
+        "A2"
+      ],
+      "path": "rafdb_p3_then_miscal_chain.ps1",
+      "mtime_iso": "2026-08-18T03:48:38+03:00",
+      "sha256": "657a1d566a002394179ee533e356dd8f80a121d5966ff14d0a986ac3fc51dc17",
+      "bytes": 9370
+    },
+    {
+      "declared_name": "rafdb_p6_tau_alpha_queue.ps1",
+      "blocks": [
+        "A9"
+      ],
+      "path": "rafdb_p6_tau_alpha_queue.ps1",
+      "mtime_iso": "2026-08-18T03:48:38+03:00",
+      "sha256": "75e01161417bbc3733e668cc83ea25acab170fd521d0c6b0569f42ddcd26e9ef",
+      "bytes": 9910
+    },
+    {
+      "declared_name": "diagnostics/PREREGISTRATIONS.md",
+      "blocks": [
+        "(the register itself)"
+      ],
+      "path": "diagnostics/PREREGISTRATIONS.md",
+      "mtime_iso": "2026-08-18T03:48:37+03:00",
+      "sha256": "44bd93ad84fce5e214062fee57a7e04a29d758fb62b5ca4028a5528ac7559577",
+      "bytes": 72348
+    }
+  ]
+}

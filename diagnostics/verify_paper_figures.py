@@ -44,9 +44,11 @@ MIN_PT = 7.0
 PANEL_LETTER = re.compile(r"^\(?[a-z]\)?$")
 
 # figure -> exactly how many raster images it is allowed to embed, and why.
-EXPECT_RASTER = {
-    "vote_examples.pdf": 4,   # the four FER2013 48x48 example faces; everything else is vector
-}
+# Round-5 C1 (27 Ağu 2026): vote_examples.pdf'in dört 48x48 yüz rasteri kaldırıldı --
+# figür seti artık TAMAMEN vektör. Tablo bilerek boş bırakılıyor (silinmiyor): bir gün
+# yeniden raster gerekirse beyan mekanizması burada, ve boş hâli "hiçbir figürde raster
+# beklenmez" beyanının kendisi.
+EXPECT_RASTER = {}
 
 
 def descendant_subtype(doc, xref):

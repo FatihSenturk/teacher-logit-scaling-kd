@@ -21,8 +21,8 @@ authors:
     given-names: Gülsüm Zeynep
     affiliation: Department of Computer Engineering, Istanbul University-Cerrahpaşa
     orcid: 'https://orcid.org/0000-0002-4125-0589'
-version: v1.0.0-submission
-date-released: '2026-08-26'
+version: v1.0.1-submission
+date-released: '2026-08-27'
 license: MIT
 repository-code: https://github.com/FatihSenturk/teacher-logit-scaling-kd
 url: https://github.com/FatihSenturk/teacher-logit-scaling-kd
@@ -30,8 +30,10 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.22111204
     description: >-
-      Version DOI of v1.0.0-submission -- the exact tree behind the submitted
-      manuscript.
+      Version DOI of v1.0.0-submission, the exact tree behind the submitted
+      manuscript. v1.0.1-submission's version DOI is minted at publication and
+      shown on its Zenodo record; the concept DOI below always resolves to the
+      newest version.
   - type: doi
     value: 10.5281/zenodo.22111203
     description: >-

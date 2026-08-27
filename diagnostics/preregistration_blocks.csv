@@ -17,6 +17,14 @@
 RAFDB_vae9182_flatcontrol,A1,2026-07-24,rafdb_p1_vae9182_flatcontrol_queue.ps1
 RAFDB_vae9182_miscalT0731,A2,2026-07-25,rafdb_p3_then_miscal_chain.ps1
 RAFDB_stage1_tempscale_,A6,2026-07-23,rafdb_p1_temperature_doseresponse_queue.ps1
+# 2026-08-27 (PD turu). T1341_halfA kosusu 21 Tem 11:14'te B3 yari-bolme denemesi olarak
+# firlatildi; A6 o anda heniz beyan edilmemisti (donduruldu 23 Tem 10:34 -- 47 saat sonra).
+# Ustteki genel onek bu kosuyu da A6'ya süpürüyordu ve runs.csv'de A6'nin en erken damgasi
+# beyandan onceye dusuyordu. Asagidaki daha-uzun onek (en-uzun-onek kurali) kosuyu BOS bloga
+# esler: hicbir on-kayit blogu altinda firlatilmadi; A6 izgarasi SONUCUNU yeniden kullanir
+# (PREREGISTRATIONS.md A6 blogunun "kismen" notu tam bunu kaydeder). Ustteki tarihli satira
+# dokunulmadi; bu satir bugunun tarihli eklemesidir.
+RAFDB_stage1_tempscale_T1341_halfA_,,2026-08-27,-
 RAFDB_vae9182_tempscale_,A1,2026-07-24,rafdb_p1_vae9182_flatcontrol_queue.ps1
 RAFDB_stage1_logit_std_b070_T6_224_400e_swa200_seed,A7,2026-07-29,rafdb_p1_logit_std_seeds_queue.ps1
 RAFDB_primary_logit_std_b070_T6_224_400e_swa200_seed,A7,2026-07-29,rafdb_p1_logit_std_seeds_queue.ps1

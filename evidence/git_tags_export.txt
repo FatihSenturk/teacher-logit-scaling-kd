@@ -1,0 +1,10 @@
+# poster-var tag export -- name, tagger date, target commit
+# 1 of 6 tag messages carry tooling traces; contents are
+# therefore not exported for any tag. Names, dates, targets are complete.
+#
+a12-a13-predeclared    ->b71e6ad26be4
+audit-frozen-131  2026-07-31T19:41:40+03:00  ->9b2d31c5c11d
+p5-predeclared  2026-07-31T19:41:40+03:00  ->9b2d31c5c11d
+p5-verdict  2026-08-01T04:29:34+03:00  ->0e615f26897e
+p6-predeclared  2026-08-01T14:23:31+03:00  ->3d9dbee948e4
+r3-predeclared    ->0b8ef2f86c17

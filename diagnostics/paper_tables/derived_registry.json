@@ -322,7 +322,7 @@
       "matches": true,
       "note": "Stage1: T=1 -> T=1.3406 (dagitilan kol), @SWA ogrenci ECE'si",
       "where": [
-        "paper/main_elsarticle.tex:129"
+        "paper/main_elsarticle.tex:130"
       ]
     },
     {
@@ -349,7 +349,7 @@
       "matches": true,
       "note": "FERPlus: T=1 -> T=0.5063 (dagitilan kol), @SWA ogrenci ECE'si",
       "where": [
-        "paper/main_elsarticle.tex:129"
+        "paper/main_elsarticle.tex:130"
       ]
     },
     {
@@ -376,7 +376,7 @@
       "matches": true,
       "note": "VAE9182 kolunun en yuksek (T=1.3406) ve en dusuk (T=1.70) @SWA dogrulugu; olculen kol aciklikleri 0.304 / 0.511 / 0.486, ozet en genisi basiyor",
       "where": [
-        "paper/main_elsarticle.tex:127"
+        "paper/main_elsarticle.tex:128"
       ]
     },
     {
@@ -723,7 +723,7 @@
       "matches": true,
       "note": "TAM DUYARLIKTA fark 0.004145559676890273 -> 0.0041. Basili operandlardan (0.0587-0.0545) 0.0042 cikar; makale yuvarlanmamis alanlardan hesaplamis.",
       "where": [
-        "paper/sections/05_results_discussion.tex:653"
+        "paper/sections/05_results_discussion.tex:657"
       ]
     },
     {
@@ -750,7 +750,7 @@
       "matches": true,
       "note": "araligin ALT ucu; payda 'mean ECE @best' = 0.05435748884887785 -> %12,66 -> 13",
       "where": [
-        "paper/sections/05_results_discussion.tex:819"
+        "paper/sections/05_results_discussion.tex:823"
       ]
     },
     {
@@ -777,7 +777,7 @@
       "matches": true,
       "note": "araligin UST ucu; payda 'median ECE @swa' = 0.045957979335884726 -> %14,97 -> 15. UCUNCU payda ('mean ECE @swa', %14,50) aralik ICINDE kaldigi icin ayrica basilmiyor. DIKKAT: §3'teki '13--14 times' BASKA BIR NICELIKTIR -- boyutsuz KAT (ece_removed_by_ts / d_ece), yuzde degil; defterde `tstar_criterion_cost_min/max` olarak ayri kayitli. Resiprok da degiller (1/13.31 = %7,5), yani ayni ifadenin iki yazilisi diye okunamaz.",
       "where": [
-        "paper/sections/05_results_discussion.tex:819"
+        "paper/sections/05_results_discussion.tex:823"
       ]
     },
     {
@@ -804,7 +804,7 @@
       "matches": true,
       "note": "PAYDA T*_ECE: (T*_JSD - T*_ECE) / T*_ECE = (0.74-0.45305)/0.45305 = %63,3. Ilk denemede `pct_drop` kullanildi (payda T*_JSD) ve 39 verdi; defter bunu derived_mismatch olarak dusurdu, formul duzeltildi. Iki payda arasindaki fark 24 puan -- yani 'bir oranin paydasi cumlede adlanmali' kurali burada 24 puanlik bir hatayi engelledi.",
       "where": [
-        "paper/sections/05_results_discussion.tex:607"
+        "paper/sections/05_results_discussion.tex:611"
       ]
     },
     {
@@ -1030,7 +1030,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:612"
+        "paper/sections/05_results_discussion.tex:616"
       ]
     },
     {
@@ -1057,7 +1057,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:627"
+        "paper/sections/05_results_discussion.tex:631"
       ]
     },
     {
@@ -1084,7 +1084,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:627"
+        "paper/sections/05_results_discussion.tex:631"
       ]
     },
     {
@@ -1111,7 +1111,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:660"
+        "paper/sections/05_results_discussion.tex:664"
       ]
     },
     {
@@ -1138,7 +1138,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:665"
+        "paper/sections/05_results_discussion.tex:669"
       ]
     },
     {
@@ -1165,7 +1165,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:693"
+        "paper/sections/05_results_discussion.tex:697"
       ]
     },
     {
@@ -1192,7 +1192,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:786"
+        "paper/sections/05_results_discussion.tex:790"
       ]
     },
     {
@@ -1219,7 +1219,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:806"
+        "paper/sections/05_results_discussion.tex:810"
       ]
     },
     {
@@ -1408,7 +1408,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:33"
+        "paper/sections/05_results_discussion.tex:34"
       ]
     },
     {
@@ -1435,7 +1435,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:35"
+        "paper/sections/05_results_discussion.tex:36"
       ]
     },
     {
@@ -1462,7 +1462,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:81"
+        "paper/sections/05_results_discussion.tex:82"
       ]
     },
     {
@@ -1489,7 +1489,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:85"
+        "paper/sections/05_results_discussion.tex:86"
       ]
     },
     {
@@ -1516,7 +1516,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:153"
+        "paper/sections/05_results_discussion.tex:154"
       ]
     },
     {
@@ -1543,7 +1543,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:239"
+        "paper/sections/05_results_discussion.tex:240"
       ]
     },
     {
@@ -1570,7 +1570,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:239"
+        "paper/sections/05_results_discussion.tex:240"
       ]
     },
     {
@@ -1597,7 +1597,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:298"
+        "paper/sections/05_results_discussion.tex:299"
       ]
     },
     {
@@ -1624,7 +1624,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:313"
+        "paper/sections/05_results_discussion.tex:314"
       ]
     },
     {
@@ -1651,7 +1651,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:561"
+        "paper/sections/05_results_discussion.tex:565"
       ]
     },
     {
@@ -1678,7 +1678,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:562"
+        "paper/sections/05_results_discussion.tex:566"
       ]
     },
     {
@@ -1705,7 +1705,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:572"
+        "paper/sections/05_results_discussion.tex:576"
       ]
     },
     {
@@ -1732,7 +1732,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:574"
+        "paper/sections/05_results_discussion.tex:578"
       ]
     },
     {
@@ -1759,7 +1759,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:428"
+        "paper/sections/05_results_discussion.tex:432"
       ]
     },
     {
@@ -1791,7 +1791,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:52"
+        "paper/sections/05_results_discussion.tex:53"
       ]
     },
     {
@@ -1823,7 +1823,7 @@
       "matches": true,
       "note": "uc kolun EN KUCUK R^2'si; alt sinir iddiasi oldugu icin ASAGI yuvarlanir (scratch2248 = 0.99881781, digerleri 0.99996+)",
       "where": [
-        "paper/sections/05_results_discussion.tex:352"
+        "paper/sections/05_results_discussion.tex:356"
       ]
     },
     {
@@ -1855,7 +1855,7 @@
       "matches": true,
       "note": "pay = stage1 ve primary kontrol kollarinin @swa ECE duzeylerinin ORTALAMASI (0.075); PAYDA = vae9182 kontrol kolunun @swa ECE duzeyi (0.0278). Basili iki yuvarlanmis degerden hesaplansaydi 2.679 cikardi; alanlardan 2.701 cikiyor -- ikisi de 1 basamakta 2.7 veriyor ama hesap alanlardan yapiliyor.",
       "where": [
-        "paper/sections/05_results_discussion.tex:427"
+        "paper/sections/05_results_discussion.tex:431"
       ]
     },
     {
@@ -1882,7 +1882,7 @@
       "matches": true,
       "note": "stage1 ogrenci-optimum kolu T=1.3406, tau=6 -> 8.0436",
       "where": [
-        "paper/sections/05_results_discussion.tex:200"
+        "paper/sections/05_results_discussion.tex:201"
       ]
     },
     {
@@ -1909,7 +1909,7 @@
       "matches": true,
       "note": "vae9182 ogrenci-optimum kolu T=1 (T*=0.983 DEGIL: ogrencinin en dusuk ECE'si T=1 kolunda), tau=6 -> 6.0",
       "where": [
-        "paper/sections/05_results_discussion.tex:201"
+        "paper/sections/05_results_discussion.tex:202"
       ]
     },
     {
@@ -1936,7 +1936,7 @@
       "matches": true,
       "note": "FERPlus ogrenci-optimum kolu T=0.5063, tau=6 -> 3.0378 = 3.04. Basili deger 20 Agu 2026'da 3.06'ydi (CIFT YUVARLAMA: 0.5063 -> 0.51 -> x6); 21 Agu 2026'da makalede 3.04'e duzeltildi ve bag YESILE dondu.",
       "where": [
-        "paper/sections/05_results_discussion.tex:201"
+        "paper/sections/05_results_discussion.tex:202"
       ]
     },
     {
@@ -1983,7 +1983,7 @@
       "matches": true,
       "note": "alti lead-tasiyan on-beyanin en kisasi = A4 (human-alignment), 18 s; saniyeler tamsayi-kesin oldugu icin floor==deger",
       "where": [
-        "paper/sections/04_experiments.tex:246"
+        "paper/sections/04_experiments.tex:247"
       ]
     },
     {

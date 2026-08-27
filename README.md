@@ -19,8 +19,13 @@ were launched.
 training logs, and the manuscript sources. See [Data](#data) and
 [PROVENANCE.md](PROVENANCE.md).
 
-**Which version this is.** The current tag is `v1.0.0-submission`. Cite a tag, not
+**Which version this is.** The current tag is `v1.0.1-submission`. Cite a tag, not
 the branch: the branch moves and the tag does not.
+
+| tag | date | what it adds |
+|---|---|---|
+| `v1.0.0-submission` | 2026-08-26 | the archive as submitted alongside the manuscript |
+| `v1.0.1-submission` | 2026-08-27 | `evidence/` (dated commit-and-tag export + authoring-machine mtime manifest, promised by the manuscript's S11), the figure producers moved to the SWA checkpoint (paper Fig. 2 / S2), and the pre-registration block map correction dated 2026-08-27 |
 
 **This archive supersedes an earlier one.** The same work was first published as
 `FatihSenturk/calibration-law-fer` and archived on Zenodo in three versions between
@@ -33,8 +38,10 @@ prints the earlier repository's URL and DOI; neither resolves any more, and both
 corrected at revision.
 
 The DOI to cite is the **concept DOI** for this archive — `10.5281/zenodo.22111203` —
-which always resolves to the newest archived version. To pin the exact tree behind a
-specific claim, use the version DOI of the tag above, `10.5281/zenodo.22111204`.
+which always resolves to the newest archived version. To pin one exact tree instead,
+use that version's own DOI from its Zenodo record: `v1.0.0-submission` is
+`10.5281/zenodo.22111204`; `v1.0.1-submission`'s version DOI is shown on its record
+(it is minted at publication and is deliberately not guessed here).
 
 Citation metadata is machine-readable: [`CITATION.cff`](CITATION.cff) (the paper
 is the preferred citation; the archive is listed under `identifiers`) and

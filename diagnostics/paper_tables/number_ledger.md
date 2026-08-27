@@ -10,9 +10,9 @@ Producer: `diagnostics/number_ledger.py` · scanner: `diagnostics/paper_number_s
 |---|---|
 | bound to an artifact field | 1182 |
 | derived, occupying an in-scope token | 69 |
-| declared not-a-measurement | 489 |
+| declared not-a-measurement | 490 |
 | **unregistered** | **0** |
-| **= numeric tokens in scope** | **1740** |
+| **= numeric tokens in scope** | **1741** |
 
 The four categories are disjoint (bound ∩ exempt is checked to be empty) and the column sums to the total. Two kinds of declaration are **not** in that table because they occupy no in-scope token — they are anchored to sentences the scanner deliberately does not read:
 
@@ -27,7 +27,7 @@ The registry therefore holds **73** derived quantities in total: 69 on in-scope 
 |---|---|
 | printed-vs-field mismatch | 0 |
 | confirmation records (second source) | 3 (0 failing) |
-| layout tokens dropped by the scanner | 357 |
+| layout tokens dropped by the scanner | 359 |
 | sign patterns bound (non-numeric, see below) | 24 of 24 |
 
 ## Scope (declared)
@@ -67,13 +67,13 @@ None.
 | `+++` | `T5_mechanisms["stage1/logit_std"].swa.d_ece_signs` | `+++` | paper/tables/tab_mechanisms.tex:62 |
 | `+++` | `T5_mechanisms["primary/logit_std"].swa.d_ece_signs` | `+++` | paper/tables/tab_mechanisms.tex:62 |
 | `+++` | `T5_mechanisms["vae9182/logit_std"].swa.d_ece_signs` | `+++` | paper/tables/tab_mechanisms.tex:62 |
-| `-++` | `T5_mechanisms["stage1/gate:oracle_error"].swa.d_ece_signs + T5_mechanisms["primary/gate:oracle_error"].swa.d_ece_signs` | `-++` / `-++` | paper/sections/05_results_discussion.tex:418 |
-| `+--` | `T5_mechanisms["primary/g2g_kl"].swa.d_ece_signs` | `+--` | paper/sections/05_results_discussion.tex:448 |
-| `-++` | `T5_mechanisms["vae9182/g2g_kl"].swa.d_ece_signs` | `-++` | paper/sections/05_results_discussion.tex:448 |
-| `---` | `T5_mechanisms["stage1/g2g_kl"].swa.d_ece_signs` | `---` | paper/sections/05_results_discussion.tex:448 |
-| `++-` | `T5_mechanisms["stage1/adaptive_t"].swa.d_ece_signs` | `++-` | paper/sections/05_results_discussion.tex:456 |
-| `--+` | `T5_mechanisms["vae9182/adaptive_t"].swa.d_ece_signs` | `--+` | paper/sections/05_results_discussion.tex:463 |
-| `++-` | `T5_mechanisms["stage1/gate:target_logvar"].swa.d_acc_signs` | `++-` | paper/sections/05_results_discussion.tex:529 |
+| `-++` | `T5_mechanisms["stage1/gate:oracle_error"].swa.d_ece_signs + T5_mechanisms["primary/gate:oracle_error"].swa.d_ece_signs` | `-++` / `-++` | paper/sections/05_results_discussion.tex:422 |
+| `+--` | `T5_mechanisms["primary/g2g_kl"].swa.d_ece_signs` | `+--` | paper/sections/05_results_discussion.tex:452 |
+| `-++` | `T5_mechanisms["vae9182/g2g_kl"].swa.d_ece_signs` | `-++` | paper/sections/05_results_discussion.tex:452 |
+| `---` | `T5_mechanisms["stage1/g2g_kl"].swa.d_ece_signs` | `---` | paper/sections/05_results_discussion.tex:452 |
+| `++-` | `T5_mechanisms["stage1/adaptive_t"].swa.d_ece_signs` | `++-` | paper/sections/05_results_discussion.tex:460 |
+| `--+` | `T5_mechanisms["vae9182/adaptive_t"].swa.d_ece_signs` | `--+` | paper/sections/05_results_discussion.tex:467 |
+| `++-` | `T5_mechanisms["stage1/gate:target_logvar"].swa.d_acc_signs` | `++-` | paper/sections/05_results_discussion.tex:533 |
 
 ## Confirmation records (same quantity, second source)
 

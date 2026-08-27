@@ -14,17 +14,18 @@ entropies and the number of tied candidates all go to JSON. Ties are large at th
 31.8 % of FERPlus val has entropy exactly 0 (unanimous raters) -- so the tie is broken by lowest
 loader index, which is deterministic and carries no information about how the example looks.
 
-IMAGES ARE SHOWN AT NATIVE 48x48. FER2013 images are 48x48 greyscale and will look blocky. That
-is the dataset, so interpolation="none" is used: matplotlib then embeds the array itself in the
-PDF at its own resolution rather than resampling it to the figure's, and the reader sees exactly
-the pixels the network saw. These four raster images are the ONLY raster content in the paper's
-figure set, and diagnostics/verify_paper_figures.py is told to expect exactly four here.
+NO FACE IMAGES (Round-5 C1, 27 Ağu 2026). Until this round the figure's top row showed the four
+faces at native 48x48 -- the only raster content in the paper's figure set. That row is removed:
+the figure is now fully vector (diagnostics/verify_paper_figures.py expects ZERO rasters here)
+and no dataset imagery is redistributed. The sample identity each column came from is still
+recorded in vote_examples.json (image_path, image_shape); the figure itself carries only the
+percentile/entropy headers and the three distributions, which are its actual content.
 
 CORRECTNESS GATE. The vote distributions are re-derived here from the metadata CSV through the
 same path mapping the JSD analysis used, and the resulting per-sample entropies are asserted
 against diagnostics/ferplus_jsd/per_sample_human_entropy.npy. If the row alignment between
-logits and votes were ever off by even one sample, the panels would silently pair the wrong face
-with the wrong votes -- which is exactly the kind of error a figure cannot show you.
+logits and votes were ever off by even one sample, the panels would silently pair the wrong
+distributions -- which is exactly the kind of error a figure cannot show you.
 
 Vote normalisation follows ferplus_human_vote_jsd.py: each row is divided by its OWN vote sum,
 not by a fixed 10, because the 8 emotion votes do not always sum to 10 (1176 of 3153 rows).
@@ -146,8 +147,10 @@ def main():
                for c in cols)
     ylim = min(1.0, ymax * 1.12) if ymax < 0.9 else 1.04
 
-    fig = plt.figure(figsize=(W2, 96 * MM))
-    gs = fig.add_gridspec(4, 4, height_ratios=[1.35, 1.0, 1.0, 1.0],
+    # Round-5 C1: yüz satırı (eski row 1, 48x48 raster) kalktı -- ızgara 4 satırdan 3'e,
+    # yükseklik de o satırın payı kadar indi (96 mm * 3.0/4.35 ~ 66; başlık payıyla 70).
+    fig = plt.figure(figsize=(W2, 70 * MM))
+    gs = fig.add_gridspec(3, 4, height_ratios=[1.0, 1.0, 1.0],
                           hspace=0.22, wspace=0.16)
 
     x = np.arange(len(EMOTIONS))
@@ -158,41 +161,23 @@ def main():
             ("$T$ = 1.0", VERM, ""),
             (f"$T$* = {T_JSD:g}", VERM, "")]
 
-    first_col_axes = []          # üst sıra etiketinin hizalanacağı referans satırlar
-    top_label_ax = None
-
     for ci, c in enumerate(cols):
         i = c["index"]
 
-        # --- row 1: the face, at native 48x48
-        axi = fig.add_subplot(gs[0, ci])
-        arr = np.array(Image.open(IMG_ROOT / img_paths[i]))
-        axi.imshow(arr, cmap="gray", vmin=0, vmax=255, interpolation="none")
-        axi.set_xticks([])
-        axi.set_yticks([])
-        for s in axi.spines.values():
-            s.set_linewidth(0.6)
-            s.set_color("0.4")
-        axi.text(0.5, 1.06, f"p{c['percentile']}   $H$ = {c['entropy']:.2f} nats",
-                 transform=axi.transAxes, ha="center", va="bottom", fontsize=SMALL)
-        if ci == 0:
-            # ÜST SIRA HİZASI. imshow kareyi korumak için eksen kutusunu hücrenin içinde
-            # DARALTIR; ylabel de daralmış kutuya yapıştığı için "FERPlus val" alttaki üç
-            # satır etiketinden (human / T=1.0 / T*=0.74) belirgin biçimde sağda kalıyordu --
-            # dört satırlık bir ızgarada tek satırın etiketi hizasız duruyordu. Etiketi
-            # eksene değil FİGÜRE bağlıyoruz ve x'ini alttaki satırlardan ölçüyoruz
-            # (aşağıda, tüm eksenler kurulduktan sonra), böylece daralma hizayı bozamaz.
-            axi.set_ylabel("FERPlus val", fontsize=SMALL)
-            top_label_ax = axi
-
-        # --- rows 2-4: the three distributions over the same 8 classes
+        # --- rows 1-3: the three distributions over the same 8 classes.
+        # Kolon başlığı (percentile + entropi) artık ilk dağılım satırının üstünde;
+        # yüz satırı kalktığı için imshow'un en-boy daraltması ve onun gerektirdiği
+        # etiket hizalama makinesi de kalktı ("FERPlus val" şimdi fig.supylabel).
         for ri, (vals, (label, colour, hatch), note) in enumerate(
                 zip((p_human[i], q1[i], qj[i]), ROWS,
-                    (None, f"JSD {d1[i]:.3f}", f"JSD {dj[i]:.3f}")), start=1):
+                    (None, f"JSD {d1[i]:.3f}", f"JSD {dj[i]:.3f}")), start=0):
             ax = fig.add_subplot(gs[ri, ci])
             ax.bar(x, vals, width=0.74,
                    facecolor="none" if hatch else colour, edgecolor=colour,
                    hatch=hatch, linewidth=0.6)
+            if ri == 0:
+                ax.text(0.5, 1.08, f"p{c['percentile']}   $H$ = {c['entropy']:.2f} nats",
+                        transform=ax.transAxes, ha="center", va="bottom", fontsize=SMALL)
             if note:
                 ax.text(0.97, 0.92, note, transform=ax.transAxes, ha="right", va="top",
                         fontsize=SMALL, color="#333333")
@@ -203,47 +188,19 @@ def main():
             ax.tick_params(length=2)
             if ci == 0:
                 ax.set_ylabel(label, fontsize=SMALL)
-                first_col_axes.append(ax)
             else:
                 ax.set_yticklabels([])
-            if ri == 3:
+            if ri == 2:
                 ax.set_xticks(x)
                 ax.set_xticklabels(SHORT, rotation=90, fontsize=SMALL)
             else:
                 ax.set_xticks(x)
                 ax.set_xticklabels([])
 
-    # Üst sıranın "FERPlus val" etiketini alttaki üç satır etiketiyle aynı x'e getir.
-    # align_ylabels tek başına yetmiyor: imshow'un en-boy daraltması ÇİZİM anında
-    # uygulanıyor, o yüzden önce bir kez çizdirip daralmış kutunun gerçek konumunu
-    # okuyoruz, sonra etiketi eksen koordinatında geri itiyoruz.
-    if top_label_ax is not None and first_col_axes:
-        # Çapa noktası ile metnin sol kenarı aynı şey değil, o yüzden tek atışta
-        # hesaplamıyoruz: BİLİNEN bir eksen-x'ten başlayıp çiziyor, iki etiketin gerçek sol
-        # kenarını ölçüyor, farkı eksen-x birimine çevirip düzeltiyoruz.
-        #
-        # Başlangıcın bilinen olması şart: set_label_coords çağrılmadan ylabel'ın transformu
-        # x'te PİKSEL taşır, get_position() oradan eksen-kesri diye okunursa etiket yüzlerce
-        # eksen genişliği uzağa fırlar (ilk denemede tam bu oldu: artık 8834 px, tight bbox
-        # patlayıp figür 1890x150'ye çöktü).
-        GUESS = -0.30
-        lbl = top_label_ax.yaxis.label
-        top_label_ax.yaxis.set_label_coords(GUESS, 0.5)
-        fig.canvas.draw()
-        target = min(a.yaxis.label.get_window_extent().x0 for a in first_col_axes)
-        box = top_label_ax.get_position()
-        delta_px = lbl.get_window_extent().x0 - target
-        top_label_ax.yaxis.set_label_coords(
-            GUESS - delta_px / (box.width * fig.bbox.width), 0.5)
-        fig.canvas.draw()
-        resid = abs(lbl.get_window_extent().x0 - target)
-        if resid > 2.0:
-            # Kozmetik bir hiza yüzünden figür üretimi durmamalı; güvenli konuma dön ve söyle.
-            top_label_ax.yaxis.set_label_coords(GUESS, 0.5)
-            print(f"  [UYARI] ust sira etiketi hizalanamadi (artik {resid:.1f} px); "
-                  f"guvenli konuma donuldu")
-        else:
-            print(f"  top-row label aligned with the rows below (residual {resid:.2f} px)")
+    # Set kimliği: eskiden yüz satırının ylabel'ıydı ve imshow daralması yüzünden bir
+    # hizalama makinesi gerektiriyordu; yüz satırı kalkınca figür-düzeyi ortak y etiketi
+    # yeterli -- çakışabileceği bir eksen kutusu yok.
+    fig.supylabel("FERPlus val", fontsize=SMALL)
 
     fig.legend(handles=[Patch(facecolor="none", edgecolor=BLUE, hatch="///",
                               label="human raters (10 votes)"),

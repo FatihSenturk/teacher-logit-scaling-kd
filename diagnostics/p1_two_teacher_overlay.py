@@ -25,6 +25,7 @@ is annotated, so the figure can be inspected mid-queue without misreading it as 
 
 Outputs -> diagnostics/p1_dose_response/two_teacher_overlay.{png,json}
 """
+import csv
 import glob
 import json
 import statistics as st
@@ -46,6 +47,19 @@ from stats_convention import SD_CONVENTION, sample_sd  # noqa: E402
 OUT_DIR = ROOT / "diagnostics" / "p1_dose_response"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 TEACHER_GRID = json.loads((ROOT / "diagnostics" / "teacher_ece_grid" / "teacher_ece_grid.json").read_text())
+
+# by_ckpt KAYNAĞI (27 Ağu 2026, Round-5 C2). Makalenin birincil checkpoint beyanı SWA,
+# ama bu dosyanın düz student_* alanları koşu-başına best_checkpoint.pth önbelleğinden
+# geliyordu (ölçüldü: 10/10 nokta audit'in @best sütununa en yakın) ve Fig. 2 onları
+# çiziyordu. Düz alanlar OLDUĞU GİBİ kalıyor -- bu JSON'u okuyan diğer üreticiler
+# değişmesin -- ve her noktaya two_dataset_overlay.json ile AYNI biçimde bir by_ckpt
+# bloğu ekleniyor. Kaynağı da aynı: Tablo 1/2'nin @swa/@best/@last sütunlarını üreten
+# DONMUŞ seçim denetimi. Yeni koşu yok, yeni değerlendirme yok; figür tarafı
+# by_ckpt["swa"] okur (export_paper_figures.CKPT).
+AUDIT_CSV = ROOT / "diagnostics" / "selection_audit" / "selection_audit.csv"
+CHECKPOINTS = ("swa", "best", "last")
+AUDIT = {(r["run_name"], r["checkpoint"]): r
+         for r in csv.DictReader(open(AUDIT_CSV, encoding="utf-8"))}
 
 SEEDS = (42, 1, 43)
 # teacher -> T -> {seed: run_name}. T=1.0 rows reuse each teacher's existing unmanipulated
@@ -121,9 +135,26 @@ def collect():
                 print(f"  [{teacher}] T={T:<7} no finished runs yet")
                 continue
             t_ece = grid[f"{T:g}"]["teacher_ece"]
+            by_ckpt = {}
+            for ck in CHECKPOINTS:
+                rows_ck = [(s, by_T[T][s], AUDIT[(by_T[T][s], ck)])
+                           for s in SEEDS if s in by_T[T] and (by_T[T][s], ck) in AUDIT]
+                if not rows_ck:
+                    continue
+                e = [float(r["ece"]) for _, _, r in rows_ck]
+                a = [float(r["acc"]) for _, _, r in rows_ck]
+                by_ckpt[ck] = {
+                    "n": len(e),
+                    "ece_mean": st.mean(e), "ece_sd": sample_sd(e),
+                    "acc_mean": st.mean(a), "acc_sd": sample_sd(a),
+                    "per_seed": {str(s): {"run": rn, "ece": float(r["ece"]),
+                                          "acc": float(r["acc"])}
+                                 for s, rn, r in rows_ck},
+                }
             pts.append({"T": T, "teacher_ece": t_ece, "n": len(accs),
                         "student_acc_mean": st.mean(accs), "student_acc_sd": sample_sd(accs),
-                        "student_ece_mean": st.mean(eces), "student_ece_sd": sample_sd(eces)})
+                        "student_ece_mean": st.mean(eces), "student_ece_sd": sample_sd(eces),
+                        "by_ckpt": by_ckpt})
             print(f"  [{teacher}] T={T:<7} teacherECE={t_ece:.4f}  "
                   f"studentECE={st.mean(eces):.4f}+/-{sample_sd(eces):.4f}  "
                   f"acc={st.mean(accs):.3f}+/-{sample_sd(accs):.3f}  n={len(accs)}"
@@ -217,24 +248,30 @@ def main():
               f"{r['student_best_T']:<16g}{r['student_acc_U_depth_pp']:<13.3f}{r['complete']}")
 
     # ---- figure ----
+    # PNG de by_ckpt["swa"] cizer (27 Agu, PD/v1.0.1): makale figuru Round-5 C2'de
+    # SWA'ya gecti; tanilama PNG'si duz (best-onbellegi) alanlarda kalsaydi ayni
+    # uretici iki farkli egri anlatirdi. Duz alanlar JSON'da duruyor (tuketicileri
+    # var); yalniz GORSELLESTIRME birincil checkpoint'i izliyor.
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11.5, 4.8))
     for teacher, pts in data.items():
         if not pts:
             continue
         s = STYLE[teacher]
-        pts_sorted = sorted(pts, key=lambda p: p["teacher_ece"])
+        pts_sorted = sorted([p for p in pts if "swa" in p.get("by_ckpt", {})],
+                            key=lambda p: p["teacher_ece"])
         x = [p["teacher_ece"] for p in pts_sorted]
-        ax1.errorbar(x, [p["student_ece_mean"] for p in pts_sorted],
-                     yerr=[p["student_ece_sd"] for p in pts_sorted],
+        ax1.errorbar(x, [p["by_ckpt"]["swa"]["ece_mean"] for p in pts_sorted],
+                     yerr=[p["by_ckpt"]["swa"]["ece_sd"] for p in pts_sorted],
                      marker=s["marker"], color=s["color"], capsize=3, lw=1.8, label=s["label"])
-        ax2.errorbar(x, [p["student_acc_mean"] for p in pts_sorted],
-                     yerr=[p["student_acc_sd"] for p in pts_sorted],
+        ax2.errorbar(x, [p["by_ckpt"]["swa"]["acc_mean"] for p in pts_sorted],
+                     yerr=[p["by_ckpt"]["swa"]["acc_sd"] for p in pts_sorted],
                      marker=s["marker"], color=s["color"], capsize=3, lw=1.8, label=s["label"])
         for p in pts_sorted:
-            tag = f"T={p['T']:g}" + ("" if p["n"] == 3 else f" (n={p['n']})")
-            ax1.annotate(tag, (p["teacher_ece"], p["student_ece_mean"]),
+            n_swa = p["by_ckpt"]["swa"]["n"]
+            tag = f"T={p['T']:g}" + ("" if n_swa == 3 else f" (n={n_swa})")
+            ax1.annotate(tag, (p["teacher_ece"], p["by_ckpt"]["swa"]["ece_mean"]),
                          textcoords="offset points", xytext=(5, 5), fontsize=7, color=s["color"])
-            ax2.annotate(tag, (p["teacher_ece"], p["student_acc_mean"]),
+            ax2.annotate(tag, (p["teacher_ece"], p["by_ckpt"]["swa"]["acc_mean"]),
                          textcoords="offset points", xytext=(5, 5), fontsize=7, color=s["color"])
     for ax, ylab in ((ax1, "Student ECE (15-bin)"), (ax2, "Student accuracy (%)")):
         ax.set_xscale("log")
@@ -258,6 +295,12 @@ def main():
 
     (OUT_DIR / "two_teacher_overlay.json").write_text(
         json.dumps({"sd_convention": SD_CONVENTION,
+                    "checkpoint_note": "flat student_* fields keep the historical per-run "
+                                       "best_checkpoint.pth cache (measured: nearest @best "
+                                       "10/10); by_ckpt comes from the frozen selection audit "
+                                       "-- the same chain behind Tables 1-2 -- and swa is "
+                                       "primary (paper Sec. 5.4). The figure reads "
+                                       "by_ckpt[swa].",
                     "curves": data, "headroom_table": rows, "correlations": corr}, indent=2),
         encoding="utf-8")
     print(f"\nSaved {out_png}")

@@ -163,15 +163,26 @@ def jload(p):
 
 # --------------------------------------------------------------------------- 1
 def fig_two_teacher_overlay():
+    # Round-5 C2 (27 Ağu 2026): y ekseni artık by_ckpt[CKPT] -- makalenin birincil
+    # checkpoint beyanı (SWA, §5.4) ile aynı ve Tablo 1/2'nin @swa sütunuyla aynı
+    # kaynaktan (donmuş seçim denetimi). Düz student_ece_mean best_checkpoint
+    # önbelleğiydi ve seçim iyimserliği taşıyordu; SESSİZ geri dönüş yok -- by_ckpt
+    # eksikse figür üretimi dursun, eski alana düşmesin.
     d = jload(D / "p1_dose_response" / "two_teacher_overlay.json")
     style = {"stage1": (BLUE, "o", "-", "Stage1 teacher"),
              "vae9182": (VERM, "s", "--", "VAE9182 teacher")}
     fig, ax = plt.subplots(figsize=(90 * MM, 68 * MM))
     for k, pts in d["curves"].items():
         c, m, ls, lab = style[k]
+        missing = [p["T"] for p in pts if CKPT not in p.get("by_ckpt", {})]
+        if missing:
+            raise RuntimeError(
+                f"two_teacher_overlay.json: {k} T={missing} has no by_ckpt[{CKPT!r}] -- "
+                f"rerun diagnostics/p1_two_teacher_overlay.py; refusing the stale flat field.")
         pts = sorted(pts, key=lambda p: p["teacher_ece"])
-        ax.errorbar([p["teacher_ece"] for p in pts], [p["student_ece_mean"] for p in pts],
-                    yerr=[p["student_ece_sd"] for p in pts],
+        ax.errorbar([p["teacher_ece"] for p in pts],
+                    [p["by_ckpt"][CKPT]["ece_mean"] for p in pts],
+                    yerr=[p["by_ckpt"][CKPT]["ece_sd"] for p in pts],
                     color=c, marker=m, linestyle=ls, label=lab, ecolor=c, elinewidth=0.8)
     ax.set_xlabel("Teacher ECE (15-bin)")
     ax.set_ylabel("Student ECE (15-bin)")

@@ -1,0 +1,146 @@
+{
+  "note": "yazili = PREREGISTRATIONS.md'nin tarihli kaydi (dokunulmadi); olculu = bugunku NTFS mtime + runs.csv en-erken damga",
+  "mtime_decay_cause": "measured: git reflog records 'reset: moving to HEAD' at 2026-08-18 03:48:38 +0300 (the N16 round's .gitattributes line-ending renormalisation rewrote the working tree); every drifted artifact carries that same second as its mtime. Today's mtimes therefore corroborate nothing about July; the corroborating records are the dated register itself, the run-directory launch stamps (runs.csv), and for August items the pre-run git tags.",
+  "rows": [
+    {
+      "block": "A1",
+      "written_frozen": "2026-07-24 18:05:30",
+      "written_first_run": "2026-07-24-18-05-50",
+      "runs_csv_first_now": "2026-07-24-18-05-50",
+      "lead_bearing": true,
+      "artifact": "rafdb_p1_vae9182_flatcontrol_queue.ps1",
+      "measured_mtime_now": "2026-08-18T03:48:38+03:00",
+      "mtime_minus_written_hours": 585.73,
+      "mtime_matches_written": false
+    },
+    {
+      "block": "A10",
+      "written_frozen": null,
+      "written_first_run": null,
+      "runs_csv_first_now": "yok",
+      "lead_bearing": false,
+      "artifact": "bulunamadi",
+      "measured_mtime_now": "bulunamadi"
+    },
+    {
+      "block": "A11",
+      "written_frozen": "2026-08-06 00:38:04",
+      "written_first_run": null,
+      "runs_csv_first_now": "yok",
+      "lead_bearing": false,
+      "artifact": "bulunamadi",
+      "measured_mtime_now": "bulunamadi"
+    },
+    {
+      "block": "A12",
+      "written_frozen": "2026-08-06 12:04:41",
+      "written_first_run": null,
+      "runs_csv_first_now": "2026-08-07-10-27-30",
+      "lead_bearing": false,
+      "artifact": "bulunamadi",
+      "measured_mtime_now": "bulunamadi"
+    },
+    {
+      "block": "A13",
+      "written_frozen": "2026-08-06 12:04:41",
+      "written_first_run": null,
+      "runs_csv_first_now": "2026-08-08-09-52-11",
+      "lead_bearing": false,
+      "artifact": "bulunamadi",
+      "measured_mtime_now": "bulunamadi"
+    },
+    {
+      "block": "A2",
+      "written_frozen": "2026-07-25 14:35:43",
+      "written_first_run": "2026-07-25-23-19-09",
+      "runs_csv_first_now": "2026-07-25-23-19-09",
+      "lead_bearing": true,
+      "artifact": "rafdb_p3_then_miscal_chain.ps1",
+      "measured_mtime_now": "2026-08-18T03:48:38+03:00",
+      "mtime_minus_written_hours": 565.23,
+      "mtime_matches_written": false
+    },
+    {
+      "block": "A3",
+      "written_frozen": "2026-07-26 13:27:26",
+      "written_first_run": "2026-07-26-13-27-45",
+      "runs_csv_first_now": "yok",
+      "lead_bearing": true,
+      "artifact": "ferplus_dose_response_queue.ps1",
+      "measured_mtime_now": "2026-08-18T03:48:38+03:00",
+      "mtime_minus_written_hours": 542.36,
+      "mtime_matches_written": false
+    },
+    {
+      "block": "A4",
+      "written_frozen": "2026-07-27 12:56:29",
+      "written_first_run": "2026-07-27-12-56-47",
+      "runs_csv_first_now": "yok",
+      "lead_bearing": true,
+      "artifact": "ferplus_tjsd_queue.ps1",
+      "measured_mtime_now": "2026-08-18T03:48:38+03:00",
+      "mtime_minus_written_hours": 518.88,
+      "mtime_matches_written": false
+    },
+    {
+      "block": "A5",
+      "written_frozen": "2026-07-20 13:41:12",
+      "written_first_run": null,
+      "runs_csv_first_now": "yok",
+      "lead_bearing": false,
+      "artifact": "diagnostics/bridge_teacher_check.py",
+      "measured_mtime_now": "2026-08-18T03:48:37+03:00",
+      "mtime_minus_written_hours": 686.13,
+      "mtime_matches_written": false
+    },
+    {
+      "block": "A6",
+      "written_frozen": "2026-07-23 10:34",
+      "written_first_run": null,
+      "runs_csv_first_now": "2026-07-23-10-35-11",
+      "lead_bearing": false,
+      "artifact": "rafdb_p1_temperature_doseresponse_queue.ps1",
+      "measured_mtime_now": "2026-08-18T03:48:38+03:00",
+      "mtime_minus_written_hours": 617.24,
+      "mtime_matches_written": false
+    },
+    {
+      "block": "A7",
+      "written_frozen": "2026-07-29 01:23:40",
+      "written_first_run": "2026-07-29-01-24-08",
+      "runs_csv_first_now": "2026-07-29-01-24-08",
+      "lead_bearing": true,
+      "artifact": "rafdb_p1_logit_std_seeds_queue.ps1",
+      "measured_mtime_now": "2026-08-18T03:48:38+03:00",
+      "mtime_minus_written_hours": 482.43,
+      "mtime_matches_written": false
+    },
+    {
+      "block": "A8",
+      "written_frozen": "2026-07-29 01:26:59",
+      "written_first_run": "2026-07-29-14-24-13",
+      "runs_csv_first_now": "2026-07-29-14-24-13",
+      "lead_bearing": true,
+      "artifact": "rafdb_p2_gate_oracle_seeds_queue.ps1",
+      "measured_mtime_now": "2026-08-18T03:48:38+03:00",
+      "mtime_minus_written_hours": 482.38,
+      "mtime_matches_written": false
+    },
+    {
+      "block": "A9",
+      "written_frozen": "2026-08-01 14:21:57",
+      "written_first_run": "2026-08-01-14-23-45",
+      "runs_csv_first_now": "yok",
+      "lead_bearing": false,
+      "artifact": "rafdb_p6_tau_alpha_queue.ps1",
+      "measured_mtime_now": "2026-08-18T03:48:38+03:00",
+      "mtime_minus_written_hours": 397.46,
+      "mtime_matches_written": false
+    }
+  ],
+  "summary": {
+    "n_blocks": 13,
+    "mtime_matches": 0,
+    "mtime_drifted": 9
+  }
+}
