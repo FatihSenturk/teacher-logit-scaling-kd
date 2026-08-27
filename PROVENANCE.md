@@ -22,6 +22,10 @@
 > `diagnostics/status_queue.txt`) is not published either; section 3 below says it should
 > not be, and in the earlier archive it was.
 >
+> **Note, 27 August 2026.** `v1.0.1-submission` was re-cut on 27 August 2026 while no
+> Zenodo record for it yet existed; a version tag is final only once its archive is
+> published, and `v1.0.0-submission` has not moved since its record was minted.
+>
 > **One thing to know while reading the paper.** The manuscript under review still prints
 > the earlier repository's URL and its concept DOI, and neither resolves any more: that
 > repository was made private on 26 August 2026, and the concept DOI reaches a tombstone
