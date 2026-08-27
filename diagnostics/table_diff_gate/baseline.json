@@ -1,6 +1,6 @@
 {
-  "accepted_at": "2026-08-23T15:09:36",
-  "reason": "N25 (23 Agu, arsiv duzenlilik turu): tek sapma, tek yeni sayac -- N13/count/artifact_sources_band_checked (true). Bant kontrolu artik public depoda (bant beyani olmayan yerde) ATLANIR ve bunu sayacta soyler; calisma deposunda true. CHANGED 0 \u00b7 VANISHED 0.",
+  "accepted_at": "2026-08-27T13:48:01",
+  "reason": "EK-1 (27 Agu): S11'in tau x T satirina Lead basildi (108 s). A9 LEAD_BEARING'e alindi (beyan, prereg_lead_audit.py) ve jeton app_predecl.A9.lead_s ile items.A9.lead_seconds alanina baglandi -- 21 Agu'daki A2/A8 kalibinin aynisi. Tek yeni hucre PL/A9_lead_s=108; CHANGED 0, VANISHED 0.",
   "sources": [
     "diagnostics\\epoch_curves_MANIFEST.json",
     "diagnostics\\paper_tables\\headroom_grid_audit.json",
@@ -470,12 +470,12 @@
       null
     ],
     "N13/count/tokens": [
-      1740,
+      1741,
       null,
       null
     ],
     "N13/count/bound": [
-      1182,
+      1183,
       null,
       null
     ],
@@ -495,7 +495,7 @@
       null
     ],
     "N13/count/layout_dropped": [
-      357,
+      359,
       null,
       null
     ],
@@ -1431,6 +1431,11 @@
     ],
     "PL/A8_lead_s": [
       46634.0,
+      null,
+      null
+    ],
+    "PL/A9_lead_s": [
+      108.0,
       null,
       null
     ],

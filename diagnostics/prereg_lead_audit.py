@@ -55,6 +55,9 @@ LEAD_BEARING = {
     "A4": "Human-alignment arm",
     "A7": "Logit standardisation, three seeds",
     "A8": "Oracle-gate extension",
+    # 27 Ağu 2026 (EK-1): S11'in τ×T satırına Lead basıldı (108 s). A9'un donma ve ilk-koşu
+    # zamanları kütükte baştan beri vardı; değişen yalnız satırın artık sayı taşıması.
+    "A9": "τ×T factorial",
 }
 
 

@@ -18,4 +18,4 @@ Kaynak: `diagnostics/PREREGISTRATIONS.md` · üretici: `diagnostics/prereg_lead_
 | A12 | 2026-08-06 12:04:41 | — | — | — | yok |
 | A13 | 2026-08-06 12:04:41 | — | — | — | yok |
 
-Lead taşıyan 6 kalem: en kısa 18 s (A4), en uzun 12.9539 sa (A8).
+Lead taşıyan 7 kalem: en kısa 18 s (A4), en uzun 12.9539 sa (A8).

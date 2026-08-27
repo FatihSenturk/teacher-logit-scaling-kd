@@ -1967,6 +1967,10 @@
         {
           "artifact": "paper_tables/prereg_lead_audit.json",
           "path": "items.A8.lead_seconds"
+        },
+        {
+          "artifact": "paper_tables/prereg_lead_audit.json",
+          "path": "items.A9.lead_seconds"
         }
       ],
       "operand_values": [
@@ -1975,15 +1979,16 @@
         19.0,
         18.0,
         28.0,
-        46634.0
+        46634.0,
+        108.0
       ],
       "exact": 18.0,
       "rounding": "int_floor",
       "rounded": "18",
       "matches": true,
-      "note": "alti lead-tasiyan on-beyanin en kisasi = A4 (human-alignment), 18 s; saniyeler tamsayi-kesin oldugu icin floor==deger",
+      "note": "lead-tasiyan on-beyanlarin en kisasi = A4 (human-alignment), 18 s; saniyeler tamsayi-kesin oldugu icin floor==deger. 27 Agu (EK-1): A9 (108 s) kumeye girdi, min degismedi",
       "where": [
-        "paper/sections/04_experiments.tex:247"
+        "paper/sections/04_experiments.tex:253"
       ]
     },
     {

@@ -8,9 +8,9 @@ Producer: `diagnostics/number_ledger.py` · scanner: `diagnostics/paper_number_s
 
 | in-scope numeric token | count |
 |---|---|
-| bound to an artifact field | 1182 |
+| bound to an artifact field | 1183 |
 | derived, occupying an in-scope token | 69 |
-| declared not-a-measurement | 490 |
+| declared not-a-measurement | 489 |
 | **unregistered** | **0** |
 | **= numeric tokens in scope** | **1741** |
 
@@ -791,6 +791,7 @@ Relays — artifacts that **copy** the confirming value rather than computing it
 | `app_mde.cap.swa_pct_max` | 19.4 | `paper_tables/control_sd_mde.json` | `mde_ece_swa_pct_max` | 1dp |
 | `app_predecl.A2.lead_h` | 8 | `paper_tables/prereg_lead_audit.json` | `items.A2.lead_hours` | int_floor |
 | `app_predecl.A8.lead_h` | 12 | `paper_tables/prereg_lead_audit.json` | `items.A8.lead_hours` | int_floor |
+| `app_predecl.A9.lead_s` | 108 | `paper_tables/prereg_lead_audit.json` | `items.A9.lead_seconds` | int_floor |
 | `abstract.pooled_rho` | 0.79 | `p1_dose_response/two_dataset_overlay.json` | `pooled_stats.swa.spearman_abs_signed_gap` | 2dp |
 | `abstract.audit_n_runs` | 131 | `selection_audit/selection_gain.json` | `audit_deltas.b_best_minus_last.n` | int |
 | `abstract.selection_inflation` | 0.77 | `selection_audit/selection_gain.json` | `audit_deltas.b_best_minus_last.d_acc.mean` | 2dp |

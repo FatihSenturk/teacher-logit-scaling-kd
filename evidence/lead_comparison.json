@@ -131,7 +131,7 @@
       "written_frozen": "2026-08-01 14:21:57",
       "written_first_run": "2026-08-01-14-23-45",
       "runs_csv_first_now": "yok",
-      "lead_bearing": false,
+      "lead_bearing": true,
       "artifact": "rafdb_p6_tau_alpha_queue.ps1",
       "measured_mtime_now": "2026-08-18T03:48:38+03:00",
       "mtime_minus_written_hours": 397.46,

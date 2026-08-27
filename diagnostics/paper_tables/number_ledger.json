@@ -92,8 +92,8 @@
       "bytes": 1027
     },
     "supplementary.tex": {
-      "sha256": "2e395d5fc984e949c065b1c223b4a88a70c7458bc9d7ef9b8e69b46535da09b2",
-      "bytes": 34166
+      "sha256": "c6d5237ac6c2ca0c7b999904ef155ba30cc8883a6d7bbc42957db86fdfdf4b23",
+      "bytes": 34318
     },
     "sections/01_introduction.tex": {
       "sha256": "529eb0d9cd35040df4a2cb801d8652ffaaebff38251fd540dbb7a5376a5fda50",
@@ -108,8 +108,8 @@
       "bytes": 31305
     },
     "sections/04_experiments.tex": {
-      "sha256": "429b12397ffc06b171b3fc26a20920702ce3e25243d06ebe3bfabd777083cd9c",
-      "bytes": 18311
+      "sha256": "9ab266231701cccd7e5f7720891ef370da0ef66cc48c5817f134cceb12256bdf",
+      "bytes": 18667
     },
     "sections/05_results_discussion.tex": {
       "sha256": "352487c19f13c9afa7b57844ef281dd2d985574e5f71d0c8c7f6516fbe4962f0",
@@ -194,33 +194,33 @@
     {
       "unit": "app_predecl",
       "index": 0,
-      "line": 617,
+      "line": 620,
       "text": "Predictions --- seven frozen groups sixteen predictions"
     },
     {
       "unit": "app_predecl",
       "index": 1,
-      "line": 626,
+      "line": 629,
       "text": "Later extensions (August) same evidence standard"
     },
     {
       "unit": "app_predecl",
       "index": 2,
-      "line": 631,
+      "line": 634,
       "text": "Exploratory --- research question no numerical criterion fixed"
     },
     {
       "unit": "app_predecl",
       "index": 3,
-      "line": 636,
+      "line": 639,
       "text": "Other statuses"
     }
   ],
   "counts": {
     "tokens": 1741,
-    "bound": 1182,
+    "bound": 1183,
     "derived": 73,
-    "exempt": 490,
+    "exempt": 489,
     "unbound": 0,
     "layout_dropped": 359,
     "mismatch": 0,
@@ -10027,7 +10027,7 @@
       "rounded": "8",
       "matches": true,
       "where": [
-        "paper/supplementary.tex:620"
+        "paper/supplementary.tex:623"
       ],
       "token": "app_predecl|s0|Miscalibration pilot kill-switch|0",
       "row": "Miscalibration pilot kill-switch",
@@ -10043,10 +10043,26 @@
       "rounded": "12",
       "matches": true,
       "where": [
-        "paper/supplementary.tex:624"
+        "paper/supplementary.tex:627"
       ],
       "token": "app_predecl|s0|Oracle-gate extension|0",
       "row": "Oracle-gate extension",
+      "idx": 0
+    },
+    {
+      "id": "app_predecl.A9.lead_s",
+      "printed": "108",
+      "artifact": "paper_tables/prereg_lead_audit.json",
+      "path": "items.A9.lead_seconds",
+      "exact": 108.0,
+      "rounding": "int_floor",
+      "rounded": "108",
+      "matches": true,
+      "where": [
+        "paper/supplementary.tex:628"
+      ],
+      "token": "app_predecl|s0|T factorial|0",
+      "row": "T factorial",
       "idx": 0
     },
     {
@@ -12699,7 +12715,7 @@
       "rounded": "2.248",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:313"
+        "paper/sections/04_experiments.tex:319"
       ],
       "token": "04_experiments|s-1|The student (MobileNetV2Plus) has 2.248 M parameters and|1",
       "row": "The student (MobileNetV2Plus) has 2.248 M parameters and",
@@ -12715,7 +12731,7 @@
       "rounded": "0.329",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:314"
+        "paper/sections/04_experiments.tex:320"
       ],
       "token": "04_experiments|s-1|0.329 GMACs at 224 224 input resolution|0",
       "row": "0.329 GMACs at 224 224 input resolution",
@@ -12731,7 +12747,7 @@
       "rounded": "25.9",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:315"
+        "paper/sections/04_experiments.tex:321"
       ],
       "token": "04_experiments|s-1|representing 25.9 fewer parameters 25.8 fewer|0",
       "row": "representing 25.9 fewer parameters 25.8 fewer",
@@ -12747,7 +12763,7 @@
       "rounded": "25.8",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:315"
+        "paper/sections/04_experiments.tex:321"
       ],
       "token": "04_experiments|s-1|representing 25.9 fewer parameters 25.8 fewer|1",
       "row": "representing 25.9 fewer parameters 25.8 fewer",
@@ -12763,7 +12779,7 @@
       "rounded": "62.9",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:316"
+        "paper/sections/04_experiments.tex:322"
       ],
       "token": "04_experiments|s-1|FLOPs and 62.9 smaller file size than the teacher while|0",
       "row": "FLOPs and 62.9 smaller file size than the teacher while",
@@ -12779,7 +12795,7 @@
       "rounded": "97.96",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:317"
+        "paper/sections/04_experiments.tex:323"
       ],
       "token": "04_experiments|s-1|retaining 97.96 % of the teacher's accuracy at the SWA checkpoint|0",
       "row": "retaining 97.96 % of the teacher's accuracy at the SWA checkpoint",
@@ -12795,7 +12811,7 @@
       "rounded": "98.32",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:318"
+        "paper/sections/04_experiments.tex:324"
       ],
       "token": "04_experiments|s-1|we report as primary ( 98.32 % if the accuracy-selected checkpoint|0",
       "row": "we report as primary ( 98.32 % if the accuracy-selected checkpoint",
@@ -17595,7 +17611,7 @@
       "rounded": "90",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:286"
+        "paper/sections/04_experiments.tex:292"
       ],
       "token": "04_experiments|s-1|Of the 90 runs in that window (17 June--24 July 2026) all|0",
       "row": "Of the 90 runs in that window (17 June--24 July 2026) all",
@@ -17611,7 +17627,7 @@
       "rounded": "26",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:287"
+        "paper/sections/04_experiments.tex:293"
       ],
       "token": "04_experiments|s-1|manifests were written retroactively by a single script; for 26 the|0",
       "row": "manifests were written retroactively by a single script; for 26 the",
@@ -17627,7 +17643,7 @@
       "rounded": "62",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:288"
+        "paper/sections/04_experiments.tex:294"
       ],
       "token": "04_experiments|s-1|code state at launch could be verified for 62 it could not and the|0",
       "row": "code state at launch could be verified for 62 it could not and the",
@@ -17643,7 +17659,7 @@
       "rounded": "2",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:290"
+        "paper/sections/04_experiments.tex:296"
       ],
       "token": "04_experiments|s-1|(code _state _verified:false) and 2 belong to unfinished|0",
       "row": "(code _state _verified:false) and 2 belong to unfinished",
@@ -17835,7 +17851,7 @@
       "rounded": "12",
       "matches": true,
       "where": [
-        "paper/sections/04_experiments.tex:247"
+        "paper/sections/04_experiments.tex:253"
       ],
       "token": "04_experiments|s-1|18 s to 12 h (intervals are stated as floors). Run-ledger|1",
       "row": "18 s to 12 h (intervals are stated as floors). Run-ledger",
@@ -19516,24 +19532,6 @@
       "printed": "5.5"
     },
     {
-      "key": "app_predecl|s0|T factorial|0",
-      "class": "preregistration_provenance",
-      "why": "on-beyan lead suresi / ongoru sayisi / bolum atfi -- olcum degil, saglama PREREGISTRATIONS.md + git zaman damgasi",
-      "printed": "108"
-    },
-    {
-      "key": "app_predecl|s0|T factorial|1",
-      "class": "preregistration_provenance",
-      "why": "on-beyan lead suresi / ongoru sayisi / bolum atfi -- olcum degil, saglama PREREGISTRATIONS.md + git zaman damgasi",
-      "printed": "3"
-    },
-    {
-      "key": "app_predecl|s0|T factorial|2",
-      "class": "preregistration_provenance",
-      "why": "on-beyan lead suresi / ongoru sayisi / bolum atfi -- olcum degil, saglama PREREGISTRATIONS.md + git zaman damgasi",
-      "printed": "5.3"
-    },
-    {
       "key": "app_predecl|s1|Initialisation-matched capacity arm|0",
       "class": "preregistration_provenance",
       "why": "on-beyan lead suresi / ongoru sayisi / bolum atfi -- olcum degil, saglama PREREGISTRATIONS.md + git zaman damgasi",
@@ -19616,6 +19614,18 @@
       "class": "table_reference",
       "why": "S5.5 bolum atfi",
       "printed": "5.5"
+    },
+    {
+      "key": "app_predecl|s0|T factorial|1",
+      "class": "preregistration_provenance",
+      "why": "A9'un tasidigi ongoru sayisi (n=3); olcum degil, beyan",
+      "printed": "3"
+    },
+    {
+      "key": "app_predecl|s0|T factorial|2",
+      "class": "table_reference",
+      "why": "S5.3 bolum atfi",
+      "printed": "5.3"
     },
     {
       "key": "tab_collapse|s-1|Pre-declared factorial on the Stage1 teacher. Top: two|0",

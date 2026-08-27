@@ -604,9 +604,11 @@ ex("app_mde", -1, "from the rounded columns can differ by 0.1 point.", None, "ro
 # 21 Agu 2026: "Miscalibration pilot kill-switch" ve "Oracle-gate extension" satirlari bu
 # donguden CIKARILDI -- lead jetonlari (8 h, 12 h) artik muaf degil, `prereg_lead_audit`
 # alanlarina bagli (asagida). Satirlarin n/bolum jetonlari ayri muafiyetle duruyor.
+# 27 Agu 2026 (EK-1): "T factorial" da donguden CIKTI -- S11'e Lead basildi (108 s),
+# jetonu artik muaf degil, A9'un alanina bagli (asagida, A2/A8 kalibiyla).
 for _r in ("Control teacher flat response",
            "Second-dataset replication", "Human-alignment arm",
-           "Logit standardisation three seeds", "T factorial",
+           "Logit standardisation three seeds",
            "Initialisation-matched capacity arm", "Learned-signal gate three seeds",
            "Student-scaling joint frontier", "Capacity sweep",
            "Oracle-gate diagnostic (original)", "Student-head isolation",
@@ -636,6 +638,14 @@ ex("app_predecl", 0, "Oracle-gate extension", 1, "preregistration_provenance",
    "A8'in tasidigi ongoru sayisi (n=3); olcum degil, beyan")
 ex("app_predecl", 0, "Oracle-gate extension", 2, "table_reference",
    "S5.5 bolum atfi")
+# 27 Agu 2026 (EK-1): tau x T faktoriyelinin lead'i basildi -> A9 alanina bagli.
+# 108 s tamsayi-kesin, floor==deger (tablo geneli tek kural: floor).
+b("app_predecl", 0, "T factorial", 0, A_PL,
+  "items.A9.lead_seconds", "int_floor", ident="app_predecl.A9.lead_s")
+ex("app_predecl", 0, "T factorial", 1, "preregistration_provenance",
+   "A9'un tasidigi ongoru sayisi (n=3); olcum degil, beyan")
+ex("app_predecl", 0, "T factorial", 2, "table_reference",
+   "S5.3 bolum atfi")
 
 # --- tab_collapse caption muafiyetleri ve olcut sabiti
 ex("tab_collapse", -1, "Pre-declared factorial on the Stage1 teacher", None,
@@ -2874,10 +2884,12 @@ b("04_experiments", -1, "measures", 2, A_SPL,
 dv("s4.prereg_lead_min", "18", "min",
    [op(A_PL, "items.A1.lead_seconds"), op(A_PL, "items.A2.lead_seconds"),
     op(A_PL, "items.A3.lead_seconds"), op(A_PL, "items.A4.lead_seconds"),
-    op(A_PL, "items.A7.lead_seconds"), op(A_PL, "items.A8.lead_seconds")],
+    op(A_PL, "items.A7.lead_seconds"), op(A_PL, "items.A8.lead_seconds"),
+    op(A_PL, "items.A9.lead_seconds")],
    "int_floor", "04_experiments", -1, "18 s to 12 h (intervals", 0,
-   note="alti lead-tasiyan on-beyanin en kisasi = A4 (human-alignment), 18 s; saniyeler "
-        "tamsayi-kesin oldugu icin floor==deger")
+   note="lead-tasiyan on-beyanlarin en kisasi = A4 (human-alignment), 18 s; saniyeler "
+        "tamsayi-kesin oldugu icin floor==deger. 27 Agu (EK-1): A9 (108 s) kumeye girdi, "
+        "min degismedi")
 b("04_experiments", -1, "18 s to 12 h (intervals", 1, A_PL,
   "items.A8.lead_hours", "int_floor", ident="s4.prereg_lead_max_h")
 

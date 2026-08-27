@@ -7,7 +7,8 @@
   "A3": "Second-dataset replication",
   "A4": "Human-alignment arm",
   "A7": "Logit standardisation, three seeds",
-  "A8": "Oracle-gate extension"
+  "A8": "Oracle-gate extension",
+  "A9": "τ×T factorial"
  },
  "items": {
   "A1": {
@@ -159,7 +160,7 @@
   "max_lead_seconds": 46634.0,
   "min_lead_block": "A4",
   "max_lead_block": "A8",
-  "n_lead_bearing": 6,
+  "n_lead_bearing": 7,
   "n_annotation_checked": 5,
   "n_runs_csv_checked": 4
  }
