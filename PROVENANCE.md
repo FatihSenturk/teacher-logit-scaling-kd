@@ -138,6 +138,21 @@ and one later addition (§4):
    *Exception, deliberate:* four commented-out lines in `trails/posterv2/ir50.py`
    still carry the upstream author's own paths. That file is third-party and is
    kept verbatim.
+
+   *Correction, 28 August 2026.* "Were replaced with relative placeholders" is
+   too broad for the sentence above, and the tree says so: 17 tracked text files
+   still contain an absolute path, in 34 places. Fourteen of them (27 places) are
+   kept on purpose and each carries its own written reason in
+   `DECLARED_ABS` inside the working repository's `public_repo_sync.py` -- launchers
+   that try a `$PSScriptRoot`-relative path first and only fall back to the absolute
+   one, argparse defaults for inputs this archive does not redistribute (so a path
+   has to be supplied anyway), and defaults the campaign's own launchers always
+   override. Three files (7 places) are the third-party POSTERv2/CrossViT
+   inheritance named above. `diagnostics/abs_path_gate.py` re-measures this on the
+   published tree and fails if any absolute path is *not* on that written list; it
+   reports zero undeclared. So the accurate claim is not that the paths are gone,
+   but that none of them is undeclared and none of them is on a path this archive's
+   own reproduction route takes.
 3. **Author-local infrastructure removed.** The export band that copied
    artefacts to the author's private cloud folder (`diagnostics/export_to_drive.py`,
    `diagnostics/status_heartbeat.py`, `diagnostics/status_queue.txt`) is not
