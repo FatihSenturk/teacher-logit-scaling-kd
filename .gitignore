@@ -50,3 +50,6 @@ phase0_extended_ablation_console.log
 
 # G0 kuyruk log dosyasi -- buyuyen calisma zamani ciktisi, artefakt degil
 logs_g0_control_grid.txt
+
+# K3 (27 Agu 2026): grey onizlemeler goz-kontrol araci, dagitim artefakti degil
+diagnostics/_greyscale_preview/

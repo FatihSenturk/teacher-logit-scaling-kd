@@ -22,7 +22,7 @@ authors:
     affiliation: Department of Computer Engineering, Istanbul University-Cerrahpaşa
     orcid: 'https://orcid.org/0000-0002-4125-0589'
 version: v1.0.1-submission
-date-released: '2026-08-27'
+date-released: '2026-08-28'
 license: MIT
 repository-code: https://github.com/FatihSenturk/teacher-logit-scaling-kd
 url: https://github.com/FatihSenturk/teacher-logit-scaling-kd

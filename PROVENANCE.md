@@ -9,7 +9,7 @@
 > tombstone as well. This repository re-publishes the same work as one clean archive.
 >
 > **What is the same.** Every producer, every measured value, every dated pre-declaration
-> record. `diagnostics/table_diff_gate.py` compares 1655 cells against the accepted
+> record. `diagnostics/table_diff_gate.py` compares 1658 cells against the accepted
 > baseline and reports no deviation on this tree — the same baseline the earlier archive
 > carried.
 >
@@ -25,6 +25,20 @@
 > **Note, 27 August 2026.** `v1.0.1-submission` was re-cut on 27 August 2026 while no
 > Zenodo record for it yet existed; a version tag is final only once its archive is
 > published, and `v1.0.0-submission` has not moved since its record was minted.
+>
+> **Note, 28 August 2026.** `v1.0.1-submission` was re-cut once more, for the same
+> reason and under the same rule: its archive had still not been published. What the
+> re-cut adds is a student-side scaling round: two producers,
+> `diagnostics/ferplus_scaled_ece_axis.py` and `diagnostics/rafdb_student_ts_dose.py`,
+> with their tables under `diagnostics/paper_tables/`. Neither runs a model or reads a
+> run directory. The first derives an ECE-axis summary from the already-published
+> `r3w1_joint_optimum.json`; the second reads the already-published student logit
+> copies under `diagnostics/student_logits/`. `diagnostics/rafdb_student_ts_dose.py`
+> was committed, together with its decision to publish whatever it returned, **before**
+> it was run; the working repository carries the two commits in that order. In the same
+> round the baseline of `diagnostics/table_diff_gate.py` grew from 1656 to 1658 cells,
+> with the reason recorded in the baseline file itself; no cell changed and none
+> vanished.
 >
 > **One thing to know while reading the paper.** The manuscript under review still prints
 > the earlier repository's URL and its concept DOI, and neither resolves any more: that

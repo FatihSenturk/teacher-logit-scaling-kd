@@ -25,7 +25,7 @@ the branch: the branch moves and the tag does not.
 | tag | date | what it adds |
 |---|---|---|
 | `v1.0.0-submission` | 2026-08-26 | the archive as submitted alongside the manuscript |
-| `v1.0.1-submission` | 2026-08-27 | `evidence/` (dated commit-and-tag export + authoring-machine mtime manifest, promised by the manuscript's S11), the figure producers moved to the SWA checkpoint (paper Fig. 2 / S2), and the pre-registration block map correction dated 2026-08-27 |
+| `v1.0.1-submission` | 2026-08-28 | `evidence/` (dated commit-and-tag export + authoring-machine mtime manifest, promised by the manuscript's S11); the figure producers moved to the SWA checkpoint (paper Fig. 2 / S2); the pre-registration block map correction dated 2026-08-27; and the student-side scaling round of 2026-08-28 &mdash; two derived producers (`diagnostics/ferplus_scaled_ece_axis.py`, `diagnostics/rafdb_student_ts_dose.py`) with their tables, both computed from already-published artifacts rather than from any new evaluation |
 
 **This archive supersedes an earlier one.** The same work was first published as
 `FatihSenturk/calibration-law-fer` and archived on Zenodo in three versions between

@@ -1,6 +1,6 @@
 {
-  "accepted_at": "2026-08-27T13:48:01",
-  "reason": "EK-1 (27 Agu): S11'in tau x T satirina Lead basildi (108 s). A9 LEAD_BEARING'e alindi (beyan, prereg_lead_audit.py) ve jeton app_predecl.A9.lead_s ile items.A9.lead_seconds alanina baglandi -- 21 Agu'daki A2/A8 kalibinin aynisi. Tek yeni hucre PL/A9_lead_s=108; CHANGED 0, VANISHED 0.",
+  "accepted_at": "2026-08-28T05:55:03",
+  "reason": "Round-6 (28 Agu 2026): K1 ferplus_scaled_ece_axis.json + K5 rafdb_student_ts_dose.json defterin kaynak kumesine girdi (artifact_sources 49 -> 51); ikisi de yayimlanmis artefaktlardan TURETME, yeni degerlendirme yok. Tek yeni hucre: derived/capacity_vs_teacher_lever_caption -- '76' tab_capacity ALTYAZISINDA da geciyor artik, ayni iki alandan (T10_axis_spans.swa.teacher_span / capacity_span), dipnottaki gecis yerinde. CHANGED 0, VANISHED 0.",
   "sources": [
     "diagnostics\\epoch_curves_MANIFEST.json",
     "diagnostics\\paper_tables\\headroom_grid_audit.json",
@@ -470,22 +470,22 @@
       null
     ],
     "N13/count/tokens": [
-      1741,
+      1766,
       null,
       null
     ],
     "N13/count/bound": [
-      1183,
+      1198,
       null,
       null
     ],
     "N13/count/derived": [
-      73,
+      74,
       null,
       null
     ],
     "N13/count/exempt": [
-      489,
+      498,
       null,
       null
     ],
@@ -495,7 +495,7 @@
       null
     ],
     "N13/count/layout_dropped": [
-      359,
+      362,
       null,
       null
     ],
@@ -515,7 +515,7 @@
       null
     ],
     "N13/count/derived_in_scope": [
-      69,
+      70,
       null,
       null
     ],
@@ -525,7 +525,7 @@
       null
     ],
     "N13/count/artifact_sources": [
-      49,
+      51,
       null,
       null
     ],
@@ -1400,6 +1400,16 @@
       null
     ],
     "N13/derived/figp.snr_floor/ok": [
+      "True",
+      null,
+      null
+    ],
+    "N13/derived/capacity_vs_teacher_lever_caption": [
+      75.70891792013998,
+      null,
+      null
+    ],
+    "N13/derived/capacity_vs_teacher_lever_caption/ok": [
       "True",
       null,
       null

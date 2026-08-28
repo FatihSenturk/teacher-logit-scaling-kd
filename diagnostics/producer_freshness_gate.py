@@ -85,6 +85,8 @@ SKIP = {
     "diagnostics/export_to_drive.py": "bandın kendisi; koşmak Drive'a YAZMAK demek",
     "diagnostics/level1_gate.py": "kapı; kapıyı kapının içinden koşmak özyineleme",
     "diagnostics/producer_freshness_gate.py": "bu kapı",
+    "diagnostics/status_heartbeat.py": "canlı saat: her koşuda zaman damgası değişir, "
+                                       "bayt karşılaştırması tanımsız",
     "diagnostics/public_repo_sync.py": "public depoya yazar",
     "diagnostics/public_repo_staleness.py": "public depo durumunu okur, artefaktı zaman damgalı",
     "diagnostics/public_scope_scan.py": "public depo durumunu okur",

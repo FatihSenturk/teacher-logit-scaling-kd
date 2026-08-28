@@ -18,7 +18,7 @@ Set-Location -Path $PSScriptRoot
 # win) is currently RAF-DB-only. This is the external-validity test.
 #
 # Not (7 Agu 2026): iddianin guncel makale ifadesi "teacher-side logit scaling governs student
-# calibration" -- bkz. baslik v2. Yukaridaki
+# calibration" -- bkz. baslik v2 (diagnostics/reports/2026-08-04_baslik_v2_teyit.md). Yukaridaki
 # satir bu betigin KOSULARDAN ONCE donduruldugu andaki (26 Tem) ifadedir ve tarihi kayit olarak
 # korunuyor. Prompt bu satiri paraphrase sayip yeniden yazmaya IZIN veriyordu; yazilmadi, cunku
 # bu dosya B-007'nin FERPlus testinde kanit zincirinin bir parcasi (kosulardan once commit'lendi)

@@ -8,11 +8,11 @@ Producer: `diagnostics/number_ledger.py` · scanner: `diagnostics/paper_number_s
 
 | in-scope numeric token | count |
 |---|---|
-| bound to an artifact field | 1183 |
-| derived, occupying an in-scope token | 69 |
-| declared not-a-measurement | 489 |
+| bound to an artifact field | 1198 |
+| derived, occupying an in-scope token | 70 |
+| declared not-a-measurement | 498 |
 | **unregistered** | **0** |
-| **= numeric tokens in scope** | **1741** |
+| **= numeric tokens in scope** | **1766** |
 
 The four categories are disjoint (bound ∩ exempt is checked to be empty) and the column sums to the total. Two kinds of declaration are **not** in that table because they occupy no in-scope token — they are anchored to sentences the scanner deliberately does not read:
 
@@ -21,13 +21,13 @@ The four categories are disjoint (bound ∩ exempt is checked to be empty) and t
 | derived quantity on a prose anchor | 4 |
 | prose field binding (`pv`) | 3 |
 
-The registry therefore holds **73** derived quantities in total: 69 on in-scope tokens + 4 on prose anchors. Adding *declaration* counts to *token* counts is what made an earlier version of this table appear not to sum.
+The registry therefore holds **74** derived quantities in total: 70 on in-scope tokens + 4 on prose anchors. Adding *declaration* counts to *token* counts is what made an earlier version of this table appear not to sum.
 
 | other | count |
 |---|---|
 | printed-vs-field mismatch | 0 |
 | confirmation records (second source) | 3 (0 failing) |
-| layout tokens dropped by the scanner | 359 |
+| layout tokens dropped by the scanner | 362 |
 | sign patterns bound (non-numeric, see below) | 24 of 24 |
 
 ## Scope (declared)
@@ -67,13 +67,13 @@ None.
 | `+++` | `T5_mechanisms["stage1/logit_std"].swa.d_ece_signs` | `+++` | paper/tables/tab_mechanisms.tex:62 |
 | `+++` | `T5_mechanisms["primary/logit_std"].swa.d_ece_signs` | `+++` | paper/tables/tab_mechanisms.tex:62 |
 | `+++` | `T5_mechanisms["vae9182/logit_std"].swa.d_ece_signs` | `+++` | paper/tables/tab_mechanisms.tex:62 |
-| `-++` | `T5_mechanisms["stage1/gate:oracle_error"].swa.d_ece_signs + T5_mechanisms["primary/gate:oracle_error"].swa.d_ece_signs` | `-++` / `-++` | paper/sections/05_results_discussion.tex:422 |
-| `+--` | `T5_mechanisms["primary/g2g_kl"].swa.d_ece_signs` | `+--` | paper/sections/05_results_discussion.tex:452 |
-| `-++` | `T5_mechanisms["vae9182/g2g_kl"].swa.d_ece_signs` | `-++` | paper/sections/05_results_discussion.tex:452 |
-| `---` | `T5_mechanisms["stage1/g2g_kl"].swa.d_ece_signs` | `---` | paper/sections/05_results_discussion.tex:452 |
-| `++-` | `T5_mechanisms["stage1/adaptive_t"].swa.d_ece_signs` | `++-` | paper/sections/05_results_discussion.tex:460 |
-| `--+` | `T5_mechanisms["vae9182/adaptive_t"].swa.d_ece_signs` | `--+` | paper/sections/05_results_discussion.tex:467 |
-| `++-` | `T5_mechanisms["stage1/gate:target_logvar"].swa.d_acc_signs` | `++-` | paper/sections/05_results_discussion.tex:533 |
+| `-++` | `T5_mechanisms["stage1/gate:oracle_error"].swa.d_ece_signs + T5_mechanisms["primary/gate:oracle_error"].swa.d_ece_signs` | `-++` / `-++` | paper/sections/05_results_discussion.tex:436 |
+| `+--` | `T5_mechanisms["primary/g2g_kl"].swa.d_ece_signs` | `+--` | paper/sections/05_results_discussion.tex:466 |
+| `-++` | `T5_mechanisms["vae9182/g2g_kl"].swa.d_ece_signs` | `-++` | paper/sections/05_results_discussion.tex:466 |
+| `---` | `T5_mechanisms["stage1/g2g_kl"].swa.d_ece_signs` | `---` | paper/sections/05_results_discussion.tex:466 |
+| `++-` | `T5_mechanisms["stage1/adaptive_t"].swa.d_ece_signs` | `++-` | paper/sections/05_results_discussion.tex:474 |
+| `--+` | `T5_mechanisms["vae9182/adaptive_t"].swa.d_ece_signs` | `--+` | paper/sections/05_results_discussion.tex:481 |
+| `++-` | `T5_mechanisms["stage1/gate:target_logvar"].swa.d_acc_signs` | `++-` | paper/sections/05_results_discussion.tex:548 |
 
 ## Confirmation records (same quantity, second source)
 
@@ -173,6 +173,7 @@ Relays — artifacts that **copy** the confirming value rather than computing it
 | `s5.composite_T_ferplus` | 3.04 | product | 3.0378 | yes |
 | `s4.prereg_lead_min` | 18 | min | 18 | yes |
 | `figp.snr_floor` | 10.5 | min | 10.5557 | yes |
+| `capacity_vs_teacher_lever_caption` | 76 | ratio | 75.7089 | yes |
 
 ## Bindings
 
@@ -1361,3 +1362,18 @@ Relays — artifacts that **copy** the confirming value rather than computing it
 | `tab_paired.vae9182.logit_std.d_ece_mean` | +0.1388 | `paper_tables/RESULTS_TABLES.json` | `T5_mechanisms["vae9182/logit_std"].swa.d_ece_mean` | 4dp |
 | `tab_paired.vae9182.logit_std.d_ece_sd` | 0.0013 | `paper_tables/RESULTS_TABLES.json` | `T5_mechanisms["vae9182/logit_std"].swa.d_ece_sd` | 4dp |
 | `s5.control_prereg_lead_s` | 20 | `paper_tables/prereg_lead_audit.json` | `items.A1.lead_seconds` | int_floor |
+| `s57.ece_collapse_factor` | 6.4 | `paper_tables/ferplus_scaled_ece_axis.json` | `collapse.ece.factor` | 1dp |
+| `s57.ece_spread_removed_pct` | 84.3 | `paper_tables/ferplus_scaled_ece_axis.json` | `removal.ece.spread_removed_frac` | percent_of_fraction:1dp |
+| `s57.jsd_collapse_ref` | 37 | `paper_tables/ferplus_scaled_ece_axis.json` | `collapse.jsd.factor` | int |
+| `s57.scaled_best_ece` | 0.0203 | `paper_tables/ferplus_scaled_ece_axis.json` | `scaled_best_arm.ts_ece[0]` | 4dp |
+| `s57.scaled_worst_ece` | 0.0296 | `paper_tables/ferplus_scaled_ece_axis.json` | `scaled_worst_arm.ts_ece[0]` | 4dp |
+| `s57.rafdb_removed_stage1` | 82 | `paper_tables/rafdb_student_ts_dose.json` | `collapse.stage1.spread_removed_frac` | percent_of_fraction:int |
+| `s57.rafdb_removed_vae` | 90 | `paper_tables/rafdb_student_ts_dose.json` | `collapse.vae9182.spread_removed_frac` | percent_of_fraction:int |
+| `s57.rafdb_stage1_scaled_best_T` | 1.3406 | `paper_tables/rafdb_student_ts_dose.json` | `seed_consistency.stage1.scaled_best_T` | 4dp |
+| `s57.rafdb_residual_stage1` | 0.0103 | `paper_tables/rafdb_student_ts_dose.json` | `spans["stage1/ts"].span` | 4dp |
+| `s57.rafdb_residual_vae` | 0.0187 | `paper_tables/rafdb_student_ts_dose.json` | `spans["vae9182/ts"].span` | 4dp |
+| `s57.rafdb_tstar_native_gap` | 0.0011 | `paper_tables/rafdb_student_ts_dose.json` | `tstar_vs_native.stage1.gap_scaled` | 4dp |
+| `s11.tjsd_stratum67` | 0.88 | `paper_tables/jsd_sensitivity.json` | `results["(c) stratum 6-7"].T_jsd` | 2dp |
+| `s11.tjsd_stratum89` | 0.74 | `paper_tables/jsd_sensitivity.json` | `results["(c) stratum 8-9"].T_jsd` | 2dp |
+| `s52.asymmetry_min_2dp` | 1.77 | `paper_tables/asymmetry_estimand.json` | `summary.interpolated_only.absolute.min` | 2dp |
+| `s52.asymmetry_max_2dp` | 2.04 | `paper_tables/asymmetry_estimand.json` | `summary.interpolated_only.absolute.max` | 2dp |

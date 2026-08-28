@@ -59,6 +59,7 @@ ALLOWED = {
     "diagnostics/mark_abandoned_runs.py",      # yarım koşuları işaretler
     "diagnostics/build_replicate_queue.py",    # referans run_args'tan kuyruk üretir
     "diagnostics/export_to_drive.py",          # bant; koşu dizinlerini ihraç ETMEZ ama tarar
+    "diagnostics/status_heartbeat.py",         # canlı koşuyu bulur
     "diagnostics/control_grid_refinement.py",  # ad->parametre kapısı run_args okur
     "diagnostics/latency_benchmark.py",        # checkpoint yükler
     "diagnostics/calibration_cache_audit.py",

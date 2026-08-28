@@ -1,7 +1,7 @@
 {
   "note": "review-responsive, not pre-declared",
   "counts": {
-    "derived": 73,
+    "derived": 74,
     "mismatch": 0
   },
   "entries": [
@@ -79,7 +79,7 @@
       "matches": true,
       "note": "tab_capacity dipnotu: 'a factor of 76'",
       "where": [
-        "paper/tables/tab_capacity.tex:20"
+        "paper/tables/tab_capacity.tex:21"
       ]
     },
     {
@@ -457,7 +457,7 @@
       "matches": true,
       "note": "en kucuk katmanin foldun yuzde kaci: 28 / 3153",
       "where": [
-        "paper/supplementary.tex:279"
+        "paper/supplementary.tex:287"
       ]
     },
     {
@@ -723,7 +723,7 @@
       "matches": true,
       "note": "TAM DUYARLIKTA fark 0.004145559676890273 -> 0.0041. Basili operandlardan (0.0587-0.0545) 0.0042 cikar; makale yuvarlanmamis alanlardan hesaplamis.",
       "where": [
-        "paper/sections/05_results_discussion.tex:657"
+        "paper/sections/05_results_discussion.tex:685"
       ]
     },
     {
@@ -750,7 +750,7 @@
       "matches": true,
       "note": "araligin ALT ucu; payda 'mean ECE @best' = 0.05435748884887785 -> %12,66 -> 13",
       "where": [
-        "paper/sections/05_results_discussion.tex:823"
+        "paper/sections/05_results_discussion.tex:861"
       ]
     },
     {
@@ -777,7 +777,7 @@
       "matches": true,
       "note": "araligin UST ucu; payda 'median ECE @swa' = 0.045957979335884726 -> %14,97 -> 15. UCUNCU payda ('mean ECE @swa', %14,50) aralik ICINDE kaldigi icin ayrica basilmiyor. DIKKAT: §3'teki '13--14 times' BASKA BIR NICELIKTIR -- boyutsuz KAT (ece_removed_by_ts / d_ece), yuzde degil; defterde `tstar_criterion_cost_min/max` olarak ayri kayitli. Resiprok da degiller (1/13.31 = %7,5), yani ayni ifadenin iki yazilisi diye okunamaz.",
       "where": [
-        "paper/sections/05_results_discussion.tex:823"
+        "paper/sections/05_results_discussion.tex:861"
       ]
     },
     {
@@ -804,7 +804,7 @@
       "matches": true,
       "note": "PAYDA T*_ECE: (T*_JSD - T*_ECE) / T*_ECE = (0.74-0.45305)/0.45305 = %63,3. Ilk denemede `pct_drop` kullanildi (payda T*_JSD) ve 39 verdi; defter bunu derived_mismatch olarak dusurdu, formul duzeltildi. Iki payda arasindaki fark 24 puan -- yani 'bir oranin paydasi cumlede adlanmali' kurali burada 24 puanlik bir hatayi engelledi.",
       "where": [
-        "paper/sections/05_results_discussion.tex:611"
+        "paper/sections/05_results_discussion.tex:630"
       ]
     },
     {
@@ -1030,7 +1030,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:616"
+        "paper/sections/05_results_discussion.tex:635"
       ]
     },
     {
@@ -1057,7 +1057,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:631"
+        "paper/sections/05_results_discussion.tex:651"
       ]
     },
     {
@@ -1084,7 +1084,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:631"
+        "paper/sections/05_results_discussion.tex:651"
       ]
     },
     {
@@ -1111,7 +1111,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:664"
+        "paper/sections/05_results_discussion.tex:692"
       ]
     },
     {
@@ -1138,7 +1138,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:669"
+        "paper/sections/05_results_discussion.tex:697"
       ]
     },
     {
@@ -1165,7 +1165,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:697"
+        "paper/sections/05_results_discussion.tex:735"
       ]
     },
     {
@@ -1192,7 +1192,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:790"
+        "paper/sections/05_results_discussion.tex:828"
       ]
     },
     {
@@ -1219,7 +1219,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:810"
+        "paper/sections/05_results_discussion.tex:848"
       ]
     },
     {
@@ -1246,7 +1246,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/supplementary.tex:349"
+        "paper/supplementary.tex:357"
       ]
     },
     {
@@ -1273,7 +1273,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/supplementary.tex:349"
+        "paper/supplementary.tex:357"
       ]
     },
     {
@@ -1300,7 +1300,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/supplementary.tex:351"
+        "paper/supplementary.tex:359"
       ]
     },
     {
@@ -1327,7 +1327,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/supplementary.tex:351"
+        "paper/supplementary.tex:359"
       ]
     },
     {
@@ -1597,7 +1597,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:299"
+        "paper/sections/05_results_discussion.tex:313"
       ]
     },
     {
@@ -1624,7 +1624,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:314"
+        "paper/sections/05_results_discussion.tex:328"
       ]
     },
     {
@@ -1651,7 +1651,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:565"
+        "paper/sections/05_results_discussion.tex:584"
       ]
     },
     {
@@ -1678,7 +1678,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:566"
+        "paper/sections/05_results_discussion.tex:585"
       ]
     },
     {
@@ -1705,7 +1705,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:576"
+        "paper/sections/05_results_discussion.tex:595"
       ]
     },
     {
@@ -1732,7 +1732,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:578"
+        "paper/sections/05_results_discussion.tex:597"
       ]
     },
     {
@@ -1759,7 +1759,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:432"
+        "paper/sections/05_results_discussion.tex:446"
       ]
     },
     {
@@ -1823,7 +1823,7 @@
       "matches": true,
       "note": "uc kolun EN KUCUK R^2'si; alt sinir iddiasi oldugu icin ASAGI yuvarlanir (scratch2248 = 0.99881781, digerleri 0.99996+)",
       "where": [
-        "paper/sections/05_results_discussion.tex:356"
+        "paper/sections/05_results_discussion.tex:370"
       ]
     },
     {
@@ -1855,7 +1855,7 @@
       "matches": true,
       "note": "pay = stage1 ve primary kontrol kollarinin @swa ECE duzeylerinin ORTALAMASI (0.075); PAYDA = vae9182 kontrol kolunun @swa ECE duzeyi (0.0278). Basili iki yuvarlanmis degerden hesaplansaydi 2.679 cikardi; alanlardan 2.701 cikiyor -- ikisi de 1 basamakta 2.7 veriyor ama hesap alanlardan yapiliyor.",
       "where": [
-        "paper/sections/05_results_discussion.tex:431"
+        "paper/sections/05_results_discussion.tex:445"
       ]
     },
     {
@@ -1988,7 +1988,7 @@
       "matches": true,
       "note": "lead-tasiyan on-beyanlarin en kisasi = A4 (human-alignment), 18 s; saniyeler tamsayi-kesin oldugu icin floor==deger. 27 Agu (EK-1): A9 (108 s) kumeye girdi, min degismedi",
       "where": [
-        "paper/sections/04_experiments.tex:253"
+        "paper/sections/04_experiments.tex:254"
       ]
     },
     {
@@ -2041,6 +2041,33 @@
       "note": "yedi sinifin en kucuk (araligin tohum sd'sine orani) = Disgust 10.5557; alt sinir iddiasi oldugu icin ASAGI yuvarlanir",
       "where": [
         "paper/figures/fig_perclass.tex:17"
+      ]
+    },
+    {
+      "id": "capacity_vs_teacher_lever_caption",
+      "printed": "76",
+      "formula": "ratio",
+      "operands": [
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T10_axis_spans.swa.teacher_span"
+        },
+        {
+          "artifact": "paper_tables/RESULTS_TABLES.json",
+          "path": "T10_axis_spans.swa.capacity_span"
+        }
+      ],
+      "operand_values": [
+        0.17798139929596574,
+        0.0023508643920086905
+      ],
+      "exact": 75.70891792013998,
+      "rounding": "int",
+      "rounded": "76",
+      "matches": true,
+      "note": "tab_capacity altyazisi: 'a factor of 76 on this grid'",
+      "where": [
+        "paper/tables/tab_capacity.tex:7"
       ]
     }
   ]

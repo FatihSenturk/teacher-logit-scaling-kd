@@ -3,13 +3,10 @@
 # Tanım: README'nin Level-1 için verdiği iki komutun GEÇİŞLİ import kapanışı
 #        (diagnostics/paper_tables.py + diagnostics/table_diff_gate.py), yerel modüllere inilerek.
 # Python: 3.13.10
-# Kapanış: 12 yerel dosya · 14 dağıtım
+# Kapanış: 18 yerel dosya · 14 dağıtım
 # Tam ortamdan düşen: PyMuPDF, PyYAML, seaborn, torchmetrics, wandb
 # CUDA gerekmez: `torch` kapanışta olduğu için var, GPU istendiği için değil;
 # yerel etiket silindi (bkz. üreticinin başlığı).
-
-# eşlenemedi (kapanışta olup kurulu bir dağıtıma bağlanamayan adlar):
-#   export_to_drive  <- diagnostics/paper_tables.py
 
 # Aşağıdaki pin'lerden bazıları PyPI'de YOK (yerel etiket: cu128).
 # Bu satır olmadan `pip install -r` "No matching distribution" ile düşer.

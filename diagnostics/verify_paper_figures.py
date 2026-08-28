@@ -136,7 +136,12 @@ def main():
     pdfs = sorted(FIGS.glob("*.pdf"))
     if not pdfs:
         raise SystemExit(f"no PDFs in {FIGS}")
-    grey_dir = Path(args.grey_dir) if args.grey_dir else FIGS / "_greyscale"
+    # K3 (27 Ağu 2026, Round-6 / Ethics): grey önizlemeler artık İZLENMEYEN bir dizine
+    # düşer. Eski varsayılan paper/figures/_greyscale idi, İZLENİYORDU ve banda ihraç
+    # ediliyordu; vote_examples'ın önizlemesi, PDF'ten yüzler çıkarıldıktan (Round-5 C1)
+    # sonra bile eski render'ıyla yüzleri taşımaya devam etti — önizleme bir gözle-kontrol
+    # aracıdır, dağıtım artefaktı değil. Dizin .gitignore'da; banda ihraç satırı kaldırıldı.
+    grey_dir = Path(args.grey_dir) if args.grey_dir else ROOT / "diagnostics" / "_greyscale_preview"
     if args.grey:
         grey_dir.mkdir(parents=True, exist_ok=True)
 

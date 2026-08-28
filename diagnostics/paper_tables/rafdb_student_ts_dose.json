@@ -1,0 +1,476 @@
+{
+  "sd_convention": "sample sd (n-1, Bessel-corrected), computed over seeds",
+  "checkpoint": "swa",
+  "n_val": 3068,
+  "split": {
+    "rule": "sha256(filename) hex sort, first half A",
+    "n_A": 1534,
+    "n_B": 1534
+  },
+  "fit": "single-scalar TS, NLL minimisation (Guo et al. 2017), cross-fitted",
+  "source": "published logit copies (diagnostics/student_logits/*.npz); run->arm map: p1_two_teacher_overlay.CURVES; names: metadata fold-3 (row order verified against npz labels, hard gate)",
+  "arms": {
+    "stage1/0.85": {
+      "teacher": "stage1",
+      "T": 0.85,
+      "teacher_ece": 0.04538044133351088,
+      "n": 3,
+      "raw_ece": [
+        0.07967298300447075,
+        0.001631989300491036
+      ],
+      "ts_ece": [
+        0.04365331634169996,
+        0.001211616430488014
+      ],
+      "per_seed": {
+        "42": {
+          "run": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+          "raw_ece": 0.07811261412373112,
+          "ts_ece": 0.04504406814265515,
+          "T_s_fitA_evalB": 1.8137441758550688,
+          "T_s_fitB_evalA": 1.8441779607536084
+        },
+        "1": {
+          "run": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed1",
+          "raw_ece": 0.08136822252183415,
+          "ts_ece": 0.04282613966074885,
+          "T_s_fitA_evalB": 1.8274181854484681,
+          "T_s_fitB_evalA": 1.8785282695575303
+        },
+        "43": {
+          "run": "RAFDB_stage1_tempscale_T085_b070_T6_224_400e_swa200_seed43",
+          "raw_ece": 0.07953811236784697,
+          "ts_ece": 0.043089741221695864,
+          "T_s_fitA_evalB": 1.7755890301765527,
+          "T_s_fitB_evalA": 1.880811118493176
+        }
+      }
+    },
+    "stage1/1": {
+      "teacher": "stage1",
+      "T": 1.0,
+      "teacher_ece": 0.03779733980455796,
+      "n": 3,
+      "raw_ece": [
+        0.07312947179942429,
+        0.0011822187508027879
+      ],
+      "ts_ece": [
+        0.0410538198865921,
+        0.002300940762113124
+      ],
+      "per_seed": {
+        "42": {
+          "run": "RAFDB_vichteacher_stage1_9224_betaKD_b070_T6_224_best_400e_swa200",
+          "raw_ece": 0.0728435692470885,
+          "ts_ece": 0.043684987732569895,
+          "T_s_fitA_evalB": 1.529557273872772,
+          "T_s_fitB_evalA": 1.544189697122979
+        },
+        "1": {
+          "run": "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed1",
+          "raw_ece": 0.0721164230874107,
+          "ts_ece": 0.040057681131782555,
+          "T_s_fitA_evalB": 1.5260817303139254,
+          "T_s_fitB_evalA": 1.5576408417338823
+        },
+        "43": {
+          "run": "RAFDB_stage1_baseline_b070_T6_224_400e_swa200_seed43",
+          "raw_ece": 0.07442842306377369,
+          "ts_ece": 0.03941879079542384,
+          "T_s_fitA_evalB": 1.5207907546573562,
+          "T_s_fitB_evalA": 1.5883959361552735
+        }
+      }
+    },
+    "stage1/1.3406": {
+      "teacher": "stage1",
+      "T": 1.3406,
+      "teacher_ece": 0.015897414849820938,
+      "n": 3,
+      "raw_ece": [
+        0.04280742607210989,
+        0.0003306341894657955
+      ],
+      "ts_ece": [
+        0.03999084253503622,
+        0.0028819232214210852
+      ],
+      "per_seed": {
+        "42": {
+          "run": "RAFDB_stage1_tempscale_T1341_halfA_baseline_b070_T6_224_400e_swa200",
+          "raw_ece": 0.043162582206601734,
+          "ts_ece": 0.043010977404058515,
+          "T_s_fitA_evalB": 1.1337901631360479,
+          "T_s_fitB_evalA": 1.129742437810094
+        },
+        "1": {
+          "run": "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed1",
+          "raw_ece": 0.04250853412543003,
+          "ts_ece": 0.03727058070132598,
+          "T_s_fitA_evalB": 1.1171148799394284,
+          "T_s_fitB_evalA": 1.1470910138891366
+        },
+        "43": {
+          "run": "RAFDB_stage1_tempscale_T134_b070_T6_224_400e_swa200_seed43",
+          "raw_ece": 0.042751161884297915,
+          "ts_ece": 0.039690969499724164,
+          "T_s_fitA_evalB": 1.1042186877792208,
+          "T_s_fitB_evalA": 1.150976062043307
+        }
+      }
+    },
+    "stage1/1.7": {
+      "teacher": "stage1",
+      "T": 1.7,
+      "teacher_ece": 0.0428967674249465,
+      "n": 3,
+      "raw_ece": [
+        0.04474241582790907,
+        0.0029210060770113494
+      ],
+      "ts_ece": [
+        0.04784784848433067,
+        0.0019388016045624474
+      ],
+      "per_seed": {
+        "42": {
+          "run": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+          "raw_ece": 0.04721869865366812,
+          "ts_ece": 0.04571757678335928,
+          "T_s_fitA_evalB": 0.8860413799546152,
+          "T_s_fitB_evalA": 0.9196597857349732
+        },
+        "1": {
+          "run": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+          "raw_ece": 0.04152102102045907,
+          "ts_ece": 0.04950914582458593,
+          "T_s_fitA_evalB": 0.886629976068634,
+          "T_s_fitB_evalA": 0.937488101850403
+        },
+        "43": {
+          "run": "RAFDB_stage1_tempscale_T170_b070_T6_224_400e_swa200_seed43",
+          "raw_ece": 0.04548752780960001,
+          "ts_ece": 0.048316822845046806,
+          "T_s_fitA_evalB": 0.9028138254894433,
+          "T_s_fitB_evalA": 0.9149385654031653
+        }
+      }
+    },
+    "stage1/2.2": {
+      "teacher": "stage1",
+      "T": 2.2,
+      "teacher_ece": 0.1269590755902726,
+      "n": 3,
+      "raw_ece": [
+        0.10078169572701769,
+        0.00253848032538042
+      ],
+      "ts_ece": [
+        0.0502521189513322,
+        0.0037807765010864198
+      ],
+      "per_seed": {
+        "42": {
+          "run": "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+          "raw_ece": 0.10302993218563836,
+          "ts_ece": 0.04989201256900909,
+          "T_s_fitA_evalB": 0.7081274164332652,
+          "T_s_fitB_evalA": 0.7351304495661684
+        },
+        "1": {
+          "run": "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+          "raw_ece": 0.10128636753388146,
+          "ts_ece": 0.054200064590033216,
+          "T_s_fitA_evalB": 0.7273553630828912,
+          "T_s_fitB_evalA": 0.7399677068491535
+        },
+        "43": {
+          "run": "RAFDB_stage1_tempscale_T220_b070_T6_224_400e_swa200_seed43",
+          "raw_ece": 0.09802878746153323,
+          "ts_ece": 0.0466642796949543,
+          "T_s_fitA_evalB": 0.7125149308181817,
+          "T_s_fitB_evalA": 0.7333167988802383
+        }
+      }
+    },
+    "vae9182/0.85": {
+      "teacher": "vae9182",
+      "T": 0.85,
+      "teacher_ece": 0.0250310669452768,
+      "n": 3,
+      "raw_ece": [
+        0.044675372809702706,
+        0.0013093965879811618
+      ],
+      "ts_ece": [
+        0.030504715317671634,
+        0.0021698564629986424
+      ],
+      "per_seed": {
+        "42": {
+          "run": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed42",
+          "raw_ece": 0.0433990587680716,
+          "ts_ece": 0.03219810814986484,
+          "T_s_fitA_evalB": 1.1788381739477496,
+          "T_s_fitB_evalA": 1.2111553079064699
+        },
+        "1": {
+          "run": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed1",
+          "raw_ece": 0.04601551720573818,
+          "ts_ece": 0.03125726641428984,
+          "T_s_fitA_evalB": 1.22076379884601,
+          "T_s_fitB_evalA": 1.2183485859633922
+        },
+        "43": {
+          "run": "RAFDB_vae9182_tempscale_T085_b070_T6_224_400e_swa200_seed43",
+          "raw_ece": 0.04461154245529833,
+          "ts_ece": 0.02805877138886023,
+          "T_s_fitA_evalB": 1.196858700865011,
+          "T_s_fitB_evalA": 1.1927547858012377
+        }
+      }
+    },
+    "vae9182/1": {
+      "teacher": "vae9182",
+      "T": 1.0,
+      "teacher_ece": 0.013553927899028671,
+      "n": 3,
+      "raw_ece": [
+        0.032957236164746107,
+        0.001996999098785806
+      ],
+      "ts_ece": [
+        0.033906296774686706,
+        0.001790336012267938
+      ],
+      "per_seed": {
+        "42": {
+          "run": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200",
+          "raw_ece": 0.03395739449807376,
+          "ts_ece": 0.035066584909560626,
+          "T_s_fitA_evalB": 1.0091187512631623,
+          "T_s_fitB_evalA": 1.0512605664778436
+        },
+        "1": {
+          "run": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed1",
+          "raw_ece": 0.03425653685841132,
+          "ts_ece": 0.034807908969216116,
+          "T_s_fitA_evalB": 1.0202001625514583,
+          "T_s_fitB_evalA": 1.0349127372869813
+        },
+        "43": {
+          "run": "RAFDB_vae9182_betaKD_b070_T6_224_best_400e_swa200_seed43",
+          "raw_ece": 0.030657777137753237,
+          "ts_ece": 0.03184439644528337,
+          "T_s_fitA_evalB": 0.9982550004078634,
+          "T_s_fitB_evalA": 1.0227001410759236
+        }
+      }
+    },
+    "vae9182/1.3406": {
+      "teacher": "vae9182",
+      "T": 1.3406,
+      "teacher_ece": 0.06270611134140401,
+      "n": 3,
+      "raw_ece": [
+        0.06469776256026936,
+        0.00299973901247489
+      ],
+      "ts_ece": [
+        0.040268844679185796,
+        0.0017615161231380886
+      ],
+      "per_seed": {
+        "42": {
+          "run": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed42",
+          "raw_ece": 0.0681535900513383,
+          "ts_ece": 0.038240374407137234,
+          "T_s_fitA_evalB": 0.7712421988478851,
+          "T_s_fitB_evalA": 0.7841269689786688
+        },
+        "1": {
+          "run": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed1",
+          "raw_ece": 0.06276643690027811,
+          "ts_ece": 0.04115300169008185,
+          "T_s_fitA_evalB": 0.7764838767288236,
+          "T_s_fitB_evalA": 0.7864833697872319
+        },
+        "43": {
+          "run": "RAFDB_vae9182_tempscale_T134_b070_T6_224_400e_swa200_seed43",
+          "raw_ece": 0.06317326072919167,
+          "ts_ece": 0.0414131579403383,
+          "T_s_fitA_evalB": 0.7818723895372424,
+          "T_s_fitB_evalA": 0.7872178636008834
+        }
+      }
+    },
+    "vae9182/1.7": {
+      "teacher": "vae9182",
+      "T": 1.7,
+      "teacher_ece": 0.14541721431419466,
+      "n": 3,
+      "raw_ece": [
+        0.12821906177518888,
+        0.0030105325448677826
+      ],
+      "ts_ece": [
+        0.04772670667412902,
+        0.004434667291765546
+      ],
+      "per_seed": {
+        "42": {
+          "run": "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed42",
+          "raw_ece": 0.1260032248155079,
+          "ts_ece": 0.04387133528212525,
+          "T_s_fitA_evalB": 0.6585586769888903,
+          "T_s_fitB_evalA": 0.6654723000621328
+        },
+        "1": {
+          "run": "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed1",
+          "raw_ece": 0.1270073130095409,
+          "ts_ece": 0.04673576982500034,
+          "T_s_fitA_evalB": 0.6549224559133651,
+          "T_s_fitB_evalA": 0.6655760986271672
+        },
+        "43": {
+          "run": "RAFDB_vae9182_tempscale_T170_b070_T6_224_400e_swa200_seed43",
+          "raw_ece": 0.1316466475005178,
+          "ts_ece": 0.05257301491526146,
+          "T_s_fitA_evalB": 0.6656255699184084,
+          "T_s_fitB_evalA": 0.6597170557597526
+        }
+      }
+    },
+    "vae9182/2.2": {
+      "teacher": "vae9182",
+      "T": 2.2,
+      "teacher_ece": 0.2621571478255414,
+      "n": 3,
+      "raw_ece": [
+        0.21093863546071184,
+        0.0033612721423117073
+      ],
+      "ts_ece": [
+        0.04917373322355183,
+        0.0045451885362810165
+      ],
+      "per_seed": {
+        "42": {
+          "run": "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed42",
+          "raw_ece": 0.21481987491075188,
+          "ts_ece": 0.0443419386211399,
+          "T_s_fitA_evalB": 0.5441383948582704,
+          "T_s_fitB_evalA": 0.564916550899123
+        },
+        "1": {
+          "run": "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed1",
+          "raw_ece": 0.20900966319336886,
+          "ts_ece": 0.0498150715597139,
+          "T_s_fitA_evalB": 0.5534397745515723,
+          "T_s_fitB_evalA": 0.5613936209183891
+        },
+        "43": {
+          "run": "RAFDB_vae9182_tempscale_T220_b070_T6_224_400e_swa200_seed43",
+          "raw_ece": 0.20898636827801476,
+          "ts_ece": 0.05336418948980167,
+          "T_s_fitA_evalB": 0.5562576736396156,
+          "T_s_fitB_evalA": 0.5678380601820266
+        }
+      }
+    }
+  },
+  "spans": {
+    "stage1/raw": {
+      "span": 0.0579742696549078,
+      "max_arm": "stage1/2.2",
+      "min_arm": "stage1/1.3406",
+      "numerator": "max-arm mean minus min-arm mean, raw ECE, 5 arms of stage1"
+    },
+    "stage1/ts": {
+      "span": 0.010261276416295977,
+      "max_arm": "stage1/2.2",
+      "min_arm": "stage1/1.3406",
+      "numerator": "max-arm mean minus min-arm mean, ts ECE, 5 arms of stage1"
+    },
+    "vae9182/raw": {
+      "span": 0.17798139929596574,
+      "max_arm": "vae9182/2.2",
+      "min_arm": "vae9182/1",
+      "numerator": "max-arm mean minus min-arm mean, raw ECE, 5 arms of vae9182"
+    },
+    "vae9182/ts": {
+      "span": 0.018669017905880193,
+      "max_arm": "vae9182/2.2",
+      "min_arm": "vae9182/0.85",
+      "numerator": "max-arm mean minus min-arm mean, ts ECE, 5 arms of vae9182"
+    }
+  },
+  "collapse": {
+    "stage1": {
+      "factor": 5.649810735323201,
+      "spread_removed_frac": 0.8230029204787522,
+      "spread_surviving_frac": 0.17699707952124777,
+      "numerator": "raw between-arm ECE span of stage1 (0.05797)",
+      "denominator": "scaled between-arm ECE span of stage1 (0.01026)"
+    },
+    "vae9182": {
+      "factor": 9.533516984838652,
+      "spread_removed_frac": 0.8951069157803652,
+      "spread_surviving_frac": 0.10489308421963485,
+      "numerator": "raw between-arm ECE span of vae9182 (0.17798)",
+      "denominator": "scaled between-arm ECE span of vae9182 (0.01867)"
+    }
+  },
+  "scaled_ranking_by_ece": {
+    "stage1": [
+      "stage1/1.3406",
+      "stage1/1",
+      "stage1/0.85",
+      "stage1/1.7",
+      "stage1/2.2"
+    ],
+    "vae9182": [
+      "vae9182/0.85",
+      "vae9182/1",
+      "vae9182/1.3406",
+      "vae9182/1.7",
+      "vae9182/2.2"
+    ]
+  },
+  "seed_consistency": {
+    "stage1": {
+      "scaled_best_arm": "stage1/1.3406",
+      "scaled_best_T": 1.3406,
+      "best_arm_wins_per_seed": "2/3",
+      "pooled_ranking_matched_per_seed": "2/3",
+      "dose_ordered_per_seed": "0/3",
+      "dose_order_definition": "scaled ECE strictly increasing along the T grid 0.85 < 1 < 1.3406 < 1.7 < 2.2"
+    },
+    "vae9182": {
+      "scaled_best_arm": "vae9182/0.85",
+      "scaled_best_T": 0.85,
+      "best_arm_wins_per_seed": "3/3",
+      "pooled_ranking_matched_per_seed": "3/3",
+      "dose_ordered_per_seed": "3/3",
+      "dose_order_definition": "scaled ECE strictly increasing along the T grid 0.85 < 1 < 1.3406 < 1.7 < 2.2"
+    }
+  },
+  "tstar_vs_native": {
+    "stage1": {
+      "tstar_arm": "stage1/1.3406",
+      "native_arm": "stage1/1",
+      "gap_scaled": 0.0010629773515558744,
+      "numerator": "native-arm scaled ECE mean (0.04105) minus T*-arm scaled ECE mean (0.03999)",
+      "tstar_beats_native_per_seed": "2/3"
+    },
+    "vae9182": {
+      "tstar_arm": "vae9182/1.3406",
+      "native_arm": "vae9182/1",
+      "gap_scaled": -0.00636254790449909,
+      "numerator": "native-arm scaled ECE mean (0.03391) minus T*-arm scaled ECE mean (0.04027)",
+      "tstar_beats_native_per_seed": "0/3"
+    }
+  }
+}

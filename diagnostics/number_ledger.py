@@ -84,6 +84,10 @@ A_REL = "reliability/reliability_diagram.json"
 A_PCC = "reliability/perclass_calibration.json"
 A_PL = "paper_tables/prereg_lead_audit.json"
 A_A13 = "a13_scratch_dose/a13_verdict.json"
+# Round-6 (27-28 Agu 2026): ogrenci tarafi olcekleme, iki veri kumesi. Ikisi de YAYIMLANMIS
+# artefaktlardan TURETME -- yeni degerlendirme yok, kosu dizini yok.
+A_FSE = "paper_tables/ferplus_scaled_ece_axis.json"
+A_RTD = "paper_tables/rafdb_student_ts_dose.json"
 
 BINDINGS = []      # alan baglari
 DERIVED = []       # turetilmis nicelikler
@@ -1085,8 +1089,12 @@ for _row, _idx, _cls, _why in RELATED_EX:
 
 # --- §6 sonuc
 CONCL_EX = [
-    ("near = 0.5 and rev", 0, "hyperparameter", "alpha=0.5, karisim agirligi"),
-    ("near = 0.5 and rev", 1, "hyperparameter", "alpha=0.9, karisim agirligi"),
+    # 28 Agu: ayni alpha cumlesi §6'da IKI yerde geciyor -- govde ("peaking near ...
+    # reversing by") ve kapanis ("the benefit peaks near ... reverses by"). Dort muafiyet.
+    ("near = 0.5 and reversing", 0, "hyperparameter", "alpha=0.5, karisim agirligi"),
+    ("near = 0.5 and reversing", 1, "hyperparameter", "alpha=0.9, karisim agirligi"),
+    ("the benefit peaks near = 0.5", 0, "hyperparameter", "alpha=0.5, karisim agirligi"),
+    ("the benefit peaks near = 0.5", 1, "hyperparameter", "alpha=0.9, karisim agirligi"),
     ("peak benefit. The = 0.3 used", 0, "hyperparameter", "kampanya boyunca kullanilan alpha=0.3"),
     ("(archived at https://doi.org/10.5281", 0, "doi",
      "Zenodo DOI onekinin sayisal parcasi (10.5281) -- tanimlayici, olcum degil"),
@@ -2204,11 +2212,17 @@ b("05_results_discussion", -1, "teacher it reverses once more", 0, A_CRIT,
   "cells[\"vae9182/adaptive_t\"].swa.ece.mean", "4dp", ident="s5.adaptive_vae")
 b("05_results_discussion", -1, "2.10 its control's seed deviation", 0, A_CRIT,
   "cells[\"vae9182/adaptive_t\"].swa.ece.ratio_vs_control_sd", "2dp", ident="s5.adaptive_vae_ratio")
-b("05_results_discussion", -1, "discriminative quality is adverse (auroc 0.46", 0, "rafdb_signal_quality/signal_quality_table.json",
+# 28 Agu 2026 -- KAPI BIR ATIF HATASI YAKALADI. Metin dalgasi bu cumleyi yeniden yazdi ve
+# "the screening used the sibling MEAN-logvar signal's AUROC there, 0.46, as the proxy" dedi.
+# Olculdu: VAE9182 x mean_logvar = 0.169 (0.17), VAE9182 x target_logvar = 0.4579 (0.46). Yani
+# 0.46 sinyalin KENDI degeri, kardes sinyalin vekili degil; eleme kaydi da bunu soyluyor
+# (mechanism_grid_gaps: "gate sinyali on-kayitli taramada aleyhte: AUROC 0.4579"). Cumle
+# duzeltildi, baglar sinyaliyle birlikte yeniden capalandi. Uc bag da AYNI alanlarda kaldi.
+b("05_results_discussion", -1, "that signal's own auroc there 0.46", 0, "rafdb_signal_quality/signal_quality_table.json",
   "[teacher=VAE9182][signal=target_logvar].auroc_signed", "2dp", ident="s5.auroc_vae")
-b("05_results_discussion", -1, "discriminative quality is adverse (auroc 0.46", 1, "rafdb_signal_quality/signal_quality_table.json",
+b("05_results_discussion", -1, "0.70 and 0.84 on the teachers", 0, "rafdb_signal_quality/signal_quality_table.json",
   "[teacher=Stage1][signal=target_logvar].auroc_signed", "2dp", ident="s5.auroc_stage1")
-b("05_results_discussion", -1, "0.84 where it was run", 0, "rafdb_signal_quality/signal_quality_table.json",
+b("05_results_discussion", -1, "0.70 and 0.84 on the teachers", 1, "rafdb_signal_quality/signal_quality_table.json",
   "[teacher=Primary][signal=target_logvar].auroc_signed", "2dp", ident="s5.auroc_primary")
 b("05_results_discussion", -1, "direction. its effect on accuracy is small", 0, A_NU,
   "nine_cell_grid[\"swa|vae9182\"].d_acc_mean", "2dp", ident="s5.ls_acc_min")
@@ -2399,7 +2413,7 @@ EX_05 = [
      "'complete-row' kesitinin TANIMI: oy toplami = 10; esik tanimi, olcum degil"),
     ("every slice holding", 0, "criterion_constant",
      "kesit buyuklugu esigi 1000 satir -- S2 duzyazisinda ayni esik zaten criterion_constant olarak muaf"),
-    ("(Supplementary Table S3).", 0, "table_reference",
+    ("(Supplementary Table S3);", 0, "table_reference",
      "Supplementary Table S3 atfi"),
     ("the student distilled", 0, "hyperparameter",
      "kolun damitma sicakligi (T=0.5063'un yuvarlanmisi) -- kol ETIKETI; olculen T*_NLL 05:608'de ayrica baglandi"),
@@ -2676,9 +2690,10 @@ INTRO_ENUM = [("(1) A causal dose", 0), ("(2) Evidence that calibration", 0),
 for _row, _idx in INTRO_ENUM:
     ex("01_introduction", -1, _row, _idx, "enumerator",
        "katki listesinin madde numarasi -- gonderge, olcum degil")
-ex("01_introduction", -1, "cheaply. Such distributions are not unique", 0,
+ex("01_introduction", -1,
+   "the difference survives distillation into the student. Such distributions", 0,
    "dataset_name_digits", "'CIFAR-10H' veri kumesi adinin icindeki basamak")
-ex("abstract", -1, "calibration while leaving top", 0, "metric_name_digits",
+ex("abstract", -1, "calibration leaving top-1", 0, "metric_name_digits",
    "'top-1' metrik adinin icindeki basamak -- olcum degil")
 b("02_related_work", -1, "sits in this regime", 0,
   "p5_efficiency/capacity_law_check.json", "capacity_cells_at_T1.w100ns.params_m", "2dp",
@@ -3128,6 +3143,93 @@ for _t in ("stage1", "primary", "vae9182"):
            "teyit `teacher_ece_grid.fit_temperature` (bagimsiz uygulama). p4 ve tstar_provenance "
            "teyit degerini AYNEN roleliyor, dolayisiyla uc artefakt IKI hesap tasiyor. Amac "
            "farki `tstar_sensitivity.results.<t>.cross_fit.d_nll` altinda olculuyor.")
+
+
+# =============================================================================
+# ROUND-6 (28 Agu 2026) — K1 / K5 / K6 jetonlari
+# =============================================================================
+# Metin dalgasi §5.7'ye iki paragraf, S11'e bir cumle ekledi. Uc kural bu blokta gorunur
+# duruyor: (a) her oranin paydasi artefaktta ADIYLA yaziyor ve bag o alana gidiyor; (b)
+# "tohum basina" iddialari ORTALAMA alanina baglanmiyor -- her biri kendi sayim alanina;
+# (c) basili yuvarlanmis degerden turetme yok, fark artefaktin icinde hesaplaniyor.
+#
+# (b) neden ayri bir kural: §5.7 "the T*_ECE arm worst (0.0296, ALL THREE SEEDS)" diyor.
+# Defterde hazir duran `untreated_beats_tstar_ece_scaled` de 3/3'tu -- ama o BASKA bir soru
+# ("islenmemis kol T*'i geciyor mu"). Degeri tesadufen esit olan bir alana baglanmasin diye
+# uretici `tstar_ece_worst_of_all_scaled` alanini acti. Ayni sebeple K5'te
+# `dose_ordered_per_seed` ve `tstar_vs_native.*.tstar_beats_native_per_seed` acildi.
+
+# --- K1: FERPlus ogrenci-tarafi olcekleme, ECE ekseni (§5.7)
+b("05_results_discussion", -1, "6.4 (removing 84.3 % of it", 0, A_FSE,
+  "collapse.ece.factor", "1dp", ident="s57.ece_collapse_factor")
+b("05_results_discussion", -1, "6.4 (removing 84.3 % of it", 1, A_FSE,
+  "removal.ece.spread_removed_frac", "percent_of_fraction:1dp",
+  ident="s57.ece_spread_removed_pct")
+b("05_results_discussion", -1, "the 37 jsd collapse below)", 0, A_FSE,
+  "collapse.jsd.factor", "int", ident="s57.jsd_collapse_ref")
+b("05_results_discussion", -1, "( 0.0203 ; best in two of three seeds)", 0, A_FSE,
+  "scaled_best_arm.ts_ece[0]", "4dp", ident="s57.scaled_best_ece")
+b("05_results_discussion", -1, "the t^ * _ ece arm worst ( 0.0296", 0, A_FSE,
+  "scaled_worst_arm.ts_ece[0]", "4dp", ident="s57.scaled_worst_ece")
+
+# --- K5: RAF-DB ogrenci-tarafi olcekleme (§5.7, bolum sorusu)
+b("05_results_discussion", -1, "removes 82 -- 90 % of the between-arm spread", 0, A_RTD,
+  "collapse.stage1.spread_removed_frac", "percent_of_fraction:int",
+  ident="s57.rafdb_removed_stage1")
+b("05_results_discussion", -1, "removes 82 -- 90 % of the between-arm spread", 1, A_RTD,
+  "collapse.vae9182.spread_removed_frac", "percent_of_fraction:int",
+  ident="s57.rafdb_removed_vae")
+b("05_results_discussion", -1, "ordering survives: stage1's scaled optimum remains", 1, A_RTD,
+  "seed_consistency.stage1.scaled_best_T", "4dp", ident="s57.rafdb_stage1_scaled_best_T")
+b("05_results_discussion", -1, "dose-consistent residuals of 0.0103 and 0.0187", 0, A_RTD,
+  'spans["stage1/ts"].span', "4dp", ident="s57.rafdb_residual_stage1")
+b("05_results_discussion", -1, "dose-consistent residuals of 0.0103 and 0.0187", 1, A_RTD,
+  'spans["vae9182/ts"].span', "4dp", ident="s57.rafdb_residual_vae")
+b("05_results_discussion", -1, "that stage1's t^ * -versus-native scaled gap shrinks to", 1,
+  A_RTD, "tstar_vs_native.stage1.gap_scaled", "4dp", ident="s57.rafdb_tstar_native_gap")
+
+# --- K6: sonlu-oy teyidi (S11 duzyazisi, birim `robust`)
+b("robust", -1, "stratum places t^ * _ jsd at 0.88 against 0.74", 0, A_JSD,
+  'results["(c) stratum 6-7"].T_jsd', "2dp", ident="s11.tjsd_stratum67")
+b("robust", -1, "stratum places t^ * _ jsd at 0.88 against 0.74", 1, A_JSD,
+  'results["(c) stratum 8-9"].T_jsd', "2dp", ident="s11.tjsd_stratum89")
+
+# --- Ayni turetme, ikinci jeton: `76` artik tab_capacity ALTYAZISINDA da geciyor (28 Agu).
+# Dipnottaki gecis (CAP_FOOT idx 3) yerinde duruyor; bu ikincisi ayni iki alandan.
+dv("capacity_vs_teacher_lever_caption", "76", "ratio",
+   [op(A_RT, "T10_axis_spans.swa.teacher_span"),
+    op(A_RT, "T10_axis_spans.swa.capacity_span")],
+   "int", "tab_capacity", -1, "student's calibration by far more --- a factor of 76", 0,
+   note="tab_capacity altyazisi: 'a factor of 76 on this grid'")
+
+# --- §5.2: asimetri araligi burada IKI basamakla basiliyor (ozet ve girinte 1dp: "1.8--2.0").
+# Ayni iki alan, ayri jeton, farkli yuvarlama; yuvarlama beyanda duruyor, sessiz donusum yok.
+b("05_results_discussion", -1, "response is asymmetric --- 1.77 / 2.04", 0, A_ASY,
+  "summary.interpolated_only.absolute.min", "2dp", ident="s52.asymmetry_min_2dp")
+b("05_results_discussion", -1, "response is asymmetric --- 1.77 / 2.04", 1, A_ASY,
+  "summary.interpolated_only.absolute.max", "2dp", ident="s52.asymmetry_max_2dp")
+
+# --- Round-6 dalgasinin olcum-olmayan jetonlari
+R6_EX = [
+    ("05_results_discussion", "makes the dissociation conservative (supplementary section s2)",
+     0, "table_reference", "Supplementary Section S2 atfi"),
+    ("05_results_discussion", "ordering survives: stage1's scaled optimum remains", 0,
+     "teacher_name_digits", "'Stage1' ogretmen adinin icindeki basamak"),
+    ("05_results_discussion", "and vae9182 stays dose-ordered in all three seeds", 0,
+     "teacher_name_digits", "'VAE9182' ogretmen adinin icindeki basamak"),
+    ("05_results_discussion", "that stage1's t^ * -versus-native scaled gap shrinks to", 0,
+     "teacher_name_digits", "'Stage1' ogretmen adinin icindeki basamak"),
+    ("04_experiments", "denominator at n = 3 both figures are lower bounds", 0,
+     "sample_size", "n=3 tohum sayisi -- tasarim, olcum degil"),
+    # S11'in sonlu-oy cumlesi: kesitin TANIMI (oy toplami [6,7]), esik degil olcum degil.
+    # Kaynak: jsd_sensitivity.json results["(c) stratum 6-7"].why == "vote sum in [6, 7]".
+    ("robust", "stratum table shows the predicted effect --- the 6 -- 7 -vote", 0,
+     "criterion_constant", "kesit tanimi: oy toplami alt siniri 6 (jsd_sensitivity .why)"),
+    ("robust", "stratum table shows the predicted effect --- the 6 -- 7 -vote", 1,
+     "criterion_constant", "kesit tanimi: oy toplami ust siniri 7 (jsd_sensitivity .why)"),
+]
+for _u, _row, _idx, _cls, _why in R6_EX:
+    ex(_u, -1, _row, _idx, _cls, _why)
 
 
 # =============================================================================

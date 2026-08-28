@@ -86,8 +86,12 @@ def left_pane(ax):
     ax.text(0.0, 0.30, "teacher predictions & accuracy:", fontsize=7.0, ha="left", va="center")
     ax.text(1.0, 0.30, "UNCHANGED", fontsize=7.0, ha="right", va="center",
             fontweight="bold")
+    # K4 (27 Ağu 2026, Round-6): "the treatment variable" -> makalenin kendi dili.
+    # §3.7 nedensel çerçeveyi ölçüm diliyle kurar; fig_intervention caption'ı da
+    # "calibration is the measured dose axis" der. Grafik özet farklı bir iddia
+    # taşıyamaz — aynı ifade, aynı eksen adı.
     ax.text(0.0, 0.13, "teacher calibration:", fontsize=7.0, ha="left", va="center")
-    ax.text(1.0, 0.13, "the treatment variable", fontsize=7.0, ha="right", va="center",
+    ax.text(1.0, 0.13, "the measured dose axis", fontsize=7.0, ha="right", va="center",
             color=VERM, fontweight="bold")
 
 
