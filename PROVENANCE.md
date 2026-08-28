@@ -40,6 +40,19 @@
 > with the reason recorded in the baseline file itself; no cell changed and none
 > vanished.
 >
+> One of the two can be re-run from this archive and one cannot, and it is worth saying
+> which. `diagnostics/ferplus_scaled_ece_axis.py` reads only
+> `diagnostics/paper_tables/r3w1_joint_optimum.json`, which is published here, so it
+> reproduces from the archive alone. `diagnostics/rafdb_student_ts_dose.py` reads the
+> published student logit copies **and** the RAF-DB fold-3 file list, which it needs in
+> order to hash file names into the two halves. That list is a derivative of a licensed
+> dataset and is not redistributed here, so the producer will stop on a missing
+> `data/rafdb_aligned/metadata_rafdb_poster_var.csv` rather than produce numbers. Its
+> output table is published in full, and the protocol it uses is the same imported
+> `sha_split` / `fit_ts` pair that `diagnostics/student_ts_baseline.py` applies to
+> FERPlus, whose metadata **is** published under `configs/`; that FERPlus path is
+> therefore runnable end to end and exercises the identical code.
+>
 > **One thing to know while reading the paper.** The manuscript under review still prints
 > the earlier repository's URL and its concept DOI, and neither resolves any more: that
 > repository was made private on 26 August 2026, and the concept DOI reaches a tombstone
