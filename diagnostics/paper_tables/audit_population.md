@@ -98,9 +98,9 @@ Standart tarif, önceden ve açıkça: `epochs=400`, `swa_start=200`, `alpha=0.3
 
 | değer | koşu |
 |---|---|
-| `(boş)` | 63 |
+| `(boş)` | 64 |
 | `A1` | 12 |
-| `A6` | 12 |
+| `A6` | 11 |
 | `B3` | 9 |
 | `B2` | 7 |
 | `A7` | 6 |

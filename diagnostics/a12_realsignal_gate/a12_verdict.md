@@ -26,11 +26,11 @@ Kontrol kolları A12'den etkilenmiyor (P5 için koşulmuştu), o yüzden payda A
 
 | öğretmen | sinyal | AUROC | n | ΔECE ort | işaret | oran | hüküm | Δdoğruluk ort (pp) | işaret | oran | hüküm |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| stage1 | `mean_logvar` | — | 3 | -0.0012 | `+--` | 0.55× | ÇÖZÜNMEDİ | -0.10 | `---` | 0.98× | ÇÖZÜNMEDİ |
+| stage1 | `mean_logvar` | 0.43 | 3 | -0.0012 | `+--` | 0.55× | ÇÖZÜNMEDİ | -0.10 | `---` | 0.98× | ÇÖZÜNMEDİ |
 | stage1 | `target_logvar` | 0.70 | 3 | -0.0041 | `---` | 1.97× | ÇÖZÜNMEDİ | +0.25 | `++-` | 2.51× | ÇÖZÜNMEDİ |
-| primary | `mean_logvar` | — | 3 | -0.0056 | `--+` | 1.67× | ÇÖZÜNMEDİ | +0.20 | `++-` | 0.50× | ÇÖZÜNMEDİ |
+| primary | `mean_logvar` | 0.44 | 3 | -0.0056 | `--+` | 1.67× | ÇÖZÜNMEDİ | +0.20 | `++-` | 0.50× | ÇÖZÜNMEDİ |
 | primary | `target_logvar` | 0.84 | 3 | -0.0008 | `+--` | 0.24× | ÇÖZÜNMEDİ | -0.09 | `-+-` | 0.22× | ÇÖZÜNMEDİ |
-| vae9182 | `mean_logvar` | 0.46 | 3 | +0.0015 | `+--` | 0.55× | ÇÖZÜNMEDİ | -0.27 | `-++` | 1.31× | ÇÖZÜNMEDİ |
+| vae9182 | `mean_logvar` | 0.17 | 3 | +0.0015 | `+--` | 0.55× | ÇÖZÜNMEDİ | -0.27 | `-++` | 1.31× | ÇÖZÜNMEDİ |
 
 AUROC: o sinyalin o öğretmendeki ölçülmüş ayırt etme gücü (`rafdb_signal_quality_table`). `mean_logvar` için stage1/primary değerleri bu tabloda ayrıca raporlanmıştır; buraya yalnız beyanda tahmine dayanak yapılanlar yazıldı.
 

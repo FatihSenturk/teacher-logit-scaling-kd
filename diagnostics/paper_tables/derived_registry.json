@@ -1,7 +1,7 @@
 {
   "note": "review-responsive, not pre-declared",
   "counts": {
-    "derived": 74,
+    "derived": 75,
     "mismatch": 0
   },
   "entries": [
@@ -723,7 +723,7 @@
       "matches": true,
       "note": "TAM DUYARLIKTA fark 0.004145559676890273 -> 0.0041. Basili operandlardan (0.0587-0.0545) 0.0042 cikar; makale yuvarlanmamis alanlardan hesaplamis.",
       "where": [
-        "paper/sections/05_results_discussion.tex:685"
+        "paper/sections/05_results_discussion.tex:691"
       ]
     },
     {
@@ -750,7 +750,7 @@
       "matches": true,
       "note": "araligin ALT ucu; payda 'mean ECE @best' = 0.05435748884887785 -> %12,66 -> 13",
       "where": [
-        "paper/sections/05_results_discussion.tex:861"
+        "paper/sections/05_results_discussion.tex:867"
       ]
     },
     {
@@ -777,7 +777,7 @@
       "matches": true,
       "note": "araligin UST ucu; payda 'median ECE @swa' = 0.045957979335884726 -> %14,97 -> 15. UCUNCU payda ('mean ECE @swa', %14,50) aralik ICINDE kaldigi icin ayrica basilmiyor. DIKKAT: §3'teki '13--14 times' BASKA BIR NICELIKTIR -- boyutsuz KAT (ece_removed_by_ts / d_ece), yuzde degil; defterde `tstar_criterion_cost_min/max` olarak ayri kayitli. Resiprok da degiller (1/13.31 = %7,5), yani ayni ifadenin iki yazilisi diye okunamaz.",
       "where": [
-        "paper/sections/05_results_discussion.tex:861"
+        "paper/sections/05_results_discussion.tex:867"
       ]
     },
     {
@@ -804,7 +804,7 @@
       "matches": true,
       "note": "PAYDA T*_ECE: (T*_JSD - T*_ECE) / T*_ECE = (0.74-0.45305)/0.45305 = %63,3. Ilk denemede `pct_drop` kullanildi (payda T*_JSD) ve 39 verdi; defter bunu derived_mismatch olarak dusurdu, formul duzeltildi. Iki payda arasindaki fark 24 puan -- yani 'bir oranin paydasi cumlede adlanmali' kurali burada 24 puanlik bir hatayi engelledi.",
       "where": [
-        "paper/sections/05_results_discussion.tex:630"
+        "paper/sections/05_results_discussion.tex:632"
       ]
     },
     {
@@ -1030,7 +1030,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:635"
+        "paper/sections/05_results_discussion.tex:637"
       ]
     },
     {
@@ -1057,7 +1057,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:651"
+        "paper/sections/05_results_discussion.tex:653"
       ]
     },
     {
@@ -1084,7 +1084,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:651"
+        "paper/sections/05_results_discussion.tex:653"
       ]
     },
     {
@@ -1111,7 +1111,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:692"
+        "paper/sections/05_results_discussion.tex:698"
       ]
     },
     {
@@ -1138,7 +1138,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:697"
+        "paper/sections/05_results_discussion.tex:703"
       ]
     },
     {
@@ -1165,7 +1165,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:735"
+        "paper/sections/05_results_discussion.tex:741"
       ]
     },
     {
@@ -1192,7 +1192,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:828"
+        "paper/sections/05_results_discussion.tex:834"
       ]
     },
     {
@@ -1219,7 +1219,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:848"
+        "paper/sections/05_results_discussion.tex:854"
       ]
     },
     {
@@ -1597,7 +1597,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:313"
+        "paper/sections/05_results_discussion.tex:315"
       ]
     },
     {
@@ -1624,7 +1624,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:328"
+        "paper/sections/05_results_discussion.tex:330"
       ]
     },
     {
@@ -1651,7 +1651,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:584"
+        "paper/sections/05_results_discussion.tex:586"
       ]
     },
     {
@@ -1678,7 +1678,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:585"
+        "paper/sections/05_results_discussion.tex:587"
       ]
     },
     {
@@ -1705,7 +1705,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:595"
+        "paper/sections/05_results_discussion.tex:597"
       ]
     },
     {
@@ -1732,7 +1732,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:597"
+        "paper/sections/05_results_discussion.tex:599"
       ]
     },
     {
@@ -1759,7 +1759,7 @@
       "matches": true,
       "note": "",
       "where": [
-        "paper/sections/05_results_discussion.tex:446"
+        "paper/sections/05_results_discussion.tex:448"
       ]
     },
     {
@@ -1823,7 +1823,7 @@
       "matches": true,
       "note": "uc kolun EN KUCUK R^2'si; alt sinir iddiasi oldugu icin ASAGI yuvarlanir (scratch2248 = 0.99881781, digerleri 0.99996+)",
       "where": [
-        "paper/sections/05_results_discussion.tex:370"
+        "paper/sections/05_results_discussion.tex:372"
       ]
     },
     {
@@ -1855,7 +1855,7 @@
       "matches": true,
       "note": "pay = stage1 ve primary kontrol kollarinin @swa ECE duzeylerinin ORTALAMASI (0.075); PAYDA = vae9182 kontrol kolunun @swa ECE duzeyi (0.0278). Basili iki yuvarlanmis degerden hesaplansaydi 2.679 cikardi; alanlardan 2.701 cikiyor -- ikisi de 1 basamakta 2.7 veriyor ama hesap alanlardan yapiliyor.",
       "where": [
-        "paper/sections/05_results_discussion.tex:445"
+        "paper/sections/05_results_discussion.tex:447"
       ]
     },
     {
@@ -2041,6 +2041,33 @@
       "note": "yedi sinifin en kucuk (araligin tohum sd'sine orani) = Disgust 10.5557; alt sinir iddiasi oldugu icin ASAGI yuvarlanir",
       "where": [
         "paper/figures/fig_perclass.tex:17"
+      ]
+    },
+    {
+      "id": "s57.tost_margin",
+      "printed": "0.0034",
+      "formula": "sum",
+      "operands": [
+        {
+          "artifact": "paper_tables/ferplus_scaled_ece_axis.json",
+          "path": "arms[\"1.0\"].ts_ece[1]"
+        },
+        {
+          "artifact": "paper_tables/ferplus_scaled_ece_axis.json",
+          "path": "arms[\"1.0\"].ts_ece[1]"
+        }
+      ],
+      "operand_values": [
+        0.0017399872522243173,
+        0.0017399872522243173
+      ],
+      "exact": 0.0034799745044486346,
+      "rounding": "4dp_floor",
+      "rounded": "0.0034",
+      "matches": true,
+      "note": "§5.7: 'a margin declared as twice the scaled control arm's seed deviation'; equivalence_tests tests[unit=ECE].delta ayni sayiyi tasiyor (delta_source paydayi adiyla yaziyor)",
+      "where": [
+        "paper/sections/05_results_discussion.tex:684"
       ]
     },
     {

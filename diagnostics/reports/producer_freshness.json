@@ -1,7 +1,7 @@
 {
   "cheap_threshold_seconds": 90.0,
   "counts": {
-    "producers": 71,
+    "producers": 73,
     "stale": 0,
     "source_drift": 0,
     "unstamped": 0,
@@ -11,7 +11,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.13,
+      "seconds": 0.12,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -27,7 +27,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.05,
+      "seconds": 0.06,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -67,7 +67,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 6.88,
+      "seconds": 6.2,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -99,7 +99,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.06,
+      "seconds": 0.05,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -114,7 +114,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 38.34,
+      "seconds": 38.26,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -157,7 +157,7 @@
       "artifacts": [
         {
           "artifact": "runs.csv",
-          "artifact_commit": "2240b3e3f",
+          "artifact_commit": "82a0f34ee",
           "producer_commit": "2240b3e3f",
           "producer_commits_since_artifact": 0
         },
@@ -184,7 +184,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.05,
+      "seconds": 0.06,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -246,7 +246,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 43.61,
+      "seconds": 42.14,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -278,7 +278,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 4.83,
+      "seconds": 4.87,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -310,7 +310,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.66,
+      "seconds": 0.6,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -326,7 +326,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 2.23,
+      "seconds": 1.89,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -342,7 +342,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 5.06,
+      "seconds": 4.64,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -352,6 +352,22 @@
       "why_layer": "ölçülen süre 5.1 s",
       "artifact_paths": [
         "diagnostics/ferplus_jsd/ferplus_jsd.json"
+      ]
+    },
+    {
+      "layer": "A",
+      "status": "geçti",
+      "seconds": 0.05,
+      "changed": [],
+      "side_outputs": [],
+      "returncode": 0,
+      "note": "",
+      "script": "diagnostics/ferplus_scaled_ece_axis.py",
+      "artifacts_n": 2,
+      "why_layer": "ölçülen süre 0.1 s",
+      "artifact_paths": [
+        "diagnostics/paper_tables/ferplus_scaled_ece_axis.md",
+        "diagnostics/paper_tables/ferplus_scaled_ece_axis.json"
       ]
     },
     {
@@ -380,7 +396,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 5.29,
+      "seconds": 4.2,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -396,7 +412,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.06,
+      "seconds": 0.07,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -412,7 +428,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 1.04,
+      "seconds": 0.76,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -427,7 +443,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 25.62,
+      "seconds": 24.83,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -443,7 +459,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.05,
+      "seconds": 0.04,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -475,7 +491,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.63,
+      "seconds": 0.59,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -491,7 +507,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 5.03,
+      "seconds": 4.5,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -507,7 +523,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 5.69,
+      "seconds": 5.53,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -555,7 +571,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.69,
+      "seconds": 0.65,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -651,7 +667,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.19,
+      "seconds": 0.18,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -722,7 +738,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.05,
+      "seconds": 0.06,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -738,7 +754,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 5.25,
+      "seconds": 4.79,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -754,7 +770,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 4.69,
+      "seconds": 4.33,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -876,7 +892,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 5.17,
+      "seconds": 4.38,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -911,6 +927,22 @@
       "why_layer": "Level-3 beyanlı: koşu dizinlerini okumak İŞİ",
       "artifact_paths": [
         "diagnostics/rafdb_signal_quality/signal_quality_table.json"
+      ]
+    },
+    {
+      "layer": "A",
+      "status": "geçti",
+      "seconds": 4.9,
+      "changed": [],
+      "side_outputs": [],
+      "returncode": 0,
+      "note": "",
+      "script": "diagnostics/rafdb_student_ts_dose.py",
+      "artifacts_n": 2,
+      "why_layer": "ölçülen süre 5.1 s",
+      "artifact_paths": [
+        "diagnostics/paper_tables/rafdb_student_ts_dose.md",
+        "diagnostics/paper_tables/rafdb_student_ts_dose.json"
       ]
     },
     {
@@ -956,7 +988,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 5.37,
+      "seconds": 5.01,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -1019,7 +1051,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.58,
+      "seconds": 0.56,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -1073,7 +1105,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 5.74,
+      "seconds": 5.37,
       "changed": [],
       "side_outputs": [
         "paper/figures/selection_distribution.pdf"
@@ -1090,7 +1122,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.28,
+      "seconds": 0.26,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -1135,7 +1167,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 0.21,
+      "seconds": 0.23,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -1152,7 +1184,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 4.84,
+      "seconds": 4.58,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -1200,7 +1232,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 24.69,
+      "seconds": 8.15,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -1231,7 +1263,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 7.23,
+      "seconds": 6.97,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -1247,7 +1279,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 5.59,
+      "seconds": 5.12,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,
@@ -1263,7 +1295,7 @@
     {
       "layer": "A",
       "status": "geçti",
-      "seconds": 5.48,
+      "seconds": 5.43,
       "changed": [],
       "side_outputs": [],
       "returncode": 0,

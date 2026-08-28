@@ -32,6 +32,7 @@ Kapsam `export_to_drive.EXPORTS`'tan türetilir (hangi betiğin yayımlanan arte
 | `diagnostics/equivalence_tests.py` | GEÇTİ | — |
 | `diagnostics/ferplus_abstention_entropy.py` | GEÇTİ | — |
 | `diagnostics/ferplus_human_vote_jsd.py` | GEÇTİ | — |
+| `diagnostics/ferplus_scaled_ece_axis.py` | GEÇTİ | — |
 | `diagnostics/ferplus_selection_audit.py` | muaf | Level 3 — koşu dizini okumak işi |
 | `diagnostics/ferplus_student_jsd.py` | GEÇTİ | — |
 | `diagnostics/g42_init_matched_lever.py` | GEÇTİ | — |
@@ -69,6 +70,7 @@ Kapsam `export_to_drive.EXPORTS`'tan türetilir (hangi betiğin yayımlanan arte
 | `diagnostics/publish_student_logits.py` | muaf | Level 3 — koşu dizini okumak işi |
 | `diagnostics/r3w1_joint_optimum.py` | GEÇTİ | — |
 | `diagnostics/rafdb_signal_quality_table.py` | muaf | Level 3 — koşu dizini okumak işi |
+| `diagnostics/rafdb_student_ts_dose.py` | GEÇTİ | — |
 | `diagnostics/regression_line_provenance.py` | GEÇTİ | — |
 | `diagnostics/reliability_diagram.py` | muaf | Level 3 — koşu dizini okumak işi |
 | `diagnostics/robustness_metrics.py` | GEÇTİ | — |

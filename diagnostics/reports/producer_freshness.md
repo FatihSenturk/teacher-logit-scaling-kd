@@ -6,8 +6,8 @@
 
 | | |
 |---|---|
-| denetlenen üretici | 71 |
-| Katman A (koş + bayt karşılaştır) | 56 |
+| denetlenen üretici | 73 |
+| Katman A (koş + bayt karşılaştır) | 58 |
 | Katman B (kaynak parmak izi) | 15 |
 | **BAYAT** (artefakt üreticisinden geri) | **0** |
 | **KAYNAK AYRIŞMASI** | **0** |
@@ -26,17 +26,17 @@ Anlık kopya yalnız bandın BEYAN ETTİĞİ artefaktları kapsar. Aşağıdaki 
 
 ## Ölçülen süreler (Katman A adayları)
 
-n=56 · min 0.1 s · medyan 0.2 s · maks 43.6 s · toplam 223 s · eşik **90 s**
+n=58 · min 0.0 s · medyan 0.2 s · maks 42.1 s · toplam 202 s · eşik **90 s**
 
 En pahalı beş üretici:
 
 | üretici | saniye |
 |---|---|
-| `diagnostics/criterion_applied.py` | 43.6 |
+| `diagnostics/criterion_applied.py` | 42.1 |
 | `diagnostics/bootstrap_cis.py` | 38.3 |
-| `diagnostics/headroom_grid_audit.py` | 25.6 |
-| `diagnostics/teacher_ece_grid.py` | 24.7 |
-| `diagnostics/tstar_sensitivity.py` | 7.2 |
+| `diagnostics/headroom_grid_audit.py` | 24.8 |
+| `diagnostics/teacher_ece_grid.py` | 8.2 |
+| `diagnostics/tstar_sensitivity.py` | 7.0 |
 
 ## Katman B'nin SINIRI (peşinen)
 
@@ -61,6 +61,7 @@ Kaynak parmak izi yalnız **üretici değişti**yi görür. **Girdi verisi deği
 | `diagnostics/equivalence_tests.py` | **A** | ölçülen süre 0.6 s | `diagnostics/paper_tables/equivalence_tests.md`<br>`diagnostics/paper_tables/equivalence_tests.json` | geçti |
 | `diagnostics/ferplus_abstention_entropy.py` | **A** | ölçülen süre 1.8 s | `diagnostics/paper_tables/ferplus_abstention_entropy.md`<br>`diagnostics/paper_tables/ferplus_abstention_entropy.json` | geçti |
 | `diagnostics/ferplus_human_vote_jsd.py` | **A** | ölçülen süre 5.1 s | `diagnostics/ferplus_jsd/ferplus_jsd.json` | geçti |
+| `diagnostics/ferplus_scaled_ece_axis.py` | **A** | ölçülen süre 0.1 s | `diagnostics/paper_tables/ferplus_scaled_ece_axis.md`<br>`diagnostics/paper_tables/ferplus_scaled_ece_axis.json` | geçti |
 | `diagnostics/ferplus_student_jsd.py` | **A** | ölçülen süre 4.7 s | `diagnostics/ferplus_jsd/ferplus_student_jsd.json`<br>`diagnostics/ferplus_jsd/ferplus_student_jsd_rows.json` | geçti |
 | `diagnostics/g42_init_matched_lever.py` | **A** | ölçülen süre 0.1 s | `diagnostics/paper_tables/g42_init_matched_lever.md`<br>`diagnostics/paper_tables/g42_init_matched_lever.json` | geçti |
 | `diagnostics/graphical_abstract.py` | **A** | ölçülen süre 0.8 s | `paper/figures/graphical_abstract.png` | geçti |
@@ -85,6 +86,7 @@ Kaynak parmak izi yalnız **üretici değişti**yi görür. **Girdi verisi deği
 | `diagnostics/perclass_crossing_table.py` | **A** | ölçülen süre 0.1 s | `diagnostics/paper_tables/perclass_crossing.md`<br>`diagnostics/paper_tables/perclass_crossing.json` | geçti |
 | `diagnostics/prereg_lead_audit.py` | **A** | ölçülen süre 0.1 s | `diagnostics/paper_tables/prereg_lead_audit.md`<br>`diagnostics/paper_tables/prereg_lead_audit.json` | geçti |
 | `diagnostics/r3w1_joint_optimum.py` | **A** | ölçülen süre 5.0 s | `diagnostics/paper_tables/r3w1_joint_optimum.md`<br>`diagnostics/paper_tables/r3w1_joint_optimum.json` | geçti |
+| `diagnostics/rafdb_student_ts_dose.py` | **A** | ölçülen süre 5.1 s | `diagnostics/paper_tables/rafdb_student_ts_dose.md`<br>`diagnostics/paper_tables/rafdb_student_ts_dose.json` | geçti |
 | `diagnostics/regression_line_provenance.py` | **A** | ölçülen süre 0.1 s | `diagnostics/paper_tables/regression_line_provenance.md`<br>`diagnostics/paper_tables/regression_line_provenance.json` | geçti |
 | `diagnostics/robustness_metrics.py` | **A** | ölçülen süre 5.8 s | `diagnostics/paper_tables/robustness_metrics.md`<br>`diagnostics/paper_tables/robustness_metrics.json` | geçti |
 | `diagnostics/section54_numbers.py` | **A** | ölçülen süre 0.1 s | `diagnostics/paper_tables/section54_numbers.md`<br>`diagnostics/paper_tables/section54_numbers.json` | geçti |

@@ -13,8 +13,8 @@ A large p-value is **not** evidence of equivalence; it only says a difference co
 | primary/gate:oracle_error | -0.011 | [-1.228, +1.206] | ±0.789 | 0.1015 | inconclusive |
 | stage1/gate:oracle_error | -0.217 | [-0.987, +0.553] | ±0.199 | 0.5243 | inconclusive |
 | vae9182/gate:oracle_error | -0.228 | [-1.060, +0.603] | ±0.414 | 0.2905 | inconclusive |
-| FERPlus ECE: student-TS − T*-arm | +0.0018 | [-0.0034, +0.0069] | ±0.0032 | 0.2535 | inconclusive |
-| FERPlus JSD: student-TS − T*-arm | -0.0041 | [-0.0049, -0.0034] | ±0.0009 | 0.9967 | **difference beyond margin** |
+| FERPlus ECE: student-TS − T*-arm | +0.0018 | [-0.0034, +0.0069] | ±0.0035 | 0.2164 | inconclusive |
+| FERPlus JSD: student-TS − T*-arm | -0.0041 | [-0.0049, -0.0034] | ±0.0010 | 0.9965 | **difference beyond margin** |
 
 **0** equivalence established · **1** difference beyond the margin · **4** inconclusive (of 5).
 

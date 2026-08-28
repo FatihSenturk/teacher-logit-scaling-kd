@@ -60,7 +60,7 @@
       "signal": "mean_logvar",
       "treat": "RAFDB_stage1_gate_noclassweight_b070_T6_224_400e_swa200",
       "control": "RAFDB_stage1_baseline_noclassweight_b070_T6_224_400e_swa200",
-      "auroc": null,
+      "auroc": 0.43,
       "seeds_on_disk": [
         42,
         1,
@@ -408,7 +408,7 @@
       "signal": "mean_logvar",
       "treat": "RAFDB_primary_gate_noclassweight_b070_T6_224_400e_swa200",
       "control": "RAFDB_primary_baseline_noclassweight_b070_T6_224_400e_swa200",
-      "auroc": null,
+      "auroc": 0.44,
       "seeds_on_disk": [
         42,
         1,
@@ -756,7 +756,12 @@
       "signal": "mean_logvar",
       "treat": "RAFDB_vae9182_gate_noclassweight_b070_T6_224_400e_swa200",
       "control": "RAFDB_vae9182_baseline_noclassweight_b070_T6_224_400e_swa200",
-      "auroc": 0.46,
+      "auroc": 0.17,
+      "screen_auroc": {
+        "signal": "target_logvar",
+        "value": 0.46,
+        "why": "target_logvar gate'i bu ogretmende on-kayitli taramada elendi (auroc sanstan az uzak ve yon ters); hucre bu yuzden mean_logvar ile kuruldu -- bkz. mechanism_grid_gaps.json"
+      },
       "seeds_on_disk": [
         42,
         1,

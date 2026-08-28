@@ -121,13 +121,21 @@ def main():
     per = ts["per_seed"]
     for met, unit in (("ece", "ECE"), ("jsd", "JSD")):
         diffs = [per[s]["student_ts"][met] - per[s]["tstar_arm"][met] for s in SEEDS]
-        # referans kol = T* kolu; marj onun tohum sd'sinin 2 katı
-        ref = [per[s]["tstar_arm"][met] for s in SEEDS]
+        # REFERANS KOL = ÖLÇEKLENMİŞ KONTROL KOLU (28 Ağu 2026). Önceki hâli T* kolunu
+        # referans alıyordu ve §5.7 marjı "twice the scaled control arm's seed deviation"
+        # diye BEYAN ediyor -- iki tanım aynı değil: T* kolu 2×0.0031764, ölçeklenmiş kontrol
+        # 2×0.0034800. Ölçüldü, ayrışma gerçekti, ve basılan p_TOST eski paydadan geliyordu.
+        # Beyan hangisiyse artefakt onu hesaplar; ters yön (metni artefakta uydurmak) marjı
+        # sonuca göre seçmek olurdu. Sınıf ikisinde de aynı çıkıyor (inconclusive), yani
+        # düzeltme hükmü değil, hükmün DAYANDIĞI paydayı yerine oturtuyor.
+        # Aynı kural JSD ekseninde de uygulanır -- metin "the same margin" diyor, o yüzden
+        # iki eksende iki farklı payda kuralı olamaz.
+        ref = [per[s]["student_ts"][met] for s in SEEDS]
         delta = 2 * sample_sd(ref)
         r = tost(diffs, delta)
         r.update({"group": "(b) §5.7 student-side TS vs teacher-side T* arm",
                   "name": f"FERPlus {unit}: student-TS − T*-arm", "unit": unit,
-                  "delta_source": f"2 × T*-arm {unit} seed sd",
+                  "delta_source": f"2 × scaled control arm (student-TS) {unit} seed sd",
                   "per_seed": {s: d for s, d in zip(SEEDS, diffs)}})
         tests.append(r)
 

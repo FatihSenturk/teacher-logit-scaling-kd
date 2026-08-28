@@ -9,7 +9,7 @@
 > tombstone as well. This repository re-publishes the same work as one clean archive.
 >
 > **What is the same.** Every producer, every measured value, every dated pre-declaration
-> record. `diagnostics/table_diff_gate.py` compares 1658 cells against the accepted
+> record. `diagnostics/table_diff_gate.py` compares 1660 cells against the accepted
 > baseline and reports no deviation on this tree — the same baseline the earlier archive
 > carried.
 >
@@ -39,6 +39,25 @@
 > round the baseline of `diagnostics/table_diff_gate.py` grew from 1656 to 1658 cells,
 > with the reason recorded in the baseline file itself; no cell changed and none
 > vanished.
+>
+> **Note, 28 August 2026 (second round).** Two corrections went into the artifacts, not
+> into the paper. First, `diagnostics/a12_realsignal_gate/a12_verdict.json` carried an
+> AUROC of `0.46` on the row whose signal is `mean_logvar`; measured against
+> `diagnostics/rafdb_signal_quality/signal_quality_table.json`, VAE9182 x mean-logvar is
+> `0.169` and VAE9182 x **target**-logvar is `0.4579`. The number was filed under the
+> wrong signal. Because the fault was hand-copying, the fix is not a new constant: the
+> column is now read from the measured table, and the `0.46` is kept where it belongs, in
+> a `screen_auroc` field that names its signal and records why this cell uses the sibling
+> gate at all. No verdict, mean, ratio or seed value changed.
+>
+> Second, `diagnostics/equivalence_tests.py` computed the section 5.7 TOST margin from
+> the T*-arm's seed deviation while the paper declares it as twice the *scaled control*
+> arm's. The two are not the same (0.0031764 against 0.0034800), so the published p-value
+> had been computed under a denominator the text does not claim. The producer now follows
+> the declared rule on both axes, and its `delta_source` names the denominator. The margin
+> moved to 0.0034800 and p_TOST from 0.2535 to 0.2164; **the classification did not
+> change** on either axis. Fixing this the other way round — leaving the code and
+> rewording the paper — would have been choosing the denominator after seeing the result.
 >
 > One of the two can be re-run from this archive and one cannot, and it is worth saying
 > which. `diagnostics/ferplus_scaled_ece_axis.py` reads only

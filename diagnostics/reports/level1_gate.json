@@ -101,6 +101,11 @@
       "note": ""
     },
     {
+      "script": "diagnostics/ferplus_scaled_ece_axis.py",
+      "status": "GEÇTİ",
+      "note": ""
+    },
+    {
       "script": "diagnostics/ferplus_selection_audit.py",
       "status": "muaf",
       "note": "Level 3 — koşu dizini okumak işi"
@@ -284,6 +289,11 @@
       "script": "diagnostics/rafdb_signal_quality_table.py",
       "status": "muaf",
       "note": "Level 3 — koşu dizini okumak işi"
+    },
+    {
+      "script": "diagnostics/rafdb_student_ts_dose.py",
+      "status": "GEÇTİ",
+      "note": ""
     },
     {
       "script": "diagnostics/regression_line_provenance.py",

@@ -3188,6 +3188,32 @@ b("05_results_discussion", -1, "dose-consistent residuals of 0.0103 and 0.0187",
 b("05_results_discussion", -1, "that stage1's t^ * -versus-native scaled gap shrinks to", 1,
   A_RTD, "tstar_vs_native.stage1.gap_scaled", "4dp", ident="s57.rafdb_tstar_native_gap")
 
+# --- §5.7 TOST marji: 2 x OLCEKLENMIS KONTROL kolunun tohum sd'si.
+# TURETILMIS bag: defter her kosuda K1'in alanindan yeniden hesaplar. Yuvarlama `4dp_floor`
+# cunku basilan sayi bir OLCUM degil bir MARJDIR (0.00347997) ve yukari yuvarlamak metnin
+# kullandigindan GENIS bir marj beyan etmek olurdu -- yani daha zayif bir iddia. 21 Agu'daki
+# "R^2 > 0.998" kalibinin aynisi: yon, iddianin yonudur.
+# Payda ayrisirsa kapi p_TOST'tan yakalar: `res.tost_p` ayni testin p degerine bagli ve marj
+# degisince o deger oynar (olculdu: T* kolu paydasiyla 0.25, olceklenmis kontrolle 0.22).
+dv("s57.tost_margin", "0.0034", "sum",
+   [op(A_FSE, 'arms["1.0"].ts_ece[1]'), op(A_FSE, 'arms["1.0"].ts_ece[1]')],
+   "4dp_floor", "05_results_discussion", -1, "( = 0.0034 ) are", 0,
+   note="§5.7: 'a margin declared as twice the scaled control arm's seed deviation'; "
+        "equivalence_tests tests[unit=ECE].delta ayni sayiyi tasiyor (delta_source paydayi "
+        "adiyla yaziyor)")
+
+# --- §5.7 karsit marj: "Under the unscaled control's wider spread (2 x 0.0046)".
+# Ayni kolun (T=1.0) HAM ECE tohum sd'si; dar marj olceklenmis hâlinden (0.0017) geliyor,
+# genisi olceklenmemis hâlinden. Iki payda AYNI KOLUN iki dunyasi -- cumle de boyle diyor.
+# Olculdu (28 Agu): 2 x 0.0046 = 0.0092 ile p_TOST 0.0257 < 0.05, yani "formal equivalence"
+# iddiasi TUTUYOR; dar marjla 0.2164. Metin dar marji koruyor ve muhafazakâr hukmu basiyor.
+b("05_results_discussion", -1, "control's wider spread ( 2 0.0046 )", 1, A_FSE,
+  'arms["1.0"].raw_ece[1]', "4dp", ident="s57.unscaled_control_sd")
+ex("05_results_discussion", -1, "control's wider spread ( 2 0.0046 )", 0,
+   "criterion_constant",
+   "marj kuralinin carpani (2x) -- olcut tanimi, olcum degil; ayni carpan a12/criterion_applied "
+   "'2 x kontrol tohum sd'si' kuralinda da beyanli")
+
 # --- K6: sonlu-oy teyidi (S11 duzyazisi, birim `robust`)
 b("robust", -1, "stratum places t^ * _ jsd at 0.88 against 0.74", 0, A_JSD,
   'results["(c) stratum 6-7"].T_jsd', "2dp", ident="s11.tjsd_stratum67")
@@ -3204,9 +3230,9 @@ dv("capacity_vs_teacher_lever_caption", "76", "ratio",
 
 # --- §5.2: asimetri araligi burada IKI basamakla basiliyor (ozet ve girinte 1dp: "1.8--2.0").
 # Ayni iki alan, ayri jeton, farkli yuvarlama; yuvarlama beyanda duruyor, sessiz donusum yok.
-b("05_results_discussion", -1, "response is asymmetric --- 1.77 / 2.04", 0, A_ASY,
+b("05_results_discussion", -1, "1.77 / 2.04 an axis stated", 0, A_ASY,
   "summary.interpolated_only.absolute.min", "2dp", ident="s52.asymmetry_min_2dp")
-b("05_results_discussion", -1, "response is asymmetric --- 1.77 / 2.04", 1, A_ASY,
+b("05_results_discussion", -1, "1.77 / 2.04 an axis stated", 1, A_ASY,
   "summary.interpolated_only.absolute.max", "2dp", ident="s52.asymmetry_max_2dp")
 
 # --- Round-6 dalgasinin olcum-olmayan jetonlari

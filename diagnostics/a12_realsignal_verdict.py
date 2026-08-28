@@ -75,11 +75,41 @@ CELLS = [
 ]
 CONTROL = {t: f"RAFDB_{t}_baseline_noclassweight{BASE}" for t in ("stage1", "primary", "vae9182")}
 
-# Ölçülmüş sinyal kalitesi (rafdb_signal_quality_table). Beyanda tahminler bunlara dayandırıldı;
-# raporda yan yana dursun ki "kalite yüksekti ama yine de geçmedi" denetlenebilir olsun.
-AUROC = {("stage1", "mean_logvar"): None, ("stage1", "target_logvar"): 0.70,
-         ("primary", "mean_logvar"): None, ("primary", "target_logvar"): 0.84,
-         ("vae9182", "mean_logvar"): 0.46}
+# Ölçülmüş sinyal kalitesi. Beyanda tahminler bunlara dayandırıldı; raporda yan yana dursun
+# ki "kalite yüksekti ama yine de geçmedi" denetlenebilir olsun.
+#
+# 28 Ağu 2026 (R8 #6) — BU BLOK ELLE YAZILIYORDU VE BİR DEĞERİ YANLIŞ SİNYALE DÜŞMÜŞTÜ.
+# Ölçüm: `vae9182 × mean_logvar` satırında `0.46` yazıyordu; `signal_quality_table.json`'a
+# göre VAE9182 × mean_logvar = 0.1690, VAE9182 × **target_logvar** = 0.4579 (→ 0.46). Yani
+# basılan sayı hücrenin sinyaline değil, KARDEŞ sinyale aitti. Hata sınıfı elle kopyalamaydı,
+# o yüzden düzeltme tek bir değeri değiştirmek değil: harita artık ÖLÇÜLEN artefaktdan
+# okunuyor, elle yazılmıyor. (Aynı sebeple stage1/primary'nin `None` hücreleri de gerçek
+# ölçülen değerlerini gösteriyor -- "boş" bir hücre de bakımı yapılmayan bir hücredir.)
+#
+# `0.46` kaybolmuyor, AİT OLDUĞU YERE yazılıyor: vae9182'de target_logvar gate'i hiç
+# koşulmadı çünkü ön-kayıtlı tarama onu tam bu değerle eledi (mechanism_grid_gaps:
+# "gate sinyali ön-kayıtlı taramada aleyhte: AUROC 0.4579"). Bu, hücrenin NEDEN mean_logvar
+# olduğunun gerekçesi; `screen_auroc` alanı onu sinyalinin adıyla taşıyor.
+SIGNAL_QUALITY = ROOT / "diagnostics" / "rafdb_signal_quality" / "signal_quality_table.json"
+_TEACHER_KEY = {"stage1": "Stage1", "primary": "Primary", "vae9182": "VAE9182"}
+
+
+def _signal_auroc():
+    """(ogretmen, sinyal) -> olculen auroc_signed. Elle yazilmaz; artefakttan okunur."""
+    rows = json.loads(SIGNAL_QUALITY.read_text(encoding="utf-8"))
+    by = {(r["teacher"], r["signal"]): r["auroc_signed"] for r in rows}
+    out = {}
+    for t, key in _TEACHER_KEY.items():
+        for sig in ("mean_logvar", "target_logvar"):
+            if (key, sig) in by:
+                out[(t, sig)] = round(by[(key, sig)], 2)
+    return out
+
+
+AUROC = _signal_auroc()
+# Hücrenin var olma gerekçesi: bu sinyal ON-KAYITLI TARAMADA elendigi icin hucre kardes
+# sinyalle kuruldu. Deger de adiyla birlikte tasiniyor -- iki alan, iki sinyal, karismaz.
+SCREENED_OUT = {("vae9182", "mean_logvar"): "target_logvar"}
 
 
 # --------------------------------------------------------------------------- ad->parametre
@@ -215,6 +245,13 @@ def main():
     for teacher, signal, treat in CELLS:
         row = {"teacher": teacher, "signal": signal, "treat": treat,
                "control": CONTROL[teacher], "auroc": AUROC.get((teacher, signal))}
+        _screened = SCREENED_OUT.get((teacher, signal))
+        if _screened:
+            row["screen_auroc"] = {
+                "signal": _screened, "value": AUROC.get((teacher, _screened)),
+                "why": f"{_screened} gate'i bu ogretmende on-kayitli taramada elendi "
+                       f"(auroc sanstan az uzak ve yon ters); hucre bu yuzden "
+                       f"{signal} ile kuruldu -- bkz. mechanism_grid_gaps.json"}
         # Kuyruk henüz koşarken bu betik çalışabilmeli (uygulayıcı sonuçtan ÖNCE yazılıyor).
         # P5'in `resolve`'u eksik tohumda bilerek hata veriyor -- isim tahminine düşmemek için.
         # O katılığı bozmuyoruz: önce üç tohumun da çözülüp çözülmediğine bakıyoruz, hepsi
